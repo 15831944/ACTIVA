@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ACTIVA_Module_1">
+</Property><Property Name="Fichier solution" Value="C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1.sln">
+</Property><Property Name="Date" Value="vendredi 28 mars 2014">
+</Property><Property Name="Time" Value="11:52">
+</Property></Properties><Event ErrorLevel="0" Project="ACTIVA_Module_1" Source="ACTIVA_Module_1\ACTIVA_Module_1.csproj" Description="Projet correctement converti">
+</Event><Event ErrorLevel="3" Project="ACTIVA_Module_1" Source="ACTIVA_Module_1\ACTIVA_Module_1.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ActivCAD" Source="ActivCAD\ActivCAD.csproj" Description="Projet correctement converti">
+</Event><Event ErrorLevel="3" Project="ActivCAD" Source="ActivCAD\ActivCAD.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ACTIVA_Module_1.sln" Description="Solution correctement convertie">
+</Event><Event ErrorLevel="3" Project="" Source="ACTIVA_Module_1.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ACTIVA_Module_1" Source="ACTIVA_Module_1\ACTIVA_Module_1.csproj" Description="Analyse terminée : la mise à niveau n'est pas requise pour les fichiers projet.">
+</Event><Event ErrorLevel="0" Project="ActivCAD" Source="ActivCAD\ActivCAD.csproj" Description="Analyse terminée : la mise à niveau n'est pas requise pour les fichiers projet.">
+</Event></UpgradeLog>

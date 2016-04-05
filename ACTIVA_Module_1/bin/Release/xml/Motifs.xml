@@ -1,0 +1,26 @@
+<motifs>
+  <ponctuels>
+    <motif nom="ponc2" symbole="symbole2" echelle="2" />
+    <motif nom="Branchement" echelle="0.25" symbole="br" />
+    <motif nom="Brancht_obstrue" symbole="br_obstrue" echelle="0.25" />
+    <motif nom="Cable" symbole="cable" echelle="0.1" />
+    <motif nom="Brancht_NC" symbole="br_non_conforme" echelle="0.25" />
+  </ponctuels>
+  <lineaires>
+    <motif nom="cont1" ligne="continuous" epaisseur="3" />
+    <motif nom="Fissure_fermee" ligne="interrompux2" epaisseur="1" />
+    <motif nom="Fissure_ouverte" ligne="continuous" epaisseur="3" />
+    <motif nom="Fissure_ecaillee" ligne="zigzag" epaisseur="3" />
+    <motif nom="Micro_Fissure" ligne="interrompu2" epaisseur="1" />
+    <motif nom="Fissure_avec_calcite" ligne="2saen29" epaisseur="3" />
+  </lineaires>
+  <surfaciques>
+    <motif nom="surf1" hachure="hasch1" angle="30" echelle="2" />
+    <motif nom="Faiencage" hachure="honey" angle="0" echelle="20" />
+    <motif nom="Granulats_exposes" hachure="cross" angle="0" echelle="20" />
+    <motif nom="Revetement_ondule" hachure="ansi32" angle="0" echelle="10" />
+    <motif nom="Revetement_cloque" hachure="ansi31" angle="0" echelle="10" />
+    <motif nom="Paroi_manquante" hachure="hound" angle="0" echelle="10" />
+    <motif nom="Revetement_detache" hachure="ansi37" angle="0" echelle="20" />
+  </surfaciques>
+</motifs>

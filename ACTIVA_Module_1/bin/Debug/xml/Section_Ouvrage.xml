@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/formatSectionOuvrage.xsl"?>
+<!--un élément section contient un attribut et son contenu est la correspondance. Il peut exister moins de correspondance
+  que d'attributs horaires. Ces derniers commencent toujours à midi-->
+<sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\xsd\Schema_Section_Ouvrage.xsd">
+  <section id="Circulaire" ouvrage="CANALISATION" forme="A" intitule="Circulaire" position="1" image="Circulaire.bmp">
+    <heure id="12H" type="ligne_milieu">12H</heure>
+    <heure id="12H30">12H30</heure>
+    <heure id="1H">1H</heure>
+    <heure id="1H30">1H30</heure>
+    <heure id="2H">2H</heure>
+    <heure id="2H30">2H30</heure>
+    <heure id="3H" type="generatrice_secondaire">3H</heure>
+    <heure id="3H30">3H30</heure>
+    <heure id="4H">4H</heure>
+    <heure id="4H30">4H30</heure>
+    <heure id="5H">5H</heure>
+    <heure id="5H30">5H30</heure>
+    <heure id="6H" type="generatrice_primaire">6H</heure>
+    <heure id="6H30">6H30</heure>
+    <heure id="7H">7H</heure>
+    <heure id="7H30">7H30</heure>
+    <heure id="8H">8H</heure>
+    <heure id="8H30">8H30</heure>
+    <heure id="9H" type="generatrice_secondaire">9H</heure>
+    <heure id="9H30">9H30</heure>
+    <heure id="10H">10H</heure>
+    <heure id="10H30">10H30</heure>
+    <heure id="11H">11H</heure>
+    <heure id="11H30">11H30</heure>
+  </section>
+  <section id="Rectangle" ouvrage="CANALISATION" forme="B" intitule="Rectangulaire" position="1" image="Rectangle.bmp">
+    <heure id="12H" type="ligne_milieu">Axe du plafond</heure>
+    <heure id="12H30" />
+    <heure id="1H">Plafond D</heure>
+    <heure id="1H30">Angle plafond - Paroi D</heure>
+    <heure id="2H">Paroi D sup</heure>
+    <heure id="2H30" />
+    <heure id="3H">Paroi Moy</heure>
+    <heure id="3H30">
+    </heure>
+    <heure id="4H">Paroi D inf</heure>
+    <heure id="4H30" type="generatrice_secondaire">Angle Paroi D-Radier</heure>
+    <heure id="5H">Radier D</heure>
+    <heure id="5H30" />
+    <heure id="6H">Axe du radier</heure>
+    <heure id="6H30" />
+    <heure id="7H">Radier G</heure>
+    <heure id="7H30" type="generatrice_primaire">Angle Paroi G - Radier</heure>
+    <heure id="8H">Paroi G inf</heure>
+    <heure id="8H30" />
+    <heure id="9H">Paroi G moy</heure>
+    <heure id="9H30" />
+    <heure id="10H">Paroi G sup</heure>
+    <heure id="10H30" type="generatrice_secondaire">Angle Plafond - Paroi G</heure>
+    <heure id="11H" />
+    <heure id="11H30" />
+  </section>
+  <section id="OvoideSimple" ouvrage="CANALISATION" forme="C" intitule="Ovoïde simple" position="1" image="OvoideSimple.bmp">
+    <heure id="12H" type="ligne_milieu">CLE</heure>
+    <heure id="12H30">Fin 1/2VD - CLD - CDD</heure>
+    <heure id="1H">Milieu 1/2VD - MVD</heure>
+    <heure id="1H30">Début 1/V2D</heure>
+    <heure id="2H" type="generatrice_secondaire">NVD</heure>
+    <heure id="2H30" />
+    <heure id="3H">PDDsup. - PDH</heure>
+    <heure id="3H30">
+    </heure>
+    <heure id="4H">PDDmoy. -PDM</heure>
+    <heure id="4H30" />
+    <heure id="5H">PDDinf. - PDB</heure>
+    <heure id="5H30" type="generatrice_secondaire">FED - BPD</heure>
+    <heure id="6H">radier FIL - FIG</heure>
+    <heure id="6H30" type="generatrice_primaire">FEG - BPG</heure>
+    <heure id="7H">PDGinf. - PGB</heure>
+    <heure id="7H30" />
+    <heure id="8H">PDGmoy. - PGM</heure>
+    <heure id="8H30" />
+    <heure id="9H">PDGsup. - PGH</heure>
+    <heure id="9H30" />
+    <heure id="10H" type="generatrice_secondaire">NVG</heure>
+    <heure id="10H30">Début 1/2VG</heure>
+    <heure id="11H">Milieu 1/2VG - MVG</heure>
+    <heure id="11H30">Fin 1/2VG - CDG - CLG</heure>
+  </section>
+  <section id="OvoidecunetteDbanquetteD" ouvrage="CANALISATION" forme="C" intitule="Cunette gauche - Banquette droite" position="2" image="OvoideCunetteDecentree.bmp">
+    <heure id="12H" type="ligne_milieu">CLE</heure>
+    <heure id="12H30">Fin 1/2VD - CLD - CDD</heure>
+    <heure id="1H">Milieu 1/2VD - MVD</heure>
+    <heure id="1H30">Début 1/2VD</heure>
+    <heure id="2H" type="generatrice_secondaire">NVD</heure>
+    <heure id="2H30" />
+    <heure id="3H">PDDsup. - PDH</heure>
+    <heure id="3H30" />
+    <heure id="4H">PDDmoy. -PDM</heure>
+    <heure id="4H30" />
+    <heure id="5H" type="generatrice_secondaire">PDDinf. - PDB</heure>
+    <heure id="5H30">Banquette D - BPD</heure>
+    <heure id="6H" type="generatrice_secondaire">BJD - FIL</heure>
+    <heure id="6H30">Cunette G - BPG - BJG</heure>
+    <heure id="7H" type="generatrice_primaire">PDGinf. - PGB</heure>
+    <heure id="7H30" />
+    <heure id="8H">PDGmoy. - PGM</heure>
+    <heure id="8H30" />
+    <heure id="9H">PDGsup. - PGH</heure>
+    <heure id="9H30" />
+    <heure id="10H" type="generatrice_secondaire">NVG</heure>
+    <heure id="10H30">Début 1/2VG</heure>
+    <heure id="11H">Milieu 1/2VG - MVG</heure>
+    <heure id="11H30">Fin 1/2VG - CDG - CLG</heure>
+  </section>
+  <section id="OvoidecunetteGbanquetteD" ouvrage="CANALISATION" forme="C" intitule="Cunette droite - Banquette gauche" position="3" image="OvoideCunetteDecentree.bmp">
+    <heure id="12H" type="ligne_milieu">CLE</heure>
+    <heure id="12H30">Fin 1/2VD - CLD - CDD</heure>
+    <heure id="1H">Milieu 1/2VD - MVD</heure>
+    <heure id="1H30">Début 1/V2D</heure>
+    <heure id="2H" type="generatrice_secondaire">NVD</heure>
+    <heure id="2H30" />
+    <heure id="3H">PDDsup. - PDH</heure>
+    <heure id="3H30">
+    </heure>
+    <heure id="4H">PDDmoy. -PDM</heure>
+    <heure id="4H30">
+    </heure>
+    <heure id="5H" type="generatrice_secondaire">PDDinf. - PDB</heure>
+    <heure id="5H30">Cunette D - BPD</heure>
+    <heure id="6H" type="generatrice_secondaire">BJG - FIG</heure>
+    <heure id="6H30">Banquette G - BJG</heure>
+    <heure id="7H" type="generatrice_primaire">PDGinf. - PGB</heure>
+    <heure id="7H30">
+    </heure>
+    <heure id="8H">PDGmoy. - PGM</heure>
+    <heure id="8H30" />
+    <heure id="9H">PDGsup. - PGH</heure>
+    <heure id="9H30" />
+    <heure id="10H" type="generatrice_secondaire">NVG</heure>
+    <heure id="10H30">Début 1/2VG</heure>
+    <heure id="11H">Milieu 1/2VG - MVG</heure>
+    <heure id="11H30">Fin 1/2VG - CDG - CLG</heure>
+  </section>
+  <section id="OvoideCunetteCentree" ouvrage="CANALISATION" forme="C" intitule="Cunette centrale - Banquettes doubles" position="4" image="OvoideCunetteCentree.bmp">
+    <heure id="12H" type="ligne_milieu">CLE</heure>
+    <heure id="12H30">Fin 1/2VD - CLD - CDD</heure>
+    <heure id="1H">Milieu 1/2VD - MVD</heure>
+    <heure id="1H30">Début 1/2VD</heure>
+    <heure id="2H" type="generatrice_secondaire">NVD</heure>
+    <heure id="2H30">PDDsup. - PDH</heure>
+    <heure id="3H">PDDsup. - PDM</heure>
+    <heure id="3H30">PDDsup. - PDB</heure>
+    <heure id="4H">BDP</heure>
+    <heure id="4H30" type="generatrice_secondaire">Banquette D</heure>
+    <heure id="5H" type="generatrice_secondaire">BJDsup. - FIL</heure>
+    <heure id="5H30">BJDinf. - FIL</heure>
+    <heure id="6H">Radier</heure>
+    <heure id="6H30">PDGinf. - FIG</heure>
+    <heure id="7H" type="generatrice_secondaire">PDGsup. - FIG</heure>
+    <heure id="7H30" type="generatrice_primaire">Banquette G</heure>
+    <heure id="8H">BPG</heure>
+    <heure id="8H30">PDGinf. - PGB</heure>
+    <heure id="9H">PDGmoy. - PGH</heure>
+    <heure id="9H30">PDGsup. - PGH</heure>
+    <heure id="10H" type="generatrice_secondaire">NVG</heure>
+    <heure id="10H30">Début 1/2VG</heure>
+    <heure id="11H">Milieu 1/2VG - MVG</heure>
+    <heure id="11H30">Fin 1/2VG - CDG - CLG</heure>
+  </section>
+  <section id="FormeU" ouvrage="CANALISATION" forme="D" intitule="En U" position="1" image="FormeU.bmp">
+    <heure id="12H" type="ligne_milieu">Axe du plafond</heure>
+    <heure id="12H30">Plafond D</heure>
+    <heure id="1H" type="generatrice_secondaire">Angle Plafond D - PDD</heure>
+    <heure id="1H30" />
+    <heure id="2H">PDDsup. - PDH</heure>
+    <heure id="2H30" />
+    <heure id="3H">PDD PDM</heure>
+    <heure id="3H30" />
+    <heure id="4H">PDDinf. - PDB</heure>
+    <heure id="4H30" type="generatrice_secondaire">BPD</heure>
+    <heure id="5H">FED - FIL</heure>
+    <heure id="5H30" />
+    <heure id="6H">Radier - RAD</heure>
+    <heure id="6H30" />
+    <heure id="7H">FEG - FIG</heure>
+    <heure id="7H30" type="generatrice_primaire">BPG</heure>
+    <heure id="8H">PDGinf. - PGB</heure>
+    <heure id="8H30" />
+    <heure id="9H">PDGmoy. - PGM</heure>
+    <heure id="9H30" />
+    <heure id="10H">PDGsup. - PGH</heure>
+    <heure id="10H30">Angle Plafond - Paroi PDG</heure>
+    <heure id="11H" type="generatrice_secondaire" />
+    <heure id="11H30">Plafond G</heure>
+  </section>
+  <section id="Arc" ouvrage="CANALISATION" forme="E" intitule="En Arc" position="1" image="Arc.bmp">
+    <heure id="12H" type="ligne_milieu">CLE</heure>
+    <heure id="12H30">Fin 1/2VD - CLD - CDD</heure>
+    <heure id="1H">Milieu 1/2VD - MVD</heure>
+    <heure id="1H30">Début 1/2VD</heure>
+    <heure id="2H" type="generatrice_secondaire">NVD</heure>
+    <heure id="2H30" />
+    <heure id="3H">PDDsup. - PDH</heure>
+    <heure id="3H30">
+    </heure>
+    <heure id="4H">PDDmoy. - PDM</heure>
+    <heure id="4H30">
+    </heure>
+    <heure id="5H" type="generatrice_secondaire">PDDinf. - PDB</heure>
+    <heure id="5H30">BDP</heure>
+    <heure id="6H">Radier - BJD - FIL</heure>
+    <heure id="6H30">BPG</heure>
+    <heure id="7H" type="generatrice_primaire">PDGinf. - PGB</heure>
+    <heure id="7H30" />
+    <heure id="8H">PDGmoy. - PGM</heure>
+    <heure id="8H30" />
+    <heure id="9H">PDGsup. - PGH</heure>
+    <heure id="9H30" />
+    <heure id="10H" type="generatrice_secondaire">NVG</heure>
+    <heure id="10H30">Début 1/2VG</heure>
+    <heure id="11H">Milieu 1/2VG - MVG</heure>
+    <heure id="11H30">Fin 1/2VG - CDG - CLG</heure>
+  </section>
+  <section id="ovale" ouvrage="CANALISATION" forme="F" intitule="Ovale" position="1" image="ovale.bmp">
+    <heure id="12H" type="ligne_milieu">CLE</heure>
+    <heure id="12H30">Milieu 1/2VD - MVD</heure>
+    <heure id="1H" type="generatrice_secondaire">NVD</heure>
+    <heure id="1H30" />
+    <heure id="2H">PDDsup. - PDH</heure>
+    <heure id="2H30" />
+    <heure id="3H">PDDmoy. - PDM</heure>
+    <heure id="3H30" />
+    <heure id="4H">PDDinf. - PDB</heure>
+    <heure id="4H30" />
+    <heure id="5H" type="generatrice_secondaire">FED - FIL</heure>
+    <heure id="5H30" />
+    <heure id="6H">Radier - RAD</heure>
+    <heure id="6H30" />
+    <heure id="7H" type="generatrice_primaire">FEG - FIG</heure>
+    <heure id="7H30" />
+    <heure id="8H">PDGinf. - PGB</heure>
+    <heure id="8H30" />
+    <heure id="9H">PDGmoy. - PGM</heure>
+    <heure id="9H30" />
+    <heure id="10H">PDGsup. - PGH</heure>
+    <heure id="10H30" />
+    <heure id="11H" type="generatrice_secondaire">NVG</heure>
+    <heure id="11H30">Milieu 1/2VG - MVG</heure>
+  </section>
+  <section id="autre" ouvrage="CANALISATION" forme="Z" intitule="Autre" position="1" image="RectangleRegard.bmp">
+    <heure id="12H">Paroi aval</heure>
+    <heure id="12H30" />
+    <heure id="1H" />
+    <heure id="1H30">Angle paroi aval - paroi droite</heure>
+    <heure id="2H" />
+    <heure id="2H30" />
+    <heure id="3H">Paroi droite</heure>
+    <heure id="3H30" />
+    <heure id="4H" />
+    <heure id="4H30">Angle paroi droite - paroi amont</heure>
+    <heure id="5H" />
+    <heure id="5H30" />
+    <heure id="6H">Paroi amont</heure>
+    <heure id="6H30" />
+    <heure id="7H" />
+    <heure id="7H30">Angle paroi amont - paroi gauche</heure>
+    <heure id="8H" />
+    <heure id="8H30" />
+    <heure id="9H">Paroi gauche</heure>
+    <heure id="9H30" />
+    <heure id="10H" />
+    <heure id="10H30">Angle paroi gauche - paroi aval</heure>
+    <heure id="11H" />
+    <heure id="11H30" />
+  </section>
+  <section id="Rectangle Regard" ouvrage="REGARD" forme="A" intitule="Rectangle Regard" position="1" image="RectangleRegard.bmp">
+    <heure id="12H" type="">Paroi aval</heure>
+    <heure id="12H30" />
+    <heure id="1H" />
+    <heure id="1H30" type="generatrice_primaire">Angle paroi aval - paroi droite</heure>
+    <heure id="2H" />
+    <heure id="2H30" />
+    <heure id="3H">Paroi droite</heure>
+    <heure id="3H30" />
+    <heure id="4H" />
+    <heure id="4H30" type="generatrice_primaire">Angle paroi droite - paroi amont</heure>
+    <heure id="5H" />
+    <heure id="5H30" />
+    <heure id="6H">Paroi amont</heure>
+    <heure id="6H30" />
+    <heure id="7H" />
+    <heure id="7H30" type="generatrice_primaire">Angle paroi amont - paroi gauche</heure>
+    <heure id="8H" />
+    <heure id="8H30" />
+    <heure id="9H">Paroi gauche</heure>
+    <heure id="9H30" />
+    <heure id="10H" />
+    <heure id="10H30" type="generatrice_primaire">Angle paroi aval - paroi gauche </heure>
+    <heure id="11H" />
+    <heure id="11H30" />
+  </section>
+  <section id="Circulaire Regard" ouvrage="REGARD" forme="B" intitule="Circulaire Regard" position="1" image="Circulaire.bmp">
+    <heure id="12H" type="ligne_milieu">12H</heure>
+    <heure id="12H30">12H30</heure>
+    <heure id="1H">1H</heure>
+    <heure id="1H30">1H30</heure>
+    <heure id="2H">2H</heure>
+    <heure id="2H30">2H30</heure>
+    <heure id="3H" type="generatrice_secondaire">3H</heure>
+    <heure id="3H30">3H30</heure>
+    <heure id="4H">4H</heure>
+    <heure id="4H30">4H30</heure>
+    <heure id="5H">5H</heure>
+    <heure id="5H30">5H30</heure>
+    <heure id="6H" type="generatrice_primaire">6H</heure>
+    <heure id="6H30">6H30</heure>
+    <heure id="7H">7H</heure>
+    <heure id="7H30">7H30</heure>
+    <heure id="8H">8H</heure>
+    <heure id="8H30">8H30</heure>
+    <heure id="9H" type="generatrice_secondaire">9H</heure>
+    <heure id="9H30">9H30</heure>
+    <heure id="10H">10H</heure>
+    <heure id="10H30">10H30</heure>
+    <heure id="11H">11H</heure>
+    <heure id="11H30">11H30</heure>
+  </section>
+</sections>

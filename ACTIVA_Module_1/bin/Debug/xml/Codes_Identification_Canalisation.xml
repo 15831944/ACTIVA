@@ -1,0 +1,762 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--<?xml-stylesheet type="text/xsl" href="../xsl/formatIdentificationCode.xsl"?>-->
+<?xml-stylesheet type="text/xsl" href="../xsl/Liste_IdentificationCode.xsl"?>
+<!-- L'id du code concatène la valeur de Modele.Initial.Code (membre statique de Inspection.Identification.Modele)-->
+<!-- La saisie correspond à l'énumération définit dans Traitement.Code.cs (détermine si la saisie du code sélectionné
+      est obligatoire ou non et définit le protocole ou la norme en usage)-->
+<!-- La balise renseigne correspond à l'énumération définit dans Traitement.Selection.cs (détermine si le code sélectionné
+      doit avoir tout ses champs renseignés immédiatement ou non)-->
+<!-- La valeur d'énumération de la saisie (3) impose que le traitement de ce code soit accessible à la seule demande de l'utilisateur-->
+<!-- La valeur d'énumération du renseignement (3) n'impose pas de traitement particulier-->
+<!-- NOTA BENE : les remarques ci-dessous s'appliquent uniquement à la partie de l'identification utilisée dans le cartouche-->
+<!-- <codes> -->
+<codes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\xsd\Schema_Codes_Identification.xsd">
+  <code reporte="False" position="0" parent="Ouvrage">
+    <id>AAA</id>
+    <intitule>Référence de tronçon</intitule>
+    <valeur type="texte" />
+    <saisie>0</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="False" position="1" parent="Ouvrage">
+    <id>AAB</id>
+    <intitule>Référence du noeud de départ</intitule>
+    <valeur type="texte" />
+    <saisie>0</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="False" position="2" parent="Ouvrage">
+    <id>AAC</id>
+    <intitule>Coordonnées noeud départ</intitule>
+    <valeur type="numerique" unite="m" />
+    <saisie>0</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="False" position="3" parent="Ouvrage">
+    <id>AAD</id>
+    <intitule>Référence du noeud 1</intitule>
+    <valeur type="texte" />
+    <saisie>0</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="False" position="4" parent="Ouvrage">
+    <id>AAE</id>
+    <intitule>Coordonnées du noeud 1</intitule>
+    <valeur type="numerique" unite="m" />
+    <saisie>0</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="False" position="5" parent="Ouvrage">
+    <id>AAF</id>
+    <intitule>Référence du noeud 2</intitule>
+    <valeur type="texte" />
+    <saisie>0</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="False" position="6" parent="Ouvrage">
+    <id>AAG</id>
+    <intitule>Coordonnées du noeud 2</intitule>
+    <valeur type="numerique" unite="m" />
+    <saisie>0</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="False" position="7" parent="Ouvrage">
+    <id>AAH</id>
+    <intitule>Emplacement longitudinale du point de départ de la canalisation latérale</intitule>
+    <valeur type="numerique" unite="m" />
+    <saisie>0</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="False" position="8" parent="Ouvrage">
+    <id>AAI</id>
+    <intitule>Emplacement circonférentiel du point de départ de la canalisation latérale</intitule>
+    <valeur type="horaire" />
+    <saisie>0</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="true" position="0" parent="Lieu">
+    <id>AAJ</id>
+    <intitule>Emplacement (nom de voie)</intitule>
+    <valeur type="texte" />
+    <saisie>0</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="9" parent="Ouvrage">
+    <id>AAK</id>
+    <intitule>Sens de visite</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">Aval - Dans le sens de l'écoulement</item>
+      <item nom="B" position="1">Amont - Dans le sens opposée à l'écoulement</item>
+      <item nom="C" position="2">Inconnu - Le sens de l'écoulement est inconnu</item>
+    </valeur>
+    <saisie>2</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="False" position="10" parent="Ouvrage" ajoute="True">
+    <id>AAXA</id>
+    <intitule>Référence du noeud d'arrivée</intitule>
+    <valeur type="texte" />
+    <saisie>1</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="False" position="11" parent="Ouvrage" ajoute="True">
+    <id ajoute="true">AAXB</id>
+    <intitule ajoute="true">Coordonnées noeud d'arrivée</intitule>
+    <valeur type="numerique" unite="m" />
+    <saisie>1</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="False" position="1" parent="Lieu">
+    <id>AAL</id>
+    <intitule>Type d'emplacement</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">Sous une route</item>
+      <item nom="B" position="1">Sous un trottoir</item>
+      <item nom="C" position="2">Sous l'accotement d'une route</item>
+      <item nom="D" position="3">Dans une autre zone piétonnière</item>
+      <item nom="E" position="4">Dans un champ</item>
+      <item nom="F" position="5">Sous une propriété bâtie</item>
+      <item nom="G" position="6">Sous des jardins</item>
+      <item nom="H" position="7">Sous un bâtiment permanent</item>
+      <item nom="I" position="8">Sous un terrain boisé</item>
+      <item nom="J" position="9">Accès difficile</item>
+      <item nom="K" position="10">Sous une voie navigable</item>
+      <item nom="Z" position="11" lien="True">Autre</item>
+    </valeur>
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="2" parent="Lieu">
+    <id>AAM</id>
+    <intitule>Autorité responsable</intitule>
+    <valeur type="texte" />
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="3" parent="Lieu">
+    <id>AAN</id>
+    <intitule>Ville ou village</intitule>
+    <valeur type="texte" />
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="4" parent="Lieu">
+    <id>AAO</id>
+    <intitule>Quartier</intitule>
+    <valeur type="texte" />
+    <saisie>3</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="true" position="5" parent="Lieu">
+    <id>AAP</id>
+    <intitule>Nom du réseau d'assainissement</intitule>
+    <valeur type="texte" />
+    <saisie>3</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="true" position="6" parent="Lieu">
+    <id>AAQ</id>
+    <intitule>Propriété foncière</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">Bien public</item>
+      <item nom="B" position="1">Bien privé</item>
+      <item nom="C" position="2">Inconnue</item>
+    </valeur>
+    <saisie>3</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="true" position="7" parent="Lieu" ajoute="True">
+    <id ajoute="true">AAXP </id>
+    <intitule ajoute="true">Nature du bien public</intitule>
+    <valeur type="item">
+      <item nom="XA" ajoute="true" position="0">Bien communal</item>
+      <item nom="XB" ajoute="true" position="1">Bien départemental</item>
+      <item nom="XC" ajoute="true" position="2">Bien intercommunal</item>
+      <item nom="XD" ajoute="true" position="3">Autre</item>
+    </valeur>
+    <saisie>3</saisie>
+    <renseigne>3</renseigne>
+  </code>
+    <code reporte="true" position="8" parent="Lieu">
+    <id>AAT</id>
+    <intitule>Référence du noeud 3</intitule>
+    <valeur type="texte" />
+    <saisie>3</saisie>
+    <renseigne>3</renseigne>
+  </code>
+    <code reporte="true" position="9" parent="Lieu">
+    <id>AAU</id>
+    <intitule>Coordonnées du noeud 3</intitule>
+    <valeur type="texte" />
+    <saisie>3</saisie>
+    <renseigne>3</renseigne>
+  </code>
+    <code reporte="true" position="10" parent="Lieu">
+    <id>AAV</id>
+    <intitule>Point de départ de l'inspection latérale</intitule>
+    <valeur type="texte" />
+    <saisie>3</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="true" position="0" parent="Support">
+    <id>ABA</id>
+    <intitule>Référence norme de codage</intitule>
+    <valeur type="texte" />
+    <saisie>0</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="1" parent="Support">
+    <id>ABB</id>
+    <intitule>Système de codage initial</intitule>
+    <valeur type="texte" />
+    <saisie>3</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="true" position="2" parent="Support">
+    <id>ABC</id>
+    <intitule>Point de référence longitudinal</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">Face intérieure de la paroi du noeud de départ où le branchement ou le collector se raccorde sur la paroi</item>
+      <item nom="B" position="1">Intrados du tronçon à l'intérieur du noeud de départ</item>
+      <item nom="C" position="2">Centre du regard de visite ou de la boîte d'inspection de départ</item>
+      <item nom="D" position="3">Point central des canalisations entrantes et sortantes, mesuré le long de la cunette</item>
+      <item nom="Z" lien="true" position="4">Autre - il convient de noter les autres informations à l'aide ADE mentionné immédiatement après</item>
+    </valeur>
+    <saisie>0</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="0" parent="Organisme">
+    <id>ABE</id>
+    <intitule>Méthode d'inspection</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">Par un inspecteur se déplaçant dans la canalisation</item>
+      <item nom="B" position="1">Par une télécaméra circulant dans la canalisation</item>
+      <item nom="C" position="2">A partir du regard de visite ou de la boîte d'inspection uniquement</item>
+    </valeur>
+    <saisie>0</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="8" parent="Lieu">
+    <id>ABF</id>
+    <intitule>Date de l'inspection</intitule>
+    <valeur type="date" />
+    <saisie>0</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="9" parent="Lieu">
+    <id>ABG</id>
+    <intitule>Heure d'inspection (hh:mm)</intitule>
+    <valeur type="texte" />
+    <saisie>3</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="true" position="2" parent="Organisme">
+    <id>ABH</id>
+    <intitule>Nom de l'inspecteur</intitule>
+    <valeur type="texte" />
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="3" parent="Organisme" ajoute="True">
+    <id>ABXE</id>
+    <intitule ajoute="true">Nom de l'employeur</intitule>
+    <valeur type="texte" />
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="4" parent="Organisme">
+    <id>ABI</id>
+    <intitule>Fonction de l'inspecteur</intitule>
+    <valeur type="texte" />
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="5" parent="Organisme">
+    <id>ABJ</id>
+    <intitule>Fonction de l'employeur</intitule>
+    <valeur type="texte" />
+    <saisie>3</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="true" position="10" parent="Lieu" ajoute="True">
+    <id ajoute="true">ABXA</id>
+    <intitule ajoute="true">Client</intitule>
+    <valeur type="texte" />
+    <saisie>2</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="3" parent="Support" ajoute="False">
+    <id>ABK</id>
+    <intitule>Stockage des images vidéo</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">Cassette vidéo VHS</item>
+      <item nom="B" position="1">CD vidéo</item>
+	  <item nom="C" position="2">DVD vidéo </item>
+      <item nom="D" position="3">CD de données</item>
+	  <item nom="E" position="4">DVD de données</item>
+      <item nom="F" position="5">Disque dur portable</item>
+      <item nom="Z" lien="true" position="6">Autre - il convient de noter les autres informations à l'aide ADE mentionné immédiatement après</item>
+    </valeur>
+    <saisie>3</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="true" position="4" parent="Support">
+    <id>ABL</id>
+    <intitule>Stockage des photographies</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">Images fixes</item>
+      <item nom="B" position="1">Hors d'usage - données existantes devant s'énoncer comme si la caractérisation était Z</item>
+	  <item nom="C" position="2">Windows Meta File - WMF</item>
+	  <item nom="D" position="3">Graphic Image File - GIF</item>
+	  <item nom="E" position="4">JPEG</item>
+      <item nom="Z" position="5">Autre - il convient de noter les autres informations à l'aide ADE mentionné immédiatement après</item>
+    </valeur>
+    <saisie>3</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="true" position="5" parent="Support">
+    <id>ABM</id>
+    <intitule>Système de position sur la bande vidéo</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">Compteur en heures et en minutes depuis le début de la bande</item>
+      <item nom="B" position="1">Compteur numérique dépendant de la machine</item>
+      <item nom="Z" lien="true" position="2">Autre - il convient de noter les autres informations à l'aide ADE mentionné immédiatement après</item>
+    </valeur>
+    <saisie>3</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="true" position="6" parent="Support">
+    <id>ABN</id>
+    <intitule>Référence de photographie</intitule>
+    <valeur type="texte" />
+    <saisie>1</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="true" position="7" parent="Support">
+    <id>ABO</id>
+    <intitule>Référence de vidéo</intitule>
+    <valeur type="texte" />
+    <saisie>1</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="true" position="11" parent="Lieu">
+    <id>ABP</id>
+    <intitule>Objet de l'inspection</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">Contrôle final d'une nouvelle construction</item>
+      <item nom="B" position="1">Fin de la période de garantie</item>
+      <item nom="C" position="2">Inspection de routine de l'état</item>
+      <item nom="D" position="3">Problème structurel suspecté</item>
+      <item nom="E" position="4">Problème opérationnel suspecté</item>
+      <item nom="F" position="5">Problème d'infiltration suspecté</item>
+      <item nom="G" position="6">Contrôle final de travaux de rénovation ou de réparation</item>
+      <item nom="H" position="7">Transfert de propriété</item>
+      <item nom="I" position="8">Planification d'investissement</item>
+      <item nom="J" position="9">Etude par échantillon</item>
+      <item nom="Z" lien="true" position="10">Autre - il convient de noter les autres informations à l'aide ADE mentionné immédiatement après</item>
+    </valeur>
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="12" parent="Ouvrage">
+    <id>ABQ</id>
+    <intitule>Durée d'inspection prévue (hh:mm)</intitule>
+    <valeur type="texte" />
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="6" parent="Organisme" ajoute="True">
+    <id ajoute="true">ABXB</id>
+    <intitule ajoute="true">Dossier</intitule>
+    <valeur type="texte" />
+    <saisie>2</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="11" parent="Lieu" ajoute="True">
+    <id ajoute="true">ABXC</id>
+    <intitule ajoute="true">Maître d'oeuvre</intitule>
+    <valeur type="texte" />
+    <saisie>2</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="12" parent="Lieu" ajoute="True">
+    <id ajoute="true">ABXD</id>
+    <intitule ajoute="true">Entreprise de pose</intitule>
+    <valeur type="texte" />
+    <saisie>2</saisie>
+    <renseigne>3</renseigne>
+  </code>
+    <code reporte="true" position="13" parent="Ouvrage">
+    <id>ABR</id>
+    <intitule>Format d'images vidéo</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">Type fixe sur support</item>
+      <item nom="B" position="1">MPEG1</item>
+      <item nom="C" position="2">MPEG2</item>
+      <item nom="D" position="3">MPEG4</item>
+      <item nom="Z" lien="true" position="4">Autre - il convient de noter les autres informations à l'aide ADE mentionné immédiatement après</item>
+    </valeur>
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+    <code reporte="true" position="14" parent="Ouvrage">
+    <id>ABS</id>
+    <intitule>Nom de fichier d'images vidéo</intitule>
+    <valeur type="texte" />
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+    <code reporte="true" position="15" parent="Ouvrage">
+    <id>ABT</id>
+    <intitule>Etape de l'inspection</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">De l'autorité responsable à l'inspecteur</item>
+      <item nom="B" position="1">De l'inspecteur à l'autorité responsable pour étude</item>
+      <item nom="C" position="2">Dans les mains de l'autorité responsable après étude</item>
+      <item nom="Z" lien="true" position="3">Autre - il convient de noter les autres informations à l'aide ADE mentionné immédiatement après</item>
+    </valeur>
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="0" parent="Element">
+    <id>ACA</id>
+    <intitule ajoute="true">Forme de la section</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">Circulaire</item>
+      <item nom="B" position="1">Rectangulaire</item>
+      <item nom="C" position="2">Ovoïde</item>
+      <item nom="D" position="3">En U</item>
+      <item nom="E" position="4">En arc</item>
+      <item nom="F" position="5">Ovale</item>
+      <item nom="Z" lien="true" position="7">Autre - il convient de noter les autres informations à l'aide ADE mentionné immédiatement après</item>
+    </valeur>
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="True" position="1" parent="Element">
+    <id>ACB</id>
+    <intitule>Hauteur de la section</intitule>
+    <valeur type="numerique" unite="mm" />
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="True" position="2" parent="Element">
+    <id>ACC</id>
+    <intitule>Largueur de la section</intitule>
+    <valeur type="numerique" unite="mm" />
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="True" position="3" parent="Element">
+    <id ajoute="true">ACXA</id>
+    <intitule ajoute="true">Type de la cunette</intitule>
+    <valeur type="item">
+      <item nom="XA" position="0" ajoute="true">Cunette gauche</item>
+      <item nom="XB" position="1" ajoute="true">Cunette droite</item>
+      <item nom="XC" position="2" ajoute="true">Cunette centrale</item>
+      <item nom="XD" position="3" ajoute="true">Cunette décentrée</item>
+      <item nom="XE" position="3" ajoute="true">Absence de la cunette</item>
+    </valeur>
+    <saisie>1</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="True" position="4" parent="Element" ajoute="True">
+    <id ajoute="true">ACXB</id>
+    <intitule ajoute="true">Hauteur de la cunette</intitule>
+    <valeur type="numerique" unite="mm" />
+    <saisie>1</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="True" position="5" parent="Element" ajoute="True">
+    <id ajoute="true">ACXC</id>
+    <intitule ajoute="true">Largeur de la cunette</intitule>
+    <valeur type="numerique" unite="mm" />
+    <saisie>1</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="True" position="6" parent="Element" ajoute="True">
+    <id ajoute="true">ACXD</id>
+    <intitule ajoute="true">Type de la banquette 1</intitule>
+    <valeur type="item">
+      <item nom="XA" position="0" ajoute="true">Banquette gauche</item>
+      <item nom="XB" position="1" ajoute="true">Banquette droite</item>
+      <item nom="XC" position="3" ajoute="true">Absence de la banquette</item>
+    </valeur>
+    <saisie>1</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="True" position="7" parent="Element" ajoute="True">
+    <id ajoute="true">ACXE</id>
+    <intitule ajoute="true">Hauteur de la banquette 1</intitule>
+    <valeur type="numerique" unite="mm" />
+    <saisie>1</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="True" position="8" parent="Element" ajoute="True">
+    <id ajoute="true">ACXF</id>
+    <intitule ajoute="true">Largeur de la banquette 1</intitule>
+    <valeur type="numerique" unite="mm" />
+    <saisie>1</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="True" position="9" parent="Element" ajoute="True">
+    <id ajoute="true">ACXG</id>
+    <intitule ajoute="true">Type de la banquette 2</intitule>
+    <valeur type="item">
+      <item nom="XA" position="0" ajoute="true">Banquette gauche</item>
+      <item nom="XB" position="1" ajoute="true">Banquette droite</item>
+      <item nom="XC" position="3" ajoute="true">Absence de la banquette</item>
+    </valeur>
+    <saisie>1</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="True" position="10" parent="Element" ajoute="True">
+    <id ajoute="true">ACXH</id>
+    <intitule ajoute="true">Hauteur de la banquette 2 (supérieure)</intitule>
+    <valeur type="numerique" unite="mm" />
+    <saisie>1</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="True" position="11" parent="Element" ajoute="True">
+    <id ajoute="true">ACXI</id>
+    <intitule ajoute="true">Largeur de la banquette 2</intitule>
+    <valeur type="numerique" unite="mm" />
+    <saisie>1</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="True" position="12" parent="Element" ajoute="False">
+    <id>ACD</id>
+    <intitule>Matériau (constitutif)</intitule>
+    <valeur type="item">
+      <item nom="AA" position="0">Amiante-ciment</item>
+      <item nom="AB" position="1">Bitume</item>
+      <item nom="AC" position="2">Fibres projetées</item>
+      <item nom="AD" position="3">Briquetage</item>
+      <item nom="AE" position="4">Grès</item>
+      <item nom="AF" position="5">Mortier ciment</item>
+      <item nom="AG" position="6">Béton</item>
+      <item nom="AH" position="7">Béton armé</item>
+      <item nom="AI" position="8">Béton projeté</item>
+      <item nom="AJ" position="9">Segments de béton</item>
+      <item nom="AK" position="10">Fibres-ciment</item>
+      <item nom="AL" position="11">Plastiques renforcés de fibres</item>
+      <item nom="AM" position="12">Fonte</item>
+      <item nom="AN" position="13">Fonte grise</item>
+      <item nom="AO" position="14">Fonte ductile</item>
+      <item nom="AP" position="15">Acier</item>
+      <item nom="AQ" position="16">Type non identifié de fer ou d'acier</item>
+      <item nom="AR" position="17">Maçonnerie (appareillée)</item>
+      <item nom="AS" position="18">Maçonnerie (non appareillée)</item>
+      <item nom="AT" position="19">Epoxy</item>
+      <item nom="AU" position="20">Polyester</item>
+      <item nom="AV" position="21">Polyéthylène</item>
+      <item nom="AW" position="22">Polypropylène</item>
+      <item nom="AX" position="23">PVC-U</item>
+      <item nom="AY" position="24">Type non identifié de plastique</item>
+      <item nom="AZ" position="25">Matériau non identifié</item>
+      <item nom="Z" lien="true" position="26">Autre - il convient de noter les autres informations dans les remarques</item>
+    </valeur>
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="13" parent="Element">
+    <id>ACE</id>
+    <intitule>Type de revêtement</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">Revêtement intégré lors de la fabrication</item>
+      <item nom="B" position="1">Revêtement projeté</item>
+      <item nom="C" position="2">Revêtement polymérisé sur place</item>
+      <item nom="D" position="3">Revêtements segmentaires</item>
+      <item nom="E" position="4">Revêtement par tuyaux discontinus</item>
+      <item nom="F" position="5">Revêtement par tubage continu</item>
+      <item nom="G" position="6">Revêtement sans espace annulaire</item>
+      <item nom="H" position="7">Revêtement enroulé en spirale</item>
+      <item nom="Z" lien="true" position="8">Autre - il convient de noter les autres informations à l'aide ADE mentionné immédiatement après</item>
+    </valeur>
+    <saisie>3</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="true" position="14" parent="Element">
+    <id>ACF</id>
+    <intitule>Matériau de revêtement</intitule>
+    <valeur type="item">
+      <item nom="AA" position="0">Amiante-ciment</item>
+      <item nom="AB" position="1">Bitume</item>
+      <item nom="AC" position="2">Fibres projetées</item>
+      <item nom="AD" position="3">Briquetage</item>
+      <item nom="AE" position="4">Grès</item>
+      <item nom="AF" position="5">Mortier ciment</item>
+      <item nom="AG" position="6">Béton</item>
+      <item nom="AH" position="7">Béton armé</item>
+      <item nom="AI" position="8">Béton projeté</item>
+      <item nom="AJ" position="9">Segments de béton</item>
+      <item nom="AK" position="10">Fibres-ciment</item>
+      <item nom="AL" position="11">Plastiques renforcés de fibres</item>
+      <item nom="AM" position="12">Fonte</item>
+      <item nom="AN" position="13">Fonte grise</item>
+      <item nom="AO" position="14">Fonte ductile</item>
+      <item nom="AP" position="15">Acier</item>
+      <item nom="AQ" position="16">Type non identifié de fer ou d'acier</item>
+      <item nom="AR" position="17">Maçonnerie (appareillée)</item>
+      <item nom="AS" position="18">Maçonnerie (non appareillée)</item>
+      <item nom="AT" position="19">Epoxy</item>
+      <item nom="AU" position="20">Polyester</item>
+      <item nom="AV" position="21">Polyéthylène</item>
+      <item nom="AW" position="22">Polypropylène</item>
+      <item nom="AX" position="23">PVC-U</item>
+      <item nom="AY" position="24">Type non identifié de plastique</item>
+      <item nom="AZ" position="25">Matériau non identifié</item>
+      <item nom="Z" lien="true" position="26">Autre - il convient de noter les autres informations dans les remarques </item>
+    </valeur>
+    <saisie>3</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="true" position="15" parent="Element">
+    <id>ACG</id>
+    <intitule>Longueur unitaire de conduite</intitule>
+    <valeur type="numerique" unite="mm" />
+    <saisie>1</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="False" position="13" parent="Ouvrage">
+    <id>ACH</id>
+    <intitule>Profondeur au noeud de départ</intitule>
+    <valeur type="numerique" unite="mm" />
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="False" position="14" parent="Ouvrage">
+    <id>ACI</id>
+    <intitule>Profondeur au noeud d'arrivée</intitule>
+    <valeur type="numerique" unite="mm" />
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="15" parent="Ouvrage">
+    <id>ACJ</id>
+    <intitule>Type de branchement ou de collecteur</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">Branchement ou collecteur gravitaire</item>
+      <item nom="B" position="1">Conduite de relèvement</item>
+	  <item nom="B" position="2">Tuyau d'aspiration</item>
+      <item nom="XA" position="3" ajoute="true">Galerie de regard</item>
+      <item nom="XB" position="4" ajoute="true">Galerie d'avaloir</item>
+      <item nom="XC" position="5" ajoute="true">Emissaire</item>
+      <item nom="XD" position="6" ajoute="true">Siphon</item>
+      <item nom="XE" position="7" ajoute="true">Déversoir d'orage</item>
+      <item nom="XF" position="8" ajoute="true">By-pass</item>
+      <item nom="XG" position="9" ajoute="true">Galerie technique</item>
+      <item nom="XH" position="10" ajoute="true">Galerie de liaison entre deux ouvrages</item>
+      <item nom="XZ" lien="true" position="11" ajoute="true">Autre</item>
+    </valeur>
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="16" parent="Ouvrage">
+    <id>ACK</id>
+    <intitule>Utilisation du branchement ou du collecteur</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">Branchement ou collecteur d'eaux usées uniquement</item>
+      <item nom="B" position="1">Branchement ou collecteur d'eaux de surface uniquement</item>
+      <item nom="C" position="2">Branchement ou collecteur de type unitaire</item>
+      <item nom="D" position="3">Branchement ou collecteur d'eaux usées industrielles</item>
+      <item nom="E" position="4">Cours d'eau en caniveau</item>
+	  <item nom="F" position="5">Drainage souterrain ou agricole</item>
+      <item nom="Z" lien="true" position="6">Autre</item>
+    </valeur>
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="17" parent="Ouvrage">
+    <id>ACL</id>
+    <intitule>Position stratégique (de l'ouvrage)</intitule>
+    <valeur type="item">
+      <item nom="XA" position="0" ajoute="true">Collecteur élémentaire</item>
+      <item nom="XB" position="1" ajoute="true">Ouvrage régulé</item>
+      <item nom="XZ" lien="true" position="2" ajoute="true">Autre</item>
+    </valeur>
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="0" parent="Condition">
+    <id>ACM</id>
+    <intitule>Nettoyage (préalable)</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">Branchement ou collecteur a été nettoyé avant l'inspection</item>
+      <item nom="B" position="1">Branchement ou collecteur non nettoyé avant l'inspection</item>
+      <item nom="XA" position="2" ajoute="true">Radier nettoyé - parois non nettoyées</item>
+      <item nom="XB" position="3" ajoute="true">Radier non nettoyé - parois nettoyées</item>
+      <item nom="XZ" lien="true" position="4" ajoute="true">Autre</item>
+    </valeur>
+    <saisie>0</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="14" parent="Element">
+    <id>ACN</id>
+    <intitule>Année de mise en service</intitule>
+    <valeur type="numerique" />
+    <saisie>3</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="true" position="1" parent="Condition">
+    <id>ADA</id>
+    <intitule>Précipitations</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">Pas de précipitations</item>
+      <item nom="B" position="1">Pluie</item>
+      <item nom="C" position="2">Neige fondante ou glace</item>
+    </valeur>
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="2" parent="Condition">
+    <id>ADB</id>
+    <intitule>Température</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">Température au-dessus de zéro</item>
+      <item nom="B" position="1">Température au-dessous de zéro</item>
+    </valeur>
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="3" parent="Condition">
+    <id>ADC</id>
+    <intitule>Régulation du débit</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">Aucune mesure prise</item>
+      <item nom="B" position="1">L'écoulement a été obturé en amont</item>
+      <item nom="C" position="2">L'écoulement a été partiellement obturé en amont</item>
+      <item nom="Z" lien="true" position="3">Autre - il convient de noter les autres informations à l'aide ADE mentionné immédiatement après</item>
+    </valeur>
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code reporte="true" position="4" parent="Condition" ajoute="True">
+    <id ajoute="true">ADXA</id>
+    <intitule ajoute="true">Etat apparent du remblai</intitule>
+    <valeur type="texte" />
+    <saisie>2</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="False" position="5" parent="Condition" ajoute="True">
+    <id ajoute="true">ADXB</id>
+    <intitule ajoute="true">Etat d'avancement de la voirie</intitule>
+    <valeur type="texte" />
+    <saisie>2</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="False" position="6" parent="Condition" ajoute="True">
+    <id ajoute="true">ADXC</id>
+    <intitule ajoute="true">Ouvrage sous nappe</intitule>
+    <valeur type="texte" />
+    <saisie>2</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code reporte="False" position="0" parent="Observation">
+    <id>ADE</id>
+    <intitule>Remarque générale</intitule>
+    <valeur type="texte" />
+    <saisie>1</saisie>
+    <renseigne>3</renseigne>
+  </code>
+</codes>

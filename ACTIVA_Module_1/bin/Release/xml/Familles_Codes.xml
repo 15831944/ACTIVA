@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<codes>
+  <parent name="A">
+    <code name="AE">Modification des intitulés</code>
+  </parent>
+  <parent name="B">
+    <code name="BA">Défaut structurel</code>
+    <code name="BB">Défaut fonctionnel</code>
+    <code name="BC">Description (codes inventaires)</code>
+    <code name="BD">Autres remarques</code>
+  </parent>
+  <parent name="C">
+    <code name="CE">Modification des intitulés</code>
+  </parent>
+  <parent name="D">
+    <code name="DA">Défaut structurel</code>
+    <code name="DB">Défaut fonctionnel</code>
+    <code name="DC">Description (codes inventaires)</code>
+    <code name="DD">Autres remarques</code>
+  </parent>
+</codes>

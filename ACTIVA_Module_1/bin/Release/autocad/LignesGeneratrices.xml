@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Definit les caracteristiques des lignes generatrices de l'ouvrage -->
+<lignes>
+  <ligne id="defaut" fichierLIN="acadiso.lin" type="ACAD_ISO07W100" R="0" G="0" B="0" />
+  <ligne id="ligne_milieu" fichierLIN="acadiso.lin" type="CENTER2" R="204" G="204" B="204" />
+  <ligne id="generatrice_primaire" fichierLIN="acadiso.lin" type="Continuous" R="0" G="0" B="0" />
+  <ligne id="generatrice_secondaire" fichierLIN="acadiso.lin" type="Continuous" R="0" G="0" B="0" />
+ </lignes>
+ 

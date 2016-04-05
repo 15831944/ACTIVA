@@ -1,0 +1,1 @@
+C:\SRDEV\Projets\ACTIVA\ActivCAD\obj\Release\ActivCAD.csproj.ResolveComReference.cache

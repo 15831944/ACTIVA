@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<identifications>
+  <identification>
+    <titre id="Organisme">Identification de l'organisme de contrôle</titre>
+  </identification>
+  <identification>
+    <titre id="Lieu">Identification de l'inspection</titre>
+  </identification>
+  <identification>
+    <titre id="Ouvrage">Identification de l'ouvrage inspecté</titre>
+  </identification>
+  <identification>
+    <titre id="Support">Identification des références et supports</titre>
+  </identification>
+  <identification>
+    <titre id="Element">Eléments principaux de l'ouvrage inspecté</titre>
+  </identification>
+   <identification>
+    <titre id="Condition">Conditions d'intervention</titre>
+  </identification>
+  <identification>
+    <titre id="Observation">Observations particulières avant inspection</titre>
+  </identification>
+</identifications>

@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ACTIVA_Module_1.autocad.dessin" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAgAAQAIEAAAAAAAAABAAAABACAAAIEAAABAAgA=</HashCode>
+      <FileName>autocad\dessin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.autocad.read_svf" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>HIAAAUCAAAAEAAAAAMAACABBIMACAAABAQAAAEACBAQ=</HashCode>
+      <FileName>autocad\read_svf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.autocad.section" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>autocad\section.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.component.carac_panel" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>sAQAgBAGACAGYBgQABqgQiACAQiyMBAAEHAAARCggoA=</HashCode>
+      <FileName>component\carac_panel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.component.date_selector" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABACAAAAAAAACAAAACAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>component\date_selector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.component.identification_input" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAACAAAAgAEAGAAAACCAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>component\identification_input.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.component.kb_key" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEEAAAACCAABAAAIBCAEAACEAEgAAAAEAAAAAEAAAA=</HashCode>
+      <FileName>component\kb_key.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.component.multiple_choice_button" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAIAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>component\multiple_choice_button.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.component.photo_select" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AADAIpAAADAAAUQEAAGAQQACAAAIEAAAQAAgAABACAA=</HashCode>
+      <FileName>component\photo_select.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.component.pic_slide" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAQEAACgAACgAIACAAAACAAgAQYAAAAAAAAAAAAA=</HashCode>
+      <FileName>component\pic_slide.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.component.section_horaire" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAkhQAIiAGAFAAAACgAAACgJQIEQAIAgIAAQhAAAE=</HashCode>
+      <FileName>component\section_horaire.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.component.virtual_kb" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAABCBAAAAACACAQAACCAAAAQBAgAAAACAAAAA=</HashCode>
+      <FileName>component\virtual_kb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.MainForm" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/9Iwvv+9ebbo8fOLff7p1jlio+h9P8Tw2/3n1/5/274=</HashCode>
+      <FileName>mainform.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.Ouvrage_Copy_Name" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAACAAABAAAACAAAACAEAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Ouvrage_Copy_Name.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.Program" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.splash" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAACBAAAACAAACCAAACAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>splash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.modules.mod_carac" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAEAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>modules\mod_carac.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.modules.mod_close" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>modules\mod_close.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.modules.mod_global" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIgAEAECIDBCBABAgACAAABQwAAAGkAAEAAAHgAyAAA=</HashCode>
+      <FileName>modules\mod_global.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.modules.mod_hosted_control" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>modules\mod_hosted_control.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.modules.mod_identification" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAEAAAAAEAAAAAEgADEAAAAgACCAEAKAAAAIAAAAA=</HashCode>
+      <FileName>modules\mod_identification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.modules.mod_init" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>modules\mod_init.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.modules.mod_inspection" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>cAAAAAQwoAAAAAAAgAEAAAAAAAQAAhgmABigBAJAgAo=</HashCode>
+      <FileName>modules\mod_inspection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.modules.mod_new" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAABACAAAAAAAAQAAADAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>modules\mod_new.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.modules.AddValue" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAQAAAAQAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>modules\mod_new.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.modules.mod_observation" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAABAAgAAAECAIIAGEAhQAAACAAAwRAQAYaIAAAAQ=</HashCode>
+      <FileName>modules\mod_observation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.modules.mod_rapport" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BVAIICQCAAAAEAAAEAEAAAAUUABIAAAAAhAKAoASHBA=</HashCode>
+      <FileName>modules\mod_rapport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.modules.mod_save" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEAAAJAAIAAAAAAEAAAJAAAAAAAAAAAQACAAAAAAA=</HashCode>
+      <FileName>modules\mod_save.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.modules.mod_style" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>modules\mod_style.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.modules.mod_xml" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>modules\mod_xml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.modules.mod_param_autocad" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAQAAEAAQAQQDBAAIgoAABAAAAQAAAAIABAAAAAAg=</HashCode>
+      <FileName>parameters\mod_param_autocad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.modules.mod_param_id" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAACABAAQAJAAAEIAAgAAAAAgIggCIECAAAAAAgAIA=</HashCode>
+      <FileName>parameters\mod_param_id.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.modules.mod_param_motif" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAEEBEUBAAIAAAAAgAAAEAAEAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>parameters\mod_param_motif.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.modules.mod_param_obs" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>NAIAAAEAAAAIBgJAAAChAFAAAAoAQAIAAABUABIAAAQ=</HashCode>
+      <FileName>parameters\mod_param_obs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.modules.mod_param_path" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAgAAAAAAAAAAAAABAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>parameters\mod_param_path.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.modules.mod_param_section" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAkAQAQAAgAAAAAhAAIAAAAABAAAAAEAAAAgAAA=</HashCode>
+      <FileName>parameters\mod_param_section.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.Properties.Resources" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgREUCAIDABBABEkAAAD9RFGCYM0ABECACQCBERCipA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACTIVA_Module_1.Properties.Settings" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMIAAgAAgAAQABAABAAAIBAAAIABACABABAAAAABAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

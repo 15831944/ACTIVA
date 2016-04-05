@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B50A25EB-29DA-4E64-981D-E3020D470747}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ACTIVA_Module_1</RootNamespace>
+    <AssemblyName>ACTIVA_Module_1</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>C542C523489D4B3A2E939CCAEF020CBBC6EBF3C6</ManifestCertificateThumbprint>
+    <ManifestKeyFile>ACTIVA_Module_1_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <StartupObject>
+    </StartupObject>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>H:\Projets\ACTIVA\Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Pdf.2, Version=2.1.20102.147, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Command.2, Version=2.0.20102.19458, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1FlexGrid.2, Version=2.6.20102.558, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\ComponentOne\Studio for WinForms\bin\C1.Win.C1FlexGrid.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.2, Version=2.0.20102.33247, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1List.2, Version=2.1.20102.173, Culture=neutral, PublicKeyToken=6b24f8f981dbd7bc, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Schedule.2, Version=2.0.20102.136, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="autocad\dessin.cs" />
+    <Compile Include="autocad\read_svf.cs" />
+    <Compile Include="autocad\section.cs" />
+    <Compile Include="component\carac_panel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\carac_panel.Designer.cs">
+      <DependentUpon>carac_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="component\date_selector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\date_selector.Designer.cs">
+      <DependentUpon>date_selector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="component\identification_input.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\identification_input.Designer.cs">
+      <DependentUpon>identification_input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="component\kb_key.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\kb_key.Designer.cs">
+      <DependentUpon>kb_key.cs</DependentUpon>
+    </Compile>
+    <Compile Include="component\multiple_choice_button.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\multiple_choice_button.Designer.cs">
+      <DependentUpon>multiple_choice_button.cs</DependentUpon>
+    </Compile>
+    <Compile Include="component\photo_select.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\photo_select.Designer.cs">
+      <DependentUpon>photo_select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="component\pic_slide.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\pic_slide.Designer.cs">
+      <DependentUpon>pic_slide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="component\section_horaire.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\section_horaire.Designer.cs">
+      <DependentUpon>section_horaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="component\virtual_kb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\virtual_kb.Designer.cs">
+      <DependentUpon>virtual_kb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainform.Designer.cs">
+      <DependentUpon>mainform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modules\mod_carac.cs" />
+    <Compile Include="modules\mod_close.cs" />
+    <Compile Include="modules\mod_global.cs" />
+    <Compile Include="modules\mod_identification.cs" />
+    <Compile Include="modules\mod_hosted_control.cs" />
+    <Compile Include="modules\mod_init.cs" />
+    <Compile Include="modules\mod_inspection.cs" />
+    <Compile Include="modules\mod_new.cs" />
+    <Compile Include="modules\mod_observation.cs" />
+    <Compile Include="modules\mod_rtf.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ouvrage_Copy_Name.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ouvrage_Copy_Name.Designer.cs">
+      <DependentUpon>Ouvrage_Copy_Name.cs</DependentUpon>
+    </Compile>
+    <Compile Include="parameters\mod_param_autocad.cs" />
+    <Compile Include="parameters\mod_param_id.cs" />
+    <Compile Include="parameters\mod_param_motif.cs" />
+    <Compile Include="parameters\mod_param_obs.cs" />
+    <Compile Include="modules\mod_save.cs" />
+    <Compile Include="modules\mod_style.cs" />
+    <Compile Include="modules\mod_xml.cs" />
+    <Compile Include="parameters\mod_param_path.cs" />
+    <Compile Include="parameters\mod_param_section.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="component\carac_panel.resx">
+      <DependentUpon>carac_panel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="component\date_selector.resx">
+      <DependentUpon>date_selector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="component\identification_input.resx">
+      <DependentUpon>identification_input.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="component\kb_key.resx">
+      <DependentUpon>kb_key.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="component\multiple_choice_button.resx">
+      <DependentUpon>multiple_choice_button.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="component\photo_select.resx">
+      <DependentUpon>photo_select.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="component\pic_slide.resx">
+      <DependentUpon>pic_slide.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="component\section_horaire.resx">
+      <DependentUpon>section_horaire.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="component\virtual_kb.resx">
+      <DependentUpon>virtual_kb.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainform.resx">
+      <DependentUpon>mainform.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ouvrage_Copy_Name.resx">
+      <DependentUpon>Ouvrage_Copy_Name.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash.resx">
+      <DependentUpon>splash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="modules\mod_rapport.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash.Designer.cs">
+      <DependentUpon>splash.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\history16-5.png" />
+    <None Include="Resources\insert-image1.png" />
+    <None Include="Resources\edit2.png" />
+    <None Include="Resources\newfolder32.png" />
+    <None Include="Resources\loaderBig.gif" />
+    <None Include="Resources\accept32.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\right.png" />
+    <None Include="Resources\portrait2.png" />
+    <None Include="Resources\text-columns1.png" />
+    <None Include="Resources\copy1-16.png" />
+    <None Include="Resources\history.png" />
+    <None Include="Resources\SectionLocale.bmp" />
+    <None Include="Resources\RectangleRegard.bmp" />
+    <None Include="Resources\Rectangle.bmp" />
+    <None Include="Resources\OvoideSimple.bmp" />
+    <None Include="Resources\OvoideCunetteDecentree.bmp" />
+    <None Include="Resources\OvoideCunetteCentree.bmp" />
+    <None Include="Resources\ovale.bmp" />
+    <None Include="Resources\FormeU.bmp" />
+    <None Include="Resources\Circulaire.bmp" />
+    <None Include="Resources\Arc.bmp" />
+    <None Include="Resources\newfolder1.png" />
+    <None Include="Resources\find1.png" />
+    <None Include="Resources\infomation.png" />
+    <None Include="Resources\folderopen1.png" />
+    <None Include="Resources\Document.png" />
+    <None Include="Resources\accept1.png" />
+    <None Include="Resources\delete-16.png" />
+    <None Include="Resources\sortascend1.png" />
+    <None Include="Resources\down-16.png" />
+    <None Include="Resources\up-16.png" />
+    <None Include="Resources\remove-16.png" />
+    <None Include="Resources\add-16.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\remove.png" />
+    <None Include="Resources\down_green.png" />
+    <None Include="Resources\up_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shift.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\del.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\INFO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SEARCH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FILE - TEXT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backspace_48_trans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shift_48_trans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\capslock_48_trans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Activa_Default_Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arc1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Circulaire1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AutoCAD">
+      <Guid>{E072BCE4-9027-4F86-BAE2-EF119FD0A0D3}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>False</Private>
+    </COMReference>
+    <COMReference Include="AXDBLib">
+      <Guid>{FFC2A8DB-A497-4087-941C-C5B5462237EA}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down_green_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_ouvrage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open_inspection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_inspection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autocad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\rapport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ActivCAD\ActivCAD.csproj">
+      <Project>{D812CF96-DDAD-4A48-9839-C06242755702}</Project>
+      <Name>ActivCAD</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SR.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <PreBuildEvent>mkdir .\img
+mkdir .\xml
+mkdir .\autocad
+
+xcopy /S /E /Y C:\SRDEV\DATA\ACTIVA\img .\img
+xcopy /S /E /Y C:\SRDEV\DATA\ACTIVA\xml .\xml
+xcopy /S /E /Y C:\SRDEV\DATA\ACTIVA\autocad .\autocad</PreBuildEvent>
+  </PropertyGroup>
+</Project>
