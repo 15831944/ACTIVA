@@ -5122,27 +5122,27 @@
         public System.Windows.Forms.Label label27;
         public System.Windows.Forms.Label label55;
         public System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ToolStripLabel XmlAutocadStripLabel;
-        private System.Windows.Forms.ToolStripLabel XmlSectionStripLabel;
-        private System.Windows.Forms.ToolStripButton XmlObsCanaButton;
-        private System.Windows.Forms.ToolStripButton XmlObsRegButton;
-        private System.Windows.Forms.ToolStripLabel XmlObsStripLabel;
-        private System.Windows.Forms.ToolStripButton XmlIdRegButton;
-        private System.Windows.Forms.ToolStripLabel XmlIdStripLabel;
-        private System.Windows.Forms.ToolStripLabel XmlMotifStripLabel;
-        private System.Windows.Forms.ToolStripButton ObsCompactGridBt;
-        private System.Windows.Forms.ToolStripLabel ObsToolsLb;
-        private System.Windows.Forms.ToolStripLabel ObsDiffereLb;
-        private System.Windows.Forms.ToolStripLabel ObsDiffereCountLb;
-        private System.Windows.Forms.ToolStripSeparator ObsDiffereSp;
-        private System.Windows.Forms.ToolStripLabel CurrentOuvrageTypeLb;
-        private System.Windows.Forms.ToolStripLabel LineaireStripLabel;
-        private System.Windows.Forms.ToolStripButton XmlIdCanaButton;
-        private System.Windows.Forms.ToolStripButton ObsDeplieGridBt;
-        private System.Windows.Forms.ToolStripButton XmlAutocadCanaButton;
-        private System.Windows.Forms.ToolStripButton XmlAutocadRegButton;
-        private System.Windows.Forms.ToolStripLabel CurrentOuvrageNameLb;
-        private System.Windows.Forms.ToolStripLabel CurrentOuvrageFormeLb;
+        public System.Windows.Forms.ToolStripLabel XmlAutocadStripLabel;
+        public System.Windows.Forms.ToolStripLabel XmlSectionStripLabel;
+        public System.Windows.Forms.ToolStripButton XmlObsCanaButton;
+        public System.Windows.Forms.ToolStripButton XmlObsRegButton;
+        public System.Windows.Forms.ToolStripLabel XmlObsStripLabel;
+        public System.Windows.Forms.ToolStripButton XmlIdRegButton;
+        public System.Windows.Forms.ToolStripLabel XmlIdStripLabel;
+        public System.Windows.Forms.ToolStripLabel XmlMotifStripLabel;
+        public System.Windows.Forms.ToolStripButton ObsCompactGridBt;
+        public System.Windows.Forms.ToolStripLabel ObsToolsLb;
+        public System.Windows.Forms.ToolStripLabel ObsDiffereLb;
+        public System.Windows.Forms.ToolStripLabel ObsDiffereCountLb;
+        public System.Windows.Forms.ToolStripSeparator ObsDiffereSp;
+        public System.Windows.Forms.ToolStripLabel LineaireStripLabel;
+        public System.Windows.Forms.ToolStripButton XmlIdCanaButton;
+        public System.Windows.Forms.ToolStripButton ObsDeplieGridBt;
+        public System.Windows.Forms.ToolStripButton XmlAutocadCanaButton;
+        public System.Windows.Forms.ToolStripButton XmlAutocadRegButton;
+        public System.Windows.Forms.ToolStripLabel CurrentOuvrageTypeLb;
+        public System.Windows.Forms.ToolStripLabel CurrentOuvrageNameLb;
+        public System.Windows.Forms.ToolStripLabel CurrentOuvrageFormeLb;
     }
 }
 

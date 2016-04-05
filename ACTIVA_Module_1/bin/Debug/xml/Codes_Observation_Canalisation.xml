@@ -271,7 +271,7 @@
         <item nom="E" position="4">La conduite de raccordement est obturée</item>
         <item nom="XA" position="5" ajoute="true">Le raccordement est mal-renformi</item>
         <item nom="XB" position="6" ajoute="true">Usure du parement sous le raccordement</item>
-        <item nom="Z" lien="true" position="7">Autre - lorsqu'ils sont utilisés, les autres détails doivent être consignés dans les remarques</item>
+        <item nom="Z" lien="true" position="7">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
       <caracteristique nom="q1" type="numerique" intitule="Hauteur/profondeur du défaut" unite="cm" renseigne="3" ajoute="true" info=""/>
@@ -310,7 +310,7 @@
     <caracteristiques>
       <caracteristique nom="c1" type="item" intitule="Type de matériau d'étanchéité" renseigne="1" info="">
         <item nom="A" position="0">Anneau d'étanchéité</item>
-        <item nom="Z" lien="true" position="1">Autre élément d'étanchéité - lorsqu'ils sont utilisés, les autres détails doivent être consignés dans les remarques</item>
+        <item nom="Z" lien="true" position="1">Autre élément d'étanchéité</item>
       </caracteristique>
       <caracteristique nom="c2" type="item" intitule="Si anneau d'étanchéité, état de la boucle" renseigne="1" info="">
         <item nom="A" position="0">Visiblement déplacée mais ne dépassant pas dans la canalisation</item>
@@ -387,7 +387,7 @@
 		<item nom="L" position="11">Le matériau de revêtement semble mou</item>
 		<item nom="M" position="12">Manque de résine dans le stratifié</item>
 		<item nom="N" position="13">Défaut d'étanchéité entre l'extrémité du revêtement et la conduite d'accueil ou le regard de visite</item>
-        <item nom="Z" lien="true" position="5">Autres défauts de revêtement - lorsqu'ils sont utilisés, les autres détails doivent être consignés dans les remarques.</item>
+        <item nom="Z" lien="true" position="5">Autres défauts de revêtement</item>
       </caracteristique>
       <caracteristique nom="c2" type="item" intitule="Lorsque cela est approprié, l'orientation doit être indiquée comme suit:" renseigne="3" info="">
         <item nom="A" q1="2" q2="4" h1="1" h2="4" pm1="1" pm2="2" position="0">Longitudinale</item>
@@ -431,7 +431,7 @@
 		<item nom="E" position="4">Excès de matériau de réparation constituant un obstacle</item>
 		<item nom="F" position="5">Trou dans le matériau de réparation</item>
 		<item nom="G" position="6">Fissure dans le matériau de réparation</item>
-        <item nom="Z" lien="true" position="7">Autre - Lorsqu'ils sont utilisés, les autres détails doivent être consignés dans les remarques</item>
+        <item nom="Z" lien="true" position="7">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="item" intitule="Lorsque cela est approprié, l'orientation doit être indiquée comme suit:" renseigne="1" info=""/>
         <item nom="A" q1="2" q2="4" h1="1" h2="4" pm1="1" pm2="2" position="0">Longitudinale</item>
@@ -645,7 +645,7 @@
         <item nom="A" position="0">Concrétions</item>
         <item nom="B" position="1">Graisse</item>
         <item nom="C" position="2">Encrassement</item>
-        <item nom="Z" lien="true" position="3">Autre - Lorsqu'ils sont utilisés, les autres détails doivent être consignés dans les remarques</item>
+        <item nom="Z" lien="true" position="3">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="item" intitule="Observation des dégradation" renseigne="3" ajoute="true" info="">
         <item nom="XA" position="0" ajoute="true">Permettant de voir les dégradations</item>
@@ -679,7 +679,7 @@
         <item nom="A" position="0">Fin (sable, vase, ...)</item>
         <item nom="B" position="1">Grossier (gravats, graviers, ...)</item>
         <item nom="C" position="2">Dur ou compacté (béton, ...)</item>
-        <item nom="Z" lien="true" position="3">Autre - lorsqu'ils sont utilisés, les autres détails doivent être consignés dans les remarques"</item>
+        <item nom="Z" lien="true" position="3">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
       <caracteristique nom="q1" type="numerique" intitule="Epaisseur des dépôts" unite="%" renseigne="1" ajoute="true" info=""/>
@@ -711,7 +711,7 @@
         <item nom="B" position="1">Tourbe</item>
         <item nom="C" position="2">Matériau fin (argile, vase, ...)</item>
         <item nom="D" position="3">Gravier</item>
-        <item nom="Z" lien="true" position="4">Autre - Lorsqu'ils sont utilisés, les autres détails doivent être consignés dans les remarques</item>
+        <item nom="Z" lien="true" position="4">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="item" intitule="Observation des dégradations" renseigne="4" info="">
         <item nom="XA" position="0" ajoute="true">Permettant de voir les dégradations</item>
@@ -750,7 +750,7 @@
         <item nom="F" position="5">Obstacle traversant en provenace d'un raccordement ou une conduite de raccordement</item>
         <item nom="G" position="6">Conduites externes ou câbles insérés dans la canalisation</item>
         <item nom="H" position="7">Obstacle intégré à la structure</item>
-        <item nom="Z" lien="true" position="8">Autre - Lorsqu'ils sont utilisés, les autres détails doivent être consignés dans les remarques</item>
+        <item nom="Z" lien="true" position="8">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
       <caracteristique nom="q1" type="numerique" intitule="Réduction de la section transversale" unite="%" renseigne="1" info=""/>
@@ -848,7 +848,7 @@
         <item nom="A" position="0">Dans la canalisation</item>
         <item nom="B" position="1">Dans un raccordement</item>
         <item nom="C" position="2">Dans un assemblage ouvert</item>
-        <item nom="Z" lien="true" position="3">Autre - Lorsqu'ils sont utilisés, les autres détails doivent être consignés dans les remarques</item>
+        <item nom="Z" lien="true" position="3">Autre</item>
       </caracteristique>
       <caracteristique nom="q1" type="numerique" intitule="Nombre d'animaux observés à un emplacement précis" renseigne="1" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="4" />
@@ -882,7 +882,7 @@
         <item nom="E" position="4">Piquage direct - buriné - raccordement réalisé sans utiliser de pièce intermédiaire - trou brut (réalisé en général avec un marteau ou burin)</item>
         <item nom="F" position="5">Raccord autre que culotte</item>
         <item nom="G" position="6">Type de raccord inconnu</item>
-        <item nom="Z" lien="true" position="7">Autres - Lorsqu'ils sont utilisés, les autres détails doivent être consignés dans les remarques</item>
+        <item nom="Z" lien="true" position="7">Autres</item>
       </caracteristique>
       <caracteristique nom="c2" type="item" intitule="Obturation du raccordement" renseigne="1">
         <item nom="A" position="0">Raccordement ouvert</item>
@@ -1037,7 +1037,7 @@
         <item nom="D" position="3">Orifice de passage de la lampe</item>
         <item nom="E" position="4">Déversoir</item>
         <item nom="F" position="5">Raccord important sans regard de visite</item>
-        <item nom="Z" lien="true" position="6">Autre ouvrage spécial - lorsqu'ils sont utilisés, les autres détails doivent être consignés dans les remarques</item>
+        <item nom="Z" lien="true" position="6">Autre ouvrage spécial</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
       <caracteristique nom="q1" type="" intitule="Référence du noeud" renseigne="1" info=""/>
@@ -1462,7 +1462,7 @@
         <item nom="A" position="0">Obstruction</item>
         <item nom="B" position="1">Niveau d'eau trop élevé</item>
         <item nom="C" position="2">Panne de l'équipement</item>
-        <item nom="Z" lien="true" position="3">Autre - lorsqu'ils sont utilisés, les autres détails doivent être consignés dans les remarques</item>
+        <item nom="Z" lien="true" position="3">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="item" intitule="D'autres caractérisations" renseigne="4" info="">
 		<item nom="A" position="0">Inspection objective terminée avant d'avoir atteint le noeud d'arrivée</item>
@@ -1470,7 +1470,7 @@
         <item nom="C" position="2">Lorsque l'on considère, par une inspection partielle précédente, que l'inspection de la conduite totale est terminée</item>
 		<item nom="D" position="3">Lorsque l'on considère, par une inspection partielle précédente, que l'inspection de la conduite totale n'est pas terminée</item>
         <item nom="E" position="4">Lorsque l'on considère, par une inspection partielle précédente, que l'on ne sait pas si l'inspection de la conduite totale est terminée</item>
-		<item nom="Z" lien="true" position="5">Autre - lorsqu'ils sont utilisés, les autres détails doivent être consignés dans les remarques</item>
+		<item nom="Z" lien="true" position="5">Autre</item>
       </caracteristique>
       <caracteristique nom="q1" type="numerique" renseigne="4" />
       <caracteristique nom="q2" type="numerique" renseigne="4" />
@@ -1574,7 +1574,7 @@
         <item nom="A" position="0">Manque d'oxygène (O2)</item>
         <item nom="B" position="1">Sulfure d'hydrogène (H2S)</item>
         <item nom="C" position="2">Méthane CH4)</item>
-        <item nom="Z" lien="true" position="3">Autre - lorsqu'ils sont utilisés, les autres détails doivent être consignés dans les remarques</item>
+        <item nom="Z" lien="true" position="3">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
       <caracteristique nom="q1" type="numerique" intitule="Pourcentage du gaz" unite="%" renseigne="3" info=""/>
@@ -1605,7 +1605,7 @@
         <item nom="A" position="0">La caméra est sous l'eau</item>
         <item nom="B" position="1">Vase</item>
         <item nom="C" position="2">Vapeur</item>
-        <item nom="Z" lien="true" position="3">Autre - lorsqu'ils sont utilisés, les autres détails doivent être consignés dans les remarques</item>
+        <item nom="Z" lien="true" position="3">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
       <caracteristique nom="q1" type="numerique" renseigne="4" />
