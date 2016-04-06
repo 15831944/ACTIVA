@@ -214,58 +214,49 @@ namespace ACTIVA_Module_1.modules
             grid.Cols.DefaultSize = 100;
             grid.Rows[0].Height = 24;
 
-            grid.Cols.Count = 10;
+            grid.Cols.Count = 8;
 
-            grid.Cols[0].Width = 16;
+            grid.Cols[0].Width = Convert.ToInt32(grid.Width * 0.02);
             grid.Cols[0].Name = "line_state";
             grid.Cols[0].Style = grid.Styles["Fixed"];
 
             grid.Cols[1].Name = "num";
-            grid.Cols[1].Width = 20;
+            grid.Cols[1].Width = Convert.ToInt32(grid.Width * 0.03);
             grid.Cols[1].Caption = "num";
             grid.Cols[1].Visible = false;
 
             grid.Cols[2].Name = "pm1";
             grid.Cols[2].Style = grid.Styles["PmStyle1"];
-            grid.Cols[2].Width = 30;
+            grid.Cols[2].Width = Convert.ToInt32(grid.Width * 0.05);
             grid.Cols[2].Caption = "Pm1";
             grid.Cols[2].Format = "##0.## m";
             //colonne.Style.BackColor = Color.Gray;
 
             grid.Cols[3].Name = "pm2";
             grid.Cols[3].Style = grid.Styles["PmStyle2"];
-            grid.Cols[3].Width = 30;
+            grid.Cols[3].Width = Convert.ToInt32(grid.Width * 0.05);
             grid.Cols[3].Caption = "Pm2";
             grid.Cols[3].Format = "##0.## m";
 
-            grid.Cols[4].Name = "c1";
-            grid.Cols[4].Width = 200;
-            grid.Cols[4].Caption = "C1";
-            grid.Cols[4].Format = "##0.## m";
-
-            grid.Cols[5].Name = "c2";
-            grid.Cols[5].Width = 50;
-            grid.Cols[5].Caption = "C2";
-            grid.Cols[5].Format = "##0.## m";
-
-            grid.Cols[6].Name = "code";
-            grid.Cols[6].Style = grid.Styles["CodeStyle"];
-            grid.Cols[6].Width = 30;
-            grid.Cols[6].Caption = "Code";
+            grid.Cols[4].Name = "code";
+            grid.Cols[4].Style = grid.Styles["CodeStyle"];
+            grid.Cols[4].Width = Convert.ToInt32(grid.Width * 0.1);
+            grid.Cols[4].Caption = "Code";
             //colonne.Style.BackColor = Color.Gray;
 
-            grid.Cols[7].Name = "forme";
-            grid.Cols[7].Width = 120;
-            grid.Cols[7].Caption = "Forme";
+            grid.Cols[5].Name = "forme";
+            grid.Cols[5].Width = Convert.ToInt32(grid.Width * 0.1);
+            grid.Cols[5].Caption = "Forme";
             //colonne.Style.BackColor = Color.Gray;
 
-            grid.Cols[8].Name = "observation";
-            grid.Cols[8].Width = 300;
-            grid.Cols[8].Caption = "Observation";
+            grid.Cols[6].Name = "observation";
+            grid.Cols[6].Width = Convert.ToInt32(grid.Width * 0.4);
+            grid.Cols[6].Caption = "Observation";
 
-            grid.Cols[9].Name = "visuel";
-            grid.Cols[9].Width = 50;
-            grid.Cols[9].Caption = "Référence visuelle";
+            grid.Cols[7].Name = "visuel";
+            grid.Cols[7].Width = Convert.ToInt32(grid.Width * 0.25);
+            grid.Cols[7].Caption = "Référence visuelle";
+            grid.Cols[7].AllowResizing = true;
             //colonne.Style.BackColor = Color.Black;
 
             grid.Cols.Frozen = 5;
@@ -405,9 +396,6 @@ namespace ACTIVA_Module_1.modules
                 //ligne["observation"] = unNode.ChildNodes[1].InnerText + "\n\n" + Get_Caracteristiques(unNode);
                 ligne["observation"] = Get_Caracteristiques_In_RTF_Paragraph(unNode);
 
-                ligne["c1"] = Get_Caracteristiques(unNode);
-                if (Get_C2(unNode) != String.Empty)
-                    ligne["c2"] = Get_C2(unNode);
                 if (Is_Differe_Field_To_Fill(unNode) == true)
                 {
                     grid.SetCellStyle(ligne.SafeIndex, 6, "DiffereStyle");
@@ -556,6 +544,18 @@ namespace ACTIVA_Module_1.modules
             XmlNode node;
 
             node = CodeNode.SelectSingleNode("caracteristiques/caracteristique[@nom='q2']");
+
+            if (node.InnerText != String.Empty)
+                return node.InnerText;
+            else
+                return string.Empty;
+        }
+
+        public static string Get_C1(XmlNode CodeNode)
+        {
+            XmlNode node;
+
+            node = CodeNode.SelectSingleNode("caracteristiques/caracteristique[@nom='c1']");
 
             if (node.InnerText != String.Empty)
                 return node.InnerText;
