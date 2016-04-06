@@ -57,6 +57,6 @@
 
         #endregion
 
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        public System.Windows.Forms.MonthCalendar monthCalendar1;
     }
 }

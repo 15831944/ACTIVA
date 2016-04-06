@@ -820,7 +820,7 @@
             // 
             this.InspectionSplit.Panel2.Controls.Add(this.splitContainer2);
             this.InspectionSplit.Size = new System.Drawing.Size(1022, 398);
-            this.InspectionSplit.SplitterDistance = 60;
+            this.InspectionSplit.SplitterDistance = 51;
             this.InspectionSplit.TabIndex = 9;
             // 
             // groupBox7
@@ -833,7 +833,7 @@
             this.groupBox7.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.groupBox7.Location = new System.Drawing.Point(0, 0);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(1022, 60);
+            this.groupBox7.Size = new System.Drawing.Size(1022, 51);
             this.groupBox7.TabIndex = 8;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Fichier SVF sélectionné";
@@ -841,14 +841,15 @@
             // CloseInspectionBt
             // 
             this.CloseInspectionBt.BackColor = System.Drawing.SystemColors.Control;
+            this.CloseInspectionBt.Dock = System.Windows.Forms.DockStyle.Right;
             this.CloseInspectionBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseInspectionBt.ForeColor = System.Drawing.Color.Black;
             this.CloseInspectionBt.Image = global::ACTIVA_Module_1.Properties.Resources.cancel_16;
             this.CloseInspectionBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CloseInspectionBt.Location = new System.Drawing.Point(881, 21);
+            this.CloseInspectionBt.Location = new System.Drawing.Point(896, 18);
             this.CloseInspectionBt.Name = "CloseInspectionBt";
-            this.CloseInspectionBt.Size = new System.Drawing.Size(130, 25);
-            this.CloseInspectionBt.TabIndex = 16;
+            this.CloseInspectionBt.Size = new System.Drawing.Size(123, 30);
+            this.CloseInspectionBt.TabIndex = 0;
             this.CloseInspectionBt.Text = "Fermer l\'inspection";
             this.CloseInspectionBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CloseInspectionBt.UseVisualStyleBackColor = false;
@@ -857,7 +858,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
-            this.pictureBox2.Location = new System.Drawing.Point(16, 27);
+            this.pictureBox2.Location = new System.Drawing.Point(11, 21);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(16, 16);
             this.pictureBox2.TabIndex = 2;
@@ -890,7 +891,7 @@
             // 
             this.splitContainer2.Panel2.BackColor = System.Drawing.Color.DimGray;
             this.splitContainer2.Panel2.Controls.Add(this.splitContainer25);
-            this.splitContainer2.Size = new System.Drawing.Size(1022, 334);
+            this.splitContainer2.Size = new System.Drawing.Size(1022, 343);
             this.splitContainer2.SplitterDistance = 399;
             this.splitContainer2.TabIndex = 0;
             // 
@@ -904,7 +905,7 @@
             this.MenuDockingTab.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MenuDockingTab.Location = new System.Drawing.Point(0, 0);
             this.MenuDockingTab.Name = "MenuDockingTab";
-            this.MenuDockingTab.Size = new System.Drawing.Size(397, 332);
+            this.MenuDockingTab.Size = new System.Drawing.Size(397, 341);
             this.MenuDockingTab.TabIndex = 19;
             this.MenuDockingTab.TabsSpacing = 5;
             this.MenuDockingTab.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
@@ -918,7 +919,7 @@
             this.chargementTab.Controls.Add(this.AddOuvrageGp);
             this.chargementTab.Location = new System.Drawing.Point(1, 24);
             this.chargementTab.Name = "chargementTab";
-            this.chargementTab.Size = new System.Drawing.Size(395, 307);
+            this.chargementTab.Size = new System.Drawing.Size(395, 316);
             this.chargementTab.TabIndex = 0;
             this.chargementTab.Text = "Chargement et création";
             // 
@@ -1179,7 +1180,7 @@
             this.InformationTab.Controls.Add(this.groupBox6);
             this.InformationTab.Location = new System.Drawing.Point(1, 24);
             this.InformationTab.Name = "InformationTab";
-            this.InformationTab.Size = new System.Drawing.Size(395, 307);
+            this.InformationTab.Size = new System.Drawing.Size(395, 316);
             this.InformationTab.TabIndex = 1;
             this.InformationTab.Text = "Informations";
             // 
@@ -1334,7 +1335,7 @@
             this.ReportTab.Controls.Add(this.GenerateReportBt);
             this.ReportTab.Location = new System.Drawing.Point(1, 24);
             this.ReportTab.Name = "ReportTab";
-            this.ReportTab.Size = new System.Drawing.Size(395, 307);
+            this.ReportTab.Size = new System.Drawing.Size(395, 316);
             this.ReportTab.TabIndex = 2;
             this.ReportTab.Text = "Rapport";
             // 
@@ -1516,7 +1517,7 @@
             this.AutocadTab.Controls.Add(this.AutocadGenerateBt);
             this.AutocadTab.Location = new System.Drawing.Point(1, 24);
             this.AutocadTab.Name = "AutocadTab";
-            this.AutocadTab.Size = new System.Drawing.Size(395, 307);
+            this.AutocadTab.Size = new System.Drawing.Size(395, 316);
             this.AutocadTab.TabBackColor = System.Drawing.Color.White;
             this.AutocadTab.TabIndex = 3;
             this.AutocadTab.Text = "Autocad";
@@ -1607,7 +1608,7 @@
             this.AboutTab.Controls.Add(this.label55);
             this.AboutTab.Location = new System.Drawing.Point(1, 24);
             this.AboutTab.Name = "AboutTab";
-            this.AboutTab.Size = new System.Drawing.Size(395, 307);
+            this.AboutTab.Size = new System.Drawing.Size(395, 316);
             this.AboutTab.TabBackColor = System.Drawing.Color.White;
             this.AboutTab.TabBackColorSelected = System.Drawing.Color.White;
             this.AboutTab.TabIndex = 4;
@@ -1708,14 +1709,13 @@
             // splitContainer25.Panel2
             // 
             this.splitContainer25.Panel2.Controls.Add(this.OuvrageToolsPanel);
-            this.splitContainer25.Size = new System.Drawing.Size(617, 332);
-            this.splitContainer25.SplitterDistance = 293;
+            this.splitContainer25.Size = new System.Drawing.Size(617, 341);
+            this.splitContainer25.SplitterDistance = 300;
             this.splitContainer25.TabIndex = 0;
             // 
             // OuvrageList
             // 
             this.OuvrageList.AddItemSeparator = ';';
-            this.OuvrageList.AllowSort = false;
             this.OuvrageList.Caption = "Ouvrages";
             this.OuvrageList.CaptionHeight = 17;
             this.OuvrageList.ColumnCaptionHeight = 17;
@@ -1730,7 +1730,7 @@
             this.OuvrageList.MatchEntryTimeout = ((long)(2000));
             this.OuvrageList.Name = "OuvrageList";
             this.OuvrageList.RowSubDividerColor = System.Drawing.Color.DarkGray;
-            this.OuvrageList.Size = new System.Drawing.Size(617, 293);
+            this.OuvrageList.Size = new System.Drawing.Size(617, 300);
             this.OuvrageList.TabIndex = 2;
             this.OuvrageList.Text = "Ouvrages";
             this.OuvrageList.Click += new System.EventHandler(this.OuvrageList_Click);
@@ -1746,7 +1746,7 @@
             this.OuvrageToolsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.OuvrageToolsPanel.Location = new System.Drawing.Point(0, 0);
             this.OuvrageToolsPanel.Name = "OuvrageToolsPanel";
-            this.OuvrageToolsPanel.Size = new System.Drawing.Size(617, 35);
+            this.OuvrageToolsPanel.Size = new System.Drawing.Size(617, 37);
             this.OuvrageToolsPanel.TabIndex = 17;
             // 
             // SaveOuvrageOrderBt
@@ -1785,7 +1785,7 @@
             this.OuvrageMoveDownBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.OuvrageMoveDownBt.BackColor = System.Drawing.SystemColors.Control;
             this.OuvrageMoveDownBt.Image = global::ACTIVA_Module_1.Properties.Resources.down_16;
-            this.OuvrageMoveDownBt.Location = new System.Drawing.Point(3, 6);
+            this.OuvrageMoveDownBt.Location = new System.Drawing.Point(3, 8);
             this.OuvrageMoveDownBt.Name = "OuvrageMoveDownBt";
             this.OuvrageMoveDownBt.Size = new System.Drawing.Size(25, 25);
             this.OuvrageMoveDownBt.TabIndex = 2;
@@ -1797,7 +1797,7 @@
             this.OuvrageMoveUpBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.OuvrageMoveUpBt.BackColor = System.Drawing.SystemColors.Control;
             this.OuvrageMoveUpBt.Image = global::ACTIVA_Module_1.Properties.Resources.up_16;
-            this.OuvrageMoveUpBt.Location = new System.Drawing.Point(34, 6);
+            this.OuvrageMoveUpBt.Location = new System.Drawing.Point(34, 8);
             this.OuvrageMoveUpBt.Name = "OuvrageMoveUpBt";
             this.OuvrageMoveUpBt.Size = new System.Drawing.Size(25, 25);
             this.OuvrageMoveUpBt.TabIndex = 1;
@@ -1973,7 +1973,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(404, 2);
+            this.label4.Location = new System.Drawing.Point(586, 2);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 14);
             this.label4.TabIndex = 38;
@@ -1983,16 +1983,16 @@
             // 
             this.IdFacultatifPb.BackColor = System.Drawing.Color.White;
             this.IdFacultatifPb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.IdFacultatifPb.Location = new System.Drawing.Point(381, 1);
+            this.IdFacultatifPb.Location = new System.Drawing.Point(524, 1);
             this.IdFacultatifPb.Name = "IdFacultatifPb";
-            this.IdFacultatifPb.Size = new System.Drawing.Size(16, 16);
+            this.IdFacultatifPb.Size = new System.Drawing.Size(56, 16);
             this.IdFacultatifPb.TabIndex = 37;
             this.IdFacultatifPb.TabStop = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(274, 2);
+            this.label3.Location = new System.Drawing.Point(411, 2);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 14);
             this.label3.TabIndex = 36;
@@ -2001,16 +2001,16 @@
             // IdDesactivePb
             // 
             this.IdDesactivePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.IdDesactivePb.Location = new System.Drawing.Point(251, 1);
+            this.IdDesactivePb.Location = new System.Drawing.Point(349, 1);
             this.IdDesactivePb.Name = "IdDesactivePb";
-            this.IdDesactivePb.Size = new System.Drawing.Size(16, 16);
+            this.IdDesactivePb.Size = new System.Drawing.Size(56, 16);
             this.IdDesactivePb.TabIndex = 35;
             this.IdDesactivePb.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(163, 2);
+            this.label2.Location = new System.Drawing.Point(262, 2);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 14);
             this.label2.TabIndex = 34;
@@ -2019,16 +2019,16 @@
             // IdDifferePb
             // 
             this.IdDifferePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.IdDifferePb.Location = new System.Drawing.Point(140, 1);
+            this.IdDifferePb.Location = new System.Drawing.Point(200, 1);
             this.IdDifferePb.Name = "IdDifferePb";
-            this.IdDifferePb.Size = new System.Drawing.Size(16, 16);
+            this.IdDifferePb.Size = new System.Drawing.Size(56, 16);
             this.IdDifferePb.TabIndex = 33;
             this.IdDifferePb.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 2);
+            this.label1.Location = new System.Drawing.Point(86, 2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 14);
             this.label1.TabIndex = 32;
@@ -2037,9 +2037,9 @@
             // IdObligatoirePb
             // 
             this.IdObligatoirePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.IdObligatoirePb.Location = new System.Drawing.Point(12, 1);
+            this.IdObligatoirePb.Location = new System.Drawing.Point(24, 1);
             this.IdObligatoirePb.Name = "IdObligatoirePb";
-            this.IdObligatoirePb.Size = new System.Drawing.Size(16, 16);
+            this.IdObligatoirePb.Size = new System.Drawing.Size(56, 16);
             this.IdObligatoirePb.TabIndex = 31;
             this.IdObligatoirePb.TabStop = false;
             // 
