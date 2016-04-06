@@ -1710,19 +1710,22 @@
             // 
             this.splitContainer25.Panel2.Controls.Add(this.OuvrageToolsPanel);
             this.splitContainer25.Size = new System.Drawing.Size(617, 341);
-            this.splitContainer25.SplitterDistance = 300;
+            this.splitContainer25.SplitterDistance = 308;
             this.splitContainer25.TabIndex = 0;
             // 
             // OuvrageList
             // 
             this.OuvrageList.AddItemSeparator = ';';
+            this.OuvrageList.AllowSort = false;
+            this.OuvrageList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.OuvrageList.Caption = "Ouvrages";
             this.OuvrageList.CaptionHeight = 17;
             this.OuvrageList.ColumnCaptionHeight = 17;
             this.OuvrageList.ColumnFooterHeight = 17;
             this.OuvrageList.DataMode = C1.Win.C1List.DataModeEnum.AddItem;
             this.OuvrageList.DeadAreaBackColor = System.Drawing.SystemColors.ControlDark;
-            this.OuvrageList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.OuvrageList.ExtendRightColumn = true;
             this.OuvrageList.Images.Add(((System.Drawing.Image)(resources.GetObject("OuvrageList.Images"))));
             this.OuvrageList.ItemHeight = 15;
@@ -1730,7 +1733,7 @@
             this.OuvrageList.MatchEntryTimeout = ((long)(2000));
             this.OuvrageList.Name = "OuvrageList";
             this.OuvrageList.RowSubDividerColor = System.Drawing.Color.DarkGray;
-            this.OuvrageList.Size = new System.Drawing.Size(617, 300);
+            this.OuvrageList.Size = new System.Drawing.Size(617, 308);
             this.OuvrageList.TabIndex = 2;
             this.OuvrageList.Text = "Ouvrages";
             this.OuvrageList.Click += new System.EventHandler(this.OuvrageList_Click);
@@ -1746,32 +1749,37 @@
             this.OuvrageToolsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.OuvrageToolsPanel.Location = new System.Drawing.Point(0, 0);
             this.OuvrageToolsPanel.Name = "OuvrageToolsPanel";
-            this.OuvrageToolsPanel.Size = new System.Drawing.Size(617, 37);
+            this.OuvrageToolsPanel.Size = new System.Drawing.Size(617, 29);
             this.OuvrageToolsPanel.TabIndex = 17;
             // 
             // SaveOuvrageOrderBt
             // 
+            this.SaveOuvrageOrderBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.SaveOuvrageOrderBt.AutoSize = true;
             this.SaveOuvrageOrderBt.BackColor = System.Drawing.SystemColors.Control;
             this.SaveOuvrageOrderBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveOuvrageOrderBt.ForeColor = System.Drawing.Color.Black;
             this.SaveOuvrageOrderBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
             this.SaveOuvrageOrderBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SaveOuvrageOrderBt.Location = new System.Drawing.Point(65, 6);
+            this.SaveOuvrageOrderBt.Location = new System.Drawing.Point(65, 2);
             this.SaveOuvrageOrderBt.Name = "SaveOuvrageOrderBt";
-            this.SaveOuvrageOrderBt.Size = new System.Drawing.Size(103, 25);
+            this.SaveOuvrageOrderBt.Size = new System.Drawing.Size(102, 25);
             this.SaveOuvrageOrderBt.TabIndex = 13;
             this.SaveOuvrageOrderBt.Text = "Sauver l\'ordre";
             this.SaveOuvrageOrderBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.SaveOuvrageOrderBt.UseVisualStyleBackColor = false;
+            this.SaveOuvrageOrderBt.Click += new System.EventHandler(this.SaveOuvrageOrderBt_Click);
             // 
             // DeleteOuvrageBt
             // 
+            this.DeleteOuvrageBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.DeleteOuvrageBt.AutoSize = true;
             this.DeleteOuvrageBt.BackColor = System.Drawing.SystemColors.Control;
             this.DeleteOuvrageBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeleteOuvrageBt.ForeColor = System.Drawing.Color.Black;
             this.DeleteOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.remove_16;
             this.DeleteOuvrageBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DeleteOuvrageBt.Location = new System.Drawing.Point(418, 6);
+            this.DeleteOuvrageBt.Location = new System.Drawing.Point(532, 2);
             this.DeleteOuvrageBt.Name = "DeleteOuvrageBt";
             this.DeleteOuvrageBt.Size = new System.Drawing.Size(84, 25);
             this.DeleteOuvrageBt.TabIndex = 6;
@@ -1785,7 +1793,7 @@
             this.OuvrageMoveDownBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.OuvrageMoveDownBt.BackColor = System.Drawing.SystemColors.Control;
             this.OuvrageMoveDownBt.Image = global::ACTIVA_Module_1.Properties.Resources.down_16;
-            this.OuvrageMoveDownBt.Location = new System.Drawing.Point(3, 8);
+            this.OuvrageMoveDownBt.Location = new System.Drawing.Point(3, 2);
             this.OuvrageMoveDownBt.Name = "OuvrageMoveDownBt";
             this.OuvrageMoveDownBt.Size = new System.Drawing.Size(25, 25);
             this.OuvrageMoveDownBt.TabIndex = 2;
@@ -1797,7 +1805,7 @@
             this.OuvrageMoveUpBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.OuvrageMoveUpBt.BackColor = System.Drawing.SystemColors.Control;
             this.OuvrageMoveUpBt.Image = global::ACTIVA_Module_1.Properties.Resources.up_16;
-            this.OuvrageMoveUpBt.Location = new System.Drawing.Point(34, 8);
+            this.OuvrageMoveUpBt.Location = new System.Drawing.Point(34, 2);
             this.OuvrageMoveUpBt.Name = "OuvrageMoveUpBt";
             this.OuvrageMoveUpBt.Size = new System.Drawing.Size(25, 25);
             this.OuvrageMoveUpBt.TabIndex = 1;
@@ -1806,12 +1814,14 @@
             // 
             // CloneOuvrageBt
             // 
+            this.CloneOuvrageBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.CloneOuvrageBt.AutoSize = true;
             this.CloneOuvrageBt.BackColor = System.Drawing.SystemColors.Control;
             this.CloneOuvrageBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloneOuvrageBt.ForeColor = System.Drawing.Color.Black;
             this.CloneOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.copy1_16;
             this.CloneOuvrageBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CloneOuvrageBt.Location = new System.Drawing.Point(332, 6);
+            this.CloneOuvrageBt.Location = new System.Drawing.Point(444, 2);
             this.CloneOuvrageBt.Name = "CloneOuvrageBt";
             this.CloneOuvrageBt.Size = new System.Drawing.Size(82, 25);
             this.CloneOuvrageBt.TabIndex = 12;
@@ -4621,6 +4631,7 @@
             this.splitContainer25.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.OuvrageList)).EndInit();
             this.OuvrageToolsPanel.ResumeLayout(false);
+            this.OuvrageToolsPanel.PerformLayout();
             this.IdentificationTab.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

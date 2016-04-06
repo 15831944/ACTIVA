@@ -152,7 +152,7 @@ namespace ACTIVA_Module_1.modules
             mod_global.MF.FileHachureTb.Text = Properties.Settings.Default.HachurePath;
             mod_global.MF.FileSymboleTb.Text = Properties.Settings.Default.SymbolePath;
 
-
+            mod_global.MF.OuvrageToolsPanel.Enabled = false;
         }
     }
 }

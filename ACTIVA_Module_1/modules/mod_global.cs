@@ -242,7 +242,7 @@ namespace ACTIVA_Module_1.modules
         {
             MF.AddOuvrageGp.Enabled = true;
             MF.TypeOuvrageGb.Enabled = true;
-            MF.OuvrageToolsPanel.Enabled = true;
+            //MF.OuvrageToolsPanel.Enabled = true;
         }
 
         public static void Disable_Ouvrage_Controls()
@@ -259,16 +259,16 @@ namespace ACTIVA_Module_1.modules
 
         public static void Disable_Main_Tabs()
         {
-            MF.IdentificationTab.Enabled = false;
-            MF.ObservationTab.Enabled = false;
-            MF.RenseignementTab.Enabled = false;
+            MF.IdentificationTab.TabVisible = false;
+            MF.ObservationTab.TabVisible = false;
+            MF.RenseignementTab.TabVisible = false;
         }
 
         public static void Enable_Main_Tabs()
         {
-            MF.IdentificationTab.Enabled = true;
-            MF.ObservationTab.Enabled = true;
-            MF.RenseignementTab.Enabled = true;
+            MF.IdentificationTab.TabVisible = true;
+            MF.ObservationTab.TabVisible = true;
+            MF.RenseignementTab.TabVisible = true;
         }
 
 
@@ -291,6 +291,7 @@ namespace ACTIVA_Module_1.modules
             MF.ObsCompactGridBt.Visible = true;
             MF.ObsDeplieGridBt.Visible = true;
         }
+
 
     }
 }

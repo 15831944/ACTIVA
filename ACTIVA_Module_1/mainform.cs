@@ -196,13 +196,6 @@ namespace ACTIVA_Module_1
             }
         }
 
-        private void SaveOuvrageOrderBt_Click(object sender, EventArgs e)
-        {
-            mod_inspection.Save_Ouvrage_Order(OuvrageList);
-            this.SaveOuvrageOrderBt.ForeColor = Color.Black;
-        }
-
-
         private void EraseAllBt_Click(object sender, EventArgs e)
         {
             if (mod_global.Focused_Control != null)
@@ -346,7 +339,7 @@ namespace ACTIVA_Module_1
             else
             {
                 mod_inspection.Move_Ouvrage_Down(OuvrageList);
-                this.SaveOuvrageOrderBt.ForeColor = Color.Red;
+                this.SaveOuvrageOrderBt.Enabled = true;
             }
         }
 
@@ -359,7 +352,7 @@ namespace ACTIVA_Module_1
             else
             {
                 mod_inspection.Move_Ouvrage_Up(OuvrageList);
-                this.SaveOuvrageOrderBt.ForeColor = Color.Red;
+                this.SaveOuvrageOrderBt.Enabled = true;
             }
         }
 
@@ -415,12 +408,26 @@ namespace ACTIVA_Module_1
         private void OuvrageList_Click(object sender, EventArgs e)
         {
             if (OuvrageList.VisibleRows > 0 & OuvrageList.SelectedIndices.Count == 1)
+            {
                 mod_inspection.Get_Selected_Ouvrage_Info(OuvrageList.SelectedText, OuvrageList.Columns["Type"].CellText(OuvrageList.SelectedIndex), OuvrageList.Columns["Code forme"].CellText(OuvrageList.SelectedIndex), obs_name_label, obs_nb_label);
+                mod_global.MF.OuvrageToolsPanel.Enabled = true;
+                mod_global.MF.SaveOuvrageOrderBt.Enabled = false;
+                mod_global.MF.OuvrageMoveDownBt.Enabled = true;
+                mod_global.MF.OuvrageMoveUpBt.Enabled = true;
+                mod_global.MF.CloneOuvrageBt.Enabled = true;
+                mod_global.MF.DeleteOuvrageBt.Enabled = true;
+            }
         }
 
         private void OuvrageNomTb_Click(object sender, EventArgs e)
         {
             mod_global.Focused_Control = (TextBox)sender;
+        }
+
+        private void SaveOuvrageOrderBt_Click(object sender, EventArgs e)
+        {
+            mod_inspection.Save_Ouvrage_Order(OuvrageList);
+            this.SaveOuvrageOrderBt.Enabled = false;
         }
     }
 }
