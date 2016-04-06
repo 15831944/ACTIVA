@@ -70,6 +70,8 @@ namespace ACTIVA_Module_1.modules
             Application.DoEvents();
             mod_inspection.Load_Motif(Properties.Settings.Default.MotifPath);
             Application.DoEvents();
+
+
         }
 
         public static void App_Init()
@@ -149,6 +151,8 @@ namespace ACTIVA_Module_1.modules
             mod_global.MF.FileLigneTb.Text = Properties.Settings.Default.LignePath;
             mod_global.MF.FileHachureTb.Text = Properties.Settings.Default.HachurePath;
             mod_global.MF.FileSymboleTb.Text = Properties.Settings.Default.SymbolePath;
+
+
         }
     }
 }

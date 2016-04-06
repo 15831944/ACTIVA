@@ -420,7 +420,7 @@ namespace ACTIVA_Module_1.modules
                     //grid.SetCellStyle(ligne.SafeIndex, 4, "SectionChangeStyle");
             }
 
-            //Si le nbre d'observation à compléter est > 0, on affiche le nbre dans a barre de menu
+            //Si le nbre d'observation à compléter est > 0, on affiche le nbre dans la barre de menu
             if (DiffereCount > 0)
             {
                 mod_global.MF.ObsDiffereSp.Visible = true;
