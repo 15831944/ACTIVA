@@ -71,9 +71,17 @@ namespace ACTIVA_Module_1
             }
 
             mod_global.Focused_Control = null;
-            SaisieTabControl.SelectedTab = SaisieTabControl.TabPages["KeyboardTab"];
+            //SaisieTabControl.SelectedTab = SaisieTabControl.TabPages["KeyboardTab"];
             virtual_kb1.Set_Alpha_Numeric();
 
+            if (MainDockingTab.SelectedTab.Name == "InspectionTab" || MainDockingTab.SelectedTab.Name == "ObservationsTab" || MainDockingTab.SelectedTab.Name == "ParamTab")
+            {
+                mod_global.MF.MainSplit.Panel2Collapsed = true;
+            }
+            else
+            {                   
+                mod_global.MF.MainSplit.Panel2Collapsed = false;
+            }
         }
 
         private void MainForm_Resize(object sender, EventArgs e)
@@ -194,12 +202,6 @@ namespace ACTIVA_Module_1
             {
                 NewInspectionPathTb.Text = FolderDialog.SelectedPath;
             }
-        }
-
-        private void EraseAllBt_Click(object sender, EventArgs e)
-        {
-            if (mod_global.Focused_Control != null)
-                mod_global.Focused_Control.Text = string.Empty;
         }
 
         private void ReportImgTb_Click(object sender, EventArgs e)
@@ -428,6 +430,12 @@ namespace ACTIVA_Module_1
         {
             mod_inspection.Save_Ouvrage_Order(OuvrageList);
             this.SaveOuvrageOrderBt.Enabled = false;
+        }
+
+        private void EraseAllBt_Click(object sender, EventArgs e)
+        {
+            if (mod_global.Focused_Control != null)
+                mod_global.Focused_Control.Text = string.Empty;
         }
     }
 }

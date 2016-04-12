@@ -6,14 +6,14 @@
     <id>DAA</id>
     <intitule info="La section transversale de la regard a été déformée par rapport à sa forme initiale">Déformation</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type de déformation" renseigne="1">
-        <item nom="A" position="0">Générale - sur une large proportion de la paroi</item>
-        <item nom="B" position="1">Localisée - sur une proportion relativement réduite</item>
+      <caracteristique nom="c1" type="item" intitule="Type de déformation" renseigne="1" info="">
+        <item nom="A" position="0">Générale - affectant une large proportion de la paroi du regard</item>
+        <item nom="B" position="1">Localisée - afectant une proportion relativement réduite de la paroi du regard</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" info="Réduction de dimension" unite="%" renseigne="1" />
+      <caracteristique nom="q1" type="numerique" intitule="Réduction maximale de la dimension" unite="%" renseigne="1" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="4" />
-      <caracteristique nom="h1" type="horaire" info="Si la déformation est localisée" renseigne="1" />
+      <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
       <caracteristique nom="pm2" type="numerique" renseigne="3" />
@@ -36,7 +36,7 @@
     <id>DAB</id>
     <intitule>Fissure</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Nature de la fissure" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Nature de la fissure" renseigne="1" info="">
         <item nom="A" position="1">Micro-fissure</item>
         <item nom="B" position="2">Fissure fermée</item>
         <item nom="C" position="0">Fissure ouverte</item>
@@ -44,15 +44,16 @@
         <item nom="XB" position="4" ajoute="true">Fissure écaillée (+/- en compression)</item>
         <item nom="XC" position="3" ajoute="true">Fissure colmatée par CaCO3</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" info="Orientation de la fissure" renseigne="1">
+      <caracteristique nom="c2" type="item" intitule="Orientation de la fissure" renseigne="1" info="">
         <item nom="A" q1="2" q2="2" h1="1" h2="3" pm1="1" pm2="2" position="0">Verticale</item>
         <item nom="B" q1="2" q2="2" h1="1" h2="1" pm1="1" pm2="3" position="1">Horizontale</item>
         <item nom="C" q1="2" q2="2" h1="1" h2="2" pm1="1" pm2="2" position="3">Complexe</item>
-        <item nom="D" q1="2" q2="2" h1="1" h2="2" pm1="1" pm2="2" position="2">Inclinée</item>
-        <item nom="XA" q1="2" q2="2" h1="1" h2="2" pm1="1" pm2="2" position="4" ajoute="true">Hélicoïdale</item>
+        <item nom="D" q1="2" q2="2" h1="1" h2="2" pm1="1" pm2="2" position="4">Inclinée</item>
+		<item nom="E" q1="2" q2="2" h1="1" h2="2" pm1="1" pm2="2" position="5">Départ à partir d'un point (fissure en forme d'étoile)</item>
+        <item nom="XA" q1="2" q2="2" h1="1" h2="2" pm1="1" pm2="2" position="6" ajoute="true">Hélicoïdale</item>
       </caracteristique>
-      <caracteristique nom="q1" type="numerique" info="Ouverture maximale de la fissure" unite="mm" renseigne="1" />
-      <caracteristique nom="q2" type="numerique" info="Désaffleurement maximal de la fissure" unite="mm" renseigne="1" ajoute="true" />
+      <caracteristique nom="q1" type="numerique" intitule="Largeur de la fissure" unite="mm" renseigne="1" info=""/>
+      <caracteristique nom="q2" type="numerique" intitule="Désaffleurement maximal de la fissure" unite="mm" renseigne="1" ajoute="true" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="2" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -81,14 +82,14 @@
     <id>DAC</id>
     <intitule>Rupture/effondrement</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Nature du défaut" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Nature du défaut" renseigne="1" info="">
         <item nom="A" position="0">Rupture - parties de parois détachées mais non manquantes</item>
         <item nom="B" position="1">Effrondement partiel - parties de parois manquantes</item>
         <item nom="C" position="2">Effondrement - perte totale de l'intégrité structurelle</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" info="Longueur si &lt;1000mm" unite="mm" renseigne="1" />
-      <caracteristique nom="q2" type="numerique" info="Superficie unitaire affectée" unite="m2/mL" renseigne="1" ajoute="true" />
+      <caracteristique nom="q1" type="numerique" intitule="Longueur si &lt;1000mm" unite="mm" renseigne="1" info=""/>
+      <caracteristique nom="q2" type="numerique" intitule="Superficie unitaire affectée" unite="m2/mL" renseigne="1" ajoute="true" info="" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -112,16 +113,16 @@
     <id>DAD</id>
     <intitule info="Les briques individuelles ou des éléments de maçonnerie de la structure des chambres en briques ou en éléments de maçonnerie se sont déplacés par rapport à leur position initiale.">Briquetage ou éléments de maçonnerie défectueux</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Importance du déplacement" renseigne="1">
-        <item position="0" nom="A">Eléments déplacés par rapport à leur position initiale</item>
-        <item position="1" nom="B">Eléments manquants</item>
+      <caracteristique nom="c1" type="item" intitule="Importance du déplacement" renseigne="1" info="">
+        <item position="0" nom="A">Déplacé - Briques ou éléments de maçonnerie toujours présents mais déplacés par rapport à leur position initiale</item>
+        <item position="1" nom="B">Pièces manquantes - briques ou éléments de maçonnerie manquants</item>
         <item position="2" nom="C">Effondrement - Perte totale de l'intégrité structurelle</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" info="Ajouter informations suivantes quand briques ou éléments de maçonnerie sont manquants" renseigne="1">
+      <caracteristique nom="c2" type="item" intitule="Ajouter intitulermations suivantes quand briques ou éléments de maçonnerie sont manquants" renseigne="1" info="">
         <item position="0" nom="A">Autre couche visible</item>
         <item position="1" lien="true" nom="B">Rien de visible</item>
       </caracteristique>
-      <caracteristique nom="q1" type="numerique" info="Superficie unitaire affectée par le défaut observé" unite="m2/mL" renseigne="1" ajoute="true" />
+      <caracteristique nom="q1" type="numerique" intitule="Superficie unitaire affectée par le défaut observé" unite="m2/mL" renseigne="1" ajoute="true" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
@@ -152,8 +153,8 @@
     <caracteristiques>
       <caracteristique nom="c1" type="texte" renseigne="4" />
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" info="Profondeur du mortier manquant" unite="mm" renseigne="1" />
-      <caracteristique nom="q2" type="numerique" info="Superficie unitaire affectée" unite="m2/mL" renseigne="3" ajoute="true" />
+      <caracteristique nom="q1" type="numerique" intitule="Profondeur du mortier manquant" unite="mm" renseigne="1" info=""/>
+      <caracteristique nom="q2" type="numerique" intitule="Superficie unitaire affectée" unite="m2/mL" renseigne="3" ajoute="true" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -177,9 +178,9 @@
     <id>DAF</id>
     <intitule info="La surface du regard a été endommagée par attaque chimique (y compris la corrosion des conduites métalliques) ou par action mécanique">Dégradation de surface</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type de dégradation" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Type de dégradation" renseigne="1" info="">
         <item nom="A" position="0">Rugosité accrue</item>
-        <item nom="B" position="1">Ecaillage</item>
+        <item nom="B" position="1">Ecaillage (détachement de petits fragments de la surface)</item>
         <item nom="C" position="2">Granulats exposés</item>
         <item nom="D" position="3">Granulats déchaussés</item>
         <item nom="E" position="4">Granulats manquants</item>
@@ -188,17 +189,19 @@
         <item nom="H" position="7">Armature corrodée</item>
         <item nom="I" position="8">Paroi manquante</item>
         <item nom="J" position="9">Produits corrosifs sur la surface</item>
-        <item nom="Z" lien="true" position="10">Autre dégradations de surface</item>
+		<item nom="K" position="10">Revêtement cloqué ou renflement interne du revêtement</item>
+        <item nom="Z" lien="true" position="11">Autre dégradations de surface</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" info="Cause de la dégradation" renseigne="1">
-        <item nom="A" position="0">Abrasion (dégradation mécanique)</item>
-        <item nom="B" position="1">Attaque chimique - générale (par exemple corrosion de l'armature)</item>
-        <item nom="C" position="2">Attaque chimique au-dessus du niveau de l'eau (due a acide sufulrique)</item>
-        <item nom="D" position="3">Attaque chimique au-dessous du niveau de l'eau (par eaux usées)</item>
+      <caracteristique nom="c2" type="item" intitule="Cause de la dégradation" renseigne="1" info="">
+        <item nom="A" position="0">Mécanique</item>
+        <item nom="B" position="1">Chimique - générale</item>
+        <item nom="C" position="2">Chimique - endommagement de la partie supérieure de la cunette ou au-dessus</item>
+        <item nom="D" position="3">Chimique - endommagement de la partie inférieure de la cunette</item>
         <item nom="E" position="4">Aucune cause évidente</item>
+		<item nom="Z" position="5">Autres causes</item>
       </caracteristique>
-      <caracteristique nom="q1" type="numerique" info="Hauteur/profondeur maximale du défaut" unite="m" renseigne="3" ajoute="true" />
-      <caracteristique nom="q2" type="numerique" info="Largeur maximale du défaut" unite="m" renseigne="3" ajoute="true" />
+      <caracteristique nom="q1" type="numerique" intitule="Hauteur/profondeur maximale du défaut" unite="m" renseigne="3" ajoute="true" info=""/>
+      <caracteristique nom="q2" type="numerique" intitule="Largeur maximale du défaut" unite="m" renseigne="3" ajoute="true" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="2" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -227,11 +230,11 @@
   </code>
   <code position="0" parent="defautStructurel">
     <id>DAG</id>
-    <intitule info="Une conduite de raccordement fait saillie dans le ragard de visite ou la boîte d'inspection.">Branchement pénétrant</intitule>
+    <intitule info="Une conduite de raccordement fait saillie dans le regard de visite ou la boîte d'inspection.">Branchement pénétrant</intitule>
     <caracteristiques>
       <caracteristique nom="c1" type="texte" renseigne="4" />
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" info="Profondeur d'intrusion" unite="mm" renseigne="1" />
+      <caracteristique nom="q1" type="numerique" intitule="Profondeur d'intrusion" unite="mm" renseigne="1" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="4" />
@@ -261,7 +264,7 @@
     <id>DAH</id>
     <intitule info="Raccord ou branchement défectueux">Raccordement défectueux</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type de défaut" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Type de défaut" renseigne="1" info="">
         <item nom="A" position="0">Position incorrecte du raccordement</item>
         <item nom="B" position="1">Vide entre son extrémité et la paroi du regard</item>
         <item nom="C" position="2">Vide partiel entre son extrémité et la paroi du regard</item>
@@ -272,8 +275,8 @@
         <item nom="Z" lien="true" position="7">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" info="Hauteur/profondeur du défaut" unite="cm" renseigne="3" ajoute="true" />
-      <caracteristique nom="q2" type="numerique" info="Largeur du défaut" unite="cm" renseigne="3" ajoute="true" />
+      <caracteristique nom="q1" type="numerique" intitule="Hauteur/profondeur du défaut" unite="cm" renseigne="3" ajoute="true" info=""/>
+      <caracteristique nom="q2" type="numerique" intitule="Largeur du défaut" unite="cm" renseigne="3" ajoute="true" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -302,16 +305,16 @@
     <id>DAI</id>
     <intitule info="Tout ou partie du matériau utilisé pour rendre étanche un assemblage entre deux éléments de chambre adjacents fait saillie dans le regard de visite ou la boîte d'inspection">Joint d'étanchéité apparent</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type de matériau d'étanchéité" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Type de matériau d'étanchéité" renseigne="1" info="">
         <item nom="A" position="0">Anneau d'étanchéité</item>
-        <item nom="Z" lien="true" position="1">Autre élément d'étanchéité</item>
+        <item nom="Z" lien="true" position="1">Autre</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" info="Si anneau, d'étanchéité, état de la boucle" renseigne="1">
+      <caracteristique nom="c2" type="item" intitule="Si anneau, d'étanchéité, état de la boucle" renseigne="1" info="">
         <item nom="A" position="0">Visiblement déplacée mais ne dépassant pas dans la chambre</item>
-        <item nom="B" position="1">Pendante mais non rompue</item>
+        <item nom="B" position="1">Pénétrant mais non rompu</item>
         <item nom="C" position="2">Rompue</item>
       </caracteristique>
-      <caracteristique nom="q1" type="numerique" info="Si pas d'anneau, réduction de la section transversale" unite="%" renseigne="1" />
+      <caracteristique nom="q1" type="numerique" intitule="Si pas d'anneau, réduction de la section transversale" unite="%" renseigne="1" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
@@ -336,15 +339,15 @@
     <id>DAJ</id>
     <intitule info="Déplacement relatif des éléments adjacents du regard de visite ou de la boîte d'inspection par rapport à la position prévue">Déplacement d'assemblage</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Sens du déplacement" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Sens du déplacement" renseigne="1" info="">
         <item nom="A" position="0">Vertical</item>
         <item nom="B" position="1">Horizontal</item>
         <item nom="C" position="2">Angulaire - les axes des éléments ne sont pas parallèles</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" info="Distance de déplacement (max pour les angulaires)" unite="mm" renseigne="1" />
+      <caracteristique nom="q1" type="numerique" intitule="Distance de déplacement (max pour les angulaires)" unite="mm" renseigne="1" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="4" />
-      <caracteristique nom="h1" type="horaire" info="Sens de déplacement horizontal ou angulaire" renseigne="1" />
+      <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="4" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
       <caracteristique nom="pm2" type="numerique" renseigne="4" />
@@ -365,23 +368,33 @@
   </code>
   <code position="10" parent="defautStructurel">
     <id>DAK</id>
-    <intitule info="Le revêtement de la cheminée est défectueux">Défaut de révêtement</intitule>
+    <intitule info="Le revêtement du regard de visite ou de la boîte d'inspection est observé pour obtenir l'une des caractéristiques">Observation relative au revêtement</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Nature du défaut" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Nature de l'observation" renseigne="1" info="">
         <item nom="A" position="0">Le revêtement de la cheminée s'est détaché</item>
         <item nom="B" position="1">Décoloration du revêtement</item>
         <item nom="C" position="2">Extrémité du revêtement défectueuse</item>
-        <item nom="D" position="3">Revêtement ondulé</item>
-        <item nom="E" position="4">Revêtemen cloqué</item>
-        <item nom="Z" lien="true" position="5">Autre défaut de revêtement</item>
+        <item nom="D" position="3">Pli du revêtement</item>
+        <item nom="E" position="4">Revêtemen cloqué ou renflement interne du revêtement</item>
+		<item nom="F" position="5">Renflement externe</item>
+		<item nom="G" position="6">Séparation du filme interne et du revêtement</item>
+		<item nom="H" position="7">Détachement du couvre-joint</item>
+		<item nom="I" position="8">Fissure ou fente (y compris la rupture de soudure)</item>
+		<item nom="J" position="9">Trou dans le revêtement</item>
+		<item nom="K" position="10">Défaut de raccordement entre deux revêtements</item>
+		<item nom="L" position="11">Matériau de revêtement semble mou</item>
+		<item nom="M" position="12">Manque de résine dans le stratifié</item>
+		<item nom="N" position="13">Défaut d'étanchéité entre l'extrémité du revêtement et la conduie d'accueil ou le regard de visite</item>
+        <item nom="Z" lien="true" position="14">Autre défaut de revêtement</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" info="Pour les revêtements ondulés, orientation observée" renseigne="3">
+      <caracteristique nom="c2" type="item" intitule="Lorsque cela est approprié, l'orientation doit être indiqué" renseigne="3" info="">
         <item nom="A" h2="4" pm2="1" position="0">Verticale</item>
         <item nom="B" h2="1" pm2="4" position="1">Horizontale</item>
         <item nom="C" h2="1" pm2="1" position="2">Complexe</item>
+		<item nom="D" h2="1" pm2="1" position="3">Hélicoïdale</item>
       </caracteristique>
-      <caracteristique nom="q1" type="numerique" info="Ampleur de la projection" unite="mm" renseigne="3" />
-      <caracteristique nom="q2" type="numerique" info="Superficie unitaire affectée" unite="m2/mL" renseigne="3" ajoute="true" />
+      <caracteristique nom="q1" type="numerique" intitule="Réduction surface (%) ou longueur trou (mm)" unite="" renseigne="3" info="Si type de défaut = A, D, E ou Z, entrer la réduction de la surface (%). Si = F, entrer la profondeur du renflement (mm). Si = I, entrer la largeur de la paroi manquante ou de la fente (mm). Si = J, entrer la longueur du trou (le long de l'axe de la conduite) (mm)"/>
+      <caracteristique nom="q2" type="numerique" intitule="Superficie unitaire affectée" unite="m2/mL" renseigne="3" ajoute="true" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -409,14 +422,19 @@
     <id>DAL</id>
     <intitule info="Après une réparation réalisée sur le regard de visite ou la boîte d'inspection, un défaut est observé">Réparation défectueuse</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type de défaut" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Type de défaut" renseigne="1" info="">
         <item nom="A" position="0">Paroi manquante</item>
-        <item nom="B" position="1">Une reprise bouchant un trou est devenue défectueuse</item>
-        <item nom="Z" lien="true" position="2">Autre</item>
+        <item nom="B" position="1">Une reprise bouchant un trou délibérément pratiqué dans la paroi de la canalisation est devenue défectueuse</item>
+        <item nom="C" position="2">Détachement du matériau de réparation de la conduite d'accueil</item>
+		<item nom="D" position="3">Matériau de réparation manquant sur la surface de contact</item>
+		<item nom="E" position="4">Excès de matériau de réparation constituant un obstacle</item>
+		<item nom="F" position="5">Trou dans le matériau de réparation</item>
+		<item nom="G" position="6">Fissure dans le matériau de réaration</item>
+		<item nom="Z" lien="true" position="7">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" info="Hauteur/profondeur maximale du défaut" unite="m" renseigne="3" ajoute="true" />
-      <caracteristique nom="q2" type="numerique" info="Largeur maximale du défaut" unite="m" renseigne="3" ajoute="true" />
+      <caracteristique nom="q1" type="numerique" intitule="Réduction surface (%) ou longueur trou (mm)" unite="" renseigne="3" ajoute="true" info="Si type de défaut = C, E ou Z, entrer la réduction de la surface (%). Si = G, entrer la largeur de la paroi manquante (mm). Si = A, B, D ou F, entrer la longueur du trou (le long de l'axe de la conduite) (mm)" />
+      <caracteristique nom="q2" type="numerique" intitule="Largeur maximale du défaut" unite="m" renseigne="3" ajoute="true" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="2" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -443,7 +461,7 @@
     <id>DAM</id>
     <intitule info="Défaut de soudage dans la structure du regard de visite ou de la boîte d'inspection">Défaut de soudage</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Orientation du défaut" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Orientation du défaut" renseigne="1" info="">
         <item nom="A" h2="4" pm2="1" position="0">Verticale</item>
         <item nom="B" h2="1" pm2="4" position="1">Horizontale</item>
         <item nom="C" h2="1" pm2="1" position="2">Inclinée</item>
@@ -472,11 +490,11 @@
   </code>
   <code position="13" parent="defautStructurel">
     <id>DAN</id>
-    <intitule info="Le matériau de la paroi est détecté comme poreux (par exemple, en raison d'un défaut de construction)">Conduite poreuse</intitule>
+    <intitule info="Le matériau formant la paroi semble poreux">Paroi poreuse</intitule>
     <caracteristiques>
       <caracteristique nom="c1" type="texte" renseigne="4" />
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" info="Superficie unitaire affectée" unite="m2/mL" renseigne="3" ajoute="true" />
+      <caracteristique nom="q1" type="numerique" intitule="Superficie unitaire affectée" unite="m2/mL" renseigne="3" ajoute="true" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
@@ -503,7 +521,7 @@
     <caracteristiques>
       <caracteristique nom="c1" type="texte" renseigne="4" />
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" info="Superficie visible du sol" unite="m2" renseigne="3" ajoute="true" />
+      <caracteristique nom="q1" type="numerique" intitule="Superficie visible du sol" unite="m2" renseigne="3" ajoute="true" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
@@ -534,7 +552,7 @@
     <caracteristiques>
       <caracteristique nom="c1" type="texte" renseigne="4" />
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" info="Volume estimé du vide" unite="m3" renseigne="3" ajoute="true" />
+      <caracteristique nom="q1" type="numerique" intitule="Volume estimé du vide" unite="m3" renseigne="3" ajoute="true" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
@@ -563,7 +581,7 @@
     <id>DAQ</id>
     <intitule info="Un défaut est observé sur un échelon, une échelle ou un trou dans la paroi">Système de descente défecteux</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type de défaut" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Type de défaut" renseigne="1" info="">
         <item nom="A" position="0">Echelon déboité</item>
         <item nom="B" position="1">Echelon manquant</item>
         <item nom="C" position="2">Echelon corrodé</item>
@@ -581,7 +599,7 @@
         <item nom="Z" lien="true" position="14">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" info="Nombre d'éléments défectueux" renseigne="1" />
+      <caracteristique nom="q1" type="numerique" intitule="Nombre d'éléments défectueux" renseigne="1" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
@@ -606,19 +624,19 @@
     <id>DAR</id>
     <intitule info="Un défaut est observé sur le tampon et le cadre">Tampon et cadre défectueux</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type de défaut" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Un défaut est observé sur le tampon et le cadre" renseigne="1" info="">
         <item nom="A" position="0">Tampon cassé</item>
         <item nom="B" position="1">Tampon oscillant</item>
         <item nom="C" position="2">Tampon manquant</item>
         <item nom="D" position="3">Cadre brisé</item>
-        <item nom="E" position="4">Cadre déboîté</item>
+        <item nom="E" position="4">Cadre descellé</item>
         <item nom="F" position="5">Cadre manquant</item>
         <item nom="G" position="6">Tampon au-dessous du niveau de la surface</item>
         <item nom="H" position="7">Tampon au-dessus du niveau de la surface</item>
         <item nom="Z" lien="true" position="0">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" info="Si le tampon n'est pas à niveau, différence avec le sol" unite="mm" renseigne="3" />
+      <caracteristique nom="q1" type="numerique" intitule="Si le tampon n'est pas à niveau, différence avec le sol" unite="mm" renseigne="3" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
@@ -648,9 +666,9 @@
         <item nom="XB" position="1" ajoute="true">Inactif</item>
         <item nom="XZ" lien="true" position="2" ajoute="true">Autre</item>
       </caracteristique>
-      <caracteristique nom="c2" type="texte" renseigne="4" ajoute="true" />
-      <caracteristique nom="q1" type="numerique" info="Débit d'infiltration" unite="l/min" renseigne="3" ajoute="true" />
-      <caracteristique nom="q2" type="numerique" info="" renseigne="4" ajoute="true" />
+      <caracteristique nom="c2" type="texte" renseigne="4" ajoute="true" info=""/>
+      <caracteristique nom="q1" type="numerique" intitule="Débit d'infiltration" unite="l/min" renseigne="3" ajoute="true" info=""/>
+      <caracteristique nom="q2" type="numerique" renseigne="4" ajoute="true" />
       <caracteristique nom="h1" type="horaire" renseigne="1" ajoute="true" />
       <caracteristique nom="h2" type="horaire" renseigne="4" ajoute="true" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" ajoute="true" />
@@ -674,14 +692,14 @@
     <id>DBA</id>
     <intitule info="Racines d'arbres ou d'autres plantes poussant dans le regard de visite ou la boîte d'inspection en passant par les assemblages, les défauts ou les raccordements">Racines</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type de racine" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Type de racine" renseigne="1" info="">
         <item nom="A" position="0">Grosse racine isolée</item>
         <item nom="B" position="1">Radicelles</item>
         <item nom="C" position="2">Ensemble complexe de racines</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" info="Réduction de la section" unite="%" renseigne="3" ajoute="true" />
-      <caracteristique nom="q2" type="numerique" info="Superficie unitaire affectée" unite="m2/mL" renseigne="2" ajoute="true" />
+      <caracteristique nom="q1" type="numerique" intitule="Réduction de la section" unite="%" renseigne="3" ajoute="true" info=""/>
+      <caracteristique nom="q2" type="numerique" intitule="Superficie unitaire affectée" unite="m2/mL" renseigne="2" ajoute="true" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -705,18 +723,18 @@
     <id>DBB</id>
     <intitule info="Matériau attaché à la paroi du regard de visite ou de la boîte d'inspection">Dépôts adhérents</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type de matériau" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Type de matériau" renseigne="1" info="">
         <item nom="A" position="0">Concrétions</item>
         <item nom="B" position="1">Graisse</item>
         <item nom="C" position="2">Encrassement</item>
         <item nom="Z" lien="true" position="3">Autre</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" info="" renseigne="1" ajoute="true">
+      <caracteristique nom="c2" type="item" intitule="" renseigne="1" ajoute="true" info="">
         <item nom="XA" position="0" ajoute="true">Permettant de voir les dégradations</item>
         <item nom="XB" position="1" ajoute="true">Ne permettant pas de voir les dégradations</item>
       </caracteristique>
-      <caracteristique nom="q1" type="numerique" info="Epaisseur maximale" unite="cm" renseigne="3" ajoute="true" />
-      <caracteristique nom="q2" type="numerique" info="Superficie unitaire" unite="m2/mL" renseigne="3" ajoute="true" />
+      <caracteristique nom="q1" type="numerique" intitule="Epaisseur maximale" unite="cm" renseigne="3" ajoute="true" info=""/>
+      <caracteristique nom="q2" type="numerique" intitule="Superficie unitaire" unite="m2/mL" renseigne="3" ajoute="true" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -740,14 +758,14 @@
     <id>DBC</id>
     <intitule info="Dépôts de matériau sur le radier ou les banquettes">Dépôts</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type de matériau" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Type de matériau" renseigne="1" info="">
         <item nom="A" position="0">Fin (sable, vase, ...)</item>
         <item nom="B" position="1">Grossier (gravats, graviers, ...)</item>
         <item nom="C" position="2">Dur ou compacté (béton, ...)</item>
         <item nom="Z" lien="true" position="3">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" info="Epaisseur des dépôts" unite="mm" renseigne="1" />
+      <caracteristique nom="q1" type="numerique" intitule="Profondeur du matériau" unite="mm" renseigne="1" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="2" />
@@ -772,19 +790,19 @@
     <id>DBD</id>
     <intitule info="Le sol des terrains environnants pénètre dans le regard de visite ou boîte d'inspection">Entrée de terre</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type de sol" renseigne="1" ajoute="true">
+      <caracteristique nom="c1" type="item" intitule="Type de sol" renseigne="1" ajoute="true" info="">
         <item nom="XA" position="0" ajoute="true">Sable</item>
         <item nom="XB" position="1" ajoute="true">Tourbe</item>
         <item nom="XC" position="2" ajoute="true">Matériau fin (par exemple, argile, vase)</item>
         <item nom="XD" position="3" ajoute="true">Gravier</item>
         <item nom="XZ" lien="true" position="4" ajoute="true">Autre</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" renseigne="3" ajoute="true" info="Observation des dégradations">
+      <caracteristique nom="c2" type="item" renseigne="3" ajoute="true" intitule="Observation des dégradations" info="">
         <item nom="XA" position="0" ajoute="true">Permettant de voir les dégradations</item>
         <item nom="XB" position="1" ajoute="true">Ne permettant pas de voir les dégradations</item>
       </caracteristique>
-      <caracteristique nom="q1" type="numerique" info="Réduction de section" unite="%" renseigne="1" ajoute="true" />
-      <caracteristique nom="q2" type="numerique" renseigne="3" ajoute="True" info="Volume estimé des terres" unite="m3" />
+      <caracteristique nom="q1" type="numerique" intitule="Réduction de section" unite="%" renseigne="1" ajoute="true" info=""/>
+      <caracteristique nom="q2" type="numerique" renseigne="3" ajoute="True" intitule="Volume estimé des terres" unite="m3" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="4" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -808,19 +826,19 @@
     <id>DBE</id>
     <intitule info="Présence d'objets dans le regard de visite ou la boîte d'inspection. A UTILISER si aucun code (de DBA à DBD) est applicable">Autres obstacles</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Description de l'obstruction" renseigne="1">
-        <item nom="A" position="0">Eléments de maçonnerie délogé, gisant sur le radier</item>
-        <item nom="B" position="1">Fragments de canalisation brisée gisant sur le radier</item>
-        <item nom="C" position="2">Autre objet gisant sur le radier</item>
+      <caracteristique nom="c1" type="item" intitule="Description de l'obstruction" renseigne="1" info="">
+        <item nom="A" position="0">Briquetage ou élément de maçonnerie détaché</item>
+        <item nom="B" position="1">Fragments de canalisation brisée</item>
+        <item nom="C" position="2">Autre objet</item>
         <item nom="D" position="3">Obstacle dépassant de la paroi</item>
         <item nom="E" position="4">Obstacle coincé dans l'assemblage</item>
-        <item nom="F" position="5">Obstacle traversant un raccordement ou sa conduite</item>
+        <item nom="F" position="5">Obstacle traversant en provenance d'un raccordement ou une conduite de racccordement</item>
         <item nom="G" position="6">Conduites externes ou câbles insérés dans la structure</item>
         <item nom="H" position="7">Obstacle intégré à la structure</item>
-        <item nom="Z" lien="true" position="4">Autre</item>
+        <item nom="Z" lien="true" position="8">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" info="Dimension maximale de l'obstacle" unite="mm" renseigne="1" />
+      <caracteristique nom="q1" type="numerique" intitule="Dimension maximale de l'obstacle" unite="mm" renseigne="1" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
@@ -850,20 +868,20 @@
   </code>
   <code position="6" parent="defautFonctionnel">
     <id>DBF</id>
-    <intitule info="Pénétration d'eau par la paroi du regard de visite ou par les assemblages ou les défauts dans la paroi, la banquette ou la cunette du regard de visite.">Infiltration</intitule>
+    <intitule info="Pénétration d'eau par la paroi du regard de visite ou par les assemblages ou les défauts dans la paroi, la banquette ou la cunette du regard de visite ou de la chambre d'inspection.">Infiltration</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type d'infiltration" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Type d'infiltration" renseigne="1" info="">
         <item nom="A" position="0">Suintement - lente pénétration d'eau - aucune goutte visible</item>
-        <item nom="B" position="1">Goutte à goutte - écoulement discontinu</item>
+        <item nom="B" position="1">Goutte à goutte - pénétration goutte à goutte - écoulement discontinu</item>
         <item nom="C" position="2">Ecoulement - écoulement continu</item>
         <item nom="D" position="3">Jaillissement - entrée sous pression</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" info="Processus d'infiltration" renseigne="1">
+      <caracteristique nom="c2" type="item" intitule="Processus d'infiltration" renseigne="1" info="">
         <item nom="A" position="0">A travers la paroi du regard de visite ou de la boîte d'inspection</item>
         <item nom="B" position="1">A travers l'espace entre une conduite de raccordement et la paroi du regard de visite ou de la boîte d'inspection au niveau du radier</item>
         <item nom="C" position="2">A travers l'espace entre une conduite de raccordement et la paroi du regard de visite ou de la boîte d'inspection au dessus de la banquette</item>
       </caracteristique>
-      <caracteristique nom="q1" type="numerique" info="Débit d'infiltration" unite="l/min" renseigne="3" ajoute="true" />
+      <caracteristique nom="q1" type="numerique" intitule="Débit d'infiltration" unite="l/min" renseigne="3" ajoute="true" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
@@ -913,20 +931,20 @@
   </code>
   <code position="8" parent="defautFonctionnel">
     <id>DBH</id>
-    <intitule info="Présence de vermines">Vermine</intitule>
+    <intitule info="Présence de vermine">Vermine</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type d'animal" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Type d'animal" renseigne="1" info="">
         <item nom="A" position="0">Rat</item>
         <item nom="B" position="1">Cafard</item>
-        <item nom="Z" lien="true" position="2">Autre</item>
+        <item nom="Z" lien="true" position="2">Autre - lorsqu'ils sont utilisés, les autres détails doivent être consignés dans les remarques</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" info="Emplacement de la vermine" renseigne="1">
+      <caracteristique nom="c2" type="item" intitule="Emplacement de la vermine" renseigne="1" info="">
         <item nom="A" position="0">Dans le regard de visite ou la boîte d'inspection</item>
         <item nom="B" position="1">Dans un raccordement</item>
         <item nom="C" position="2">Dans un assemblage ouvert</item>
         <item nom="Z" lien="true" position="3">Autre</item>
       </caracteristique>
-      <caracteristique nom="q1" type="numerique" info="Nombre d'animaux observés à un emplacement précis" renseigne="1" />
+      <caracteristique nom="q1" type="numerique" intitule="Nombre d'animaux observés à un emplacement précis" renseigne="1" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
@@ -951,18 +969,24 @@
     <id>DCA</id>
     <intitule info="Une canalisation a été raccordée au regard de visite ou à la boîte d'inspection. Ce code indique principalement la méthode de raccordement">Type de raccordement</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type de raccordement" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Type de raccordement" renseigne="1" info="">
         <item nom="A" position="0">Raccordement dans la banquette</item>
         <item nom="B" position="1">Chute dans la cunette</item>
-        <item nom="C" position="2">Chute accompagnée</item>
+        <item nom="C" position="2">Chute accompagnée verticale externe</item>
         <item nom="D" position="3">Chute accompagnée verticale interne</item>
         <item nom="E" position="4">Chute accompagnée inclinée externe</item>
         <item nom="F" position="5">Canalisation d'aération</item>
         <item nom="Z" lien="true" position="6">Autre</item>
       </caracteristique>
-      <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="texte" info="Référence de la conduite de raccordement" renseigne="1" />
-      <caracteristique nom="q2" type="texte" info="Référence de noeud suivant" renseigne="1" />
+      <caracteristique nom="c2" type="item" intitule="La disposition de la banquette" renseigne="4" info="">
+	    <item nom="A" position="0">Cunette dans la banquette</item>
+        <item nom="B" position="1">Le branchement s'écoule sur la banquette</item>
+        <item nom="C" position="2">Cunette accompagnée</item>
+        <item nom="D" position="3">Conduite sous la banquete</item>
+        <item nom="Z" lien="true" position="4">Autre</item>
+      </caracteristique>
+      <caracteristique nom="q1" type="texte" intitule="Référence de la conduite de raccordement" renseigne="1" info=""/>
+      <caracteristique nom="q2" type="texte" intitule="Référence de noeud suivant" renseigne="1" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -989,11 +1013,14 @@
     <id>DCB</id>
     <intitule info="Un regard de visite ou une boîte d'inspection a fait l'objet d'une réparation">Réparation ponctuelle</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type de réparation" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Type de réparation" renseigne="1">
         <item nom="A" position="0">Remplacement d'une partie de la paroi</item>
-        <item nom="B" position="1">Revêtement localisé</item>
+        <item nom="B" position="1">Revêtement localisé d'un regard de visite ou d'une boîte d'inspection</item>
         <item nom="C" position="2">Injection de matériau d'étanchéité</item>
-        <item nom="Z" lien="true" position="3">Autre</item>
+		<item nom="D" position="3">Trou réparé</item>
+		<item nom="E" position="4">Revêtement localisé de racccordement</item>
+		<item nom="F" position="5">Autre réparation de racccordement</item>
+        <item nom="Z" lien="true" position="6">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
       <caracteristique nom="q1" type="numerique" renseigne="4" />
@@ -1025,7 +1052,7 @@
     <id>DCG</id>
     <intitule info="Détails concernant une canalisation se raccordant au regard de visite ou à la boîte d'inspection">Conduite de raccordement</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Forme" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Forme" renseigne="1" info="">
         <item nom="A" position="0">Circulaire</item>
         <item nom="B" position="1">Rectangulaire</item>
         <item nom="C" position="2">Ovoïde</item>
@@ -1034,13 +1061,13 @@
         <item nom="F" position="5">Ovale - radier et voûte demi-circulaires (de même diamètre) et piédroits parallèles</item>
         <item nom="Z" lien="true" position="6">Autre</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" info="Entrant, sortant ou obturé" renseigne="1">
-        <item nom="A" position="0">Le raccordement aboutit dans le regard</item>
-        <item nom="B" position="1">Le raccordement sort du regard</item>
+      <caracteristique nom="c2" type="item" intitule="Entrant, sortant ou obturé" renseigne="1" info="">
+        <item nom="A" position="0">Le raccordement aboutit dans le regard de visite ou la boîte d'inspection</item>
+        <item nom="B" position="1">Le raccordement sort du regard de visite ou de la boîte d'inspection </item>
         <item nom="C" position="2">Le racccordement est obturé</item>
       </caracteristique>
-      <caracteristique nom="q1" type="numerique" info="Hauteur de la canalisation" unite="mm" renseigne="1" />
-      <caracteristique nom="q2" type="numerique" info="Largeur de la canalisation" unite="mm" renseigne="1" />
+      <caracteristique nom="q1" type="numerique" intitule="Hauteur de la canalisation entrante" unite="mm" renseigne="1" info=""/>
+      <caracteristique nom="q2" type="numerique" intitule="Largeur de la canalisation entrante" unite="mm" renseigne="1" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -1067,9 +1094,10 @@
     <id>DCH</id>
     <intitule info="Position et état de la banquette">Banquette</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Etat apparent de la banquette" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Etat apparent de la banquette" renseigne="1" info="">
         <item nom="A" position="0">Banquette défectueuse</item>
         <item nom="B" position="1">Banquette correcte</item>
+		<item nom="C" position="2">Aucune banquette</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
       <caracteristique nom="q1" type="numerique" renseigne="4" />
@@ -1097,13 +1125,14 @@
     <id>DCI</id>
     <intitule info="Position, dimensions et état de la banquette">Cunette</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Etat apparent de la cunette" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Etat apparent de la cunette" renseigne="1" info="">
         <item nom="A" position="0">Cunette défectueuse</item>
         <item nom="B" position="1">Cunette correcte</item>
+		<item nom="C" position="2">Aucune banquette</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" info="Largeur de la cunette" unite="mm" renseigne="1" />
-      <caracteristique nom="q2" type="numerique" info="Hauteur de la cunette" unite="mm" renseigne="1" />
+      <caracteristique nom="q1" type="numerique" intitule="Largeur de la cunette" unite="mm" renseigne="1" info=""/>
+      <caracteristique nom="q2" type="numerique" intitule="Hauteur de la cunette" unite="mm" renseigne="1" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -1127,13 +1156,13 @@
     <id>DCJ</id>
     <intitule info="Position et état des chaînes/barres de sécurité sur les raccordements sortants">Chaînes/barres de sécurité</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Etat apparent et fonctionnalité" renseigne="1">
-        <item nom="A" position="0">Chaîne de sécurité présente sans défaut</item>
-        <item nom="B" position="1">Chaîne de sécurité manquante (installée à l'origine)</item>
+      <caracteristique nom="c1" type="item" intitule="Etat apparent et fonctionnalité" renseigne="1" info="">
+        <item nom="A" position="0">Chaîne de sécurité présente sans aucun défaut</item>
+        <item nom="B" position="1">Chaîne de sécurité manquante (traces indiquant qu'une chaîne était installée à l'origine)</item>
         <item nom="C" position="2">Chaîne de sécurité défectueuse</item>
         <item nom="D" position="3">Chaîne de sécurité en place mais couverte de débris</item>
-        <item nom="E" position="4">Barre de sécurité présente sans défaut</item>
-        <item nom="F" position="5">Barre de sécurité manquante (installée à l'origine)</item>
+        <item nom="E" position="4">Barre de sécurité présente sans aucun défaut</item>
+        <item nom="F" position="5">Barre de sécurité manquante (traces indiquant qu'une chaîne était installée à l'origine)</item>
         <item nom="G" position="6">Barre de sécurité défectueuse</item>
         <item nom="H" position="7">Barre de sécurité en place mais couverte de débris</item>
       </caracteristique>
@@ -1163,7 +1192,7 @@
     <id>DCK</id>
     <intitule info="Présence d'un déversoir ou autre dispositif de régulation">Trop-plein</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Dispositif de régulation" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Dispositif de régulation" renseigne="1" info="">
         <item nom="A" position="0">Déversoir</item>
         <item nom="B" position="1">Siphon</item>
         <item nom="C" position="2">Orifice</item>
@@ -1175,8 +1204,8 @@
         <item nom="I" position="8">Ecrans</item>
         <item nom="Z" lien="true" position="9">Autre</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" info="Type de régulation" renseigne="1">
-        <item nom="A" position="0">Contrôle continu de l'écoulement</item>
+      <caracteristique nom="c2" type="item" intitule="Dispositif destiné à contrôler" renseigne="1" info="">
+        <item nom="A" position="0">Ecoulement continu</item>
         <item nom="B" position="1">Trop-plein</item>
       </caracteristique>
       <caracteristique nom="q1" type="numerique" renseigne="4" />
@@ -1202,14 +1231,14 @@
   </code>
   <code position="7" parent="descriptionInventaires">
     <id>DCL</id>
-    <intitule info="Présence d'une canalisation scellé à travers le regard de visite ou la boîte d'inspection">Canalisation scellée à travers le regard</intitule>
+    <intitule info="Présence d'une autre canalisation d'eaux usées à travers le regard de visite ou la boîte d'inspection">Autre canalisation d'eaux usées aboutissant dans le regard</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Accès à la canalisation" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Accès à la canalisation" renseigne="1" info="">
         <item nom="A" position="0">Pas d'accès à la canalisation</item>
         <item nom="B" position="1">Accès assuré - tampon en place</item>
         <item nom="C" position="2">Accès assuré - tampon manquant</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" info="Etat apparent de la canalisation" renseigne="1">
+      <caracteristique nom="c2" type="item" intitule="Etat apparent de la canalisation" renseigne="1" info="">
         <item nom="A" position="0">Défectueuse</item>
         <item nom="B" position="1">Non défectueuse</item>
       </caracteristique>
@@ -1236,11 +1265,11 @@
   </code>
   <code position="8" parent="descriptionInventaires">
     <id>DCM</id>
-    <intitule info="Présence d'un piège à gravier (panier) sous le tampon">Piège à graviers sous le tampon</intitule>
+    <intitule info="Présence d'un piège à gravier (godet) sous le tampon">Piège à graviers sous le tampon</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Etat du piège à gravier" renseigne="1">
-        <item nom="A" position="0">Piège présent sans défaut</item>
-        <item nom="B" position="1">Piège manquant (installé à l'origine)</item>
+      <caracteristique nom="c1" type="item" intitule="Etat du piège à gravier" renseigne="1">
+        <item nom="A" position="0">Piège présent sans aucun défaut</item>
+        <item nom="B" position="1">Piège manquant (traces indiquant qu'il était installé à l'origine)</item>
         <item nom="C" position="2">Piège défectueux</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
@@ -1269,7 +1298,7 @@
     <id>DCN</id>
     <intitule info="Présence d'un bassin collecteur de vase sur le radier du regard de visite ou de la boîte d'inspection">Bassin collecteur de vase sur le radier</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Etat du bassin" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Etat du bassin" renseigne="1" info="">
         <item nom="A" position="0">Bassin non défectueux</item>
         <item nom="B" position="1">Bassin défectueux</item>
       </caracteristique>
@@ -1299,14 +1328,14 @@
     <id>DCO</id>
     <intitule>Section transversale</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Forme de la section transversale (en plan)" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Forme de la section transversale (de plan) horizontale du regard de visite ou de la boîte d'inspection" renseigne="1" info="">
         <item nom="A" position="0">Circulaire</item>
         <item nom="B" position="1">Rectangulaire</item>
         <item nom="Z" lien="true" position="2">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" info="Hauteur de la section" unite="mm" renseigne="1" />
-      <caracteristique nom="q2" type="numerique" info="Largeur de la section" unite="mm" renseigne="1" />
+      <caracteristique nom="q1" type="numerique" intitule="Longueur de la section" unite="mm" renseigne="1" info=""/>
+      <caracteristique nom="q2" type="numerique" intitule="Largeur de la section" unite="mm" renseigne="1" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="4" />
       <caracteristique nom="h2" type="horaire" renseigne="4" />
       <caracteristique nom="pm1" type="numerique" renseigne="4" />
@@ -1330,20 +1359,20 @@
     <id ajoute="true">DCXA</id>
     <intitule ajoute="true">Colmatage/comblement de galeries, chambres et niches</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type d'ouvrage/oeuvre" renseigne="1" ajoute="true">
+      <caracteristique nom="c1" type="item" intitule="Type d'ouvrage/oeuvre" renseigne="1" ajoute="true" info="">
         <item nom="XA" position="0" ajoute="true">Mur masque</item>
         <item nom="XB" position="1" ajoute="true">Comblement</item>
         <item nom="XZ" lien="true" position="0" ajoute="true">Autre</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" info="Caractéristiques du mur masque" renseigne="1" ajoute="true">
+      <caracteristique nom="c2" type="item" intitule="Caractéristiques du mur masque" renseigne="1" ajoute="true" info="">
         <item nom="XA" position="0" ajoute="true">Maçonnerie apparente</item>
         <item nom="XB" position="1" ajoute="true">Maçonnerie enduite</item>
         <item nom="XC" position="2" ajoute="true">Briques</item>
         <item nom="XD" position="3" ajoute="true">Parpaings</item>
         <item nom="XZ" lien="true" position="3" ajoute="true">Autre</item>
       </caracteristique>
-      <caracteristique nom="q1" type="numerique" info="Superficie du mur masque" unite="m2" renseigne="1" ajoute="true" />
-      <caracteristique nom="q2" type="numerique" info="Volume comblé si connu" unite="m3" renseigne="1" ajoute="true" />
+      <caracteristique nom="q1" type="numerique" intitule="Superficie du mur masque" unite="m2" renseigne="1" ajoute="true" info=""/>
+      <caracteristique nom="q2" type="numerique" intitule="Volume comblé si connu" unite="m3" renseigne="1" ajoute="true" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="1" ajoute="true" />
       <caracteristique nom="h2" type="horaire" renseigne="3" ajoute="true" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" ajoute="true" />
@@ -1367,7 +1396,7 @@
     <id ajoute="true">DCXC</id>
     <intitule ajoute="true">Equipements de régulation hydraulique</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type d'équipement de régulation hydraulique" renseigne="1" ajoute="true">
+      <caracteristique nom="c1" type="item" intitule="Type d'équipement de régulation hydraulique" renseigne="1" ajoute="true" info="">
         <item nom="XA" position="1" ajoute="true">Barrage à poutrelles en place</item>
         <item nom="XB" position="2" ajoute="true">Râtelier de poutrelles</item>
         <item nom="XC" position="3" ajoute="true">Glissières pour barrage à poutrelles</item>
@@ -1387,7 +1416,7 @@
         <item nom="XQ" position="17" ajoute="true">Seuil-déversoir</item>
         <item nom="XZ" lien="true" position="18" ajoute="true">Autre</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" info="Etat et fonctionnalité de l'équipement" renseigne="1" ajoute="true">
+      <caracteristique nom="c2" type="item" intitule="Etat et fonctionnalité de l'équipement" renseigne="1" ajoute="true" info="">
         <item nom="XA" position="0" ajoute="true">Bon état</item>
         <item nom="XB" position="1" ajoute="true">Etat correct</item>
         <item nom="XC" position="2" ajoute="true">Défectueux</item>
@@ -1397,8 +1426,8 @@
         <item nom="XG" position="6" ajoute="true">Opérationnel</item>
         <item nom="XZ" lien="true" position="7" ajoute="true">Autre</item>
       </caracteristique>
-      <caracteristique nom="q1" type="numerique" info="Linéaire défectueux ou désaffecté" unite="m" renseigne="3" ajoute="true" />
-      <caracteristique nom="q2" type="numerique" info="Nombre d'éléments défectueux ou désaffectés" renseigne="3" ajoute="true" />
+      <caracteristique nom="q1" type="numerique" intitule="Linéaire défectueux ou désaffecté" unite="m" renseigne="3" ajoute="true" info=""/>
+      <caracteristique nom="q2" type="numerique" intitule="Nombre d'éléments défectueux ou désaffectés" renseigne="3" ajoute="true" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="1" ajoute="true" />
       <caracteristique nom="h2" type="horaire" renseigne="3" ajoute="true" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" ajoute="true" />
@@ -1427,7 +1456,7 @@
     <id ajoute="true">DCXD</id>
     <intitule ajoute="true">Equipements d'exploitation et de sécurité</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type d'équipement" renseigne="1" ajoute="true">
+      <caracteristique nom="c1" type="item" intitule="Type d'équipement" renseigne="1" ajoute="true" info="">
         <item nom="XA" position="0" ajoute="true">Main courante horizontale</item>
         <item nom="XB" position="1" ajoute="true">Main courante verticale</item>
         <item nom="XC" position="2" ajoute="true">Chaîne de sécurité</item>
@@ -1451,7 +1480,7 @@
         <item nom="XU" position="20" ajoute="true">Rail de sécurité</item>
         <item nom="XZ" lien="true" position="21" ajoute="true">Autre</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" info="Etat et fonctionnalité de l'équipement" renseigne="1" ajoute="true">
+      <caracteristique nom="c2" type="item" intitule="Etat et fonctionnalité de l'équipement" renseigne="1" ajoute="true" info="">
         <item nom="XA" position="0" ajoute="true">Bon état</item>
         <item nom="XB" position="1" ajoute="true">Etat correct</item>
         <item nom="XC" position="2" ajoute="true">Défectueux</item>
@@ -1461,8 +1490,8 @@
         <item nom="XG" position="6" ajoute="true">Opérationnel</item>
         <item nom="XZ" lien="true" position="7" ajoute="true">Autre</item>
       </caracteristique>
-      <caracteristique nom="q1" type="numerique" info="Linéaire défectueux ou désaffecté" unite="m" renseigne="3" ajoute="true" />
-      <caracteristique nom="q2" type="numerique" info="Nombre d'éléments défectueux ou désaffectés" renseigne="3" ajoute="true" />
+      <caracteristique nom="q1" type="numerique" intitule="Linéaire défectueux ou désaffecté" unite="m" renseigne="3" ajoute="true" info=""/>
+      <caracteristique nom="q2" type="numerique" intitule="Nombre d'éléments défectueux ou désaffectés" renseigne="3" ajoute="true" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="1" ajoute="true" />
       <caracteristique nom="h2" type="horaire" renseigne="3" ajoute="true" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" ajoute="true" />
@@ -1491,15 +1520,15 @@
     <id ajoute="true">DCXE</id>
     <intitule ajoute="true">Aménagement particulier</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Aménagement particulier" renseigne="1" ajoute="true">
+      <caracteristique nom="c1" type="item" intitule="Aménagement particulier" renseigne="1" ajoute="true" info="">
         <item nom="XA" position="0" ajoute="true">Mur masque</item>
         <item nom="XB" position="1" ajoute="true">Réservation pour concessionnaire</item>
         <item nom="XC" position="2" ajoute="true">Niche</item>
         <item nom="XZ" lien="true" position="3" ajoute="true">Autre</item>
       </caracteristique>
-      <caracteristique nom="c2" type="numerique" info="Longueur" unite="m" renseigne="1" ajoute="true" />
-      <caracteristique nom="q1" type="numerique" info="Largeur" unite="m" renseigne="3" ajoute="true" />
-      <caracteristique nom="q2" type="numerique" info="profondeur" unite="m" renseigne="3" ajoute="true" />
+      <caracteristique nom="c2" type="numerique" intitule="Longueur" unite="m" renseigne="1" ajoute="true" info=""/>
+      <caracteristique nom="q1" type="numerique" intitule="Largeur" unite="m" renseigne="3" ajoute="true" info=""/>
+      <caracteristique nom="q2" type="numerique" intitule="profondeur" unite="m" renseigne="3" ajoute="true" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="1" ajoute="true" />
       <caracteristique nom="h2" type="horaire" renseigne="3" ajoute="true" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" ajoute="true" />
@@ -1523,7 +1552,7 @@
     <id ajoute="true">DCXF</id>
     <intitule ajoute="true">Réseaux concessionnaires</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type de concessionnaire" renseigne="1" ajoute="true">
+      <caracteristique nom="c1" type="item" intitule="Type de concessionnaire" renseigne="1" ajoute="true" info="">
         <item nom="XA" position="0" ajoute="true">Conduite d'eau</item>
         <item nom="XB" position="1" ajoute="true">Air comprimé</item>
         <item nom="XC" position="2" ajoute="true">Réseau de chaleur</item>
@@ -1537,7 +1566,7 @@
         <item nom="XK" position="10" ajoute="true">Concessionnaire non identifié</item>
         <item nom="XZ" lien="true" position="11" ajoute="true">Autre</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" info="Etat et fonctionnalité du concessionnaire" renseigne="1" ajoute="true">
+      <caracteristique nom="c2" type="item" intitule="Etat et fonctionnalité du concessionnaire" renseigne="1" ajoute="true" info="">
         <item nom="XA" position="0" ajoute="true">Bon état</item>
         <item nom="XB" position="1" ajoute="true">Etat correct</item>
         <item nom="XC" position="2" ajoute="true">Défectueux</item>
@@ -1547,8 +1576,8 @@
         <item nom="XG" position="6" ajoute="true">Opérationnel</item>
         <item nom="XZ" lien="true" position="7" ajoute="true">Autre</item>
       </caracteristique>
-      <caracteristique nom="q1" type="numerique" info="Linéaire défectueux ou désaffecté" unite="m" renseigne="3" ajoute="true" />
-      <caracteristique nom="q2" type="numerique" info="Nombre d'éléments défectueux ou désaffectés" renseigne="3" ajoute="true" />
+      <caracteristique nom="q1" type="numerique" intitule="Linéaire défectueux ou désaffecté" unite="m" renseigne="3" ajoute="true" info=""/>
+      <caracteristique nom="q2" type="numerique" intitule="Nombre d'éléments défectueux ou désaffectés" renseigne="3" ajoute="true" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="1" ajoute="true" />
       <caracteristique nom="h2" type="horaire" renseigne="2" ajoute="true" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" ajoute="true" />
@@ -1581,7 +1610,7 @@
       <caracteristique nom="c2" type="texte" renseigne="4" />
       <caracteristique nom="q1" type="numerique" renseigne="4" />
       <caracteristique nom="q2" type="numerique" renseigne="4" />
-      <caracteristique nom="h1" info="Position de la photo (si pas de face)" type="horaire" renseigne="3" />
+      <caracteristique nom="h1" type="horaire" renseigne="3" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
       <caracteristique nom="pm2" type="numerique" renseigne="3" />
@@ -1629,16 +1658,20 @@
   </code>
   <code position="2" parent="autresRemarques">
     <id>DDC</id>
-    <intitule info="L'inspection a été interrompue avant d'avoir terminé l'inspection du regard de visite ou de la boîte d'inspection">Inspection abandonnée</intitule>
+    <intitule info="L'inspection a été interrompue avant d'avoir atteint le noeud d'arrivée prévu">Inspection terminée avant la fin</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Raison de l'interruption" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Raison de l'interruption" renseigne="1" info="">
         <item nom="A" position="0">Impossible d'ôter le tampon</item>
         <item nom="B" position="1">Obstruction</item>
         <item nom="C" position="2">Niveau d'eau trop élevé</item>
         <item nom="D" position="3">Panne de l'équipement</item>
         <item nom="Z" lien="true" position="4" ajoute="true">Autre</item>
       </caracteristique>
-      <caracteristique nom="c2" type="texte" renseigne="4" />
+      <caracteristique nom="c2" type="item" intitule="D'autres caractérisations" renseigne="4" info="">
+	    <item nom="A" position="0">Objectif de l'inspection atteint avant la fin</item>
+        <item nom="B" position="1">Inspection terminée sur les instructions de l'autorité responsable</item>
+        <item nom="Z" lien="true" position="2" ajoute="true">Autre</item>
+      </caracteristique>
       <caracteristique nom="q1" type="numerique" renseigne="4" />
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
@@ -1662,7 +1695,7 @@
   </code>
   <code position="3" parent="autresRemarques">
     <id>DDD</id>
-    <intitule info="Niveau de l'effluent dans le regard de visite ou la boîte d'inspection">Niveau d'eau</intitule>
+    <intitule info="Niveau des eaux usées dans le regard de visite ou la boîte d'inspection">Niveau d'eau</intitule>
     <caracteristiques>
       <caracteristique nom="c1" type="texte" renseigne="4" />
       <caracteristique nom="c2" type="texte" renseigne="4" />
@@ -1670,7 +1703,7 @@
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="4" />
       <caracteristique nom="h2" type="horaire" renseigne="4" />
-      <caracteristique nom="pm1" info="Niveau de l'effluent" unite="mm" type="numerique" renseigne="1" />
+      <caracteristique nom="pm1" intitule="Niveau de l'effluent" unite="mm" type="numerique" renseigne="1" info=""/>
       <caracteristique nom="pm2" type="numerique" renseigne="4" />
       <caracteristique nom="posregard" type="posregard" renseigne="3" />
       <caracteristique nom="assemblage" type="booleen" renseigne="3" />
@@ -1689,19 +1722,22 @@
   </code>
   <code position="4" parent="autresRemarques">
     <id>DDE</id>
-    <intitule info="Informations relatives à l'écoulement dans une conduite de raccordement">Ecoulement dans une canalisation entrante</intitule>
+    <intitule info="Informations relatives à l'écoulement des ueaux usées provenant de la conduite de raccordement">Ecoulement d'une conduite de raccordement</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Ecoulement dans la conduite de raccordement" renseigne="1">
-        <item nom="A" position="0">Clair</item>
-        <item nom="B" position="1">Trouble ou coloré</item>
-        <item nom="YY" position="2">Non visible</item>
+      <caracteristique nom="c1" type="item" intitule="Ecoulement des eaux usées provenant de la canalisation de racccordement" renseigne="1" info="">
+        <item nom="A" position="0">Clair (le radier de la canalisation entrante est visible)</item>
+        <item nom="B" position="1">Présente un aspect discontinu</item>
+		<item nom="C" position="2">Trouble</item>
+		<item nom="D" position="3">Coloré</item>
+		<item nom="E" position="4">Trouble et coloré</item>
+        <item nom="YY" position="5">Non visible</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" info="Nature de la conduite de racccordement" renseigne="1">
+      <caracteristique nom="c2" type="item" intitule="Conduite de racccordement" renseigne="1" info="">
         <item nom="A" position="0">Mal raccordé car les eaux usées se déversent dans un branchement ou un collecteur d'eaux de surface</item>
         <item nom="B" position="1">Mal raccordé car les eaux de surface se déversent dans un branchement ou un collecteur d'eaux usées</item>
         <item nom="C" position="2">Aucun mauvais raccordement observé</item>
       </caracteristique>
-      <caracteristique nom="q1" type="numerique" info="Niveau d'eau dans la conduite de raccordement, en % de la hauteur de la canalisation entrante" unite="%" renseigne="1" />
+      <caracteristique nom="q1" type="numerique" intitule="Niveau d'eau dans la conduite de raccordement / hauteur de la canalisation entrante" unite="%" renseigne="1" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="4" />
@@ -1731,15 +1767,15 @@
     <id>DDF</id>
     <intitule info="Présence d'une atmosphère potentiellement dangereuse">Atmosphère au sein de la canalisation</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type de danger détecté" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Type de danger détecté" renseigne="1" info="">
         <item nom="A" position="0">Manque d'oxygène (O2)</item>
         <item nom="B" position="1">Sulfure d'hydrogène (H2S)</item>
         <item nom="C" position="2">Méthane (CH4)</item>
         <item nom="Z" lien="true" position="3">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" info="Pourcentage de gaz" unite="%" renseigne="3" />
-      <caracteristique nom="q2" type="numerique" info="Concentration de gaz" unite="ppm" renseigne="3" />
+      <caracteristique nom="q1" type="numerique" intitule="Pourcentage de gaz" unite="%" renseigne="3" info=""/>
+      <caracteristique nom="q2" type="numerique" intitule="Concentration de gaz" unite="ppm" renseigne="3" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="4" />
       <caracteristique nom="h2" type="horaire" renseigne="4" />
       <caracteristique nom="pm1" type="numerique" renseigne="4" />
@@ -1763,7 +1799,7 @@
     <id>DDG</id>
     <intitule info="Mauvaise visualisation du regard de visite ou de la boîte d'inspection en raison d'une obstruction">Perte de visibilité</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Raison de l'obstruction" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Raison de l'obstruction" renseigne="1" info="">
         <item nom="A" position="0">La caméra est sous l'eau</item>
         <item nom="B" position="1">Vase</item>
         <item nom="C" position="2">Vapeur</item>
@@ -1795,7 +1831,7 @@
     <id ajoute="true">DDXA</id>
     <intitule ajoute="true">Montées en charge</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Montées en charge probables" renseigne="1" ajoute="true">
+      <caracteristique nom="c1" type="item" intitule="Montées en charge probables" renseigne="1" ajoute="true" info="">
         <item nom="XA" position="0" ajoute="true">Oui</item>
         <item nom="XB" position="1" ajoute="true">Non</item>
         <item nom="XC" position="2" ajoute="true">Inconnue</item>
@@ -1827,21 +1863,21 @@
     <id ajoute="true">DDXB</id>
     <intitule ajoute="true">Caractéristiques des effluents</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" renseigne="1" ajoute="true" info="Caractéristique relevée">
+      <caracteristique nom="c1" type="item" renseigne="1" ajoute="true" intitule="Caractéristique relevée" info="">
         <item nom="XA" position="0" ajoute="true">Aspect des effluents</item>
         <item nom="XB" position="1" ajoute="true">Odeur des effluents</item>
         <item nom="XC" position="2" ajoute="true">Température des effluents</item>
         <item nom="XD" position="3" ajoute="true">PH des effluents</item>
         <item nom="XE" lien="true" position="4" ajoute="true">Autre</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" renseigne="1" ajoute="true" info="Mesure réalisée">
+      <caracteristique nom="c2" type="item" renseigne="1" ajoute="true" intitule="Mesure réalisée" info="">
         <item nom="XA" position="0" ajoute="true">Mesure effectuée</item>
         <item nom="XB" position="1" ajoute="true">Mesure non effectuée</item>
         <item nom="XC" lien="true" position="2" ajoute="true">Mesure impossible</item>
         <item nom="XZ" position="3" ajoute="True">Autre</item>
       </caracteristique>
-      <caracteristique nom="q1" type="texte" info="" renseigne="4" ajoute="true" />
-      <caracteristique nom="q2" type="numerique" info="Valeur numérique du paramètre physico-chimique" renseigne="3" ajoute="true" />
+      <caracteristique nom="q1" type="texte" intitule="" renseigne="4" ajoute="true" />
+      <caracteristique nom="q2" type="numerique" intitule="Valeur numérique du paramètre physico-chimique" renseigne="3" ajoute="true" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="4" ajoute="true" />
       <caracteristique nom="h2" type="horaire" renseigne="4" ajoute="true" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" ajoute="true" />
@@ -1867,7 +1903,7 @@
     <caracteristiques>
       <caracteristique nom="c1" type="texte" renseigne="4" />
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="texte" info="Numéro de référence" renseigne="1" />
+      <caracteristique nom="q1" type="texte" intitule="Numéro de référence" renseigne="1" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="4" />
       <caracteristique nom="h2" type="horaire" renseigne="4" />
@@ -1894,7 +1930,7 @@
     <caracteristiques>
       <caracteristique nom="c1" type="texte" renseigne="4" />
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" info="Numéro de référence" renseigne="1" />
+      <caracteristique nom="q1" type="numerique" intitule="Numéro de référence" renseigne="1" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="4" />
       <caracteristique nom="h2" type="horaire" renseigne="4" />
@@ -1919,7 +1955,7 @@
     <id>CED</id>
     <intitule info="Changement du matériau">Matériau</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Matériau" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Matériau" renseigne="1" info="">
         <item nom="AA" position="0">Amiante-ciment</item>
         <item nom="AB" position="1">Bitume</item>
         <item nom="AC" position="2">Fibres projetées</item>
@@ -1974,7 +2010,7 @@
     <id ajoute="true">CEXA</id>
     <intitule info="Changement du type de revêtement" ajoute="true">Type de revêtement</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" renseigne="1" ajoute="true" info="Type de revêtement">
+      <caracteristique nom="c1" type="item" renseigne="1" ajoute="true" intitule="Type de revêtement" info="">
         <item nom="XA" position="0" ajoute="true">Revêtement intégré lors de la fabrication</item>
         <item nom="XB" position="1" ajoute="true">Revêtement projeté</item>
         <item nom="XC" position="2" ajoute="true">Revêtement polymérisé sur place</item>
@@ -2013,7 +2049,7 @@
     <caracteristiques>
       <caracteristique nom="c1" type="numerique" renseigne="4" />
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" info="Longueur unitaire" unite="mm" renseigne="1" />
+      <caracteristique nom="q1" type="numerique" intitule="Longueur unitaire" unite="mm" renseigne="1" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="4" />
       <caracteristique nom="h2" type="horaire" renseigne="4" />
@@ -2038,7 +2074,7 @@
     <id>CEG</id>
     <intitule>Précipitations</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" renseigne="1" info="Précipitations">
+      <caracteristique nom="c1" type="item" renseigne="1" intitule="Précipitations" info="">
         <item nom="A" position="0">Pas de précipitations</item>
         <item nom="B" position="1">Pluie</item>
         <item nom="C" position="2">Neige fondante ou glace</item>
@@ -2069,7 +2105,7 @@
     <id>CEH</id>
     <intitule>Type de système de descente</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Type de système de descente disponible" renseigne="1">
+      <caracteristique nom="c1" type="item" intitule="Type de système de descente disponible" renseigne="1" info="">
         <item nom="A" position="0">Echelons simples (peut poser 1 pied)</item>
         <item nom="B" position="1">Echelons doubles (peut poser 2 pieds)</item>
         <item nom="C" position="2">Echelle</item>
@@ -2077,7 +2113,7 @@
         <item nom="E" position="4">Rien</item>
         <item nom="Z" lien="true" position="5">Autre</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" info="Matériau constituant les échelons" renseigne="3">
+      <caracteristique nom="c2" type="item" intitule="Matériau constituant les échelons" renseigne="3" info="">
         <item nom="A" position="0">Fer</item>
         <item nom="B" position="1">Fer galvanisé</item>
         <item nom="C" position="2">Acer inoxydable</item>
@@ -2111,7 +2147,7 @@
     <id ajoute="true">CEXB</id>
     <intitule info="Changement de forme" ajoute="true">Forme de l'accès</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" info="Section de la cheminée" renseigne="1" ajoute="true">
+      <caracteristique nom="c1" type="item" intitule="Section de la cheminée" renseigne="1" ajoute="true" info="">
         <item nom="XA" position="0" ajoute="true">Rectangulaire</item>
         <item nom="XB" position="1" ajoute="true">Circulaire</item>
         <item nom="XC" position="2" ajoute="true">Triangulaire</item>
@@ -2121,8 +2157,8 @@
         <item nom="XZ" lien="true" position="6" ajoute="true">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" ajoute="true" />
-      <caracteristique nom="q1" type="numerique" info="Hauteur" unite="mm" renseigne="1" ajoute="true" />
-      <caracteristique nom="q2" type="numerique" info="Largeur" unite="mm" renseigne="1" ajoute="true" />
+      <caracteristique nom="q1" type="numerique" intitule="Hauteur" unite="mm" renseigne="1" ajoute="true" info=""/>
+      <caracteristique nom="q2" type="numerique" intitule="Largeur" unite="mm" renseigne="1" ajoute="true" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="4" ajoute="true" />
       <caracteristique nom="h2" type="horaire" renseigne="4" ajoute="true" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" ajoute="true" />

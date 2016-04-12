@@ -2757,10 +2757,9 @@
             // 
             // label52
             // 
-            this.label52.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label52.AutoSize = true;
             this.label52.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label52.Location = new System.Drawing.Point(871, 5);
+            this.label52.Location = new System.Drawing.Point(863, 4);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(116, 14);
             this.label52.TabIndex = 15;
@@ -2768,7 +2767,6 @@
             // 
             // XmlObsCodeDelValueBt
             // 
-            this.XmlObsCodeDelValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.XmlObsCodeDelValueBt.BackColor = System.Drawing.SystemColors.Control;
             this.XmlObsCodeDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XmlObsCodeDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
@@ -2783,7 +2781,7 @@
             this.label53.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label53.AutoSize = true;
             this.label53.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label53.Location = new System.Drawing.Point(580, 5);
+            this.label53.Location = new System.Drawing.Point(559, 4);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(102, 14);
             this.label53.TabIndex = 13;
@@ -2795,7 +2793,7 @@
             this.XmlObsCodeAddValueBt.BackColor = System.Drawing.SystemColors.Control;
             this.XmlObsCodeAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XmlObsCodeAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.XmlObsCodeAddValueBt.Location = new System.Drawing.Point(832, 0);
+            this.XmlObsCodeAddValueBt.Location = new System.Drawing.Point(822, -1);
             this.XmlObsCodeAddValueBt.Name = "XmlObsCodeAddValueBt";
             this.XmlObsCodeAddValueBt.Size = new System.Drawing.Size(26, 22);
             this.XmlObsCodeAddValueBt.TabIndex = 12;
@@ -2805,7 +2803,7 @@
             // 
             this.XmlObsCodeAddValueTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.XmlObsCodeAddValueTb.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlObsCodeAddValueTb.Location = new System.Drawing.Point(683, 2);
+            this.XmlObsCodeAddValueTb.Location = new System.Drawing.Point(667, 1);
             this.XmlObsCodeAddValueTb.Name = "XmlObsCodeAddValueTb";
             this.XmlObsCodeAddValueTb.Size = new System.Drawing.Size(146, 18);
             this.XmlObsCodeAddValueTb.TabIndex = 11;
@@ -2924,7 +2922,7 @@
             this.label56.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label56.AutoSize = true;
             this.label56.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label56.Location = new System.Drawing.Point(871, 3);
+            this.label56.Location = new System.Drawing.Point(863, 1);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(116, 14);
             this.label56.TabIndex = 15;
@@ -2947,7 +2945,7 @@
             this.label57.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label57.AutoSize = true;
             this.label57.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label57.Location = new System.Drawing.Point(580, 3);
+            this.label57.Location = new System.Drawing.Point(559, 3);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(102, 14);
             this.label57.TabIndex = 13;
@@ -2959,7 +2957,7 @@
             this.XmlObsItemAddValueBt.BackColor = System.Drawing.SystemColors.Control;
             this.XmlObsItemAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XmlObsItemAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.XmlObsItemAddValueBt.Location = new System.Drawing.Point(832, -2);
+            this.XmlObsItemAddValueBt.Location = new System.Drawing.Point(826, -2);
             this.XmlObsItemAddValueBt.Name = "XmlObsItemAddValueBt";
             this.XmlObsItemAddValueBt.Size = new System.Drawing.Size(26, 22);
             this.XmlObsItemAddValueBt.TabIndex = 12;
@@ -2969,7 +2967,7 @@
             // 
             this.XmlObsItemAddValueTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.XmlObsItemAddValueTb.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlObsItemAddValueTb.Location = new System.Drawing.Point(683, 0);
+            this.XmlObsItemAddValueTb.Location = new System.Drawing.Point(672, 1);
             this.XmlObsItemAddValueTb.Name = "XmlObsItemAddValueTb";
             this.XmlObsItemAddValueTb.Size = new System.Drawing.Size(146, 18);
             this.XmlObsItemAddValueTb.TabIndex = 11;
@@ -3122,7 +3120,7 @@
             this.label48.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label48.AutoSize = true;
             this.label48.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label48.Location = new System.Drawing.Point(870, 3);
+            this.label48.Location = new System.Drawing.Point(867, 3);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(116, 14);
             this.label48.TabIndex = 15;
@@ -3145,7 +3143,7 @@
             this.label49.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label49.AutoSize = true;
             this.label49.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label49.Location = new System.Drawing.Point(579, 3);
+            this.label49.Location = new System.Drawing.Point(566, 3);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(102, 14);
             this.label49.TabIndex = 13;
@@ -3157,7 +3155,7 @@
             this.XmlIdCodeAddValueBt.BackColor = System.Drawing.SystemColors.Control;
             this.XmlIdCodeAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XmlIdCodeAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.XmlIdCodeAddValueBt.Location = new System.Drawing.Point(831, -2);
+            this.XmlIdCodeAddValueBt.Location = new System.Drawing.Point(832, -2);
             this.XmlIdCodeAddValueBt.Name = "XmlIdCodeAddValueBt";
             this.XmlIdCodeAddValueBt.Size = new System.Drawing.Size(26, 22);
             this.XmlIdCodeAddValueBt.TabIndex = 12;
@@ -3167,7 +3165,7 @@
             // 
             this.XmlIdCodeAddValueTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.XmlIdCodeAddValueTb.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlIdCodeAddValueTb.Location = new System.Drawing.Point(682, 0);
+            this.XmlIdCodeAddValueTb.Location = new System.Drawing.Point(677, 0);
             this.XmlIdCodeAddValueTb.Name = "XmlIdCodeAddValueTb";
             this.XmlIdCodeAddValueTb.Size = new System.Drawing.Size(146, 18);
             this.XmlIdCodeAddValueTb.TabIndex = 11;
@@ -3225,7 +3223,7 @@
             this.label50.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label50.AutoSize = true;
             this.label50.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label50.Location = new System.Drawing.Point(870, 3);
+            this.label50.Location = new System.Drawing.Point(868, 3);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(116, 14);
             this.label50.TabIndex = 15;
@@ -3248,7 +3246,7 @@
             this.label51.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label51.AutoSize = true;
             this.label51.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label51.Location = new System.Drawing.Point(579, 3);
+            this.label51.Location = new System.Drawing.Point(566, 3);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(102, 14);
             this.label51.TabIndex = 13;
@@ -3270,7 +3268,7 @@
             // 
             this.XmlIdItemAddValueTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.XmlIdItemAddValueTb.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlIdItemAddValueTb.Location = new System.Drawing.Point(682, 0);
+            this.XmlIdItemAddValueTb.Location = new System.Drawing.Point(678, 0);
             this.XmlIdItemAddValueTb.Name = "XmlIdItemAddValueTb";
             this.XmlIdItemAddValueTb.Size = new System.Drawing.Size(146, 18);
             this.XmlIdItemAddValueTb.TabIndex = 11;
@@ -3523,7 +3521,7 @@
             this.label47.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label47.AutoSize = true;
             this.label47.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label47.Location = new System.Drawing.Point(578, 9);
+            this.label47.Location = new System.Drawing.Point(578, 7);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(102, 14);
             this.label47.TabIndex = 8;
@@ -3545,7 +3543,7 @@
             // 
             this.XmlHeureAddTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.XmlHeureAddTb.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlHeureAddTb.Location = new System.Drawing.Point(681, 6);
+            this.XmlHeureAddTb.Location = new System.Drawing.Point(681, 5);
             this.XmlHeureAddTb.Name = "XmlHeureAddTb";
             this.XmlHeureAddTb.Size = new System.Drawing.Size(146, 18);
             this.XmlHeureAddTb.TabIndex = 6;
@@ -4278,8 +4276,7 @@
             this.InputPreviewTb.Location = new System.Drawing.Point(0, 0);
             this.InputPreviewTb.Name = "InputPreviewTb";
             this.InputPreviewTb.Size = new System.Drawing.Size(923, 22);
-            this.InputPreviewTb.TabIndex = 0;
-            this.InputPreviewTb.TextChanged += new System.EventHandler(this.InputPreviewTb_TextChanged);
+            this.InputPreviewTb.TabIndex = 1;
             // 
             // EraseAllBt
             // 
@@ -4290,7 +4287,7 @@
             this.EraseAllBt.Location = new System.Drawing.Point(0, 0);
             this.EraseAllBt.Name = "EraseAllBt";
             this.EraseAllBt.Size = new System.Drawing.Size(97, 24);
-            this.EraseAllBt.TabIndex = 0;
+            this.EraseAllBt.TabIndex = 1;
             this.EraseAllBt.Text = "Tout effacer";
             this.EraseAllBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.EraseAllBt.UseVisualStyleBackColor = false;
@@ -4311,7 +4308,7 @@
             this.SaisieTabControl.Location = new System.Drawing.Point(0, 0);
             this.SaisieTabControl.Name = "SaisieTabControl";
             this.SaisieTabControl.Size = new System.Drawing.Size(1024, 287);
-            this.SaisieTabControl.TabIndex = 1;
+            this.SaisieTabControl.TabIndex = 2;
             this.SaisieTabControl.TabsSpacing = 5;
             this.SaisieTabControl.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
             this.SaisieTabControl.VisualStyle = C1.Win.C1Command.VisualStyle.Office2007Black;
@@ -4818,7 +4815,7 @@
 
         #endregion
 
-        private System.Windows.Forms.SplitContainer MainSplit;
+        public System.Windows.Forms.SplitContainer MainSplit;
         private System.Windows.Forms.SplitContainer MenuSplit;
         private C1.Win.C1Command.C1TopicBar CodeTopicBar;
         private C1.Win.C1Command.C1CommandHolder c1CommandHolder1;
@@ -4840,22 +4837,12 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         public System.Windows.Forms.FlowLayoutPanel Identification_Flp;
         private System.Windows.Forms.SplitContainer IdFormSplit;
-        public System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private C1.Win.C1Command.C1DockingTabPage KeyboardTab;
-        private C1.Win.C1Command.C1DockingTabPage ChoiceTab;
-        private C1.Win.C1Command.C1DockingTabPage SectionTab;
-        private C1.Win.C1Command.C1DockingTabPage PhotoTab;
-        private C1.Win.C1Command.C1DockingTabPage VideoTab;
-        public C1.Win.C1Command.C1DockingTab SaisieTabControl;
-        private C1.Win.C1Command.C1DockingTabPage AudioTab;
         private C1.Win.C1Command.C1DockingTabPage InspectionTab;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.OpenFileDialog openSVFDialog;
-        private C1.Win.C1Command.C1DockingTabPage DateTab;
-        private System.Windows.Forms.SplitContainer SaisieInputSplit;
+        public System.Windows.Forms.SplitContainer SaisieInputSplit;
         private System.Windows.Forms.SplitContainer InspectionSplit;
         private System.Windows.Forms.SplitContainer splitContainer2;
-        public System.Windows.Forms.TextBox InputPreviewTb;
         public System.Windows.Forms.Label IdFormLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -4868,7 +4855,6 @@
         public C1.Win.C1Command.C1DockingTab CaracDockingTab;
         public C1.Win.C1Command.C1DockingTabPage ObservationTab;
         public C1.Win.C1Command.C1DockingTabPage IdentificationTab;
-        public ACTIVA_Module_1.component.section_horaire section_horaire1;
         public System.Windows.Forms.SplitContainer DataSplit;
         private System.Windows.Forms.SplitContainer splitContainer3;
         private System.Windows.Forms.Label label4;
@@ -4933,7 +4919,6 @@
         public System.Windows.Forms.OpenFileDialog openXMLDialog;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
-        public ACTIVA_Module_1.component.photo_select photo_select1;
         private System.Windows.Forms.GroupBox groupBox8;
         public System.Windows.Forms.Button XmlSectionOuvrageBt;
         private System.Windows.Forms.Label label22;
@@ -4946,9 +4931,7 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
-        private C1.Win.C1Command.C1DockingTabPage SchemaTab;
         private System.Windows.Forms.SplitContainer splitContainer9;
-        private System.Windows.Forms.Button EraseAllBt;
         private C1.C1Pdf.C1PdfDocument c1PdfRapport;
         public System.Windows.Forms.OpenFileDialog openIMGDialog;
         private C1.Win.C1Command.C1DockingTabPage XmlSectionTab;
@@ -5037,8 +5020,6 @@
         public System.Windows.Forms.Button XmlPonctuelDelValueBt;
         public System.Windows.Forms.Button XmlLineaireDelValueBt;
         public System.Windows.Forms.Button XmlSurfaciqueDelValueBt;
-        public ACTIVA_Module_1.component.date_selector date_selector1;
-        public ACTIVA_Module_1.component.virtual_kb virtual_kb1;
         private System.Windows.Forms.GroupBox groupBox12;
         public System.Windows.Forms.Button FileHachureBt;
         private System.Windows.Forms.Label label59;
@@ -5133,6 +5114,22 @@
         public System.Windows.Forms.Label label27;
         public System.Windows.Forms.Label label55;
         public System.Windows.Forms.TextBox textBox1;
+        public C1.Win.C1Command.C1DockingTab SaisieTabControl;
+        public C1.Win.C1Command.C1DockingTabPage KeyboardTab;
+        public component.virtual_kb virtual_kb1;
+        public C1.Win.C1Command.C1DockingTabPage ChoiceTab;
+        public System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        public C1.Win.C1Command.C1DockingTabPage DateTab;
+        public component.date_selector date_selector1;
+        public C1.Win.C1Command.C1DockingTabPage SectionTab;
+        public component.section_horaire section_horaire1;
+        public C1.Win.C1Command.C1DockingTabPage PhotoTab;
+        public component.photo_select photo_select1;
+        public C1.Win.C1Command.C1DockingTabPage VideoTab;
+        public C1.Win.C1Command.C1DockingTabPage AudioTab;
+        public C1.Win.C1Command.C1DockingTabPage SchemaTab;
+        public System.Windows.Forms.TextBox InputPreviewTb;
+        public System.Windows.Forms.Button EraseAllBt;
         public System.Windows.Forms.ToolStripLabel XmlAutocadStripLabel;
         public System.Windows.Forms.ToolStripLabel XmlSectionStripLabel;
         public System.Windows.Forms.ToolStripButton XmlObsCanaButton;

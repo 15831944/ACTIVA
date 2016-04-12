@@ -1,1 +1,9 @@
 C:\SRDEV\Projets\ACTIVA\ActivCAD\obj\Release\ActivCAD.csproj.ResolveComReference.cache
+C:\SRDEV\Projets\ACTIVA\ActivCAD\bin\Release\ActivCAD.dll
+C:\SRDEV\Projets\ACTIVA\ActivCAD\bin\Release\ActivCAD.pdb
+C:\SRDEV\Projets\ACTIVA\ActivCAD\bin\Release\ActivCAD.tlb
+C:\SRDEV\Projets\ACTIVA\ActivCAD\bin\Release\acdbmgd.dll
+C:\SRDEV\Projets\ACTIVA\ActivCAD\bin\Release\acmgd.dll
+C:\SRDEV\Projets\ACTIVA\ActivCAD\obj\Release\ActivCAD.csprojResolveAssemblyReference.cache
+C:\SRDEV\Projets\ACTIVA\ActivCAD\obj\Release\ActivCAD.dll
+C:\SRDEV\Projets\ACTIVA\ActivCAD\obj\Release\ActivCAD.pdb

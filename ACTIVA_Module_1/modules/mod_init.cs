@@ -153,6 +153,7 @@ namespace ACTIVA_Module_1.modules
             mod_global.MF.FileSymboleTb.Text = Properties.Settings.Default.SymbolePath;
 
             mod_global.MF.OuvrageToolsPanel.Enabled = false;
+            mod_global.MF.MainSplit.Panel2Collapsed = true;
         }
     }
 }

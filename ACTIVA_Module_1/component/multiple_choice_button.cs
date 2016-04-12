@@ -12,7 +12,7 @@ namespace ACTIVA_Module_1.component
 {
     public partial class multiple_choice_button : UserControl
     {
-        public multiple_choice_button(string button_text, Hashtable NextFieldsState, bool other_function)
+        public multiple_choice_button(string button_text, Hashtable NextFieldsState, bool other_function, bool ajout)
         {
             InitializeComponent();
             button1.Text = button_text;
@@ -22,6 +22,9 @@ namespace ACTIVA_Module_1.component
 
             if (other_function == true)
                 button1.ForeColor = Color.Red;
+
+            if (ajout == true)
+                button1.ForeColor = Color.Blue;
         }
 
         private void button1_Click(object sender, EventArgs e)

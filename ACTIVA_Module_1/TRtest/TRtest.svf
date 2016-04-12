@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<inspection>
+  <ouvrage nom="T1" type="REGARD" forme="A" position="1">
+    <identifications>
+      <code parent="Element">
+        <id>CCA</id>
+        <intitule>Forme de l'accès</intitule>
+        <valeur code="A">Rectangulaire</valeur>
+      </code>
+    </identifications>
+    <observations>
+      <code forme="A" num="1">
+        <id>DCN</id>
+        <intitule>Bassin collecteur de vase sur le radier</intitule>
+        <caracteristiques>
+          <caracteristique nom="h2" renseigne="3" />
+          <caracteristique nom="c1" renseigne="1" code="B">Bassin défectueux</caracteristique>
+          <caracteristique nom="pm1" renseigne="1">8</caracteristique>
+          <caracteristique nom="remarques" renseigne="3" />
+          <caracteristique nom="audio" renseigne="3" />
+          <caracteristique nom="q1" renseigne="4" />
+          <caracteristique nom="pm2" renseigne="3" />
+          <caracteristique nom="photo" renseigne="3">Photo N° BR001 - Branchement en PGB à R0+0.6m.JPG|Photo N°001 - P0 Vue générale vers l'amont.JPG|Photo N°002 - P0 Vue générale vers l'aval.JPG|Photo N°003 - Eclatement d'enduit en PDM à R0+2.3m.jpg</caracteristique>
+          <caracteristique nom="c2" renseigne="4" />
+          <caracteristique nom="assemblage" renseigne="3">False</caracteristique>
+          <caracteristique nom="posregard" renseigne="3">
+          </caracteristique>
+          <caracteristique nom="h1" renseigne="1" correspondance="">4H</caracteristique>
+          <caracteristique nom="q2" renseigne="4" />
+          <caracteristique nom="video" renseigne="3" />
+        </caracteristiques>
+      </code>
+    </observations>
+  </ouvrage>
+  <ouvrage nom="B2" type="TRONCON" forme="A" position="2">
+    <identifications>
+      <code parent="Element">
+        <id>ACA</id>
+        <intitule>Forme de la section</intitule>
+        <valeur code="A">Circulaire</valeur>
+      </code>
+    </identifications>
+    <observations>
+      <code forme="A" num="1">
+        <id>AEG</id>
+        <intitule>Précipitations</intitule>
+        <caracteristiques>
+          <caracteristique nom="h2" renseigne="4" />
+          <caracteristique nom="c1" renseigne="1" code="C">Neige fondante ou glace</caracteristique>
+          <caracteristique nom="pm1" renseigne="1">5</caracteristique>
+          <caracteristique nom="remarques" renseigne="3" />
+          <caracteristique nom="audio" renseigne="3" />
+          <caracteristique nom="q1" renseigne="4" />
+          <caracteristique nom="pm2" renseigne="4" />
+          <caracteristique nom="photo" renseigne="3">Photo N° BR001 - Branchement en PGB à R0+0.6m.JPG|Photo N°001 - P0 Vue générale vers l'amont.JPG|Photo N°002 - P0 Vue générale vers l'aval.JPG|Photo N°003 - Eclatement d'enduit en PDM à R0+2.3m.jpg|Photo N°004 - FL1 avec éclats d'enduit en NVD à R0+12m.jpg</caracteristique>
+          <caracteristique nom="c2" renseigne="4" />
+          <caracteristique nom="assemblage" renseigne="3">False</caracteristique>
+          <caracteristique nom="h1" renseigne="4" />
+          <caracteristique nom="q2" renseigne="4" />
+          <caracteristique nom="video" renseigne="3" />
+        </caracteristiques>
+      </code>
+    </observations>
+  </ouvrage>
+</inspection>

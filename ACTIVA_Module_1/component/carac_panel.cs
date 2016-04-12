@@ -213,12 +213,12 @@ namespace ACTIVA_Module_1.component
             {
                 if (unNode.Attributes["nom"].InnerText.ToLower() != "assemblage" & unNode.Attributes["nom"].InnerText.ToLower() != "posregard")
                 {
-                        if (unNode.Attributes.GetNamedItem("info") != null)
+                        if (unNode.Attributes.GetNamedItem("intitule") != null)
                         {
                             if (CaracNameToLb.ContainsKey(unNode.Attributes["nom"].InnerText.ToLower()))
                             {
                                 CLab = (Label)CaracNameToLb[unNode.Attributes["nom"].InnerText.ToLower()];
-                                CLab.Text = unNode.Attributes["info"].InnerText;
+                                CLab.Text = unNode.Attributes["intitule"].InnerText;
 
                                 if (unNode.Attributes.GetNamedItem("unite") != null)
                                     CLab.Text += " (" + unNode.Attributes["unite"].InnerText + ")";
@@ -374,12 +374,12 @@ namespace ACTIVA_Module_1.component
 
                     if (unNode.Attributes["nom"].InnerText != "assemblage" & unNode.Attributes["nom"].InnerText != "posregard")
                     {
-                        if (unNode.Attributes.GetNamedItem("info") != null)
+                        if (unNode.Attributes.GetNamedItem("intitule") != null)
                         {
                             if (CaracNameToLb.ContainsKey(unNode.Attributes["nom"].InnerText))
                             {
                                 CLab = (Label)CaracNameToLb[unNode.Attributes["nom"].InnerText];
-                                CLab.Text = unNode.Attributes["info"].InnerText;
+                                CLab.Text = unNode.Attributes["intitule"].InnerText;
                             }
                         }
 
@@ -448,15 +448,18 @@ namespace ACTIVA_Module_1.component
 
                     //Si le choix contient des attributs concernant le comportement des champs suivants (on teste la présence de q1 comme attribut du choix en cours)
                     if (item.GetAttribute ("q1","") != "")
-                        but = new multiple_choice_button(but_text, Get_CaracFieldsNewState_HT(item), false);
+                        but = new multiple_choice_button(but_text, Get_CaracFieldsNewState_HT(item), false, false);
                     else
                         if (item.GetAttribute("lien","") == "")
-                            but = new multiple_choice_button(but_text, null, false);
+                            if (item.GetAttribute("ajoute", "") == "true")
+                                but = new multiple_choice_button(but_text, null, false, true);
+                            else
+                                but = new multiple_choice_button(but_text, null, false, false);
                         else
                             if (item.GetAttribute ("lien","") == "true")
-                                but = new multiple_choice_button(but_text, null, true);
+                                but = new multiple_choice_button(but_text, null, true, false);
                             else
-                                but = new multiple_choice_button(but_text, null, true);
+                                but = new multiple_choice_button(but_text, null, true, false);
 
 
                     mod_global.MF.flowLayoutPanel2.Controls.Add(but);

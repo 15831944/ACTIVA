@@ -36,6 +36,7 @@
     <id>CAL</id>
     <intitule>Type d'emplacement</intitule>
     <valeur type="item">
+	  <item nom="A" position="0">Sous une route</item>
       <item nom="B" position="1">Sous un trottoir</item>
       <item nom="C" position="2">Sous l'accotement d'une route</item>
       <item nom="D" position="3">Dans une autre zone piétonnière</item>
@@ -46,8 +47,7 @@
       <item nom="I" position="8">Sous un terrain boisé</item>
       <item nom="J" position="9">Accès difficile</item>
       <item nom="K" position="10">Sous une voie navigable</item>
-      <item nom="Z" lien="true" position="11">Autre</item>
-      <item nom="A" position="0">Sous une route</item>
+      <item nom="Z" lien="true" position="11">Autre - il convient d'indiquer les détails à l'aide CDE mentionné immédiatement après</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
@@ -112,10 +112,20 @@
       <item nom="C" position="2">Orifice de passage de la lampe</item>
       <item nom="D" position="3">Déversoir</item>
       <item nom="E" position="4">Orifice de nettoyage</item>
-      <item nom="Z" lien="true" position="5">Autre</item>
+	  <item nom="F" position="5">Siphon au niveau d'une boîte d'inspection</item>
+      <item nom="G" position="6">Siphon au niveau d'un orifice de visite</item>
+      <item nom="D" position="3">Siphon sans accès</item>
+      <item nom="Z" lien="true" position="5">Autre ouvrage spécial - il convient d'indiquer les détails à l'aide CDE mentionné immédiatement après</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
+  </code>
+    <code position="8" reporte="true" parent="Lieu">
+    <id>CAS</id>
+    <intitule>Niveau du tampon</intitule>
+    <valeur type="texte" />
+    <saisie>3</saisie>
+    <renseigne>3</renseigne>
   </code>
   <code position="0" reporte="true" parent="Support">
     <id>CBA</id>
@@ -139,7 +149,7 @@
       <item nom="B" position="1">Tampon</item>
       <item nom="C" position="2">Repère national</item>
       <item nom="D" position="3">Repère local</item>
-      <item nom="Z" lien="true" position="4">Autre</item>
+      <item nom="Z" lien="true" position="4">Autre - il convient d'indiquer les détails à l'aide CDE mentionné immédiatement après</item>
     </valeur>
     <saisie>0</saisie>
     <renseigne>1</renseigne>
@@ -150,7 +160,7 @@
     <valeur type="item">
       <item nom="A" position="0">La conduite sortante la plus basse est en position midi</item>
       <item nom="B" position="1">La conduite sortante la plus basse est en position 6 heures</item>
-      <item nom="Z" lien="true" position="2">Autre</item>
+      <item nom="Z" lien="true" position="2">Autre - il convient d'indiquer les détails à l'aide CDE mentionné immédiatement après</item>
     </valeur>
     <saisie>0</saisie>
     <renseigne>1</renseigne>
@@ -159,10 +169,10 @@
     <id>CBE</id>
     <intitule>Méthode d'inspection</intitule>
     <valeur type="item">
-      <item nom="A" position="0">Directe par un inspecteur</item>
+      <item nom="A" position="0">Directe du regard de visite ou de la boîte d'inspection par un inspecteur</item>
       <item nom="B" position="1">Par une télécaméra circulant dans la canalisation</item>
       <item nom="C" position="2">A partir de la surface uniquement</item>
-      <item nom="Z" lien="true" position="4">Autre</item>
+      <item nom="Z" lien="true" position="3">Autre - il convient d'indiquer les détails à l'aide CDE mentionné immédiatement après</item>
     </valeur>
     <saisie>0</saisie>
     <renseigne>1</renseigne>
@@ -208,29 +218,36 @@
     <valeur type="item">
       <item nom="A" position="0">Cassette vidéo VHS</item>
       <item nom="B" position="1">CD vidéo</item>
-      <item nom="Z" lien="true" position="2">Autre</item>
+	  <item nom="C" position="2">DVD vidéo</item>
+      <item nom="D" position="3">CD de données</item>
+	  <item nom="E" position="4">DVD de donnés</item>
+      <item nom="F" position="5">Disque dur portable</item>
+      <item nom="Z" lien="true" position="6">Autre - il convient d'indiquer les détails à l'aide CDE mentionné immédiatement après</item>
     </valeur>
     <saisie>2</saisie>
     <renseigne>1</renseigne>
   </code>
   <code position="5" reporte="true" parent="Support">
     <id>CBL</id>
-    <intitule>Stockage des  photographiques</intitule>
+    <intitule>Stockage des photographies</intitule>
     <valeur type="item">
-      <item nom="A" position="0">Photographies papier</item>
-      <item nom="B" position="1">Fichier photo informatique</item>
-      <item nom="Z" lien="true" position="2">Autre</item>
+      <item nom="A" position="0">Images fixes</item>
+      <item nom="B" position="1">Hors d'usage - données existantes devant s'énoncer comme si la caractérisation était Z</item>
+	  <item nom="C" position="2">Windozs Meta File - WMF</item>
+	  <item nom="D" position="3">Graphic Image File - GIF</item>
+	  <item nom="E" position="4">JPEG</item>
+      <item nom="Z" lien="true" position="5">Autre - il convient d'indiquer les détails à l'aide CDE mentionné immédiatement après</item>
     </valeur>
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
   <code position="6" reporte="true" parent="Support">
     <id>CBM</id>
-    <intitule>Type de position sur la bande vidéo</intitule>
+    <intitule>Système d'enregistrement de position sur bande vidéo</intitule>
     <valeur type="item">
       <item nom="A" position="0">Compteur en heures et en minutes depuis le début de la bande</item>
       <item nom="B" position="1">Compteur numérique dépendant de la machine</item>
-      <item nom="Z" lien="true" position="2">Autre</item>
+      <item nom="Z" lien="true" position="2">Autre - il convient d'indiquer les détails à l'aide CDE mentionné immédiatement après</item>
     </valeur>
     <saisie>3</saisie>
     <renseigne>3</renseigne>
@@ -249,7 +266,7 @@
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="10" reporte="true" parent="Lieu">
+  <code position="9" reporte="true" parent="Support">
     <id>CBP</id>
     <intitule>Objet de l'inspection</intitule>
     <valeur type="item">
@@ -263,22 +280,54 @@
       <item nom="H" position="7">Transfert de propriété</item>
       <item nom="I" position="8">Planification d'investissement</item>
       <item nom="J" position="9">Etude par échantillon</item>
-      <item nom="Z" lien="true" position="10">autre</item>
+      <item nom="Z" lien="true" position="10">Autre - il convient d'indiquer les détails à l'aide CDE mentionné immédiatement après</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
+  </code>
+    <code position="10" reporte="true" parent="Support">
+    <id>CBR</id>
+    <intitule>Format d'images vidéo</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">Type fixe sur support</item>
+      <item nom="B" position="1">MPEG1</item>
+      <item nom="C" position="2">MPEG2</item>
+      <item nom="D" position="3">MPEG4</item>
+      <item nom="Z" lien="true" position="10">Autre - il convient de noter les autres informations à l'aide ADE mentionné immédiatement après</item>
+    </valeur>
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+    <code position="11" reporte="true" parent="Support">
+    <id>CBS</id>
+    <intitule>Nom de fichier d'images vidéo</intitule>
+    <valeur type="texte"/>
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+    <code position="12" reporte="true" parent="Support">
+    <id>CBT</id>
+    <intitule>Etape de l'inspection</intitule>
+    <valeur type="item">
+      <item nom="A" position="0">De l'autorité responsable à l'inspecteur</item>
+      <item nom="B" position="1">De l'inspecteur à l'autorité responsable pour étude</item>
+	  <item nom="C" position="2">Dans les mains de l'autorité responsable après étude</item>
+      <item nom="Z" lien="true" position="4">Autre - il convient d'indiquer les détails à l'aide CDE mentionné immédiatement après</item>
+    </valeur>
+    <saisie>3</saisie>
+    <renseigne>3</renseigne>
   </code>
   <code position="0" reporte="False" parent="Element">
     <id>CCA</id>
     <intitule>Forme de l'accès</intitule>
     <valeur type="item">
-      <item nom="A" position="0">Rectangle Regard</item>
+      <item nom="A" position="0">Rectangulaire</item>
       <item nom="B" position="1">Circulaire</item>
       <item nom="C" position="2">Triangulaire</item>
       <item nom="D" position="3">Ovale</item>
       <item nom="E" position="4">Hexagonale</item>
       <item nom="F" position="5">Octogonale</item>
-      <item nom="Z" lien="true" position="2">Autre</item>
+      <item nom="Z" lien="true" position="2">Autre - il convient d'indiquer les détails à l'aide CDE mentionné immédiatement après</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
@@ -327,29 +376,29 @@
       <item nom="AX" position="23">PVC-U</item>
       <item nom="AY" position="24">Type non identifié de plastique</item>
       <item nom="AZ" position="25">Matériau non identifié</item>
-      <item nom="Z" lien="true" position="26">Autre</item>
+      <item nom="Z" lien="true" position="26">Autre  - il convient de noter les informations dans les remarques</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
   <code position="4" reporte="true" parent="Element">
     <id>CCG</id>
-    <intitule>Longueur unitaire des éléments</intitule>
+    <intitule>Longueur unitaire des éléments de chambre</intitule>
     <valeur type="numerique" unite="mm" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
   <code position="3" reporte="true" parent="Ouvrage">
     <id>CCK</id>
-    <intitule>Utilisation des réseaux</intitule>
+    <intitule>Utilisation du réseau d'assainissement</intitule>
     <valeur type="item">
-      <item nom="A" position="0">Eau usée uniquement</item>
-      <item nom="B" position="1">Eau de surface uniquement</item>
-      <item nom="C" position="2">Unitaire</item>
-      <item nom="D" position="3">Eau usée industrielle</item>
+      <item nom="A" position="0">Branchement ou collecteur d'eaux usées uniquement</item>
+      <item nom="B" position="1">Branchement ou collecteur d'eaux de surface uniquement</item>
+      <item nom="C" position="2">Branchement ou collecteur de type unitaire</item>
+      <item nom="D" position="3">Système du collecteur d'eaux usées industrielles</item>
       <item nom="E" position="4">Cours d'eau avec ponceau</item>
-      <item nom="F" position="5">Eau usée et eau de surface</item>
-      <item nom="Z" lien="true" position="6">Autre</item>
+      <item nom="F" position="5">Regard dessert deux réseaux, l'un véhiculant les eaux usées, l'autre les eaux de surface</item>
+      <item nom="Z" lien="true" position="6">Autre - il convient d'indiquer les détails à l'aide CDE mentionné immédiatement après</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
@@ -390,7 +439,7 @@
       <item nom="C" position="2">Triangulaire</item>
       <item nom="D" position="3">Hexagonale</item>
       <item nom="E" position="4">Octogonale</item>
-      <item nom="Z" lien="true" position="5">Autre</item>
+      <item nom="Z" lien="true" position="5">Autre - il convient d'indiquer les détails à l'aide CDE mentionné immédiatement après</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>3</renseigne>
@@ -412,7 +461,7 @@
       <item nom="AX" position="23">PVC-U</item>
       <item nom="AY" position="24">Type non identifié de plastique</item>
       <item nom="AZ" position="25">Matériau non identifié</item>
-      <item nom="Z" lien="true" position="26">Autre</item>
+      <item nom="Z" lien="true" position="26">Autre  - il convient de noter les informations dans les remarques</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>3</renseigne>
@@ -440,7 +489,7 @@
       <item nom="C" position="2">Echelle</item>
       <item nom="D" position="3">Trous dans la paroi</item>
       <item nom="E" position="4">Rien</item>
-      <item nom="Z" lien="true" position="5">Autre</item>
+      <item nom="Z" lien="true" position="5">Autre - il convient d'indiquer les détails à l'aide CDE mentionné immédiatement après</item>
     </valeur>
     <saisie>3</saisie>
     <renseigne>3</renseigne>
@@ -455,7 +504,7 @@
       <item nom="D" position="3">Métal enrobé de plastique</item>
       <item nom="E" position="4">Plastique</item>
       <item nom="F" position="5">Aluminium</item>
-      <item nom="Z" lien="true" position="6">Autre</item>
+      <item nom="Z" lien="true" position="6">Autre - il convient d'indiquer les détails à l'aide CDE mentionné immédiatement après</item>
     </valeur>
     <saisie>3</saisie>
     <renseigne>3</renseigne>
@@ -522,7 +571,7 @@
       <item nom="A" position="0">Aucune mesure prise</item>
       <item nom="B" position="1">L'écoulement obturé en amont</item>
       <item nom="C" position="2">L'écoulement partiellement obturé en amont</item>
-      <item nom="Z" lien="true" position="0">Autre</item>
+      <item nom="Z" lien="true" position="0">Autre - il convient d'indiquer les détails à l'aide CDE mentionné immédiatement après</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
@@ -536,7 +585,7 @@
       <item nom="C" position="2">CH4</item>
       <item nom="B" position="3">Autre gaz inflammable</item>
       <item nom="B" position="4">Pas d'atmsphère dangereuse</item>
-      <item nom="Z" lien="true" position="5">Autre</item>
+      <item nom="Z" lien="true" position="5">Autre - il convient d'indiquer les détails à l'aide CDE mentionné immédiatement après</item>
     </valeur>
     <saisie>3</saisie>
     <renseigne>3</renseigne>

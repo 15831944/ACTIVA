@@ -36,7 +36,7 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 57);
+            this.button1.Size = new System.Drawing.Size(196, 99);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -49,7 +49,7 @@
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "multiple_choice_button";
-            this.Size = new System.Drawing.Size(135, 57);
+            this.Size = new System.Drawing.Size(196, 99);
             this.ResumeLayout(false);
 
         }

@@ -124,6 +124,78 @@
             this.SVFLabel = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.OuvrageListSc = new System.Windows.Forms.SplitContainer();
+            this.OuvrageList = new C1.Win.C1List.C1List();
+            this.OuvrageToolsPanel = new System.Windows.Forms.Panel();
+            this.SaveOuvrageOrderBt = new System.Windows.Forms.Button();
+            this.DeleteOuvrageBt = new System.Windows.Forms.Button();
+            this.OuvrageMoveDownBt = new System.Windows.Forms.Button();
+            this.OuvrageMoveUpBt = new System.Windows.Forms.Button();
+            this.CloneOuvrageBt = new System.Windows.Forms.Button();
+            this.MenuDockingTab = new C1.Win.C1Command.C1DockingTab();
+            this.chargementTab = new C1.Win.C1Command.C1DockingTabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.OpenSVFButton = new System.Windows.Forms.Button();
+            this.openSVFTb = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.NewInspectionBt = new System.Windows.Forms.Button();
+            this.NewInspectionPathTb = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.NewInspectionNameTb = new System.Windows.Forms.TextBox();
+            this.AddOuvrageGp = new System.Windows.Forms.GroupBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.OuvrageNomTb = new System.Windows.Forms.TextBox();
+            this.NewOuvrageBt = new System.Windows.Forms.Button();
+            this.OuvrageFormeCb = new System.Windows.Forms.ComboBox();
+            this.OuvrageTypeCb = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.InformationTab = new C1.Win.C1Command.C1DockingTabPage();
+            this.TypeOuvrageGb = new System.Windows.Forms.GroupBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.cb_regard = new System.Windows.Forms.CheckBox();
+            this.cb_branchement = new System.Windows.Forms.CheckBox();
+            this.cb_troncon = new System.Windows.Forms.CheckBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.obs_nb_label = new System.Windows.Forms.Label();
+            this.obs_name_label = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.ReportTab = new C1.Win.C1Command.C1DockingTabPage();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.SaveReportParamBt = new System.Windows.Forms.Button();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.ReportTxtTb = new System.Windows.Forms.TextBox();
+            this.ReportImgPb = new System.Windows.Forms.PictureBox();
+            this.ReportImgTb = new System.Windows.Forms.TextBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.SyntCb = new System.Windows.Forms.CheckBox();
+            this.ObsCb = new System.Windows.Forms.CheckBox();
+            this.IdCb = new System.Windows.Forms.CheckBox();
+            this.ouvrageLb = new System.Windows.Forms.Label();
+            this.GenerateReportBt = new System.Windows.Forms.Button();
+            this.AutocadTab = new C1.Win.C1Command.C1DockingTabPage();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.V2008Cb = new System.Windows.Forms.CheckBox();
+            this.V2007Cb = new System.Windows.Forms.CheckBox();
+            this.V2006Cb = new System.Windows.Forms.CheckBox();
+            this.AutocadGenerateBt = new System.Windows.Forms.Button();
+            this.AboutTab = new C1.Win.C1Command.C1DockingTabPage();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.labelnumcompil = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.labeldateversion = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
             this.IdentificationTab = new C1.Win.C1Command.C1DockingTabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.IdentificationTopicBar = new C1.Win.C1Command.C1TopicBar();
@@ -320,78 +392,6 @@
             this.CodeTopicBar = new C1.Win.C1Command.C1TopicBar();
             this.miniToolStrip = new System.Windows.Forms.ToolStrip();
             this.MainSplit = new System.Windows.Forms.SplitContainer();
-            this.OuvrageList = new C1.Win.C1List.C1List();
-            this.OuvrageToolsPanel = new System.Windows.Forms.Panel();
-            this.SaveOuvrageOrderBt = new System.Windows.Forms.Button();
-            this.DeleteOuvrageBt = new System.Windows.Forms.Button();
-            this.OuvrageMoveDownBt = new System.Windows.Forms.Button();
-            this.OuvrageMoveUpBt = new System.Windows.Forms.Button();
-            this.CloneOuvrageBt = new System.Windows.Forms.Button();
-            this.MenuDockingTab = new C1.Win.C1Command.C1DockingTab();
-            this.chargementTab = new C1.Win.C1Command.C1DockingTabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.OpenSVFButton = new System.Windows.Forms.Button();
-            this.openSVFTb = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.NewInspectionBt = new System.Windows.Forms.Button();
-            this.NewInspectionPathTb = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.NewInspectionNameTb = new System.Windows.Forms.TextBox();
-            this.AddOuvrageGp = new System.Windows.Forms.GroupBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.OuvrageNomTb = new System.Windows.Forms.TextBox();
-            this.NewOuvrageBt = new System.Windows.Forms.Button();
-            this.OuvrageFormeCb = new System.Windows.Forms.ComboBox();
-            this.OuvrageTypeCb = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.InformationTab = new C1.Win.C1Command.C1DockingTabPage();
-            this.TypeOuvrageGb = new System.Windows.Forms.GroupBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.cb_regard = new System.Windows.Forms.CheckBox();
-            this.cb_branchement = new System.Windows.Forms.CheckBox();
-            this.cb_troncon = new System.Windows.Forms.CheckBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.obs_nb_label = new System.Windows.Forms.Label();
-            this.obs_name_label = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.ReportTab = new C1.Win.C1Command.C1DockingTabPage();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.SaveReportParamBt = new System.Windows.Forms.Button();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.ReportTxtTb = new System.Windows.Forms.TextBox();
-            this.ReportImgPb = new System.Windows.Forms.PictureBox();
-            this.ReportImgTb = new System.Windows.Forms.TextBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.SyntCb = new System.Windows.Forms.CheckBox();
-            this.ObsCb = new System.Windows.Forms.CheckBox();
-            this.IdCb = new System.Windows.Forms.CheckBox();
-            this.ouvrageLb = new System.Windows.Forms.Label();
-            this.GenerateReportBt = new System.Windows.Forms.Button();
-            this.AutocadTab = new C1.Win.C1Command.C1DockingTabPage();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.V2008Cb = new System.Windows.Forms.CheckBox();
-            this.V2007Cb = new System.Windows.Forms.CheckBox();
-            this.V2006Cb = new System.Windows.Forms.CheckBox();
-            this.AutocadGenerateBt = new System.Windows.Forms.Button();
-            this.AboutTab = new C1.Win.C1Command.C1DockingTabPage();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.labelnumcompil = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.labeldateversion = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).BeginInit();
             this.MainformToolStrip.SuspendLayout();
             this.ToolStripSection.SuspendLayout();
@@ -428,6 +428,32 @@
             this.OuvrageListSc.Panel1.SuspendLayout();
             this.OuvrageListSc.Panel2.SuspendLayout();
             this.OuvrageListSc.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.OuvrageList)).BeginInit();
+            this.OuvrageToolsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MenuDockingTab)).BeginInit();
+            this.MenuDockingTab.SuspendLayout();
+            this.chargementTab.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.AddOuvrageGp.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.InformationTab.SuspendLayout();
+            this.TypeOuvrageGb.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.ReportTab.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ReportImgPb)).BeginInit();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.AutocadTab.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.AboutTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.IdentificationTab.SuspendLayout();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -563,32 +589,6 @@
             this.MainSplit.Panel1.SuspendLayout();
             this.MainSplit.Panel2.SuspendLayout();
             this.MainSplit.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.OuvrageList)).BeginInit();
-            this.OuvrageToolsPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MenuDockingTab)).BeginInit();
-            this.MenuDockingTab.SuspendLayout();
-            this.chargementTab.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.AddOuvrageGp.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.InformationTab.SuspendLayout();
-            this.TypeOuvrageGb.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.ReportTab.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ReportImgPb)).BeginInit();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            this.AutocadTab.SuspendLayout();
-            this.groupBox13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.AboutTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // c1CommandHolder1
@@ -1411,6 +1411,888 @@
             this.OuvrageListSc.Size = new System.Drawing.Size(505, 257);
             this.OuvrageListSc.SplitterDistance = 218;
             this.OuvrageListSc.TabIndex = 1;
+            // 
+            // OuvrageList
+            // 
+            this.OuvrageList.AddItemSeparator = ';';
+            this.OuvrageList.AllowSort = false;
+            this.OuvrageList.Caption = "Ouvrages";
+            this.OuvrageList.CaptionHeight = 17;
+            this.OuvrageList.ColumnCaptionHeight = 17;
+            this.OuvrageList.ColumnFooterHeight = 17;
+            this.OuvrageList.DataMode = C1.Win.C1List.DataModeEnum.AddItem;
+            this.OuvrageList.DeadAreaBackColor = System.Drawing.SystemColors.ControlDark;
+            this.OuvrageList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.OuvrageList.ExtendRightColumn = true;
+            this.OuvrageList.Images.Add(((System.Drawing.Image)(resources.GetObject("OuvrageList.Images"))));
+            this.OuvrageList.ItemHeight = 15;
+            this.OuvrageList.Location = new System.Drawing.Point(0, 0);
+            this.OuvrageList.MatchEntryTimeout = ((long)(2000));
+            this.OuvrageList.Name = "OuvrageList";
+            this.OuvrageList.RowSubDividerColor = System.Drawing.Color.DarkGray;
+            this.OuvrageList.Size = new System.Drawing.Size(505, 218);
+            this.OuvrageList.TabIndex = 1;
+            this.OuvrageList.Text = "Ouvrages";
+            this.OuvrageList.PropBag = resources.GetString("OuvrageList.PropBag");
+            // 
+            // OuvrageToolsPanel
+            // 
+            this.OuvrageToolsPanel.Controls.Add(this.SaveOuvrageOrderBt);
+            this.OuvrageToolsPanel.Controls.Add(this.DeleteOuvrageBt);
+            this.OuvrageToolsPanel.Controls.Add(this.OuvrageMoveDownBt);
+            this.OuvrageToolsPanel.Controls.Add(this.OuvrageMoveUpBt);
+            this.OuvrageToolsPanel.Controls.Add(this.CloneOuvrageBt);
+            this.OuvrageToolsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.OuvrageToolsPanel.Location = new System.Drawing.Point(0, 0);
+            this.OuvrageToolsPanel.Name = "OuvrageToolsPanel";
+            this.OuvrageToolsPanel.Size = new System.Drawing.Size(505, 35);
+            this.OuvrageToolsPanel.TabIndex = 16;
+            // 
+            // SaveOuvrageOrderBt
+            // 
+            this.SaveOuvrageOrderBt.BackColor = System.Drawing.SystemColors.Control;
+            this.SaveOuvrageOrderBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveOuvrageOrderBt.ForeColor = System.Drawing.Color.Black;
+            this.SaveOuvrageOrderBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
+            this.SaveOuvrageOrderBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SaveOuvrageOrderBt.Location = new System.Drawing.Point(65, 6);
+            this.SaveOuvrageOrderBt.Name = "SaveOuvrageOrderBt";
+            this.SaveOuvrageOrderBt.Size = new System.Drawing.Size(103, 25);
+            this.SaveOuvrageOrderBt.TabIndex = 13;
+            this.SaveOuvrageOrderBt.Text = "Sauver l\'ordre";
+            this.SaveOuvrageOrderBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.SaveOuvrageOrderBt.UseVisualStyleBackColor = false;
+            // 
+            // DeleteOuvrageBt
+            // 
+            this.DeleteOuvrageBt.BackColor = System.Drawing.SystemColors.Control;
+            this.DeleteOuvrageBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteOuvrageBt.ForeColor = System.Drawing.Color.Black;
+            this.DeleteOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.remove_16;
+            this.DeleteOuvrageBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DeleteOuvrageBt.Location = new System.Drawing.Point(418, 6);
+            this.DeleteOuvrageBt.Name = "DeleteOuvrageBt";
+            this.DeleteOuvrageBt.Size = new System.Drawing.Size(84, 25);
+            this.DeleteOuvrageBt.TabIndex = 6;
+            this.DeleteOuvrageBt.Text = "Supprimer";
+            this.DeleteOuvrageBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.DeleteOuvrageBt.UseVisualStyleBackColor = false;
+            // 
+            // OuvrageMoveDownBt
+            // 
+            this.OuvrageMoveDownBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.OuvrageMoveDownBt.BackColor = System.Drawing.SystemColors.Control;
+            this.OuvrageMoveDownBt.Image = global::ACTIVA_Module_1.Properties.Resources.down_16;
+            this.OuvrageMoveDownBt.Location = new System.Drawing.Point(3, 6);
+            this.OuvrageMoveDownBt.Name = "OuvrageMoveDownBt";
+            this.OuvrageMoveDownBt.Size = new System.Drawing.Size(25, 25);
+            this.OuvrageMoveDownBt.TabIndex = 2;
+            this.OuvrageMoveDownBt.UseVisualStyleBackColor = false;
+            // 
+            // OuvrageMoveUpBt
+            // 
+            this.OuvrageMoveUpBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.OuvrageMoveUpBt.BackColor = System.Drawing.SystemColors.Control;
+            this.OuvrageMoveUpBt.Image = global::ACTIVA_Module_1.Properties.Resources.up_16;
+            this.OuvrageMoveUpBt.Location = new System.Drawing.Point(34, 6);
+            this.OuvrageMoveUpBt.Name = "OuvrageMoveUpBt";
+            this.OuvrageMoveUpBt.Size = new System.Drawing.Size(25, 25);
+            this.OuvrageMoveUpBt.TabIndex = 1;
+            this.OuvrageMoveUpBt.UseVisualStyleBackColor = false;
+            // 
+            // CloneOuvrageBt
+            // 
+            this.CloneOuvrageBt.BackColor = System.Drawing.SystemColors.Control;
+            this.CloneOuvrageBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloneOuvrageBt.ForeColor = System.Drawing.Color.Black;
+            this.CloneOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.copy1_16;
+            this.CloneOuvrageBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CloneOuvrageBt.Location = new System.Drawing.Point(332, 6);
+            this.CloneOuvrageBt.Name = "CloneOuvrageBt";
+            this.CloneOuvrageBt.Size = new System.Drawing.Size(82, 25);
+            this.CloneOuvrageBt.TabIndex = 12;
+            this.CloneOuvrageBt.Text = "Dupliquer";
+            this.CloneOuvrageBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CloneOuvrageBt.UseVisualStyleBackColor = false;
+            // 
+            // MenuDockingTab
+            // 
+            this.MenuDockingTab.Controls.Add(this.chargementTab);
+            this.MenuDockingTab.Controls.Add(this.InformationTab);
+            this.MenuDockingTab.Controls.Add(this.ReportTab);
+            this.MenuDockingTab.Controls.Add(this.AutocadTab);
+            this.MenuDockingTab.Controls.Add(this.AboutTab);
+            this.MenuDockingTab.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MenuDockingTab.Location = new System.Drawing.Point(0, 0);
+            this.MenuDockingTab.Name = "MenuDockingTab";
+            this.MenuDockingTab.Size = new System.Drawing.Size(509, 257);
+            this.MenuDockingTab.TabIndex = 18;
+            this.MenuDockingTab.TabsSpacing = 5;
+            this.MenuDockingTab.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
+            this.MenuDockingTab.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Black;
+            // 
+            // chargementTab
+            // 
+            this.chargementTab.BackColor = System.Drawing.Color.White;
+            this.chargementTab.Controls.Add(this.groupBox1);
+            this.chargementTab.Controls.Add(this.groupBox9);
+            this.chargementTab.Controls.Add(this.AddOuvrageGp);
+            this.chargementTab.Location = new System.Drawing.Point(1, 24);
+            this.chargementTab.Name = "chargementTab";
+            this.chargementTab.Size = new System.Drawing.Size(507, 232);
+            this.chargementTab.TabIndex = 0;
+            this.chargementTab.Text = "Chargement et création";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.OpenSVFButton);
+            this.groupBox1.Controls.Add(this.openSVFTb);
+            this.groupBox1.Controls.Add(this.label26);
+            this.groupBox1.Controls.Add(this.pictureBox8);
+            this.groupBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox1.Location = new System.Drawing.Point(3, 0);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(501, 87);
+            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Ouvrir une inspection";
+            // 
+            // OpenSVFButton
+            // 
+            this.OpenSVFButton.BackColor = System.Drawing.SystemColors.Control;
+            this.OpenSVFButton.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OpenSVFButton.ForeColor = System.Drawing.Color.Black;
+            this.OpenSVFButton.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
+            this.OpenSVFButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.OpenSVFButton.Location = new System.Drawing.Point(423, 56);
+            this.OpenSVFButton.Name = "OpenSVFButton";
+            this.OpenSVFButton.Size = new System.Drawing.Size(71, 25);
+            this.OpenSVFButton.TabIndex = 15;
+            this.OpenSVFButton.Text = "Ouvrir";
+            this.OpenSVFButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.OpenSVFButton.UseVisualStyleBackColor = false;
+            // 
+            // openSVFTb
+            // 
+            this.openSVFTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openSVFTb.Location = new System.Drawing.Point(73, 34);
+            this.openSVFTb.Name = "openSVFTb";
+            this.openSVFTb.Size = new System.Drawing.Size(422, 20);
+            this.openSVFTb.TabIndex = 13;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.DimGray;
+            this.label26.Location = new System.Drawing.Point(70, 17);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(76, 14);
+            this.label26.TabIndex = 12;
+            this.label26.Text = "Emplacement :";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::ACTIVA_Module_1.Properties.Resources.open_inspection;
+            this.pictureBox8.Location = new System.Drawing.Point(17, 27);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 4;
+            this.pictureBox8.TabStop = false;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.NewInspectionBt);
+            this.groupBox9.Controls.Add(this.NewInspectionPathTb);
+            this.groupBox9.Controls.Add(this.label24);
+            this.groupBox9.Controls.Add(this.pictureBox7);
+            this.groupBox9.Controls.Add(this.label25);
+            this.groupBox9.Controls.Add(this.NewInspectionNameTb);
+            this.groupBox9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox9.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox9.Location = new System.Drawing.Point(3, 87);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(501, 127);
+            this.groupBox9.TabIndex = 16;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Créer une inspection";
+            // 
+            // NewInspectionBt
+            // 
+            this.NewInspectionBt.BackColor = System.Drawing.SystemColors.Control;
+            this.NewInspectionBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewInspectionBt.ForeColor = System.Drawing.Color.Black;
+            this.NewInspectionBt.Image = global::ACTIVA_Module_1.Properties.Resources.add_16;
+            this.NewInspectionBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NewInspectionBt.Location = new System.Drawing.Point(423, 96);
+            this.NewInspectionBt.Name = "NewInspectionBt";
+            this.NewInspectionBt.Size = new System.Drawing.Size(71, 25);
+            this.NewInspectionBt.TabIndex = 15;
+            this.NewInspectionBt.Text = "Ajouter";
+            this.NewInspectionBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.NewInspectionBt.UseVisualStyleBackColor = false;
+            // 
+            // NewInspectionPathTb
+            // 
+            this.NewInspectionPathTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewInspectionPathTb.Location = new System.Drawing.Point(75, 74);
+            this.NewInspectionPathTb.Name = "NewInspectionPathTb";
+            this.NewInspectionPathTb.Size = new System.Drawing.Size(419, 20);
+            this.NewInspectionPathTb.TabIndex = 13;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.DimGray;
+            this.label24.Location = new System.Drawing.Point(72, 57);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(76, 14);
+            this.label24.TabIndex = 12;
+            this.label24.Text = "Emplacement :";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::ACTIVA_Module_1.Properties.Resources.new_inspection;
+            this.pictureBox7.Location = new System.Drawing.Point(17, 46);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 4;
+            this.pictureBox7.TabStop = false;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.DimGray;
+            this.label25.Location = new System.Drawing.Point(71, 17);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(172, 14);
+            this.label25.TabIndex = 11;
+            this.label25.Text = "Nom (sans caractères spéciaux) :";
+            // 
+            // NewInspectionNameTb
+            // 
+            this.NewInspectionNameTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewInspectionNameTb.Location = new System.Drawing.Point(75, 35);
+            this.NewInspectionNameTb.Name = "NewInspectionNameTb";
+            this.NewInspectionNameTb.Size = new System.Drawing.Size(419, 20);
+            this.NewInspectionNameTb.TabIndex = 9;
+            // 
+            // AddOuvrageGp
+            // 
+            this.AddOuvrageGp.Controls.Add(this.pictureBox6);
+            this.AddOuvrageGp.Controls.Add(this.label5);
+            this.AddOuvrageGp.Controls.Add(this.label17);
+            this.AddOuvrageGp.Controls.Add(this.OuvrageNomTb);
+            this.AddOuvrageGp.Controls.Add(this.NewOuvrageBt);
+            this.AddOuvrageGp.Controls.Add(this.OuvrageFormeCb);
+            this.AddOuvrageGp.Controls.Add(this.OuvrageTypeCb);
+            this.AddOuvrageGp.Controls.Add(this.label16);
+            this.AddOuvrageGp.Enabled = false;
+            this.AddOuvrageGp.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddOuvrageGp.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.AddOuvrageGp.Location = new System.Drawing.Point(3, 214);
+            this.AddOuvrageGp.Name = "AddOuvrageGp";
+            this.AddOuvrageGp.Size = new System.Drawing.Size(501, 93);
+            this.AddOuvrageGp.TabIndex = 15;
+            this.AddOuvrageGp.TabStop = false;
+            this.AddOuvrageGp.Text = "Créer un ouvrage";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::ACTIVA_Module_1.Properties.Resources.new_ouvrage;
+            this.pictureBox6.Location = new System.Drawing.Point(16, 25);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 4;
+            this.pictureBox6.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DimGray;
+            this.label5.Location = new System.Drawing.Point(347, 19);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(43, 14);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Forme :";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.DimGray;
+            this.label17.Location = new System.Drawing.Point(71, 18);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(34, 14);
+            this.label17.TabIndex = 11;
+            this.label17.Text = "Nom :";
+            // 
+            // OuvrageNomTb
+            // 
+            this.OuvrageNomTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OuvrageNomTb.Location = new System.Drawing.Point(74, 35);
+            this.OuvrageNomTb.Name = "OuvrageNomTb";
+            this.OuvrageNomTb.Size = new System.Drawing.Size(142, 20);
+            this.OuvrageNomTb.TabIndex = 9;
+            // 
+            // NewOuvrageBt
+            // 
+            this.NewOuvrageBt.BackColor = System.Drawing.SystemColors.Control;
+            this.NewOuvrageBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewOuvrageBt.ForeColor = System.Drawing.Color.Black;
+            this.NewOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.add_16;
+            this.NewOuvrageBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NewOuvrageBt.Location = new System.Drawing.Point(423, 61);
+            this.NewOuvrageBt.Name = "NewOuvrageBt";
+            this.NewOuvrageBt.Size = new System.Drawing.Size(71, 25);
+            this.NewOuvrageBt.TabIndex = 7;
+            this.NewOuvrageBt.Text = "Ajouter";
+            this.NewOuvrageBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.NewOuvrageBt.UseVisualStyleBackColor = false;
+            // 
+            // OuvrageFormeCb
+            // 
+            this.OuvrageFormeCb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OuvrageFormeCb.FormattingEnabled = true;
+            this.OuvrageFormeCb.Location = new System.Drawing.Point(349, 35);
+            this.OuvrageFormeCb.MaxDropDownItems = 10;
+            this.OuvrageFormeCb.Name = "OuvrageFormeCb";
+            this.OuvrageFormeCb.Size = new System.Drawing.Size(145, 22);
+            this.OuvrageFormeCb.TabIndex = 13;
+            // 
+            // OuvrageTypeCb
+            // 
+            this.OuvrageTypeCb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OuvrageTypeCb.FormattingEnabled = true;
+            this.OuvrageTypeCb.Location = new System.Drawing.Point(224, 34);
+            this.OuvrageTypeCb.MaxDropDownItems = 10;
+            this.OuvrageTypeCb.Name = "OuvrageTypeCb";
+            this.OuvrageTypeCb.Size = new System.Drawing.Size(118, 22);
+            this.OuvrageTypeCb.TabIndex = 8;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.DimGray;
+            this.label16.Location = new System.Drawing.Point(221, 16);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(36, 14);
+            this.label16.TabIndex = 10;
+            this.label16.Text = "Type :";
+            // 
+            // InformationTab
+            // 
+            this.InformationTab.BackColor = System.Drawing.Color.White;
+            this.InformationTab.Controls.Add(this.TypeOuvrageGb);
+            this.InformationTab.Controls.Add(this.groupBox6);
+            this.InformationTab.Location = new System.Drawing.Point(1, 24);
+            this.InformationTab.Name = "InformationTab";
+            this.InformationTab.Size = new System.Drawing.Size(507, 232);
+            this.InformationTab.TabIndex = 1;
+            this.InformationTab.Text = "Informations";
+            // 
+            // TypeOuvrageGb
+            // 
+            this.TypeOuvrageGb.Controls.Add(this.pictureBox4);
+            this.TypeOuvrageGb.Controls.Add(this.cb_regard);
+            this.TypeOuvrageGb.Controls.Add(this.cb_branchement);
+            this.TypeOuvrageGb.Controls.Add(this.cb_troncon);
+            this.TypeOuvrageGb.Enabled = false;
+            this.TypeOuvrageGb.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TypeOuvrageGb.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.TypeOuvrageGb.Location = new System.Drawing.Point(3, 1);
+            this.TypeOuvrageGb.Name = "TypeOuvrageGb";
+            this.TypeOuvrageGb.Size = new System.Drawing.Size(501, 98);
+            this.TypeOuvrageGb.TabIndex = 3;
+            this.TypeOuvrageGb.TabStop = false;
+            this.TypeOuvrageGb.Text = "Type d\'ouvrages affichés";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::ACTIVA_Module_1.Properties.Resources.tri;
+            this.pictureBox4.Location = new System.Drawing.Point(17, 35);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 5;
+            this.pictureBox4.TabStop = false;
+            // 
+            // cb_regard
+            // 
+            this.cb_regard.AutoSize = true;
+            this.cb_regard.Checked = true;
+            this.cb_regard.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cb_regard.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_regard.ForeColor = System.Drawing.Color.DimGray;
+            this.cb_regard.Location = new System.Drawing.Point(384, 45);
+            this.cb_regard.Name = "cb_regard";
+            this.cb_regard.Size = new System.Drawing.Size(74, 19);
+            this.cb_regard.TabIndex = 2;
+            this.cb_regard.Tag = "REGARD";
+            this.cb_regard.Text = "Regards";
+            this.cb_regard.UseVisualStyleBackColor = true;
+            // 
+            // cb_branchement
+            // 
+            this.cb_branchement.AutoSize = true;
+            this.cb_branchement.Checked = true;
+            this.cb_branchement.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cb_branchement.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_branchement.ForeColor = System.Drawing.Color.DimGray;
+            this.cb_branchement.Location = new System.Drawing.Point(226, 45);
+            this.cb_branchement.Name = "cb_branchement";
+            this.cb_branchement.Size = new System.Drawing.Size(107, 19);
+            this.cb_branchement.TabIndex = 1;
+            this.cb_branchement.Tag = "BRANCHEMENT";
+            this.cb_branchement.Text = "Branchements";
+            this.cb_branchement.UseVisualStyleBackColor = true;
+            // 
+            // cb_troncon
+            // 
+            this.cb_troncon.AutoSize = true;
+            this.cb_troncon.Checked = true;
+            this.cb_troncon.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cb_troncon.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_troncon.ForeColor = System.Drawing.Color.DimGray;
+            this.cb_troncon.Location = new System.Drawing.Point(89, 45);
+            this.cb_troncon.Name = "cb_troncon";
+            this.cb_troncon.Size = new System.Drawing.Size(78, 19);
+            this.cb_troncon.TabIndex = 0;
+            this.cb_troncon.Tag = "TRONCON";
+            this.cb_troncon.Text = "Tronçons";
+            this.cb_troncon.UseVisualStyleBackColor = true;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.pictureBox3);
+            this.groupBox6.Controls.Add(this.obs_nb_label);
+            this.groupBox6.Controls.Add(this.obs_name_label);
+            this.groupBox6.Controls.Add(this.label15);
+            this.groupBox6.Controls.Add(this.label14);
+            this.groupBox6.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox6.Location = new System.Drawing.Point(3, 109);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(501, 104);
+            this.groupBox6.TabIndex = 4;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Informations de l\'ouvrage sélectionné";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::ACTIVA_Module_1.Properties.Resources.infos;
+            this.pictureBox3.Location = new System.Drawing.Point(17, 39);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
+            // 
+            // obs_nb_label
+            // 
+            this.obs_nb_label.AutoSize = true;
+            this.obs_nb_label.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.obs_nb_label.ForeColor = System.Drawing.Color.Tomato;
+            this.obs_nb_label.Location = new System.Drawing.Point(223, 67);
+            this.obs_nb_label.Name = "obs_nb_label";
+            this.obs_nb_label.Size = new System.Drawing.Size(0, 15);
+            this.obs_nb_label.TabIndex = 3;
+            // 
+            // obs_name_label
+            // 
+            this.obs_name_label.AutoSize = true;
+            this.obs_name_label.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.obs_name_label.ForeColor = System.Drawing.Color.Tomato;
+            this.obs_name_label.Location = new System.Drawing.Point(199, 32);
+            this.obs_name_label.Name = "obs_name_label";
+            this.obs_name_label.Size = new System.Drawing.Size(0, 15);
+            this.obs_name_label.TabIndex = 2;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.DimGray;
+            this.label15.Location = new System.Drawing.Point(72, 68);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(127, 14);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "Nombre d\'observations : ";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.DimGray;
+            this.label14.Location = new System.Drawing.Point(72, 33);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(99, 14);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Nom de l\'ouvrage : ";
+            // 
+            // ReportTab
+            // 
+            this.ReportTab.BackColor = System.Drawing.Color.White;
+            this.ReportTab.Controls.Add(this.groupBox10);
+            this.ReportTab.Controls.Add(this.groupBox5);
+            this.ReportTab.Controls.Add(this.ouvrageLb);
+            this.ReportTab.Controls.Add(this.GenerateReportBt);
+            this.ReportTab.Location = new System.Drawing.Point(1, 24);
+            this.ReportTab.Name = "ReportTab";
+            this.ReportTab.Size = new System.Drawing.Size(507, 232);
+            this.ReportTab.TabIndex = 2;
+            this.ReportTab.Text = "Rapport";
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.SaveReportParamBt);
+            this.groupBox10.Controls.Add(this.label29);
+            this.groupBox10.Controls.Add(this.label28);
+            this.groupBox10.Controls.Add(this.ReportTxtTb);
+            this.groupBox10.Controls.Add(this.ReportImgPb);
+            this.groupBox10.Controls.Add(this.ReportImgTb);
+            this.groupBox10.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox10.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox10.Location = new System.Drawing.Point(2, 100);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(500, 175);
+            this.groupBox10.TabIndex = 15;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Personalisation de l\'en-tête";
+            // 
+            // SaveReportParamBt
+            // 
+            this.SaveReportParamBt.BackColor = System.Drawing.SystemColors.Control;
+            this.SaveReportParamBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveReportParamBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
+            this.SaveReportParamBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SaveReportParamBt.Location = new System.Drawing.Point(376, 119);
+            this.SaveReportParamBt.Name = "SaveReportParamBt";
+            this.SaveReportParamBt.Size = new System.Drawing.Size(91, 23);
+            this.SaveReportParamBt.TabIndex = 5;
+            this.SaveReportParamBt.Text = "Enregistrer";
+            this.SaveReportParamBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.SaveReportParamBt.UseVisualStyleBackColor = false;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.Black;
+            this.label29.Location = new System.Drawing.Point(12, 79);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(127, 15);
+            this.label29.TabIndex = 4;
+            this.label29.Text = "Texte en haut de page";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.Black;
+            this.label28.Location = new System.Drawing.Point(12, 26);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(180, 15);
+            this.label28.TabIndex = 3;
+            this.label28.Text = "Logo à afficher en haut de page";
+            // 
+            // ReportTxtTb
+            // 
+            this.ReportTxtTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReportTxtTb.Location = new System.Drawing.Point(15, 100);
+            this.ReportTxtTb.Multiline = true;
+            this.ReportTxtTb.Name = "ReportTxtTb";
+            this.ReportTxtTb.Size = new System.Drawing.Size(336, 59);
+            this.ReportTxtTb.TabIndex = 2;
+            // 
+            // ReportImgPb
+            // 
+            this.ReportImgPb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ReportImgPb.Location = new System.Drawing.Point(391, 26);
+            this.ReportImgPb.Name = "ReportImgPb";
+            this.ReportImgPb.Size = new System.Drawing.Size(60, 60);
+            this.ReportImgPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ReportImgPb.TabIndex = 1;
+            this.ReportImgPb.TabStop = false;
+            // 
+            // ReportImgTb
+            // 
+            this.ReportImgTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReportImgTb.Location = new System.Drawing.Point(15, 47);
+            this.ReportImgTb.Name = "ReportImgTb";
+            this.ReportImgTb.Size = new System.Drawing.Size(336, 20);
+            this.ReportImgTb.TabIndex = 0;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.pictureBox10);
+            this.groupBox5.Controls.Add(this.SyntCb);
+            this.groupBox5.Controls.Add(this.ObsCb);
+            this.groupBox5.Controls.Add(this.IdCb);
+            this.groupBox5.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox5.Location = new System.Drawing.Point(2, 6);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(500, 88);
+            this.groupBox5.TabIndex = 8;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Parties du rapport à afficher";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::ACTIVA_Module_1.Properties.Resources.rapport;
+            this.pictureBox10.Location = new System.Drawing.Point(36, 31);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 6;
+            this.pictureBox10.TabStop = false;
+            // 
+            // SyntCb
+            // 
+            this.SyntCb.AutoSize = true;
+            this.SyntCb.Checked = true;
+            this.SyntCb.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.SyntCb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SyntCb.Location = new System.Drawing.Point(401, 39);
+            this.SyntCb.Name = "SyntCb";
+            this.SyntCb.Size = new System.Drawing.Size(77, 19);
+            this.SyntCb.TabIndex = 5;
+            this.SyntCb.Text = "Synthèse";
+            this.SyntCb.UseVisualStyleBackColor = true;
+            // 
+            // ObsCb
+            // 
+            this.ObsCb.AutoSize = true;
+            this.ObsCb.Checked = true;
+            this.ObsCb.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ObsCb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ObsCb.Location = new System.Drawing.Point(260, 39);
+            this.ObsCb.Name = "ObsCb";
+            this.ObsCb.Size = new System.Drawing.Size(99, 19);
+            this.ObsCb.TabIndex = 4;
+            this.ObsCb.Text = "Observations";
+            this.ObsCb.UseVisualStyleBackColor = true;
+            // 
+            // IdCb
+            // 
+            this.IdCb.AutoSize = true;
+            this.IdCb.Checked = true;
+            this.IdCb.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.IdCb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IdCb.Location = new System.Drawing.Point(114, 39);
+            this.IdCb.Name = "IdCb";
+            this.IdCb.Size = new System.Drawing.Size(95, 19);
+            this.IdCb.TabIndex = 3;
+            this.IdCb.Text = "Identification";
+            this.IdCb.UseVisualStyleBackColor = true;
+            // 
+            // ouvrageLb
+            // 
+            this.ouvrageLb.AutoSize = true;
+            this.ouvrageLb.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ouvrageLb.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.ouvrageLb.Location = new System.Drawing.Point(189, 12);
+            this.ouvrageLb.Name = "ouvrageLb";
+            this.ouvrageLb.Size = new System.Drawing.Size(0, 18);
+            this.ouvrageLb.TabIndex = 7;
+            // 
+            // GenerateReportBt
+            // 
+            this.GenerateReportBt.BackColor = System.Drawing.SystemColors.Control;
+            this.GenerateReportBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GenerateReportBt.ForeColor = System.Drawing.Color.Black;
+            this.GenerateReportBt.Image = global::ACTIVA_Module_1.Properties.Resources.export16;
+            this.GenerateReportBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.GenerateReportBt.Location = new System.Drawing.Point(361, 278);
+            this.GenerateReportBt.Name = "GenerateReportBt";
+            this.GenerateReportBt.Size = new System.Drawing.Size(141, 25);
+            this.GenerateReportBt.TabIndex = 14;
+            this.GenerateReportBt.Text = "Génération de rapport";
+            this.GenerateReportBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.GenerateReportBt.UseVisualStyleBackColor = false;
+            // 
+            // AutocadTab
+            // 
+            this.AutocadTab.BackColor = System.Drawing.Color.White;
+            this.AutocadTab.Controls.Add(this.groupBox13);
+            this.AutocadTab.Controls.Add(this.AutocadGenerateBt);
+            this.AutocadTab.Location = new System.Drawing.Point(1, 24);
+            this.AutocadTab.Name = "AutocadTab";
+            this.AutocadTab.Size = new System.Drawing.Size(507, 232);
+            this.AutocadTab.TabBackColor = System.Drawing.Color.White;
+            this.AutocadTab.TabIndex = 3;
+            this.AutocadTab.Text = "Autocad";
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.pictureBox9);
+            this.groupBox13.Controls.Add(this.V2008Cb);
+            this.groupBox13.Controls.Add(this.V2007Cb);
+            this.groupBox13.Controls.Add(this.V2006Cb);
+            this.groupBox13.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox13.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox13.Location = new System.Drawing.Point(3, 19);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(501, 87);
+            this.groupBox13.TabIndex = 9;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Version d\'AutoCAD installée sur le poste";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::ACTIVA_Module_1.Properties.Resources.autocad;
+            this.pictureBox9.Location = new System.Drawing.Point(26, 31);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 6;
+            this.pictureBox9.TabStop = false;
+            // 
+            // V2008Cb
+            // 
+            this.V2008Cb.AutoSize = true;
+            this.V2008Cb.Checked = true;
+            this.V2008Cb.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.V2008Cb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.V2008Cb.Location = new System.Drawing.Point(418, 39);
+            this.V2008Cb.Name = "V2008Cb";
+            this.V2008Cb.Size = new System.Drawing.Size(54, 19);
+            this.V2008Cb.TabIndex = 5;
+            this.V2008Cb.Text = "2008";
+            this.V2008Cb.UseVisualStyleBackColor = true;
+            // 
+            // V2007Cb
+            // 
+            this.V2007Cb.AutoSize = true;
+            this.V2007Cb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.V2007Cb.Location = new System.Drawing.Point(268, 39);
+            this.V2007Cb.Name = "V2007Cb";
+            this.V2007Cb.Size = new System.Drawing.Size(54, 19);
+            this.V2007Cb.TabIndex = 4;
+            this.V2007Cb.Text = "2007";
+            this.V2007Cb.UseVisualStyleBackColor = true;
+            // 
+            // V2006Cb
+            // 
+            this.V2006Cb.AutoSize = true;
+            this.V2006Cb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.V2006Cb.Location = new System.Drawing.Point(120, 39);
+            this.V2006Cb.Name = "V2006Cb";
+            this.V2006Cb.Size = new System.Drawing.Size(54, 19);
+            this.V2006Cb.TabIndex = 3;
+            this.V2006Cb.Text = "2006";
+            this.V2006Cb.UseVisualStyleBackColor = true;
+            // 
+            // AutocadGenerateBt
+            // 
+            this.AutocadGenerateBt.BackColor = System.Drawing.SystemColors.Control;
+            this.AutocadGenerateBt.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AutocadGenerateBt.Location = new System.Drawing.Point(71, 131);
+            this.AutocadGenerateBt.Name = "AutocadGenerateBt";
+            this.AutocadGenerateBt.Size = new System.Drawing.Size(378, 29);
+            this.AutocadGenerateBt.TabIndex = 6;
+            this.AutocadGenerateBt.Text = "Générer le rapport AutoCAD";
+            this.AutocadGenerateBt.UseVisualStyleBackColor = false;
+            // 
+            // AboutTab
+            // 
+            this.AboutTab.BackColor = System.Drawing.Color.White;
+            this.AboutTab.CaptionText = "?";
+            this.AboutTab.Controls.Add(this.richTextBox1);
+            this.AboutTab.Controls.Add(this.pictureBox11);
+            this.AboutTab.Controls.Add(this.labelnumcompil);
+            this.AboutTab.Controls.Add(this.label58);
+            this.AboutTab.Controls.Add(this.labeldateversion);
+            this.AboutTab.Controls.Add(this.label27);
+            this.AboutTab.Controls.Add(this.label55);
+            this.AboutTab.Location = new System.Drawing.Point(1, 24);
+            this.AboutTab.Name = "AboutTab";
+            this.AboutTab.Size = new System.Drawing.Size(507, 232);
+            this.AboutTab.TabBackColor = System.Drawing.Color.White;
+            this.AboutTab.TabBackColorSelected = System.Drawing.Color.White;
+            this.AboutTab.TabIndex = 4;
+            this.AboutTab.Text = "?";
+            this.AboutTab.ToolTipText = "A propos d\'ACTIVA";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Location = new System.Drawing.Point(272, 210);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(191, 71);
+            this.richTextBox1.TabIndex = 14;
+            this.richTextBox1.Text = "Structure & Réhabilitation\n36, avenue du Général de Gaulle\n93170 Bagnolet\ntél : 0" +
+                "1 49 72 73 92\nwww.structure-rehabilitation.fr";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::ACTIVA_Module_1.Properties.Resources.SR;
+            this.pictureBox11.Location = new System.Drawing.Point(24, 198);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(172, 83);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 12;
+            this.pictureBox11.TabStop = false;
+            // 
+            // labelnumcompil
+            // 
+            this.labelnumcompil.AutoSize = true;
+            this.labelnumcompil.Location = new System.Drawing.Point(21, 119);
+            this.labelnumcompil.Name = "labelnumcompil";
+            this.labelnumcompil.Size = new System.Drawing.Size(119, 13);
+            this.labelnumcompil.TabIndex = 11;
+            this.labelnumcompil.Text = "N° de version : 1.0 beta";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(21, 84);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(469, 14);
+            this.label58.TabIndex = 10;
+            this.label58.Text = "\"Acquisition et Traitement des données d’Inspections Visuelles en ouvrage d’Assai" +
+                "nissement\"";
+            // 
+            // labeldateversion
+            // 
+            this.labeldateversion.AutoSize = true;
+            this.labeldateversion.Location = new System.Drawing.Point(21, 155);
+            this.labeldateversion.Name = "labeldateversion";
+            this.labeldateversion.Size = new System.Drawing.Size(149, 13);
+            this.labeldateversion.TabIndex = 9;
+            this.labeldateversion.Text = "Version du 14 décembre 2009";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Tomato;
+            this.label27.Location = new System.Drawing.Point(181, 58);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(127, 14);
+            this.label27.TabIndex = 8;
+            this.label27.Text = "------------------------------";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Lucida Sans Unicode", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label55.Location = new System.Drawing.Point(177, 24);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(133, 39);
+            this.label55.TabIndex = 7;
+            this.label55.Text = "ACTIVA";
             // 
             // IdentificationTab
             // 
@@ -3835,888 +4717,6 @@
             this.MainSplit.SplitterDistance = 374;
             this.MainSplit.TabIndex = 7;
             // 
-            // OuvrageList
-            // 
-            this.OuvrageList.AddItemSeparator = ';';
-            this.OuvrageList.AllowSort = false;
-            this.OuvrageList.Caption = "Ouvrages";
-            this.OuvrageList.CaptionHeight = 17;
-            this.OuvrageList.ColumnCaptionHeight = 17;
-            this.OuvrageList.ColumnFooterHeight = 17;
-            this.OuvrageList.DataMode = C1.Win.C1List.DataModeEnum.AddItem;
-            this.OuvrageList.DeadAreaBackColor = System.Drawing.SystemColors.ControlDark;
-            this.OuvrageList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.OuvrageList.ExtendRightColumn = true;
-            this.OuvrageList.Images.Add(((System.Drawing.Image)(resources.GetObject("OuvrageList.Images"))));
-            this.OuvrageList.ItemHeight = 15;
-            this.OuvrageList.Location = new System.Drawing.Point(0, 0);
-            this.OuvrageList.MatchEntryTimeout = ((long)(2000));
-            this.OuvrageList.Name = "OuvrageList";
-            this.OuvrageList.RowSubDividerColor = System.Drawing.Color.DarkGray;
-            this.OuvrageList.Size = new System.Drawing.Size(505, 218);
-            this.OuvrageList.TabIndex = 1;
-            this.OuvrageList.Text = "Ouvrages";
-            this.OuvrageList.PropBag = resources.GetString("OuvrageList.PropBag");
-            // 
-            // OuvrageToolsPanel
-            // 
-            this.OuvrageToolsPanel.Controls.Add(this.SaveOuvrageOrderBt);
-            this.OuvrageToolsPanel.Controls.Add(this.DeleteOuvrageBt);
-            this.OuvrageToolsPanel.Controls.Add(this.OuvrageMoveDownBt);
-            this.OuvrageToolsPanel.Controls.Add(this.OuvrageMoveUpBt);
-            this.OuvrageToolsPanel.Controls.Add(this.CloneOuvrageBt);
-            this.OuvrageToolsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.OuvrageToolsPanel.Location = new System.Drawing.Point(0, 0);
-            this.OuvrageToolsPanel.Name = "OuvrageToolsPanel";
-            this.OuvrageToolsPanel.Size = new System.Drawing.Size(505, 35);
-            this.OuvrageToolsPanel.TabIndex = 16;
-            // 
-            // SaveOuvrageOrderBt
-            // 
-            this.SaveOuvrageOrderBt.BackColor = System.Drawing.SystemColors.Control;
-            this.SaveOuvrageOrderBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveOuvrageOrderBt.ForeColor = System.Drawing.Color.Black;
-            this.SaveOuvrageOrderBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.SaveOuvrageOrderBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SaveOuvrageOrderBt.Location = new System.Drawing.Point(65, 6);
-            this.SaveOuvrageOrderBt.Name = "SaveOuvrageOrderBt";
-            this.SaveOuvrageOrderBt.Size = new System.Drawing.Size(103, 25);
-            this.SaveOuvrageOrderBt.TabIndex = 13;
-            this.SaveOuvrageOrderBt.Text = "Sauver l\'ordre";
-            this.SaveOuvrageOrderBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.SaveOuvrageOrderBt.UseVisualStyleBackColor = false;
-            // 
-            // DeleteOuvrageBt
-            // 
-            this.DeleteOuvrageBt.BackColor = System.Drawing.SystemColors.Control;
-            this.DeleteOuvrageBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteOuvrageBt.ForeColor = System.Drawing.Color.Black;
-            this.DeleteOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.remove_16;
-            this.DeleteOuvrageBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DeleteOuvrageBt.Location = new System.Drawing.Point(418, 6);
-            this.DeleteOuvrageBt.Name = "DeleteOuvrageBt";
-            this.DeleteOuvrageBt.Size = new System.Drawing.Size(84, 25);
-            this.DeleteOuvrageBt.TabIndex = 6;
-            this.DeleteOuvrageBt.Text = "Supprimer";
-            this.DeleteOuvrageBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.DeleteOuvrageBt.UseVisualStyleBackColor = false;
-            // 
-            // OuvrageMoveDownBt
-            // 
-            this.OuvrageMoveDownBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.OuvrageMoveDownBt.BackColor = System.Drawing.SystemColors.Control;
-            this.OuvrageMoveDownBt.Image = global::ACTIVA_Module_1.Properties.Resources.down_16;
-            this.OuvrageMoveDownBt.Location = new System.Drawing.Point(3, 6);
-            this.OuvrageMoveDownBt.Name = "OuvrageMoveDownBt";
-            this.OuvrageMoveDownBt.Size = new System.Drawing.Size(25, 25);
-            this.OuvrageMoveDownBt.TabIndex = 2;
-            this.OuvrageMoveDownBt.UseVisualStyleBackColor = false;
-            // 
-            // OuvrageMoveUpBt
-            // 
-            this.OuvrageMoveUpBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.OuvrageMoveUpBt.BackColor = System.Drawing.SystemColors.Control;
-            this.OuvrageMoveUpBt.Image = global::ACTIVA_Module_1.Properties.Resources.up_16;
-            this.OuvrageMoveUpBt.Location = new System.Drawing.Point(34, 6);
-            this.OuvrageMoveUpBt.Name = "OuvrageMoveUpBt";
-            this.OuvrageMoveUpBt.Size = new System.Drawing.Size(25, 25);
-            this.OuvrageMoveUpBt.TabIndex = 1;
-            this.OuvrageMoveUpBt.UseVisualStyleBackColor = false;
-            // 
-            // CloneOuvrageBt
-            // 
-            this.CloneOuvrageBt.BackColor = System.Drawing.SystemColors.Control;
-            this.CloneOuvrageBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CloneOuvrageBt.ForeColor = System.Drawing.Color.Black;
-            this.CloneOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.copy1_16;
-            this.CloneOuvrageBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CloneOuvrageBt.Location = new System.Drawing.Point(332, 6);
-            this.CloneOuvrageBt.Name = "CloneOuvrageBt";
-            this.CloneOuvrageBt.Size = new System.Drawing.Size(82, 25);
-            this.CloneOuvrageBt.TabIndex = 12;
-            this.CloneOuvrageBt.Text = "Dupliquer";
-            this.CloneOuvrageBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CloneOuvrageBt.UseVisualStyleBackColor = false;
-            // 
-            // MenuDockingTab
-            // 
-            this.MenuDockingTab.Controls.Add(this.chargementTab);
-            this.MenuDockingTab.Controls.Add(this.InformationTab);
-            this.MenuDockingTab.Controls.Add(this.ReportTab);
-            this.MenuDockingTab.Controls.Add(this.AutocadTab);
-            this.MenuDockingTab.Controls.Add(this.AboutTab);
-            this.MenuDockingTab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MenuDockingTab.Location = new System.Drawing.Point(0, 0);
-            this.MenuDockingTab.Name = "MenuDockingTab";
-            this.MenuDockingTab.Size = new System.Drawing.Size(509, 257);
-            this.MenuDockingTab.TabIndex = 18;
-            this.MenuDockingTab.TabsSpacing = 5;
-            this.MenuDockingTab.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
-            this.MenuDockingTab.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Black;
-            // 
-            // chargementTab
-            // 
-            this.chargementTab.BackColor = System.Drawing.Color.White;
-            this.chargementTab.Controls.Add(this.groupBox1);
-            this.chargementTab.Controls.Add(this.groupBox9);
-            this.chargementTab.Controls.Add(this.AddOuvrageGp);
-            this.chargementTab.Location = new System.Drawing.Point(1, 24);
-            this.chargementTab.Name = "chargementTab";
-            this.chargementTab.Size = new System.Drawing.Size(507, 232);
-            this.chargementTab.TabIndex = 0;
-            this.chargementTab.Text = "Chargement et création";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.OpenSVFButton);
-            this.groupBox1.Controls.Add(this.openSVFTb);
-            this.groupBox1.Controls.Add(this.label26);
-            this.groupBox1.Controls.Add(this.pictureBox8);
-            this.groupBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox1.Location = new System.Drawing.Point(3, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(501, 87);
-            this.groupBox1.TabIndex = 17;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Ouvrir une inspection";
-            // 
-            // OpenSVFButton
-            // 
-            this.OpenSVFButton.BackColor = System.Drawing.SystemColors.Control;
-            this.OpenSVFButton.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OpenSVFButton.ForeColor = System.Drawing.Color.Black;
-            this.OpenSVFButton.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
-            this.OpenSVFButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.OpenSVFButton.Location = new System.Drawing.Point(423, 56);
-            this.OpenSVFButton.Name = "OpenSVFButton";
-            this.OpenSVFButton.Size = new System.Drawing.Size(71, 25);
-            this.OpenSVFButton.TabIndex = 15;
-            this.OpenSVFButton.Text = "Ouvrir";
-            this.OpenSVFButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.OpenSVFButton.UseVisualStyleBackColor = false;
-            // 
-            // openSVFTb
-            // 
-            this.openSVFTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openSVFTb.Location = new System.Drawing.Point(73, 34);
-            this.openSVFTb.Name = "openSVFTb";
-            this.openSVFTb.Size = new System.Drawing.Size(422, 20);
-            this.openSVFTb.TabIndex = 13;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.DimGray;
-            this.label26.Location = new System.Drawing.Point(70, 17);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(76, 14);
-            this.label26.TabIndex = 12;
-            this.label26.Text = "Emplacement :";
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::ACTIVA_Module_1.Properties.Resources.open_inspection;
-            this.pictureBox8.Location = new System.Drawing.Point(17, 27);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 4;
-            this.pictureBox8.TabStop = false;
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.NewInspectionBt);
-            this.groupBox9.Controls.Add(this.NewInspectionPathTb);
-            this.groupBox9.Controls.Add(this.label24);
-            this.groupBox9.Controls.Add(this.pictureBox7);
-            this.groupBox9.Controls.Add(this.label25);
-            this.groupBox9.Controls.Add(this.NewInspectionNameTb);
-            this.groupBox9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox9.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox9.Location = new System.Drawing.Point(3, 87);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(501, 127);
-            this.groupBox9.TabIndex = 16;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Créer une inspection";
-            // 
-            // NewInspectionBt
-            // 
-            this.NewInspectionBt.BackColor = System.Drawing.SystemColors.Control;
-            this.NewInspectionBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewInspectionBt.ForeColor = System.Drawing.Color.Black;
-            this.NewInspectionBt.Image = global::ACTIVA_Module_1.Properties.Resources.add_16;
-            this.NewInspectionBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NewInspectionBt.Location = new System.Drawing.Point(423, 96);
-            this.NewInspectionBt.Name = "NewInspectionBt";
-            this.NewInspectionBt.Size = new System.Drawing.Size(71, 25);
-            this.NewInspectionBt.TabIndex = 15;
-            this.NewInspectionBt.Text = "Ajouter";
-            this.NewInspectionBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.NewInspectionBt.UseVisualStyleBackColor = false;
-            // 
-            // NewInspectionPathTb
-            // 
-            this.NewInspectionPathTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewInspectionPathTb.Location = new System.Drawing.Point(75, 74);
-            this.NewInspectionPathTb.Name = "NewInspectionPathTb";
-            this.NewInspectionPathTb.Size = new System.Drawing.Size(419, 20);
-            this.NewInspectionPathTb.TabIndex = 13;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.DimGray;
-            this.label24.Location = new System.Drawing.Point(72, 57);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(76, 14);
-            this.label24.TabIndex = 12;
-            this.label24.Text = "Emplacement :";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::ACTIVA_Module_1.Properties.Resources.new_inspection;
-            this.pictureBox7.Location = new System.Drawing.Point(17, 46);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 4;
-            this.pictureBox7.TabStop = false;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.DimGray;
-            this.label25.Location = new System.Drawing.Point(71, 17);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(172, 14);
-            this.label25.TabIndex = 11;
-            this.label25.Text = "Nom (sans caractères spéciaux) :";
-            // 
-            // NewInspectionNameTb
-            // 
-            this.NewInspectionNameTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewInspectionNameTb.Location = new System.Drawing.Point(75, 35);
-            this.NewInspectionNameTb.Name = "NewInspectionNameTb";
-            this.NewInspectionNameTb.Size = new System.Drawing.Size(419, 20);
-            this.NewInspectionNameTb.TabIndex = 9;
-            // 
-            // AddOuvrageGp
-            // 
-            this.AddOuvrageGp.Controls.Add(this.pictureBox6);
-            this.AddOuvrageGp.Controls.Add(this.label5);
-            this.AddOuvrageGp.Controls.Add(this.label17);
-            this.AddOuvrageGp.Controls.Add(this.OuvrageNomTb);
-            this.AddOuvrageGp.Controls.Add(this.NewOuvrageBt);
-            this.AddOuvrageGp.Controls.Add(this.OuvrageFormeCb);
-            this.AddOuvrageGp.Controls.Add(this.OuvrageTypeCb);
-            this.AddOuvrageGp.Controls.Add(this.label16);
-            this.AddOuvrageGp.Enabled = false;
-            this.AddOuvrageGp.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddOuvrageGp.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.AddOuvrageGp.Location = new System.Drawing.Point(3, 214);
-            this.AddOuvrageGp.Name = "AddOuvrageGp";
-            this.AddOuvrageGp.Size = new System.Drawing.Size(501, 93);
-            this.AddOuvrageGp.TabIndex = 15;
-            this.AddOuvrageGp.TabStop = false;
-            this.AddOuvrageGp.Text = "Créer un ouvrage";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::ACTIVA_Module_1.Properties.Resources.new_ouvrage;
-            this.pictureBox6.Location = new System.Drawing.Point(16, 25);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 4;
-            this.pictureBox6.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(347, 19);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 14);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Forme :";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.DimGray;
-            this.label17.Location = new System.Drawing.Point(71, 18);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(34, 14);
-            this.label17.TabIndex = 11;
-            this.label17.Text = "Nom :";
-            // 
-            // OuvrageNomTb
-            // 
-            this.OuvrageNomTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OuvrageNomTb.Location = new System.Drawing.Point(74, 35);
-            this.OuvrageNomTb.Name = "OuvrageNomTb";
-            this.OuvrageNomTb.Size = new System.Drawing.Size(142, 20);
-            this.OuvrageNomTb.TabIndex = 9;
-            // 
-            // NewOuvrageBt
-            // 
-            this.NewOuvrageBt.BackColor = System.Drawing.SystemColors.Control;
-            this.NewOuvrageBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewOuvrageBt.ForeColor = System.Drawing.Color.Black;
-            this.NewOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.add_16;
-            this.NewOuvrageBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NewOuvrageBt.Location = new System.Drawing.Point(423, 61);
-            this.NewOuvrageBt.Name = "NewOuvrageBt";
-            this.NewOuvrageBt.Size = new System.Drawing.Size(71, 25);
-            this.NewOuvrageBt.TabIndex = 7;
-            this.NewOuvrageBt.Text = "Ajouter";
-            this.NewOuvrageBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.NewOuvrageBt.UseVisualStyleBackColor = false;
-            // 
-            // OuvrageFormeCb
-            // 
-            this.OuvrageFormeCb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OuvrageFormeCb.FormattingEnabled = true;
-            this.OuvrageFormeCb.Location = new System.Drawing.Point(349, 35);
-            this.OuvrageFormeCb.MaxDropDownItems = 10;
-            this.OuvrageFormeCb.Name = "OuvrageFormeCb";
-            this.OuvrageFormeCb.Size = new System.Drawing.Size(145, 22);
-            this.OuvrageFormeCb.TabIndex = 13;
-            // 
-            // OuvrageTypeCb
-            // 
-            this.OuvrageTypeCb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OuvrageTypeCb.FormattingEnabled = true;
-            this.OuvrageTypeCb.Location = new System.Drawing.Point(224, 34);
-            this.OuvrageTypeCb.MaxDropDownItems = 10;
-            this.OuvrageTypeCb.Name = "OuvrageTypeCb";
-            this.OuvrageTypeCb.Size = new System.Drawing.Size(118, 22);
-            this.OuvrageTypeCb.TabIndex = 8;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.DimGray;
-            this.label16.Location = new System.Drawing.Point(221, 16);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(36, 14);
-            this.label16.TabIndex = 10;
-            this.label16.Text = "Type :";
-            // 
-            // InformationTab
-            // 
-            this.InformationTab.BackColor = System.Drawing.Color.White;
-            this.InformationTab.Controls.Add(this.TypeOuvrageGb);
-            this.InformationTab.Controls.Add(this.groupBox6);
-            this.InformationTab.Location = new System.Drawing.Point(1, 24);
-            this.InformationTab.Name = "InformationTab";
-            this.InformationTab.Size = new System.Drawing.Size(507, 232);
-            this.InformationTab.TabIndex = 1;
-            this.InformationTab.Text = "Informations";
-            // 
-            // TypeOuvrageGb
-            // 
-            this.TypeOuvrageGb.Controls.Add(this.pictureBox4);
-            this.TypeOuvrageGb.Controls.Add(this.cb_regard);
-            this.TypeOuvrageGb.Controls.Add(this.cb_branchement);
-            this.TypeOuvrageGb.Controls.Add(this.cb_troncon);
-            this.TypeOuvrageGb.Enabled = false;
-            this.TypeOuvrageGb.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TypeOuvrageGb.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.TypeOuvrageGb.Location = new System.Drawing.Point(3, 1);
-            this.TypeOuvrageGb.Name = "TypeOuvrageGb";
-            this.TypeOuvrageGb.Size = new System.Drawing.Size(501, 98);
-            this.TypeOuvrageGb.TabIndex = 3;
-            this.TypeOuvrageGb.TabStop = false;
-            this.TypeOuvrageGb.Text = "Type d\'ouvrages affichés";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::ACTIVA_Module_1.Properties.Resources.tri;
-            this.pictureBox4.Location = new System.Drawing.Point(17, 35);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
-            // 
-            // cb_regard
-            // 
-            this.cb_regard.AutoSize = true;
-            this.cb_regard.Checked = true;
-            this.cb_regard.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cb_regard.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_regard.ForeColor = System.Drawing.Color.DimGray;
-            this.cb_regard.Location = new System.Drawing.Point(384, 45);
-            this.cb_regard.Name = "cb_regard";
-            this.cb_regard.Size = new System.Drawing.Size(74, 19);
-            this.cb_regard.TabIndex = 2;
-            this.cb_regard.Tag = "REGARD";
-            this.cb_regard.Text = "Regards";
-            this.cb_regard.UseVisualStyleBackColor = true;
-            // 
-            // cb_branchement
-            // 
-            this.cb_branchement.AutoSize = true;
-            this.cb_branchement.Checked = true;
-            this.cb_branchement.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cb_branchement.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_branchement.ForeColor = System.Drawing.Color.DimGray;
-            this.cb_branchement.Location = new System.Drawing.Point(226, 45);
-            this.cb_branchement.Name = "cb_branchement";
-            this.cb_branchement.Size = new System.Drawing.Size(107, 19);
-            this.cb_branchement.TabIndex = 1;
-            this.cb_branchement.Tag = "BRANCHEMENT";
-            this.cb_branchement.Text = "Branchements";
-            this.cb_branchement.UseVisualStyleBackColor = true;
-            // 
-            // cb_troncon
-            // 
-            this.cb_troncon.AutoSize = true;
-            this.cb_troncon.Checked = true;
-            this.cb_troncon.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cb_troncon.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_troncon.ForeColor = System.Drawing.Color.DimGray;
-            this.cb_troncon.Location = new System.Drawing.Point(89, 45);
-            this.cb_troncon.Name = "cb_troncon";
-            this.cb_troncon.Size = new System.Drawing.Size(78, 19);
-            this.cb_troncon.TabIndex = 0;
-            this.cb_troncon.Tag = "TRONCON";
-            this.cb_troncon.Text = "Tronçons";
-            this.cb_troncon.UseVisualStyleBackColor = true;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.pictureBox3);
-            this.groupBox6.Controls.Add(this.obs_nb_label);
-            this.groupBox6.Controls.Add(this.obs_name_label);
-            this.groupBox6.Controls.Add(this.label15);
-            this.groupBox6.Controls.Add(this.label14);
-            this.groupBox6.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox6.Location = new System.Drawing.Point(3, 109);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(501, 104);
-            this.groupBox6.TabIndex = 4;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Informations de l\'ouvrage sélectionné";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::ACTIVA_Module_1.Properties.Resources.infos;
-            this.pictureBox3.Location = new System.Drawing.Point(17, 39);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
-            // 
-            // obs_nb_label
-            // 
-            this.obs_nb_label.AutoSize = true;
-            this.obs_nb_label.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.obs_nb_label.ForeColor = System.Drawing.Color.Tomato;
-            this.obs_nb_label.Location = new System.Drawing.Point(223, 67);
-            this.obs_nb_label.Name = "obs_nb_label";
-            this.obs_nb_label.Size = new System.Drawing.Size(0, 15);
-            this.obs_nb_label.TabIndex = 3;
-            // 
-            // obs_name_label
-            // 
-            this.obs_name_label.AutoSize = true;
-            this.obs_name_label.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.obs_name_label.ForeColor = System.Drawing.Color.Tomato;
-            this.obs_name_label.Location = new System.Drawing.Point(199, 32);
-            this.obs_name_label.Name = "obs_name_label";
-            this.obs_name_label.Size = new System.Drawing.Size(0, 15);
-            this.obs_name_label.TabIndex = 2;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.DimGray;
-            this.label15.Location = new System.Drawing.Point(72, 68);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(127, 14);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "Nombre d\'observations : ";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.DimGray;
-            this.label14.Location = new System.Drawing.Point(72, 33);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(99, 14);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Nom de l\'ouvrage : ";
-            // 
-            // ReportTab
-            // 
-            this.ReportTab.BackColor = System.Drawing.Color.White;
-            this.ReportTab.Controls.Add(this.groupBox10);
-            this.ReportTab.Controls.Add(this.groupBox5);
-            this.ReportTab.Controls.Add(this.ouvrageLb);
-            this.ReportTab.Controls.Add(this.GenerateReportBt);
-            this.ReportTab.Location = new System.Drawing.Point(1, 24);
-            this.ReportTab.Name = "ReportTab";
-            this.ReportTab.Size = new System.Drawing.Size(507, 232);
-            this.ReportTab.TabIndex = 2;
-            this.ReportTab.Text = "Rapport";
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.SaveReportParamBt);
-            this.groupBox10.Controls.Add(this.label29);
-            this.groupBox10.Controls.Add(this.label28);
-            this.groupBox10.Controls.Add(this.ReportTxtTb);
-            this.groupBox10.Controls.Add(this.ReportImgPb);
-            this.groupBox10.Controls.Add(this.ReportImgTb);
-            this.groupBox10.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox10.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox10.Location = new System.Drawing.Point(2, 100);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(500, 175);
-            this.groupBox10.TabIndex = 15;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Personalisation de l\'en-tête";
-            // 
-            // SaveReportParamBt
-            // 
-            this.SaveReportParamBt.BackColor = System.Drawing.SystemColors.Control;
-            this.SaveReportParamBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveReportParamBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.SaveReportParamBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SaveReportParamBt.Location = new System.Drawing.Point(376, 119);
-            this.SaveReportParamBt.Name = "SaveReportParamBt";
-            this.SaveReportParamBt.Size = new System.Drawing.Size(91, 23);
-            this.SaveReportParamBt.TabIndex = 5;
-            this.SaveReportParamBt.Text = "Enregistrer";
-            this.SaveReportParamBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.SaveReportParamBt.UseVisualStyleBackColor = false;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.Black;
-            this.label29.Location = new System.Drawing.Point(12, 79);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(127, 15);
-            this.label29.TabIndex = 4;
-            this.label29.Text = "Texte en haut de page";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(12, 26);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(180, 15);
-            this.label28.TabIndex = 3;
-            this.label28.Text = "Logo à afficher en haut de page";
-            // 
-            // ReportTxtTb
-            // 
-            this.ReportTxtTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReportTxtTb.Location = new System.Drawing.Point(15, 100);
-            this.ReportTxtTb.Multiline = true;
-            this.ReportTxtTb.Name = "ReportTxtTb";
-            this.ReportTxtTb.Size = new System.Drawing.Size(336, 59);
-            this.ReportTxtTb.TabIndex = 2;
-            // 
-            // ReportImgPb
-            // 
-            this.ReportImgPb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ReportImgPb.Location = new System.Drawing.Point(391, 26);
-            this.ReportImgPb.Name = "ReportImgPb";
-            this.ReportImgPb.Size = new System.Drawing.Size(60, 60);
-            this.ReportImgPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ReportImgPb.TabIndex = 1;
-            this.ReportImgPb.TabStop = false;
-            // 
-            // ReportImgTb
-            // 
-            this.ReportImgTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReportImgTb.Location = new System.Drawing.Point(15, 47);
-            this.ReportImgTb.Name = "ReportImgTb";
-            this.ReportImgTb.Size = new System.Drawing.Size(336, 20);
-            this.ReportImgTb.TabIndex = 0;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.pictureBox10);
-            this.groupBox5.Controls.Add(this.SyntCb);
-            this.groupBox5.Controls.Add(this.ObsCb);
-            this.groupBox5.Controls.Add(this.IdCb);
-            this.groupBox5.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox5.Location = new System.Drawing.Point(2, 6);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(500, 88);
-            this.groupBox5.TabIndex = 8;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Parties du rapport à afficher";
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::ACTIVA_Module_1.Properties.Resources.rapport;
-            this.pictureBox10.Location = new System.Drawing.Point(36, 31);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 6;
-            this.pictureBox10.TabStop = false;
-            // 
-            // SyntCb
-            // 
-            this.SyntCb.AutoSize = true;
-            this.SyntCb.Checked = true;
-            this.SyntCb.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.SyntCb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SyntCb.Location = new System.Drawing.Point(401, 39);
-            this.SyntCb.Name = "SyntCb";
-            this.SyntCb.Size = new System.Drawing.Size(77, 19);
-            this.SyntCb.TabIndex = 5;
-            this.SyntCb.Text = "Synthèse";
-            this.SyntCb.UseVisualStyleBackColor = true;
-            // 
-            // ObsCb
-            // 
-            this.ObsCb.AutoSize = true;
-            this.ObsCb.Checked = true;
-            this.ObsCb.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ObsCb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ObsCb.Location = new System.Drawing.Point(260, 39);
-            this.ObsCb.Name = "ObsCb";
-            this.ObsCb.Size = new System.Drawing.Size(99, 19);
-            this.ObsCb.TabIndex = 4;
-            this.ObsCb.Text = "Observations";
-            this.ObsCb.UseVisualStyleBackColor = true;
-            // 
-            // IdCb
-            // 
-            this.IdCb.AutoSize = true;
-            this.IdCb.Checked = true;
-            this.IdCb.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.IdCb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IdCb.Location = new System.Drawing.Point(114, 39);
-            this.IdCb.Name = "IdCb";
-            this.IdCb.Size = new System.Drawing.Size(95, 19);
-            this.IdCb.TabIndex = 3;
-            this.IdCb.Text = "Identification";
-            this.IdCb.UseVisualStyleBackColor = true;
-            // 
-            // ouvrageLb
-            // 
-            this.ouvrageLb.AutoSize = true;
-            this.ouvrageLb.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ouvrageLb.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.ouvrageLb.Location = new System.Drawing.Point(189, 12);
-            this.ouvrageLb.Name = "ouvrageLb";
-            this.ouvrageLb.Size = new System.Drawing.Size(0, 18);
-            this.ouvrageLb.TabIndex = 7;
-            // 
-            // GenerateReportBt
-            // 
-            this.GenerateReportBt.BackColor = System.Drawing.SystemColors.Control;
-            this.GenerateReportBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GenerateReportBt.ForeColor = System.Drawing.Color.Black;
-            this.GenerateReportBt.Image = global::ACTIVA_Module_1.Properties.Resources.export16;
-            this.GenerateReportBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GenerateReportBt.Location = new System.Drawing.Point(361, 278);
-            this.GenerateReportBt.Name = "GenerateReportBt";
-            this.GenerateReportBt.Size = new System.Drawing.Size(141, 25);
-            this.GenerateReportBt.TabIndex = 14;
-            this.GenerateReportBt.Text = "Génération de rapport";
-            this.GenerateReportBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.GenerateReportBt.UseVisualStyleBackColor = false;
-            // 
-            // AutocadTab
-            // 
-            this.AutocadTab.BackColor = System.Drawing.Color.White;
-            this.AutocadTab.Controls.Add(this.groupBox13);
-            this.AutocadTab.Controls.Add(this.AutocadGenerateBt);
-            this.AutocadTab.Location = new System.Drawing.Point(1, 24);
-            this.AutocadTab.Name = "AutocadTab";
-            this.AutocadTab.Size = new System.Drawing.Size(507, 232);
-            this.AutocadTab.TabBackColor = System.Drawing.Color.White;
-            this.AutocadTab.TabIndex = 3;
-            this.AutocadTab.Text = "Autocad";
-            // 
-            // groupBox13
-            // 
-            this.groupBox13.Controls.Add(this.pictureBox9);
-            this.groupBox13.Controls.Add(this.V2008Cb);
-            this.groupBox13.Controls.Add(this.V2007Cb);
-            this.groupBox13.Controls.Add(this.V2006Cb);
-            this.groupBox13.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox13.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox13.Location = new System.Drawing.Point(3, 19);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(501, 87);
-            this.groupBox13.TabIndex = 9;
-            this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "Version d\'AutoCAD installée sur le poste";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::ACTIVA_Module_1.Properties.Resources.autocad;
-            this.pictureBox9.Location = new System.Drawing.Point(26, 31);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 6;
-            this.pictureBox9.TabStop = false;
-            // 
-            // V2008Cb
-            // 
-            this.V2008Cb.AutoSize = true;
-            this.V2008Cb.Checked = true;
-            this.V2008Cb.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.V2008Cb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.V2008Cb.Location = new System.Drawing.Point(418, 39);
-            this.V2008Cb.Name = "V2008Cb";
-            this.V2008Cb.Size = new System.Drawing.Size(54, 19);
-            this.V2008Cb.TabIndex = 5;
-            this.V2008Cb.Text = "2008";
-            this.V2008Cb.UseVisualStyleBackColor = true;
-            // 
-            // V2007Cb
-            // 
-            this.V2007Cb.AutoSize = true;
-            this.V2007Cb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.V2007Cb.Location = new System.Drawing.Point(268, 39);
-            this.V2007Cb.Name = "V2007Cb";
-            this.V2007Cb.Size = new System.Drawing.Size(54, 19);
-            this.V2007Cb.TabIndex = 4;
-            this.V2007Cb.Text = "2007";
-            this.V2007Cb.UseVisualStyleBackColor = true;
-            // 
-            // V2006Cb
-            // 
-            this.V2006Cb.AutoSize = true;
-            this.V2006Cb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.V2006Cb.Location = new System.Drawing.Point(120, 39);
-            this.V2006Cb.Name = "V2006Cb";
-            this.V2006Cb.Size = new System.Drawing.Size(54, 19);
-            this.V2006Cb.TabIndex = 3;
-            this.V2006Cb.Text = "2006";
-            this.V2006Cb.UseVisualStyleBackColor = true;
-            // 
-            // AutocadGenerateBt
-            // 
-            this.AutocadGenerateBt.BackColor = System.Drawing.SystemColors.Control;
-            this.AutocadGenerateBt.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AutocadGenerateBt.Location = new System.Drawing.Point(71, 131);
-            this.AutocadGenerateBt.Name = "AutocadGenerateBt";
-            this.AutocadGenerateBt.Size = new System.Drawing.Size(378, 29);
-            this.AutocadGenerateBt.TabIndex = 6;
-            this.AutocadGenerateBt.Text = "Générer le rapport AutoCAD";
-            this.AutocadGenerateBt.UseVisualStyleBackColor = false;
-            // 
-            // AboutTab
-            // 
-            this.AboutTab.BackColor = System.Drawing.Color.White;
-            this.AboutTab.CaptionText = "?";
-            this.AboutTab.Controls.Add(this.richTextBox1);
-            this.AboutTab.Controls.Add(this.pictureBox11);
-            this.AboutTab.Controls.Add(this.labelnumcompil);
-            this.AboutTab.Controls.Add(this.label58);
-            this.AboutTab.Controls.Add(this.labeldateversion);
-            this.AboutTab.Controls.Add(this.label27);
-            this.AboutTab.Controls.Add(this.label55);
-            this.AboutTab.Location = new System.Drawing.Point(1, 24);
-            this.AboutTab.Name = "AboutTab";
-            this.AboutTab.Size = new System.Drawing.Size(507, 232);
-            this.AboutTab.TabBackColor = System.Drawing.Color.White;
-            this.AboutTab.TabBackColorSelected = System.Drawing.Color.White;
-            this.AboutTab.TabIndex = 4;
-            this.AboutTab.Text = "?";
-            this.AboutTab.ToolTipText = "A propos d\'ACTIVA";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Location = new System.Drawing.Point(272, 210);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(191, 71);
-            this.richTextBox1.TabIndex = 14;
-            this.richTextBox1.Text = "Structure & Réhabilitation\n36, avenue du Général de Gaulle\n93170 Bagnolet\ntél : 0" +
-                "1 49 72 73 92\nwww.structure-rehabilitation.fr";
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::ACTIVA_Module_1.Properties.Resources.SR;
-            this.pictureBox11.Location = new System.Drawing.Point(24, 198);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(172, 83);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 12;
-            this.pictureBox11.TabStop = false;
-            // 
-            // labelnumcompil
-            // 
-            this.labelnumcompil.AutoSize = true;
-            this.labelnumcompil.Location = new System.Drawing.Point(21, 119);
-            this.labelnumcompil.Name = "labelnumcompil";
-            this.labelnumcompil.Size = new System.Drawing.Size(119, 13);
-            this.labelnumcompil.TabIndex = 11;
-            this.labelnumcompil.Text = "N° de version : 1.0 beta";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(21, 84);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(469, 14);
-            this.label58.TabIndex = 10;
-            this.label58.Text = "\"Acquisition et Traitement des données d’Inspections Visuelles en ouvrage d’Assai" +
-                "nissement\"";
-            // 
-            // labeldateversion
-            // 
-            this.labeldateversion.AutoSize = true;
-            this.labeldateversion.Location = new System.Drawing.Point(21, 155);
-            this.labeldateversion.Name = "labeldateversion";
-            this.labeldateversion.Size = new System.Drawing.Size(149, 13);
-            this.labeldateversion.TabIndex = 9;
-            this.labeldateversion.Text = "Version du 14 décembre 2009";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.Tomato;
-            this.label27.Location = new System.Drawing.Point(181, 58);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(127, 14);
-            this.label27.TabIndex = 8;
-            this.label27.Text = "------------------------------";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Lucida Sans Unicode", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label55.Location = new System.Drawing.Point(177, 24);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(133, 39);
-            this.label55.TabIndex = 7;
-            this.label55.Text = "ACTIVA";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4770,6 +4770,42 @@
             this.OuvrageListSc.Panel1.ResumeLayout(false);
             this.OuvrageListSc.Panel2.ResumeLayout(false);
             this.OuvrageListSc.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.OuvrageList)).EndInit();
+            this.OuvrageToolsPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.MenuDockingTab)).EndInit();
+            this.MenuDockingTab.ResumeLayout(false);
+            this.chargementTab.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.AddOuvrageGp.ResumeLayout(false);
+            this.AddOuvrageGp.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.InformationTab.ResumeLayout(false);
+            this.TypeOuvrageGb.ResumeLayout(false);
+            this.TypeOuvrageGb.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.ReportTab.ResumeLayout(false);
+            this.ReportTab.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ReportImgPb)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.AutocadTab.ResumeLayout(false);
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.AboutTab.ResumeLayout(false);
+            this.AboutTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.IdentificationTab.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -4937,42 +4973,6 @@
             this.MainSplit.Panel1.ResumeLayout(false);
             this.MainSplit.Panel2.ResumeLayout(false);
             this.MainSplit.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.OuvrageList)).EndInit();
-            this.OuvrageToolsPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.MenuDockingTab)).EndInit();
-            this.MenuDockingTab.ResumeLayout(false);
-            this.chargementTab.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.AddOuvrageGp.ResumeLayout(false);
-            this.AddOuvrageGp.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.InformationTab.ResumeLayout(false);
-            this.TypeOuvrageGb.ResumeLayout(false);
-            this.TypeOuvrageGb.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.ReportTab.ResumeLayout(false);
-            this.ReportTab.PerformLayout();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ReportImgPb)).EndInit();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            this.AutocadTab.ResumeLayout(false);
-            this.groupBox13.ResumeLayout(false);
-            this.groupBox13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.AboutTab.ResumeLayout(false);
-            this.AboutTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

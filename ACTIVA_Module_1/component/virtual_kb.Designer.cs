@@ -79,7 +79,7 @@
             this.kbtable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
             this.kbtable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
             this.kbtable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
-            this.kbtable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
+            this.kbtable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
             this.kbtable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kbtable.Location = new System.Drawing.Point(0, 0);
             this.kbtable.Name = "kbtable";
@@ -100,7 +100,7 @@
             this.pavetable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
             this.pavetable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
             this.pavetable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 96F));
-            this.pavetable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pavetable.Dock = System.Windows.Forms.DockStyle.Right;
             this.pavetable.Location = new System.Drawing.Point(0, 0);
             this.pavetable.Name = "pavetable";
             this.pavetable.RowCount = 5;

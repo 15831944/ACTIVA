@@ -36,7 +36,6 @@ namespace ACTIVA_Module_1.component
                 int i = 0;
                 string delimiter = String.Empty;
                 mod_global.Focused_Control.Text = String.Empty;
-
                 string savepath = String.Empty;
                 string savefolder = System.IO.Path.Combine(mod_inspection.SVF_FOLDER, "img");
 

@@ -464,10 +464,9 @@
             // Carac1Lb
             // 
             this.Carac1Lb.AutoSize = true;
-            this.Carac1Lb.Dock = System.Windows.Forms.DockStyle.Top;
             this.Carac1Lb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Carac1Lb.ForeColor = System.Drawing.Color.Black;
-            this.Carac1Lb.Location = new System.Drawing.Point(3, 18);
+            this.Carac1Lb.Location = new System.Drawing.Point(6, 18);
             this.Carac1Lb.Name = "Carac1Lb";
             this.Carac1Lb.Size = new System.Drawing.Size(124, 14);
             this.Carac1Lb.TabIndex = 0;
@@ -476,7 +475,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 328);
+            this.label1.Location = new System.Drawing.Point(37, 328);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 13);
             this.label1.TabIndex = 24;
@@ -485,7 +484,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(160, 328);
+            this.label2.Location = new System.Drawing.Point(169, 328);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 13);
             this.label2.TabIndex = 26;
@@ -494,7 +493,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(271, 328);
+            this.label3.Location = new System.Drawing.Point(285, 328);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 13);
             this.label3.TabIndex = 28;
@@ -503,7 +502,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(401, 328);
+            this.label4.Location = new System.Drawing.Point(417, 328);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 13);
             this.label4.TabIndex = 30;
@@ -548,36 +547,36 @@
             // 
             this.FacultatifPb.BackColor = System.Drawing.Color.White;
             this.FacultatifPb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FacultatifPb.Location = new System.Drawing.Point(377, 327);
+            this.FacultatifPb.Location = new System.Drawing.Point(385, 328);
             this.FacultatifPb.Name = "FacultatifPb";
-            this.FacultatifPb.Size = new System.Drawing.Size(16, 16);
+            this.FacultatifPb.Size = new System.Drawing.Size(26, 16);
             this.FacultatifPb.TabIndex = 29;
             this.FacultatifPb.TabStop = false;
             // 
             // DesactivePb
             // 
             this.DesactivePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DesactivePb.Location = new System.Drawing.Point(247, 327);
+            this.DesactivePb.Location = new System.Drawing.Point(252, 328);
             this.DesactivePb.Name = "DesactivePb";
-            this.DesactivePb.Size = new System.Drawing.Size(16, 16);
+            this.DesactivePb.Size = new System.Drawing.Size(26, 16);
             this.DesactivePb.TabIndex = 27;
             this.DesactivePb.TabStop = false;
             // 
             // DifferePb
             // 
             this.DifferePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DifferePb.Location = new System.Drawing.Point(136, 327);
+            this.DifferePb.Location = new System.Drawing.Point(139, 328);
             this.DifferePb.Name = "DifferePb";
-            this.DifferePb.Size = new System.Drawing.Size(16, 16);
+            this.DifferePb.Size = new System.Drawing.Size(26, 16);
             this.DifferePb.TabIndex = 25;
             this.DifferePb.TabStop = false;
             // 
             // ObligatoirePb
             // 
             this.ObligatoirePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ObligatoirePb.Location = new System.Drawing.Point(8, 327);
+            this.ObligatoirePb.Location = new System.Drawing.Point(5, 328);
             this.ObligatoirePb.Name = "ObligatoirePb";
-            this.ObligatoirePb.Size = new System.Drawing.Size(16, 16);
+            this.ObligatoirePb.Size = new System.Drawing.Size(26, 16);
             this.ObligatoirePb.TabIndex = 23;
             this.ObligatoirePb.TabStop = false;
             // 

@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="..\xsl\formatObservationCode.xsl"?>
 <!-- <codes> -->
 <codes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\xsd\Schema_Codes_Observation.xsd">
-  <code position="1" parent="defautStructurel">
+  <code position="0" parent="defautStructurel">
     <id>DAA</id>
     <intitule info="La section transversale de la regard a été déformée par rapport à sa forme initiale">Déformation</intitule>
     <caracteristiques>
@@ -32,7 +32,7 @@
       </representations>
     </autocad>
   </code>
-  <code position="2" parent="defautStructurel">
+  <code position="1" parent="defautStructurel">
     <id>DAB</id>
     <intitule>Fissure</intitule>
     <caracteristiques>
@@ -40,9 +40,6 @@
         <item nom="A" position="1">Micro-fissure</item>
         <item nom="B" position="2">Fissure fermée</item>
         <item nom="C" position="0">Fissure ouverte</item>
-        <item nom="XA" position="5" ajoute="true">Reprise de bétonnage fissurée</item>
-        <item nom="XB" position="4" ajoute="true">Fissure écaillée (+/- en compression)</item>
-        <item nom="XC" position="3" ajoute="true">Fissure colmatée par CaCO3</item>
       </caracteristique>
       <caracteristique nom="c2" type="item" intitule="Orientation de la fissure" renseigne="1" info="">
         <item nom="A" q1="2" q2="2" h1="1" h2="3" pm1="1" pm2="2" position="0">Verticale</item>
@@ -50,10 +47,9 @@
         <item nom="C" q1="2" q2="2" h1="1" h2="2" pm1="1" pm2="2" position="3">Complexe</item>
         <item nom="D" q1="2" q2="2" h1="1" h2="2" pm1="1" pm2="2" position="4">Inclinée</item>
 		<item nom="E" q1="2" q2="2" h1="1" h2="2" pm1="1" pm2="2" position="5">Départ à partir d'un point (fissure en forme d'étoile)</item>
-        <item nom="XA" q1="2" q2="2" h1="1" h2="2" pm1="1" pm2="2" position="6" ajoute="true">Hélicoïdale</item>
       </caracteristique>
       <caracteristique nom="q1" type="numerique" intitule="Largeur de la fissure" unite="mm" renseigne="1" info=""/>
-      <caracteristique nom="q2" type="numerique" intitule="Désaffleurement maximal de la fissure" unite="mm" renseigne="1" ajoute="true" info=""/>
+      <caracteristique nom="q2" type="numerique" renseigne="1" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="2" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -78,7 +74,7 @@
       </representations>
     </autocad>
   </code>
-  <code position="3" parent="defautStructurel">
+  <code position="2" parent="defautStructurel">
     <id>DAC</id>
     <intitule>Rupture/effondrement</intitule>
     <caracteristiques>
@@ -89,7 +85,7 @@
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
       <caracteristique nom="q1" type="numerique" intitule="Longueur si &lt;1000mm" unite="mm" renseigne="1" info=""/>
-      <caracteristique nom="q2" type="numerique" intitule="Superficie unitaire affectée" unite="m2/mL" renseigne="1" ajoute="true" info="" />
+      <caracteristique nom="q2" type="numerique" renseigne="1" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -109,7 +105,7 @@
       </representations>
     </autocad>
   </code>
-  <code position="4" parent="defautStructurel">
+  <code position="3" parent="defautStructurel">
     <id>DAD</id>
     <intitule info="Les briques individuelles ou des éléments de maçonnerie de la structure des chambres en briques ou en éléments de maçonnerie se sont déplacés par rapport à leur position initiale.">Briquetage ou éléments de maçonnerie défectueux</intitule>
     <caracteristiques>
@@ -122,7 +118,7 @@
         <item position="0" nom="A">Autre couche visible</item>
         <item position="1" lien="true" nom="B">Rien de visible</item>
       </caracteristique>
-      <caracteristique nom="q1" type="numerique" intitule="Superficie unitaire affectée par le défaut observé" unite="m2/mL" renseigne="1" ajoute="true" info=""/>
+      <caracteristique nom="q1" type="numerique" renseigne="1" />
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
@@ -147,14 +143,14 @@
       </representations>
     </autocad>
   </code>
-  <code position="5" parent="defautStructurel">
+  <code position="4" parent="defautStructurel">
     <id>DAE</id>
     <intitule info="Tout ou partie du mortier de briquettage ou de maçonnerie est manquante">Mortier manquant</intitule>
     <caracteristiques>
       <caracteristique nom="c1" type="texte" renseigne="4" />
       <caracteristique nom="c2" type="texte" renseigne="4" />
       <caracteristique nom="q1" type="numerique" intitule="Profondeur du mortier manquant" unite="mm" renseigne="1" info=""/>
-      <caracteristique nom="q2" type="numerique" intitule="Superficie unitaire affectée" unite="m2/mL" renseigne="3" ajoute="true" info=""/>
+      <caracteristique nom="q2" type="numerique" renseigne="3" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -174,7 +170,7 @@
       </representations>
     </autocad>
   </code>
-  <code position="6" parent="defautStructurel">
+  <code position="5" parent="defautStructurel">
     <id>DAF</id>
     <intitule info="La surface du regard a été endommagée par attaque chimique (y compris la corrosion des conduites métalliques) ou par action mécanique">Dégradation de surface</intitule>
     <caracteristiques>
@@ -200,8 +196,8 @@
         <item nom="E" position="4">Aucune cause évidente</item>
 		<item nom="Z" position="5">Autres causes</item>
       </caracteristique>
-      <caracteristique nom="q1" type="numerique" intitule="Hauteur/profondeur maximale du défaut" unite="m" renseigne="3" ajoute="true" info=""/>
-      <caracteristique nom="q2" type="numerique" intitule="Largeur maximale du défaut" unite="m" renseigne="3" ajoute="true" info=""/>
+      <caracteristique nom="q1" type="numerique" renseigne="3" />
+      <caracteristique nom="q2" type="numerique" renseigne="3" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="2" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -228,7 +224,7 @@
       </representations>
     </autocad>
   </code>
-  <code position="0" parent="defautStructurel">
+  <code position="6" parent="defautStructurel">
     <id>DAG</id>
     <intitule info="Une conduite de raccordement fait saillie dans le ragard de visite ou la boîte d'inspection.">Branchement pénétrant</intitule>
     <caracteristiques>
@@ -270,13 +266,11 @@
         <item nom="C" position="2">Vide partiel entre son extrémité et la paroi du regard</item>
         <item nom="D" position="3">La conduite de raccordement est endommagée</item>
         <item nom="E" position="4">La conduite de raccordement est obturée</item>
-        <item nom="XA" position="5" ajoute="true">Le raccordement est mal-renformi</item>
-        <item nom="XB" position="6" ajoute="true">Usure du parement sous le raccordement</item>
         <item nom="Z" lien="true" position="7">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" intitule="Hauteur/profondeur du défaut" unite="cm" renseigne="3" ajoute="true" info=""/>
-      <caracteristique nom="q2" type="numerique" intitule="Largeur du défaut" unite="cm" renseigne="3" ajoute="true" info=""/>
+      <caracteristique nom="q1" type="numerique" renseigne="3" />
+      <caracteristique nom="q2" type="numerique" renseigne="3" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -394,7 +388,7 @@
 		<item nom="D" h2="1" pm2="1" position="3">Hélicoïdale</item>
       </caracteristique>
       <caracteristique nom="q1" type="numerique" intitule="Réduction surface (%) ou longueur trou (mm)" unite="" renseigne="3" info="Si type de défaut = A, D, E ou Z, entrer la réduction de la surface (%). Si = F, entrer la profondeur du renflement (mm). Si = I, entrer la largeur de la paroi manquante ou de la fente (mm). Si = J, entrer la longueur du trou (le long de l'axe de la conduite) (mm)"/>
-      <caracteristique nom="q2" type="numerique" intitule="Superficie unitaire affectée" unite="m2/mL" renseigne="3" ajoute="true" info=""/>
+      <caracteristique nom="q2" type="numerique" renseigne="3" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -433,8 +427,8 @@
 		<item nom="Z" lien="true" position="7">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" intitule="Réduction surface (%) ou longueur trou (mm)" unite="" renseigne="3" ajoute="true" info="Si type de défaut = C, E ou Z, entrer la réduction de la surface (%). Si = G, entrer la largeur de la paroi manquante (mm). Si = A, B, D ou F, entrer la longueur du trou (le long de l'axe de la conduite) (mm)" />
-      <caracteristique nom="q2" type="numerique" intitule="Largeur maximale du défaut" unite="m" renseigne="3" ajoute="true" info=""/>
+      <caracteristique nom="q1" type="numerique" renseigne="3" />
+      <caracteristique nom="q2" type="numerique" renseigne="3" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="2" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -494,7 +488,7 @@
     <caracteristiques>
       <caracteristique nom="c1" type="texte" renseigne="4" />
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" intitule="Superficie unitaire affectée" unite="m2/mL" renseigne="3" ajoute="true" info=""/>
+      <caracteristique nom="q1" type="numerique" renseigne="3" />
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
@@ -521,7 +515,7 @@
     <caracteristiques>
       <caracteristique nom="c1" type="texte" renseigne="4" />
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" intitule="Superficie visible du sol" unite="m2" renseigne="3" ajoute="true" info=""/>
+      <caracteristique nom="q1" type="numerique" renseigne="3" />
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
@@ -552,7 +546,7 @@
     <caracteristiques>
       <caracteristique nom="c1" type="texte" renseigne="4" />
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" intitule="Volume estimé du vide" unite="m3" renseigne="3" ajoute="true" info=""/>
+      <caracteristique nom="q1" type="numerique" renseigne="3" />
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
@@ -593,10 +587,7 @@
         <item nom="I" position="8">Support de l'échelle corrodé</item>
         <item nom="J" position="9">Montant de l'échelle corrodé</item>
         <item nom="K" position="10">Trou dans la paroi défectueux</item>
-        <item nom="XA" position="11" ajoute="true">Canne non fonctionnelle</item>
-        <item nom="XB" position="12" ajoute="true">Canne corrodée</item>
-        <item nom="XC" position="13" ajoute="true">Intervalle entre échelons inadapté</item>
-        <item nom="Z" lien="true" position="14">Autre</item>
+        <item nom="Z" lien="true" position="11">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
       <caracteristique nom="q1" type="numerique" intitule="Nombre d'éléments défectueux" renseigne="1" info=""/>
@@ -620,7 +611,7 @@
       </representations>
     </autocad>
   </code>
-  <code position="0" parent="defautStructurel">
+  <code position="17" parent="defautStructurel">
     <id>DAR</id>
     <intitule info="Un défaut est observé sur le tampon et le cadre">Tampon et cadre défectueux</intitule>
     <caracteristiques>
@@ -657,28 +648,106 @@
       </representations>
     </autocad>
   </code>
-  <code position="17" parent="defautStructurel" ajoute="True">
-    <id ajoute="true">DAXA</id>
-    <intitule ajoute="true">Drains</intitule>
+  <code position="18" parent="defautStructurel">
+    <id ajoute ="true">DAX</id>
+    <intitule info="Défaut des éléments de sécurité">Eléments de sécurité</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" renseigne="1" ajoute="true">
-        <item nom="XA" position="0" ajoute="true">Actif</item>
-        <item nom="XB" position="1" ajoute="true">Inactif</item>
-        <item nom="XZ" lien="true" position="2" ajoute="true">Autre</item>
+      <caracteristique nom="c1" type="item" ajoute ="true" intitule="Type d'élément de sécurité" renseigne="4" info="">
+	    <item nom="A" position="0" ajoute ="true">Chaine de sécurité</item>
+        <item nom="B" position="1" ajoute ="true">Main-courante</item>
+        <item nom="C" position="2" ajoute ="true">Fibre optique - signalisation</item>
+		<item nom="D" position="3" ajoute ="true">Panneau</item>
+		<item nom="Z" position="4" ajoute ="true">Autre élément</item>
       </caracteristique>
-      <caracteristique nom="c2" type="texte" renseigne="4" ajoute="true" info=""/>
-      <caracteristique nom="q1" type="numerique" intitule="Débit d'infiltration" unite="l/min" renseigne="3" ajoute="true" info=""/>
-      <caracteristique nom="q2" type="numerique" renseigne="4" ajoute="true" />
-      <caracteristique nom="h1" type="horaire" renseigne="1" ajoute="true" />
-      <caracteristique nom="h2" type="horaire" renseigne="4" ajoute="true" />
-      <caracteristique nom="pm1" type="numerique" renseigne="1" ajoute="true" />
-      <caracteristique nom="pm2" type="numerique" renseigne="4" ajoute="true" />
+      <caracteristique nom="c2" type="item" ajoute ="true" intitule="Nature du défaut" renseigne="4" info="">
+	    <item nom="A" position="0" ajoute ="true">Corrodé superficiellement</item>
+        <item nom="B" position="1" ajoute ="true">Corrodés avec réduction de sections</item>
+        <item nom="C" position="2" ajoute ="true">Rupture mais non manquantes</item>
+		<item nom="D" position="3" ajoute ="true">Rupture</item>
+		<item nom="Z" position="4" ajoute ="true">Autre défaut</item>
+      </caracteristique>
+      <caracteristique nom="q1" type="numerique" renseigne="3" ajoute ="true"/>
+      <caracteristique nom="q2" type="numerique" renseigne="4" ajoute ="true"/>
+      <caracteristique nom="h1" type="horaire" renseigne="1" ajoute ="true"/>
+      <caracteristique nom="h2" type="horaire" renseigne="3" ajoute ="true"/>
+      <caracteristique nom="pm1" type="numerique" renseigne="1" ajoute ="true"/>
+      <caracteristique nom="pm2" type="numerique" renseigne="3" ajoute ="true"/>
+      <caracteristique nom="assemblage" type="booleen" renseigne="3" ajoute ="true"/>
+      <caracteristique nom="video" type="video" renseigne="3" ajoute ="true"/>
+      <caracteristique nom="photo" type="photo" renseigne="3" ajoute ="true"/>
+      <caracteristique nom="remarques" type="texte" renseigne="3" ajoute ="true"/>
+      <caracteristique nom="audio" type="audio" renseigne="3" ajoute ="true"/>
+    </caracteristiques>
+    <autocad representer="false" legende="true" couleur="0|0|0">
+      <representations>
+        <lineaires />
+        <surfaciques />
+        <ponctuels />
+      </representations>
+    </autocad>
+  </code>
+  <code position="19" parent="defautStructurel">
+    <id ajoute ="true">DAY</id>
+    <intitule info="Défaut support de fibre optique">Elément de fibre optique</intitule>
+    <caracteristiques>
+      <caracteristique nom="c1" type="item" ajoute ="true" intitule="Type d'élément" renseigne="4" info="">
+	    <item nom="A" position="0" ajoute ="true">Goulotte</item>
+        <item nom="B" position="1" ajoute ="true">Support</item>
+        <item nom="C" position="2" ajoute ="true">Support type "collier"</item>
+		<item nom="D" position="3" ajoute ="true">Boite de raccordement</item>
+		<item nom="Z" position="4" ajoute ="true">Autre élément</item>
+      </caracteristique>
+      <caracteristique nom="c2" type="item" ajoute ="true" intitule="Nature du défaut et positionnement" renseigne="4" info="">
+	    <item nom="A" position="0" ajoute ="true">Arrivée</item>
+        <item nom="B" position="1" ajoute ="true">Sortie</item>
+        <item nom="C" position="2" ajoute ="true">Changement de côté</item>
+		<item nom="D" position="3" ajoute ="true">Corrodé</item>
+        <item nom="E" position="4" ajoute ="true">Rupture mais non manquantes</item>
+		<item nom="F" position="5" ajoute ="true">Rupture</item>
+		<item nom="Z" position="4" ajoute ="true">Autre défaut de revêtement</item>
+      </caracteristique>
+      <caracteristique nom="q1" type="numerique" renseigne="3" ajoute ="true"/>
+      <caracteristique nom="q2" type="numerique" renseigne="4" ajoute ="true"/>
+      <caracteristique nom="h1" type="horaire" renseigne="1" ajoute ="true"/>
+      <caracteristique nom="h2" type="horaire" renseigne="3" ajoute ="true"/>
+      <caracteristique nom="pm1" type="numerique" renseigne="1" ajoute ="true"/>
+      <caracteristique nom="pm2" type="numerique" renseigne="3" ajoute ="true"/>
+      <caracteristique nom="assemblage" type="booleen" renseigne="3" ajoute ="true"/>
+      <caracteristique nom="video" type="video" renseigne="3" ajoute ="true"/>
+      <caracteristique nom="photo" type="photo" renseigne="3" ajoute ="true"/>
+      <caracteristique nom="remarques" type="texte" renseigne="3" ajoute ="true"/>
+      <caracteristique nom="audio" type="audio" renseigne="3" ajoute ="true"/>
+    </caracteristiques>
+    <autocad representer="false" legende="true" couleur="0|0|0">
+      <representations>
+        <lineaires />
+        <surfaciques />
+        <ponctuels />
+      </representations>
+    </autocad>
+  </code>
+  <code position="0" parent="defautFonctionnel">
+    <id>DBA</id>
+    <intitule info="Racines d'arbres ou d'autres plantes poussant dans le regard de visite ou la boîte d'inspection en passant par les assemblages, les défauts ou les raccordements">Racines</intitule>
+    <caracteristiques>
+      <caracteristique nom="c1" type="item" intitule="Type de racine" renseigne="1" info="">
+        <item nom="A" position="0">Grosse racine isolée</item>
+        <item nom="B" position="1">Radicelles</item>
+        <item nom="C" position="2">Ensemble complexe de racines</item>
+      </caracteristique>
+      <caracteristique nom="c2" type="texte" renseigne="4" />
+      <caracteristique nom="q1" type="numerique" renseigne="3" />
+      <caracteristique nom="q2" type="numerique" renseigne="2" />
+      <caracteristique nom="h1" type="horaire" renseigne="1" />
+      <caracteristique nom="h2" type="horaire" renseigne="3" />
+      <caracteristique nom="pm1" type="numerique" renseigne="1" />
+      <caracteristique nom="pm2" type="numerique" renseigne="3" />
       <caracteristique nom="posregard" type="posregard" renseigne="3" />
-      <caracteristique nom="assemblage" type="booleen" renseigne="3" ajoute="true" />
-      <caracteristique nom="video" type="video" renseigne="3" ajoute="true" />
-      <caracteristique nom="photo" type="photo" renseigne="3" ajoute="true" />
-      <caracteristique nom="remarques" type="texte" renseigne="3" ajoute="true" />
-      <caracteristique nom="audio" type="audio" renseigne="3" ajoute="true" />
+      <caracteristique nom="assemblage" type="booleen" renseigne="3" />
+      <caracteristique nom="video" type="video" renseigne="3" />
+      <caracteristique nom="photo" type="photo" renseigne="3" />
+      <caracteristique nom="remarques" type="texte" renseigne="3" />
+      <caracteristique nom="audio" type="audio" renseigne="3" />
     </caracteristiques>
     <autocad representer="false" legende="true" couleur="0|0|0">
       <representations>
@@ -689,17 +758,18 @@
     </autocad>
   </code>
   <code position="1" parent="defautFonctionnel">
-    <id>DBA</id>
-    <intitule info="Racines d'arbres ou d'autres plantes poussant dans le regard de visite ou la boîte d'inspection en passant par les assemblages, les défauts ou les raccordements">Racines</intitule>
+    <id>DBB</id>
+    <intitule info="Matériau attaché à la paroi du regard de visite ou de la boîte d'inspection">Dépôts adhérents</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" intitule="Type de racine" renseigne="1" info="">
-        <item nom="A" position="0">Grosse racine isolée</item>
-        <item nom="B" position="1">Radicelles</item>
-        <item nom="C" position="2">Ensemble complexe de racines</item>
+      <caracteristique nom="c1" type="item" intitule="Type de matériau" renseigne="1" info="">
+        <item nom="A" position="0">Concrétions</item>
+        <item nom="B" position="1">Graisse</item>
+        <item nom="C" position="2">Encrassement</item>
+        <item nom="Z" lien="true" position="3">Autre</item>
       </caracteristique>
-      <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" intitule="Réduction de la section" unite="%" renseigne="3" ajoute="true" info=""/>
-      <caracteristique nom="q2" type="numerique" intitule="Superficie unitaire affectée" unite="m2/mL" renseigne="2" ajoute="true" info=""/>
+      <caracteristique nom="c2" type="item" renseigne="1" />
+      <caracteristique nom="q1" type="numerique" renseigne="3" />
+      <caracteristique nom="q2" type="numerique" renseigne="3" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -720,41 +790,6 @@
     </autocad>
   </code>
   <code position="2" parent="defautFonctionnel">
-    <id>DBB</id>
-    <intitule info="Matériau attaché à la paroi du regard de visite ou de la boîte d'inspection">Dépôts adhérents</intitule>
-    <caracteristiques>
-      <caracteristique nom="c1" type="item" intitule="Type de matériau" renseigne="1" info="">
-        <item nom="A" position="0">Concrétions</item>
-        <item nom="B" position="1">Graisse</item>
-        <item nom="C" position="2">Encrassement</item>
-        <item nom="Z" lien="true" position="3">Autre</item>
-      </caracteristique>
-      <caracteristique nom="c2" type="item" intitule="" renseigne="1" ajoute="true" info="">
-        <item nom="XA" position="0" ajoute="true">Permettant de voir les dégradations</item>
-        <item nom="XB" position="1" ajoute="true">Ne permettant pas de voir les dégradations</item>
-      </caracteristique>
-      <caracteristique nom="q1" type="numerique" intitule="Epaisseur maximale" unite="cm" renseigne="3" ajoute="true" info=""/>
-      <caracteristique nom="q2" type="numerique" intitule="Superficie unitaire" unite="m2/mL" renseigne="3" ajoute="true" info=""/>
-      <caracteristique nom="h1" type="horaire" renseigne="1" />
-      <caracteristique nom="h2" type="horaire" renseigne="3" />
-      <caracteristique nom="pm1" type="numerique" renseigne="1" />
-      <caracteristique nom="pm2" type="numerique" renseigne="3" />
-      <caracteristique nom="posregard" type="posregard" renseigne="3" />
-      <caracteristique nom="assemblage" type="booleen" renseigne="3" />
-      <caracteristique nom="video" type="video" renseigne="3" />
-      <caracteristique nom="photo" type="photo" renseigne="3" />
-      <caracteristique nom="remarques" type="texte" renseigne="3" />
-      <caracteristique nom="audio" type="audio" renseigne="3" />
-    </caracteristiques>
-    <autocad representer="false" legende="true" couleur="0|0|0">
-      <representations>
-        <lineaires />
-        <surfaciques />
-        <ponctuels />
-      </representations>
-    </autocad>
-  </code>
-  <code position="3" parent="defautFonctionnel">
     <id>DBC</id>
     <intitule info="Dépôts de matériau sur le radier ou les banquettes">Dépôts</intitule>
     <caracteristiques>
@@ -786,23 +821,14 @@
       </representations>
     </autocad>
   </code>
-  <code position="4" parent="defautFonctionnel">
+  <code position="3" parent="defautFonctionnel">
     <id>DBD</id>
     <intitule info="Le sol des terrains environnants pénètre dans le regard de visite ou boîte d'inspection">Entrée de terre</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" intitule="Type de sol" renseigne="1" ajoute="true" info="">
-        <item nom="XA" position="0" ajoute="true">Sable</item>
-        <item nom="XB" position="1" ajoute="true">Tourbe</item>
-        <item nom="XC" position="2" ajoute="true">Matériau fin (par exemple, argile, vase)</item>
-        <item nom="XD" position="3" ajoute="true">Gravier</item>
-        <item nom="XZ" lien="true" position="4" ajoute="true">Autre</item>
-      </caracteristique>
-      <caracteristique nom="c2" type="item" renseigne="3" ajoute="true" intitule="Observation des dégradations" info="">
-        <item nom="XA" position="0" ajoute="true">Permettant de voir les dégradations</item>
-        <item nom="XB" position="1" ajoute="true">Ne permettant pas de voir les dégradations</item>
-      </caracteristique>
-      <caracteristique nom="q1" type="numerique" intitule="Réduction de section" unite="%" renseigne="1" ajoute="true" info=""/>
-      <caracteristique nom="q2" type="numerique" renseigne="3" ajoute="True" intitule="Volume estimé des terres" unite="m3" info=""/>
+      <caracteristique nom="c1" type="item" renseigne="1" />
+      <caracteristique nom="c2" type="item" renseigne="3" />
+      <caracteristique nom="q1" type="numerique" renseigne="1" />
+      <caracteristique nom="q2" type="numerique" renseigne="3" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="4" />
       <caracteristique nom="pm1" type="numerique" renseigne="1" />
@@ -822,7 +848,7 @@
       </representations>
     </autocad>
   </code>
-  <code position="5" parent="defautFonctionnel">
+  <code position="4" parent="defautFonctionnel">
     <id>DBE</id>
     <intitule info="Présence d'objets dans le regard de visite ou la boîte d'inspection. A UTILISER si aucun code (de DBA à DBD) est applicable">Autres obstacles</intitule>
     <caracteristiques>
@@ -866,7 +892,7 @@
       </representations>
     </autocad>
   </code>
-  <code position="6" parent="defautFonctionnel">
+  <code position="5" parent="defautFonctionnel">
     <id>DBF</id>
     <intitule info="Pénétration d'eau par la paroi du regard de visite ou par les assemblages ou les défauts dans la paroi, la banquette ou la cunette du regard de visite ou de la chambre d'inspection.">Infiltration</intitule>
     <caracteristiques>
@@ -881,7 +907,7 @@
         <item nom="B" position="1">A travers l'espace entre une conduite de raccordement et la paroi du regard de visite ou de la boîte d'inspection au niveau du radier</item>
         <item nom="C" position="2">A travers l'espace entre une conduite de raccordement et la paroi du regard de visite ou de la boîte d'inspection au dessus de la banquette</item>
       </caracteristique>
-      <caracteristique nom="q1" type="numerique" intitule="Débit d'infiltration" unite="l/min" renseigne="3" ajoute="true" info=""/>
+      <caracteristique nom="q1" type="numerique" renseigne="3" />
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
@@ -902,7 +928,7 @@
       </representations>
     </autocad>
   </code>
-  <code position="7" parent="defautFonctionnel">
+  <code position="6" parent="defautFonctionnel">
     <id>DBG</id>
     <intitule info="Fuite visible du regard de visite ou de la boîte d'inspection">Exfiltration</intitule>
     <caracteristiques>
@@ -929,7 +955,7 @@
       </representations>
     </autocad>
   </code>
-  <code position="8" parent="defautFonctionnel">
+  <code position="7" parent="defautFonctionnel">
     <id>DBH</id>
     <intitule info="Présence de vermine">Vermine</intitule>
     <caracteristiques>
@@ -1355,253 +1381,6 @@
       </representations>
     </autocad>
   </code>
-  <code position="11" parent="descriptionInventaires" ajoute="True">
-    <id ajoute="true">DCXA</id>
-    <intitule ajoute="true">Colmatage/comblement de galeries, chambres et niches</intitule>
-    <caracteristiques>
-      <caracteristique nom="c1" type="item" intitule="Type d'ouvrage/oeuvre" renseigne="1" ajoute="true" info="">
-        <item nom="XA" position="0" ajoute="true">Mur masque</item>
-        <item nom="XB" position="1" ajoute="true">Comblement</item>
-        <item nom="XZ" lien="true" position="0" ajoute="true">Autre</item>
-      </caracteristique>
-      <caracteristique nom="c2" type="item" intitule="Caractéristiques du mur masque" renseigne="1" ajoute="true" info="">
-        <item nom="XA" position="0" ajoute="true">Maçonnerie apparente</item>
-        <item nom="XB" position="1" ajoute="true">Maçonnerie enduite</item>
-        <item nom="XC" position="2" ajoute="true">Briques</item>
-        <item nom="XD" position="3" ajoute="true">Parpaings</item>
-        <item nom="XZ" lien="true" position="3" ajoute="true">Autre</item>
-      </caracteristique>
-      <caracteristique nom="q1" type="numerique" intitule="Superficie du mur masque" unite="m2" renseigne="1" ajoute="true" info=""/>
-      <caracteristique nom="q2" type="numerique" intitule="Volume comblé si connu" unite="m3" renseigne="1" ajoute="true" info=""/>
-      <caracteristique nom="h1" type="horaire" renseigne="1" ajoute="true" />
-      <caracteristique nom="h2" type="horaire" renseigne="3" ajoute="true" />
-      <caracteristique nom="pm1" type="numerique" renseigne="1" ajoute="true" />
-      <caracteristique nom="pm2" type="numerique" renseigne="3" ajoute="true" />
-      <caracteristique nom="posregard" type="posregard" renseigne="3" ajoute="true" />
-      <caracteristique nom="assemblage" type="booleen" renseigne="3" ajoute="true" />
-      <caracteristique nom="video" type="video" renseigne="3" ajoute="true" />
-      <caracteristique nom="photo" type="photo" renseigne="3" ajoute="true" />
-      <caracteristique nom="remarques" type="texte" renseigne="3" ajoute="true" />
-      <caracteristique nom="audio" type="audio" renseigne="3" ajoute="true" />
-    </caracteristiques>
-    <autocad representer="false" legende="true" couleur="0|0|0">
-      <representations>
-        <lineaires />
-        <surfaciques />
-        <ponctuels />
-      </representations>
-    </autocad>
-  </code>
-  <code position="12" parent="descriptionInventaires" ajoute="True">
-    <id ajoute="true">DCXC</id>
-    <intitule ajoute="true">Equipements de régulation hydraulique</intitule>
-    <caracteristiques>
-      <caracteristique nom="c1" type="item" intitule="Type d'équipement de régulation hydraulique" renseigne="1" ajoute="true" info="">
-        <item nom="XA" position="1" ajoute="true">Barrage à poutrelles en place</item>
-        <item nom="XB" position="2" ajoute="true">Râtelier de poutrelles</item>
-        <item nom="XC" position="3" ajoute="true">Glissières pour barrage à poutrelles</item>
-        <item nom="XD" position="4" ajoute="true">Clapet anti-retour</item>
-        <item nom="XE" position="5" ajoute="true">Porte vanne automatisée</item>
-        <item nom="XF" position="6" ajoute="true">Porte vanne manuelle</item>
-        <item nom="XG" position="7" ajoute="true">Porte à flots</item>
-        <item nom="XH" position="8" ajoute="true">Porte de chasse</item>
-        <item nom="XI" position="9" ajoute="true">Porte métallique</item>
-        <item nom="XJ" position="10" ajoute="true">Vanette</item>
-        <item nom="XK" position="11" ajoute="true">Echelle limnimétrique</item>
-        <item nom="XL" position="12" ajoute="true">Capteur de niveau d'eau</item>
-        <item nom="XM" position="13" ajoute="true">Capteur de vitesse US</item>
-        <item nom="XN" position="14" ajoute="true">Plots d'instrumentation</item>
-        <item nom="XO" position="15" ajoute="true">Fixations pour appareils de mesure</item>
-        <item nom="XP" position="16" ajoute="true">Appareil de mesure</item>
-        <item nom="XQ" position="17" ajoute="true">Seuil-déversoir</item>
-        <item nom="XZ" lien="true" position="18" ajoute="true">Autre</item>
-      </caracteristique>
-      <caracteristique nom="c2" type="item" intitule="Etat et fonctionnalité de l'équipement" renseigne="1" ajoute="true" info="">
-        <item nom="XA" position="0" ajoute="true">Bon état</item>
-        <item nom="XB" position="1" ajoute="true">Etat correct</item>
-        <item nom="XC" position="2" ajoute="true">Défectueux</item>
-        <item nom="XD" position="3" ajoute="true">Désaffecté (HS)</item>
-        <item nom="XE" position="4" ajoute="true">En service</item>
-        <item nom="XF" position="5" ajoute="true">Fonctionnel</item>
-        <item nom="XG" position="6" ajoute="true">Opérationnel</item>
-        <item nom="XZ" lien="true" position="7" ajoute="true">Autre</item>
-      </caracteristique>
-      <caracteristique nom="q1" type="numerique" intitule="Linéaire défectueux ou désaffecté" unite="m" renseigne="3" ajoute="true" info=""/>
-      <caracteristique nom="q2" type="numerique" intitule="Nombre d'éléments défectueux ou désaffectés" renseigne="3" ajoute="true" info=""/>
-      <caracteristique nom="h1" type="horaire" renseigne="1" ajoute="true" />
-      <caracteristique nom="h2" type="horaire" renseigne="3" ajoute="true" />
-      <caracteristique nom="pm1" type="numerique" renseigne="1" ajoute="true" />
-      <caracteristique nom="pm2" type="numerique" renseigne="3" ajoute="true" />
-      <caracteristique nom="posregard" type="posregard" renseigne="3" ajoute="true" />
-      <caracteristique nom="assemblage" type="booleen" renseigne="3" ajoute="true" />
-      <caracteristique nom="video" type="video" renseigne="3" ajoute="true" />
-      <caracteristique nom="photo" type="photo" renseigne="3" ajoute="true" />
-      <caracteristique nom="remarques" type="texte" renseigne="3" ajoute="true" />
-      <caracteristique nom="audio" type="audio" renseigne="3" ajoute="true" />
-    </caracteristiques>
-    <lien>
-      <codelie position="0">DBE</codelie>
-      <codelie position="1">DCXD</codelie>
-      <codelie position="2">DCXF</codelie>
-    </lien>
-    <autocad representer="false" legende="true" couleur="0|0|0">
-      <representations>
-        <lineaires />
-        <surfaciques />
-        <ponctuels />
-      </representations>
-    </autocad>
-  </code>
-  <code position="13" parent="descriptionInventaires" ajoute="True">
-    <id ajoute="true">DCXD</id>
-    <intitule ajoute="true">Equipements d'exploitation et de sécurité</intitule>
-    <caracteristiques>
-      <caracteristique nom="c1" type="item" intitule="Type d'équipement" renseigne="1" ajoute="true" info="">
-        <item nom="XA" position="0" ajoute="true">Main courante horizontale</item>
-        <item nom="XB" position="1" ajoute="true">Main courante verticale</item>
-        <item nom="XC" position="2" ajoute="true">Chaîne de sécurité</item>
-        <item nom="XD" position="3" ajoute="true">Barre de sécurité</item>
-        <item nom="XE" position="4" ajoute="true">Garde corps : crinoline</item>
-        <item nom="XF" position="5" ajoute="true">Grille de banquette</item>
-        <item nom="XG" position="6" ajoute="true">Anneau de fixation (organeau)</item>
-        <item nom="XH" position="7" ajoute="true">Rail banquette</item>
-        <item nom="XI" position="8" ajoute="true">Plaque signalétique de nom de rue</item>
-        <item nom="XJ" position="9" ajoute="true">Plaque signalétique de numéro de police</item>
-        <item nom="XK" position="10" ajoute="true">Coffrage</item>
-        <item nom="XL" position="11" ajoute="true">Etais/butons</item>
-        <item nom="XM" position="12" ajoute="true">Plancher caillebotis</item>
-        <item nom="XN" position="13" ajoute="true">Rail de manutention</item>
-        <item nom="XO" position="14" ajoute="true">Echelle</item>
-        <item nom="XP" position="15" ajoute="true">Echelon de face</item>
-        <item nom="XQ" position="16" ajoute="true">Echelon d'angle</item>
-        <item nom="XR" position="17" ajoute="true">Echelon autre</item>
-        <item nom="XS" position="18" ajoute="true">Porte crosse</item>
-        <item nom="XT" position="19" ajoute="true">Crosse</item>
-        <item nom="XU" position="20" ajoute="true">Rail de sécurité</item>
-        <item nom="XZ" lien="true" position="21" ajoute="true">Autre</item>
-      </caracteristique>
-      <caracteristique nom="c2" type="item" intitule="Etat et fonctionnalité de l'équipement" renseigne="1" ajoute="true" info="">
-        <item nom="XA" position="0" ajoute="true">Bon état</item>
-        <item nom="XB" position="1" ajoute="true">Etat correct</item>
-        <item nom="XC" position="2" ajoute="true">Défectueux</item>
-        <item nom="XD" position="3" ajoute="true">Désaffecté (HS)</item>
-        <item nom="XE" position="4" ajoute="true">En service</item>
-        <item nom="XF" position="5" ajoute="true">Fonctionnel</item>
-        <item nom="XG" position="6" ajoute="true">Opérationnel</item>
-        <item nom="XZ" lien="true" position="7" ajoute="true">Autre</item>
-      </caracteristique>
-      <caracteristique nom="q1" type="numerique" intitule="Linéaire défectueux ou désaffecté" unite="m" renseigne="3" ajoute="true" info=""/>
-      <caracteristique nom="q2" type="numerique" intitule="Nombre d'éléments défectueux ou désaffectés" renseigne="3" ajoute="true" info=""/>
-      <caracteristique nom="h1" type="horaire" renseigne="1" ajoute="true" />
-      <caracteristique nom="h2" type="horaire" renseigne="3" ajoute="true" />
-      <caracteristique nom="pm1" type="numerique" renseigne="1" ajoute="true" />
-      <caracteristique nom="pm2" type="numerique" renseigne="3" ajoute="true" />
-      <caracteristique nom="posregard" type="posregard" renseigne="3" ajoute="true" />
-      <caracteristique nom="assemblage" type="booleen" renseigne="3" ajoute="true" />
-      <caracteristique nom="video" type="video" renseigne="3" ajoute="true" />
-      <caracteristique nom="photo" type="photo" renseigne="3" ajoute="true" />
-      <caracteristique nom="remarques" type="texte" renseigne="3" ajoute="true" />
-      <caracteristique nom="audio" type="audio" renseigne="3" ajoute="true" />
-    </caracteristiques>
-    <lien>
-      <codelie position="0">DBE</codelie>
-      <codelie position="1">DCXC</codelie>
-      <codelie position="2">DCXF</codelie>
-    </lien>
-    <autocad representer="false" legende="true" couleur="0|0|0">
-      <representations>
-        <lineaires />
-        <surfaciques />
-        <ponctuels />
-      </representations>
-    </autocad>
-  </code>
-  <code position="14" parent="descriptionInventaires" ajoute="True">
-    <id ajoute="true">DCXE</id>
-    <intitule ajoute="true">Aménagement particulier</intitule>
-    <caracteristiques>
-      <caracteristique nom="c1" type="item" intitule="Aménagement particulier" renseigne="1" ajoute="true" info="">
-        <item nom="XA" position="0" ajoute="true">Mur masque</item>
-        <item nom="XB" position="1" ajoute="true">Réservation pour concessionnaire</item>
-        <item nom="XC" position="2" ajoute="true">Niche</item>
-        <item nom="XZ" lien="true" position="3" ajoute="true">Autre</item>
-      </caracteristique>
-      <caracteristique nom="c2" type="numerique" intitule="Longueur" unite="m" renseigne="1" ajoute="true" info=""/>
-      <caracteristique nom="q1" type="numerique" intitule="Largeur" unite="m" renseigne="3" ajoute="true" info=""/>
-      <caracteristique nom="q2" type="numerique" intitule="profondeur" unite="m" renseigne="3" ajoute="true" info=""/>
-      <caracteristique nom="h1" type="horaire" renseigne="1" ajoute="true" />
-      <caracteristique nom="h2" type="horaire" renseigne="3" ajoute="true" />
-      <caracteristique nom="pm1" type="numerique" renseigne="1" ajoute="true" />
-      <caracteristique nom="pm2" type="numerique" renseigne="3" ajoute="true" />
-      <caracteristique nom="posregard" type="posregard" renseigne="3" ajoute="true" />
-      <caracteristique nom="assemblage" type="booleen" renseigne="3" ajoute="true" />
-      <caracteristique nom="video" type="video" renseigne="3" ajoute="true" />
-      <caracteristique nom="photo" type="photo" renseigne="3" ajoute="true" />
-      <caracteristique nom="remarques" type="texte" renseigne="3" ajoute="true" />
-      <caracteristique nom="audio" type="audio" renseigne="3" ajoute="true" />
-    </caracteristiques>
-    <autocad representer="false" legende="true" couleur="0|0|0">
-      <representations>
-        <lineaires />
-        <surfaciques />
-        <ponctuels />
-      </representations>
-    </autocad>
-  </code>
-  <code position="15" parent="descriptionInventaires" ajoute="True">
-    <id ajoute="true">DCXF</id>
-    <intitule ajoute="true">Réseaux concessionnaires</intitule>
-    <caracteristiques>
-      <caracteristique nom="c1" type="item" intitule="Type de concessionnaire" renseigne="1" ajoute="true" info="">
-        <item nom="XA" position="0" ajoute="true">Conduite d'eau</item>
-        <item nom="XB" position="1" ajoute="true">Air comprimé</item>
-        <item nom="XC" position="2" ajoute="true">Réseau de chaleur</item>
-        <item nom="XD" position="3" ajoute="true">Câbles électriques</item>
-        <item nom="XE" position="4" ajoute="true">Fibres optiques</item>
-        <item nom="XF" position="5" ajoute="true">Support de petite taille</item>
-        <item nom="XG" position="6" ajoute="true">Support moyenne taille</item>
-        <item nom="XH" position="7" ajoute="true">Support grande taille</item>
-        <item nom="XI" position="8" ajoute="true">Chemin de câble</item>
-        <item nom="XJ" position="9" ajoute="true">Gaine</item>
-        <item nom="XK" position="10" ajoute="true">Concessionnaire non identifié</item>
-        <item nom="XZ" lien="true" position="11" ajoute="true">Autre</item>
-      </caracteristique>
-      <caracteristique nom="c2" type="item" intitule="Etat et fonctionnalité du concessionnaire" renseigne="1" ajoute="true" info="">
-        <item nom="XA" position="0" ajoute="true">Bon état</item>
-        <item nom="XB" position="1" ajoute="true">Etat correct</item>
-        <item nom="XC" position="2" ajoute="true">Défectueux</item>
-        <item nom="XD" position="3" ajoute="true">Désaffecté (HS)</item>
-        <item nom="XE" position="4" ajoute="true">En service</item>
-        <item nom="XF" position="5" ajoute="true">Fonctionnel</item>
-        <item nom="XG" position="6" ajoute="true">Opérationnel</item>
-        <item nom="XZ" lien="true" position="7" ajoute="true">Autre</item>
-      </caracteristique>
-      <caracteristique nom="q1" type="numerique" intitule="Linéaire défectueux ou désaffecté" unite="m" renseigne="3" ajoute="true" info=""/>
-      <caracteristique nom="q2" type="numerique" intitule="Nombre d'éléments défectueux ou désaffectés" renseigne="3" ajoute="true" info=""/>
-      <caracteristique nom="h1" type="horaire" renseigne="1" ajoute="true" />
-      <caracteristique nom="h2" type="horaire" renseigne="2" ajoute="true" />
-      <caracteristique nom="pm1" type="numerique" renseigne="1" ajoute="true" />
-      <caracteristique nom="pm2" type="numerique" renseigne="2" ajoute="true" />
-      <caracteristique nom="posregard" type="posregard" renseigne="3" ajoute="true" />
-      <caracteristique nom="assemblage" type="booleen" renseigne="3" ajoute="true" />
-      <caracteristique nom="video" type="video" renseigne="3" ajoute="true" />
-      <caracteristique nom="photo" type="photo" renseigne="3" ajoute="true" />
-      <caracteristique nom="remarques" type="texte" renseigne="3" ajoute="true" />
-      <caracteristique nom="audio" type="audio" renseigne="3" ajoute="true" />
-    </caracteristiques>
-    <lien>
-      <codelie position="0">DBE</codelie>
-      <codelie position="1">DCXC</codelie>
-      <codelie position="2">DCXD</codelie>
-    </lien>
-    <autocad representer="false" legende="true" couleur="0|0|0">
-      <representations>
-        <lineaires />
-        <surfaciques />
-        <ponctuels />
-      </representations>
-    </autocad>
-  </code>
   <code position="0" parent="autresRemarques">
     <id>DDA</id>
     <intitule info="Une photographie a été prise pour indiquer l'état général du regard de visite ou de la boîte d'inspection">Photographie générale</intitule>
@@ -1665,12 +1444,10 @@
         <item nom="B" position="1">Obstruction</item>
         <item nom="C" position="2">Niveau d'eau trop élevé</item>
         <item nom="D" position="3">Panne de l'équipement</item>
-        <item nom="Z" lien="true" position="4" ajoute="true">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="item" intitule="D'autres caractérisations" renseigne="4" info="">
 	    <item nom="A" position="0">Objectif de l'inspection atteint avant la fin</item>
         <item nom="B" position="1">Inspection terminée sur les instructions de l'autorité responsable</item>
-        <item nom="Z" lien="true" position="2" ajoute="true">Autre</item>
       </caracteristique>
       <caracteristique nom="q1" type="numerique" renseigne="4" />
       <caracteristique nom="q2" type="numerique" renseigne="4" />
@@ -1827,76 +1604,6 @@
       </representations>
     </autocad>
   </code>
-  <code position="7" parent="autresRemarques" ajoute="True">
-    <id ajoute="true">DDXA</id>
-    <intitule ajoute="true">Montées en charge</intitule>
-    <caracteristiques>
-      <caracteristique nom="c1" type="item" intitule="Montées en charge probables" renseigne="1" ajoute="true" info="">
-        <item nom="XA" position="0" ajoute="true">Oui</item>
-        <item nom="XB" position="1" ajoute="true">Non</item>
-        <item nom="XC" position="2" ajoute="true">Inconnue</item>
-        <item nom="XZ" lien="true" position="3" ajoute="true">Autre</item>
-      </caracteristique>
-      <caracteristique nom="c2" type="texte" renseigne="4" ajoute="true" />
-      <caracteristique nom="q1" type="numerique" renseigne="4" ajoute="true" />
-      <caracteristique nom="q2" type="numerique" renseigne="4" ajoute="true" />
-      <caracteristique nom="h1" type="horaire" renseigne="4" ajoute="true" />
-      <caracteristique nom="h2" type="horaire" renseigne="4" ajoute="true" />
-      <caracteristique nom="pm1" type="numerique" renseigne="4" ajoute="true" />
-      <caracteristique nom="pm2" type="numerique" renseigne="4" ajoute="true" />
-      <caracteristique nom="posregard" type="posregard" renseigne="3" ajoute="true" />
-      <caracteristique nom="assemblage" type="booleen" renseigne="3" ajoute="true" />
-      <caracteristique nom="video" type="video" renseigne="3" ajoute="true" />
-      <caracteristique nom="photo" type="photo" renseigne="3" ajoute="true" />
-      <caracteristique nom="remarques" type="texte" renseigne="3" ajoute="true" />
-      <caracteristique nom="audio" type="audio" renseigne="3" ajoute="true" />
-    </caracteristiques>
-    <autocad representer="false" legende="true" couleur="0|0|0">
-      <representations>
-        <lineaires />
-        <surfaciques />
-        <ponctuels />
-      </representations>
-    </autocad>
-  </code>
-  <code position="8" parent="autresRemarques" ajoute="True">
-    <id ajoute="true">DDXB</id>
-    <intitule ajoute="true">Caractéristiques des effluents</intitule>
-    <caracteristiques>
-      <caracteristique nom="c1" type="item" renseigne="1" ajoute="true" intitule="Caractéristique relevée" info="">
-        <item nom="XA" position="0" ajoute="true">Aspect des effluents</item>
-        <item nom="XB" position="1" ajoute="true">Odeur des effluents</item>
-        <item nom="XC" position="2" ajoute="true">Température des effluents</item>
-        <item nom="XD" position="3" ajoute="true">PH des effluents</item>
-        <item nom="XE" lien="true" position="4" ajoute="true">Autre</item>
-      </caracteristique>
-      <caracteristique nom="c2" type="item" renseigne="1" ajoute="true" intitule="Mesure réalisée" info="">
-        <item nom="XA" position="0" ajoute="true">Mesure effectuée</item>
-        <item nom="XB" position="1" ajoute="true">Mesure non effectuée</item>
-        <item nom="XC" lien="true" position="2" ajoute="true">Mesure impossible</item>
-        <item nom="XZ" position="3" ajoute="True">Autre</item>
-      </caracteristique>
-      <caracteristique nom="q1" type="texte" intitule="" renseigne="4" ajoute="true" />
-      <caracteristique nom="q2" type="numerique" intitule="Valeur numérique du paramètre physico-chimique" renseigne="3" ajoute="true" info=""/>
-      <caracteristique nom="h1" type="horaire" renseigne="4" ajoute="true" />
-      <caracteristique nom="h2" type="horaire" renseigne="4" ajoute="true" />
-      <caracteristique nom="pm1" type="numerique" renseigne="1" ajoute="true" />
-      <caracteristique nom="pm2" type="numerique" renseigne="4" ajoute="true" />
-      <caracteristique nom="posregard" type="posregard" renseigne="3" ajoute="true" />
-      <caracteristique nom="assemblage" type="booleen" renseigne="3" ajoute="true" />
-      <caracteristique nom="video" type="video" renseigne="3" ajoute="true" />
-      <caracteristique nom="photo" type="photo" renseigne="3" ajoute="true" />
-      <caracteristique nom="remarques" type="texte" renseigne="3" ajoute="true" />
-      <caracteristique nom="audio" type="audio" renseigne="3" ajoute="true" />
-    </caracteristiques>
-    <autocad representer="false" legende="true" couleur="0|0|0">
-      <representations>
-        <lineaires />
-        <surfaciques />
-        <ponctuels />
-      </representations>
-    </autocad>
-  </code>
   <code position="0" parent="modificationIntitule">
     <id>CEA</id>
     <intitule info="Changement de référence vidéo">Référence de vidéo</intitule>
@@ -2006,44 +1713,7 @@
       </representations>
     </autocad>
   </code>
-  <code position="3" parent="modficationIntitule" ajoute="True">
-    <id ajoute="true">CEXA</id>
-    <intitule info="Changement du type de revêtement" ajoute="true">Type de revêtement</intitule>
-    <caracteristiques>
-      <caracteristique nom="c1" type="item" renseigne="1" ajoute="true" intitule="Type de revêtement" info="">
-        <item nom="XA" position="0" ajoute="true">Revêtement intégré lors de la fabrication</item>
-        <item nom="XB" position="1" ajoute="true">Revêtement projeté</item>
-        <item nom="XC" position="2" ajoute="true">Revêtement polymérisé sur place</item>
-        <item nom="XD" position="3" ajoute="true">Revêtement segmentaire</item>
-        <item nom="XE" position="4" ajoute="true">Revêtement par tuyaux discontinus</item>
-        <item nom="XF" position="5" ajoute="true">Revêtement par tubage continu</item>
-        <item nom="XG" position="6" ajoute="true">Revêtement sans espace annulaire</item>
-        <item nom="XH" position="7" ajoute="true">Revêtement enroulé en spirale</item>
-        <item nom="XZ" lien="true" position="8" ajoute="true">Autre</item>
-      </caracteristique>
-      <caracteristique nom="c2" type="texte" renseigne="4" ajoute="true" />
-      <caracteristique nom="q1" type="numerique" renseigne="4" ajoute="true" />
-      <caracteristique nom="q2" type="numerique" renseigne="4" ajoute="true" />
-      <caracteristique nom="h1" type="horaire" renseigne="4" ajoute="true" />
-      <caracteristique nom="h2" type="horaire" renseigne="4" ajoute="true" />
-      <caracteristique nom="pm1" type="numerique" renseigne="1" ajoute="true" />
-      <caracteristique nom="pm2" type="numerique" renseigne="4" ajoute="true" />
-      <caracteristique nom="posregard" type="posregard" renseigne="3" ajoute="true" />
-      <caracteristique nom="assemblage" type="booleen" renseigne="3" ajoute="true" />
-      <caracteristique nom="video" type="video" renseigne="3" ajoute="true" />
-      <caracteristique nom="photo" type="photo" renseigne="3" ajoute="true" />
-      <caracteristique nom="remarques" type="texte" renseigne="3" ajoute="true" />
-      <caracteristique nom="audio" type="audio" renseigne="3" ajoute="true" />
-    </caracteristiques>
-    <autocad representer="false" legende="true" couleur="0|0|0">
-      <representations>
-        <lineaires />
-        <surfaciques />
-        <ponctuels />
-      </representations>
-    </autocad>
-  </code>
-  <code position="4" parent="modificationIntitule">
+  <code position="3" parent="modificationIntitule">
     <id>CEF</id>
     <intitule info="Changement de longueur unitaire de chambre">Longueur unitaire de chambre</intitule>
     <caracteristiques>
@@ -2070,7 +1740,7 @@
       </representations>
     </autocad>
   </code>
-  <code position="5" parent="modificationIntitule">
+  <code position="4" parent="modificationIntitule">
     <id>CEG</id>
     <intitule>Précipitations</intitule>
     <caracteristiques>
@@ -2101,7 +1771,7 @@
       </representations>
     </autocad>
   </code>
-  <code position="6" parent="modificationIntitule">
+  <code position="5" parent="modificationIntitule">
     <id>CEH</id>
     <intitule>Type de système de descente</intitule>
     <caracteristiques>
@@ -2134,41 +1804,6 @@
       <caracteristique nom="photo" type="photo" renseigne="4" />
       <caracteristique nom="remarques" type="texte" renseigne="3" />
       <caracteristique nom="audio" type="audio" renseigne="3" />
-    </caracteristiques>
-    <autocad representer="false" legende="true" couleur="0|0|0">
-      <representations>
-        <lineaires />
-        <surfaciques />
-        <ponctuels />
-      </representations>
-    </autocad>
-  </code>
-  <code position="7" parent="modificationIntitule" ajoute="True">
-    <id ajoute="true">CEXB</id>
-    <intitule info="Changement de forme" ajoute="true">Forme de l'accès</intitule>
-    <caracteristiques>
-      <caracteristique nom="c1" type="item" intitule="Section de la cheminée" renseigne="1" ajoute="true" info="">
-        <item nom="XA" position="0" ajoute="true">Rectangulaire</item>
-        <item nom="XB" position="1" ajoute="true">Circulaire</item>
-        <item nom="XC" position="2" ajoute="true">Triangulaire</item>
-        <item nom="XD" position="3" ajoute="true">Ovale</item>
-        <item nom="XE" position="4" ajoute="true">Hexagonale</item>
-        <item nom="XF" position="5" ajoute="true">Octogonale</item>
-        <item nom="XZ" lien="true" position="6" ajoute="true">Autre</item>
-      </caracteristique>
-      <caracteristique nom="c2" type="texte" renseigne="4" ajoute="true" />
-      <caracteristique nom="q1" type="numerique" intitule="Hauteur" unite="mm" renseigne="1" ajoute="true" info=""/>
-      <caracteristique nom="q2" type="numerique" intitule="Largeur" unite="mm" renseigne="1" ajoute="true" info=""/>
-      <caracteristique nom="h1" type="horaire" renseigne="4" ajoute="true" />
-      <caracteristique nom="h2" type="horaire" renseigne="4" ajoute="true" />
-      <caracteristique nom="pm1" type="numerique" renseigne="1" ajoute="true" />
-      <caracteristique nom="pm2" type="numerique" renseigne="4" ajoute="true" />
-      <caracteristique nom="posregard" type="posregard" renseigne="3" ajoute="true" />
-      <caracteristique nom="assemblage" type="booleen" renseigne="4" ajoute="true" />
-      <caracteristique nom="video" type="video" renseigne="4" ajoute="true" />
-      <caracteristique nom="photo" type="photo" renseigne="1" ajoute="true" />
-      <caracteristique nom="remarques" type="texte" renseigne="3" ajoute="true" />
-      <caracteristique nom="audio" type="audio" renseigne="3" ajoute="true" />
     </caracteristiques>
     <autocad representer="false" legende="true" couleur="0|0|0">
       <representations>

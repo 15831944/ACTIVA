@@ -308,8 +308,8 @@ namespace ACTIVA_Module_1.modules
 
                 if (unNode.Attributes.GetNamedItem("ajoute") != null)
                     ligne["ajoute"] = unNode.Attributes["ajoute"].InnerText;
-                if (intituleNode.Attributes.GetNamedItem("info") != null)
-                    ligne["info"] = intituleNode.Attributes["info"].InnerText;
+                if (intituleNode.Attributes.GetNamedItem("intitule") != null)
+                    ligne["intitule"] = intituleNode.Attributes["intitule"].InnerText;
                 if (intituleNode.Attributes.GetNamedItem("ajoute") != null)
                     ligne["old_ajoute"] = intituleNode.Attributes["ajoute"].InnerText;
             }
@@ -333,8 +333,8 @@ namespace ACTIVA_Module_1.modules
 
                 if (unNode.Attributes.GetNamedItem("type") != null)
                     ligne["type"] = unNode.Attributes["type"].InnerText;
-                if (unNode.Attributes.GetNamedItem("info") != null)
-                    ligne["info"] = unNode.Attributes["info"].InnerText;
+                if (unNode.Attributes.GetNamedItem("intitule") != null)
+                    ligne["intitule"] = unNode.Attributes["intitule"].InnerText;
                 if (unNode.Attributes.GetNamedItem("unite") != null)
                     ligne["unite"] = unNode.Attributes["unite"].InnerText;
                 if (unNode.Attributes.GetNamedItem("renseigne") != null)

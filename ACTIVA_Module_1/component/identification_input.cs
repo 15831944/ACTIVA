@@ -79,12 +79,15 @@ namespace ACTIVA_Module_1.component
                     string but_text = item.GetAttribute("nom","") + " | " + item.Value;
 
                     if (item.GetAttribute("lien","") == "")
-                        but = new multiple_choice_button(but_text, null, false);
+                        if (item.GetAttribute("ajoute", "") == "true")
+                            but = new multiple_choice_button(but_text, null, false, true);
+                        else
+                            but = new multiple_choice_button(but_text, null, false, false);
                     else
                         if (item.GetAttribute("lien","") == "true")
-                            but = new multiple_choice_button(but_text, null, true);
+                            but = new multiple_choice_button(but_text, null, true, false);
                         else
-                            but = new multiple_choice_button(but_text, null, false);
+                            but = new multiple_choice_button(but_text, null, false, false);
 
                        mod_global.MF.flowLayoutPanel2.Controls.Add(but);
                 }
