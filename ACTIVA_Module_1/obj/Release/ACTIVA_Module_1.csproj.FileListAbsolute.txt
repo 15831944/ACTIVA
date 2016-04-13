@@ -31,7 +31,6 @@ C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Release\ACTIVA_Module_1.component.ph
 C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Release\ACTIVA_Module_1.component.pic_slide.resources
 C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Release\ACTIVA_Module_1.component.section_horaire.resources
 C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Release\ACTIVA_Module_1.component.virtual_kb.resources
-C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Release\ACTIVA_Module_1.Form1.resources
 C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Release\ACTIVA_Module_1.MainForm.resources
 C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Release\ACTIVA_Module_1.Ouvrage_Copy_Name.resources
 C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Release\ACTIVA_Module_1.Properties.Resources.resources

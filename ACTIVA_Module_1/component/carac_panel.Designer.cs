@@ -521,7 +521,7 @@
             this.CaracDelBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CaracDelBt.Location = new System.Drawing.Point(850, 324);
             this.CaracDelBt.Name = "CaracDelBt";
-            this.CaracDelBt.Size = new System.Drawing.Size(80, 21);
+            this.CaracDelBt.Size = new System.Drawing.Size(80, 27);
             this.CaracDelBt.TabIndex = 23;
             this.CaracDelBt.Text = "Supprimer";
             this.CaracDelBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -536,7 +536,7 @@
             this.CaracCopyBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CaracCopyBt.Location = new System.Drawing.Point(759, 324);
             this.CaracCopyBt.Name = "CaracCopyBt";
-            this.CaracCopyBt.Size = new System.Drawing.Size(80, 21);
+            this.CaracCopyBt.Size = new System.Drawing.Size(80, 27);
             this.CaracCopyBt.TabIndex = 22;
             this.CaracCopyBt.Text = "Dupliquer";
             this.CaracCopyBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -588,7 +588,7 @@
             this.CaracCancelBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CaracCancelBt.Location = new System.Drawing.Point(941, 324);
             this.CaracCancelBt.Name = "CaracCancelBt";
-            this.CaracCancelBt.Size = new System.Drawing.Size(76, 21);
+            this.CaracCancelBt.Size = new System.Drawing.Size(76, 27);
             this.CaracCancelBt.TabIndex = 24;
             this.CaracCancelBt.Text = "Annuler";
             this.CaracCancelBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -603,7 +603,7 @@
             this.CaracValidBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CaracValidBt.Location = new System.Drawing.Point(677, 324);
             this.CaracValidBt.Name = "CaracValidBt";
-            this.CaracValidBt.Size = new System.Drawing.Size(71, 21);
+            this.CaracValidBt.Size = new System.Drawing.Size(71, 27);
             this.CaracValidBt.TabIndex = 21;
             this.CaracValidBt.Text = "Valider";
             this.CaracValidBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -618,7 +618,7 @@
             this.CaracValidnCloseBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CaracValidnCloseBt.Location = new System.Drawing.Point(553, 324);
             this.CaracValidnCloseBt.Name = "CaracValidnCloseBt";
-            this.CaracValidnCloseBt.Size = new System.Drawing.Size(117, 21);
+            this.CaracValidnCloseBt.Size = new System.Drawing.Size(117, 27);
             this.CaracValidnCloseBt.TabIndex = 20;
             this.CaracValidnCloseBt.Text = "Valider et Fermer";
             this.CaracValidnCloseBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -648,7 +648,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "carac_panel";
-            this.Size = new System.Drawing.Size(1020, 348);
+            this.Size = new System.Drawing.Size(1020, 354);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.groupBox4.ResumeLayout(false);

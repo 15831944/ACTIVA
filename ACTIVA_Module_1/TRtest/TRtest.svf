@@ -39,27 +39,125 @@
         <intitule>Forme de la section</intitule>
         <valeur code="A">Circulaire</valeur>
       </code>
+      <code parent="Ouvrage">
+        <id>AAA</id>
+        <intitule>Référence de tronçon</intitule>
+        <valeur>
+        </valeur>
+      </code>
+      <code parent="Ouvrage">
+        <id>AAB</id>
+        <intitule>Référence du noeud de départ</intitule>
+        <valeur>
+        </valeur>
+      </code>
+      <code parent="Ouvrage">
+        <id>AAC</id>
+        <intitule>Coordonnées noeud départ (m)</intitule>
+        <valeur>
+        </valeur>
+      </code>
+      <code parent="Ouvrage">
+        <id>AAD</id>
+        <intitule>Référence du noeud 1</intitule>
+        <valeur>
+        </valeur>
+      </code>
+      <code parent="Ouvrage">
+        <id>AAE</id>
+        <intitule>Coordonnées du noeud 1 (m)</intitule>
+        <valeur>5.66</valeur>
+      </code>
+      <code parent="Ouvrage">
+        <id>AAF</id>
+        <intitule>Référence du noeud 2</intitule>
+        <valeur>
+        </valeur>
+      </code>
+      <code parent="Ouvrage">
+        <id>AAG</id>
+        <intitule>Coordonnées du noeud 2 (m)</intitule>
+        <valeur>
+        </valeur>
+      </code>
+      <code parent="Ouvrage">
+        <id>AAH</id>
+        <intitule>Emplacement longitudinale du point de départ de la canalisation latérale (m)</intitule>
+        <valeur>
+        </valeur>
+      </code>
+      <code parent="Ouvrage">
+        <id>AAK</id>
+        <intitule>Sens de visite</intitule>
+        <valeur>
+        </valeur>
+      </code>
+      <code parent="Ouvrage">
+        <id>ABQ</id>
+        <intitule>Durée d'inspection prévue (hh:mm)</intitule>
+        <valeur>
+        </valeur>
+      </code>
+      <code parent="Ouvrage">
+        <id>ABR</id>
+        <intitule>Format d'images vidéo</intitule>
+        <valeur>
+        </valeur>
+      </code>
+      <code parent="Ouvrage">
+        <id>ABS</id>
+        <intitule>Nom de fichier d'images vidéo</intitule>
+        <valeur>
+        </valeur>
+      </code>
+      <code parent="Ouvrage">
+        <id>ABT</id>
+        <intitule>Etape de l'inspection</intitule>
+        <valeur>
+        </valeur>
+      </code>
+      <code parent="Ouvrage">
+        <id>ACH</id>
+        <intitule>Profondeur au noeud de départ (mm)</intitule>
+        <valeur>
+        </valeur>
+      </code>
+      <code parent="Ouvrage">
+        <id>ACI</id>
+        <intitule>Profondeur au noeud d'arrivée (mm)</intitule>
+        <valeur>
+        </valeur>
+      </code>
+      <code parent="Ouvrage">
+        <id>ACJ</id>
+        <intitule>Type de branchement ou de collecteur</intitule>
+        <valeur>
+        </valeur>
+      </code>
+      <code parent="Ouvrage">
+        <id>ACK</id>
+        <intitule>Utilisation du branchement ou du collecteur</intitule>
+        <valeur>
+        </valeur>
+      </code>
+      <code parent="Ouvrage">
+        <id>ACL</id>
+        <intitule>Position stratégique (de l'ouvrage)</intitule>
+        <valeur>
+        </valeur>
+      </code>
     </identifications>
     <observations>
-      <code forme="A" num="1">
-        <id>AEG</id>
-        <intitule>Précipitations</intitule>
-        <caracteristiques>
-          <caracteristique nom="h2" renseigne="4" />
-          <caracteristique nom="c1" renseigne="1" code="C">Neige fondante ou glace</caracteristique>
-          <caracteristique nom="pm1" renseigne="1">5</caracteristique>
-          <caracteristique nom="remarques" renseigne="3" />
-          <caracteristique nom="audio" renseigne="3" />
-          <caracteristique nom="q1" renseigne="4" />
-          <caracteristique nom="pm2" renseigne="4" />
-          <caracteristique nom="photo" renseigne="3">Photo N° BR001 - Branchement en PGB à R0+0.6m.JPG|Photo N°001 - P0 Vue générale vers l'amont.JPG|Photo N°002 - P0 Vue générale vers l'aval.JPG|Photo N°003 - Eclatement d'enduit en PDM à R0+2.3m.jpg|Photo N°004 - FL1 avec éclats d'enduit en NVD à R0+12m.jpg</caracteristique>
-          <caracteristique nom="c2" renseigne="4" />
-          <caracteristique nom="assemblage" renseigne="3">False</caracteristique>
-          <caracteristique nom="h1" renseigne="4" />
-          <caracteristique nom="q2" renseigne="4" />
-          <caracteristique nom="video" renseigne="3" />
-        </caracteristiques>
-      </code>
     </observations>
+  </ouvrage>
+  <ouvrage nom="T2" type="REGARD" forme="Z" position="3">
+    <identifications>
+      <code parent="Element">
+        <id>CCA</id>
+        <intitule>Forme de l'accès</intitule>
+        <valeur code="Z">Autre</valeur>
+      </code>
+    </identifications>
+    <observations />
   </ouvrage>
 </inspection>

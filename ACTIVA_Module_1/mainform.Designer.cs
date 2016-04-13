@@ -852,6 +852,7 @@
             this.CloseInspectionBt.TabIndex = 0;
             this.CloseInspectionBt.Text = "Fermer l\'inspection";
             this.CloseInspectionBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CloseInspectionBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CloseInspectionBt.UseVisualStyleBackColor = false;
             this.CloseInspectionBt.Click += new System.EventHandler(this.CloseInspectionBt_Click);
             // 
@@ -951,6 +952,7 @@
             this.OpenSVFButton.TabIndex = 15;
             this.OpenSVFButton.Text = "Ouvrir";
             this.OpenSVFButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.OpenSVFButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.OpenSVFButton.UseVisualStyleBackColor = false;
             this.OpenSVFButton.Click += new System.EventHandler(this.OpenSVFButton_Click);
             // 
@@ -1013,6 +1015,7 @@
             this.NewInspectionBt.TabIndex = 15;
             this.NewInspectionBt.Text = "Ajouter";
             this.NewInspectionBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.NewInspectionBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.NewInspectionBt.UseVisualStyleBackColor = false;
             this.NewInspectionBt.Click += new System.EventHandler(this.NewInspectionBt_Click);
             // 
@@ -1138,6 +1141,7 @@
             this.NewOuvrageBt.TabIndex = 7;
             this.NewOuvrageBt.Text = "Ajouter";
             this.NewOuvrageBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.NewOuvrageBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.NewOuvrageBt.UseVisualStyleBackColor = false;
             this.NewOuvrageBt.Click += new System.EventHandler(this.NewOuvrageBt_Click);
             // 
@@ -1767,6 +1771,7 @@
             this.SaveOuvrageOrderBt.TabIndex = 13;
             this.SaveOuvrageOrderBt.Text = "Sauver l\'ordre";
             this.SaveOuvrageOrderBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.SaveOuvrageOrderBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.SaveOuvrageOrderBt.UseVisualStyleBackColor = false;
             this.SaveOuvrageOrderBt.Click += new System.EventHandler(this.SaveOuvrageOrderBt_Click);
             // 
@@ -1785,6 +1790,7 @@
             this.DeleteOuvrageBt.TabIndex = 6;
             this.DeleteOuvrageBt.Text = "Supprimer";
             this.DeleteOuvrageBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.DeleteOuvrageBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.DeleteOuvrageBt.UseVisualStyleBackColor = false;
             this.DeleteOuvrageBt.Click += new System.EventHandler(this.DeleteOuvrageBt_Click);
             // 
@@ -1827,6 +1833,7 @@
             this.CloneOuvrageBt.TabIndex = 12;
             this.CloneOuvrageBt.Text = "Dupliquer";
             this.CloneOuvrageBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CloneOuvrageBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CloneOuvrageBt.UseVisualStyleBackColor = false;
             this.CloneOuvrageBt.Click += new System.EventHandler(this.CloneOuvrageBt_Click);
             // 
@@ -4290,6 +4297,7 @@
             this.EraseAllBt.TabIndex = 1;
             this.EraseAllBt.Text = "Tout effacer";
             this.EraseAllBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.EraseAllBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.EraseAllBt.UseVisualStyleBackColor = false;
             this.EraseAllBt.Click += new System.EventHandler(this.EraseAllBt_Click);
             // 

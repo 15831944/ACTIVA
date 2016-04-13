@@ -74,7 +74,7 @@ namespace ACTIVA_Module_1
             //SaisieTabControl.SelectedTab = SaisieTabControl.TabPages["KeyboardTab"];
             virtual_kb1.Set_Alpha_Numeric();
 
-            if (MainDockingTab.SelectedTab.Name == "InspectionTab" || MainDockingTab.SelectedTab.Name == "ObservationsTab" || MainDockingTab.SelectedTab.Name == "ParamTab")
+            if (MainDockingTab.SelectedTab.Name == "InspectionTab" || MainDockingTab.SelectedTab.Name == "ObservationTab" || MainDockingTab.SelectedTab.Name == "ParamTab")
             {
                 mod_global.MF.MainSplit.Panel2Collapsed = true;
             }
