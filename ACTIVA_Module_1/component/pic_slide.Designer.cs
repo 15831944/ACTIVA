@@ -104,7 +104,7 @@
             this.pic_prev_button.Size = new System.Drawing.Size(33, 25);
             this.pic_prev_button.TabIndex = 1;
             this.pic_prev_button.Text = "<<";
-            this.pic_prev_button.UseVisualStyleBackColor = false;
+            this.pic_prev_button.UseVisualStyleBackColor = true;
             this.pic_prev_button.Click += new System.EventHandler(this.pic_prev_button_Click);
             // 
             // splitContainer4
@@ -145,7 +145,7 @@
             this.pic_next_button.Size = new System.Drawing.Size(34, 25);
             this.pic_next_button.TabIndex = 0;
             this.pic_next_button.Text = ">>";
-            this.pic_next_button.UseVisualStyleBackColor = false;
+            this.pic_next_button.UseVisualStyleBackColor = true;
             this.pic_next_button.Click += new System.EventHandler(this.pic_next_button_Click);
             // 
             // pic_slide

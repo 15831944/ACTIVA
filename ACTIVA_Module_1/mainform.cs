@@ -437,5 +437,15 @@ namespace ACTIVA_Module_1
             if (mod_global.Focused_Control != null)
                 mod_global.Focused_Control.Text = string.Empty;
         }
+
+        private void Folder_New_Inspection_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog fbd = new FolderBrowserDialog();
+            if (fbd.ShowDialog() == DialogResult.OK)
+            {
+                NewInspectionPathTb.Text = fbd.SelectedPath;
+            }
+        }
+
     }
 }

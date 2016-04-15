@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<inspection>
+  <ouvrage nom="T1" type="TRONCON" forme="A" position="1">
+    <identifications>
+      <code parent="Element">
+        <id>ACA</id>
+        <intitule>Forme de la section</intitule>
+        <valeur code="A">Circulaire</valeur>
+      </code>
+    </identifications>
+    <observations />
+  </ouvrage>
+</inspection>

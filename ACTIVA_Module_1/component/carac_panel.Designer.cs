@@ -518,14 +518,13 @@
             this.CaracDelBt.BackColor = System.Drawing.SystemColors.Control;
             this.CaracDelBt.ForeColor = System.Drawing.Color.Black;
             this.CaracDelBt.Image = global::ACTIVA_Module_1.Properties.Resources.remove_16;
-            this.CaracDelBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CaracDelBt.Location = new System.Drawing.Point(850, 324);
             this.CaracDelBt.Name = "CaracDelBt";
             this.CaracDelBt.Size = new System.Drawing.Size(80, 27);
             this.CaracDelBt.TabIndex = 23;
             this.CaracDelBt.Text = "Supprimer";
-            this.CaracDelBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CaracDelBt.UseVisualStyleBackColor = false;
+            this.CaracDelBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.CaracDelBt.UseVisualStyleBackColor = true;
             this.CaracDelBt.Click += new System.EventHandler(this.CaracDelBt_Click);
             // 
             // CaracCopyBt
@@ -533,14 +532,13 @@
             this.CaracCopyBt.BackColor = System.Drawing.SystemColors.Control;
             this.CaracCopyBt.ForeColor = System.Drawing.Color.Black;
             this.CaracCopyBt.Image = global::ACTIVA_Module_1.Properties.Resources.copy1_16;
-            this.CaracCopyBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CaracCopyBt.Location = new System.Drawing.Point(759, 324);
             this.CaracCopyBt.Name = "CaracCopyBt";
             this.CaracCopyBt.Size = new System.Drawing.Size(80, 27);
             this.CaracCopyBt.TabIndex = 22;
             this.CaracCopyBt.Text = "Dupliquer";
-            this.CaracCopyBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CaracCopyBt.UseVisualStyleBackColor = false;
+            this.CaracCopyBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.CaracCopyBt.UseVisualStyleBackColor = true;
             this.CaracCopyBt.Click += new System.EventHandler(this.CaracCopyBt_Click);
             // 
             // FacultatifPb
@@ -585,14 +583,13 @@
             this.CaracCancelBt.BackColor = System.Drawing.SystemColors.Control;
             this.CaracCancelBt.ForeColor = System.Drawing.Color.Black;
             this.CaracCancelBt.Image = global::ACTIVA_Module_1.Properties.Resources.cancel_16;
-            this.CaracCancelBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CaracCancelBt.Location = new System.Drawing.Point(941, 324);
             this.CaracCancelBt.Name = "CaracCancelBt";
             this.CaracCancelBt.Size = new System.Drawing.Size(76, 27);
             this.CaracCancelBt.TabIndex = 24;
             this.CaracCancelBt.Text = "Annuler";
-            this.CaracCancelBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CaracCancelBt.UseVisualStyleBackColor = false;
+            this.CaracCancelBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.CaracCancelBt.UseVisualStyleBackColor = true;
             this.CaracCancelBt.Click += new System.EventHandler(this.CaracCancelBt_Click);
             // 
             // CaracValidBt
@@ -600,14 +597,13 @@
             this.CaracValidBt.BackColor = System.Drawing.SystemColors.Control;
             this.CaracValidBt.ForeColor = System.Drawing.Color.Black;
             this.CaracValidBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.CaracValidBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CaracValidBt.Location = new System.Drawing.Point(677, 324);
             this.CaracValidBt.Name = "CaracValidBt";
             this.CaracValidBt.Size = new System.Drawing.Size(71, 27);
             this.CaracValidBt.TabIndex = 21;
             this.CaracValidBt.Text = "Valider";
-            this.CaracValidBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CaracValidBt.UseVisualStyleBackColor = false;
+            this.CaracValidBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.CaracValidBt.UseVisualStyleBackColor = true;
             this.CaracValidBt.Click += new System.EventHandler(this.CaracValidBt_Click);
             // 
             // CaracValidnCloseBt
@@ -615,14 +611,13 @@
             this.CaracValidnCloseBt.BackColor = System.Drawing.SystemColors.Control;
             this.CaracValidnCloseBt.ForeColor = System.Drawing.Color.Black;
             this.CaracValidnCloseBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.CaracValidnCloseBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CaracValidnCloseBt.Location = new System.Drawing.Point(553, 324);
             this.CaracValidnCloseBt.Name = "CaracValidnCloseBt";
             this.CaracValidnCloseBt.Size = new System.Drawing.Size(117, 27);
             this.CaracValidnCloseBt.TabIndex = 20;
             this.CaracValidnCloseBt.Text = "Valider et Fermer";
-            this.CaracValidnCloseBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CaracValidnCloseBt.UseVisualStyleBackColor = false;
+            this.CaracValidnCloseBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.CaracValidnCloseBt.UseVisualStyleBackColor = true;
             this.CaracValidnCloseBt.Click += new System.EventHandler(this.CaracValidnCloseBt_Click);
             // 
             // carac_panel

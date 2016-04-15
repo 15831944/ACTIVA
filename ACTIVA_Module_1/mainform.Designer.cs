@@ -66,6 +66,7 @@
             this.label26 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.Folder_New_Inspection = new System.Windows.Forms.Button();
             this.NewInspectionBt = new System.Windows.Forms.Button();
             this.NewInspectionPathTb = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
@@ -340,7 +341,6 @@
             this.SectionTab = new C1.Win.C1Command.C1DockingTabPage();
             this.section_horaire1 = new ACTIVA_Module_1.component.section_horaire();
             this.PhotoTab = new C1.Win.C1Command.C1DockingTabPage();
-            this.photo_select1 = new ACTIVA_Module_1.component.photo_select();
             this.VideoTab = new C1.Win.C1Command.C1DockingTabPage();
             this.AudioTab = new C1.Win.C1Command.C1DockingTabPage();
             this.SchemaTab = new C1.Win.C1Command.C1DockingTabPage();
@@ -559,7 +559,6 @@
             this.ChoiceTab.SuspendLayout();
             this.DateTab.SuspendLayout();
             this.SectionTab.SuspendLayout();
-            this.PhotoTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -853,7 +852,7 @@
             this.CloseInspectionBt.Text = "Fermer l\'inspection";
             this.CloseInspectionBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CloseInspectionBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.CloseInspectionBt.UseVisualStyleBackColor = false;
+            this.CloseInspectionBt.UseVisualStyleBackColor = true;
             this.CloseInspectionBt.Click += new System.EventHandler(this.CloseInspectionBt_Click);
             // 
             // pictureBox2
@@ -942,8 +941,8 @@
             // OpenSVFButton
             // 
             this.OpenSVFButton.BackColor = System.Drawing.SystemColors.Control;
-            this.OpenSVFButton.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OpenSVFButton.ForeColor = System.Drawing.Color.Black;
+            this.OpenSVFButton.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.OpenSVFButton.ForeColor = System.Drawing.SystemColors.Highlight;
             this.OpenSVFButton.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
             this.OpenSVFButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.OpenSVFButton.Location = new System.Drawing.Point(296, 56);
@@ -953,7 +952,7 @@
             this.OpenSVFButton.Text = "Ouvrir";
             this.OpenSVFButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.OpenSVFButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.OpenSVFButton.UseVisualStyleBackColor = false;
+            this.OpenSVFButton.UseVisualStyleBackColor = true;
             this.OpenSVFButton.Click += new System.EventHandler(this.OpenSVFButton_Click);
             // 
             // openSVFTb
@@ -987,6 +986,7 @@
             // 
             // groupBox9
             // 
+            this.groupBox9.Controls.Add(this.Folder_New_Inspection);
             this.groupBox9.Controls.Add(this.NewInspectionBt);
             this.groupBox9.Controls.Add(this.NewInspectionPathTb);
             this.groupBox9.Controls.Add(this.label24);
@@ -1002,21 +1002,33 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Créer une inspection";
             // 
+            // Folder_New_Inspection
+            // 
+            this.Folder_New_Inspection.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Folder_New_Inspection.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
+            this.Folder_New_Inspection.Location = new System.Drawing.Point(175, 96);
+            this.Folder_New_Inspection.Name = "Folder_New_Inspection";
+            this.Folder_New_Inspection.Size = new System.Drawing.Size(94, 25);
+            this.Folder_New_Inspection.TabIndex = 16;
+            this.Folder_New_Inspection.Text = "Parcourir";
+            this.Folder_New_Inspection.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Folder_New_Inspection.UseVisualStyleBackColor = true;
+            this.Folder_New_Inspection.Click += new System.EventHandler(this.Folder_New_Inspection_Click);
+            // 
             // NewInspectionBt
             // 
             this.NewInspectionBt.BackColor = System.Drawing.SystemColors.Control;
-            this.NewInspectionBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewInspectionBt.ForeColor = System.Drawing.Color.Black;
+            this.NewInspectionBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.NewInspectionBt.ForeColor = System.Drawing.SystemColors.Highlight;
             this.NewInspectionBt.Image = global::ACTIVA_Module_1.Properties.Resources.add_16;
-            this.NewInspectionBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NewInspectionBt.Location = new System.Drawing.Point(296, 96);
+            this.NewInspectionBt.Location = new System.Drawing.Point(280, 96);
             this.NewInspectionBt.Name = "NewInspectionBt";
-            this.NewInspectionBt.Size = new System.Drawing.Size(71, 25);
+            this.NewInspectionBt.Size = new System.Drawing.Size(87, 25);
             this.NewInspectionBt.TabIndex = 15;
             this.NewInspectionBt.Text = "Ajouter";
             this.NewInspectionBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.NewInspectionBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.NewInspectionBt.UseVisualStyleBackColor = false;
+            this.NewInspectionBt.UseVisualStyleBackColor = true;
             this.NewInspectionBt.Click += new System.EventHandler(this.NewInspectionBt_Click);
             // 
             // NewInspectionPathTb
@@ -1131,18 +1143,16 @@
             // NewOuvrageBt
             // 
             this.NewOuvrageBt.BackColor = System.Drawing.SystemColors.Control;
-            this.NewOuvrageBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewOuvrageBt.ForeColor = System.Drawing.Color.Black;
+            this.NewOuvrageBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.NewOuvrageBt.ForeColor = System.Drawing.SystemColors.Highlight;
             this.NewOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.add_16;
-            this.NewOuvrageBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NewOuvrageBt.Location = new System.Drawing.Point(296, 62);
+            this.NewOuvrageBt.Location = new System.Drawing.Point(280, 62);
             this.NewOuvrageBt.Name = "NewOuvrageBt";
-            this.NewOuvrageBt.Size = new System.Drawing.Size(71, 25);
+            this.NewOuvrageBt.Size = new System.Drawing.Size(87, 25);
             this.NewOuvrageBt.TabIndex = 7;
             this.NewOuvrageBt.Text = "Ajouter";
-            this.NewOuvrageBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.NewOuvrageBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.NewOuvrageBt.UseVisualStyleBackColor = false;
+            this.NewOuvrageBt.UseVisualStyleBackColor = true;
             this.NewOuvrageBt.Click += new System.EventHandler(this.NewOuvrageBt_Click);
             // 
             // OuvrageFormeCb
@@ -1363,16 +1373,15 @@
             // SaveReportParamBt
             // 
             this.SaveReportParamBt.BackColor = System.Drawing.SystemColors.Control;
-            this.SaveReportParamBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveReportParamBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
             this.SaveReportParamBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.SaveReportParamBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SaveReportParamBt.Location = new System.Drawing.Point(276, 118);
+            this.SaveReportParamBt.Location = new System.Drawing.Point(281, 116);
             this.SaveReportParamBt.Name = "SaveReportParamBt";
-            this.SaveReportParamBt.Size = new System.Drawing.Size(91, 23);
+            this.SaveReportParamBt.Size = new System.Drawing.Size(103, 29);
             this.SaveReportParamBt.TabIndex = 5;
             this.SaveReportParamBt.Text = "Enregistrer";
-            this.SaveReportParamBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.SaveReportParamBt.UseVisualStyleBackColor = false;
+            this.SaveReportParamBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.SaveReportParamBt.UseVisualStyleBackColor = true;
             this.SaveReportParamBt.Click += new System.EventHandler(this.SaveReportParamBt_Click_1);
             // 
             // label29
@@ -1505,13 +1514,13 @@
             this.GenerateReportBt.ForeColor = System.Drawing.Color.Black;
             this.GenerateReportBt.Image = global::ACTIVA_Module_1.Properties.Resources.export16;
             this.GenerateReportBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GenerateReportBt.Location = new System.Drawing.Point(240, 279);
+            this.GenerateReportBt.Location = new System.Drawing.Point(245, 281);
             this.GenerateReportBt.Name = "GenerateReportBt";
             this.GenerateReportBt.Size = new System.Drawing.Size(141, 25);
             this.GenerateReportBt.TabIndex = 14;
             this.GenerateReportBt.Text = "Génération de rapport";
             this.GenerateReportBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.GenerateReportBt.UseVisualStyleBackColor = false;
+            this.GenerateReportBt.UseVisualStyleBackColor = true;
             this.GenerateReportBt.Click += new System.EventHandler(this.GenerateReportBt_Click);
             // 
             // AutocadTab
@@ -1595,7 +1604,7 @@
             this.AutocadGenerateBt.Size = new System.Drawing.Size(229, 29);
             this.AutocadGenerateBt.TabIndex = 6;
             this.AutocadGenerateBt.Text = "Générer le rapport AutoCAD";
-            this.AutocadGenerateBt.UseVisualStyleBackColor = false;
+            this.AutocadGenerateBt.UseVisualStyleBackColor = true;
             this.AutocadGenerateBt.Click += new System.EventHandler(this.AutocadGenerateBt_Click);
             // 
             // AboutTab
@@ -1772,7 +1781,7 @@
             this.SaveOuvrageOrderBt.Text = "Sauver l\'ordre";
             this.SaveOuvrageOrderBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.SaveOuvrageOrderBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.SaveOuvrageOrderBt.UseVisualStyleBackColor = false;
+            this.SaveOuvrageOrderBt.UseVisualStyleBackColor = true;
             this.SaveOuvrageOrderBt.Click += new System.EventHandler(this.SaveOuvrageOrderBt_Click);
             // 
             // DeleteOuvrageBt
@@ -1791,7 +1800,7 @@
             this.DeleteOuvrageBt.Text = "Supprimer";
             this.DeleteOuvrageBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.DeleteOuvrageBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.DeleteOuvrageBt.UseVisualStyleBackColor = false;
+            this.DeleteOuvrageBt.UseVisualStyleBackColor = true;
             this.DeleteOuvrageBt.Click += new System.EventHandler(this.DeleteOuvrageBt_Click);
             // 
             // OuvrageMoveDownBt
@@ -1803,7 +1812,7 @@
             this.OuvrageMoveDownBt.Name = "OuvrageMoveDownBt";
             this.OuvrageMoveDownBt.Size = new System.Drawing.Size(25, 25);
             this.OuvrageMoveDownBt.TabIndex = 2;
-            this.OuvrageMoveDownBt.UseVisualStyleBackColor = false;
+            this.OuvrageMoveDownBt.UseVisualStyleBackColor = true;
             this.OuvrageMoveDownBt.Click += new System.EventHandler(this.OuvrageMoveDownBt_Click);
             // 
             // OuvrageMoveUpBt
@@ -1815,7 +1824,7 @@
             this.OuvrageMoveUpBt.Name = "OuvrageMoveUpBt";
             this.OuvrageMoveUpBt.Size = new System.Drawing.Size(25, 25);
             this.OuvrageMoveUpBt.TabIndex = 1;
-            this.OuvrageMoveUpBt.UseVisualStyleBackColor = false;
+            this.OuvrageMoveUpBt.UseVisualStyleBackColor = true;
             this.OuvrageMoveUpBt.Click += new System.EventHandler(this.OuvrageMoveUpBt_Click);
             // 
             // CloneOuvrageBt
@@ -1834,7 +1843,7 @@
             this.CloneOuvrageBt.Text = "Dupliquer";
             this.CloneOuvrageBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CloneOuvrageBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.CloneOuvrageBt.UseVisualStyleBackColor = false;
+            this.CloneOuvrageBt.UseVisualStyleBackColor = true;
             this.CloneOuvrageBt.Click += new System.EventHandler(this.CloneOuvrageBt_Click);
             // 
             // IdentificationTab
@@ -4298,7 +4307,7 @@
             this.EraseAllBt.Text = "Tout effacer";
             this.EraseAllBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.EraseAllBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.EraseAllBt.UseVisualStyleBackColor = false;
+            this.EraseAllBt.UseVisualStyleBackColor = true;
             this.EraseAllBt.Click += new System.EventHandler(this.EraseAllBt_Click);
             // 
             // SaisieTabControl
@@ -4350,6 +4359,7 @@
             // 
             // flowLayoutPanel2
             // 
+            this.flowLayoutPanel2.AutoScroll = true;
             this.flowLayoutPanel2.AutoSize = true;
             this.flowLayoutPanel2.BackColor = System.Drawing.SystemColors.Control;
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -4397,21 +4407,11 @@
             // 
             // PhotoTab
             // 
-            this.PhotoTab.Controls.Add(this.photo_select1);
             this.PhotoTab.Location = new System.Drawing.Point(1, 24);
             this.PhotoTab.Name = "PhotoTab";
             this.PhotoTab.Size = new System.Drawing.Size(1022, 262);
             this.PhotoTab.TabIndex = 3;
             this.PhotoTab.Text = "Photos";
-            // 
-            // photo_select1
-            // 
-            this.photo_select1.BackColor = System.Drawing.Color.DimGray;
-            this.photo_select1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.photo_select1.Location = new System.Drawing.Point(0, 0);
-            this.photo_select1.Name = "photo_select1";
-            this.photo_select1.Size = new System.Drawing.Size(1022, 262);
-            this.photo_select1.TabIndex = 0;
             // 
             // VideoTab
             // 
@@ -4815,7 +4815,6 @@
             this.ChoiceTab.PerformLayout();
             this.DateTab.ResumeLayout(false);
             this.SectionTab.ResumeLayout(false);
-            this.PhotoTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).EndInit();
             this.ResumeLayout(false);
 
@@ -5132,12 +5131,12 @@
         public C1.Win.C1Command.C1DockingTabPage SectionTab;
         public component.section_horaire section_horaire1;
         public C1.Win.C1Command.C1DockingTabPage PhotoTab;
-        public component.photo_select photo_select1;
         public C1.Win.C1Command.C1DockingTabPage VideoTab;
         public C1.Win.C1Command.C1DockingTabPage AudioTab;
         public C1.Win.C1Command.C1DockingTabPage SchemaTab;
         public System.Windows.Forms.TextBox InputPreviewTb;
         public System.Windows.Forms.Button EraseAllBt;
+        public System.Windows.Forms.Button Folder_New_Inspection;
         public System.Windows.Forms.ToolStripLabel XmlAutocadStripLabel;
         public System.Windows.Forms.ToolStripLabel XmlSectionStripLabel;
         public System.Windows.Forms.ToolStripButton XmlObsCanaButton;

@@ -65,7 +65,7 @@
             this.ChoosePhotoBt.Name = "ChoosePhotoBt";
             this.ChoosePhotoBt.Size = new System.Drawing.Size(104, 33);
             this.ChoosePhotoBt.TabIndex = 1;
-            this.ChoosePhotoBt.UseVisualStyleBackColor = false;
+            this.ChoosePhotoBt.UseVisualStyleBackColor = true;
             this.ChoosePhotoBt.Click += new System.EventHandler(this.ChoosePhotoBt_Click);
             // 
             // DelPhotoBt
@@ -76,7 +76,7 @@
             this.DelPhotoBt.Name = "DelPhotoBt";
             this.DelPhotoBt.Size = new System.Drawing.Size(104, 35);
             this.DelPhotoBt.TabIndex = 3;
-            this.DelPhotoBt.UseVisualStyleBackColor = false;
+            this.DelPhotoBt.UseVisualStyleBackColor = true;
             this.DelPhotoBt.Click += new System.EventHandler(this.DelPhotoBt_Click_1);
             // 
             // PhotoTlp
