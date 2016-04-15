@@ -365,6 +365,7 @@
             this.openIMGDialog = new System.Windows.Forms.OpenFileDialog();
             this.ChooseColorDialog = new System.Windows.Forms.ColorDialog();
             this.openAllTypeDialog = new System.Windows.Forms.OpenFileDialog();
+            this.photo_select1 = new ACTIVA_Module_1.component.photo_select();
             this.MainSplit.Panel1.SuspendLayout();
             this.MainSplit.Panel2.SuspendLayout();
             this.MainSplit.SuspendLayout();
@@ -559,6 +560,7 @@
             this.ChoiceTab.SuspendLayout();
             this.DateTab.SuspendLayout();
             this.SectionTab.SuspendLayout();
+            this.PhotoTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -4407,6 +4409,7 @@
             // 
             // PhotoTab
             // 
+            this.PhotoTab.Controls.Add(this.photo_select1);
             this.PhotoTab.Location = new System.Drawing.Point(1, 24);
             this.PhotoTab.Name = "PhotoTab";
             this.PhotoTab.Size = new System.Drawing.Size(1022, 262);
@@ -4558,6 +4561,15 @@
             // openAllTypeDialog
             // 
             this.openAllTypeDialog.Filter = "All files (*.*)|*.*";
+            // 
+            // photo_select1
+            // 
+            this.photo_select1.BackColor = System.Drawing.Color.DimGray;
+            this.photo_select1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.photo_select1.Location = new System.Drawing.Point(0, 0);
+            this.photo_select1.Name = "photo_select1";
+            this.photo_select1.Size = new System.Drawing.Size(1022, 262);
+            this.photo_select1.TabIndex = 1;
             // 
             // MainForm
             // 
@@ -4815,6 +4827,7 @@
             this.ChoiceTab.PerformLayout();
             this.DateTab.ResumeLayout(false);
             this.SectionTab.ResumeLayout(false);
+            this.PhotoTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).EndInit();
             this.ResumeLayout(false);
 
@@ -5158,6 +5171,7 @@
         public System.Windows.Forms.ToolStripLabel CurrentOuvrageTypeLb;
         public System.Windows.Forms.ToolStripLabel CurrentOuvrageNameLb;
         public System.Windows.Forms.ToolStripLabel CurrentOuvrageFormeLb;
+        public component.photo_select photo_select1;
     }
 }
 
