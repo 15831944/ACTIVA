@@ -291,7 +291,5 @@ namespace ACTIVA_Module_1.modules
             MF.ObsCompactGridBt.Visible = true;
             MF.ObsDeplieGridBt.Visible = true;
         }
-
-
     }
 }

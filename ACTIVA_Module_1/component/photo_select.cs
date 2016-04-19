@@ -82,6 +82,11 @@ namespace ACTIVA_Module_1.component
                 PictureBox pb2 = (PictureBox)ct;
                 if (pb2.Name != pb.Name)
                     pb2.BorderStyle=BorderStyle.None;
+
+                if (pb == null || pb.Image == null)
+                    DelPhotoBt.Enabled = false;
+                else
+                    DelPhotoBt.Enabled = true;
             }
         }
 
@@ -97,6 +102,7 @@ namespace ACTIVA_Module_1.component
             {
                 string ppath = Selected_Photo.ImageLocation;
                 Selected_Photo.ImageLocation = null;
+                Selected_Photo.Image = null;
                 System.IO.File.Delete(ppath);
 
                 mod_global.Focused_Control.Text = String.Empty;
@@ -136,7 +142,47 @@ namespace ACTIVA_Module_1.component
                     //Console.WriteLine(picpath);
                     i += 1;
                 }
+            }
+        }
 
+        private void AddPhotoBt_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog diag = new OpenFileDialog();
+            diag.Multiselect = false;
+            diag.Filter = " JPG files (*.jpg)|*.jpg";
+            if (diag.ShowDialog() == DialogResult.OK)
+            {
+                string delimiter = String.Empty;
+                //mod_global.Focused_Control.Text = String.Empty;
+                string savepath = String.Empty;
+                string savefolder = System.IO.Path.Combine(mod_inspection.SVF_FOLDER, "img");
+
+                PictureBox pb = (PictureBox)PhotoTlp.Controls[9];
+                if (pb.Image != null)
+                {
+                    MessageBox.Show("Il faut supprimer au moins une image avant d'ajouter une autre.", "Erreur d'ajout", MessageBoxButtons.OKCancel);
+                }
+                for (int i = 1; i <=10; i++)
+                {
+                    pb = (PictureBox)PhotoTlp.Controls[i];
+                    if (pb == null || pb.Image == null)
+                    {
+                        pb.ImageLocation = diag.FileName;
+                        if (mod_global.Focused_Control.Text == String.Empty)
+                        {
+                            mod_global.Focused_Control.Text += System.IO.Path.GetFileName(diag.FileName);
+                        }
+                        else
+                        {
+                            mod_global.Focused_Control.Text += "|" + System.IO.Path.GetFileName(diag.FileName);
+                        }
+                        savepath = System.IO.Path.Combine(savefolder, System.IO.Path.GetFileName(diag.FileName));
+                        System.IO.File.Copy(diag.FileName, savepath, true);
+                        Read_Photos_From_TextList(mod_global.Focused_Control.Text);
+                        return;
+                    }
+                    i += 1;
+                }
             }
         }
     }

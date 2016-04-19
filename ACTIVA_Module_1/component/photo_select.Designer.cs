@@ -43,6 +43,7 @@
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.openJPGDialog = new System.Windows.Forms.OpenFileDialog();
             this.photopanel = new System.Windows.Forms.Panel();
+            this.AddPhotoBt = new System.Windows.Forms.Button();
             this.PhotoTlp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -61,10 +62,12 @@
             // 
             this.ChoosePhotoBt.BackColor = System.Drawing.SystemColors.Control;
             this.ChoosePhotoBt.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
-            this.ChoosePhotoBt.Location = new System.Drawing.Point(829, 3);
+            this.ChoosePhotoBt.Location = new System.Drawing.Point(825, 3);
             this.ChoosePhotoBt.Name = "ChoosePhotoBt";
-            this.ChoosePhotoBt.Size = new System.Drawing.Size(104, 33);
+            this.ChoosePhotoBt.Size = new System.Drawing.Size(108, 43);
             this.ChoosePhotoBt.TabIndex = 1;
+            this.ChoosePhotoBt.Text = "Multiples images";
+            this.ChoosePhotoBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ChoosePhotoBt.UseVisualStyleBackColor = true;
             this.ChoosePhotoBt.Click += new System.EventHandler(this.ChoosePhotoBt_Click);
             // 
@@ -72,9 +75,9 @@
             // 
             this.DelPhotoBt.BackColor = System.Drawing.SystemColors.Control;
             this.DelPhotoBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
-            this.DelPhotoBt.Location = new System.Drawing.Point(829, 196);
+            this.DelPhotoBt.Location = new System.Drawing.Point(876, 196);
             this.DelPhotoBt.Name = "DelPhotoBt";
-            this.DelPhotoBt.Size = new System.Drawing.Size(104, 35);
+            this.DelPhotoBt.Size = new System.Drawing.Size(57, 35);
             this.DelPhotoBt.TabIndex = 3;
             this.DelPhotoBt.UseVisualStyleBackColor = true;
             this.DelPhotoBt.Click += new System.EventHandler(this.DelPhotoBt_Click_1);
@@ -215,6 +218,7 @@
             // 
             // photopanel
             // 
+            this.photopanel.Controls.Add(this.AddPhotoBt);
             this.photopanel.Controls.Add(this.ChoosePhotoBt);
             this.photopanel.Controls.Add(this.DelPhotoBt);
             this.photopanel.Controls.Add(this.PhotoTlp);
@@ -222,6 +226,18 @@
             this.photopanel.Name = "photopanel";
             this.photopanel.Size = new System.Drawing.Size(933, 234);
             this.photopanel.TabIndex = 4;
+            // 
+            // AddPhotoBt
+            // 
+            this.AddPhotoBt.Image = global::ACTIVA_Module_1.Properties.Resources.add_16;
+            this.AddPhotoBt.Location = new System.Drawing.Point(825, 52);
+            this.AddPhotoBt.Name = "AddPhotoBt";
+            this.AddPhotoBt.Size = new System.Drawing.Size(108, 43);
+            this.AddPhotoBt.TabIndex = 4;
+            this.AddPhotoBt.Text = "Une seule image";
+            this.AddPhotoBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.AddPhotoBt.UseVisualStyleBackColor = true;
+            this.AddPhotoBt.Click += new System.EventHandler(this.AddPhotoBt_Click);
             // 
             // photo_select
             // 
@@ -264,6 +280,7 @@
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Button DelPhotoBt;
         private System.Windows.Forms.Panel photopanel;
+        private System.Windows.Forms.Button AddPhotoBt;
 
     }
 }

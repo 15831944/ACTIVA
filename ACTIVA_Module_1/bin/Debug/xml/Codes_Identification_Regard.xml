@@ -20,14 +20,14 @@
   </code>
   <code reporte="False" position="2" parent="Ouvrage">
     <id>CAB</id>
-    <intitule>Coordonnées du noeud de départ</intitule>
+    <intitule>Coordonnées du noeud</intitule>
     <valeur type="numerique" unite="m" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
   <code position="1" reporte="False" parent="Lieu">
     <id>CAJ</id>
-    <intitule>Emplacement (nom de voie)</intitule>
+    <intitule>Emplacement</intitule>
     <valeur type="texte" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
@@ -102,8 +102,8 @@
       <item nom="E" position="4">Orifice de nettoyage</item>
 	  <item nom="F" position="5">Siphon au niveau d'une boîte d'inspection</item>
       <item nom="G" position="6">Siphon au niveau d'un orifice de visite</item>
-      <item nom="D" position="3">Siphon sans accès</item>
-      <item nom="Z" lien="true" position="5">Autre ouvrage spécial</item>
+      <item nom="H" position="7">Siphon sans accès</item>
+      <item nom="Z" lien="true" position="8">Autre ouvrage spécial</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
@@ -167,14 +167,14 @@
   </code>
   <code position="9" reporte="true" parent="Lieu">
     <id>CBF</id>
-    <intitule>Date de l'inspection</intitule>
+    <intitule>Date d'inspection</intitule>
     <valeur type="date" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
   <code position="10" reporte="true" parent="Lieu">
     <id>CBG</id>
-    <intitule>Heure de l'inspection (hh:mm)</intitule>
+    <intitule>Heure d'inspection (hh:mm)</intitule>
     <valeur type="texte" />
     <saisie>3</saisie>
     <renseigne>3</renseigne>
@@ -231,7 +231,7 @@
   </code>
   <code position="7" reporte="true" parent="Support">
     <id>CBM</id>
-    <intitule>Système d'enregistrement de position sur bande vidéo</intitule>
+    <intitule>Système d'enregistrement de la position sur bande vidéo</intitule>
     <valeur type="item">
       <item nom="A" position="0">Compteur en heures et en minutes depuis le début de la bande</item>
       <item nom="B" position="1">Compteur numérique dépendant de la machine</item>
@@ -315,7 +315,7 @@
       <item nom="D" position="3">Ovale</item>
       <item nom="E" position="4">Hexagonale</item>
       <item nom="F" position="5">Octogonale</item>
-      <item nom="Z" lien="true" position="2">Autre</item>
+      <item nom="Z" lien="true" position="6">Autre</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
@@ -422,9 +422,10 @@
       <item nom="A" position="0">Rectangulaire</item>
       <item nom="B" position="1">Circulaire</item>
       <item nom="C" position="2">Triangulaire</item>
-      <item nom="D" position="3">Hexagonale</item>
-      <item nom="E" position="4">Octogonale</item>
-      <item nom="Z" lien="true" position="5">Autre</item>
+	  <item nom="D" position="3">Ovale</item>
+      <item nom="E" position="4">Hexagonale</item>
+      <item nom="F" position="5">Octogonale</item>
+      <item nom="Z" lien="true" position="6">Autre</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>3</renseigne>
@@ -531,9 +532,9 @@
     <intitule>Régulation du débit</intitule>
     <valeur type="item">
       <item nom="A" position="0">Aucune mesure prise</item>
-      <item nom="B" position="1">L'écoulement obturé en amont</item>
-      <item nom="C" position="2">L'écoulement partiellement obturé en amont</item>
-      <item nom="Z" lien="true" position="0">Autre</item>
+      <item nom="B" position="1">Ecoulement obturé en amont</item>
+      <item nom="C" position="2">Ecoulement partiellement obturé en amont</item>
+      <item nom="Z" lien="true" position="3">Autre</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>

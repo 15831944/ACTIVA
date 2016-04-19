@@ -341,6 +341,7 @@
             this.SectionTab = new C1.Win.C1Command.C1DockingTabPage();
             this.section_horaire1 = new ACTIVA_Module_1.component.section_horaire();
             this.PhotoTab = new C1.Win.C1Command.C1DockingTabPage();
+            this.photo_select1 = new ACTIVA_Module_1.component.photo_select();
             this.VideoTab = new C1.Win.C1Command.C1DockingTabPage();
             this.AudioTab = new C1.Win.C1Command.C1DockingTabPage();
             this.SchemaTab = new C1.Win.C1Command.C1DockingTabPage();
@@ -365,7 +366,6 @@
             this.openIMGDialog = new System.Windows.Forms.OpenFileDialog();
             this.ChooseColorDialog = new System.Windows.Forms.ColorDialog();
             this.openAllTypeDialog = new System.Windows.Forms.OpenFileDialog();
-            this.photo_select1 = new ACTIVA_Module_1.component.photo_select();
             this.MainSplit.Panel1.SuspendLayout();
             this.MainSplit.Panel2.SuspendLayout();
             this.MainSplit.SuspendLayout();
@@ -4416,6 +4416,15 @@
             this.PhotoTab.TabIndex = 3;
             this.PhotoTab.Text = "Photos";
             // 
+            // photo_select1
+            // 
+            this.photo_select1.BackColor = System.Drawing.Color.DimGray;
+            this.photo_select1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.photo_select1.Location = new System.Drawing.Point(0, 0);
+            this.photo_select1.Name = "photo_select1";
+            this.photo_select1.Size = new System.Drawing.Size(1022, 262);
+            this.photo_select1.TabIndex = 1;
+            // 
             // VideoTab
             // 
             this.VideoTab.Location = new System.Drawing.Point(1, 24);
@@ -4561,15 +4570,6 @@
             // openAllTypeDialog
             // 
             this.openAllTypeDialog.Filter = "All files (*.*)|*.*";
-            // 
-            // photo_select1
-            // 
-            this.photo_select1.BackColor = System.Drawing.Color.DimGray;
-            this.photo_select1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.photo_select1.Location = new System.Drawing.Point(0, 0);
-            this.photo_select1.Name = "photo_select1";
-            this.photo_select1.Size = new System.Drawing.Size(1022, 262);
-            this.photo_select1.TabIndex = 1;
             // 
             // MainForm
             // 
@@ -5150,6 +5150,7 @@
         public System.Windows.Forms.TextBox InputPreviewTb;
         public System.Windows.Forms.Button EraseAllBt;
         public System.Windows.Forms.Button Folder_New_Inspection;
+        public component.photo_select photo_select1;
         public System.Windows.Forms.ToolStripLabel XmlAutocadStripLabel;
         public System.Windows.Forms.ToolStripLabel XmlSectionStripLabel;
         public System.Windows.Forms.ToolStripButton XmlObsCanaButton;
@@ -5171,7 +5172,6 @@
         public System.Windows.Forms.ToolStripLabel CurrentOuvrageTypeLb;
         public System.Windows.Forms.ToolStripLabel CurrentOuvrageNameLb;
         public System.Windows.Forms.ToolStripLabel CurrentOuvrageFormeLb;
-        public component.photo_select photo_select1;
     }
 }
 

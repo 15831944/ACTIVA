@@ -72,7 +72,6 @@
             this.DesactivePb = new System.Windows.Forms.PictureBox();
             this.DifferePb = new System.Windows.Forms.PictureBox();
             this.ObligatoirePb = new System.Windows.Forms.PictureBox();
-            this.CaracCancelBt = new System.Windows.Forms.Button();
             this.CaracValidBt = new System.Windows.Forms.Button();
             this.CaracValidnCloseBt = new System.Windows.Forms.Button();
             this.groupBox8.SuspendLayout();
@@ -518,7 +517,7 @@
             this.CaracDelBt.BackColor = System.Drawing.SystemColors.Control;
             this.CaracDelBt.ForeColor = System.Drawing.Color.Black;
             this.CaracDelBt.Image = global::ACTIVA_Module_1.Properties.Resources.remove_16;
-            this.CaracDelBt.Location = new System.Drawing.Point(850, 324);
+            this.CaracDelBt.Location = new System.Drawing.Point(736, 323);
             this.CaracDelBt.Name = "CaracDelBt";
             this.CaracDelBt.Size = new System.Drawing.Size(80, 27);
             this.CaracDelBt.TabIndex = 23;
@@ -532,7 +531,7 @@
             this.CaracCopyBt.BackColor = System.Drawing.SystemColors.Control;
             this.CaracCopyBt.ForeColor = System.Drawing.Color.Black;
             this.CaracCopyBt.Image = global::ACTIVA_Module_1.Properties.Resources.copy1_16;
-            this.CaracCopyBt.Location = new System.Drawing.Point(759, 324);
+            this.CaracCopyBt.Location = new System.Drawing.Point(650, 324);
             this.CaracCopyBt.Name = "CaracCopyBt";
             this.CaracCopyBt.Size = new System.Drawing.Size(80, 27);
             this.CaracCopyBt.TabIndex = 22;
@@ -578,26 +577,12 @@
             this.ObligatoirePb.TabIndex = 23;
             this.ObligatoirePb.TabStop = false;
             // 
-            // CaracCancelBt
-            // 
-            this.CaracCancelBt.BackColor = System.Drawing.SystemColors.Control;
-            this.CaracCancelBt.ForeColor = System.Drawing.Color.Black;
-            this.CaracCancelBt.Image = global::ACTIVA_Module_1.Properties.Resources.cancel_16;
-            this.CaracCancelBt.Location = new System.Drawing.Point(941, 324);
-            this.CaracCancelBt.Name = "CaracCancelBt";
-            this.CaracCancelBt.Size = new System.Drawing.Size(76, 27);
-            this.CaracCancelBt.TabIndex = 24;
-            this.CaracCancelBt.Text = "Annuler";
-            this.CaracCancelBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.CaracCancelBt.UseVisualStyleBackColor = true;
-            this.CaracCancelBt.Click += new System.EventHandler(this.CaracCancelBt_Click);
-            // 
             // CaracValidBt
             // 
             this.CaracValidBt.BackColor = System.Drawing.SystemColors.Control;
             this.CaracValidBt.ForeColor = System.Drawing.Color.Black;
             this.CaracValidBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.CaracValidBt.Location = new System.Drawing.Point(677, 324);
+            this.CaracValidBt.Location = new System.Drawing.Point(822, 323);
             this.CaracValidBt.Name = "CaracValidBt";
             this.CaracValidBt.Size = new System.Drawing.Size(71, 27);
             this.CaracValidBt.TabIndex = 21;
@@ -611,7 +596,7 @@
             this.CaracValidnCloseBt.BackColor = System.Drawing.SystemColors.Control;
             this.CaracValidnCloseBt.ForeColor = System.Drawing.Color.Black;
             this.CaracValidnCloseBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.CaracValidnCloseBt.Location = new System.Drawing.Point(553, 324);
+            this.CaracValidnCloseBt.Location = new System.Drawing.Point(899, 323);
             this.CaracValidnCloseBt.Name = "CaracValidnCloseBt";
             this.CaracValidnCloseBt.Size = new System.Drawing.Size(117, 27);
             this.CaracValidnCloseBt.TabIndex = 20;
@@ -636,7 +621,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ObligatoirePb);
             this.Controls.Add(this.groupBox8);
-            this.Controls.Add(this.CaracCancelBt);
             this.Controls.Add(this.CaracValidBt);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -669,10 +653,9 @@
         private System.Windows.Forms.TextBox RefAudioTb;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox RefPhotoTb;
+        public System.Windows.Forms.TextBox RefPhotoTb;
         private System.Windows.Forms.TextBox RefVideoTb;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button CaracCancelBt;
         private System.Windows.Forms.Button CaracValidBt;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.CheckBox AssemblageCb;
