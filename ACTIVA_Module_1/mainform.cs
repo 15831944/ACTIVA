@@ -37,7 +37,6 @@ namespace ACTIVA_Module_1
 
             labelnumcompil.Text = "N° version : " + "1.0 beta";
             labeldateversion.Text = "Date de la version :" + "18 décembre 2009";
-
         }
 
         private void MainDockingTab_SelectedIndexChanged(object sender, EventArgs e)

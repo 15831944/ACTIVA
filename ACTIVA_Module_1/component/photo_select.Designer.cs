@@ -120,6 +120,9 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.DragDrop += new System.Windows.Forms.DragEventHandler(this.pb_DragDrop);
+            this.pictureBox1.DragEnter += new System.Windows.Forms.DragEventHandler(this.pb_DragEnter);
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.image_MouseDown);
             // 
             // pictureBox2
             // 
@@ -130,6 +133,9 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.DragDrop += new System.Windows.Forms.DragEventHandler(this.pb_DragDrop);
+            this.pictureBox2.DragEnter += new System.Windows.Forms.DragEventHandler(this.pb_DragEnter);
+            this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.image_MouseDown);
             // 
             // pictureBox3
             // 
@@ -140,6 +146,9 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.DragDrop += new System.Windows.Forms.DragEventHandler(this.pb_DragDrop);
+            this.pictureBox3.DragEnter += new System.Windows.Forms.DragEventHandler(this.pb_DragEnter);
+            this.pictureBox3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.image_MouseDown);
             // 
             // pictureBox4
             // 
@@ -150,6 +159,9 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.DragDrop += new System.Windows.Forms.DragEventHandler(this.pb_DragDrop);
+            this.pictureBox4.DragEnter += new System.Windows.Forms.DragEventHandler(this.pb_DragEnter);
+            this.pictureBox4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.image_MouseDown);
             // 
             // pictureBox5
             // 
@@ -160,6 +172,9 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.DragDrop += new System.Windows.Forms.DragEventHandler(this.pb_DragDrop);
+            this.pictureBox5.DragEnter += new System.Windows.Forms.DragEventHandler(this.pb_DragEnter);
+            this.pictureBox5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.image_MouseDown);
             // 
             // pictureBox6
             // 
@@ -170,6 +185,9 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.DragDrop += new System.Windows.Forms.DragEventHandler(this.pb_DragDrop);
+            this.pictureBox6.DragEnter += new System.Windows.Forms.DragEventHandler(this.pb_DragEnter);
+            this.pictureBox6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.image_MouseDown);
             // 
             // pictureBox7
             // 
@@ -180,6 +198,9 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.DragDrop += new System.Windows.Forms.DragEventHandler(this.pb_DragDrop);
+            this.pictureBox7.DragEnter += new System.Windows.Forms.DragEventHandler(this.pb_DragEnter);
+            this.pictureBox7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.image_MouseDown);
             // 
             // pictureBox8
             // 
@@ -190,6 +211,9 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 7;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.DragDrop += new System.Windows.Forms.DragEventHandler(this.pb_DragDrop);
+            this.pictureBox8.DragEnter += new System.Windows.Forms.DragEventHandler(this.pb_DragEnter);
+            this.pictureBox8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.image_MouseDown);
             // 
             // pictureBox9
             // 
@@ -200,6 +224,9 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 8;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.DragDrop += new System.Windows.Forms.DragEventHandler(this.pb_DragDrop);
+            this.pictureBox9.DragEnter += new System.Windows.Forms.DragEventHandler(this.pb_DragEnter);
+            this.pictureBox9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.image_MouseDown);
             // 
             // pictureBox10
             // 
@@ -210,6 +237,9 @@
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 9;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.DragDrop += new System.Windows.Forms.DragEventHandler(this.pb_DragDrop);
+            this.pictureBox10.DragEnter += new System.Windows.Forms.DragEventHandler(this.pb_DragEnter);
+            this.pictureBox10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.image_MouseDown);
             // 
             // openJPGDialog
             // 
@@ -218,6 +248,7 @@
             // 
             // photopanel
             // 
+            this.photopanel.AllowDrop = true;
             this.photopanel.Controls.Add(this.AddPhotoBt);
             this.photopanel.Controls.Add(this.ChoosePhotoBt);
             this.photopanel.Controls.Add(this.DelPhotoBt);

@@ -13,11 +13,22 @@ namespace ACTIVA_Module_1.component
     public partial class photo_select : UserControl
     {
         PictureBox Selected_Photo;
+        Image tmp;
 
         public photo_select()
         {
             InitializeComponent();
             Set_PictureBox_Events();
+            pictureBox1.AllowDrop = true;
+            pictureBox2.AllowDrop = true;
+            pictureBox3.AllowDrop = true;
+            pictureBox4.AllowDrop = true;
+            pictureBox5.AllowDrop = true;
+            pictureBox6.AllowDrop = true;
+            pictureBox7.AllowDrop = true;
+            pictureBox8.AllowDrop = true;
+            pictureBox9.AllowDrop = true;
+            pictureBox10.AllowDrop = true;
         }
 
         public void Empty_All_Photos()
@@ -46,7 +57,7 @@ namespace ACTIVA_Module_1.component
                         PictureBox pb = (PictureBox)PhotoTlp.Controls[i];
                         mod_global.Focused_Control.Text += delimiter + System.IO.Path.GetFileName(photopath);
                         savepath = System.IO.Path.Combine(savefolder, System.IO.Path.GetFileName(photopath));
-                        System.IO.File.Copy(photopath, savepath,true);
+                        System.IO.File.Copy(photopath, savepath, true);
                         delimiter = "|";
                         pb.ImageLocation = savepath;
                         i += 1;
@@ -76,12 +87,12 @@ namespace ACTIVA_Module_1.component
             pb.BorderStyle = BorderStyle.FixedSingle;
 
             Selected_Photo = pb;
-      
+
             foreach (Control ct in PhotoTlp.Controls)
             {
                 PictureBox pb2 = (PictureBox)ct;
                 if (pb2.Name != pb.Name)
-                    pb2.BorderStyle=BorderStyle.None;
+                    pb2.BorderStyle = BorderStyle.None;
 
                 if (pb == null || pb.Image == null)
                     DelPhotoBt.Enabled = false;
@@ -162,7 +173,7 @@ namespace ACTIVA_Module_1.component
                 {
                     MessageBox.Show("Il faut supprimer au moins une image avant d'ajouter une autre.", "Erreur d'ajout", MessageBoxButtons.OKCancel);
                 }
-                for (int i = 1; i <=10; i++)
+                for (int i = 0; i <= 9; i++)
                 {
                     pb = (PictureBox)PhotoTlp.Controls[i];
                     if (pb == null || pb.Image == null)
@@ -185,5 +196,47 @@ namespace ACTIVA_Module_1.component
                 }
             }
         }
+
+        /* Drag and drop picturebox 
+         * 
+         * 
+         * */
+
+        private void image_MouseDown(object sender, MouseEventArgs e)
+        {
+            PictureBox pb = (sender as PictureBox);
+            var img = pb.Image;
+            if (img == null) return;
+            if (DoDragDrop(img, DragDropEffects.Move) == DragDropEffects.Move)
+            {
+                pb.Image = null;
+            }
+        }
+
+        void pb_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.Bitmap))
+                e.Effect = DragDropEffects.Move;
+        }
+
+        void pb_DragDrop(object sender, DragEventArgs e)
+        {
+            PictureBox pb = (sender as PictureBox);
+            var bmp = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
+            tmp = pb.Image;
+            pb.Image = bmp;
+            for (int i = 0; i <= 9; i++)
+            {
+                pb = (PictureBox)PhotoTlp.Controls[i];
+                if (pb == null || pb.Image == null)
+                {
+                    pb.Image = tmp;
+                    return;
+                }
+            }
+            
+        }
+
+
     }
 }

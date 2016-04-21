@@ -763,15 +763,7 @@ namespace ACTIVA_Module_1.component
 
         private void CaracCancelBt_Click(object sender, EventArgs e)
         {
-            if (mod_global.MF.CaracDockingTab.TabPages.Count > 1)
-            {
-                mod_global.MF.CaracDockingTab.TabPages.Remove((C1.Win.C1Command.C1DockingTabPage)this.Parent);
-            }
-            else
-            {
-                mod_global.MF.CaracDockingTab.TabPages.Clear();
-                mod_global.MF.MainDockingTab.SelectedTab = mod_global.MF.ObservationTab;
-            }
+
         }
 
         private void CaracDelBt_Click(object sender, EventArgs e)

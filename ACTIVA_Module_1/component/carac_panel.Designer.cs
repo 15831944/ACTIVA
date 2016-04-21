@@ -74,6 +74,7 @@
             this.ObligatoirePb = new System.Windows.Forms.PictureBox();
             this.CaracValidBt = new System.Windows.Forms.Button();
             this.CaracValidnCloseBt = new System.Windows.Forms.Button();
+            this.CaracCancelBt = new System.Windows.Forms.Button();
             this.groupBox8.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -517,7 +518,7 @@
             this.CaracDelBt.BackColor = System.Drawing.SystemColors.Control;
             this.CaracDelBt.ForeColor = System.Drawing.Color.Black;
             this.CaracDelBt.Image = global::ACTIVA_Module_1.Properties.Resources.remove_16;
-            this.CaracDelBt.Location = new System.Drawing.Point(736, 323);
+            this.CaracDelBt.Location = new System.Drawing.Point(654, 324);
             this.CaracDelBt.Name = "CaracDelBt";
             this.CaracDelBt.Size = new System.Drawing.Size(80, 27);
             this.CaracDelBt.TabIndex = 23;
@@ -531,7 +532,7 @@
             this.CaracCopyBt.BackColor = System.Drawing.SystemColors.Control;
             this.CaracCopyBt.ForeColor = System.Drawing.Color.Black;
             this.CaracCopyBt.Image = global::ACTIVA_Module_1.Properties.Resources.copy1_16;
-            this.CaracCopyBt.Location = new System.Drawing.Point(650, 324);
+            this.CaracCopyBt.Location = new System.Drawing.Point(568, 324);
             this.CaracCopyBt.Name = "CaracCopyBt";
             this.CaracCopyBt.Size = new System.Drawing.Size(80, 27);
             this.CaracCopyBt.TabIndex = 22;
@@ -582,7 +583,7 @@
             this.CaracValidBt.BackColor = System.Drawing.SystemColors.Control;
             this.CaracValidBt.ForeColor = System.Drawing.Color.Black;
             this.CaracValidBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.CaracValidBt.Location = new System.Drawing.Point(822, 323);
+            this.CaracValidBt.Location = new System.Drawing.Point(740, 324);
             this.CaracValidBt.Name = "CaracValidBt";
             this.CaracValidBt.Size = new System.Drawing.Size(71, 27);
             this.CaracValidBt.TabIndex = 21;
@@ -596,7 +597,7 @@
             this.CaracValidnCloseBt.BackColor = System.Drawing.SystemColors.Control;
             this.CaracValidnCloseBt.ForeColor = System.Drawing.Color.Black;
             this.CaracValidnCloseBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.CaracValidnCloseBt.Location = new System.Drawing.Point(899, 323);
+            this.CaracValidnCloseBt.Location = new System.Drawing.Point(817, 324);
             this.CaracValidnCloseBt.Name = "CaracValidnCloseBt";
             this.CaracValidnCloseBt.Size = new System.Drawing.Size(117, 27);
             this.CaracValidnCloseBt.TabIndex = 20;
@@ -605,10 +606,26 @@
             this.CaracValidnCloseBt.UseVisualStyleBackColor = true;
             this.CaracValidnCloseBt.Click += new System.EventHandler(this.CaracValidnCloseBt_Click);
             // 
+            // CaracCancelBt
+            // 
+            this.CaracCancelBt.BackColor = System.Drawing.SystemColors.Control;
+            this.CaracCancelBt.ForeColor = System.Drawing.Color.Black;
+            this.CaracCancelBt.Image = global::ACTIVA_Module_1.Properties.Resources.cancel_16;
+            this.CaracCancelBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CaracCancelBt.Location = new System.Drawing.Point(940, 324);
+            this.CaracCancelBt.Name = "CaracCancelBt";
+            this.CaracCancelBt.Size = new System.Drawing.Size(76, 27);
+            this.CaracCancelBt.TabIndex = 31;
+            this.CaracCancelBt.Text = "Annuler";
+            this.CaracCancelBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CaracCancelBt.UseVisualStyleBackColor = true;
+            this.CaracCancelBt.Click += new System.EventHandler(this.CaracCancelBt_Click);
+            // 
             // carac_panel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.CaracCancelBt);
             this.Controls.Add(this.CaracValidnCloseBt);
             this.Controls.Add(this.CaracDelBt);
             this.Controls.Add(this.CaracCopyBt);
@@ -694,5 +711,6 @@
         private System.Windows.Forms.Label PosRegLb;
         private System.Windows.Forms.ComboBox PosRegCb;
         private System.Windows.Forms.Button CaracValidnCloseBt;
+        private System.Windows.Forms.Button CaracCancelBt;
     }
 }
