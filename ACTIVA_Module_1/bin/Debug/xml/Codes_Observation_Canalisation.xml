@@ -919,7 +919,7 @@
         <item nom="G" position="6">Type de raccord inconnu</item>
         <item nom="Z" lien="true" position="7">Autres</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" intitule="Obturation du raccordement" renseigne="1">
+      <caracteristique nom="c2" type="item" intitule="Obturation du raccordement" renseigne="1" info="">
         <item nom="A" position="0">Raccordement ouvert</item>
         <item nom="B" position="1">Raccordement fermé</item>
       </caracteristique>

@@ -10,6 +10,38 @@ namespace ACTIVA_Module_1.modules
 {
     class mod_new
     {
+        public static void Exporter_XML(string name, string path)
+        {
+            if (name != String.Empty & path != String.Empty)
+            {
+                XmlDocument doc = new XmlDocument();
+                XmlNode docNode = doc.CreateXmlDeclaration("1.0", "UTF-8", null);
+                doc.AppendChild(docNode);
+
+                XmlElement inspectionNode = doc.CreateElement("inspection");
+                doc.AppendChild(inspectionNode);
+
+                string new_svf = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(path), name + ".xml");
+
+                doc.Save(new_svf);
+                String s = "Le fichier XML a été créer dans " + System.IO.Path.GetDirectoryName(path);
+                MessageBox.Show(s, "Exportation réussie", MessageBoxButtons.OK);
+               /* mod_inspection.Load_SVF(new_svf);
+                mod_inspection.Check_Type_Ouvrage(mod_global.MF.cb_troncon, mod_global.MF.cb_branchement, mod_global.MF.cb_regard);
+                mod_inspection.Fill_Ouvrage_List(mod_global.MF.OuvrageList);
+
+                mod_global.MF.NewInspectionNameTb.Text = String.Empty;
+                mod_global.MF.NewInspectionPathTb.Text = String.Empty;
+                mod_global.MF.openSVFTb.Text = String.Empty;
+
+                mod_global.Enable_Ouvrage_Controls();*/
+            }
+            else
+            {
+                //System.Windows.Forms.MessageBox
+            }
+        }
+
         public static void Create_New_Inspection(string name, string path)
         {
             if (name != String.Empty & path != String.Empty)
@@ -30,6 +62,8 @@ namespace ACTIVA_Module_1.modules
 
                 doc.Save(new_svf);
 
+                String s = "Le dossier SVF a été créer dans " + path;
+                MessageBox.Show(s, "Création réussie", MessageBoxButtons.OK);
                 mod_inspection.Load_SVF(new_svf);
                 mod_inspection.Check_Type_Ouvrage(mod_global.MF.cb_troncon, mod_global.MF.cb_branchement, mod_global.MF.cb_regard);
                 mod_inspection.Fill_Ouvrage_List(mod_global.MF.OuvrageList);

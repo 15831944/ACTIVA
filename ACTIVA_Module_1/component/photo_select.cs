@@ -14,6 +14,7 @@ namespace ACTIVA_Module_1.component
     {
         PictureBox Selected_Photo;
         Image tmp;
+        private List<WhatToPaint> ListToPaint = new List<WhatToPaint>();
 
         public photo_select()
         {
@@ -29,6 +30,14 @@ namespace ACTIVA_Module_1.component
             pictureBox8.AllowDrop = true;
             pictureBox9.AllowDrop = true;
             pictureBox10.AllowDrop = true;
+
+        }
+
+        private class WhatToPaint
+        {
+            public int X { get; set; }
+            public int Y { get; set; }
+            public string Text { get; set; }
         }
 
         public void Empty_All_Photos()
@@ -42,28 +51,48 @@ namespace ACTIVA_Module_1.component
 
         private void ChoosePhotoBt_Click(object sender, EventArgs e)
         {
+            int deb = 0;
             if (openJPGDialog.ShowDialog() == DialogResult.OK)
             {
-                int i = 0;
                 string delimiter = String.Empty;
-                mod_global.Focused_Control.Text = String.Empty;
+                //mod_global.Focused_Control.Text = String.Empty;
                 string savepath = String.Empty;
                 string savefolder = System.IO.Path.Combine(mod_inspection.SVF_FOLDER, "img");
 
-                foreach (string photopath in openJPGDialog.FileNames)
+                for (int i = 0; i <= 9; i++)
                 {
-                    if (i < 10)
+                    PictureBox pb = (PictureBox)PhotoTlp.Controls[i];
+                    if (pb == null || pb.Image == null)
                     {
-                        PictureBox pb = (PictureBox)PhotoTlp.Controls[i];
-                        mod_global.Focused_Control.Text += delimiter + System.IO.Path.GetFileName(photopath);
-                        savepath = System.IO.Path.Combine(savefolder, System.IO.Path.GetFileName(photopath));
-                        System.IO.File.Copy(photopath, savepath, true);
-                        delimiter = "|";
-                        pb.ImageLocation = savepath;
-                        i += 1;
+                        deb = i;
+                        break;
                     }
                 }
-                Read_Photos_From_TextList(mod_global.Focused_Control.Text);
+                foreach (string photopath in openJPGDialog.FileNames)
+                {
+                    if (deb < 10)
+                    {
+                        PictureBox pb = (PictureBox)PhotoTlp.Controls[deb];
+                        if (mod_global.Focused_Control.Text == String.Empty)
+                        {
+                            mod_global.Focused_Control.Text += System.IO.Path.GetFileName(photopath);
+                        }
+                        else
+                        {
+                            mod_global.Focused_Control.Text += "|" + System.IO.Path.GetFileName(photopath);
+                        }
+                        savepath = System.IO.Path.Combine(savefolder, System.IO.Path.GetFileName(photopath));
+                        System.IO.File.Copy(photopath, savepath, true);
+                        pb.ImageLocation = savepath;
+                        deb++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Il faut supprimer au moins une image avant d'ajouter une autre.", "Erreur d'ajout", MessageBoxButtons.OKCancel);
+                        return;
+                    }
+                }
+                //Read_Photos_From_TextList(mod_global.Focused_Control.Text);
             }
         }
 
@@ -158,6 +187,8 @@ namespace ACTIVA_Module_1.component
 
         private void AddPhotoBt_Click(object sender, EventArgs e)
         {
+            //string s = mod_global.Focused_Control.Text;
+            //MessageBox.Show(s.Substring(s.IndexOf("|")+1));
             OpenFileDialog diag = new OpenFileDialog();
             diag.Multiselect = false;
             diag.Filter = " JPG files (*.jpg)|*.jpg";
@@ -189,18 +220,26 @@ namespace ACTIVA_Module_1.component
                         }
                         savepath = System.IO.Path.Combine(savefolder, System.IO.Path.GetFileName(diag.FileName));
                         System.IO.File.Copy(diag.FileName, savepath, true);
-                        Read_Photos_From_TextList(mod_global.Focused_Control.Text);
+                        //Read_Photos_From_TextList(mod_global.Focused_Control.Text);
                         return;
                     }
-                    i += 1;
                 }
+            }
+        }
+
+        private void pictureBox_Paint(object sender, PaintEventArgs e)
+        {
+            PictureBox pb = (PictureBox)sender;
+            using (Font myFont = new Font("Arial", 8))
+            {
+                e.Graphics.DrawString(System.IO.Path.GetFileName(pb.ImageLocation), myFont, Brushes.Blue, new Point(0, 101));
             }
         }
 
         /* Drag and drop picturebox 
          * 
          * 
-         * */
+         * 
 
         private void image_MouseDown(object sender, MouseEventArgs e)
         {
@@ -209,34 +248,47 @@ namespace ACTIVA_Module_1.component
             if (img == null) return;
             if (DoDragDrop(img, DragDropEffects.Move) == DragDropEffects.Move)
             {
-                pb.Image = null;
+                pb.Image = tmp;
+                //Sort_Pic();
             }
+
         }
 
-        void pb_DragEnter(object sender, DragEventArgs e)
+        private void pb_DragEnter(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.Bitmap))
                 e.Effect = DragDropEffects.Move;
         }
 
-        void pb_DragDrop(object sender, DragEventArgs e)
+        private void pb_DragDrop(object sender, DragEventArgs e)
         {
             PictureBox pb = (sender as PictureBox);
             var bmp = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
             tmp = pb.Image;
             pb.Image = bmp;
-            for (int i = 0; i <= 9; i++)
-            {
-                pb = (PictureBox)PhotoTlp.Controls[i];
-                if (pb == null || pb.Image == null)
-                {
-                    pb.Image = tmp;
-                    return;
-                }
-            }
-            
         }
 
-
+        public void Sort_Pic()
+        {
+            mod_global.Focused_Carac_Panel.RefPhotoTb.Text = String.Empty;
+            PictureBox pb1;
+            for (int i = 0; i <= 9; i++)
+            {
+                pb1 = (PictureBox)PhotoTlp.Controls[i];
+                pb1.Refresh();
+                if (pb1.Image != null)
+                {
+                    if (mod_global.Focused_Carac_Panel.RefPhotoTb.Text == String.Empty)
+                    {
+                        mod_global.Focused_Carac_Panel.RefPhotoTb.Text += System.IO.Path.GetFileName(pb1.ImageLocation);
+                    }
+                    else
+                    {
+                        mod_global.Focused_Carac_Panel.RefPhotoTb.Text += "|" + System.IO.Path.GetFileName(pb1.ImageLocation);
+                    }
+                }
+                else return;
+            }
+        } */
     }
 }

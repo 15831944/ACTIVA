@@ -16,9 +16,6 @@ namespace ACTIVA_Module_1
     public partial class MainForm : Form
     {
         ArrayList _al = new ArrayList();
-        protected StatusBar mainStatusBar = new StatusBar();
-        public StatusBarPanel statusPanel = new StatusBarPanel();
-        protected StatusBarPanel datetimePanel = new StatusBarPanel();
 
         public MainForm()
         {
@@ -28,7 +25,7 @@ namespace ACTIVA_Module_1
         private void MainForm_Load(object sender, EventArgs e)
         {
             this.CenterToScreen();
-            this.CreateStatusBar();
+
             //splash sp = new splash();
             //sp.ShowDialog();
 
@@ -42,25 +39,6 @@ namespace ACTIVA_Module_1
             labeldateversion.Text = "Date de la version :" + "18 décembre 2009";
         }
 
-        private void CreateStatusBar()
-        {
-            // Set first panel properties and add to StatusBar
-            statusPanel.BorderStyle = StatusBarPanelBorderStyle.Sunken;
-            statusPanel.AutoSize = StatusBarPanelAutoSize.Spring;
-            mainStatusBar.Panels.Add(statusPanel);
-
-            // Set second panel properties and add to StatusBar
-            datetimePanel.BorderStyle = StatusBarPanelBorderStyle.Raised;
-            datetimePanel.ToolTipText = "DateTime: " + System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-            datetimePanel.Text = System.DateTime.Today.ToLongDateString();
-            datetimePanel.AutoSize = StatusBarPanelAutoSize.Contents;
-            mainStatusBar.Panels.Add(datetimePanel);
-
-            mainStatusBar.ShowPanels = true;
-            // Add StatusBar to Form controls
-            this.Controls.Add(mainStatusBar);
-
-        }
         private void MainDockingTab_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (MainDockingTab.SelectedTab.Name == "InspectionTab" || MainDockingTab.SelectedTab.Name == "IdentificationTab" || MainDockingTab.SelectedTab.Name == "RenseignementTab")
@@ -70,9 +48,6 @@ namespace ACTIVA_Module_1
 
                 if (MainDockingTab.SelectedTab.Name == "IdentificationTab")
                     mod_identification.Fill_Id_Menu(IdentificationTopicBar, Identification_Flp);
-                if (MainDockingTab.SelectedTab.Name == "ObservationTab")
-                    splitContainer27.Hide();
-                else splitContainer27.Visible = true;
             }
             else if (MainDockingTab.SelectedTab.Name == "ParamTab")
             {
@@ -138,9 +113,7 @@ namespace ACTIVA_Module_1
                     IdentificationTopicBar.Pages[i].Collapse();
 
             }
-            /*
-             * 
-             * */
+
             IdFormLabel.Visible = true;
             IdFormLabel.Text = e.Page.Text;
             InputPreviewTb.Text = String.Empty;
@@ -478,6 +451,8 @@ namespace ACTIVA_Module_1
         {
             mod_new.Exporter_XML(System.IO.Path.GetFileName(SVFLabel.Text), SVFLabel.Text);
         }
+
+
 
     }
 }

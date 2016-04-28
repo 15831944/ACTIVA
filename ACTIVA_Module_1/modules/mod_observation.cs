@@ -730,6 +730,10 @@ namespace ACTIVA_Module_1.modules
             string caracname = String.Empty;
 
             string intitule = CodeNode.ChildNodes[1].InnerText;
+            /*if (Get_C2(CodeNode) != String.Empty)
+                intitule = CodeNode.ChildNodes[1].InnerText + Environment.NewLine + Get_C1(CodeNode) + " " + Get_C2(CodeNode);
+            else
+                intitule = CodeNode.ChildNodes[1].InnerText + Environment.NewLine + Get_C1(CodeNode);*/
             string h1 = string.Empty;
             string h2 = string.Empty;
 

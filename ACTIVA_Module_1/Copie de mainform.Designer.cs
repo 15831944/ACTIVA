@@ -5,7 +5,7 @@
         /// <summary>
         /// Variable nécessaire au concepteur.
         /// </summary>
-        public System.ComponentModel.IContainer components = null;
+        private System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Nettoyage des ressources utilisées.
@@ -26,46 +26,10 @@
         /// Méthode requise pour la prise en charge du concepteur - ne modifiez pas
         /// le contenu de cette méthode avec l'éditeur de code.
         /// </summary>
-        public void InitializeComponent()
+        private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.c1CommandHolder1 = new C1.Win.C1Command.C1CommandHolder();
-            this.c1CommandMenu1 = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink3 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandMenu2 = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink5 = new C1.Win.C1Command.C1CommandLink();
-            this.c1Command1 = new C1.Win.C1Command.C1Command();
-            this.c1Command2 = new C1.Win.C1Command.C1Command();
-            this.c1Command3 = new C1.Win.C1Command.C1Command();
-            this.c1Command4 = new C1.Win.C1Command.C1Command();
-            this.c1Command5 = new C1.Win.C1Command.C1Command();
-            this.c1Command6 = new C1.Win.C1Command.C1Command();
-            this.c1Command7 = new C1.Win.C1Command.C1Command();
-            this.c1Command8 = new C1.Win.C1Command.C1Command();
-            this.c1Command9 = new C1.Win.C1Command.C1Command();
-            this.openSVFDialog = new System.Windows.Forms.OpenFileDialog();
-            this.openXMLDialog = new System.Windows.Forms.OpenFileDialog();
-            this.FolderDialog = new System.Windows.Forms.FolderBrowserDialog();
-            this.c1PdfRapport = new C1.C1Pdf.C1PdfDocument();
-            this.openIMGDialog = new System.Windows.Forms.OpenFileDialog();
-            this.ChooseColorDialog = new System.Windows.Forms.ColorDialog();
-            this.openAllTypeDialog = new System.Windows.Forms.OpenFileDialog();
-            this.miniToolStrip = new System.Windows.Forms.ToolStrip();
-            this.SaisieInputSplit = new System.Windows.Forms.SplitContainer();
-            this.SaisieTabControl = new C1.Win.C1Command.C1DockingTab();
-            this.KeyboardTab = new C1.Win.C1Command.C1DockingTabPage();
-            this.virtual_kb1 = new ACTIVA_Module_1.component.virtual_kb();
-            this.ChoiceTab = new C1.Win.C1Command.C1DockingTabPage();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.DateTab = new C1.Win.C1Command.C1DockingTabPage();
-            this.date_selector1 = new ACTIVA_Module_1.component.date_selector();
-            this.SectionTab = new C1.Win.C1Command.C1DockingTabPage();
-            this.section_horaire1 = new ACTIVA_Module_1.component.section_horaire();
-            this.PhotoTab = new C1.Win.C1Command.C1DockingTabPage();
-            this.photo_select1 = new ACTIVA_Module_1.component.photo_select();
-            this.VideoTab = new C1.Win.C1Command.C1DockingTabPage();
-            this.AudioTab = new C1.Win.C1Command.C1DockingTabPage();
-            this.SchemaTab = new C1.Win.C1Command.C1DockingTabPage();
+            this.MainSplit = new System.Windows.Forms.SplitContainer();
             this.MenuSplit = new System.Windows.Forms.SplitContainer();
             this.MainformToolStrip = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
@@ -86,10 +50,6 @@
             this.ObsDiffereLb = new System.Windows.Forms.ToolStripLabel();
             this.ObsDiffereCountLb = new System.Windows.Forms.ToolStripLabel();
             this.DataSplit = new System.Windows.Forms.SplitContainer();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer27 = new System.Windows.Forms.SplitContainer();
-            this.InputPreviewTb = new System.Windows.Forms.TextBox();
-            this.EraseAllBt = new System.Windows.Forms.Button();
             this.MainDockingTab = new C1.Win.C1Command.C1DockingTab();
             this.InspectionTab = new C1.Win.C1Command.C1DockingTabPage();
             this.InspectionSplit = new System.Windows.Forms.SplitContainer();
@@ -175,13 +135,13 @@
             this.OuvrageMoveUpBt = new System.Windows.Forms.Button();
             this.CloneOuvrageBt = new System.Windows.Forms.Button();
             this.IdentificationTab = new C1.Win.C1Command.C1DockingTabPage();
-            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.IdentificationTopicBar = new C1.Win.C1Command.C1TopicBar();
             this.IdFormSplit = new System.Windows.Forms.SplitContainer();
             this.IdentificationValidBt = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.IdFormLabel = new System.Windows.Forms.Label();
-            this.splitContainer4 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.Identification_Flp = new System.Windows.Forms.FlowLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.IdFacultatifPb = new System.Windows.Forms.PictureBox();
@@ -270,15 +230,15 @@
             this.label8 = new System.Windows.Forms.Label();
             this.XmlObsItemGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.XmlIdTab = new C1.Win.C1Command.C1DockingTabPage();
-            this.splitContainer7 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer4 = new System.Windows.Forms.SplitContainer();
             this.ToolStripIdCode = new System.Windows.Forms.ToolStrip();
             this.XmlIdCanaButton = new System.Windows.Forms.ToolStripButton();
             this.XmlIdRegButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.XmlIdStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.splitContainer7 = new System.Windows.Forms.SplitContainer();
             this.splitContainer8 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer10 = new System.Windows.Forms.SplitContainer();
             this.label48 = new System.Windows.Forms.Label();
             this.XmlIdCodeDelValueBt = new System.Windows.Forms.Button();
             this.label49 = new System.Windows.Forms.Label();
@@ -286,7 +246,7 @@
             this.XmlIdCodeAddValueTb = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.XmlIdCodeGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.splitContainer11 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer10 = new System.Windows.Forms.SplitContainer();
             this.label50 = new System.Windows.Forms.Label();
             this.XmlIdItemDelValueBt = new System.Windows.Forms.Button();
             this.label51 = new System.Windows.Forms.Label();
@@ -295,11 +255,11 @@
             this.label10 = new System.Windows.Forms.Label();
             this.XmlIdItemGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.XmlSectionTab = new C1.Win.C1Command.C1DockingTabPage();
-            this.splitContainer12 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer11 = new System.Windows.Forms.SplitContainer();
             this.ToolStripSection = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
             this.XmlSectionStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.splitContainer13 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer12 = new System.Windows.Forms.SplitContainer();
             this.splitContainer21 = new System.Windows.Forms.SplitContainer();
             this.label44 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -319,14 +279,14 @@
             this.XmlAutocadTab = new C1.Win.C1Command.C1DockingTabPage();
             this.c1DockingTab2 = new C1.Win.C1Command.C1DockingTab();
             this.c1DockingTabPage3 = new C1.Win.C1Command.C1DockingTabPage();
-            this.splitContainer14 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer13 = new System.Windows.Forms.SplitContainer();
             this.ToolStripAutoCad = new System.Windows.Forms.ToolStrip();
             this.XmlAutocadCanaButton = new System.Windows.Forms.ToolStripButton();
             this.XmlAutocadRegButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel5 = new System.Windows.Forms.ToolStripLabel();
             this.XmlAutocadStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.splitContainer15 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer14 = new System.Windows.Forms.SplitContainer();
             this.splitContainer23 = new System.Windows.Forms.SplitContainer();
             this.label36 = new System.Windows.Forms.Label();
             this.XmlAutocadGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
@@ -334,12 +294,12 @@
             this.label37 = new System.Windows.Forms.Label();
             this.XmlAutocadItemGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.c1DockingTabPage4 = new C1.Win.C1Command.C1DockingTabPage();
-            this.splitContainer16 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer15 = new System.Windows.Forms.SplitContainer();
             this.ToolStripMotif = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel6 = new System.Windows.Forms.ToolStripLabel();
             this.XmlMotifStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.splitContainer16 = new System.Windows.Forms.SplitContainer();
             this.splitContainer17 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer18 = new System.Windows.Forms.SplitContainer();
             this.label39 = new System.Windows.Forms.Label();
             this.XmlPonctuelDelValueBt = new System.Windows.Forms.Button();
             this.label38 = new System.Windows.Forms.Label();
@@ -347,8 +307,8 @@
             this.XmlPonctuelAddValueTb = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.MotifPonctuelGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.splitContainer18 = new System.Windows.Forms.SplitContainer();
             this.splitContainer19 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer20 = new System.Windows.Forms.SplitContainer();
             this.label40 = new System.Windows.Forms.Label();
             this.XmlLineaireDelValueBt = new System.Windows.Forms.Button();
             this.label41 = new System.Windows.Forms.Label();
@@ -356,7 +316,7 @@
             this.XmlLineaireAddValueTb = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.MotifLineaireGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.splitContainer26 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer20 = new System.Windows.Forms.SplitContainer();
             this.label42 = new System.Windows.Forms.Label();
             this.XmlSurfaciqueDelValueBt = new System.Windows.Forms.Button();
             this.label43 = new System.Windows.Forms.Label();
@@ -368,17 +328,48 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
             this.CodeTopicBar = new C1.Win.C1Command.C1TopicBar();
-            this.MainSplit = new System.Windows.Forms.SplitContainer();
-            ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).BeginInit();
-            this.SaisieInputSplit.Panel2.SuspendLayout();
-            this.SaisieInputSplit.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SaisieTabControl)).BeginInit();
-            this.SaisieTabControl.SuspendLayout();
-            this.KeyboardTab.SuspendLayout();
-            this.ChoiceTab.SuspendLayout();
-            this.DateTab.SuspendLayout();
-            this.SectionTab.SuspendLayout();
-            this.PhotoTab.SuspendLayout();
+            this.SaisieInputSplit = new System.Windows.Forms.SplitContainer();
+            this.splitContainer9 = new System.Windows.Forms.SplitContainer();
+            this.InputPreviewTb = new System.Windows.Forms.TextBox();
+            this.EraseAllBt = new System.Windows.Forms.Button();
+            this.SaisieTabControl = new C1.Win.C1Command.C1DockingTab();
+            this.KeyboardTab = new C1.Win.C1Command.C1DockingTabPage();
+            this.virtual_kb1 = new ACTIVA_Module_1.component.virtual_kb();
+            this.ChoiceTab = new C1.Win.C1Command.C1DockingTabPage();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.DateTab = new C1.Win.C1Command.C1DockingTabPage();
+            this.date_selector1 = new ACTIVA_Module_1.component.date_selector();
+            this.SectionTab = new C1.Win.C1Command.C1DockingTabPage();
+            this.section_horaire1 = new ACTIVA_Module_1.component.section_horaire();
+            this.PhotoTab = new C1.Win.C1Command.C1DockingTabPage();
+            this.photo_select1 = new ACTIVA_Module_1.component.photo_select();
+            this.VideoTab = new C1.Win.C1Command.C1DockingTabPage();
+            this.AudioTab = new C1.Win.C1Command.C1DockingTabPage();
+            this.SchemaTab = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1CommandHolder1 = new C1.Win.C1Command.C1CommandHolder();
+            this.c1CommandMenu1 = new C1.Win.C1Command.C1CommandMenu();
+            this.c1CommandLink3 = new C1.Win.C1Command.C1CommandLink();
+            this.c1CommandMenu2 = new C1.Win.C1Command.C1CommandMenu();
+            this.c1CommandLink5 = new C1.Win.C1Command.C1CommandLink();
+            this.c1Command1 = new C1.Win.C1Command.C1Command();
+            this.c1Command2 = new C1.Win.C1Command.C1Command();
+            this.c1Command3 = new C1.Win.C1Command.C1Command();
+            this.c1Command4 = new C1.Win.C1Command.C1Command();
+            this.c1Command5 = new C1.Win.C1Command.C1Command();
+            this.c1Command6 = new C1.Win.C1Command.C1Command();
+            this.c1Command7 = new C1.Win.C1Command.C1Command();
+            this.c1Command8 = new C1.Win.C1Command.C1Command();
+            this.c1Command9 = new C1.Win.C1Command.C1Command();
+            this.openSVFDialog = new System.Windows.Forms.OpenFileDialog();
+            this.openXMLDialog = new System.Windows.Forms.OpenFileDialog();
+            this.FolderDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.c1PdfRapport = new C1.C1Pdf.C1PdfDocument();
+            this.openIMGDialog = new System.Windows.Forms.OpenFileDialog();
+            this.ChooseColorDialog = new System.Windows.Forms.ColorDialog();
+            this.openAllTypeDialog = new System.Windows.Forms.OpenFileDialog();
+            this.MainSplit.Panel1.SuspendLayout();
+            this.MainSplit.Panel2.SuspendLayout();
+            this.MainSplit.SuspendLayout();
             this.MenuSplit.Panel1.SuspendLayout();
             this.MenuSplit.Panel2.SuspendLayout();
             this.MenuSplit.SuspendLayout();
@@ -386,12 +377,6 @@
             this.DataSplit.Panel1.SuspendLayout();
             this.DataSplit.Panel2.SuspendLayout();
             this.DataSplit.SuspendLayout();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            this.splitContainer27.Panel1.SuspendLayout();
-            this.splitContainer27.Panel2.SuspendLayout();
-            this.splitContainer27.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainDockingTab)).BeginInit();
             this.MainDockingTab.SuspendLayout();
             this.InspectionTab.SuspendLayout();
@@ -433,17 +418,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.OuvrageList)).BeginInit();
             this.OuvrageToolsPanel.SuspendLayout();
             this.IdentificationTab.SuspendLayout();
-            this.splitContainer3.Panel1.SuspendLayout();
-            this.splitContainer3.Panel2.SuspendLayout();
-            this.splitContainer3.SuspendLayout();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IdentificationTopicBar)).BeginInit();
             this.IdFormSplit.Panel1.SuspendLayout();
             this.IdFormSplit.Panel2.SuspendLayout();
             this.IdFormSplit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.splitContainer4.Panel1.SuspendLayout();
-            this.splitContainer4.Panel2.SuspendLayout();
-            this.splitContainer4.SuspendLayout();
+            this.splitContainer3.Panel1.SuspendLayout();
+            this.splitContainer3.Panel2.SuspendLayout();
+            this.splitContainer3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IdFacultatifPb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IdDesactivePb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IdDifferePb)).BeginInit();
@@ -486,29 +471,29 @@
             this.XmlItemsSplit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.XmlObsItemGrid)).BeginInit();
             this.XmlIdTab.SuspendLayout();
+            this.splitContainer4.Panel1.SuspendLayout();
+            this.splitContainer4.Panel2.SuspendLayout();
+            this.splitContainer4.SuspendLayout();
+            this.ToolStripIdCode.SuspendLayout();
             this.splitContainer7.Panel1.SuspendLayout();
             this.splitContainer7.Panel2.SuspendLayout();
             this.splitContainer7.SuspendLayout();
-            this.ToolStripIdCode.SuspendLayout();
             this.splitContainer8.Panel1.SuspendLayout();
             this.splitContainer8.Panel2.SuspendLayout();
             this.splitContainer8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.XmlIdCodeGrid)).BeginInit();
             this.splitContainer10.Panel1.SuspendLayout();
             this.splitContainer10.Panel2.SuspendLayout();
             this.splitContainer10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.XmlIdCodeGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.XmlIdItemGrid)).BeginInit();
+            this.XmlSectionTab.SuspendLayout();
             this.splitContainer11.Panel1.SuspendLayout();
             this.splitContainer11.Panel2.SuspendLayout();
             this.splitContainer11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.XmlIdItemGrid)).BeginInit();
-            this.XmlSectionTab.SuspendLayout();
+            this.ToolStripSection.SuspendLayout();
             this.splitContainer12.Panel1.SuspendLayout();
             this.splitContainer12.Panel2.SuspendLayout();
             this.splitContainer12.SuspendLayout();
-            this.ToolStripSection.SuspendLayout();
-            this.splitContainer13.Panel1.SuspendLayout();
-            this.splitContainer13.Panel2.SuspendLayout();
-            this.splitContainer13.SuspendLayout();
             this.splitContainer21.Panel1.SuspendLayout();
             this.splitContainer21.Panel2.SuspendLayout();
             this.splitContainer21.SuspendLayout();
@@ -521,13 +506,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab2)).BeginInit();
             this.c1DockingTab2.SuspendLayout();
             this.c1DockingTabPage3.SuspendLayout();
+            this.splitContainer13.Panel1.SuspendLayout();
+            this.splitContainer13.Panel2.SuspendLayout();
+            this.splitContainer13.SuspendLayout();
+            this.ToolStripAutoCad.SuspendLayout();
             this.splitContainer14.Panel1.SuspendLayout();
             this.splitContainer14.Panel2.SuspendLayout();
             this.splitContainer14.SuspendLayout();
-            this.ToolStripAutoCad.SuspendLayout();
-            this.splitContainer15.Panel1.SuspendLayout();
-            this.splitContainer15.Panel2.SuspendLayout();
-            this.splitContainer15.SuspendLayout();
             this.splitContainer23.Panel1.SuspendLayout();
             this.splitContainer23.Panel2.SuspendLayout();
             this.splitContainer23.SuspendLayout();
@@ -537,323 +522,68 @@
             this.splitContainer24.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.XmlAutocadItemGrid)).BeginInit();
             this.c1DockingTabPage4.SuspendLayout();
+            this.splitContainer15.Panel1.SuspendLayout();
+            this.splitContainer15.Panel2.SuspendLayout();
+            this.splitContainer15.SuspendLayout();
+            this.ToolStripMotif.SuspendLayout();
             this.splitContainer16.Panel1.SuspendLayout();
             this.splitContainer16.Panel2.SuspendLayout();
             this.splitContainer16.SuspendLayout();
-            this.ToolStripMotif.SuspendLayout();
             this.splitContainer17.Panel1.SuspendLayout();
             this.splitContainer17.Panel2.SuspendLayout();
             this.splitContainer17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MotifPonctuelGrid)).BeginInit();
             this.splitContainer18.Panel1.SuspendLayout();
             this.splitContainer18.Panel2.SuspendLayout();
             this.splitContainer18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MotifPonctuelGrid)).BeginInit();
             this.splitContainer19.Panel1.SuspendLayout();
             this.splitContainer19.Panel2.SuspendLayout();
             this.splitContainer19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MotifLineaireGrid)).BeginInit();
             this.splitContainer20.Panel1.SuspendLayout();
             this.splitContainer20.Panel2.SuspendLayout();
             this.splitContainer20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MotifLineaireGrid)).BeginInit();
-            this.splitContainer26.Panel1.SuspendLayout();
-            this.splitContainer26.Panel2.SuspendLayout();
-            this.splitContainer26.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MotifSurfaciqueGrid)).BeginInit();
             this.CodeObsSplit.Panel1.SuspendLayout();
             this.CodeObsSplit.Panel2.SuspendLayout();
             this.CodeObsSplit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CodeTopicBar)).BeginInit();
-            this.MainSplit.Panel1.SuspendLayout();
-            this.MainSplit.Panel2.SuspendLayout();
-            this.MainSplit.SuspendLayout();
+            this.SaisieInputSplit.Panel1.SuspendLayout();
+            this.SaisieInputSplit.Panel2.SuspendLayout();
+            this.SaisieInputSplit.SuspendLayout();
+            this.splitContainer9.Panel1.SuspendLayout();
+            this.splitContainer9.Panel2.SuspendLayout();
+            this.splitContainer9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SaisieTabControl)).BeginInit();
+            this.SaisieTabControl.SuspendLayout();
+            this.KeyboardTab.SuspendLayout();
+            this.ChoiceTab.SuspendLayout();
+            this.DateTab.SuspendLayout();
+            this.SectionTab.SuspendLayout();
+            this.PhotoTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).BeginInit();
             this.SuspendLayout();
             // 
-            // c1CommandHolder1
+            // MainSplit
             // 
-            this.c1CommandHolder1.Commands.Add(this.c1CommandMenu1);
-            this.c1CommandHolder1.Commands.Add(this.c1CommandMenu2);
-            this.c1CommandHolder1.Commands.Add(this.c1Command1);
-            this.c1CommandHolder1.Commands.Add(this.c1Command2);
-            this.c1CommandHolder1.Commands.Add(this.c1Command3);
-            this.c1CommandHolder1.Commands.Add(this.c1Command4);
-            this.c1CommandHolder1.Commands.Add(this.c1Command5);
-            this.c1CommandHolder1.Commands.Add(this.c1Command6);
-            this.c1CommandHolder1.Commands.Add(this.c1Command7);
-            this.c1CommandHolder1.Commands.Add(this.c1Command8);
-            this.c1CommandHolder1.Commands.Add(this.c1Command9);
-            this.c1CommandHolder1.Owner = this;
+            this.MainSplit.BackColor = System.Drawing.Color.DimGray;
+            this.MainSplit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainSplit.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
+            this.MainSplit.Location = new System.Drawing.Point(0, 0);
+            this.MainSplit.Name = "MainSplit";
+            this.MainSplit.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // c1CommandMenu1
+            // MainSplit.Panel1
             // 
-            this.c1CommandMenu1.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
-            this.c1CommandLink3});
-            this.c1CommandMenu1.HideNonRecentLinks = false;
-            this.c1CommandMenu1.Name = "c1CommandMenu1";
-            this.c1CommandMenu1.ShowToolTips = true;
-            this.c1CommandMenu1.Text = "&File";
-            this.c1CommandMenu1.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
+            this.MainSplit.Panel1.Controls.Add(this.MenuSplit);
             // 
-            // c1CommandLink3
+            // MainSplit.Panel2
             // 
-            this.c1CommandLink3.Text = "New Command";
-            // 
-            // c1CommandMenu2
-            // 
-            this.c1CommandMenu2.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
-            this.c1CommandLink5});
-            this.c1CommandMenu2.HideNonRecentLinks = false;
-            this.c1CommandMenu2.Name = "c1CommandMenu2";
-            this.c1CommandMenu2.ShowToolTips = true;
-            this.c1CommandMenu2.Text = "&File";
-            this.c1CommandMenu2.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
-            // 
-            // c1CommandLink5
-            // 
-            this.c1CommandLink5.Text = "New Command";
-            // 
-            // c1Command1
-            // 
-            this.c1Command1.Name = "c1Command1";
-            this.c1Command1.Text = "Identification de l\'organisme de contrôle";
-            // 
-            // c1Command2
-            // 
-            this.c1Command2.Name = "c1Command2";
-            this.c1Command2.Text = "Identification de l\'organisme de contrôle";
-            // 
-            // c1Command3
-            // 
-            this.c1Command3.Name = "c1Command3";
-            this.c1Command3.Text = "Identification de l\'ouvrage inspecté";
-            // 
-            // c1Command4
-            // 
-            this.c1Command4.Name = "c1Command4";
-            this.c1Command4.Text = "Eléments principaux de l\'ouvrage inspecté";
-            // 
-            // c1Command5
-            // 
-            this.c1Command5.Image = ((System.Drawing.Image)(resources.GetObject("c1Command5.Image")));
-            this.c1Command5.Name = "c1Command5";
-            this.c1Command5.Text = "&New";
-            // 
-            // c1Command6
-            // 
-            this.c1Command6.Image = ((System.Drawing.Image)(resources.GetObject("c1Command6.Image")));
-            this.c1Command6.Name = "c1Command6";
-            this.c1Command6.Text = "&Open";
-            // 
-            // c1Command7
-            // 
-            this.c1Command7.Image = ((System.Drawing.Image)(resources.GetObject("c1Command7.Image")));
-            this.c1Command7.Name = "c1Command7";
-            this.c1Command7.Text = "&Close";
-            // 
-            // c1Command8
-            // 
-            this.c1Command8.Image = ((System.Drawing.Image)(resources.GetObject("c1Command8.Image")));
-            this.c1Command8.Name = "c1Command8";
-            this.c1Command8.Text = "&Save";
-            // 
-            // c1Command9
-            // 
-            this.c1Command9.Image = ((System.Drawing.Image)(resources.GetObject("c1Command9.Image")));
-            this.c1Command9.Name = "c1Command9";
-            this.c1Command9.Text = "&Print...";
-            // 
-            // openSVFDialog
-            // 
-            this.openSVFDialog.Filter = " SVF files (*.svf)|*.svf|All files (*.*)|*.*";
-            // 
-            // openXMLDialog
-            // 
-            this.openXMLDialog.Filter = " XML files (*.xml)|*.xml|All files (*.*)|*.*";
-            // 
-            // FolderDialog
-            // 
-            this.FolderDialog.ShowNewFolderButton = false;
-            // 
-            // c1PdfRapport
-            // 
-            this.c1PdfRapport.PaperKind = System.Drawing.Printing.PaperKind.A4;
-            // 
-            // openIMGDialog
-            // 
-            this.openIMGDialog.Filter = " JPG files (*.jpg)|*.jpg| PNG files (*.png)|*.png| GIF files (*.gif)|*.gif|All fi" +
-                "les (*.*)|*.*";
-            // 
-            // ChooseColorDialog
-            // 
-            this.ChooseColorDialog.AnyColor = true;
-            // 
-            // openAllTypeDialog
-            // 
-            this.openAllTypeDialog.Filter = "All files (*.*)|*.*";
-            // 
-            // miniToolStrip
-            // 
-            this.miniToolStrip.AutoSize = false;
-            this.miniToolStrip.CanOverflow = false;
-            this.miniToolStrip.Dock = System.Windows.Forms.DockStyle.None;
-            this.miniToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.miniToolStrip.Location = new System.Drawing.Point(111, 3);
-            this.miniToolStrip.Name = "miniToolStrip";
-            this.miniToolStrip.Size = new System.Drawing.Size(1018, 25);
-            this.miniToolStrip.TabIndex = 0;
-            // 
-            // SaisieInputSplit
-            // 
-            this.SaisieInputSplit.BackColor = System.Drawing.Color.DimGray;
-            this.SaisieInputSplit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SaisieInputSplit.Location = new System.Drawing.Point(0, 0);
-            this.SaisieInputSplit.Name = "SaisieInputSplit";
-            this.SaisieInputSplit.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.SaisieInputSplit.Panel1MinSize = 10;
-            // 
-            // SaisieInputSplit.Panel2
-            // 
-            this.SaisieInputSplit.Panel2.Controls.Add(this.SaisieTabControl);
-            this.SaisieInputSplit.Size = new System.Drawing.Size(1024, 298);
-            this.SaisieInputSplit.SplitterDistance = 10;
-            this.SaisieInputSplit.TabIndex = 2;
-            // 
-            // SaisieTabControl
-            // 
-            this.SaisieTabControl.AcceptsCtrlTab = false;
-            this.SaisieTabControl.Controls.Add(this.KeyboardTab);
-            this.SaisieTabControl.Controls.Add(this.ChoiceTab);
-            this.SaisieTabControl.Controls.Add(this.DateTab);
-            this.SaisieTabControl.Controls.Add(this.SectionTab);
-            this.SaisieTabControl.Controls.Add(this.PhotoTab);
-            this.SaisieTabControl.Controls.Add(this.VideoTab);
-            this.SaisieTabControl.Controls.Add(this.AudioTab);
-            this.SaisieTabControl.Controls.Add(this.SchemaTab);
-            this.SaisieTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SaisieTabControl.Location = new System.Drawing.Point(0, 0);
-            this.SaisieTabControl.Name = "SaisieTabControl";
-            this.SaisieTabControl.Size = new System.Drawing.Size(1024, 284);
-            this.SaisieTabControl.TabIndex = 4;
-            this.SaisieTabControl.TabsSpacing = 5;
-            this.SaisieTabControl.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
-            this.SaisieTabControl.VisualStyle = C1.Win.C1Command.VisualStyle.Office2007Black;
-            this.SaisieTabControl.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Black;
-            // 
-            // KeyboardTab
-            // 
-            this.KeyboardTab.BackColor = System.Drawing.Color.DimGray;
-            this.KeyboardTab.Controls.Add(this.virtual_kb1);
-            this.KeyboardTab.Location = new System.Drawing.Point(1, 24);
-            this.KeyboardTab.Name = "KeyboardTab";
-            this.KeyboardTab.Size = new System.Drawing.Size(1022, 259);
-            this.KeyboardTab.TabIndex = 0;
-            this.KeyboardTab.Text = "Clavier";
-            // 
-            // virtual_kb1
-            // 
-            this.virtual_kb1.Location = new System.Drawing.Point(47, 6);
-            this.virtual_kb1.Name = "virtual_kb1";
-            this.virtual_kb1.Size = new System.Drawing.Size(915, 250);
-            this.virtual_kb1.TabIndex = 0;
-            // 
-            // ChoiceTab
-            // 
-            this.ChoiceTab.Controls.Add(this.flowLayoutPanel2);
-            this.ChoiceTab.Location = new System.Drawing.Point(1, 24);
-            this.ChoiceTab.Name = "ChoiceTab";
-            this.ChoiceTab.Size = new System.Drawing.Size(1022, 259);
-            this.ChoiceTab.TabIndex = 1;
-            this.ChoiceTab.Text = "Choix multiples";
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.AutoScroll = true;
-            this.flowLayoutPanel2.AutoSize = true;
-            this.flowLayoutPanel2.BackColor = System.Drawing.SystemColors.Control;
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1022, 259);
-            this.flowLayoutPanel2.TabIndex = 1;
-            // 
-            // DateTab
-            // 
-            this.DateTab.BackColor = System.Drawing.Color.DimGray;
-            this.DateTab.Controls.Add(this.date_selector1);
-            this.DateTab.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateTab.Location = new System.Drawing.Point(1, 24);
-            this.DateTab.Name = "DateTab";
-            this.DateTab.Size = new System.Drawing.Size(1022, 259);
-            this.DateTab.TabIndex = 6;
-            this.DateTab.Text = "Date";
-            // 
-            // date_selector1
-            // 
-            this.date_selector1.Location = new System.Drawing.Point(5, 33);
-            this.date_selector1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.date_selector1.Name = "date_selector1";
-            this.date_selector1.Size = new System.Drawing.Size(1004, 205);
-            this.date_selector1.TabIndex = 0;
-            // 
-            // SectionTab
-            // 
-            this.SectionTab.Controls.Add(this.section_horaire1);
-            this.SectionTab.Location = new System.Drawing.Point(1, 24);
-            this.SectionTab.Name = "SectionTab";
-            this.SectionTab.Size = new System.Drawing.Size(1022, 259);
-            this.SectionTab.TabIndex = 2;
-            this.SectionTab.Text = "Sections";
-            // 
-            // section_horaire1
-            // 
-            this.section_horaire1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.section_horaire1.Location = new System.Drawing.Point(0, 0);
-            this.section_horaire1.Name = "section_horaire1";
-            this.section_horaire1.Size = new System.Drawing.Size(1022, 259);
-            this.section_horaire1.TabIndex = 0;
-            // 
-            // PhotoTab
-            // 
-            this.PhotoTab.Controls.Add(this.photo_select1);
-            this.PhotoTab.Location = new System.Drawing.Point(1, 24);
-            this.PhotoTab.Name = "PhotoTab";
-            this.PhotoTab.Size = new System.Drawing.Size(1022, 259);
-            this.PhotoTab.TabIndex = 3;
-            this.PhotoTab.Text = "Photos";
-            // 
-            // photo_select1
-            // 
-            this.photo_select1.BackColor = System.Drawing.Color.DimGray;
-            this.photo_select1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.photo_select1.Location = new System.Drawing.Point(0, 0);
-            this.photo_select1.Name = "photo_select1";
-            this.photo_select1.Size = new System.Drawing.Size(1022, 259);
-            this.photo_select1.TabIndex = 1;
-            // 
-            // VideoTab
-            // 
-            this.VideoTab.Location = new System.Drawing.Point(1, 24);
-            this.VideoTab.Name = "VideoTab";
-            this.VideoTab.Size = new System.Drawing.Size(1022, 259);
-            this.VideoTab.TabIndex = 4;
-            this.VideoTab.Text = "Vidéos";
-            // 
-            // AudioTab
-            // 
-            this.AudioTab.Location = new System.Drawing.Point(1, 24);
-            this.AudioTab.Name = "AudioTab";
-            this.AudioTab.Size = new System.Drawing.Size(1022, 259);
-            this.AudioTab.TabIndex = 5;
-            this.AudioTab.Text = "Audio";
-            // 
-            // SchemaTab
-            // 
-            this.SchemaTab.Location = new System.Drawing.Point(1, 24);
-            this.SchemaTab.Name = "SchemaTab";
-            this.SchemaTab.Size = new System.Drawing.Size(1022, 259);
-            this.SchemaTab.TabIndex = 7;
-            this.SchemaTab.Text = "Schéma";
+            this.MainSplit.Panel2.Controls.Add(this.SaisieInputSplit);
+            this.MainSplit.Size = new System.Drawing.Size(1024, 768);
+            this.MainSplit.SplitterDistance = 449;
+            this.MainSplit.TabIndex = 0;
             // 
             // MenuSplit
             // 
@@ -871,7 +601,7 @@
             // MenuSplit.Panel2
             // 
             this.MenuSplit.Panel2.Controls.Add(this.DataSplit);
-            this.MenuSplit.Size = new System.Drawing.Size(1024, 510);
+            this.MenuSplit.Size = new System.Drawing.Size(1024, 449);
             this.MenuSplit.SplitterDistance = 25;
             this.MenuSplit.SplitterWidth = 1;
             this.MenuSplit.TabIndex = 0;
@@ -1033,78 +763,15 @@
             // 
             // DataSplit.Panel1
             // 
-            this.DataSplit.Panel1.Controls.Add(this.splitContainer1);
+            this.DataSplit.Panel1.Controls.Add(this.MainDockingTab);
             // 
             // DataSplit.Panel2
             // 
             this.DataSplit.Panel2.Controls.Add(this.CodeObsSplit);
             this.DataSplit.Panel2Collapsed = true;
-            this.DataSplit.Size = new System.Drawing.Size(1024, 484);
+            this.DataSplit.Size = new System.Drawing.Size(1024, 423);
             this.DataSplit.SplitterDistance = 710;
             this.DataSplit.TabIndex = 0;
-            // 
-            // splitContainer1
-            // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Name = "splitContainer1";
-            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer1.Panel1
-            // 
-            this.splitContainer1.Panel1.Controls.Add(this.splitContainer27);
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.MainDockingTab);
-            this.splitContainer1.Size = new System.Drawing.Size(1024, 484);
-            this.splitContainer1.SplitterDistance = 27;
-            this.splitContainer1.TabIndex = 0;
-            // 
-            // splitContainer27
-            // 
-            this.splitContainer27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer27.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer27.Name = "splitContainer27";
-            // 
-            // splitContainer27.Panel1
-            // 
-            this.splitContainer27.Panel1.Controls.Add(this.InputPreviewTb);
-            // 
-            // splitContainer27.Panel2
-            // 
-            this.splitContainer27.Panel2.Controls.Add(this.EraseAllBt);
-            this.splitContainer27.Size = new System.Drawing.Size(1024, 27);
-            this.splitContainer27.SplitterDistance = 904;
-            this.splitContainer27.TabIndex = 0;
-            // 
-            // InputPreviewTb
-            // 
-            this.InputPreviewTb.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.InputPreviewTb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.InputPreviewTb.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputPreviewTb.ForeColor = System.Drawing.Color.Black;
-            this.InputPreviewTb.Location = new System.Drawing.Point(0, 0);
-            this.InputPreviewTb.Name = "InputPreviewTb";
-            this.InputPreviewTb.Size = new System.Drawing.Size(904, 22);
-            this.InputPreviewTb.TabIndex = 2;
-            // 
-            // EraseAllBt
-            // 
-            this.EraseAllBt.BackColor = System.Drawing.SystemColors.Control;
-            this.EraseAllBt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EraseAllBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
-            this.EraseAllBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EraseAllBt.Location = new System.Drawing.Point(0, 0);
-            this.EraseAllBt.Name = "EraseAllBt";
-            this.EraseAllBt.Size = new System.Drawing.Size(116, 27);
-            this.EraseAllBt.TabIndex = 2;
-            this.EraseAllBt.Text = "Tout effacer";
-            this.EraseAllBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.EraseAllBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.EraseAllBt.UseVisualStyleBackColor = true;
-            this.EraseAllBt.Click += new System.EventHandler(this.EraseAllBt_Click);
             // 
             // MainDockingTab
             // 
@@ -1118,8 +785,8 @@
             this.MainDockingTab.HotTrack = true;
             this.MainDockingTab.Location = new System.Drawing.Point(0, 0);
             this.MainDockingTab.Name = "MainDockingTab";
-            this.MainDockingTab.Size = new System.Drawing.Size(1024, 453);
-            this.MainDockingTab.TabIndex = 2;
+            this.MainDockingTab.Size = new System.Drawing.Size(1024, 423);
+            this.MainDockingTab.TabIndex = 1;
             this.MainDockingTab.TabsSpacing = 5;
             this.MainDockingTab.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
             this.MainDockingTab.VisualStyle = C1.Win.C1Command.VisualStyle.Office2007Black;
@@ -1133,7 +800,7 @@
             this.InspectionTab.Controls.Add(this.InspectionSplit);
             this.InspectionTab.Location = new System.Drawing.Point(1, 24);
             this.InspectionTab.Name = "InspectionTab";
-            this.InspectionTab.Size = new System.Drawing.Size(1022, 428);
+            this.InspectionTab.Size = new System.Drawing.Size(1022, 398);
             this.InspectionTab.TabBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(229)))), ((int)(((byte)(233)))));
             this.InspectionTab.TabBackColorSelected = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(229)))), ((int)(((byte)(233)))));
             this.InspectionTab.TabIndex = 5;
@@ -1154,7 +821,7 @@
             // InspectionSplit.Panel2
             // 
             this.InspectionSplit.Panel2.Controls.Add(this.splitContainer2);
-            this.InspectionSplit.Size = new System.Drawing.Size(1022, 428);
+            this.InspectionSplit.Size = new System.Drawing.Size(1022, 398);
             this.InspectionSplit.SplitterDistance = 51;
             this.InspectionSplit.TabIndex = 9;
             // 
@@ -1169,7 +836,7 @@
             this.groupBox7.Location = new System.Drawing.Point(0, 0);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(1022, 51);
-            this.groupBox7.TabIndex = 9;
+            this.groupBox7.TabIndex = 8;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Fichier SVF sélectionné";
             // 
@@ -1189,6 +856,7 @@
             this.CloseInspectionBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CloseInspectionBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CloseInspectionBt.UseVisualStyleBackColor = true;
+            this.CloseInspectionBt.Click += new System.EventHandler(this.CloseInspectionBt_Click);
             // 
             // pictureBox2
             // 
@@ -1226,7 +894,7 @@
             // 
             this.splitContainer2.Panel2.BackColor = System.Drawing.Color.DimGray;
             this.splitContainer2.Panel2.Controls.Add(this.splitContainer25);
-            this.splitContainer2.Size = new System.Drawing.Size(1022, 373);
+            this.splitContainer2.Size = new System.Drawing.Size(1022, 343);
             this.splitContainer2.SplitterDistance = 399;
             this.splitContainer2.TabIndex = 0;
             // 
@@ -1240,7 +908,7 @@
             this.MenuDockingTab.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MenuDockingTab.Location = new System.Drawing.Point(0, 0);
             this.MenuDockingTab.Name = "MenuDockingTab";
-            this.MenuDockingTab.Size = new System.Drawing.Size(397, 371);
+            this.MenuDockingTab.Size = new System.Drawing.Size(397, 341);
             this.MenuDockingTab.TabIndex = 19;
             this.MenuDockingTab.TabsSpacing = 5;
             this.MenuDockingTab.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
@@ -1254,7 +922,7 @@
             this.chargementTab.Controls.Add(this.AddOuvrageGp);
             this.chargementTab.Location = new System.Drawing.Point(1, 24);
             this.chargementTab.Name = "chargementTab";
-            this.chargementTab.Size = new System.Drawing.Size(395, 346);
+            this.chargementTab.Size = new System.Drawing.Size(395, 316);
             this.chargementTab.TabIndex = 0;
             this.chargementTab.Text = "Chargement et création";
             // 
@@ -1276,7 +944,6 @@
             // 
             // Btn_Exporter
             // 
-            this.Btn_Exporter.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
             this.Btn_Exporter.Image = global::ACTIVA_Module_1.Properties.Resources.text_columns1;
             this.Btn_Exporter.Location = new System.Drawing.Point(200, 56);
             this.Btn_Exporter.Name = "Btn_Exporter";
@@ -1487,6 +1154,7 @@
             this.OuvrageNomTb.Name = "OuvrageNomTb";
             this.OuvrageNomTb.Size = new System.Drawing.Size(72, 20);
             this.OuvrageNomTb.TabIndex = 9;
+            this.OuvrageNomTb.Click += new System.EventHandler(this.OuvrageNomTb_Click);
             // 
             // NewOuvrageBt
             // 
@@ -1522,6 +1190,7 @@
             this.OuvrageTypeCb.Name = "OuvrageTypeCb";
             this.OuvrageTypeCb.Size = new System.Drawing.Size(102, 22);
             this.OuvrageTypeCb.TabIndex = 8;
+            this.OuvrageTypeCb.SelectedIndexChanged += new System.EventHandler(this.OuvrageTypeCb_SelectedIndexChanged);
             // 
             // label16
             // 
@@ -1541,7 +1210,7 @@
             this.InformationTab.Controls.Add(this.groupBox6);
             this.InformationTab.Location = new System.Drawing.Point(1, 24);
             this.InformationTab.Name = "InformationTab";
-            this.InformationTab.Size = new System.Drawing.Size(395, 346);
+            this.InformationTab.Size = new System.Drawing.Size(395, 316);
             this.InformationTab.TabIndex = 1;
             this.InformationTab.Text = "Informations";
             // 
@@ -1585,6 +1254,7 @@
             this.cb_regard.Tag = "REGARD";
             this.cb_regard.Text = "Regards";
             this.cb_regard.UseVisualStyleBackColor = true;
+            this.cb_regard.CheckedChanged += new System.EventHandler(this.Type_Checkbox_CheckedChanged);
             // 
             // cb_branchement
             // 
@@ -1600,6 +1270,7 @@
             this.cb_branchement.Tag = "BRANCHEMENT";
             this.cb_branchement.Text = "Branchements";
             this.cb_branchement.UseVisualStyleBackColor = true;
+            this.cb_branchement.CheckedChanged += new System.EventHandler(this.Type_Checkbox_CheckedChanged);
             // 
             // cb_troncon
             // 
@@ -1615,6 +1286,7 @@
             this.cb_troncon.Tag = "TRONCON";
             this.cb_troncon.Text = "Tronçons";
             this.cb_troncon.UseVisualStyleBackColor = true;
+            this.cb_troncon.CheckedChanged += new System.EventHandler(this.Type_Checkbox_CheckedChanged);
             // 
             // groupBox6
             // 
@@ -1693,7 +1365,7 @@
             this.ReportTab.Controls.Add(this.GenerateReportBt);
             this.ReportTab.Location = new System.Drawing.Point(1, 24);
             this.ReportTab.Name = "ReportTab";
-            this.ReportTab.Size = new System.Drawing.Size(395, 346);
+            this.ReportTab.Size = new System.Drawing.Size(395, 316);
             this.ReportTab.TabIndex = 2;
             this.ReportTab.Text = "Rapport";
             // 
@@ -1726,6 +1398,7 @@
             this.SaveReportParamBt.Text = "Enregistrer";
             this.SaveReportParamBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.SaveReportParamBt.UseVisualStyleBackColor = true;
+            this.SaveReportParamBt.Click += new System.EventHandler(this.SaveReportParamBt_Click_1);
             // 
             // label29
             // 
@@ -1864,6 +1537,7 @@
             this.GenerateReportBt.Text = "Génération de rapport";
             this.GenerateReportBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.GenerateReportBt.UseVisualStyleBackColor = true;
+            this.GenerateReportBt.Click += new System.EventHandler(this.GenerateReportBt_Click);
             // 
             // AutocadTab
             // 
@@ -1872,7 +1546,7 @@
             this.AutocadTab.Controls.Add(this.AutocadGenerateBt);
             this.AutocadTab.Location = new System.Drawing.Point(1, 24);
             this.AutocadTab.Name = "AutocadTab";
-            this.AutocadTab.Size = new System.Drawing.Size(395, 346);
+            this.AutocadTab.Size = new System.Drawing.Size(395, 316);
             this.AutocadTab.TabBackColor = System.Drawing.Color.White;
             this.AutocadTab.TabIndex = 3;
             this.AutocadTab.Text = "Autocad";
@@ -1947,6 +1621,7 @@
             this.AutocadGenerateBt.TabIndex = 6;
             this.AutocadGenerateBt.Text = "Générer le rapport AutoCAD";
             this.AutocadGenerateBt.UseVisualStyleBackColor = true;
+            this.AutocadGenerateBt.Click += new System.EventHandler(this.AutocadGenerateBt_Click);
             // 
             // AboutTab
             // 
@@ -1962,7 +1637,7 @@
             this.AboutTab.Controls.Add(this.label55);
             this.AboutTab.Location = new System.Drawing.Point(1, 24);
             this.AboutTab.Name = "AboutTab";
-            this.AboutTab.Size = new System.Drawing.Size(395, 346);
+            this.AboutTab.Size = new System.Drawing.Size(395, 316);
             this.AboutTab.TabBackColor = System.Drawing.Color.White;
             this.AboutTab.TabBackColorSelected = System.Drawing.Color.White;
             this.AboutTab.TabIndex = 4;
@@ -2052,7 +1727,6 @@
             // splitContainer25
             // 
             this.splitContainer25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer25.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
             this.splitContainer25.Location = new System.Drawing.Point(0, 0);
             this.splitContainer25.Name = "splitContainer25";
             this.splitContainer25.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -2064,8 +1738,8 @@
             // splitContainer25.Panel2
             // 
             this.splitContainer25.Panel2.Controls.Add(this.OuvrageToolsPanel);
-            this.splitContainer25.Size = new System.Drawing.Size(617, 371);
-            this.splitContainer25.SplitterDistance = 336;
+            this.splitContainer25.Size = new System.Drawing.Size(617, 341);
+            this.splitContainer25.SplitterDistance = 308;
             this.splitContainer25.TabIndex = 0;
             // 
             // OuvrageList
@@ -2088,7 +1762,7 @@
             this.OuvrageList.MatchEntryTimeout = ((long)(2000));
             this.OuvrageList.Name = "OuvrageList";
             this.OuvrageList.RowSubDividerColor = System.Drawing.Color.DarkGray;
-            this.OuvrageList.Size = new System.Drawing.Size(617, 336);
+            this.OuvrageList.Size = new System.Drawing.Size(617, 308);
             this.OuvrageList.TabIndex = 2;
             this.OuvrageList.Text = "Ouvrages";
             this.OuvrageList.Click += new System.EventHandler(this.OuvrageList_Click);
@@ -2104,7 +1778,7 @@
             this.OuvrageToolsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.OuvrageToolsPanel.Location = new System.Drawing.Point(0, 0);
             this.OuvrageToolsPanel.Name = "OuvrageToolsPanel";
-            this.OuvrageToolsPanel.Size = new System.Drawing.Size(617, 31);
+            this.OuvrageToolsPanel.Size = new System.Drawing.Size(617, 29);
             this.OuvrageToolsPanel.TabIndex = 17;
             // 
             // SaveOuvrageOrderBt
@@ -2116,7 +1790,7 @@
             this.SaveOuvrageOrderBt.ForeColor = System.Drawing.Color.Black;
             this.SaveOuvrageOrderBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
             this.SaveOuvrageOrderBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SaveOuvrageOrderBt.Location = new System.Drawing.Point(65, 3);
+            this.SaveOuvrageOrderBt.Location = new System.Drawing.Point(65, 2);
             this.SaveOuvrageOrderBt.Name = "SaveOuvrageOrderBt";
             this.SaveOuvrageOrderBt.Size = new System.Drawing.Size(102, 25);
             this.SaveOuvrageOrderBt.TabIndex = 13;
@@ -2135,7 +1809,7 @@
             this.DeleteOuvrageBt.ForeColor = System.Drawing.Color.Black;
             this.DeleteOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.remove_16;
             this.DeleteOuvrageBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DeleteOuvrageBt.Location = new System.Drawing.Point(532, 3);
+            this.DeleteOuvrageBt.Location = new System.Drawing.Point(532, 2);
             this.DeleteOuvrageBt.Name = "DeleteOuvrageBt";
             this.DeleteOuvrageBt.Size = new System.Drawing.Size(84, 25);
             this.DeleteOuvrageBt.TabIndex = 6;
@@ -2150,7 +1824,7 @@
             this.OuvrageMoveDownBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.OuvrageMoveDownBt.BackColor = System.Drawing.SystemColors.Control;
             this.OuvrageMoveDownBt.Image = global::ACTIVA_Module_1.Properties.Resources.down_16;
-            this.OuvrageMoveDownBt.Location = new System.Drawing.Point(3, 3);
+            this.OuvrageMoveDownBt.Location = new System.Drawing.Point(3, 2);
             this.OuvrageMoveDownBt.Name = "OuvrageMoveDownBt";
             this.OuvrageMoveDownBt.Size = new System.Drawing.Size(25, 25);
             this.OuvrageMoveDownBt.TabIndex = 2;
@@ -2162,7 +1836,7 @@
             this.OuvrageMoveUpBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.OuvrageMoveUpBt.BackColor = System.Drawing.SystemColors.Control;
             this.OuvrageMoveUpBt.Image = global::ACTIVA_Module_1.Properties.Resources.up_16;
-            this.OuvrageMoveUpBt.Location = new System.Drawing.Point(34, 3);
+            this.OuvrageMoveUpBt.Location = new System.Drawing.Point(34, 2);
             this.OuvrageMoveUpBt.Name = "OuvrageMoveUpBt";
             this.OuvrageMoveUpBt.Size = new System.Drawing.Size(25, 25);
             this.OuvrageMoveUpBt.TabIndex = 1;
@@ -2178,7 +1852,7 @@
             this.CloneOuvrageBt.ForeColor = System.Drawing.Color.Black;
             this.CloneOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.copy1_16;
             this.CloneOuvrageBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CloneOuvrageBt.Location = new System.Drawing.Point(444, 3);
+            this.CloneOuvrageBt.Location = new System.Drawing.Point(444, 2);
             this.CloneOuvrageBt.Name = "CloneOuvrageBt";
             this.CloneOuvrageBt.Size = new System.Drawing.Size(82, 25);
             this.CloneOuvrageBt.TabIndex = 12;
@@ -2190,31 +1864,31 @@
             // 
             // IdentificationTab
             // 
-            this.IdentificationTab.Controls.Add(this.splitContainer3);
+            this.IdentificationTab.Controls.Add(this.splitContainer1);
             this.IdentificationTab.Location = new System.Drawing.Point(1, 24);
             this.IdentificationTab.Name = "IdentificationTab";
-            this.IdentificationTab.Size = new System.Drawing.Size(1022, 428);
+            this.IdentificationTab.Size = new System.Drawing.Size(1022, 398);
             this.IdentificationTab.TabIndex = 0;
             this.IdentificationTab.Text = "Identification";
             // 
-            // splitContainer3
+            // splitContainer1
             // 
-            this.splitContainer3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer3.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer3.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer3.Name = "splitContainer3";
+            this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
             // 
-            // splitContainer3.Panel1
+            // splitContainer1.Panel1
             // 
-            this.splitContainer3.Panel1.Controls.Add(this.IdentificationTopicBar);
+            this.splitContainer1.Panel1.Controls.Add(this.IdentificationTopicBar);
             // 
-            // splitContainer3.Panel2
+            // splitContainer1.Panel2
             // 
-            this.splitContainer3.Panel2.Controls.Add(this.IdFormSplit);
-            this.splitContainer3.Size = new System.Drawing.Size(1022, 428);
-            this.splitContainer3.SplitterDistance = 317;
-            this.splitContainer3.TabIndex = 0;
+            this.splitContainer1.Panel2.Controls.Add(this.IdFormSplit);
+            this.splitContainer1.Size = new System.Drawing.Size(1022, 398);
+            this.splitContainer1.SplitterDistance = 317;
+            this.splitContainer1.TabIndex = 0;
             // 
             // IdentificationTopicBar
             // 
@@ -2227,7 +1901,7 @@
             this.IdentificationTopicBar.Padding = new System.Windows.Forms.Padding(15, 16, 15, 16);
             this.IdentificationTopicBar.PageOffset = 10;
             this.IdentificationTopicBar.PagePadding = new System.Windows.Forms.Padding(10);
-            this.IdentificationTopicBar.Size = new System.Drawing.Size(315, 426);
+            this.IdentificationTopicBar.Size = new System.Drawing.Size(315, 396);
             this.IdentificationTopicBar.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
             this.IdentificationTopicBar.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Black;
             this.IdentificationTopicBar.LinkClick += new C1.Win.C1Command.C1TopicBarClickEventHandler(this.IdentificationTopicBar_LinkClick);
@@ -2252,8 +1926,8 @@
             // 
             // IdFormSplit.Panel2
             // 
-            this.IdFormSplit.Panel2.Controls.Add(this.splitContainer4);
-            this.IdFormSplit.Size = new System.Drawing.Size(701, 428);
+            this.IdFormSplit.Panel2.Controls.Add(this.splitContainer3);
+            this.IdFormSplit.Size = new System.Drawing.Size(701, 398);
             this.IdFormSplit.SplitterDistance = 37;
             this.IdFormSplit.SplitterWidth = 2;
             this.IdFormSplit.TabIndex = 1;
@@ -2296,35 +1970,35 @@
             this.IdFormLabel.Text = "label1";
             this.IdFormLabel.Visible = false;
             // 
-            // splitContainer4
+            // splitContainer3
             // 
-            this.splitContainer4.BackColor = System.Drawing.Color.DimGray;
-            this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer4.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
-            this.splitContainer4.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer4.Name = "splitContainer4";
-            this.splitContainer4.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.splitContainer3.BackColor = System.Drawing.Color.DimGray;
+            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer3.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
+            this.splitContainer3.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer3.Name = "splitContainer3";
+            this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // splitContainer4.Panel1
+            // splitContainer3.Panel1
             // 
-            this.splitContainer4.Panel1.Controls.Add(this.Identification_Flp);
+            this.splitContainer3.Panel1.Controls.Add(this.Identification_Flp);
             // 
-            // splitContainer4.Panel2
+            // splitContainer3.Panel2
             // 
-            this.splitContainer4.Panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.splitContainer4.Panel2.Controls.Add(this.label4);
-            this.splitContainer4.Panel2.Controls.Add(this.IdFacultatifPb);
-            this.splitContainer4.Panel2.Controls.Add(this.label3);
-            this.splitContainer4.Panel2.Controls.Add(this.IdDesactivePb);
-            this.splitContainer4.Panel2.Controls.Add(this.label2);
-            this.splitContainer4.Panel2.Controls.Add(this.IdDifferePb);
-            this.splitContainer4.Panel2.Controls.Add(this.label1);
-            this.splitContainer4.Panel2.Controls.Add(this.IdObligatoirePb);
-            this.splitContainer4.Panel2MinSize = 18;
-            this.splitContainer4.Size = new System.Drawing.Size(699, 387);
-            this.splitContainer4.SplitterDistance = 364;
-            this.splitContainer4.SplitterWidth = 2;
-            this.splitContainer4.TabIndex = 1;
+            this.splitContainer3.Panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.splitContainer3.Panel2.Controls.Add(this.label4);
+            this.splitContainer3.Panel2.Controls.Add(this.IdFacultatifPb);
+            this.splitContainer3.Panel2.Controls.Add(this.label3);
+            this.splitContainer3.Panel2.Controls.Add(this.IdDesactivePb);
+            this.splitContainer3.Panel2.Controls.Add(this.label2);
+            this.splitContainer3.Panel2.Controls.Add(this.IdDifferePb);
+            this.splitContainer3.Panel2.Controls.Add(this.label1);
+            this.splitContainer3.Panel2.Controls.Add(this.IdObligatoirePb);
+            this.splitContainer3.Panel2MinSize = 18;
+            this.splitContainer3.Size = new System.Drawing.Size(699, 357);
+            this.splitContainer3.SplitterDistance = 337;
+            this.splitContainer3.SplitterWidth = 2;
+            this.splitContainer3.TabIndex = 1;
             // 
             // Identification_Flp
             // 
@@ -2335,13 +2009,13 @@
             this.Identification_Flp.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Identification_Flp.Location = new System.Drawing.Point(0, 0);
             this.Identification_Flp.Name = "Identification_Flp";
-            this.Identification_Flp.Size = new System.Drawing.Size(699, 364);
+            this.Identification_Flp.Size = new System.Drawing.Size(699, 337);
             this.Identification_Flp.TabIndex = 0;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(587, 6);
+            this.label4.Location = new System.Drawing.Point(586, 2);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 14);
             this.label4.TabIndex = 38;
@@ -2351,7 +2025,7 @@
             // 
             this.IdFacultatifPb.BackColor = System.Drawing.Color.White;
             this.IdFacultatifPb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.IdFacultatifPb.Location = new System.Drawing.Point(525, 4);
+            this.IdFacultatifPb.Location = new System.Drawing.Point(524, 1);
             this.IdFacultatifPb.Name = "IdFacultatifPb";
             this.IdFacultatifPb.Size = new System.Drawing.Size(56, 16);
             this.IdFacultatifPb.TabIndex = 37;
@@ -2360,7 +2034,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(411, 6);
+            this.label3.Location = new System.Drawing.Point(411, 2);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 14);
             this.label3.TabIndex = 36;
@@ -2369,7 +2043,7 @@
             // IdDesactivePb
             // 
             this.IdDesactivePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.IdDesactivePb.Location = new System.Drawing.Point(349, 4);
+            this.IdDesactivePb.Location = new System.Drawing.Point(349, 1);
             this.IdDesactivePb.Name = "IdDesactivePb";
             this.IdDesactivePb.Size = new System.Drawing.Size(56, 16);
             this.IdDesactivePb.TabIndex = 35;
@@ -2378,7 +2052,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(248, 4);
+            this.label2.Location = new System.Drawing.Point(262, 2);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 14);
             this.label2.TabIndex = 34;
@@ -2387,7 +2061,7 @@
             // IdDifferePb
             // 
             this.IdDifferePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.IdDifferePb.Location = new System.Drawing.Point(186, 4);
+            this.IdDifferePb.Location = new System.Drawing.Point(200, 1);
             this.IdDifferePb.Name = "IdDifferePb";
             this.IdDifferePb.Size = new System.Drawing.Size(56, 16);
             this.IdDifferePb.TabIndex = 33;
@@ -2396,7 +2070,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(65, 4);
+            this.label1.Location = new System.Drawing.Point(86, 2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 14);
             this.label1.TabIndex = 32;
@@ -2405,7 +2079,7 @@
             // IdObligatoirePb
             // 
             this.IdObligatoirePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.IdObligatoirePb.Location = new System.Drawing.Point(3, 4);
+            this.IdObligatoirePb.Location = new System.Drawing.Point(24, 1);
             this.IdObligatoirePb.Name = "IdObligatoirePb";
             this.IdObligatoirePb.Size = new System.Drawing.Size(56, 16);
             this.IdObligatoirePb.TabIndex = 31;
@@ -2416,7 +2090,7 @@
             this.ObservationTab.Controls.Add(this.ObservationGrid);
             this.ObservationTab.Location = new System.Drawing.Point(1, 24);
             this.ObservationTab.Name = "ObservationTab";
-            this.ObservationTab.Size = new System.Drawing.Size(1022, 428);
+            this.ObservationTab.Size = new System.Drawing.Size(1022, 398);
             this.ObservationTab.TabIndex = 1;
             this.ObservationTab.Text = "Observations";
             // 
@@ -2428,10 +2102,11 @@
             this.ObservationGrid.Location = new System.Drawing.Point(0, 0);
             this.ObservationGrid.Name = "ObservationGrid";
             this.ObservationGrid.Rows.DefaultSize = 19;
-            this.ObservationGrid.Size = new System.Drawing.Size(1022, 428);
+            this.ObservationGrid.Size = new System.Drawing.Size(1022, 398);
             this.ObservationGrid.StyleInfo = resources.GetString("ObservationGrid.StyleInfo");
             this.ObservationGrid.TabIndex = 0;
             this.ObservationGrid.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Silver;
+            this.ObservationGrid.AfterSort += new C1.Win.C1FlexGrid.SortColEventHandler(this.ObservationGrid_AfterSort);
             this.ObservationGrid.Click += new System.EventHandler(this.ObservationGrid_Click);
             this.ObservationGrid.Paint += new System.Windows.Forms.PaintEventHandler(this.ObservationGrid_Paint);
             this.ObservationGrid.DoubleClick += new System.EventHandler(this.ObservationGrid_DoubleClick);
@@ -2443,7 +2118,7 @@
             this.RenseignementTab.ForeColor = System.Drawing.SystemColors.ControlText;
             this.RenseignementTab.Location = new System.Drawing.Point(1, 24);
             this.RenseignementTab.Name = "RenseignementTab";
-            this.RenseignementTab.Size = new System.Drawing.Size(1022, 428);
+            this.RenseignementTab.Size = new System.Drawing.Size(1022, 398);
             this.RenseignementTab.TabBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.RenseignementTab.TabIndex = 4;
             this.RenseignementTab.Text = "Saisie";
@@ -2454,7 +2129,7 @@
             this.CaracDockingTab.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CaracDockingTab.Location = new System.Drawing.Point(0, 0);
             this.CaracDockingTab.Name = "CaracDockingTab";
-            this.CaracDockingTab.Size = new System.Drawing.Size(1022, 428);
+            this.CaracDockingTab.Size = new System.Drawing.Size(1022, 398);
             this.CaracDockingTab.TabIndex = 0;
             this.CaracDockingTab.TabsSpacing = 5;
             this.CaracDockingTab.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
@@ -2465,7 +2140,7 @@
             this.ParamTab.Controls.Add(this.ParamDockingTab);
             this.ParamTab.Location = new System.Drawing.Point(1, 24);
             this.ParamTab.Name = "ParamTab";
-            this.ParamTab.Size = new System.Drawing.Size(1022, 428);
+            this.ParamTab.Size = new System.Drawing.Size(1022, 398);
             this.ParamTab.TabIndex = 6;
             this.ParamTab.Text = "Paramètres";
             // 
@@ -2479,7 +2154,7 @@
             this.ParamDockingTab.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ParamDockingTab.Location = new System.Drawing.Point(0, 0);
             this.ParamDockingTab.Name = "ParamDockingTab";
-            this.ParamDockingTab.Size = new System.Drawing.Size(1022, 428);
+            this.ParamDockingTab.Size = new System.Drawing.Size(1022, 398);
             this.ParamDockingTab.TabIndex = 0;
             this.ParamDockingTab.TabsSpacing = 5;
             this.ParamDockingTab.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
@@ -2496,7 +2171,7 @@
             this.XmlPathTab.Controls.Add(this.groupBox2);
             this.XmlPathTab.Location = new System.Drawing.Point(1, 24);
             this.XmlPathTab.Name = "XmlPathTab";
-            this.XmlPathTab.Size = new System.Drawing.Size(1020, 403);
+            this.XmlPathTab.Size = new System.Drawing.Size(1020, 373);
             this.XmlPathTab.TabIndex = 2;
             this.XmlPathTab.Text = "Emplacements des fichiers Xml";
             // 
@@ -2997,7 +2672,7 @@
             this.XmlObsTab.Controls.Add(this.XmlParamSplit);
             this.XmlObsTab.Location = new System.Drawing.Point(1, 24);
             this.XmlObsTab.Name = "XmlObsTab";
-            this.XmlObsTab.Size = new System.Drawing.Size(1020, 403);
+            this.XmlObsTab.Size = new System.Drawing.Size(1020, 373);
             this.XmlObsTab.TabIndex = 0;
             this.XmlObsTab.Text = "Codes Observation";
             // 
@@ -3016,7 +2691,7 @@
             // XmlParamSplit.Panel2
             // 
             this.XmlParamSplit.Panel2.Controls.Add(this.splitContainer5);
-            this.XmlParamSplit.Size = new System.Drawing.Size(1020, 403);
+            this.XmlParamSplit.Size = new System.Drawing.Size(1020, 373);
             this.XmlParamSplit.SplitterDistance = 25;
             this.XmlParamSplit.TabIndex = 0;
             // 
@@ -3083,8 +2758,8 @@
             // splitContainer5.Panel2
             // 
             this.splitContainer5.Panel2.Controls.Add(this.splitContainer6);
-            this.splitContainer5.Size = new System.Drawing.Size(1020, 374);
-            this.splitContainer5.SplitterDistance = 106;
+            this.splitContainer5.Size = new System.Drawing.Size(1020, 344);
+            this.splitContainer5.SplitterDistance = 110;
             this.splitContainer5.TabIndex = 0;
             // 
             // XmlCodesSplit
@@ -3108,7 +2783,7 @@
             // XmlCodesSplit.Panel2
             // 
             this.XmlCodesSplit.Panel2.Controls.Add(this.XmlObsCodesGrid);
-            this.XmlCodesSplit.Size = new System.Drawing.Size(1020, 106);
+            this.XmlCodesSplit.Size = new System.Drawing.Size(1020, 110);
             this.XmlCodesSplit.SplitterDistance = 20;
             this.XmlCodesSplit.TabIndex = 0;
             // 
@@ -3184,7 +2859,7 @@
             this.XmlObsCodesGrid.Location = new System.Drawing.Point(0, 0);
             this.XmlObsCodesGrid.Name = "XmlObsCodesGrid";
             this.XmlObsCodesGrid.Rows.DefaultSize = 15;
-            this.XmlObsCodesGrid.Size = new System.Drawing.Size(1020, 82);
+            this.XmlObsCodesGrid.Size = new System.Drawing.Size(1020, 86);
             this.XmlObsCodesGrid.StyleInfo = resources.GetString("XmlObsCodesGrid.StyleInfo");
             this.XmlObsCodesGrid.TabIndex = 0;
             // 
@@ -3202,8 +2877,8 @@
             // splitContainer6.Panel2
             // 
             this.splitContainer6.Panel2.Controls.Add(this.XmlItemsSplit);
-            this.splitContainer6.Size = new System.Drawing.Size(1020, 264);
-            this.splitContainer6.SplitterDistance = 114;
+            this.splitContainer6.Size = new System.Drawing.Size(1020, 230);
+            this.splitContainer6.SplitterDistance = 113;
             this.splitContainer6.TabIndex = 1;
             // 
             // XmlCaracSplit
@@ -3222,7 +2897,7 @@
             // XmlCaracSplit.Panel2
             // 
             this.XmlCaracSplit.Panel2.Controls.Add(this.XmlObsCaracGrid);
-            this.XmlCaracSplit.Size = new System.Drawing.Size(1020, 114);
+            this.XmlCaracSplit.Size = new System.Drawing.Size(1020, 113);
             this.XmlCaracSplit.SplitterDistance = 20;
             this.XmlCaracSplit.TabIndex = 1;
             // 
@@ -3245,7 +2920,7 @@
             this.XmlObsCaracGrid.Location = new System.Drawing.Point(0, 0);
             this.XmlObsCaracGrid.Name = "XmlObsCaracGrid";
             this.XmlObsCaracGrid.Rows.DefaultSize = 15;
-            this.XmlObsCaracGrid.Size = new System.Drawing.Size(1020, 90);
+            this.XmlObsCaracGrid.Size = new System.Drawing.Size(1020, 89);
             this.XmlObsCaracGrid.StyleInfo = resources.GetString("XmlObsCaracGrid.StyleInfo");
             this.XmlObsCaracGrid.TabIndex = 1;
             // 
@@ -3270,7 +2945,7 @@
             // XmlItemsSplit.Panel2
             // 
             this.XmlItemsSplit.Panel2.Controls.Add(this.XmlObsItemGrid);
-            this.XmlItemsSplit.Size = new System.Drawing.Size(1020, 146);
+            this.XmlItemsSplit.Size = new System.Drawing.Size(1020, 113);
             this.XmlItemsSplit.SplitterDistance = 20;
             this.XmlItemsSplit.TabIndex = 1;
             // 
@@ -3348,37 +3023,37 @@
             this.XmlObsItemGrid.Location = new System.Drawing.Point(0, 0);
             this.XmlObsItemGrid.Name = "XmlObsItemGrid";
             this.XmlObsItemGrid.Rows.DefaultSize = 15;
-            this.XmlObsItemGrid.Size = new System.Drawing.Size(1020, 122);
+            this.XmlObsItemGrid.Size = new System.Drawing.Size(1020, 89);
             this.XmlObsItemGrid.StyleInfo = resources.GetString("XmlObsItemGrid.StyleInfo");
             this.XmlObsItemGrid.TabIndex = 1;
             // 
             // XmlIdTab
             // 
-            this.XmlIdTab.Controls.Add(this.splitContainer7);
+            this.XmlIdTab.Controls.Add(this.splitContainer4);
             this.XmlIdTab.Location = new System.Drawing.Point(1, 24);
             this.XmlIdTab.Name = "XmlIdTab";
-            this.XmlIdTab.Size = new System.Drawing.Size(1020, 403);
+            this.XmlIdTab.Size = new System.Drawing.Size(1020, 373);
             this.XmlIdTab.TabIndex = 1;
             this.XmlIdTab.Text = "Codes Identification";
             // 
-            // splitContainer7
+            // splitContainer4
             // 
-            this.splitContainer7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer7.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer7.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer7.Name = "splitContainer7";
-            this.splitContainer7.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer4.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer4.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer4.Name = "splitContainer4";
+            this.splitContainer4.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // splitContainer7.Panel1
+            // splitContainer4.Panel1
             // 
-            this.splitContainer7.Panel1.Controls.Add(this.ToolStripIdCode);
+            this.splitContainer4.Panel1.Controls.Add(this.ToolStripIdCode);
             // 
-            // splitContainer7.Panel2
+            // splitContainer4.Panel2
             // 
-            this.splitContainer7.Panel2.Controls.Add(this.splitContainer8);
-            this.splitContainer7.Size = new System.Drawing.Size(1020, 403);
-            this.splitContainer7.SplitterDistance = 25;
-            this.splitContainer7.TabIndex = 1;
+            this.splitContainer4.Panel2.Controls.Add(this.splitContainer7);
+            this.splitContainer4.Size = new System.Drawing.Size(1020, 373);
+            this.splitContainer4.SplitterDistance = 25;
+            this.splitContainer4.TabIndex = 1;
             // 
             // ToolStripIdCode
             // 
@@ -3429,48 +3104,48 @@
             this.XmlIdStripLabel.Name = "XmlIdStripLabel";
             this.XmlIdStripLabel.Size = new System.Drawing.Size(0, 22);
             // 
+            // splitContainer7
+            // 
+            this.splitContainer7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer7.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer7.Name = "splitContainer7";
+            this.splitContainer7.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer7.Panel1
+            // 
+            this.splitContainer7.Panel1.Controls.Add(this.splitContainer8);
+            // 
+            // splitContainer7.Panel2
+            // 
+            this.splitContainer7.Panel2.Controls.Add(this.splitContainer10);
+            this.splitContainer7.Size = new System.Drawing.Size(1020, 344);
+            this.splitContainer7.SplitterDistance = 156;
+            this.splitContainer7.TabIndex = 0;
+            // 
             // splitContainer8
             // 
             this.splitContainer8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer8.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer8.Location = new System.Drawing.Point(0, 0);
             this.splitContainer8.Name = "splitContainer8";
             this.splitContainer8.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
             // splitContainer8.Panel1
             // 
-            this.splitContainer8.Panel1.Controls.Add(this.splitContainer10);
+            this.splitContainer8.Panel1.Controls.Add(this.label48);
+            this.splitContainer8.Panel1.Controls.Add(this.XmlIdCodeDelValueBt);
+            this.splitContainer8.Panel1.Controls.Add(this.label49);
+            this.splitContainer8.Panel1.Controls.Add(this.XmlIdCodeAddValueBt);
+            this.splitContainer8.Panel1.Controls.Add(this.XmlIdCodeAddValueTb);
+            this.splitContainer8.Panel1.Controls.Add(this.label9);
+            this.splitContainer8.Panel1MinSize = 20;
             // 
             // splitContainer8.Panel2
             // 
-            this.splitContainer8.Panel2.Controls.Add(this.splitContainer11);
-            this.splitContainer8.Size = new System.Drawing.Size(1020, 374);
-            this.splitContainer8.SplitterDistance = 151;
+            this.splitContainer8.Panel2.Controls.Add(this.XmlIdCodeGrid);
+            this.splitContainer8.Size = new System.Drawing.Size(1020, 156);
+            this.splitContainer8.SplitterDistance = 20;
             this.splitContainer8.TabIndex = 0;
-            // 
-            // splitContainer10
-            // 
-            this.splitContainer10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer10.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer10.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer10.Name = "splitContainer10";
-            this.splitContainer10.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer10.Panel1
-            // 
-            this.splitContainer10.Panel1.Controls.Add(this.label48);
-            this.splitContainer10.Panel1.Controls.Add(this.XmlIdCodeDelValueBt);
-            this.splitContainer10.Panel1.Controls.Add(this.label49);
-            this.splitContainer10.Panel1.Controls.Add(this.XmlIdCodeAddValueBt);
-            this.splitContainer10.Panel1.Controls.Add(this.XmlIdCodeAddValueTb);
-            this.splitContainer10.Panel1.Controls.Add(this.label9);
-            this.splitContainer10.Panel1MinSize = 20;
-            // 
-            // splitContainer10.Panel2
-            // 
-            this.splitContainer10.Panel2.Controls.Add(this.XmlIdCodeGrid);
-            this.splitContainer10.Size = new System.Drawing.Size(1020, 151);
-            this.splitContainer10.SplitterDistance = 20;
-            this.splitContainer10.TabIndex = 0;
             // 
             // label48
             // 
@@ -3546,34 +3221,34 @@
             this.XmlIdCodeGrid.Location = new System.Drawing.Point(0, 0);
             this.XmlIdCodeGrid.Name = "XmlIdCodeGrid";
             this.XmlIdCodeGrid.Rows.DefaultSize = 15;
-            this.XmlIdCodeGrid.Size = new System.Drawing.Size(1020, 127);
+            this.XmlIdCodeGrid.Size = new System.Drawing.Size(1020, 132);
             this.XmlIdCodeGrid.StyleInfo = resources.GetString("XmlIdCodeGrid.StyleInfo");
             this.XmlIdCodeGrid.TabIndex = 0;
             // 
-            // splitContainer11
+            // splitContainer10
             // 
-            this.splitContainer11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer11.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer11.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer11.Name = "splitContainer11";
-            this.splitContainer11.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.splitContainer10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer10.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer10.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer10.Name = "splitContainer10";
+            this.splitContainer10.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // splitContainer11.Panel1
+            // splitContainer10.Panel1
             // 
-            this.splitContainer11.Panel1.Controls.Add(this.label50);
-            this.splitContainer11.Panel1.Controls.Add(this.XmlIdItemDelValueBt);
-            this.splitContainer11.Panel1.Controls.Add(this.label51);
-            this.splitContainer11.Panel1.Controls.Add(this.XmlIdItemAddValueBt);
-            this.splitContainer11.Panel1.Controls.Add(this.XmlIdItemAddValueTb);
-            this.splitContainer11.Panel1.Controls.Add(this.label10);
-            this.splitContainer11.Panel1MinSize = 20;
+            this.splitContainer10.Panel1.Controls.Add(this.label50);
+            this.splitContainer10.Panel1.Controls.Add(this.XmlIdItemDelValueBt);
+            this.splitContainer10.Panel1.Controls.Add(this.label51);
+            this.splitContainer10.Panel1.Controls.Add(this.XmlIdItemAddValueBt);
+            this.splitContainer10.Panel1.Controls.Add(this.XmlIdItemAddValueTb);
+            this.splitContainer10.Panel1.Controls.Add(this.label10);
+            this.splitContainer10.Panel1MinSize = 20;
             // 
-            // splitContainer11.Panel2
+            // splitContainer10.Panel2
             // 
-            this.splitContainer11.Panel2.Controls.Add(this.XmlIdItemGrid);
-            this.splitContainer11.Size = new System.Drawing.Size(1020, 219);
-            this.splitContainer11.SplitterDistance = 20;
-            this.splitContainer11.TabIndex = 2;
+            this.splitContainer10.Panel2.Controls.Add(this.XmlIdItemGrid);
+            this.splitContainer10.Size = new System.Drawing.Size(1020, 184);
+            this.splitContainer10.SplitterDistance = 20;
+            this.splitContainer10.TabIndex = 2;
             // 
             // label50
             // 
@@ -3649,37 +3324,37 @@
             this.XmlIdItemGrid.Location = new System.Drawing.Point(0, 0);
             this.XmlIdItemGrid.Name = "XmlIdItemGrid";
             this.XmlIdItemGrid.Rows.DefaultSize = 15;
-            this.XmlIdItemGrid.Size = new System.Drawing.Size(1020, 195);
+            this.XmlIdItemGrid.Size = new System.Drawing.Size(1020, 160);
             this.XmlIdItemGrid.StyleInfo = resources.GetString("XmlIdItemGrid.StyleInfo");
             this.XmlIdItemGrid.TabIndex = 1;
             // 
             // XmlSectionTab
             // 
-            this.XmlSectionTab.Controls.Add(this.splitContainer12);
+            this.XmlSectionTab.Controls.Add(this.splitContainer11);
             this.XmlSectionTab.Location = new System.Drawing.Point(1, 24);
             this.XmlSectionTab.Name = "XmlSectionTab";
-            this.XmlSectionTab.Size = new System.Drawing.Size(1020, 403);
+            this.XmlSectionTab.Size = new System.Drawing.Size(1020, 373);
             this.XmlSectionTab.TabIndex = 3;
             this.XmlSectionTab.Text = "Sections";
             // 
-            // splitContainer12
+            // splitContainer11
             // 
-            this.splitContainer12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer12.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer12.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer12.Name = "splitContainer12";
-            this.splitContainer12.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.splitContainer11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer11.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer11.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer11.Name = "splitContainer11";
+            this.splitContainer11.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // splitContainer12.Panel1
+            // splitContainer11.Panel1
             // 
-            this.splitContainer12.Panel1.Controls.Add(this.ToolStripSection);
+            this.splitContainer11.Panel1.Controls.Add(this.ToolStripSection);
             // 
-            // splitContainer12.Panel2
+            // splitContainer11.Panel2
             // 
-            this.splitContainer12.Panel2.Controls.Add(this.splitContainer13);
-            this.splitContainer12.Size = new System.Drawing.Size(1020, 403);
-            this.splitContainer12.SplitterDistance = 25;
-            this.splitContainer12.TabIndex = 2;
+            this.splitContainer11.Panel2.Controls.Add(this.splitContainer12);
+            this.splitContainer11.Size = new System.Drawing.Size(1020, 373);
+            this.splitContainer11.SplitterDistance = 25;
+            this.splitContainer11.TabIndex = 2;
             // 
             // ToolStripSection
             // 
@@ -3706,23 +3381,23 @@
             this.XmlSectionStripLabel.Name = "XmlSectionStripLabel";
             this.XmlSectionStripLabel.Size = new System.Drawing.Size(0, 22);
             // 
-            // splitContainer13
+            // splitContainer12
             // 
-            this.splitContainer13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer13.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer13.Name = "splitContainer13";
-            this.splitContainer13.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.splitContainer12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer12.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer12.Name = "splitContainer12";
+            this.splitContainer12.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // splitContainer13.Panel1
+            // splitContainer12.Panel1
             // 
-            this.splitContainer13.Panel1.Controls.Add(this.splitContainer21);
+            this.splitContainer12.Panel1.Controls.Add(this.splitContainer21);
             // 
-            // splitContainer13.Panel2
+            // splitContainer12.Panel2
             // 
-            this.splitContainer13.Panel2.Controls.Add(this.splitContainer22);
-            this.splitContainer13.Size = new System.Drawing.Size(1020, 374);
-            this.splitContainer13.SplitterDistance = 163;
-            this.splitContainer13.TabIndex = 2;
+            this.splitContainer12.Panel2.Controls.Add(this.splitContainer22);
+            this.splitContainer12.Size = new System.Drawing.Size(1020, 344);
+            this.splitContainer12.SplitterDistance = 167;
+            this.splitContainer12.TabIndex = 2;
             // 
             // splitContainer21
             // 
@@ -3744,7 +3419,7 @@
             // splitContainer21.Panel2
             // 
             this.splitContainer21.Panel2.Controls.Add(this.XmlSectionGrid);
-            this.splitContainer21.Size = new System.Drawing.Size(1020, 163);
+            this.splitContainer21.Size = new System.Drawing.Size(1020, 167);
             this.splitContainer21.SplitterDistance = 25;
             this.splitContainer21.TabIndex = 2;
             // 
@@ -3822,7 +3497,7 @@
             this.XmlSectionGrid.Location = new System.Drawing.Point(0, 0);
             this.XmlSectionGrid.Name = "XmlSectionGrid";
             this.XmlSectionGrid.Rows.DefaultSize = 15;
-            this.XmlSectionGrid.Size = new System.Drawing.Size(1020, 134);
+            this.XmlSectionGrid.Size = new System.Drawing.Size(1020, 138);
             this.XmlSectionGrid.StyleInfo = resources.GetString("XmlSectionGrid.StyleInfo");
             this.XmlSectionGrid.TabIndex = 1;
             // 
@@ -3846,7 +3521,7 @@
             // splitContainer22.Panel2
             // 
             this.splitContainer22.Panel2.Controls.Add(this.XmlHeureGrid);
-            this.splitContainer22.Size = new System.Drawing.Size(1020, 207);
+            this.splitContainer22.Size = new System.Drawing.Size(1020, 173);
             this.splitContainer22.SplitterDistance = 27;
             this.splitContainer22.TabIndex = 3;
             // 
@@ -3924,7 +3599,7 @@
             this.XmlHeureGrid.Location = new System.Drawing.Point(0, 0);
             this.XmlHeureGrid.Name = "XmlHeureGrid";
             this.XmlHeureGrid.Rows.DefaultSize = 15;
-            this.XmlHeureGrid.Size = new System.Drawing.Size(1020, 176);
+            this.XmlHeureGrid.Size = new System.Drawing.Size(1020, 142);
             this.XmlHeureGrid.StyleInfo = resources.GetString("XmlHeureGrid.StyleInfo");
             this.XmlHeureGrid.TabIndex = 2;
             // 
@@ -3933,7 +3608,7 @@
             this.XmlAutocadTab.Controls.Add(this.c1DockingTab2);
             this.XmlAutocadTab.Location = new System.Drawing.Point(1, 24);
             this.XmlAutocadTab.Name = "XmlAutocadTab";
-            this.XmlAutocadTab.Size = new System.Drawing.Size(1020, 403);
+            this.XmlAutocadTab.Size = new System.Drawing.Size(1020, 373);
             this.XmlAutocadTab.TabIndex = 4;
             this.XmlAutocadTab.Text = "Représentations AutoCAD";
             // 
@@ -3944,7 +3619,7 @@
             this.c1DockingTab2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1DockingTab2.Location = new System.Drawing.Point(0, 0);
             this.c1DockingTab2.Name = "c1DockingTab2";
-            this.c1DockingTab2.Size = new System.Drawing.Size(1020, 403);
+            this.c1DockingTab2.Size = new System.Drawing.Size(1020, 373);
             this.c1DockingTab2.TabIndex = 0;
             this.c1DockingTab2.TabsSpacing = 5;
             this.c1DockingTab2.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
@@ -3952,31 +3627,31 @@
             // 
             // c1DockingTabPage3
             // 
-            this.c1DockingTabPage3.Controls.Add(this.splitContainer14);
+            this.c1DockingTabPage3.Controls.Add(this.splitContainer13);
             this.c1DockingTabPage3.Location = new System.Drawing.Point(1, 24);
             this.c1DockingTabPage3.Name = "c1DockingTabPage3";
-            this.c1DockingTabPage3.Size = new System.Drawing.Size(1018, 378);
+            this.c1DockingTabPage3.Size = new System.Drawing.Size(1018, 348);
             this.c1DockingTabPage3.TabIndex = 0;
             this.c1DockingTabPage3.Text = "Codes";
             // 
-            // splitContainer14
+            // splitContainer13
             // 
-            this.splitContainer14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer14.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer14.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer14.Name = "splitContainer14";
-            this.splitContainer14.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.splitContainer13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer13.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer13.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer13.Name = "splitContainer13";
+            this.splitContainer13.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // splitContainer14.Panel1
+            // splitContainer13.Panel1
             // 
-            this.splitContainer14.Panel1.Controls.Add(this.ToolStripAutoCad);
+            this.splitContainer13.Panel1.Controls.Add(this.ToolStripAutoCad);
             // 
-            // splitContainer14.Panel2
+            // splitContainer13.Panel2
             // 
-            this.splitContainer14.Panel2.Controls.Add(this.splitContainer15);
-            this.splitContainer14.Size = new System.Drawing.Size(1018, 378);
-            this.splitContainer14.SplitterDistance = 25;
-            this.splitContainer14.TabIndex = 2;
+            this.splitContainer13.Panel2.Controls.Add(this.splitContainer14);
+            this.splitContainer13.Size = new System.Drawing.Size(1018, 348);
+            this.splitContainer13.SplitterDistance = 25;
+            this.splitContainer13.TabIndex = 2;
             // 
             // ToolStripAutoCad
             // 
@@ -4027,23 +3702,23 @@
             this.XmlAutocadStripLabel.Name = "XmlAutocadStripLabel";
             this.XmlAutocadStripLabel.Size = new System.Drawing.Size(0, 22);
             // 
-            // splitContainer15
+            // splitContainer14
             // 
-            this.splitContainer15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer15.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer15.Name = "splitContainer15";
-            this.splitContainer15.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.splitContainer14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer14.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer14.Name = "splitContainer14";
+            this.splitContainer14.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // splitContainer15.Panel1
+            // splitContainer14.Panel1
             // 
-            this.splitContainer15.Panel1.Controls.Add(this.splitContainer23);
+            this.splitContainer14.Panel1.Controls.Add(this.splitContainer23);
             // 
-            // splitContainer15.Panel2
+            // splitContainer14.Panel2
             // 
-            this.splitContainer15.Panel2.Controls.Add(this.splitContainer24);
-            this.splitContainer15.Size = new System.Drawing.Size(1018, 349);
-            this.splitContainer15.SplitterDistance = 152;
-            this.splitContainer15.TabIndex = 3;
+            this.splitContainer14.Panel2.Controls.Add(this.splitContainer24);
+            this.splitContainer14.Size = new System.Drawing.Size(1018, 319);
+            this.splitContainer14.SplitterDistance = 153;
+            this.splitContainer14.TabIndex = 3;
             // 
             // splitContainer23
             // 
@@ -4060,7 +3735,7 @@
             // splitContainer23.Panel2
             // 
             this.splitContainer23.Panel2.Controls.Add(this.XmlAutocadGrid);
-            this.splitContainer23.Size = new System.Drawing.Size(1018, 152);
+            this.splitContainer23.Size = new System.Drawing.Size(1018, 153);
             this.splitContainer23.SplitterDistance = 25;
             this.splitContainer23.TabIndex = 2;
             // 
@@ -4083,7 +3758,7 @@
             this.XmlAutocadGrid.Location = new System.Drawing.Point(0, 0);
             this.XmlAutocadGrid.Name = "XmlAutocadGrid";
             this.XmlAutocadGrid.Rows.DefaultSize = 15;
-            this.XmlAutocadGrid.Size = new System.Drawing.Size(1018, 123);
+            this.XmlAutocadGrid.Size = new System.Drawing.Size(1018, 124);
             this.XmlAutocadGrid.StyleInfo = resources.GetString("XmlAutocadGrid.StyleInfo");
             this.XmlAutocadGrid.TabIndex = 1;
             // 
@@ -4102,7 +3777,7 @@
             // splitContainer24.Panel2
             // 
             this.splitContainer24.Panel2.Controls.Add(this.XmlAutocadItemGrid);
-            this.splitContainer24.Size = new System.Drawing.Size(1018, 193);
+            this.splitContainer24.Size = new System.Drawing.Size(1018, 162);
             this.splitContainer24.SplitterDistance = 25;
             this.splitContainer24.TabIndex = 3;
             // 
@@ -4125,37 +3800,37 @@
             this.XmlAutocadItemGrid.Location = new System.Drawing.Point(0, 0);
             this.XmlAutocadItemGrid.Name = "XmlAutocadItemGrid";
             this.XmlAutocadItemGrid.Rows.DefaultSize = 15;
-            this.XmlAutocadItemGrid.Size = new System.Drawing.Size(1018, 164);
+            this.XmlAutocadItemGrid.Size = new System.Drawing.Size(1018, 133);
             this.XmlAutocadItemGrid.StyleInfo = resources.GetString("XmlAutocadItemGrid.StyleInfo");
             this.XmlAutocadItemGrid.TabIndex = 2;
             // 
             // c1DockingTabPage4
             // 
-            this.c1DockingTabPage4.Controls.Add(this.splitContainer16);
+            this.c1DockingTabPage4.Controls.Add(this.splitContainer15);
             this.c1DockingTabPage4.Location = new System.Drawing.Point(1, 24);
             this.c1DockingTabPage4.Name = "c1DockingTabPage4";
-            this.c1DockingTabPage4.Size = new System.Drawing.Size(1018, 378);
+            this.c1DockingTabPage4.Size = new System.Drawing.Size(1018, 348);
             this.c1DockingTabPage4.TabIndex = 1;
             this.c1DockingTabPage4.Text = "Motifs";
             // 
-            // splitContainer16
+            // splitContainer15
             // 
-            this.splitContainer16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer16.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer16.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer16.Name = "splitContainer16";
-            this.splitContainer16.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.splitContainer15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer15.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer15.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer15.Name = "splitContainer15";
+            this.splitContainer15.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // splitContainer16.Panel1
+            // splitContainer15.Panel1
             // 
-            this.splitContainer16.Panel1.Controls.Add(this.ToolStripMotif);
+            this.splitContainer15.Panel1.Controls.Add(this.ToolStripMotif);
             // 
-            // splitContainer16.Panel2
+            // splitContainer15.Panel2
             // 
-            this.splitContainer16.Panel2.Controls.Add(this.splitContainer17);
-            this.splitContainer16.Size = new System.Drawing.Size(1018, 378);
-            this.splitContainer16.SplitterDistance = 25;
-            this.splitContainer16.TabIndex = 1;
+            this.splitContainer15.Panel2.Controls.Add(this.splitContainer16);
+            this.splitContainer15.Size = new System.Drawing.Size(1018, 348);
+            this.splitContainer15.SplitterDistance = 25;
+            this.splitContainer15.TabIndex = 1;
             // 
             // ToolStripMotif
             // 
@@ -4182,48 +3857,48 @@
             this.XmlMotifStripLabel.Name = "XmlMotifStripLabel";
             this.XmlMotifStripLabel.Size = new System.Drawing.Size(0, 22);
             // 
+            // splitContainer16
+            // 
+            this.splitContainer16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer16.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer16.Name = "splitContainer16";
+            this.splitContainer16.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer16.Panel1
+            // 
+            this.splitContainer16.Panel1.Controls.Add(this.splitContainer17);
+            // 
+            // splitContainer16.Panel2
+            // 
+            this.splitContainer16.Panel2.Controls.Add(this.splitContainer18);
+            this.splitContainer16.Size = new System.Drawing.Size(1018, 319);
+            this.splitContainer16.SplitterDistance = 101;
+            this.splitContainer16.TabIndex = 0;
+            // 
             // splitContainer17
             // 
             this.splitContainer17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer17.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer17.Location = new System.Drawing.Point(0, 0);
             this.splitContainer17.Name = "splitContainer17";
             this.splitContainer17.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
             // splitContainer17.Panel1
             // 
-            this.splitContainer17.Panel1.Controls.Add(this.splitContainer18);
+            this.splitContainer17.Panel1.Controls.Add(this.label39);
+            this.splitContainer17.Panel1.Controls.Add(this.XmlPonctuelDelValueBt);
+            this.splitContainer17.Panel1.Controls.Add(this.label38);
+            this.splitContainer17.Panel1.Controls.Add(this.XmlPonctuelAddValueBt);
+            this.splitContainer17.Panel1.Controls.Add(this.XmlPonctuelAddValueTb);
+            this.splitContainer17.Panel1.Controls.Add(this.label30);
+            this.splitContainer17.Panel1MinSize = 20;
             // 
             // splitContainer17.Panel2
             // 
-            this.splitContainer17.Panel2.Controls.Add(this.splitContainer19);
-            this.splitContainer17.Size = new System.Drawing.Size(1018, 349);
-            this.splitContainer17.SplitterDistance = 97;
+            this.splitContainer17.Panel2.Controls.Add(this.MotifPonctuelGrid);
+            this.splitContainer17.Size = new System.Drawing.Size(1018, 101);
+            this.splitContainer17.SplitterDistance = 20;
             this.splitContainer17.TabIndex = 0;
-            // 
-            // splitContainer18
-            // 
-            this.splitContainer18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer18.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer18.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer18.Name = "splitContainer18";
-            this.splitContainer18.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer18.Panel1
-            // 
-            this.splitContainer18.Panel1.Controls.Add(this.label39);
-            this.splitContainer18.Panel1.Controls.Add(this.XmlPonctuelDelValueBt);
-            this.splitContainer18.Panel1.Controls.Add(this.label38);
-            this.splitContainer18.Panel1.Controls.Add(this.XmlPonctuelAddValueBt);
-            this.splitContainer18.Panel1.Controls.Add(this.XmlPonctuelAddValueTb);
-            this.splitContainer18.Panel1.Controls.Add(this.label30);
-            this.splitContainer18.Panel1MinSize = 20;
-            // 
-            // splitContainer18.Panel2
-            // 
-            this.splitContainer18.Panel2.Controls.Add(this.MotifPonctuelGrid);
-            this.splitContainer18.Size = new System.Drawing.Size(1018, 97);
-            this.splitContainer18.SplitterDistance = 20;
-            this.splitContainer18.TabIndex = 0;
             // 
             // label39
             // 
@@ -4299,52 +3974,52 @@
             this.MotifPonctuelGrid.Location = new System.Drawing.Point(0, 0);
             this.MotifPonctuelGrid.Name = "MotifPonctuelGrid";
             this.MotifPonctuelGrid.Rows.DefaultSize = 15;
-            this.MotifPonctuelGrid.Size = new System.Drawing.Size(1018, 73);
+            this.MotifPonctuelGrid.Size = new System.Drawing.Size(1018, 77);
             this.MotifPonctuelGrid.StyleInfo = resources.GetString("MotifPonctuelGrid.StyleInfo");
             this.MotifPonctuelGrid.TabIndex = 0;
+            // 
+            // splitContainer18
+            // 
+            this.splitContainer18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer18.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer18.Name = "splitContainer18";
+            this.splitContainer18.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer18.Panel1
+            // 
+            this.splitContainer18.Panel1.Controls.Add(this.splitContainer19);
+            // 
+            // splitContainer18.Panel2
+            // 
+            this.splitContainer18.Panel2.Controls.Add(this.splitContainer20);
+            this.splitContainer18.Size = new System.Drawing.Size(1018, 214);
+            this.splitContainer18.SplitterDistance = 105;
+            this.splitContainer18.TabIndex = 1;
             // 
             // splitContainer19
             // 
             this.splitContainer19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer19.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer19.Location = new System.Drawing.Point(0, 0);
             this.splitContainer19.Name = "splitContainer19";
             this.splitContainer19.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
             // splitContainer19.Panel1
             // 
-            this.splitContainer19.Panel1.Controls.Add(this.splitContainer20);
+            this.splitContainer19.Panel1.Controls.Add(this.label40);
+            this.splitContainer19.Panel1.Controls.Add(this.XmlLineaireDelValueBt);
+            this.splitContainer19.Panel1.Controls.Add(this.label41);
+            this.splitContainer19.Panel1.Controls.Add(this.XmlLineaireAddValueBt);
+            this.splitContainer19.Panel1.Controls.Add(this.XmlLineaireAddValueTb);
+            this.splitContainer19.Panel1.Controls.Add(this.label31);
+            this.splitContainer19.Panel1MinSize = 20;
             // 
             // splitContainer19.Panel2
             // 
-            this.splitContainer19.Panel2.Controls.Add(this.splitContainer26);
-            this.splitContainer19.Size = new System.Drawing.Size(1018, 248);
-            this.splitContainer19.SplitterDistance = 106;
+            this.splitContainer19.Panel2.Controls.Add(this.MotifLineaireGrid);
+            this.splitContainer19.Size = new System.Drawing.Size(1018, 105);
+            this.splitContainer19.SplitterDistance = 20;
             this.splitContainer19.TabIndex = 1;
-            // 
-            // splitContainer20
-            // 
-            this.splitContainer20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer20.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer20.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer20.Name = "splitContainer20";
-            this.splitContainer20.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer20.Panel1
-            // 
-            this.splitContainer20.Panel1.Controls.Add(this.label40);
-            this.splitContainer20.Panel1.Controls.Add(this.XmlLineaireDelValueBt);
-            this.splitContainer20.Panel1.Controls.Add(this.label41);
-            this.splitContainer20.Panel1.Controls.Add(this.XmlLineaireAddValueBt);
-            this.splitContainer20.Panel1.Controls.Add(this.XmlLineaireAddValueTb);
-            this.splitContainer20.Panel1.Controls.Add(this.label31);
-            this.splitContainer20.Panel1MinSize = 20;
-            // 
-            // splitContainer20.Panel2
-            // 
-            this.splitContainer20.Panel2.Controls.Add(this.MotifLineaireGrid);
-            this.splitContainer20.Size = new System.Drawing.Size(1018, 106);
-            this.splitContainer20.SplitterDistance = 20;
-            this.splitContainer20.TabIndex = 1;
             // 
             // label40
             // 
@@ -4420,34 +4095,34 @@
             this.MotifLineaireGrid.Location = new System.Drawing.Point(0, 0);
             this.MotifLineaireGrid.Name = "MotifLineaireGrid";
             this.MotifLineaireGrid.Rows.DefaultSize = 15;
-            this.MotifLineaireGrid.Size = new System.Drawing.Size(1018, 82);
+            this.MotifLineaireGrid.Size = new System.Drawing.Size(1018, 81);
             this.MotifLineaireGrid.StyleInfo = resources.GetString("MotifLineaireGrid.StyleInfo");
             this.MotifLineaireGrid.TabIndex = 1;
             // 
-            // splitContainer26
+            // splitContainer20
             // 
-            this.splitContainer26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer26.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer26.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer26.Name = "splitContainer26";
-            this.splitContainer26.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.splitContainer20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer20.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer20.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer20.Name = "splitContainer20";
+            this.splitContainer20.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // splitContainer26.Panel1
+            // splitContainer20.Panel1
             // 
-            this.splitContainer26.Panel1.Controls.Add(this.label42);
-            this.splitContainer26.Panel1.Controls.Add(this.XmlSurfaciqueDelValueBt);
-            this.splitContainer26.Panel1.Controls.Add(this.label43);
-            this.splitContainer26.Panel1.Controls.Add(this.XmlSurfaciqueAddValueBt);
-            this.splitContainer26.Panel1.Controls.Add(this.XmlSurfaciqueAddValueTb);
-            this.splitContainer26.Panel1.Controls.Add(this.label32);
-            this.splitContainer26.Panel1MinSize = 20;
+            this.splitContainer20.Panel1.Controls.Add(this.label42);
+            this.splitContainer20.Panel1.Controls.Add(this.XmlSurfaciqueDelValueBt);
+            this.splitContainer20.Panel1.Controls.Add(this.label43);
+            this.splitContainer20.Panel1.Controls.Add(this.XmlSurfaciqueAddValueBt);
+            this.splitContainer20.Panel1.Controls.Add(this.XmlSurfaciqueAddValueTb);
+            this.splitContainer20.Panel1.Controls.Add(this.label32);
+            this.splitContainer20.Panel1MinSize = 20;
             // 
-            // splitContainer26.Panel2
+            // splitContainer20.Panel2
             // 
-            this.splitContainer26.Panel2.Controls.Add(this.MotifSurfaciqueGrid);
-            this.splitContainer26.Size = new System.Drawing.Size(1018, 138);
-            this.splitContainer26.SplitterDistance = 20;
-            this.splitContainer26.TabIndex = 1;
+            this.splitContainer20.Panel2.Controls.Add(this.MotifSurfaciqueGrid);
+            this.splitContainer20.Size = new System.Drawing.Size(1018, 105);
+            this.splitContainer20.SplitterDistance = 20;
+            this.splitContainer20.TabIndex = 1;
             // 
             // label42
             // 
@@ -4523,7 +4198,7 @@
             this.MotifSurfaciqueGrid.Location = new System.Drawing.Point(0, 0);
             this.MotifSurfaciqueGrid.Name = "MotifSurfaciqueGrid";
             this.MotifSurfaciqueGrid.Rows.DefaultSize = 15;
-            this.MotifSurfaciqueGrid.Size = new System.Drawing.Size(1018, 114);
+            this.MotifSurfaciqueGrid.Size = new System.Drawing.Size(1018, 81);
             this.MotifSurfaciqueGrid.StyleInfo = resources.GetString("MotifSurfaciqueGrid.StyleInfo");
             this.MotifSurfaciqueGrid.TabIndex = 1;
             // 
@@ -4585,32 +4260,337 @@
             this.CodeTopicBar.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Black;
             this.CodeTopicBar.LinkClick += new C1.Win.C1Command.C1TopicBarClickEventHandler(this.CodeTopicBar_LinkClick);
             // 
-            // MainSplit
+            // SaisieInputSplit
             // 
-            this.MainSplit.BackColor = System.Drawing.Color.DimGray;
-            this.MainSplit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainSplit.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
-            this.MainSplit.Location = new System.Drawing.Point(0, 0);
-            this.MainSplit.Name = "MainSplit";
-            this.MainSplit.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.SaisieInputSplit.BackColor = System.Drawing.Color.DimGray;
+            this.SaisieInputSplit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SaisieInputSplit.Location = new System.Drawing.Point(0, 0);
+            this.SaisieInputSplit.Name = "SaisieInputSplit";
+            this.SaisieInputSplit.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // MainSplit.Panel1
+            // SaisieInputSplit.Panel1
             // 
-            this.MainSplit.Panel1.Controls.Add(this.MenuSplit);
+            this.SaisieInputSplit.Panel1.Controls.Add(this.splitContainer9);
+            this.SaisieInputSplit.Panel1MinSize = 20;
             // 
-            // MainSplit.Panel2
+            // SaisieInputSplit.Panel2
             // 
-            this.MainSplit.Panel2.Controls.Add(this.SaisieInputSplit);
-            this.MainSplit.Size = new System.Drawing.Size(1024, 812);
-            this.MainSplit.SplitterDistance = 510;
-            this.MainSplit.TabIndex = 0;
+            this.SaisieInputSplit.Panel2.Controls.Add(this.SaisieTabControl);
+            this.SaisieInputSplit.Size = new System.Drawing.Size(1024, 315);
+            this.SaisieInputSplit.SplitterDistance = 24;
+            this.SaisieInputSplit.TabIndex = 2;
+            // 
+            // splitContainer9
+            // 
+            this.splitContainer9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer9.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
+            this.splitContainer9.IsSplitterFixed = true;
+            this.splitContainer9.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer9.Name = "splitContainer9";
+            // 
+            // splitContainer9.Panel1
+            // 
+            this.splitContainer9.Panel1.Controls.Add(this.InputPreviewTb);
+            // 
+            // splitContainer9.Panel2
+            // 
+            this.splitContainer9.Panel2.Controls.Add(this.EraseAllBt);
+            this.splitContainer9.Size = new System.Drawing.Size(1024, 24);
+            this.splitContainer9.SplitterDistance = 923;
+            this.splitContainer9.TabIndex = 1;
+            // 
+            // InputPreviewTb
+            // 
+            this.InputPreviewTb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.InputPreviewTb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.InputPreviewTb.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InputPreviewTb.ForeColor = System.Drawing.Color.Black;
+            this.InputPreviewTb.Location = new System.Drawing.Point(0, 0);
+            this.InputPreviewTb.Name = "InputPreviewTb";
+            this.InputPreviewTb.Size = new System.Drawing.Size(923, 22);
+            this.InputPreviewTb.TabIndex = 1;
+            // 
+            // EraseAllBt
+            // 
+            this.EraseAllBt.BackColor = System.Drawing.SystemColors.Control;
+            this.EraseAllBt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EraseAllBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
+            this.EraseAllBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.EraseAllBt.Location = new System.Drawing.Point(0, 0);
+            this.EraseAllBt.Name = "EraseAllBt";
+            this.EraseAllBt.Size = new System.Drawing.Size(97, 24);
+            this.EraseAllBt.TabIndex = 1;
+            this.EraseAllBt.Text = "Tout effacer";
+            this.EraseAllBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.EraseAllBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.EraseAllBt.UseVisualStyleBackColor = true;
+            this.EraseAllBt.Click += new System.EventHandler(this.EraseAllBt_Click);
+            // 
+            // SaisieTabControl
+            // 
+            this.SaisieTabControl.AcceptsCtrlTab = false;
+            this.SaisieTabControl.Controls.Add(this.KeyboardTab);
+            this.SaisieTabControl.Controls.Add(this.ChoiceTab);
+            this.SaisieTabControl.Controls.Add(this.DateTab);
+            this.SaisieTabControl.Controls.Add(this.SectionTab);
+            this.SaisieTabControl.Controls.Add(this.PhotoTab);
+            this.SaisieTabControl.Controls.Add(this.VideoTab);
+            this.SaisieTabControl.Controls.Add(this.AudioTab);
+            this.SaisieTabControl.Controls.Add(this.SchemaTab);
+            this.SaisieTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SaisieTabControl.Location = new System.Drawing.Point(0, 0);
+            this.SaisieTabControl.Name = "SaisieTabControl";
+            this.SaisieTabControl.Size = new System.Drawing.Size(1024, 287);
+            this.SaisieTabControl.TabIndex = 2;
+            this.SaisieTabControl.TabsSpacing = 5;
+            this.SaisieTabControl.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
+            this.SaisieTabControl.VisualStyle = C1.Win.C1Command.VisualStyle.Office2007Black;
+            this.SaisieTabControl.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Black;
+            // 
+            // KeyboardTab
+            // 
+            this.KeyboardTab.BackColor = System.Drawing.Color.DimGray;
+            this.KeyboardTab.Controls.Add(this.virtual_kb1);
+            this.KeyboardTab.Location = new System.Drawing.Point(1, 24);
+            this.KeyboardTab.Name = "KeyboardTab";
+            this.KeyboardTab.Size = new System.Drawing.Size(1022, 262);
+            this.KeyboardTab.TabIndex = 0;
+            this.KeyboardTab.Text = "Clavier";
+            // 
+            // virtual_kb1
+            // 
+            this.virtual_kb1.Location = new System.Drawing.Point(47, 6);
+            this.virtual_kb1.Name = "virtual_kb1";
+            this.virtual_kb1.Size = new System.Drawing.Size(915, 250);
+            this.virtual_kb1.TabIndex = 0;
+            // 
+            // ChoiceTab
+            // 
+            this.ChoiceTab.Controls.Add(this.flowLayoutPanel2);
+            this.ChoiceTab.Location = new System.Drawing.Point(1, 24);
+            this.ChoiceTab.Name = "ChoiceTab";
+            this.ChoiceTab.Size = new System.Drawing.Size(1022, 262);
+            this.ChoiceTab.TabIndex = 1;
+            this.ChoiceTab.Text = "Choix multiples";
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.AutoScroll = true;
+            this.flowLayoutPanel2.AutoSize = true;
+            this.flowLayoutPanel2.BackColor = System.Drawing.SystemColors.Control;
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1022, 262);
+            this.flowLayoutPanel2.TabIndex = 1;
+            // 
+            // DateTab
+            // 
+            this.DateTab.BackColor = System.Drawing.Color.DimGray;
+            this.DateTab.Controls.Add(this.date_selector1);
+            this.DateTab.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateTab.Location = new System.Drawing.Point(1, 24);
+            this.DateTab.Name = "DateTab";
+            this.DateTab.Size = new System.Drawing.Size(1022, 262);
+            this.DateTab.TabIndex = 6;
+            this.DateTab.Text = "Date";
+            // 
+            // date_selector1
+            // 
+            this.date_selector1.Location = new System.Drawing.Point(5, 33);
+            this.date_selector1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.date_selector1.Name = "date_selector1";
+            this.date_selector1.Size = new System.Drawing.Size(1004, 205);
+            this.date_selector1.TabIndex = 0;
+            // 
+            // SectionTab
+            // 
+            this.SectionTab.Controls.Add(this.section_horaire1);
+            this.SectionTab.Location = new System.Drawing.Point(1, 24);
+            this.SectionTab.Name = "SectionTab";
+            this.SectionTab.Size = new System.Drawing.Size(1022, 262);
+            this.SectionTab.TabIndex = 2;
+            this.SectionTab.Text = "Sections";
+            // 
+            // section_horaire1
+            // 
+            this.section_horaire1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.section_horaire1.Location = new System.Drawing.Point(0, 0);
+            this.section_horaire1.Name = "section_horaire1";
+            this.section_horaire1.Size = new System.Drawing.Size(1022, 262);
+            this.section_horaire1.TabIndex = 0;
+            // 
+            // PhotoTab
+            // 
+            this.PhotoTab.Controls.Add(this.photo_select1);
+            this.PhotoTab.Location = new System.Drawing.Point(1, 24);
+            this.PhotoTab.Name = "PhotoTab";
+            this.PhotoTab.Size = new System.Drawing.Size(1022, 262);
+            this.PhotoTab.TabIndex = 3;
+            this.PhotoTab.Text = "Photos";
+            // 
+            // photo_select1
+            // 
+            this.photo_select1.BackColor = System.Drawing.Color.DimGray;
+            this.photo_select1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.photo_select1.Location = new System.Drawing.Point(0, 0);
+            this.photo_select1.Name = "photo_select1";
+            this.photo_select1.Size = new System.Drawing.Size(1022, 262);
+            this.photo_select1.TabIndex = 1;
+            // 
+            // VideoTab
+            // 
+            this.VideoTab.Location = new System.Drawing.Point(1, 24);
+            this.VideoTab.Name = "VideoTab";
+            this.VideoTab.Size = new System.Drawing.Size(1022, 262);
+            this.VideoTab.TabIndex = 4;
+            this.VideoTab.Text = "Vidéos";
+            // 
+            // AudioTab
+            // 
+            this.AudioTab.Location = new System.Drawing.Point(1, 24);
+            this.AudioTab.Name = "AudioTab";
+            this.AudioTab.Size = new System.Drawing.Size(1022, 262);
+            this.AudioTab.TabIndex = 5;
+            this.AudioTab.Text = "Audio";
+            // 
+            // SchemaTab
+            // 
+            this.SchemaTab.Location = new System.Drawing.Point(1, 24);
+            this.SchemaTab.Name = "SchemaTab";
+            this.SchemaTab.Size = new System.Drawing.Size(1022, 262);
+            this.SchemaTab.TabIndex = 7;
+            this.SchemaTab.Text = "Schéma";
+            // 
+            // c1CommandHolder1
+            // 
+            this.c1CommandHolder1.Commands.Add(this.c1CommandMenu1);
+            this.c1CommandHolder1.Commands.Add(this.c1CommandMenu2);
+            this.c1CommandHolder1.Commands.Add(this.c1Command1);
+            this.c1CommandHolder1.Commands.Add(this.c1Command2);
+            this.c1CommandHolder1.Commands.Add(this.c1Command3);
+            this.c1CommandHolder1.Commands.Add(this.c1Command4);
+            this.c1CommandHolder1.Commands.Add(this.c1Command5);
+            this.c1CommandHolder1.Commands.Add(this.c1Command6);
+            this.c1CommandHolder1.Commands.Add(this.c1Command7);
+            this.c1CommandHolder1.Commands.Add(this.c1Command8);
+            this.c1CommandHolder1.Commands.Add(this.c1Command9);
+            this.c1CommandHolder1.Owner = this;
+            // 
+            // c1CommandMenu1
+            // 
+            this.c1CommandMenu1.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1CommandLink3});
+            this.c1CommandMenu1.HideNonRecentLinks = false;
+            this.c1CommandMenu1.Name = "c1CommandMenu1";
+            this.c1CommandMenu1.ShowToolTips = true;
+            this.c1CommandMenu1.Text = "&File";
+            this.c1CommandMenu1.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
+            // 
+            // c1CommandLink3
+            // 
+            this.c1CommandLink3.Text = "New Command";
+            // 
+            // c1CommandMenu2
+            // 
+            this.c1CommandMenu2.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1CommandLink5});
+            this.c1CommandMenu2.HideNonRecentLinks = false;
+            this.c1CommandMenu2.Name = "c1CommandMenu2";
+            this.c1CommandMenu2.ShowToolTips = true;
+            this.c1CommandMenu2.Text = "&File";
+            this.c1CommandMenu2.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
+            // 
+            // c1CommandLink5
+            // 
+            this.c1CommandLink5.Text = "New Command";
+            // 
+            // c1Command1
+            // 
+            this.c1Command1.Name = "c1Command1";
+            this.c1Command1.Text = "Identification de l\'organisme de contrôle";
+            // 
+            // c1Command2
+            // 
+            this.c1Command2.Name = "c1Command2";
+            this.c1Command2.Text = "Identification de l\'organisme de contrôle";
+            // 
+            // c1Command3
+            // 
+            this.c1Command3.Name = "c1Command3";
+            this.c1Command3.Text = "Identification de l\'ouvrage inspecté";
+            // 
+            // c1Command4
+            // 
+            this.c1Command4.Name = "c1Command4";
+            this.c1Command4.Text = "Eléments principaux de l\'ouvrage inspecté";
+            // 
+            // c1Command5
+            // 
+            this.c1Command5.Image = ((System.Drawing.Image)(resources.GetObject("c1Command5.Image")));
+            this.c1Command5.Name = "c1Command5";
+            this.c1Command5.Text = "&New";
+            // 
+            // c1Command6
+            // 
+            this.c1Command6.Image = ((System.Drawing.Image)(resources.GetObject("c1Command6.Image")));
+            this.c1Command6.Name = "c1Command6";
+            this.c1Command6.Text = "&Open";
+            // 
+            // c1Command7
+            // 
+            this.c1Command7.Image = ((System.Drawing.Image)(resources.GetObject("c1Command7.Image")));
+            this.c1Command7.Name = "c1Command7";
+            this.c1Command7.Text = "&Close";
+            // 
+            // c1Command8
+            // 
+            this.c1Command8.Image = ((System.Drawing.Image)(resources.GetObject("c1Command8.Image")));
+            this.c1Command8.Name = "c1Command8";
+            this.c1Command8.Text = "&Save";
+            // 
+            // c1Command9
+            // 
+            this.c1Command9.Image = ((System.Drawing.Image)(resources.GetObject("c1Command9.Image")));
+            this.c1Command9.Name = "c1Command9";
+            this.c1Command9.Text = "&Print...";
+            // 
+            // openSVFDialog
+            // 
+            this.openSVFDialog.Filter = " SVF files (*.svf)|*.svf|All files (*.*)|*.*";
+            // 
+            // openXMLDialog
+            // 
+            this.openXMLDialog.Filter = " XML files (*.xml)|*.xml|All files (*.*)|*.*";
+            // 
+            // FolderDialog
+            // 
+            this.FolderDialog.ShowNewFolderButton = false;
+            // 
+            // c1PdfRapport
+            // 
+            this.c1PdfRapport.PaperKind = System.Drawing.Printing.PaperKind.A4;
+            // 
+            // openIMGDialog
+            // 
+            this.openIMGDialog.Filter = " JPG files (*.jpg)|*.jpg| PNG files (*.png)|*.png| GIF files (*.gif)|*.gif|All fi" +
+                "les (*.*)|*.*";
+            // 
+            // ChooseColorDialog
+            // 
+            this.ChooseColorDialog.AnyColor = true;
+            // 
+            // openAllTypeDialog
+            // 
+            this.openAllTypeDialog.Filter = "All files (*.*)|*.*";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(1024, 812);
+            this.ClientSize = new System.Drawing.Size(1024, 768);
             this.Controls.Add(this.MainSplit);
             this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "MainForm";
@@ -4619,17 +4599,9 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.Resize += new System.EventHandler(this.MainForm_Resize);
-            ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).EndInit();
-            this.SaisieInputSplit.Panel2.ResumeLayout(false);
-            this.SaisieInputSplit.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.SaisieTabControl)).EndInit();
-            this.SaisieTabControl.ResumeLayout(false);
-            this.KeyboardTab.ResumeLayout(false);
-            this.ChoiceTab.ResumeLayout(false);
-            this.ChoiceTab.PerformLayout();
-            this.DateTab.ResumeLayout(false);
-            this.SectionTab.ResumeLayout(false);
-            this.PhotoTab.ResumeLayout(false);
+            this.MainSplit.Panel1.ResumeLayout(false);
+            this.MainSplit.Panel2.ResumeLayout(false);
+            this.MainSplit.ResumeLayout(false);
             this.MenuSplit.Panel1.ResumeLayout(false);
             this.MenuSplit.Panel1.PerformLayout();
             this.MenuSplit.Panel2.ResumeLayout(false);
@@ -4639,13 +4611,6 @@
             this.DataSplit.Panel1.ResumeLayout(false);
             this.DataSplit.Panel2.ResumeLayout(false);
             this.DataSplit.ResumeLayout(false);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            this.splitContainer1.ResumeLayout(false);
-            this.splitContainer27.Panel1.ResumeLayout(false);
-            this.splitContainer27.Panel1.PerformLayout();
-            this.splitContainer27.Panel2.ResumeLayout(false);
-            this.splitContainer27.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MainDockingTab)).EndInit();
             this.MainDockingTab.ResumeLayout(false);
             this.InspectionTab.ResumeLayout(false);
@@ -4699,20 +4664,20 @@
             this.OuvrageToolsPanel.ResumeLayout(false);
             this.OuvrageToolsPanel.PerformLayout();
             this.IdentificationTab.ResumeLayout(false);
-            this.splitContainer3.Panel1.ResumeLayout(false);
-            this.splitContainer3.Panel2.ResumeLayout(false);
-            this.splitContainer3.ResumeLayout(false);
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.IdentificationTopicBar)).EndInit();
             this.IdFormSplit.Panel1.ResumeLayout(false);
             this.IdFormSplit.Panel1.PerformLayout();
             this.IdFormSplit.Panel2.ResumeLayout(false);
             this.IdFormSplit.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.splitContainer4.Panel1.ResumeLayout(false);
-            this.splitContainer4.Panel1.PerformLayout();
-            this.splitContainer4.Panel2.ResumeLayout(false);
-            this.splitContainer4.Panel2.PerformLayout();
-            this.splitContainer4.ResumeLayout(false);
+            this.splitContainer3.Panel1.ResumeLayout(false);
+            this.splitContainer3.Panel1.PerformLayout();
+            this.splitContainer3.Panel2.ResumeLayout(false);
+            this.splitContainer3.Panel2.PerformLayout();
+            this.splitContainer3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.IdFacultatifPb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IdDesactivePb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IdDifferePb)).EndInit();
@@ -4766,35 +4731,35 @@
             this.XmlItemsSplit.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.XmlObsItemGrid)).EndInit();
             this.XmlIdTab.ResumeLayout(false);
-            this.splitContainer7.Panel1.ResumeLayout(false);
-            this.splitContainer7.Panel1.PerformLayout();
-            this.splitContainer7.Panel2.ResumeLayout(false);
-            this.splitContainer7.ResumeLayout(false);
+            this.splitContainer4.Panel1.ResumeLayout(false);
+            this.splitContainer4.Panel1.PerformLayout();
+            this.splitContainer4.Panel2.ResumeLayout(false);
+            this.splitContainer4.ResumeLayout(false);
             this.ToolStripIdCode.ResumeLayout(false);
             this.ToolStripIdCode.PerformLayout();
+            this.splitContainer7.Panel1.ResumeLayout(false);
+            this.splitContainer7.Panel2.ResumeLayout(false);
+            this.splitContainer7.ResumeLayout(false);
             this.splitContainer8.Panel1.ResumeLayout(false);
+            this.splitContainer8.Panel1.PerformLayout();
             this.splitContainer8.Panel2.ResumeLayout(false);
             this.splitContainer8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.XmlIdCodeGrid)).EndInit();
             this.splitContainer10.Panel1.ResumeLayout(false);
             this.splitContainer10.Panel1.PerformLayout();
             this.splitContainer10.Panel2.ResumeLayout(false);
             this.splitContainer10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.XmlIdCodeGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.XmlIdItemGrid)).EndInit();
+            this.XmlSectionTab.ResumeLayout(false);
             this.splitContainer11.Panel1.ResumeLayout(false);
             this.splitContainer11.Panel1.PerformLayout();
             this.splitContainer11.Panel2.ResumeLayout(false);
             this.splitContainer11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.XmlIdItemGrid)).EndInit();
-            this.XmlSectionTab.ResumeLayout(false);
-            this.splitContainer12.Panel1.ResumeLayout(false);
-            this.splitContainer12.Panel1.PerformLayout();
-            this.splitContainer12.Panel2.ResumeLayout(false);
-            this.splitContainer12.ResumeLayout(false);
             this.ToolStripSection.ResumeLayout(false);
             this.ToolStripSection.PerformLayout();
-            this.splitContainer13.Panel1.ResumeLayout(false);
-            this.splitContainer13.Panel2.ResumeLayout(false);
-            this.splitContainer13.ResumeLayout(false);
+            this.splitContainer12.Panel1.ResumeLayout(false);
+            this.splitContainer12.Panel2.ResumeLayout(false);
+            this.splitContainer12.ResumeLayout(false);
             this.splitContainer21.Panel1.ResumeLayout(false);
             this.splitContainer21.Panel1.PerformLayout();
             this.splitContainer21.Panel2.ResumeLayout(false);
@@ -4809,15 +4774,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab2)).EndInit();
             this.c1DockingTab2.ResumeLayout(false);
             this.c1DockingTabPage3.ResumeLayout(false);
-            this.splitContainer14.Panel1.ResumeLayout(false);
-            this.splitContainer14.Panel1.PerformLayout();
-            this.splitContainer14.Panel2.ResumeLayout(false);
-            this.splitContainer14.ResumeLayout(false);
+            this.splitContainer13.Panel1.ResumeLayout(false);
+            this.splitContainer13.Panel1.PerformLayout();
+            this.splitContainer13.Panel2.ResumeLayout(false);
+            this.splitContainer13.ResumeLayout(false);
             this.ToolStripAutoCad.ResumeLayout(false);
             this.ToolStripAutoCad.PerformLayout();
-            this.splitContainer15.Panel1.ResumeLayout(false);
-            this.splitContainer15.Panel2.ResumeLayout(false);
-            this.splitContainer15.ResumeLayout(false);
+            this.splitContainer14.Panel1.ResumeLayout(false);
+            this.splitContainer14.Panel2.ResumeLayout(false);
+            this.splitContainer14.ResumeLayout(false);
             this.splitContainer23.Panel1.ResumeLayout(false);
             this.splitContainer23.Panel1.PerformLayout();
             this.splitContainer23.Panel2.ResumeLayout(false);
@@ -4829,32 +4794,32 @@
             this.splitContainer24.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.XmlAutocadItemGrid)).EndInit();
             this.c1DockingTabPage4.ResumeLayout(false);
-            this.splitContainer16.Panel1.ResumeLayout(false);
-            this.splitContainer16.Panel1.PerformLayout();
-            this.splitContainer16.Panel2.ResumeLayout(false);
-            this.splitContainer16.ResumeLayout(false);
+            this.splitContainer15.Panel1.ResumeLayout(false);
+            this.splitContainer15.Panel1.PerformLayout();
+            this.splitContainer15.Panel2.ResumeLayout(false);
+            this.splitContainer15.ResumeLayout(false);
             this.ToolStripMotif.ResumeLayout(false);
             this.ToolStripMotif.PerformLayout();
+            this.splitContainer16.Panel1.ResumeLayout(false);
+            this.splitContainer16.Panel2.ResumeLayout(false);
+            this.splitContainer16.ResumeLayout(false);
             this.splitContainer17.Panel1.ResumeLayout(false);
+            this.splitContainer17.Panel1.PerformLayout();
             this.splitContainer17.Panel2.ResumeLayout(false);
             this.splitContainer17.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.MotifPonctuelGrid)).EndInit();
             this.splitContainer18.Panel1.ResumeLayout(false);
-            this.splitContainer18.Panel1.PerformLayout();
             this.splitContainer18.Panel2.ResumeLayout(false);
             this.splitContainer18.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.MotifPonctuelGrid)).EndInit();
             this.splitContainer19.Panel1.ResumeLayout(false);
+            this.splitContainer19.Panel1.PerformLayout();
             this.splitContainer19.Panel2.ResumeLayout(false);
             this.splitContainer19.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.MotifLineaireGrid)).EndInit();
             this.splitContainer20.Panel1.ResumeLayout(false);
             this.splitContainer20.Panel1.PerformLayout();
             this.splitContainer20.Panel2.ResumeLayout(false);
             this.splitContainer20.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.MotifLineaireGrid)).EndInit();
-            this.splitContainer26.Panel1.ResumeLayout(false);
-            this.splitContainer26.Panel1.PerformLayout();
-            this.splitContainer26.Panel2.ResumeLayout(false);
-            this.splitContainer26.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MotifSurfaciqueGrid)).EndInit();
             this.CodeObsSplit.Panel1.ResumeLayout(false);
             this.CodeObsSplit.Panel1.PerformLayout();
@@ -4862,126 +4827,319 @@
             this.CodeObsSplit.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CodeTopicBar)).EndInit();
-            this.MainSplit.Panel1.ResumeLayout(false);
-            this.MainSplit.Panel2.ResumeLayout(false);
-            this.MainSplit.ResumeLayout(false);
+            this.SaisieInputSplit.Panel1.ResumeLayout(false);
+            this.SaisieInputSplit.Panel2.ResumeLayout(false);
+            this.SaisieInputSplit.ResumeLayout(false);
+            this.splitContainer9.Panel1.ResumeLayout(false);
+            this.splitContainer9.Panel1.PerformLayout();
+            this.splitContainer9.Panel2.ResumeLayout(false);
+            this.splitContainer9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.SaisieTabControl)).EndInit();
+            this.SaisieTabControl.ResumeLayout(false);
+            this.KeyboardTab.ResumeLayout(false);
+            this.ChoiceTab.ResumeLayout(false);
+            this.ChoiceTab.PerformLayout();
+            this.DateTab.ResumeLayout(false);
+            this.SectionTab.ResumeLayout(false);
+            this.PhotoTab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        public C1.Win.C1Command.C1CommandHolder c1CommandHolder1;
-        public C1.Win.C1Command.C1CommandMenu c1CommandMenu1;
-        public C1.Win.C1Command.C1CommandLink c1CommandLink3;
-        public C1.Win.C1Command.C1CommandMenu c1CommandMenu2;
-        public C1.Win.C1Command.C1CommandLink c1CommandLink5;
-        public C1.Win.C1Command.C1Command c1Command1;
-        public C1.Win.C1Command.C1Command c1Command2;
-        public C1.Win.C1Command.C1Command c1Command3;
-        public C1.Win.C1Command.C1Command c1Command4;
-        public C1.Win.C1Command.C1Command c1Command5;
-        public C1.Win.C1Command.C1Command c1Command6;
-        public C1.Win.C1Command.C1Command c1Command7;
-        public C1.Win.C1Command.C1Command c1Command8;
-        public C1.Win.C1Command.C1Command c1Command9;
-        public System.Windows.Forms.OpenFileDialog openSVFDialog;
-        public System.Windows.Forms.OpenFileDialog openXMLDialog;
-        public System.Windows.Forms.FolderBrowserDialog FolderDialog;
-        public C1.C1Pdf.C1PdfDocument c1PdfRapport;
-        public System.Windows.Forms.OpenFileDialog openIMGDialog;
-        public System.Windows.Forms.ColorDialog ChooseColorDialog;
-        public System.Windows.Forms.OpenFileDialog openAllTypeDialog;
         public System.Windows.Forms.SplitContainer MainSplit;
-        public System.Windows.Forms.SplitContainer MenuSplit;
-        public System.Windows.Forms.ToolStrip MainformToolStrip;
-        public System.Windows.Forms.ToolStripLabel toolStripLabel3;
-        public System.Windows.Forms.ToolStripLabel CurrentOuvrageNameLb;
-        public System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        public System.Windows.Forms.ToolStripLabel CurrentOuvrageTypeLb;
-        public System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
-        public System.Windows.Forms.ToolStripLabel toolStripLabel8;
-        public System.Windows.Forms.ToolStripLabel CurrentOuvrageFormeLb;
-        public System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        public System.Windows.Forms.ToolStripLabel toolStripLabel7;
-        public System.Windows.Forms.ToolStripLabel LineaireStripLabel;
-        public System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
-        public System.Windows.Forms.ToolStripLabel ObsToolsLb;
-        public System.Windows.Forms.ToolStripButton ObsCompactGridBt;
-        public System.Windows.Forms.ToolStripButton ObsDeplieGridBt;
-        public System.Windows.Forms.ToolStripSeparator ObsDiffereSp;
-        public System.Windows.Forms.ToolStripLabel ObsDiffereLb;
-        public System.Windows.Forms.ToolStripLabel ObsDiffereCountLb;
-        public System.Windows.Forms.SplitContainer DataSplit;
-        public System.Windows.Forms.SplitContainer splitContainer1;
-        public System.Windows.Forms.SplitContainer splitContainer27;
-        public System.Windows.Forms.TextBox InputPreviewTb;
-        public System.Windows.Forms.Button EraseAllBt;
+        private System.Windows.Forms.SplitContainer MenuSplit;
+        private C1.Win.C1Command.C1TopicBar CodeTopicBar;
+        private C1.Win.C1Command.C1CommandHolder c1CommandHolder1;
+        private C1.Win.C1Command.C1CommandMenu c1CommandMenu1;
+        private C1.Win.C1Command.C1CommandLink c1CommandLink3;
+        private C1.Win.C1Command.C1CommandMenu c1CommandMenu2;
+        private C1.Win.C1Command.C1CommandLink c1CommandLink5;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private C1.Win.C1Command.C1Command c1Command1;
+        private C1.Win.C1Command.C1Command c1Command2;
+        private C1.Win.C1Command.C1Command c1Command3;
+        private C1.Win.C1Command.C1Command c1Command4;
+        private C1.Win.C1Command.C1Command c1Command5;
+        private C1.Win.C1Command.C1Command c1Command6;
+        private C1.Win.C1Command.C1Command c1Command7;
+        private C1.Win.C1Command.C1Command c1Command8;
+        private C1.Win.C1Command.C1Command c1Command9;
+        private System.Windows.Forms.ToolStrip MainformToolStrip;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        public System.Windows.Forms.FlowLayoutPanel Identification_Flp;
+        private System.Windows.Forms.SplitContainer IdFormSplit;
+        private C1.Win.C1Command.C1DockingTabPage InspectionTab;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.OpenFileDialog openSVFDialog;
+        public System.Windows.Forms.SplitContainer SaisieInputSplit;
+        private System.Windows.Forms.SplitContainer InspectionSplit;
+        private System.Windows.Forms.SplitContainer splitContainer2;
+        public System.Windows.Forms.Label IdFormLabel;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        public C1.Win.C1FlexGrid.C1FlexGrid ObservationGrid;
+        private System.Windows.Forms.SplitContainer CodeObsSplit;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label18;
         public C1.Win.C1Command.C1DockingTab MainDockingTab;
-        public C1.Win.C1Command.C1DockingTabPage InspectionTab;
-        public System.Windows.Forms.SplitContainer InspectionSplit;
-        public System.Windows.Forms.SplitContainer splitContainer2;
-        public C1.Win.C1Command.C1DockingTab MenuDockingTab;
-        public C1.Win.C1Command.C1DockingTabPage chargementTab;
-        public System.Windows.Forms.GroupBox groupBox1;
-        public System.Windows.Forms.Button Btn_Exporter;
-        public System.Windows.Forms.Button OpenSVFButton;
+        public C1.Win.C1Command.C1DockingTabPage RenseignementTab;
+        public C1.Win.C1Command.C1DockingTab CaracDockingTab;
+        public C1.Win.C1Command.C1DockingTabPage ObservationTab;
+        public C1.Win.C1Command.C1DockingTabPage IdentificationTab;
+        public System.Windows.Forms.SplitContainer DataSplit;
+        private System.Windows.Forms.SplitContainer splitContainer3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.PictureBox IdFacultatifPb;
+        public System.Windows.Forms.PictureBox IdDesactivePb;
+        public System.Windows.Forms.PictureBox IdDifferePb;
+        public System.Windows.Forms.PictureBox IdObligatoirePb;
+        private System.Windows.Forms.Button IdentificationValidBt;
+        private C1.Win.C1Command.C1DockingTabPage ParamTab;
+        private C1.Win.C1Command.C1DockingTab ParamDockingTab;
+        private C1.Win.C1Command.C1DockingTabPage XmlObsTab;
+        public C1.Win.C1FlexGrid.C1FlexGrid XmlObsCodesGrid;
+        public C1.Win.C1FlexGrid.C1FlexGrid XmlObsCaracGrid;
+        public C1.Win.C1FlexGrid.C1FlexGrid XmlObsItemGrid;
+        public System.Windows.Forms.SplitContainer XmlParamSplit;
+        private System.Windows.Forms.SplitContainer splitContainer5;
+        public System.Windows.Forms.SplitContainer XmlCodesSplit;
+        private System.Windows.Forms.SplitContainer splitContainer6;
+        public System.Windows.Forms.SplitContainer XmlCaracSplit;
+        public System.Windows.Forms.SplitContainer XmlItemsSplit;
+        private System.Windows.Forms.ToolStrip ToolStripObsCode;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private C1.Win.C1Command.C1DockingTabPage XmlIdTab;
+        public System.Windows.Forms.SplitContainer splitContainer4;
+        private System.Windows.Forms.ToolStrip ToolStripIdCode;
+        private System.Windows.Forms.SplitContainer splitContainer7;
+        public System.Windows.Forms.SplitContainer splitContainer8;
+        private System.Windows.Forms.Label label9;
+        public C1.Win.C1FlexGrid.C1FlexGrid XmlIdCodeGrid;
+        public System.Windows.Forms.SplitContainer splitContainer10;
+        private System.Windows.Forms.Label label10;
+        public C1.Win.C1FlexGrid.C1FlexGrid XmlIdItemGrid;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private C1.Win.C1Command.C1DockingTabPage XmlPathTab;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label19;
+        public System.Windows.Forms.TextBox XmlIdRegTb;
+        public System.Windows.Forms.TextBox XmlIdCanaTb;
+        public System.Windows.Forms.TextBox XmlFamilleCodeIdTb;
+        public System.Windows.Forms.TextBox XmlGroupCodeIdTb;
+        public System.Windows.Forms.TextBox XmlObsRegTb;
+        public System.Windows.Forms.TextBox XmlObsCanaTb;
+        private System.Windows.Forms.GroupBox groupBox3;
+        public System.Windows.Forms.Button XmlObsRegBt;
+        public System.Windows.Forms.Button XmlObsCanaBt;
+        public System.Windows.Forms.Button XmlIdRegBt;
+        public System.Windows.Forms.Button XmlIdCanaBt;
+        public System.Windows.Forms.Button XmlFamilleCodeIdBt;
+        public System.Windows.Forms.Button XmlGroupeCodeIdBt;
+        public System.Windows.Forms.OpenFileDialog openXMLDialog;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.GroupBox groupBox8;
+        public System.Windows.Forms.Button XmlSectionOuvrageBt;
+        private System.Windows.Forms.Label label22;
+        public System.Windows.Forms.TextBox XmlSectionOuvrageTb;
+        public System.Windows.Forms.Button XmlSectionImgDirBt;
+        private System.Windows.Forms.Label label23;
+        public System.Windows.Forms.TextBox XmlSectionImgDirTb;
+        public System.Windows.Forms.FolderBrowserDialog FolderDialog;
+        public System.Windows.Forms.Label SVFLabel;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel3;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.SplitContainer splitContainer9;
+        private C1.C1Pdf.C1PdfDocument c1PdfRapport;
+        public System.Windows.Forms.OpenFileDialog openIMGDialog;
+        private C1.Win.C1Command.C1DockingTabPage XmlSectionTab;
+        public System.Windows.Forms.SplitContainer splitContainer11;
+        private System.Windows.Forms.ToolStrip ToolStripSection;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel4;
+        public C1.Win.C1FlexGrid.C1FlexGrid XmlSectionGrid;
+        private System.Windows.Forms.SplitContainer splitContainer12;
+        public C1.Win.C1FlexGrid.C1FlexGrid XmlHeureGrid;
+        private C1.Win.C1Command.C1DockingTabPage XmlAutocadTab;
+        public System.Windows.Forms.ColorDialog ChooseColorDialog;
+        private C1.Win.C1Command.C1DockingTab c1DockingTab2;
+        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage3;
+        public System.Windows.Forms.SplitContainer splitContainer13;
+        private System.Windows.Forms.ToolStrip ToolStripAutoCad;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel5;
+        private System.Windows.Forms.SplitContainer splitContainer14;
+        public C1.Win.C1FlexGrid.C1FlexGrid XmlAutocadGrid;
+        public C1.Win.C1FlexGrid.C1FlexGrid XmlAutocadItemGrid;
+        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage4;
+        public System.Windows.Forms.SplitContainer splitContainer15;
+        private System.Windows.Forms.ToolStrip ToolStripMotif;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel6;
+        private System.Windows.Forms.SplitContainer splitContainer16;
+        public System.Windows.Forms.SplitContainer splitContainer17;
+        private System.Windows.Forms.Label label30;
+        public C1.Win.C1FlexGrid.C1FlexGrid MotifPonctuelGrid;
+        private System.Windows.Forms.SplitContainer splitContainer18;
+        public System.Windows.Forms.SplitContainer splitContainer19;
+        private System.Windows.Forms.Label label31;
+        public C1.Win.C1FlexGrid.C1FlexGrid MotifLineaireGrid;
+        public System.Windows.Forms.SplitContainer splitContainer20;
+        private System.Windows.Forms.Label label32;
+        public C1.Win.C1FlexGrid.C1FlexGrid MotifSurfaciqueGrid;
+        private System.Windows.Forms.GroupBox groupBox11;
+        public System.Windows.Forms.Button XmlMotifBt;
+        private System.Windows.Forms.Label label34;
+        public System.Windows.Forms.TextBox XmlMotifTb;
+        private System.Windows.Forms.SplitContainer splitContainer21;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.SplitContainer splitContainer22;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.SplitContainer splitContainer23;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.SplitContainer splitContainer24;
+        private System.Windows.Forms.Label label37;
+        public System.Windows.Forms.Button XmlPonctuelAddValueBt;
+        public System.Windows.Forms.TextBox XmlPonctuelAddValueTb;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        public System.Windows.Forms.Button XmlLineaireAddValueBt;
+        public System.Windows.Forms.TextBox XmlLineaireAddValueTb;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label43;
+        public System.Windows.Forms.Button XmlSurfaciqueAddValueBt;
+        public System.Windows.Forms.TextBox XmlSurfaciqueAddValueTb;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label45;
+        public System.Windows.Forms.Button XmlSectionAddBt;
+        public System.Windows.Forms.TextBox XmlSectionAddTb;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label47;
+        public System.Windows.Forms.Button XmlHeureAddBt;
+        public System.Windows.Forms.TextBox XmlHeureAddTb;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label53;
+        public System.Windows.Forms.Button XmlObsCodeAddValueBt;
+        public System.Windows.Forms.TextBox XmlObsCodeAddValueTb;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
+        public System.Windows.Forms.Button XmlObsItemAddValueBt;
+        public System.Windows.Forms.TextBox XmlObsItemAddValueTb;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label49;
+        public System.Windows.Forms.Button XmlIdCodeAddValueBt;
+        public System.Windows.Forms.TextBox XmlIdCodeAddValueTb;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        public System.Windows.Forms.Button XmlIdItemAddValueBt;
+        public System.Windows.Forms.TextBox XmlIdItemAddValueTb;
+        public System.Windows.Forms.Button XmlPonctuelDelValueBt;
+        public System.Windows.Forms.Button XmlLineaireDelValueBt;
+        public System.Windows.Forms.Button XmlSurfaciqueDelValueBt;
+        private System.Windows.Forms.GroupBox groupBox12;
+        public System.Windows.Forms.Button FileHachureBt;
+        private System.Windows.Forms.Label label59;
+        public System.Windows.Forms.TextBox FileHachureTb;
+        public System.Windows.Forms.Button FileLigneBt;
+        private System.Windows.Forms.Label label60;
+        public System.Windows.Forms.TextBox FileLigneTb;
+        public System.Windows.Forms.Button FileSymboleBt;
+        private System.Windows.Forms.Label label54;
+        public System.Windows.Forms.TextBox FileSymboleTb;
+        public System.Windows.Forms.OpenFileDialog openAllTypeDialog;
+        private System.Windows.Forms.Button CloseInspectionBt;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel7;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel8;
+        public System.Windows.Forms.Button XmlObsCodeDelValueBt;
+        public System.Windows.Forms.Button XmlObsItemDelValueBt;
+        public System.Windows.Forms.Button XmlIdCodeDelValueBt;
+        public System.Windows.Forms.Button XmlIdItemDelValueBt;
+        public C1.Win.C1Command.C1TopicBar IdentificationTopicBar;
+        public System.Windows.Forms.SplitContainer splitContainer25;
+        public System.Windows.Forms.Panel OuvrageToolsPanel;
+        public System.Windows.Forms.Button SaveOuvrageOrderBt;
+        public System.Windows.Forms.Button DeleteOuvrageBt;
+        public System.Windows.Forms.Button OuvrageMoveDownBt;
+        public System.Windows.Forms.Button OuvrageMoveUpBt;
+        public System.Windows.Forms.Button CloneOuvrageBt;
+        public C1.Win.C1List.C1List OuvrageList;
+        private C1.Win.C1Command.C1DockingTab MenuDockingTab;
+        private C1.Win.C1Command.C1DockingTabPage chargementTab;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button OpenSVFButton;
         public System.Windows.Forms.TextBox openSVFTb;
-        public System.Windows.Forms.Label label26;
-        public System.Windows.Forms.PictureBox pictureBox8;
-        public System.Windows.Forms.GroupBox groupBox9;
-        public System.Windows.Forms.Button Folder_New_Inspection;
-        public System.Windows.Forms.Button NewInspectionBt;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.Button NewInspectionBt;
         public System.Windows.Forms.TextBox NewInspectionPathTb;
-        public System.Windows.Forms.Label label24;
-        public System.Windows.Forms.PictureBox pictureBox7;
-        public System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Label label25;
         public System.Windows.Forms.TextBox NewInspectionNameTb;
         public System.Windows.Forms.GroupBox AddOuvrageGp;
-        public System.Windows.Forms.PictureBox pictureBox6;
-        public System.Windows.Forms.Label label5;
-        public System.Windows.Forms.Label label17;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label17;
         public System.Windows.Forms.TextBox OuvrageNomTb;
-        public System.Windows.Forms.Button NewOuvrageBt;
+        private System.Windows.Forms.Button NewOuvrageBt;
         public System.Windows.Forms.ComboBox OuvrageFormeCb;
         public System.Windows.Forms.ComboBox OuvrageTypeCb;
-        public System.Windows.Forms.Label label16;
-        public C1.Win.C1Command.C1DockingTabPage InformationTab;
+        private System.Windows.Forms.Label label16;
+        private C1.Win.C1Command.C1DockingTabPage InformationTab;
         public System.Windows.Forms.GroupBox TypeOuvrageGb;
-        public System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox4;
         public System.Windows.Forms.CheckBox cb_regard;
         public System.Windows.Forms.CheckBox cb_branchement;
         public System.Windows.Forms.CheckBox cb_troncon;
-        public System.Windows.Forms.GroupBox groupBox6;
-        public System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.PictureBox pictureBox3;
         public System.Windows.Forms.Label obs_nb_label;
         public System.Windows.Forms.Label obs_name_label;
-        public System.Windows.Forms.Label label15;
-        public System.Windows.Forms.Label label14;
-        public C1.Win.C1Command.C1DockingTabPage ReportTab;
-        public System.Windows.Forms.GroupBox groupBox10;
-        public System.Windows.Forms.Button SaveReportParamBt;
-        public System.Windows.Forms.Label label29;
-        public System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private C1.Win.C1Command.C1DockingTabPage ReportTab;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.Button SaveReportParamBt;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label28;
         public System.Windows.Forms.TextBox ReportTxtTb;
         public System.Windows.Forms.PictureBox ReportImgPb;
         public System.Windows.Forms.TextBox ReportImgTb;
-        public System.Windows.Forms.GroupBox groupBox5;
-        public System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.PictureBox pictureBox10;
         public System.Windows.Forms.CheckBox SyntCb;
         public System.Windows.Forms.CheckBox ObsCb;
         public System.Windows.Forms.CheckBox IdCb;
         public System.Windows.Forms.Label ouvrageLb;
         public System.Windows.Forms.Button GenerateReportBt;
-        public C1.Win.C1Command.C1DockingTabPage AutocadTab;
-        public System.Windows.Forms.GroupBox groupBox13;
-        public System.Windows.Forms.PictureBox pictureBox9;
+        private C1.Win.C1Command.C1DockingTabPage AutocadTab;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.PictureBox pictureBox9;
         public System.Windows.Forms.CheckBox V2008Cb;
         public System.Windows.Forms.CheckBox V2007Cb;
         public System.Windows.Forms.CheckBox V2006Cb;
-        public System.Windows.Forms.Button AutocadGenerateBt;
+        private System.Windows.Forms.Button AutocadGenerateBt;
         public C1.Win.C1Command.C1DockingTabPage AboutTab;
-        public System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.RichTextBox richTextBox1;
         public System.Windows.Forms.PictureBox pictureBox11;
         public System.Windows.Forms.Label labelnumcompil;
@@ -4989,214 +5147,7 @@
         public System.Windows.Forms.Label labeldateversion;
         public System.Windows.Forms.Label label27;
         public System.Windows.Forms.Label label55;
-        public System.Windows.Forms.SplitContainer splitContainer25;
-        public C1.Win.C1List.C1List OuvrageList;
-        public System.Windows.Forms.Panel OuvrageToolsPanel;
-        public System.Windows.Forms.Button SaveOuvrageOrderBt;
-        public System.Windows.Forms.Button DeleteOuvrageBt;
-        public System.Windows.Forms.Button OuvrageMoveDownBt;
-        public System.Windows.Forms.Button OuvrageMoveUpBt;
-        public System.Windows.Forms.Button CloneOuvrageBt;
-        public C1.Win.C1Command.C1DockingTabPage IdentificationTab;
-        public System.Windows.Forms.SplitContainer splitContainer3;
-        public C1.Win.C1Command.C1TopicBar IdentificationTopicBar;
-        public System.Windows.Forms.SplitContainer IdFormSplit;
-        public System.Windows.Forms.Button IdentificationValidBt;
-        public System.Windows.Forms.PictureBox pictureBox1;
-        public System.Windows.Forms.Label IdFormLabel;
-        public System.Windows.Forms.SplitContainer splitContainer4;
-        public System.Windows.Forms.FlowLayoutPanel Identification_Flp;
-        public System.Windows.Forms.Label label4;
-        public System.Windows.Forms.PictureBox IdFacultatifPb;
-        public System.Windows.Forms.Label label3;
-        public System.Windows.Forms.PictureBox IdDesactivePb;
-        public System.Windows.Forms.Label label2;
-        public System.Windows.Forms.PictureBox IdDifferePb;
-        public System.Windows.Forms.Label label1;
-        public System.Windows.Forms.PictureBox IdObligatoirePb;
-        public C1.Win.C1Command.C1DockingTabPage ObservationTab;
-        public C1.Win.C1FlexGrid.C1FlexGrid ObservationGrid;
-        public C1.Win.C1Command.C1DockingTabPage RenseignementTab;
-        public C1.Win.C1Command.C1DockingTab CaracDockingTab;
-        public C1.Win.C1Command.C1DockingTabPage ParamTab;
-        public C1.Win.C1Command.C1DockingTab ParamDockingTab;
-        public C1.Win.C1Command.C1DockingTabPage XmlPathTab;
-        public System.Windows.Forms.GroupBox groupBox12;
-        public System.Windows.Forms.Button FileSymboleBt;
-        public System.Windows.Forms.Label label54;
-        public System.Windows.Forms.TextBox FileSymboleTb;
-        public System.Windows.Forms.Button FileHachureBt;
-        public System.Windows.Forms.Label label59;
-        public System.Windows.Forms.TextBox FileHachureTb;
-        public System.Windows.Forms.Button FileLigneBt;
-        public System.Windows.Forms.Label label60;
-        public System.Windows.Forms.TextBox FileLigneTb;
-        public System.Windows.Forms.GroupBox groupBox11;
-        public System.Windows.Forms.Button XmlMotifBt;
-        public System.Windows.Forms.Label label34;
-        public System.Windows.Forms.TextBox XmlMotifTb;
-        public System.Windows.Forms.GroupBox groupBox8;
-        public System.Windows.Forms.Button XmlSectionImgDirBt;
-        public System.Windows.Forms.Label label23;
-        public System.Windows.Forms.TextBox XmlSectionImgDirTb;
-        public System.Windows.Forms.Button XmlSectionOuvrageBt;
-        public System.Windows.Forms.Label label22;
-        public System.Windows.Forms.TextBox XmlSectionOuvrageTb;
-        public System.Windows.Forms.GroupBox groupBox3;
-        public System.Windows.Forms.Label label11;
-        public System.Windows.Forms.Label label12;
-        public System.Windows.Forms.Button XmlIdRegBt;
-        public System.Windows.Forms.TextBox XmlIdCanaTb;
-        public System.Windows.Forms.Button XmlIdCanaBt;
-        public System.Windows.Forms.TextBox XmlIdRegTb;
-        public System.Windows.Forms.GroupBox groupBox4;
-        public System.Windows.Forms.Button XmlFamilleCodeIdBt;
-        public System.Windows.Forms.Button XmlGroupeCodeIdBt;
-        public System.Windows.Forms.Label label20;
-        public System.Windows.Forms.TextBox XmlFamilleCodeIdTb;
-        public System.Windows.Forms.TextBox XmlGroupCodeIdTb;
-        public System.Windows.Forms.Label label21;
-        public System.Windows.Forms.GroupBox groupBox2;
-        public System.Windows.Forms.Button XmlObsRegBt;
-        public System.Windows.Forms.Button XmlObsCanaBt;
-        public System.Windows.Forms.Label label13;
-        public System.Windows.Forms.TextBox XmlObsRegTb;
-        public System.Windows.Forms.TextBox XmlObsCanaTb;
-        public System.Windows.Forms.Label label19;
-        public C1.Win.C1Command.C1DockingTabPage XmlObsTab;
-        public System.Windows.Forms.SplitContainer XmlParamSplit;
-        public System.Windows.Forms.ToolStrip ToolStripObsCode;
-        public System.Windows.Forms.ToolStripButton XmlObsCanaButton;
-        public System.Windows.Forms.ToolStripButton XmlObsRegButton;
-        public System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        public System.Windows.Forms.ToolStripLabel toolStripLabel2;
-        public System.Windows.Forms.ToolStripLabel XmlObsStripLabel;
-        public System.Windows.Forms.SplitContainer splitContainer5;
-        public System.Windows.Forms.SplitContainer XmlCodesSplit;
-        public System.Windows.Forms.Label label52;
-        public System.Windows.Forms.Button XmlObsCodeDelValueBt;
-        public System.Windows.Forms.Label label53;
-        public System.Windows.Forms.Button XmlObsCodeAddValueBt;
-        public System.Windows.Forms.TextBox XmlObsCodeAddValueTb;
-        public System.Windows.Forms.Label label6;
-        public C1.Win.C1FlexGrid.C1FlexGrid XmlObsCodesGrid;
-        public System.Windows.Forms.SplitContainer splitContainer6;
-        public System.Windows.Forms.SplitContainer XmlCaracSplit;
-        public System.Windows.Forms.Label label7;
-        public C1.Win.C1FlexGrid.C1FlexGrid XmlObsCaracGrid;
-        public System.Windows.Forms.SplitContainer XmlItemsSplit;
-        public System.Windows.Forms.Label label56;
-        public System.Windows.Forms.Button XmlObsItemDelValueBt;
-        public System.Windows.Forms.Label label57;
-        public System.Windows.Forms.Button XmlObsItemAddValueBt;
-        public System.Windows.Forms.TextBox XmlObsItemAddValueTb;
-        public System.Windows.Forms.Label label8;
-        public C1.Win.C1FlexGrid.C1FlexGrid XmlObsItemGrid;
-        public C1.Win.C1Command.C1DockingTabPage XmlIdTab;
-        public System.Windows.Forms.SplitContainer splitContainer7;
-        public System.Windows.Forms.ToolStrip ToolStripIdCode;
-        public System.Windows.Forms.ToolStripButton XmlIdCanaButton;
-        public System.Windows.Forms.ToolStripButton XmlIdRegButton;
-        public System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        public System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        public System.Windows.Forms.ToolStripLabel XmlIdStripLabel;
-        public System.Windows.Forms.SplitContainer splitContainer8;
-        public System.Windows.Forms.SplitContainer splitContainer10;
-        public System.Windows.Forms.Label label48;
-        public System.Windows.Forms.Button XmlIdCodeDelValueBt;
-        public System.Windows.Forms.Label label49;
-        public System.Windows.Forms.Button XmlIdCodeAddValueBt;
-        public System.Windows.Forms.TextBox XmlIdCodeAddValueTb;
-        public System.Windows.Forms.Label label9;
-        public C1.Win.C1FlexGrid.C1FlexGrid XmlIdCodeGrid;
-        public System.Windows.Forms.SplitContainer splitContainer11;
-        public System.Windows.Forms.Label label50;
-        public System.Windows.Forms.Button XmlIdItemDelValueBt;
-        public System.Windows.Forms.Label label51;
-        public System.Windows.Forms.Button XmlIdItemAddValueBt;
-        public System.Windows.Forms.TextBox XmlIdItemAddValueTb;
-        public System.Windows.Forms.Label label10;
-        public C1.Win.C1FlexGrid.C1FlexGrid XmlIdItemGrid;
-        public C1.Win.C1Command.C1DockingTabPage XmlSectionTab;
-        public System.Windows.Forms.SplitContainer splitContainer12;
-        public System.Windows.Forms.ToolStrip ToolStripSection;
-        public System.Windows.Forms.ToolStripLabel toolStripLabel4;
-        public System.Windows.Forms.ToolStripLabel XmlSectionStripLabel;
-        public System.Windows.Forms.SplitContainer splitContainer13;
-        public System.Windows.Forms.SplitContainer splitContainer21;
-        public System.Windows.Forms.Label label44;
-        public System.Windows.Forms.Button button1;
-        public System.Windows.Forms.Label label45;
-        public System.Windows.Forms.Button XmlSectionAddBt;
-        public System.Windows.Forms.TextBox XmlSectionAddTb;
-        public System.Windows.Forms.Label label33;
-        public C1.Win.C1FlexGrid.C1FlexGrid XmlSectionGrid;
-        public System.Windows.Forms.SplitContainer splitContainer22;
-        public System.Windows.Forms.Label label46;
-        public System.Windows.Forms.Button button6;
-        public System.Windows.Forms.Label label47;
-        public System.Windows.Forms.Button XmlHeureAddBt;
-        public System.Windows.Forms.TextBox XmlHeureAddTb;
-        public System.Windows.Forms.Label label35;
-        public C1.Win.C1FlexGrid.C1FlexGrid XmlHeureGrid;
-        public C1.Win.C1Command.C1DockingTabPage XmlAutocadTab;
-        public C1.Win.C1Command.C1DockingTab c1DockingTab2;
-        public C1.Win.C1Command.C1DockingTabPage c1DockingTabPage3;
-        public System.Windows.Forms.SplitContainer splitContainer14;
-        public System.Windows.Forms.ToolStrip ToolStripAutoCad;
-        public System.Windows.Forms.ToolStripButton XmlAutocadCanaButton;
-        public System.Windows.Forms.ToolStripButton XmlAutocadRegButton;
-        public System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        public System.Windows.Forms.ToolStripLabel toolStripLabel5;
-        public System.Windows.Forms.ToolStripLabel XmlAutocadStripLabel;
-        public System.Windows.Forms.SplitContainer splitContainer15;
-        public System.Windows.Forms.SplitContainer splitContainer23;
-        public System.Windows.Forms.Label label36;
-        public C1.Win.C1FlexGrid.C1FlexGrid XmlAutocadGrid;
-        public System.Windows.Forms.SplitContainer splitContainer24;
-        public System.Windows.Forms.Label label37;
-        public C1.Win.C1FlexGrid.C1FlexGrid XmlAutocadItemGrid;
-        public C1.Win.C1Command.C1DockingTabPage c1DockingTabPage4;
-        public System.Windows.Forms.SplitContainer splitContainer16;
-        public System.Windows.Forms.ToolStrip ToolStripMotif;
-        public System.Windows.Forms.ToolStripLabel toolStripLabel6;
-        public System.Windows.Forms.ToolStripLabel XmlMotifStripLabel;
-        public System.Windows.Forms.SplitContainer splitContainer17;
-        public System.Windows.Forms.SplitContainer splitContainer18;
-        public System.Windows.Forms.Label label39;
-        public System.Windows.Forms.Button XmlPonctuelDelValueBt;
-        public System.Windows.Forms.Label label38;
-        public System.Windows.Forms.Button XmlPonctuelAddValueBt;
-        public System.Windows.Forms.TextBox XmlPonctuelAddValueTb;
-        public System.Windows.Forms.Label label30;
-        public C1.Win.C1FlexGrid.C1FlexGrid MotifPonctuelGrid;
-        public System.Windows.Forms.SplitContainer splitContainer19;
-        public System.Windows.Forms.SplitContainer splitContainer20;
-        public System.Windows.Forms.Label label40;
-        public System.Windows.Forms.Button XmlLineaireDelValueBt;
-        public System.Windows.Forms.Label label41;
-        public System.Windows.Forms.Button XmlLineaireAddValueBt;
-        public System.Windows.Forms.TextBox XmlLineaireAddValueTb;
-        public System.Windows.Forms.Label label31;
-        public C1.Win.C1FlexGrid.C1FlexGrid MotifLineaireGrid;
-        public System.Windows.Forms.SplitContainer splitContainer26;
-        public System.Windows.Forms.Label label42;
-        public System.Windows.Forms.Button XmlSurfaciqueDelValueBt;
-        public System.Windows.Forms.Label label43;
-        public System.Windows.Forms.Button XmlSurfaciqueAddValueBt;
-        public System.Windows.Forms.TextBox XmlSurfaciqueAddValueTb;
-        public System.Windows.Forms.Label label32;
-        public C1.Win.C1FlexGrid.C1FlexGrid MotifSurfaciqueGrid;
-        public System.Windows.Forms.SplitContainer CodeObsSplit;
-        public System.Windows.Forms.PictureBox pictureBox5;
-        public System.Windows.Forms.Label label18;
-        public C1.Win.C1Command.C1TopicBar CodeTopicBar;
-        public System.Windows.Forms.SplitContainer SaisieInputSplit;
-        public System.Windows.Forms.ToolStrip miniToolStrip;
-        public System.Windows.Forms.GroupBox groupBox7;
-        public System.Windows.Forms.Button CloseInspectionBt;
-        public System.Windows.Forms.PictureBox pictureBox2;
-        public System.Windows.Forms.Label SVFLabel;
+        public System.Windows.Forms.TextBox textBox1;
         public C1.Win.C1Command.C1DockingTab SaisieTabControl;
         public C1.Win.C1Command.C1DockingTabPage KeyboardTab;
         public component.virtual_kb virtual_kb1;
@@ -5207,10 +5158,35 @@
         public C1.Win.C1Command.C1DockingTabPage SectionTab;
         public component.section_horaire section_horaire1;
         public C1.Win.C1Command.C1DockingTabPage PhotoTab;
-        public component.photo_select photo_select1;
         public C1.Win.C1Command.C1DockingTabPage VideoTab;
         public C1.Win.C1Command.C1DockingTabPage AudioTab;
         public C1.Win.C1Command.C1DockingTabPage SchemaTab;
+        public System.Windows.Forms.TextBox InputPreviewTb;
+        public System.Windows.Forms.Button EraseAllBt;
+        public System.Windows.Forms.Button Folder_New_Inspection;
+        public component.photo_select photo_select1;
+        public System.Windows.Forms.Button Btn_Exporter;
+        public System.Windows.Forms.ToolStripLabel XmlAutocadStripLabel;
+        public System.Windows.Forms.ToolStripLabel XmlSectionStripLabel;
+        public System.Windows.Forms.ToolStripButton XmlObsCanaButton;
+        public System.Windows.Forms.ToolStripButton XmlObsRegButton;
+        public System.Windows.Forms.ToolStripLabel XmlObsStripLabel;
+        public System.Windows.Forms.ToolStripButton XmlIdRegButton;
+        public System.Windows.Forms.ToolStripLabel XmlIdStripLabel;
+        public System.Windows.Forms.ToolStripLabel XmlMotifStripLabel;
+        public System.Windows.Forms.ToolStripButton ObsCompactGridBt;
+        public System.Windows.Forms.ToolStripLabel ObsToolsLb;
+        public System.Windows.Forms.ToolStripLabel ObsDiffereLb;
+        public System.Windows.Forms.ToolStripLabel ObsDiffereCountLb;
+        public System.Windows.Forms.ToolStripSeparator ObsDiffereSp;
+        public System.Windows.Forms.ToolStripLabel LineaireStripLabel;
+        public System.Windows.Forms.ToolStripButton XmlIdCanaButton;
+        public System.Windows.Forms.ToolStripButton ObsDeplieGridBt;
+        public System.Windows.Forms.ToolStripButton XmlAutocadCanaButton;
+        public System.Windows.Forms.ToolStripButton XmlAutocadRegButton;
+        public System.Windows.Forms.ToolStripLabel CurrentOuvrageTypeLb;
+        public System.Windows.Forms.ToolStripLabel CurrentOuvrageNameLb;
+        public System.Windows.Forms.ToolStripLabel CurrentOuvrageFormeLb;
     }
 }
 
