@@ -1065,6 +1065,7 @@
             // splitContainer27
             // 
             this.splitContainer27.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer27.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
             this.splitContainer27.Location = new System.Drawing.Point(0, 0);
             this.splitContainer27.Name = "splitContainer27";
             // 
@@ -1076,7 +1077,7 @@
             // 
             this.splitContainer27.Panel2.Controls.Add(this.EraseAllBt);
             this.splitContainer27.Size = new System.Drawing.Size(1024, 27);
-            this.splitContainer27.SplitterDistance = 904;
+            this.splitContainer27.SplitterDistance = 924;
             this.splitContainer27.TabIndex = 0;
             // 
             // InputPreviewTb
@@ -1087,7 +1088,7 @@
             this.InputPreviewTb.ForeColor = System.Drawing.Color.Black;
             this.InputPreviewTb.Location = new System.Drawing.Point(0, 0);
             this.InputPreviewTb.Name = "InputPreviewTb";
-            this.InputPreviewTb.Size = new System.Drawing.Size(904, 22);
+            this.InputPreviewTb.Size = new System.Drawing.Size(924, 22);
             this.InputPreviewTb.TabIndex = 2;
             // 
             // EraseAllBt
@@ -1098,7 +1099,7 @@
             this.EraseAllBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EraseAllBt.Location = new System.Drawing.Point(0, 0);
             this.EraseAllBt.Name = "EraseAllBt";
-            this.EraseAllBt.Size = new System.Drawing.Size(116, 27);
+            this.EraseAllBt.Size = new System.Drawing.Size(96, 27);
             this.EraseAllBt.TabIndex = 2;
             this.EraseAllBt.Text = "Tout effacer";
             this.EraseAllBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1189,6 +1190,7 @@
             this.CloseInspectionBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CloseInspectionBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CloseInspectionBt.UseVisualStyleBackColor = true;
+            this.CloseInspectionBt.Click += new System.EventHandler(this.CloseInspectionBt_Click);
             // 
             // pictureBox2
             // 
@@ -1487,6 +1489,7 @@
             this.OuvrageNomTb.Name = "OuvrageNomTb";
             this.OuvrageNomTb.Size = new System.Drawing.Size(72, 20);
             this.OuvrageNomTb.TabIndex = 9;
+            this.OuvrageNomTb.Click += new System.EventHandler(this.OuvrageNomTb_Click);
             // 
             // NewOuvrageBt
             // 
@@ -1522,6 +1525,7 @@
             this.OuvrageTypeCb.Name = "OuvrageTypeCb";
             this.OuvrageTypeCb.Size = new System.Drawing.Size(102, 22);
             this.OuvrageTypeCb.TabIndex = 8;
+            this.OuvrageTypeCb.SelectedIndexChanged += new System.EventHandler(this.OuvrageTypeCb_SelectedIndexChanged);
             // 
             // label16
             // 
@@ -2322,7 +2326,7 @@
             this.splitContainer4.Panel2.Controls.Add(this.IdObligatoirePb);
             this.splitContainer4.Panel2MinSize = 18;
             this.splitContainer4.Size = new System.Drawing.Size(699, 387);
-            this.splitContainer4.SplitterDistance = 364;
+            this.splitContainer4.SplitterDistance = 367;
             this.splitContainer4.SplitterWidth = 2;
             this.splitContainer4.TabIndex = 1;
             // 
@@ -2335,7 +2339,7 @@
             this.Identification_Flp.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Identification_Flp.Location = new System.Drawing.Point(0, 0);
             this.Identification_Flp.Name = "Identification_Flp";
-            this.Identification_Flp.Size = new System.Drawing.Size(699, 364);
+            this.Identification_Flp.Size = new System.Drawing.Size(699, 367);
             this.Identification_Flp.TabIndex = 0;
             // 
             // label4

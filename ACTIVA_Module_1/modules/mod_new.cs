@@ -14,31 +14,41 @@ namespace ACTIVA_Module_1.modules
         {
             if (name != String.Empty & path != String.Empty)
             {
+                XmlNodeList nodelist;
                 XmlDocument doc = new XmlDocument();
-                XmlNode docNode = doc.CreateXmlDeclaration("1.0", "UTF-8", null);
+                XmlNode docNode = doc.CreateXmlDeclaration("1.0", "ISO-8859-1", "yes");
                 doc.AppendChild(docNode);
 
-                XmlElement inspectionNode = doc.CreateElement("inspection");
+                XmlElement inspectionNode = doc.CreateElement("DATA");
                 doc.AppendChild(inspectionNode);
 
-                string new_svf = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(path), name + ".xml");
+                XmlElement elem = doc.CreateElement("ZA");             
+                inspectionNode.AppendChild(elem);
+
+                XmlElement a2 = doc.CreateElement("A2");
+                a2.InnerText = "fr";
+                elem.AppendChild(a2);             
+                XmlElement a6 = doc.CreateElement("A6");
+                a6.InnerText = "2010";
+                elem.AppendChild(a6);             
+
+                elem = doc.CreateElement("ZB");
+                inspectionNode.AppendChild(elem);
+
+                nodelist = doc.SelectNodes("/inspection/ouvrage/identifications/code");
+                foreach (XmlNode ouvrage in nodelist)
+                {
+                    XmlElement code = doc.CreateElement(ouvrage.InnerText);
+                    elem.AppendChild(code);
+                }
+                string new_svf = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(path), name.Substring(0, name.Length - 4) + ".xml");
 
                 doc.Save(new_svf);
-                String s = "Le fichier XML a été créer dans " + System.IO.Path.GetDirectoryName(path);
+ 
+                String s = "Le fichier XML a été créer dans " + System.IO.Path.GetDirectoryName(path) + "/";
+
+
                 MessageBox.Show(s, "Exportation réussie", MessageBoxButtons.OK);
-               /* mod_inspection.Load_SVF(new_svf);
-                mod_inspection.Check_Type_Ouvrage(mod_global.MF.cb_troncon, mod_global.MF.cb_branchement, mod_global.MF.cb_regard);
-                mod_inspection.Fill_Ouvrage_List(mod_global.MF.OuvrageList);
-
-                mod_global.MF.NewInspectionNameTb.Text = String.Empty;
-                mod_global.MF.NewInspectionPathTb.Text = String.Empty;
-                mod_global.MF.openSVFTb.Text = String.Empty;
-
-                mod_global.Enable_Ouvrage_Controls();*/
-            }
-            else
-            {
-                //System.Windows.Forms.MessageBox
             }
         }
 
