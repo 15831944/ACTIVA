@@ -160,8 +160,12 @@
     <Compile Include="modules\mod_hosted_control.cs" />
     <Compile Include="modules\mod_init.cs" />
     <Compile Include="modules\mod_inspection.cs" />
-    <Compile Include="modules\mod_new.cs" />
-    <Compile Include="modules\mod_observation.cs" />
+    <Compile Include="modules\mod_new.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="modules\mod_observation.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="modules\mod_rtf.cs">
       <SubType>Component</SubType>
     </Compile>

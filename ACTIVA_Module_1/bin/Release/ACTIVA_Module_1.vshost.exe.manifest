@@ -96,14 +96,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ACTIVA_Module_1.exe" size="468992">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ACTIVA_Module_1.exe" size="474624">
       <assemblyIdentity name="ACTIVA_Module_1" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ZRKayz6xL4DttA+UxpyF9XAuAQE=</dsig:DigestValue>
+        <dsig:DigestValue>Qszbrl5JVbhYobnOoSJylOeM5UM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

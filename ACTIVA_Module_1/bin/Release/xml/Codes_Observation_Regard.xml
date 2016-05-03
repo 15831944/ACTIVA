@@ -4,11 +4,11 @@
 <codes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\xsd\Schema_Codes_Observation.xsd">
   <code position="0" parent="defautStructurel">
     <id>DAA</id>
-    <intitule info="La section transversale de la regard a été déformée par rapport à sa forme initiale">Déformation</intitule>
+    <intitule info="La section transversale du regard a été déformée par rapport à sa forme initiale">Déformation</intitule>
     <caracteristiques>
       <caracteristique nom="c1" type="item" intitule="Type de déformation" renseigne="1" info="">
         <item nom="A" position="0">Générale - affectant une large proportion de la paroi du regard</item>
-        <item nom="B" position="1">Localisée - afectant une proportion relativement réduite de la paroi du regard</item>
+        <item nom="B" position="1">Localisée - affectant une proportion relativement réduite de la paroi du regard</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
       <caracteristique nom="q1" type="numerique" intitule="Réduction maximale de la dimension" unite="%" renseigne="1" info=""/>
@@ -79,7 +79,7 @@
     <intitule>Rupture/effondrement</intitule>
     <caracteristiques>
       <caracteristique nom="c1" type="item" intitule="Nature du défaut" renseigne="1" info="">
-        <item nom="A" position="0">Rupture - parties de parois détachées mais non manquantes</item>
+        <item nom="A" position="0">Rupture - parties de paroi déplacées mais non manquantes</item>
         <item nom="B" position="1">Effrondement partiel - parties de parois manquantes</item>
         <item nom="C" position="2">Effondrement - perte totale de l'intégrité structurelle</item>
       </caracteristique>
@@ -114,7 +114,7 @@
         <item position="1" nom="B">Pièces manquantes - briques ou éléments de maçonnerie manquants</item>
         <item position="2" nom="C">Effondrement - Perte totale de l'intégrité structurelle</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" intitule="Ajouter intitulermations suivantes quand briques ou éléments de maçonnerie sont manquants" renseigne="1" info="">
+      <caracteristique nom="c2" type="item" intitule="Ajouter informations suivantes quand briques ou éléments de maçonnerie sont manquants" renseigne="1" info="">
         <item position="0" nom="A">Autre couche visible</item>
         <item position="1" lien="true" nom="B">Rien de visible</item>
       </caracteristique>
@@ -145,7 +145,7 @@
   </code>
   <code position="4" parent="defautStructurel">
     <id>DAE</id>
-    <intitule info="Tout ou partie du mortier de briquettage ou de maçonnerie est manquante">Mortier manquant</intitule>
+    <intitule info="Tout ou partie du mortier du briquettage ou de maçonnerie est manquant(e)">Mortier manquant</intitule>
     <caracteristiques>
       <caracteristique nom="c1" type="texte" renseigne="4" />
       <caracteristique nom="c2" type="texte" renseigne="4" />
@@ -186,7 +186,7 @@
         <item nom="I" position="8">Paroi manquante</item>
         <item nom="J" position="9">Produits corrosifs sur la surface</item>
 		<item nom="K" position="10">Revêtement cloqué ou renflement interne du revêtement</item>
-        <item nom="Z" lien="true" position="11">Autre dégradations de surface</item>
+        <item nom="Z" lien="true" position="11">Autres dégradations de surface</item>
       </caracteristique>
       <caracteristique nom="c2" type="item" intitule="Cause de la dégradation" renseigne="1" info="">
         <item nom="A" position="0">Mécanique</item>
@@ -266,7 +266,7 @@
         <item nom="C" position="2">Vide partiel entre son extrémité et la paroi du regard</item>
         <item nom="D" position="3">La conduite de raccordement est endommagée</item>
         <item nom="E" position="4">La conduite de raccordement est obturée</item>
-        <item nom="Z" lien="true" position="7">Autre</item>
+        <item nom="Z" lien="true" position="5">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
       <caracteristique nom="q1" type="numerique" renseigne="3" />
@@ -336,7 +336,7 @@
       <caracteristique nom="c1" type="item" intitule="Sens du déplacement" renseigne="1" info="">
         <item nom="A" position="0">Vertical</item>
         <item nom="B" position="1">Horizontal</item>
-        <item nom="C" position="2">Angulaire - les axes des éléments ne sont pas parallèles</item>
+        <item nom="C" position="2">Angulaire</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
       <caracteristique nom="q1" type="numerique" intitule="Distance de déplacement (max pour les angulaires)" unite="mm" renseigne="1" info=""/>
@@ -365,7 +365,7 @@
     <intitule info="Le revêtement du regard de visite ou de la boîte d'inspection est observé pour obtenir l'une des caractéristiques">Observation relative au revêtement</intitule>
     <caracteristiques>
       <caracteristique nom="c1" type="item" intitule="Nature de l'observation" renseigne="1" info="">
-        <item nom="A" position="0">Le revêtement de la cheminée s'est détaché</item>
+        <item nom="A" position="0">Revêtement de la cheminée s'est détaché</item>
         <item nom="B" position="1">Décoloration du revêtement</item>
         <item nom="C" position="2">Extrémité du revêtement défectueuse</item>
         <item nom="D" position="3">Pli du revêtement</item>
@@ -378,8 +378,8 @@
 		<item nom="K" position="10">Défaut de raccordement entre deux revêtements</item>
 		<item nom="L" position="11">Matériau de revêtement semble mou</item>
 		<item nom="M" position="12">Manque de résine dans le stratifié</item>
-		<item nom="N" position="13">Défaut d'étanchéité entre l'extrémité du revêtement et la conduie d'accueil ou le regard de visite</item>
-        <item nom="Z" lien="true" position="14">Autre défaut de revêtement</item>
+		<item nom="N" position="13">Défaut d'étanchéité entre l'extrémité du revêtement et la conduite d'accueil ou le regard de visite</item>
+        <item nom="Z" lien="true" position="14">Autres défauts de revêtement</item>
       </caracteristique>
       <caracteristique nom="c2" type="item" intitule="Lorsque cela est approprié, l'orientation doit être indiqué" renseigne="3" info="">
         <item nom="A" h2="4" pm2="1" position="0">Verticale</item>
@@ -418,16 +418,16 @@
     <caracteristiques>
       <caracteristique nom="c1" type="item" intitule="Type de défaut" renseigne="1" info="">
         <item nom="A" position="0">Paroi manquante</item>
-        <item nom="B" position="1">Une reprise bouchant un trou délibérément pratiqué dans la paroi de la canalisation est devenue défectueuse</item>
+        <item nom="B" position="1">Reprise bouchant un trou délibérément pratiqué dans la paroi de la canalisation est devenue défectueuse</item>
         <item nom="C" position="2">Détachement du matériau de réparation de la conduite d'accueil</item>
 		<item nom="D" position="3">Matériau de réparation manquant sur la surface de contact</item>
 		<item nom="E" position="4">Excès de matériau de réparation constituant un obstacle</item>
 		<item nom="F" position="5">Trou dans le matériau de réparation</item>
-		<item nom="G" position="6">Fissure dans le matériau de réaration</item>
+		<item nom="G" position="6">Fissure dans le matériau de réparation</item>
 		<item nom="Z" lien="true" position="7">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" renseigne="3" />
+      <caracteristique nom="q1" type="numerique" intitule="Réduction surface (%) ou longueur trou (mm)" unite="" renseigne="3" info="Si type de défaut = C, E ou Z, entrer la réduction de la surface (%). Si = G, entrer la largeur de la paroi manquante ou de la fente (mm). Si = A, B, D ou F, entrer la longueur du trou (le long de l'axe de la conduite) (mm)"/>
       <caracteristique nom="q2" type="numerique" renseigne="3" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="2" />
@@ -576,13 +576,13 @@
     <intitule info="Un défaut est observé sur un échelon, une échelle ou un trou dans la paroi">Système de descente défecteux</intitule>
     <caracteristiques>
       <caracteristique nom="c1" type="item" intitule="Type de défaut" renseigne="1" info="">
-        <item nom="A" position="0">Echelon déboité</item>
+        <item nom="A" position="0">Echelon déboîté</item>
         <item nom="B" position="1">Echelon manquant</item>
         <item nom="C" position="2">Echelon corrodé</item>
         <item nom="D" position="3">Echelon faussé</item>
         <item nom="E" position="4">Enrobage plastique brisé</item>
-        <item nom="F" position="5">Main courante de l'échelle corrodée</item>
-        <item nom="G" position="6">Support de l'échelle déboité</item>
+        <item nom="F" position="5">Main-courante de l'échelle corrodée</item>
+        <item nom="G" position="6">Support de l'échelle déboîté</item>
         <item nom="H" position="7">Support de l'échelle manquant</item>
         <item nom="I" position="8">Support de l'échelle corrodé</item>
         <item nom="J" position="9">Montant de l'échelle corrodé</item>
@@ -590,7 +590,7 @@
         <item nom="Z" lien="true" position="11">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
-      <caracteristique nom="q1" type="numerique" intitule="Nombre d'éléments défectueux" renseigne="1" info=""/>
+      <caracteristique nom="q1" type="numerique" intitule="Nombre de marches ou de trous dans la paroi défectueux" renseigne="1" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="4" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
@@ -615,7 +615,7 @@
     <id>DAR</id>
     <intitule info="Un défaut est observé sur le tampon et le cadre">Tampon et cadre défectueux</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" intitule="Un défaut est observé sur le tampon et le cadre" renseigne="1" info="">
+      <caracteristique nom="c1" type="item" intitule="Type de défaut" renseigne="1" info="">
         <item nom="A" position="0">Tampon cassé</item>
         <item nom="B" position="1">Tampon oscillant</item>
         <item nom="C" position="2">Tampon manquant</item>
@@ -624,7 +624,7 @@
         <item nom="F" position="5">Cadre manquant</item>
         <item nom="G" position="6">Tampon au-dessous du niveau de la surface</item>
         <item nom="H" position="7">Tampon au-dessus du niveau de la surface</item>
-        <item nom="Z" lien="true" position="0">Autre</item>
+        <item nom="Z" lien="true" position="8">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="texte" renseigne="4" />
       <caracteristique nom="q1" type="numerique" intitule="Si le tampon n'est pas à niveau, différence avec le sol" unite="mm" renseigne="3" info=""/>
@@ -768,7 +768,7 @@
         <item nom="Z" lien="true" position="3">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="item" renseigne="1" />
-      <caracteristique nom="q1" type="numerique" renseigne="3" />
+      <caracteristique nom="q1" type="numerique" intit="Epaisseur des dépôts" unite="mm" renseigne="3" info=""/>
       <caracteristique nom="q2" type="numerique" renseigne="3" />
       <caracteristique nom="h1" type="horaire" renseigne="1" />
       <caracteristique nom="h2" type="horaire" renseigne="3" />
@@ -791,7 +791,7 @@
   </code>
   <code position="2" parent="defautFonctionnel">
     <id>DBC</id>
-    <intitule info="Dépôts de matériau sur le radier ou les banquettes">Dépôts</intitule>
+    <intitule info="Dépôts de matériau sur le radier ou la banquette">Dépôts</intitule>
     <caracteristiques>
       <caracteristique nom="c1" type="item" intitule="Type de matériau" renseigne="1" info="">
         <item nom="A" position="0">Fin (sable, vase, ...)</item>
@@ -823,7 +823,7 @@
   </code>
   <code position="3" parent="defautFonctionnel">
     <id>DBD</id>
-    <intitule info="Le sol des terrains environnants pénètre dans le regard de visite ou boîte d'inspection">Entrée de terre</intitule>
+    <intitule info="Le sol des terrains environnants pénètre dans le regard de visite ou la boîte d'inspection">Entrée de terre</intitule>
     <caracteristiques>
       <caracteristique nom="c1" type="item" renseigne="1" />
       <caracteristique nom="c2" type="item" renseigne="3" />
@@ -854,7 +854,7 @@
     <caracteristiques>
       <caracteristique nom="c1" type="item" intitule="Description de l'obstruction" renseigne="1" info="">
         <item nom="A" position="0">Briquetage ou élément de maçonnerie détaché</item>
-        <item nom="B" position="1">Fragments de canalisation brisée</item>
+        <item nom="B" position="1">Fragments de canalisation brisés</item>
         <item nom="C" position="2">Autre objet</item>
         <item nom="D" position="3">Obstacle dépassant de la paroi</item>
         <item nom="E" position="4">Obstacle coincé dans l'assemblage</item>
@@ -896,7 +896,7 @@
     <id>DBF</id>
     <intitule info="Pénétration d'eau par la paroi du regard de visite ou par les assemblages ou les défauts dans la paroi, la banquette ou la cunette du regard de visite ou de la chambre d'inspection.">Infiltration</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" intitule="Type d'infiltration" renseigne="1" info="">
+      <caracteristique nom="c1" type="item" intitule=">Importance de l'infiltration" renseigne="1" info="">
         <item nom="A" position="0">Suintement - lente pénétration d'eau - aucune goutte visible</item>
         <item nom="B" position="1">Goutte à goutte - pénétration goutte à goutte - écoulement discontinu</item>
         <item nom="C" position="2">Ecoulement - écoulement continu</item>
@@ -1006,9 +1006,9 @@
       </caracteristique>
       <caracteristique nom="c2" type="item" intitule="La disposition de la banquette" renseigne="4" info="">
 	    <item nom="A" position="0">Cunette dans la banquette</item>
-        <item nom="B" position="1">Le branchement s'écoule sur la banquette</item>
+        <item nom="B" position="1">Branchement s'écoule sur la banquette</item>
         <item nom="C" position="2">Cunette accompagnée</item>
-        <item nom="D" position="3">Conduite sous la banquete</item>
+        <item nom="D" position="3">Conduite sous la banquette</item>
         <item nom="Z" lien="true" position="4">Autre</item>
       </caracteristique>
       <caracteristique nom="q1" type="texte" intitule="Référence de la conduite de raccordement" renseigne="1" info=""/>
@@ -1154,9 +1154,14 @@
       <caracteristique nom="c1" type="item" intitule="Etat apparent de la cunette" renseigne="1" info="">
         <item nom="A" position="0">Cunette défectueuse</item>
         <item nom="B" position="1">Cunette correcte</item>
-		<item nom="C" position="2">Aucune banquette</item>
+		<item nom="C" position="2">Aucune cunette</item>
       </caracteristique>
-      <caracteristique nom="c2" type="texte" renseigne="4" />
+      <caracteristique nom="c2" type="item" intitule="Autres informations" renseigne="4" info="">
+	    <item nom="A" position="0">Cunette se rétrécit</item>
+        <item nom="B" position="1">Cunette s'élargit</item>
+		<item nom="C" position="2">Cunette a un point haut</item>
+		<item nom="D" position="3">Cunette a un point bas</item>
+      </caracteristique>
       <caracteristique nom="q1" type="numerique" intitule="Largeur de la cunette" unite="mm" renseigne="1" info=""/>
       <caracteristique nom="q2" type="numerique" intitule="Hauteur de la cunette" unite="mm" renseigne="1" info=""/>
       <caracteristique nom="h1" type="horaire" renseigne="1" />
@@ -1188,7 +1193,7 @@
         <item nom="C" position="2">Chaîne de sécurité défectueuse</item>
         <item nom="D" position="3">Chaîne de sécurité en place mais couverte de débris</item>
         <item nom="E" position="4">Barre de sécurité présente sans aucun défaut</item>
-        <item nom="F" position="5">Barre de sécurité manquante (traces indiquant qu'une chaîne était installée à l'origine)</item>
+        <item nom="F" position="5">Barre de sécurité manquante (traces indiquant qu'une barre était installée à l'origine)</item>
         <item nom="G" position="6">Barre de sécurité défectueuse</item>
         <item nom="H" position="7">Barre de sécurité en place mais couverte de débris</item>
       </caracteristique>
@@ -1444,10 +1449,12 @@
         <item nom="B" position="1">Obstruction</item>
         <item nom="C" position="2">Niveau d'eau trop élevé</item>
         <item nom="D" position="3">Panne de l'équipement</item>
+		<item nom="Z" position="4">Autre</item>
       </caracteristique>
       <caracteristique nom="c2" type="item" intitule="D'autres caractérisations" renseigne="4" info="">
 	    <item nom="A" position="0">Objectif de l'inspection atteint avant la fin</item>
         <item nom="B" position="1">Inspection terminée sur les instructions de l'autorité responsable</item>
+		<item nom="Z" position="2">Autre</item>
       </caracteristique>
       <caracteristique nom="q1" type="numerique" renseigne="4" />
       <caracteristique nom="q2" type="numerique" renseigne="4" />
@@ -1499,7 +1506,7 @@
   </code>
   <code position="4" parent="autresRemarques">
     <id>DDE</id>
-    <intitule info="Informations relatives à l'écoulement des ueaux usées provenant de la conduite de raccordement">Ecoulement d'une conduite de raccordement</intitule>
+    <intitule info="Informations relatives à l'écoulement des eaux usées provenant de la conduite de raccordement">Ecoulement d'une conduite de raccordement</intitule>
     <caracteristiques>
       <caracteristique nom="c1" type="item" intitule="Ecoulement des eaux usées provenant de la canalisation de racccordement" renseigne="1" info="">
         <item nom="A" position="0">Clair (le radier de la canalisation entrante est visible)</item>

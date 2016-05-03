@@ -164,6 +164,18 @@ namespace ACTIVA_Module_1.modules
             return sortlist;
         }
 
+        public static SortedList SortNodeList_By_Alphabet(XmlNodeList nodelist)
+        {
+            SortedList sortlist = new SortedList();
+
+            foreach (XmlNode nod in nodelist)
+            {
+                sortlist.Add(nod.FirstChild.InnerText, nod);
+            }
+
+            return sortlist;
+        }
+
         public static void Get_Selected_Ouvrage_Info(string nodename, string nodetype, string nodeforme, System.Windows.Forms.Label obs_name, System.Windows.Forms.Label obs_nb)
         {
             if (mod_global.MF.OuvrageList.SelectionMode != SelectionModeEnum.One)

@@ -27,7 +27,7 @@
   </code>
   <code reporte="False" position="3" parent="Ouvrage">
     <id>AAC</id>
-    <intitule>Coordonnées noeud départ</intitule>
+    <intitule>Coordonnées du noeud de départ</intitule>
     <valeur type="numerique" unite="m" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
@@ -76,7 +76,7 @@
   </code>
   <code reporte="true" position="1" parent="Lieu">
     <id>AAJ</id>
-    <intitule>Emplacement (nom de voie)</intitule>
+    <intitule>Emplacement</intitule>
     <valeur type="texte" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
@@ -174,7 +174,7 @@
   </code>
   <code reporte="true" position="1" parent="Support">
     <id>ABA</id>
-    <intitule>Référence norme de codage</intitule>
+    <intitule>Norme</intitule>
     <valeur type="texte" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
@@ -212,7 +212,7 @@
   </code>
   <code reporte="true" position="11" parent="Lieu">
     <id>ABF</id>
-    <intitule>Date de l'inspection</intitule>
+    <intitule>Date d'inspection</intitule>
     <valeur type="date" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
@@ -320,7 +320,7 @@
   </code>
   <code reporte="true" position="11" parent="Ouvrage">
     <id>ABQ</id>
-    <intitule>Durée d'inspection prévue (hh:mm)</intitule>
+    <intitule>etendue d'inspection prévue</intitule>
     <valeur type="texte" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
@@ -359,7 +359,7 @@
   </code>
   <code reporte="true" position="1" parent="Element">
     <id>ACA</id>
-    <intitule>Forme de la section</intitule>
+    <intitule>Forme</intitule>
     <valeur type="item">
       <item nom="A" position="0">Circulaire</item>
       <item nom="B" position="1">Rectangulaire</item>
@@ -374,21 +374,21 @@
   </code>
   <code reporte="True" position="2" parent="Element">
     <id>ACB</id>
-    <intitule>Hauteur de la section</intitule>
+    <intitule>Hauteur</intitule>
     <valeur type="numerique" unite="mm" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
   <code reporte="True" position="3" parent="Element">
     <id>ACC</id>
-    <intitule>Largueur de la section</intitule>
+    <intitule>Largueur</intitule>
     <valeur type="numerique" unite="mm" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
   <code reporte="True" position="4" parent="Element" ajoute="False">
     <id>ACD</id>
-    <intitule>Matériau (constitutif)</intitule>
+    <intitule>Matériau</intitule>
     <valeur type="item">
       <item nom="AA" position="0">Amiante-ciment</item>
       <item nom="AB" position="1">Bitume</item>
@@ -522,14 +522,14 @@
   </code>
   <code reporte="true" position="19" parent="Ouvrage">
     <id>ACL</id>
-    <intitule>Position stratégique (de l'ouvrage)</intitule>
+    <intitule>Position stratégique</intitule>
     <valeur type="texte"/>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
   <code reporte="true" position="1" parent="Condition">
     <id>ACM</id>
-    <intitule>Nettoyage (préalable)</intitule>
+    <intitule>Nettoyage</intitule>
     <valeur type="item">
       <item nom="A" position="0">Branchement ou collecteur a été nettoyé avant l'inspection</item>
       <item nom="B" position="1">Branchement ou collecteur non nettoyé avant l'inspection</item>
@@ -580,8 +580,8 @@
     <intitule>Régulation du débit</intitule>
     <valeur type="item">
       <item nom="A" position="0">Aucune mesure prise</item>
-      <item nom="B" position="1">L'écoulement a été obturé en amont</item>
-      <item nom="C" position="2">L'écoulement a été partiellement obturé en amont</item>
+      <item nom="B" position="1">Ecoulement a été obturé en amont</item>
+      <item nom="C" position="2">Ecoulement a été partiellement obturé en amont</item>
       <item nom="Z" lien="true" position="3">Autre</item>
     </valeur>
     <saisie>1</saisie>
