@@ -581,7 +581,7 @@ namespace ACTIVA_Module_1.modules
 
             node = mod_global.Get_Codes_Obs_DocElement().SelectSingleNode("code[id='" + code + "']/caracteristiques/caracteristique[@nom='" + carac + "']");
 
-            if (node.Attributes.GetNamedItem("intitule") != null)
+            if (node.Attributes["intitule"] != null)
                 return node.Attributes["intitule"].InnerText;
             else
                 return carac;

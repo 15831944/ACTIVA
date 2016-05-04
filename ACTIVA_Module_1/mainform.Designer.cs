@@ -1084,6 +1084,7 @@
             // 
             this.InputPreviewTb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.InputPreviewTb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.InputPreviewTb.Enabled = false;
             this.InputPreviewTb.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InputPreviewTb.ForeColor = System.Drawing.Color.Black;
             this.InputPreviewTb.Location = new System.Drawing.Point(0, 0);
@@ -2182,11 +2183,11 @@
             this.CloneOuvrageBt.ForeColor = System.Drawing.Color.Black;
             this.CloneOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.copy1_16;
             this.CloneOuvrageBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CloneOuvrageBt.Location = new System.Drawing.Point(444, 3);
+            this.CloneOuvrageBt.Location = new System.Drawing.Point(383, 3);
             this.CloneOuvrageBt.Name = "CloneOuvrageBt";
-            this.CloneOuvrageBt.Size = new System.Drawing.Size(82, 25);
+            this.CloneOuvrageBt.Size = new System.Drawing.Size(143, 25);
             this.CloneOuvrageBt.TabIndex = 12;
-            this.CloneOuvrageBt.Text = "Dupliquer";
+            this.CloneOuvrageBt.Text = "Dupliquer l\'inspectation";
             this.CloneOuvrageBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CloneOuvrageBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CloneOuvrageBt.UseVisualStyleBackColor = true;

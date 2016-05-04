@@ -429,9 +429,10 @@ namespace ACTIVA_Module_1.component
             mod_global.Focused_Carac_Panel = this;
             mod_global.MF.InputPreviewTb.Text = Field_Input.Text;
 
-            /* 
-             * AOUTER
-             */
+            // Afficher l'info au Status Panel
+            if (node.Attributes["info"] != null)
+                mod_global.MF.statusPanel.Text = node.Attributes["info"].InnerText;
+            else mod_global.MF.statusPanel.Text = "";
 
             //On applique le mode de saisie correspondant au champ focused
             if (node.Attributes["type"].InnerText == "item")
@@ -459,16 +460,18 @@ namespace ACTIVA_Module_1.component
                     string but_text = item.GetAttribute("nom","") + " | " + item.Value;
 
                     //Si le choix contient des attributs concernant le comportement des champs suivants (on teste la présence de q1 comme attribut du choix en cours)
-                    if (item.GetAttribute ("q1","") != "")
+                    if (item.GetAttribute("q1", "") != "")
+                    {
                         but = new multiple_choice_button(but_text, Get_CaracFieldsNewState_HT(item), false, false);
+                    }
                     else
-                        if (item.GetAttribute("lien","") == "")
+                        if (item.GetAttribute("lien", "") == "")
                             if (item.GetAttribute("ajoute", "") == "true")
                                 but = new multiple_choice_button(but_text, null, false, true);
                             else
                                 but = new multiple_choice_button(but_text, null, false, false);
                         else
-                            if (item.GetAttribute ("lien","") == "true")
+                            if (item.GetAttribute("lien", "") == "true")
                                 but = new multiple_choice_button(but_text, null, true, false);
                             else
                                 but = new multiple_choice_button(but_text, null, true, false);
@@ -792,59 +795,6 @@ namespace ACTIVA_Module_1.component
             {
                 return;
             }
-        }
-
-        private void c1_click(object sender, EventArgs e)
-        {
-            XmlNode tmp;
-            XmlNode root;
-
-            root = mod_global.Get_Codes_Obs_DocElement();
-            tmp = root.SelectSingleNode("/codes/code[id='" + current_code + "']/caracteristiques/caracteristique[@nom=\"c1\"]");
-            if (tmp != null)
-                mod_global.MF.statusPanel.Text = tmp.Attributes["info"].InnerText;
-            else mod_global.MF.statusPanel.Text = "";
-        }
-
-        private void c2_click(object sender, EventArgs e)
-        {
-            XmlNode tmp;
-            XmlNode root;
-
-            root = mod_global.Get_Codes_Obs_DocElement();
-            tmp = root.SelectSingleNode("/codes/code[id='" + current_code + "']/caracteristiques/caracteristique[@nom=\"c2\"]");
-            if (tmp.Attributes["info"] != null)
-                mod_global.MF.statusPanel.Text = tmp.Attributes["info"].InnerText;
-            else mod_global.MF.statusPanel.Text = "";
-        }
-
-        private void q1_click(object sender, EventArgs e)
-        {
-            XmlNode tmp;
-            XmlNode root;
-
-            root = mod_global.Get_Codes_Obs_DocElement();
-            tmp = root.SelectSingleNode("/codes/code[id='" + current_code + "']/caracteristiques/caracteristique[@nom='q1']");
-            if (tmp.Attributes["info"] != null)
-                mod_global.MF.statusPanel.Text = tmp.Attributes["info"].InnerText;
-            else mod_global.MF.statusPanel.Text = "";
-        }
-
-        private void q2_click(object sender, EventArgs e)
-        {
-            XmlNode tmp;
-            XmlNode root;
-
-            root = mod_global.Get_Codes_Obs_DocElement();
-            tmp = root.SelectSingleNode("/codes/code[id='" + current_code + "']/caracteristiques/caracteristique[@nom='q2']");
-            if (tmp.Attributes["info"] != null)
-                mod_global.MF.statusPanel.Text = tmp.Attributes["info"].InnerText;
-            else mod_global.MF.statusPanel.Text = "";
-        }
-
-        private void other_click(object sender, EventArgs e)
-        {
-            mod_global.MF.statusPanel.Text = "";
         }
     }
 }

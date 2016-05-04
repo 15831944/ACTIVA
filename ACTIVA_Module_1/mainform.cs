@@ -65,21 +65,14 @@ namespace ACTIVA_Module_1
         {
             if (MainDockingTab.SelectedTab.Name == "InspectionTab" || MainDockingTab.SelectedTab.Name == "IdentificationTab" || MainDockingTab.SelectedTab.Name == "RenseignementTab")
             {
-                MainSplit.Panel2Collapsed = false;
                 mod_global.Disable_Obs_Tools();
-
                 if (MainDockingTab.SelectedTab.Name == "IdentificationTab")
                     mod_identification.Fill_Id_Menu(IdentificationTopicBar, Identification_Flp);
                 if (MainDockingTab.SelectedTab.Name == "ObservationTab")
                     splitContainer27.Hide();
                 else splitContainer27.Visible = true;
             }
-            else if (MainDockingTab.SelectedTab.Name == "ParamTab")
-            {
-                mod_global.Disable_Obs_Tools();
-                MainSplit.Panel2Collapsed = true;
-            }
-            else
+            else if (MainDockingTab.SelectedTab.Name != "ParamTab")
             {
                 mod_observation.Fill_Observation_Grid(ObservationGrid);
                 mod_observation.Fill_Code_Menu(CodeTopicBar);
@@ -93,6 +86,7 @@ namespace ACTIVA_Module_1
 
                 mod_observation.Show_Last_Selected_Obs(ObservationGrid);
             }
+            else mod_global.Disable_Obs_Tools();
 
             mod_global.Focused_Control = null;
             //SaisieTabControl.SelectedTab = SaisieTabControl.TabPages["KeyboardTab"];

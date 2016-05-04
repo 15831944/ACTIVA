@@ -113,7 +113,6 @@
             this.RefAudioTb.Size = new System.Drawing.Size(485, 20);
             this.RefAudioTb.TabIndex = 12;
             this.RefAudioTb.Tag = "audio";
-            this.RefAudioTb.Click += new System.EventHandler(this.other_click);
             // 
             // label13
             // 
@@ -146,7 +145,6 @@
             this.RefPhotoTb.Size = new System.Drawing.Size(485, 20);
             this.RefPhotoTb.TabIndex = 14;
             this.RefPhotoTb.Tag = "photo";
-            this.RefPhotoTb.Click += new System.EventHandler(this.other_click);
             // 
             // RefVideoTb
             // 
@@ -157,7 +155,6 @@
             this.RefVideoTb.Size = new System.Drawing.Size(485, 20);
             this.RefVideoTb.TabIndex = 13;
             this.RefVideoTb.Tag = "video";
-            this.RefVideoTb.Click += new System.EventHandler(this.other_click);
             // 
             // label10
             // 
@@ -207,7 +204,6 @@
             this.PosRegCb.Size = new System.Drawing.Size(251, 24);
             this.PosRegCb.TabIndex = 10;
             this.PosRegCb.Tag = "posregard";
-            this.PosRegCb.Click += new System.EventHandler(this.other_click);
             // 
             // PosRegLb
             // 
@@ -233,7 +229,6 @@
             this.AssemblageCb.Tag = "assemblage";
             this.AssemblageCb.Text = "Assemblage";
             this.AssemblageCb.UseVisualStyleBackColor = true;
-            this.AssemblageCb.Click += new System.EventHandler(this.other_click);
             // 
             // label9
             // 
@@ -256,7 +251,6 @@
             this.RemarqueTb.Size = new System.Drawing.Size(485, 59);
             this.RemarqueTb.TabIndex = 11;
             this.RemarqueTb.Tag = "remarques";
-            this.RemarqueTb.Click += new System.EventHandler(this.other_click);
             // 
             // groupBox3
             // 
@@ -298,7 +292,6 @@
             this.EmpCirc2Tb.Size = new System.Drawing.Size(485, 20);
             this.EmpCirc2Tb.TabIndex = 8;
             this.EmpCirc2Tb.Tag = "h2";
-            this.EmpCirc2Tb.Click += new System.EventHandler(this.other_click);
             // 
             // EmpCirc1Tb
             // 
@@ -309,7 +302,6 @@
             this.EmpCirc1Tb.Size = new System.Drawing.Size(485, 20);
             this.EmpCirc1Tb.TabIndex = 6;
             this.EmpCirc1Tb.Tag = "h1";
-            this.EmpCirc1Tb.Click += new System.EventHandler(this.other_click);
             // 
             // label8
             // 
@@ -342,7 +334,6 @@
             this.EmpLong2Tb.Size = new System.Drawing.Size(485, 20);
             this.EmpLong2Tb.TabIndex = 7;
             this.EmpLong2Tb.Tag = "pm2";
-            this.EmpLong2Tb.Click += new System.EventHandler(this.other_click);
             // 
             // EmpLong1Tb
             // 
@@ -353,7 +344,6 @@
             this.EmpLong1Tb.Size = new System.Drawing.Size(485, 20);
             this.EmpLong1Tb.TabIndex = 5;
             this.EmpLong1Tb.Tag = "pm1";
-            this.EmpLong1Tb.Click += new System.EventHandler(this.other_click);
             // 
             // label6
             // 
@@ -402,7 +392,6 @@
             this.Quant2Tb.Size = new System.Drawing.Size(485, 20);
             this.Quant2Tb.TabIndex = 4;
             this.Quant2Tb.Tag = "q2";
-            this.Quant2Tb.Click += new System.EventHandler(this.q2_click);
             // 
             // Quant1Tb
             // 
@@ -413,7 +402,6 @@
             this.Quant1Tb.Size = new System.Drawing.Size(485, 20);
             this.Quant1Tb.TabIndex = 3;
             this.Quant1Tb.Tag = "q1";
-            this.Quant1Tb.Click += new System.EventHandler(this.q1_click);
             // 
             // Quant1Lb
             // 
@@ -462,7 +450,6 @@
             this.Carac2Tb.Size = new System.Drawing.Size(485, 20);
             this.Carac2Tb.TabIndex = 2;
             this.Carac2Tb.Tag = "c2";
-            this.Carac2Tb.Click += new System.EventHandler(this.c2_click);
             // 
             // Carac1Tb
             // 
@@ -473,7 +460,6 @@
             this.Carac1Tb.Size = new System.Drawing.Size(485, 20);
             this.Carac1Tb.TabIndex = 0;
             this.Carac1Tb.Tag = "c1";
-            this.Carac1Tb.Click += new System.EventHandler(this.c1_click);
             // 
             // Carac1Lb
             // 

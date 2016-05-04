@@ -62,7 +62,15 @@ namespace ACTIVA_Module_1.component
 
             if (tinput.Tag.ToString() == "item")
             {
+                mod_global.MF.SaisieTabControl.TabPages["ChoiceTab"].Enabled = true;
                 mod_global.MF.SaisieTabControl.SelectedTab = mod_global.MF.SaisieTabControl.TabPages["ChoiceTab"];
+                mod_global.MF.SaisieTabControl.TabPages["VideoTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["DateTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["PhotoTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["AudioTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["SectionTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["KeyboardTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["SchemaTab"].Enabled = false;
                 mod_global.MF.flowLayoutPanel2.Controls.Clear();
 
                 multiple_choice_button but;
@@ -117,17 +125,41 @@ namespace ACTIVA_Module_1.component
             {
                 mod_global.MF.flowLayoutPanel2.Controls.Clear();
                 mod_global.MF.virtual_kb1.Set_Alpha_Numeric();
+                mod_global.MF.SaisieTabControl.TabPages["KeyboardTab"].Enabled = true;
                 mod_global.MF.SaisieTabControl.SelectedTab = mod_global.MF.SaisieTabControl.TabPages["KeyboardTab"];
+                mod_global.MF.SaisieTabControl.TabPages["VideoTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["DateTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["PhotoTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["AudioTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["SectionTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["ChoiceTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["SchemaTab"].Enabled = false;
             }
             else if (tinput.Tag.ToString() == "numerique")
             {
                 mod_global.MF.flowLayoutPanel2.Controls.Clear();
                 mod_global.MF.virtual_kb1.Set_Only_Numeric();
+                mod_global.MF.SaisieTabControl.TabPages["KeyboardTab"].Enabled = true;
                 mod_global.MF.SaisieTabControl.SelectedTab = mod_global.MF.SaisieTabControl.TabPages["KeyboardTab"];
+                mod_global.MF.SaisieTabControl.TabPages["VideoTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["DateTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["PhotoTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["AudioTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["SectionTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["ChoiceTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["SchemaTab"].Enabled = false;
             }
             else if (tinput.Tag.ToString() == "date")
             {
+                mod_global.MF.SaisieTabControl.TabPages["DateTab"].Enabled = true;
                 mod_global.MF.SaisieTabControl.SelectedTab = mod_global.MF.SaisieTabControl.TabPages["DateTab"];
+                mod_global.MF.SaisieTabControl.TabPages["VideoTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["KeyboardTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["PhotoTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["AudioTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["SectionTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["ChoiceTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["SchemaTab"].Enabled = false;
             }
         }
         // a validation du composant
