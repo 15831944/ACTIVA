@@ -141,11 +141,15 @@ namespace ACTIVA_Module_1.modules
 
                         //Code de défaut continu
                         str = string.Concat("/inspection/ouvrage[@nom ='", ouvrage.Attributes["nom"].InnerText, "']/observations/code[@num = \"", obs.Attributes["num"].InnerText, "\"]", "/caracteristiques/caracteristique[@nom=\"pm2\"]");
+                        String pm1 = string.Concat("/inspection/ouvrage[@nom ='", ouvrage.Attributes["nom"].InnerText, "']/observations/code[@num = \"", obs.Attributes["num"].InnerText, "\"]", "/caracteristiques/caracteristique[@nom=\"pm1\"]");
                         if (svf.SelectSingleNode(str).InnerText != "")
                         {
-                            code = doc.CreateElement("J");
-                            code.InnerText = cpt.ToString();
-                            var.AppendChild(code);
+                            if (svf.SelectSingleNode(str).InnerText != svf.SelectSingleNode(pm1).InnerText)
+                            {
+                                code = doc.CreateElement("J");
+                                code.InnerText = cpt.ToString();
+                                var.AppendChild(code);
+                            }
                         }
 
                         //Assemblage
@@ -167,7 +171,7 @@ namespace ACTIVA_Module_1.modules
                         }
 
                         str = string.Concat("/inspection/ouvrage[@nom ='", ouvrage.Attributes["nom"].InnerText, "']/observations/code[@num = \"", obs.Attributes["num"].InnerText, "\"]", "/caracteristiques/caracteristique[@nom=\"pm2\"]");
-                        String pm1 = string.Concat("/inspection/ouvrage[@nom ='", ouvrage.Attributes["nom"].InnerText, "']/observations/code[@num = \"", obs.Attributes["num"].InnerText, "\"]", "/caracteristiques/caracteristique[@nom=\"pm1\"]");
+                        pm1 = string.Concat("/inspection/ouvrage[@nom ='", ouvrage.Attributes["nom"].InnerText, "']/observations/code[@num = \"", obs.Attributes["num"].InnerText, "\"]", "/caracteristiques/caracteristique[@nom=\"pm1\"]");
                         if (svf.SelectSingleNode(str).InnerText != "")
                         {
                             if (svf.SelectSingleNode(str).InnerText != svf.SelectSingleNode(pm1).InnerText)
