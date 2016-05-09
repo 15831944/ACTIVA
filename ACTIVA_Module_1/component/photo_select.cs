@@ -13,7 +13,7 @@ namespace ACTIVA_Module_1.component
     public partial class photo_select : UserControl
     {
         PictureBox Selected_Photo;
-        Image tmp;
+
         private List<WhatToPaint> ListToPaint = new List<WhatToPaint>();
 
         public photo_select()

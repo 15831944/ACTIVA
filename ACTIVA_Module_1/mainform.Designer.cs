@@ -38,11 +38,6 @@
             this.c1Command2 = new C1.Win.C1Command.C1Command();
             this.c1Command3 = new C1.Win.C1Command.C1Command();
             this.c1Command4 = new C1.Win.C1Command.C1Command();
-            this.c1Command5 = new C1.Win.C1Command.C1Command();
-            this.c1Command6 = new C1.Win.C1Command.C1Command();
-            this.c1Command7 = new C1.Win.C1Command.C1Command();
-            this.c1Command8 = new C1.Win.C1Command.C1Command();
-            this.c1Command9 = new C1.Win.C1Command.C1Command();
             this.openSVFDialog = new System.Windows.Forms.OpenFileDialog();
             this.openXMLDialog = new System.Windows.Forms.OpenFileDialog();
             this.FolderDialog = new System.Windows.Forms.FolderBrowserDialog();
@@ -80,8 +75,6 @@
             this.LineaireStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.ObsToolsLb = new System.Windows.Forms.ToolStripLabel();
-            this.ObsCompactGridBt = new System.Windows.Forms.ToolStripButton();
-            this.ObsDeplieGridBt = new System.Windows.Forms.ToolStripButton();
             this.ObsDiffereSp = new System.Windows.Forms.ToolStripSeparator();
             this.ObsDiffereLb = new System.Windows.Forms.ToolStripLabel();
             this.ObsDiffereCountLb = new System.Windows.Forms.ToolStripLabel();
@@ -89,70 +82,52 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer27 = new System.Windows.Forms.SplitContainer();
             this.InputPreviewTb = new System.Windows.Forms.TextBox();
-            this.EraseAllBt = new System.Windows.Forms.Button();
             this.MainDockingTab = new C1.Win.C1Command.C1DockingTab();
             this.InspectionTab = new C1.Win.C1Command.C1DockingTabPage();
             this.InspectionSplit = new System.Windows.Forms.SplitContainer();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.CloseInspectionBt = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.SVFLabel = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.MenuDockingTab = new C1.Win.C1Command.C1DockingTab();
             this.chargementTab = new C1.Win.C1Command.C1DockingTabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Btn_Exporter = new System.Windows.Forms.Button();
-            this.OpenSVFButton = new System.Windows.Forms.Button();
             this.openSVFTb = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.Folder_New_Inspection = new System.Windows.Forms.Button();
-            this.NewInspectionBt = new System.Windows.Forms.Button();
             this.NewInspectionPathTb = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label25 = new System.Windows.Forms.Label();
             this.NewInspectionNameTb = new System.Windows.Forms.TextBox();
             this.AddOuvrageGp = new System.Windows.Forms.GroupBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.OuvrageNomTb = new System.Windows.Forms.TextBox();
-            this.NewOuvrageBt = new System.Windows.Forms.Button();
             this.OuvrageFormeCb = new System.Windows.Forms.ComboBox();
             this.OuvrageTypeCb = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.InformationTab = new C1.Win.C1Command.C1DockingTabPage();
             this.TypeOuvrageGb = new System.Windows.Forms.GroupBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.cb_regard = new System.Windows.Forms.CheckBox();
             this.cb_branchement = new System.Windows.Forms.CheckBox();
             this.cb_troncon = new System.Windows.Forms.CheckBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.obs_nb_label = new System.Windows.Forms.Label();
             this.obs_name_label = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.ReportTab = new C1.Win.C1Command.C1DockingTabPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.SaveReportParamBt = new System.Windows.Forms.Button();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.ReportTxtTb = new System.Windows.Forms.TextBox();
-            this.ReportImgPb = new System.Windows.Forms.PictureBox();
             this.ReportImgTb = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.SyntCb = new System.Windows.Forms.CheckBox();
             this.ObsCb = new System.Windows.Forms.CheckBox();
             this.IdCb = new System.Windows.Forms.CheckBox();
             this.ouvrageLb = new System.Windows.Forms.Label();
-            this.GenerateReportBt = new System.Windows.Forms.Button();
             this.AutocadTab = new C1.Win.C1Command.C1DockingTabPage();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.V2008Cb = new System.Windows.Forms.CheckBox();
             this.V2007Cb = new System.Windows.Forms.CheckBox();
             this.V2006Cb = new System.Windows.Forms.CheckBox();
@@ -160,7 +135,6 @@
             this.AboutTab = new C1.Win.C1Command.C1DockingTabPage();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.labelnumcompil = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.labeldateversion = new System.Windows.Forms.Label();
@@ -169,28 +143,17 @@
             this.splitContainer25 = new System.Windows.Forms.SplitContainer();
             this.OuvrageList = new C1.Win.C1List.C1List();
             this.OuvrageToolsPanel = new System.Windows.Forms.Panel();
-            this.SaveOuvrageOrderBt = new System.Windows.Forms.Button();
-            this.DeleteOuvrageBt = new System.Windows.Forms.Button();
-            this.OuvrageMoveDownBt = new System.Windows.Forms.Button();
-            this.OuvrageMoveUpBt = new System.Windows.Forms.Button();
-            this.CloneOuvrageBt = new System.Windows.Forms.Button();
             this.IdentificationTab = new C1.Win.C1Command.C1DockingTabPage();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.IdentificationTopicBar = new C1.Win.C1Command.C1TopicBar();
             this.IdFormSplit = new System.Windows.Forms.SplitContainer();
-            this.IdentificationValidBt = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.IdFormLabel = new System.Windows.Forms.Label();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
             this.Identification_Flp = new System.Windows.Forms.FlowLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
-            this.IdFacultatifPb = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.IdDesactivePb = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.IdDifferePb = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.IdObligatoirePb = new System.Windows.Forms.PictureBox();
             this.ObservationTab = new C1.Win.C1Command.C1DockingTabPage();
             this.ObservationGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.RenseignementTab = new C1.Win.C1Command.C1DockingTabPage();
@@ -199,43 +162,31 @@
             this.ParamDockingTab = new C1.Win.C1Command.C1DockingTab();
             this.XmlPathTab = new C1.Win.C1Command.C1DockingTabPage();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.FileSymboleBt = new System.Windows.Forms.Button();
             this.label54 = new System.Windows.Forms.Label();
             this.FileSymboleTb = new System.Windows.Forms.TextBox();
-            this.FileHachureBt = new System.Windows.Forms.Button();
             this.label59 = new System.Windows.Forms.Label();
             this.FileHachureTb = new System.Windows.Forms.TextBox();
-            this.FileLigneBt = new System.Windows.Forms.Button();
             this.label60 = new System.Windows.Forms.Label();
             this.FileLigneTb = new System.Windows.Forms.TextBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.XmlMotifBt = new System.Windows.Forms.Button();
             this.label34 = new System.Windows.Forms.Label();
             this.XmlMotifTb = new System.Windows.Forms.TextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.XmlSectionImgDirBt = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
             this.XmlSectionImgDirTb = new System.Windows.Forms.TextBox();
-            this.XmlSectionOuvrageBt = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
             this.XmlSectionOuvrageTb = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.XmlIdRegBt = new System.Windows.Forms.Button();
             this.XmlIdCanaTb = new System.Windows.Forms.TextBox();
-            this.XmlIdCanaBt = new System.Windows.Forms.Button();
             this.XmlIdRegTb = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.XmlFamilleCodeIdBt = new System.Windows.Forms.Button();
-            this.XmlGroupeCodeIdBt = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.XmlFamilleCodeIdTb = new System.Windows.Forms.TextBox();
             this.XmlGroupCodeIdTb = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.XmlObsRegBt = new System.Windows.Forms.Button();
-            this.XmlObsCanaBt = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.XmlObsRegTb = new System.Windows.Forms.TextBox();
             this.XmlObsCanaTb = new System.Windows.Forms.TextBox();
@@ -243,17 +194,13 @@
             this.XmlObsTab = new C1.Win.C1Command.C1DockingTabPage();
             this.XmlParamSplit = new System.Windows.Forms.SplitContainer();
             this.ToolStripObsCode = new System.Windows.Forms.ToolStrip();
-            this.XmlObsCanaButton = new System.Windows.Forms.ToolStripButton();
-            this.XmlObsRegButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.XmlObsStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.splitContainer5 = new System.Windows.Forms.SplitContainer();
             this.XmlCodesSplit = new System.Windows.Forms.SplitContainer();
             this.label52 = new System.Windows.Forms.Label();
-            this.XmlObsCodeDelValueBt = new System.Windows.Forms.Button();
             this.label53 = new System.Windows.Forms.Label();
-            this.XmlObsCodeAddValueBt = new System.Windows.Forms.Button();
             this.XmlObsCodeAddValueTb = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.XmlObsCodesGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
@@ -263,34 +210,26 @@
             this.XmlObsCaracGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.XmlItemsSplit = new System.Windows.Forms.SplitContainer();
             this.label56 = new System.Windows.Forms.Label();
-            this.XmlObsItemDelValueBt = new System.Windows.Forms.Button();
             this.label57 = new System.Windows.Forms.Label();
-            this.XmlObsItemAddValueBt = new System.Windows.Forms.Button();
             this.XmlObsItemAddValueTb = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.XmlObsItemGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.XmlIdTab = new C1.Win.C1Command.C1DockingTabPage();
             this.splitContainer7 = new System.Windows.Forms.SplitContainer();
             this.ToolStripIdCode = new System.Windows.Forms.ToolStrip();
-            this.XmlIdCanaButton = new System.Windows.Forms.ToolStripButton();
-            this.XmlIdRegButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.XmlIdStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.splitContainer8 = new System.Windows.Forms.SplitContainer();
             this.splitContainer10 = new System.Windows.Forms.SplitContainer();
             this.label48 = new System.Windows.Forms.Label();
-            this.XmlIdCodeDelValueBt = new System.Windows.Forms.Button();
             this.label49 = new System.Windows.Forms.Label();
-            this.XmlIdCodeAddValueBt = new System.Windows.Forms.Button();
             this.XmlIdCodeAddValueTb = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.XmlIdCodeGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.splitContainer11 = new System.Windows.Forms.SplitContainer();
             this.label50 = new System.Windows.Forms.Label();
-            this.XmlIdItemDelValueBt = new System.Windows.Forms.Button();
             this.label51 = new System.Windows.Forms.Label();
-            this.XmlIdItemAddValueBt = new System.Windows.Forms.Button();
             this.XmlIdItemAddValueTb = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.XmlIdItemGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
@@ -302,17 +241,13 @@
             this.splitContainer13 = new System.Windows.Forms.SplitContainer();
             this.splitContainer21 = new System.Windows.Forms.SplitContainer();
             this.label44 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.label45 = new System.Windows.Forms.Label();
-            this.XmlSectionAddBt = new System.Windows.Forms.Button();
             this.XmlSectionAddTb = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.XmlSectionGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.splitContainer22 = new System.Windows.Forms.SplitContainer();
             this.label46 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
             this.label47 = new System.Windows.Forms.Label();
-            this.XmlHeureAddBt = new System.Windows.Forms.Button();
             this.XmlHeureAddTb = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.XmlHeureGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
@@ -321,8 +256,6 @@
             this.c1DockingTabPage3 = new C1.Win.C1Command.C1DockingTabPage();
             this.splitContainer14 = new System.Windows.Forms.SplitContainer();
             this.ToolStripAutoCad = new System.Windows.Forms.ToolStrip();
-            this.XmlAutocadCanaButton = new System.Windows.Forms.ToolStripButton();
-            this.XmlAutocadRegButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel5 = new System.Windows.Forms.ToolStripLabel();
             this.XmlAutocadStripLabel = new System.Windows.Forms.ToolStripLabel();
@@ -341,34 +274,101 @@
             this.splitContainer17 = new System.Windows.Forms.SplitContainer();
             this.splitContainer18 = new System.Windows.Forms.SplitContainer();
             this.label39 = new System.Windows.Forms.Label();
-            this.XmlPonctuelDelValueBt = new System.Windows.Forms.Button();
             this.label38 = new System.Windows.Forms.Label();
-            this.XmlPonctuelAddValueBt = new System.Windows.Forms.Button();
             this.XmlPonctuelAddValueTb = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.MotifPonctuelGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.splitContainer19 = new System.Windows.Forms.SplitContainer();
             this.splitContainer20 = new System.Windows.Forms.SplitContainer();
             this.label40 = new System.Windows.Forms.Label();
-            this.XmlLineaireDelValueBt = new System.Windows.Forms.Button();
             this.label41 = new System.Windows.Forms.Label();
-            this.XmlLineaireAddValueBt = new System.Windows.Forms.Button();
             this.XmlLineaireAddValueTb = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.MotifLineaireGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.splitContainer26 = new System.Windows.Forms.SplitContainer();
             this.label42 = new System.Windows.Forms.Label();
-            this.XmlSurfaciqueDelValueBt = new System.Windows.Forms.Button();
             this.label43 = new System.Windows.Forms.Label();
-            this.XmlSurfaciqueAddValueBt = new System.Windows.Forms.Button();
             this.XmlSurfaciqueAddValueTb = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.MotifSurfaciqueGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.CodeObsSplit = new System.Windows.Forms.SplitContainer();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
             this.CodeTopicBar = new C1.Win.C1Command.C1TopicBar();
             this.MainSplit = new System.Windows.Forms.SplitContainer();
+            this.ObsCompactGridBt = new System.Windows.Forms.ToolStripButton();
+            this.ObsDeplieGridBt = new System.Windows.Forms.ToolStripButton();
+            this.EraseAllBt = new System.Windows.Forms.Button();
+            this.CloseInspectionBt = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Btn_Exporter = new System.Windows.Forms.Button();
+            this.OpenSVFButton = new System.Windows.Forms.Button();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.Folder_New_Inspection = new System.Windows.Forms.Button();
+            this.NewInspectionBt = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.NewOuvrageBt = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.SaveReportParamBt = new System.Windows.Forms.Button();
+            this.ReportImgPb = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.GenerateReportBt = new System.Windows.Forms.Button();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.SaveOuvrageOrderBt = new System.Windows.Forms.Button();
+            this.DeleteOuvrageBt = new System.Windows.Forms.Button();
+            this.OuvrageMoveDownBt = new System.Windows.Forms.Button();
+            this.OuvrageMoveUpBt = new System.Windows.Forms.Button();
+            this.CloneOuvrageBt = new System.Windows.Forms.Button();
+            this.IdentificationValidBt = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.IdFacultatifPb = new System.Windows.Forms.PictureBox();
+            this.IdDesactivePb = new System.Windows.Forms.PictureBox();
+            this.IdDifferePb = new System.Windows.Forms.PictureBox();
+            this.IdObligatoirePb = new System.Windows.Forms.PictureBox();
+            this.FileSymboleBt = new System.Windows.Forms.Button();
+            this.FileHachureBt = new System.Windows.Forms.Button();
+            this.FileLigneBt = new System.Windows.Forms.Button();
+            this.XmlMotifBt = new System.Windows.Forms.Button();
+            this.XmlSectionImgDirBt = new System.Windows.Forms.Button();
+            this.XmlSectionOuvrageBt = new System.Windows.Forms.Button();
+            this.XmlIdRegBt = new System.Windows.Forms.Button();
+            this.XmlIdCanaBt = new System.Windows.Forms.Button();
+            this.XmlFamilleCodeIdBt = new System.Windows.Forms.Button();
+            this.XmlGroupeCodeIdBt = new System.Windows.Forms.Button();
+            this.XmlObsRegBt = new System.Windows.Forms.Button();
+            this.XmlObsCanaBt = new System.Windows.Forms.Button();
+            this.XmlObsCanaButton = new System.Windows.Forms.ToolStripButton();
+            this.XmlObsRegButton = new System.Windows.Forms.ToolStripButton();
+            this.XmlObsCodeDelValueBt = new System.Windows.Forms.Button();
+            this.XmlObsCodeAddValueBt = new System.Windows.Forms.Button();
+            this.XmlObsItemDelValueBt = new System.Windows.Forms.Button();
+            this.XmlObsItemAddValueBt = new System.Windows.Forms.Button();
+            this.XmlIdCanaButton = new System.Windows.Forms.ToolStripButton();
+            this.XmlIdRegButton = new System.Windows.Forms.ToolStripButton();
+            this.XmlIdCodeDelValueBt = new System.Windows.Forms.Button();
+            this.XmlIdCodeAddValueBt = new System.Windows.Forms.Button();
+            this.XmlIdItemDelValueBt = new System.Windows.Forms.Button();
+            this.XmlIdItemAddValueBt = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.XmlSectionAddBt = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.XmlHeureAddBt = new System.Windows.Forms.Button();
+            this.XmlAutocadCanaButton = new System.Windows.Forms.ToolStripButton();
+            this.XmlAutocadRegButton = new System.Windows.Forms.ToolStripButton();
+            this.XmlPonctuelDelValueBt = new System.Windows.Forms.Button();
+            this.XmlPonctuelAddValueBt = new System.Windows.Forms.Button();
+            this.XmlLineaireDelValueBt = new System.Windows.Forms.Button();
+            this.XmlLineaireAddValueBt = new System.Windows.Forms.Button();
+            this.XmlSurfaciqueDelValueBt = new System.Windows.Forms.Button();
+            this.XmlSurfaciqueAddValueBt = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.c1Command5 = new C1.Win.C1Command.C1Command();
+            this.c1Command6 = new C1.Win.C1Command.C1Command();
+            this.c1Command7 = new C1.Win.C1Command.C1Command();
+            this.c1Command8 = new C1.Win.C1Command.C1Command();
+            this.c1Command9 = new C1.Win.C1Command.C1Command();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).BeginInit();
             this.SaisieInputSplit.Panel2.SuspendLayout();
             this.SaisieInputSplit.SuspendLayout();
@@ -399,7 +399,6 @@
             this.InspectionSplit.Panel2.SuspendLayout();
             this.InspectionSplit.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
@@ -407,26 +406,17 @@
             this.MenuDockingTab.SuspendLayout();
             this.chargementTab.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.AddOuvrageGp.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.InformationTab.SuspendLayout();
             this.TypeOuvrageGb.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.ReportTab.SuspendLayout();
             this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ReportImgPb)).BeginInit();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.AutocadTab.SuspendLayout();
             this.groupBox13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.AboutTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.splitContainer25.Panel1.SuspendLayout();
             this.splitContainer25.Panel2.SuspendLayout();
             this.splitContainer25.SuspendLayout();
@@ -440,14 +430,9 @@
             this.IdFormSplit.Panel1.SuspendLayout();
             this.IdFormSplit.Panel2.SuspendLayout();
             this.IdFormSplit.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.splitContainer4.Panel1.SuspendLayout();
             this.splitContainer4.Panel2.SuspendLayout();
             this.splitContainer4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IdFacultatifPb)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IdDesactivePb)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IdDifferePb)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IdObligatoirePb)).BeginInit();
             this.ObservationTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ObservationGrid)).BeginInit();
             this.RenseignementTab.SuspendLayout();
@@ -562,11 +547,26 @@
             this.CodeObsSplit.Panel1.SuspendLayout();
             this.CodeObsSplit.Panel2.SuspendLayout();
             this.CodeObsSplit.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CodeTopicBar)).BeginInit();
             this.MainSplit.Panel1.SuspendLayout();
             this.MainSplit.Panel2.SuspendLayout();
             this.MainSplit.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ReportImgPb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IdFacultatifPb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IdDesactivePb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IdDifferePb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IdObligatoirePb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // c1CommandHolder1
@@ -631,36 +631,6 @@
             // 
             this.c1Command4.Name = "c1Command4";
             this.c1Command4.Text = "Eléments principaux de l\'ouvrage inspecté";
-            // 
-            // c1Command5
-            // 
-            this.c1Command5.Image = ((System.Drawing.Image)(resources.GetObject("c1Command5.Image")));
-            this.c1Command5.Name = "c1Command5";
-            this.c1Command5.Text = "&New";
-            // 
-            // c1Command6
-            // 
-            this.c1Command6.Image = ((System.Drawing.Image)(resources.GetObject("c1Command6.Image")));
-            this.c1Command6.Name = "c1Command6";
-            this.c1Command6.Text = "&Open";
-            // 
-            // c1Command7
-            // 
-            this.c1Command7.Image = ((System.Drawing.Image)(resources.GetObject("c1Command7.Image")));
-            this.c1Command7.Name = "c1Command7";
-            this.c1Command7.Text = "&Close";
-            // 
-            // c1Command8
-            // 
-            this.c1Command8.Image = ((System.Drawing.Image)(resources.GetObject("c1Command8.Image")));
-            this.c1Command8.Name = "c1Command8";
-            this.c1Command8.Text = "&Save";
-            // 
-            // c1Command9
-            // 
-            this.c1Command9.Image = ((System.Drawing.Image)(resources.GetObject("c1Command9.Image")));
-            this.c1Command9.Name = "c1Command9";
-            this.c1Command9.Text = "&Print...";
             // 
             // openSVFDialog
             // 
@@ -982,26 +952,6 @@
             this.ObsToolsLb.Size = new System.Drawing.Size(64, 22);
             this.ObsToolsLb.Text = "Affichage : ";
             // 
-            // ObsCompactGridBt
-            // 
-            this.ObsCompactGridBt.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ObsCompactGridBt.Image = global::ACTIVA_Module_1.Properties.Resources.text_columns1;
-            this.ObsCompactGridBt.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.ObsCompactGridBt.Name = "ObsCompactGridBt";
-            this.ObsCompactGridBt.Size = new System.Drawing.Size(69, 22);
-            this.ObsCompactGridBt.Text = "Compact";
-            this.ObsCompactGridBt.Click += new System.EventHandler(this.ObsCompactGridBt_Click);
-            // 
-            // ObsDeplieGridBt
-            // 
-            this.ObsDeplieGridBt.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ObsDeplieGridBt.Image = global::ACTIVA_Module_1.Properties.Resources.portrait2;
-            this.ObsDeplieGridBt.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.ObsDeplieGridBt.Name = "ObsDeplieGridBt";
-            this.ObsDeplieGridBt.Size = new System.Drawing.Size(56, 22);
-            this.ObsDeplieGridBt.Text = "Déplié";
-            this.ObsDeplieGridBt.Click += new System.EventHandler(this.ObsDeplieGridBt_Click);
-            // 
             // ObsDiffereSp
             // 
             this.ObsDiffereSp.Name = "ObsDiffereSp";
@@ -1092,22 +1042,6 @@
             this.InputPreviewTb.Size = new System.Drawing.Size(924, 22);
             this.InputPreviewTb.TabIndex = 2;
             // 
-            // EraseAllBt
-            // 
-            this.EraseAllBt.BackColor = System.Drawing.SystemColors.Control;
-            this.EraseAllBt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EraseAllBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
-            this.EraseAllBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EraseAllBt.Location = new System.Drawing.Point(0, 0);
-            this.EraseAllBt.Name = "EraseAllBt";
-            this.EraseAllBt.Size = new System.Drawing.Size(96, 27);
-            this.EraseAllBt.TabIndex = 2;
-            this.EraseAllBt.Text = "Tout effacer";
-            this.EraseAllBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.EraseAllBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.EraseAllBt.UseVisualStyleBackColor = true;
-            this.EraseAllBt.Click += new System.EventHandler(this.EraseAllBt_Click);
-            // 
             // MainDockingTab
             // 
             this.MainDockingTab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1174,33 +1108,6 @@
             this.groupBox7.TabIndex = 9;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Fichier SVF sélectionné";
-            // 
-            // CloseInspectionBt
-            // 
-            this.CloseInspectionBt.BackColor = System.Drawing.SystemColors.Control;
-            this.CloseInspectionBt.Dock = System.Windows.Forms.DockStyle.Right;
-            this.CloseInspectionBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CloseInspectionBt.ForeColor = System.Drawing.Color.Black;
-            this.CloseInspectionBt.Image = global::ACTIVA_Module_1.Properties.Resources.cancel_16;
-            this.CloseInspectionBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CloseInspectionBt.Location = new System.Drawing.Point(896, 18);
-            this.CloseInspectionBt.Name = "CloseInspectionBt";
-            this.CloseInspectionBt.Size = new System.Drawing.Size(123, 30);
-            this.CloseInspectionBt.TabIndex = 0;
-            this.CloseInspectionBt.Text = "Fermer l\'inspection";
-            this.CloseInspectionBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CloseInspectionBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.CloseInspectionBt.UseVisualStyleBackColor = true;
-            this.CloseInspectionBt.Click += new System.EventHandler(this.CloseInspectionBt_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
-            this.pictureBox2.Location = new System.Drawing.Point(11, 21);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
             // 
             // SVFLabel
             // 
@@ -1277,36 +1184,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ouvrir une inspection";
             // 
-            // Btn_Exporter
-            // 
-            this.Btn_Exporter.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_Exporter.Image = global::ACTIVA_Module_1.Properties.Resources.text_columns1;
-            this.Btn_Exporter.Location = new System.Drawing.Point(200, 56);
-            this.Btn_Exporter.Name = "Btn_Exporter";
-            this.Btn_Exporter.Size = new System.Drawing.Size(90, 25);
-            this.Btn_Exporter.TabIndex = 16;
-            this.Btn_Exporter.Text = "Exporter";
-            this.Btn_Exporter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Btn_Exporter.UseVisualStyleBackColor = true;
-            this.Btn_Exporter.Click += new System.EventHandler(this.Btn_Exporter_Click);
-            // 
-            // OpenSVFButton
-            // 
-            this.OpenSVFButton.BackColor = System.Drawing.SystemColors.Control;
-            this.OpenSVFButton.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.OpenSVFButton.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.OpenSVFButton.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
-            this.OpenSVFButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.OpenSVFButton.Location = new System.Drawing.Point(296, 56);
-            this.OpenSVFButton.Name = "OpenSVFButton";
-            this.OpenSVFButton.Size = new System.Drawing.Size(71, 25);
-            this.OpenSVFButton.TabIndex = 15;
-            this.OpenSVFButton.Text = "Ouvrir";
-            this.OpenSVFButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.OpenSVFButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.OpenSVFButton.UseVisualStyleBackColor = true;
-            this.OpenSVFButton.Click += new System.EventHandler(this.OpenSVFButton_Click);
-            // 
             // openSVFTb
             // 
             this.openSVFTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1326,16 +1203,6 @@
             this.label26.TabIndex = 12;
             this.label26.Text = "Emplacement :";
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::ACTIVA_Module_1.Properties.Resources.open_inspection;
-            this.pictureBox8.Location = new System.Drawing.Point(17, 27);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 4;
-            this.pictureBox8.TabStop = false;
-            // 
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.Folder_New_Inspection);
@@ -1353,35 +1220,6 @@
             this.groupBox9.TabIndex = 16;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Créer une inspection";
-            // 
-            // Folder_New_Inspection
-            // 
-            this.Folder_New_Inspection.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.Folder_New_Inspection.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
-            this.Folder_New_Inspection.Location = new System.Drawing.Point(273, 96);
-            this.Folder_New_Inspection.Name = "Folder_New_Inspection";
-            this.Folder_New_Inspection.Size = new System.Drawing.Size(94, 25);
-            this.Folder_New_Inspection.TabIndex = 16;
-            this.Folder_New_Inspection.Text = "Parcourir";
-            this.Folder_New_Inspection.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Folder_New_Inspection.UseVisualStyleBackColor = true;
-            this.Folder_New_Inspection.Click += new System.EventHandler(this.Folder_New_Inspection_Click);
-            // 
-            // NewInspectionBt
-            // 
-            this.NewInspectionBt.BackColor = System.Drawing.SystemColors.Control;
-            this.NewInspectionBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.NewInspectionBt.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.NewInspectionBt.Image = global::ACTIVA_Module_1.Properties.Resources.add_16;
-            this.NewInspectionBt.Location = new System.Drawing.Point(180, 96);
-            this.NewInspectionBt.Name = "NewInspectionBt";
-            this.NewInspectionBt.Size = new System.Drawing.Size(87, 25);
-            this.NewInspectionBt.TabIndex = 15;
-            this.NewInspectionBt.Text = "Ajouter";
-            this.NewInspectionBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.NewInspectionBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.NewInspectionBt.UseVisualStyleBackColor = true;
-            this.NewInspectionBt.Click += new System.EventHandler(this.NewInspectionBt_Click);
             // 
             // NewInspectionPathTb
             // 
@@ -1401,16 +1239,6 @@
             this.label24.Size = new System.Drawing.Size(76, 14);
             this.label24.TabIndex = 12;
             this.label24.Text = "Emplacement :";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::ACTIVA_Module_1.Properties.Resources.new_inspection;
-            this.pictureBox7.Location = new System.Drawing.Point(17, 46);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 4;
-            this.pictureBox7.TabStop = false;
             // 
             // label25
             // 
@@ -1451,16 +1279,6 @@
             this.AddOuvrageGp.TabStop = false;
             this.AddOuvrageGp.Text = "Créer un ouvrage";
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::ACTIVA_Module_1.Properties.Resources.new_ouvrage;
-            this.pictureBox6.Location = new System.Drawing.Point(16, 25);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 4;
-            this.pictureBox6.TabStop = false;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -1491,21 +1309,6 @@
             this.OuvrageNomTb.Size = new System.Drawing.Size(72, 20);
             this.OuvrageNomTb.TabIndex = 9;
             this.OuvrageNomTb.Click += new System.EventHandler(this.OuvrageNomTb_Click);
-            // 
-            // NewOuvrageBt
-            // 
-            this.NewOuvrageBt.BackColor = System.Drawing.SystemColors.Control;
-            this.NewOuvrageBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.NewOuvrageBt.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.NewOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.add_16;
-            this.NewOuvrageBt.Location = new System.Drawing.Point(280, 62);
-            this.NewOuvrageBt.Name = "NewOuvrageBt";
-            this.NewOuvrageBt.Size = new System.Drawing.Size(87, 25);
-            this.NewOuvrageBt.TabIndex = 7;
-            this.NewOuvrageBt.Text = "Ajouter";
-            this.NewOuvrageBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.NewOuvrageBt.UseVisualStyleBackColor = true;
-            this.NewOuvrageBt.Click += new System.EventHandler(this.NewOuvrageBt_Click);
             // 
             // OuvrageFormeCb
             // 
@@ -1565,16 +1368,6 @@
             this.TypeOuvrageGb.TabIndex = 3;
             this.TypeOuvrageGb.TabStop = false;
             this.TypeOuvrageGb.Text = "Type d\'ouvrages affichés";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::ACTIVA_Module_1.Properties.Resources.tri;
-            this.pictureBox4.Location = new System.Drawing.Point(17, 35);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
             // 
             // cb_regard
             // 
@@ -1636,16 +1429,6 @@
             this.groupBox6.TabIndex = 4;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Informations de l\'ouvrage sélectionné";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::ACTIVA_Module_1.Properties.Resources.infos;
-            this.pictureBox3.Location = new System.Drawing.Point(17, 39);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
             // 
             // obs_nb_label
             // 
@@ -1719,19 +1502,6 @@
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Personalisation de l\'en-tête";
             // 
-            // SaveReportParamBt
-            // 
-            this.SaveReportParamBt.BackColor = System.Drawing.SystemColors.Control;
-            this.SaveReportParamBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.SaveReportParamBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.SaveReportParamBt.Location = new System.Drawing.Point(281, 116);
-            this.SaveReportParamBt.Name = "SaveReportParamBt";
-            this.SaveReportParamBt.Size = new System.Drawing.Size(103, 29);
-            this.SaveReportParamBt.TabIndex = 5;
-            this.SaveReportParamBt.Text = "Enregistrer";
-            this.SaveReportParamBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.SaveReportParamBt.UseVisualStyleBackColor = true;
-            // 
             // label29
             // 
             this.label29.AutoSize = true;
@@ -1763,16 +1533,6 @@
             this.ReportTxtTb.Size = new System.Drawing.Size(255, 59);
             this.ReportTxtTb.TabIndex = 2;
             // 
-            // ReportImgPb
-            // 
-            this.ReportImgPb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ReportImgPb.Location = new System.Drawing.Point(289, 24);
-            this.ReportImgPb.Name = "ReportImgPb";
-            this.ReportImgPb.Size = new System.Drawing.Size(60, 60);
-            this.ReportImgPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ReportImgPb.TabIndex = 1;
-            this.ReportImgPb.TabStop = false;
-            // 
             // ReportImgTb
             // 
             this.ReportImgTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1795,16 +1555,6 @@
             this.groupBox5.TabIndex = 8;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Parties du rapport à afficher";
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::ACTIVA_Module_1.Properties.Resources.rapport;
-            this.pictureBox10.Location = new System.Drawing.Point(36, 31);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 6;
-            this.pictureBox10.TabStop = false;
             // 
             // SyntCb
             // 
@@ -1855,21 +1605,6 @@
             this.ouvrageLb.Size = new System.Drawing.Size(0, 18);
             this.ouvrageLb.TabIndex = 7;
             // 
-            // GenerateReportBt
-            // 
-            this.GenerateReportBt.BackColor = System.Drawing.SystemColors.Control;
-            this.GenerateReportBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GenerateReportBt.ForeColor = System.Drawing.Color.Black;
-            this.GenerateReportBt.Image = global::ACTIVA_Module_1.Properties.Resources.export16;
-            this.GenerateReportBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GenerateReportBt.Location = new System.Drawing.Point(245, 281);
-            this.GenerateReportBt.Name = "GenerateReportBt";
-            this.GenerateReportBt.Size = new System.Drawing.Size(141, 25);
-            this.GenerateReportBt.TabIndex = 14;
-            this.GenerateReportBt.Text = "Génération de rapport";
-            this.GenerateReportBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.GenerateReportBt.UseVisualStyleBackColor = true;
-            // 
             // AutocadTab
             // 
             this.AutocadTab.BackColor = System.Drawing.Color.White;
@@ -1896,16 +1631,6 @@
             this.groupBox13.TabIndex = 9;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Version d\'AutoCAD installée sur le poste";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::ACTIVA_Module_1.Properties.Resources.autocad;
-            this.pictureBox9.Location = new System.Drawing.Point(26, 31);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 6;
-            this.pictureBox9.TabStop = false;
             // 
             // V2008Cb
             // 
@@ -1959,12 +1684,12 @@
             this.AboutTab.CaptionText = "?";
             this.AboutTab.Controls.Add(this.textBox1);
             this.AboutTab.Controls.Add(this.richTextBox1);
-            this.AboutTab.Controls.Add(this.pictureBox11);
             this.AboutTab.Controls.Add(this.labelnumcompil);
             this.AboutTab.Controls.Add(this.label58);
             this.AboutTab.Controls.Add(this.labeldateversion);
             this.AboutTab.Controls.Add(this.label27);
             this.AboutTab.Controls.Add(this.label55);
+            this.AboutTab.Controls.Add(this.pictureBox11);
             this.AboutTab.Location = new System.Drawing.Point(1, 24);
             this.AboutTab.Name = "AboutTab";
             this.AboutTab.Size = new System.Drawing.Size(395, 346);
@@ -1994,16 +1719,6 @@
             this.richTextBox1.TabIndex = 14;
             this.richTextBox1.Text = "Structure & Réhabilitation\n36, avenue du Général de Gaulle\n93170 Bagnolet\ntél : 0" +
                 "1 49 72 73 92\nwww.structure-rehabilitation.fr";
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::ACTIVA_Module_1.Properties.Resources.SR;
-            this.pictureBox11.Location = new System.Drawing.Point(14, 198);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(172, 83);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 12;
-            this.pictureBox11.TabStop = false;
             // 
             // labelnumcompil
             // 
@@ -2112,87 +1827,6 @@
             this.OuvrageToolsPanel.Size = new System.Drawing.Size(617, 31);
             this.OuvrageToolsPanel.TabIndex = 17;
             // 
-            // SaveOuvrageOrderBt
-            // 
-            this.SaveOuvrageOrderBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.SaveOuvrageOrderBt.AutoSize = true;
-            this.SaveOuvrageOrderBt.BackColor = System.Drawing.SystemColors.Control;
-            this.SaveOuvrageOrderBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveOuvrageOrderBt.ForeColor = System.Drawing.Color.Black;
-            this.SaveOuvrageOrderBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.SaveOuvrageOrderBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SaveOuvrageOrderBt.Location = new System.Drawing.Point(65, 3);
-            this.SaveOuvrageOrderBt.Name = "SaveOuvrageOrderBt";
-            this.SaveOuvrageOrderBt.Size = new System.Drawing.Size(102, 25);
-            this.SaveOuvrageOrderBt.TabIndex = 13;
-            this.SaveOuvrageOrderBt.Text = "Sauver l\'ordre";
-            this.SaveOuvrageOrderBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.SaveOuvrageOrderBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.SaveOuvrageOrderBt.UseVisualStyleBackColor = true;
-            this.SaveOuvrageOrderBt.Click += new System.EventHandler(this.SaveOuvrageOrderBt_Click);
-            // 
-            // DeleteOuvrageBt
-            // 
-            this.DeleteOuvrageBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.DeleteOuvrageBt.AutoSize = true;
-            this.DeleteOuvrageBt.BackColor = System.Drawing.SystemColors.Control;
-            this.DeleteOuvrageBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteOuvrageBt.ForeColor = System.Drawing.Color.Black;
-            this.DeleteOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.remove_16;
-            this.DeleteOuvrageBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DeleteOuvrageBt.Location = new System.Drawing.Point(532, 3);
-            this.DeleteOuvrageBt.Name = "DeleteOuvrageBt";
-            this.DeleteOuvrageBt.Size = new System.Drawing.Size(84, 25);
-            this.DeleteOuvrageBt.TabIndex = 6;
-            this.DeleteOuvrageBt.Text = "Supprimer";
-            this.DeleteOuvrageBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.DeleteOuvrageBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.DeleteOuvrageBt.UseVisualStyleBackColor = true;
-            this.DeleteOuvrageBt.Click += new System.EventHandler(this.DeleteOuvrageBt_Click);
-            // 
-            // OuvrageMoveDownBt
-            // 
-            this.OuvrageMoveDownBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.OuvrageMoveDownBt.BackColor = System.Drawing.SystemColors.Control;
-            this.OuvrageMoveDownBt.Image = global::ACTIVA_Module_1.Properties.Resources.down_16;
-            this.OuvrageMoveDownBt.Location = new System.Drawing.Point(3, 3);
-            this.OuvrageMoveDownBt.Name = "OuvrageMoveDownBt";
-            this.OuvrageMoveDownBt.Size = new System.Drawing.Size(25, 25);
-            this.OuvrageMoveDownBt.TabIndex = 2;
-            this.OuvrageMoveDownBt.UseVisualStyleBackColor = true;
-            this.OuvrageMoveDownBt.Click += new System.EventHandler(this.OuvrageMoveDownBt_Click);
-            // 
-            // OuvrageMoveUpBt
-            // 
-            this.OuvrageMoveUpBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.OuvrageMoveUpBt.BackColor = System.Drawing.SystemColors.Control;
-            this.OuvrageMoveUpBt.Image = global::ACTIVA_Module_1.Properties.Resources.up_16;
-            this.OuvrageMoveUpBt.Location = new System.Drawing.Point(34, 3);
-            this.OuvrageMoveUpBt.Name = "OuvrageMoveUpBt";
-            this.OuvrageMoveUpBt.Size = new System.Drawing.Size(25, 25);
-            this.OuvrageMoveUpBt.TabIndex = 1;
-            this.OuvrageMoveUpBt.UseVisualStyleBackColor = true;
-            this.OuvrageMoveUpBt.Click += new System.EventHandler(this.OuvrageMoveUpBt_Click);
-            // 
-            // CloneOuvrageBt
-            // 
-            this.CloneOuvrageBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.CloneOuvrageBt.AutoSize = true;
-            this.CloneOuvrageBt.BackColor = System.Drawing.SystemColors.Control;
-            this.CloneOuvrageBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CloneOuvrageBt.ForeColor = System.Drawing.Color.Black;
-            this.CloneOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.copy1_16;
-            this.CloneOuvrageBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CloneOuvrageBt.Location = new System.Drawing.Point(383, 3);
-            this.CloneOuvrageBt.Name = "CloneOuvrageBt";
-            this.CloneOuvrageBt.Size = new System.Drawing.Size(143, 25);
-            this.CloneOuvrageBt.TabIndex = 12;
-            this.CloneOuvrageBt.Text = "Dupliquer l\'inspectation";
-            this.CloneOuvrageBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CloneOuvrageBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.CloneOuvrageBt.UseVisualStyleBackColor = true;
-            this.CloneOuvrageBt.Click += new System.EventHandler(this.CloneOuvrageBt_Click);
-            // 
             // IdentificationTab
             // 
             this.IdentificationTab.Controls.Add(this.splitContainer3);
@@ -2263,32 +1897,6 @@
             this.IdFormSplit.SplitterWidth = 2;
             this.IdFormSplit.TabIndex = 1;
             // 
-            // IdentificationValidBt
-            // 
-            this.IdentificationValidBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.IdentificationValidBt.BackColor = System.Drawing.SystemColors.Control;
-            this.IdentificationValidBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IdentificationValidBt.ForeColor = System.Drawing.Color.Black;
-            this.IdentificationValidBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.IdentificationValidBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.IdentificationValidBt.Location = new System.Drawing.Point(619, 6);
-            this.IdentificationValidBt.Name = "IdentificationValidBt";
-            this.IdentificationValidBt.Size = new System.Drawing.Size(75, 23);
-            this.IdentificationValidBt.TabIndex = 39;
-            this.IdentificationValidBt.Text = "Sauver";
-            this.IdentificationValidBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.IdentificationValidBt.UseVisualStyleBackColor = false;
-            this.IdentificationValidBt.Click += new System.EventHandler(this.IdentificationValidBt_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ACTIVA_Module_1.Properties.Resources.Document;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // IdFormLabel
             // 
             this.IdFormLabel.AutoSize = true;
@@ -2352,16 +1960,6 @@
             this.label4.TabIndex = 38;
             this.label4.Text = "Champs facultatif";
             // 
-            // IdFacultatifPb
-            // 
-            this.IdFacultatifPb.BackColor = System.Drawing.Color.White;
-            this.IdFacultatifPb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.IdFacultatifPb.Location = new System.Drawing.Point(525, 4);
-            this.IdFacultatifPb.Name = "IdFacultatifPb";
-            this.IdFacultatifPb.Size = new System.Drawing.Size(56, 16);
-            this.IdFacultatifPb.TabIndex = 37;
-            this.IdFacultatifPb.TabStop = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -2370,15 +1968,6 @@
             this.label3.Size = new System.Drawing.Size(96, 14);
             this.label3.TabIndex = 36;
             this.label3.Text = "Champs désactivé";
-            // 
-            // IdDesactivePb
-            // 
-            this.IdDesactivePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.IdDesactivePb.Location = new System.Drawing.Point(349, 4);
-            this.IdDesactivePb.Name = "IdDesactivePb";
-            this.IdDesactivePb.Size = new System.Drawing.Size(56, 16);
-            this.IdDesactivePb.TabIndex = 35;
-            this.IdDesactivePb.TabStop = false;
             // 
             // label2
             // 
@@ -2389,15 +1978,6 @@
             this.label2.TabIndex = 34;
             this.label2.Text = "Champs différé";
             // 
-            // IdDifferePb
-            // 
-            this.IdDifferePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.IdDifferePb.Location = new System.Drawing.Point(186, 4);
-            this.IdDifferePb.Name = "IdDifferePb";
-            this.IdDifferePb.Size = new System.Drawing.Size(56, 16);
-            this.IdDifferePb.TabIndex = 33;
-            this.IdDifferePb.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -2406,15 +1986,6 @@
             this.label1.Size = new System.Drawing.Size(98, 14);
             this.label1.TabIndex = 32;
             this.label1.Text = "Champs obligatoire";
-            // 
-            // IdObligatoirePb
-            // 
-            this.IdObligatoirePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.IdObligatoirePb.Location = new System.Drawing.Point(3, 4);
-            this.IdObligatoirePb.Name = "IdObligatoirePb";
-            this.IdObligatoirePb.Size = new System.Drawing.Size(56, 16);
-            this.IdObligatoirePb.TabIndex = 31;
-            this.IdObligatoirePb.TabStop = false;
             // 
             // ObservationTab
             // 
@@ -2526,17 +2097,6 @@
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Lignes, Hachures et Symboles";
             // 
-            // FileSymboleBt
-            // 
-            this.FileSymboleBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FileSymboleBt.ForeColor = System.Drawing.Color.Black;
-            this.FileSymboleBt.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
-            this.FileSymboleBt.Location = new System.Drawing.Point(958, 118);
-            this.FileSymboleBt.Name = "FileSymboleBt";
-            this.FileSymboleBt.Size = new System.Drawing.Size(30, 24);
-            this.FileSymboleBt.TabIndex = 12;
-            this.FileSymboleBt.UseVisualStyleBackColor = true;
-            // 
             // label54
             // 
             this.label54.AutoSize = true;
@@ -2558,17 +2118,6 @@
             this.FileSymboleTb.Size = new System.Drawing.Size(932, 20);
             this.FileSymboleTb.TabIndex = 11;
             // 
-            // FileHachureBt
-            // 
-            this.FileHachureBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FileHachureBt.ForeColor = System.Drawing.Color.Black;
-            this.FileHachureBt.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
-            this.FileHachureBt.Location = new System.Drawing.Point(957, 77);
-            this.FileHachureBt.Name = "FileHachureBt";
-            this.FileHachureBt.Size = new System.Drawing.Size(30, 24);
-            this.FileHachureBt.TabIndex = 9;
-            this.FileHachureBt.UseVisualStyleBackColor = true;
-            // 
             // label59
             // 
             this.label59.AutoSize = true;
@@ -2589,17 +2138,6 @@
             this.FileHachureTb.Name = "FileHachureTb";
             this.FileHachureTb.Size = new System.Drawing.Size(932, 20);
             this.FileHachureTb.TabIndex = 8;
-            // 
-            // FileLigneBt
-            // 
-            this.FileLigneBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FileLigneBt.ForeColor = System.Drawing.Color.Black;
-            this.FileLigneBt.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
-            this.FileLigneBt.Location = new System.Drawing.Point(958, 36);
-            this.FileLigneBt.Name = "FileLigneBt";
-            this.FileLigneBt.Size = new System.Drawing.Size(30, 24);
-            this.FileLigneBt.TabIndex = 6;
-            this.FileLigneBt.UseVisualStyleBackColor = true;
             // 
             // label60
             // 
@@ -2636,17 +2174,6 @@
             this.groupBox11.TabIndex = 10;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Représentations AutoCAD";
-            // 
-            // XmlMotifBt
-            // 
-            this.XmlMotifBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlMotifBt.ForeColor = System.Drawing.Color.Black;
-            this.XmlMotifBt.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
-            this.XmlMotifBt.Location = new System.Drawing.Point(958, 37);
-            this.XmlMotifBt.Name = "XmlMotifBt";
-            this.XmlMotifBt.Size = new System.Drawing.Size(30, 24);
-            this.XmlMotifBt.TabIndex = 6;
-            this.XmlMotifBt.UseVisualStyleBackColor = true;
             // 
             // label34
             // 
@@ -2687,17 +2214,6 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Sections";
             // 
-            // XmlSectionImgDirBt
-            // 
-            this.XmlSectionImgDirBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlSectionImgDirBt.ForeColor = System.Drawing.Color.Black;
-            this.XmlSectionImgDirBt.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
-            this.XmlSectionImgDirBt.Location = new System.Drawing.Point(958, 80);
-            this.XmlSectionImgDirBt.Name = "XmlSectionImgDirBt";
-            this.XmlSectionImgDirBt.Size = new System.Drawing.Size(30, 24);
-            this.XmlSectionImgDirBt.TabIndex = 9;
-            this.XmlSectionImgDirBt.UseVisualStyleBackColor = true;
-            // 
             // label23
             // 
             this.label23.AutoSize = true;
@@ -2718,17 +2234,6 @@
             this.XmlSectionImgDirTb.Name = "XmlSectionImgDirTb";
             this.XmlSectionImgDirTb.Size = new System.Drawing.Size(932, 20);
             this.XmlSectionImgDirTb.TabIndex = 8;
-            // 
-            // XmlSectionOuvrageBt
-            // 
-            this.XmlSectionOuvrageBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlSectionOuvrageBt.ForeColor = System.Drawing.Color.Black;
-            this.XmlSectionOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
-            this.XmlSectionOuvrageBt.Location = new System.Drawing.Point(957, 37);
-            this.XmlSectionOuvrageBt.Name = "XmlSectionOuvrageBt";
-            this.XmlSectionOuvrageBt.Size = new System.Drawing.Size(30, 24);
-            this.XmlSectionOuvrageBt.TabIndex = 6;
-            this.XmlSectionOuvrageBt.UseVisualStyleBackColor = true;
             // 
             // label22
             // 
@@ -2793,17 +2298,6 @@
             this.label12.TabIndex = 2;
             this.label12.Text = "Codes identification regard";
             // 
-            // XmlIdRegBt
-            // 
-            this.XmlIdRegBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlIdRegBt.ForeColor = System.Drawing.Color.Black;
-            this.XmlIdRegBt.Image = ((System.Drawing.Image)(resources.GetObject("XmlIdRegBt.Image")));
-            this.XmlIdRegBt.Location = new System.Drawing.Point(958, 78);
-            this.XmlIdRegBt.Name = "XmlIdRegBt";
-            this.XmlIdRegBt.Size = new System.Drawing.Size(30, 24);
-            this.XmlIdRegBt.TabIndex = 5;
-            this.XmlIdRegBt.UseVisualStyleBackColor = true;
-            // 
             // XmlIdCanaTb
             // 
             this.XmlIdCanaTb.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -2812,17 +2306,6 @@
             this.XmlIdCanaTb.Name = "XmlIdCanaTb";
             this.XmlIdCanaTb.Size = new System.Drawing.Size(932, 20);
             this.XmlIdCanaTb.TabIndex = 1;
-            // 
-            // XmlIdCanaBt
-            // 
-            this.XmlIdCanaBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlIdCanaBt.ForeColor = System.Drawing.Color.Black;
-            this.XmlIdCanaBt.Image = ((System.Drawing.Image)(resources.GetObject("XmlIdCanaBt.Image")));
-            this.XmlIdCanaBt.Location = new System.Drawing.Point(958, 34);
-            this.XmlIdCanaBt.Name = "XmlIdCanaBt";
-            this.XmlIdCanaBt.Size = new System.Drawing.Size(30, 24);
-            this.XmlIdCanaBt.TabIndex = 4;
-            this.XmlIdCanaBt.UseVisualStyleBackColor = true;
             // 
             // XmlIdRegTb
             // 
@@ -2850,28 +2333,6 @@
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Groupe et famille";
-            // 
-            // XmlFamilleCodeIdBt
-            // 
-            this.XmlFamilleCodeIdBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlFamilleCodeIdBt.ForeColor = System.Drawing.Color.Black;
-            this.XmlFamilleCodeIdBt.Image = ((System.Drawing.Image)(resources.GetObject("XmlFamilleCodeIdBt.Image")));
-            this.XmlFamilleCodeIdBt.Location = new System.Drawing.Point(958, 84);
-            this.XmlFamilleCodeIdBt.Name = "XmlFamilleCodeIdBt";
-            this.XmlFamilleCodeIdBt.Size = new System.Drawing.Size(30, 24);
-            this.XmlFamilleCodeIdBt.TabIndex = 7;
-            this.XmlFamilleCodeIdBt.UseVisualStyleBackColor = true;
-            // 
-            // XmlGroupeCodeIdBt
-            // 
-            this.XmlGroupeCodeIdBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlGroupeCodeIdBt.ForeColor = System.Drawing.Color.Black;
-            this.XmlGroupeCodeIdBt.Image = ((System.Drawing.Image)(resources.GetObject("XmlGroupeCodeIdBt.Image")));
-            this.XmlGroupeCodeIdBt.Location = new System.Drawing.Point(957, 37);
-            this.XmlGroupeCodeIdBt.Name = "XmlGroupeCodeIdBt";
-            this.XmlGroupeCodeIdBt.Size = new System.Drawing.Size(30, 24);
-            this.XmlGroupeCodeIdBt.TabIndex = 6;
-            this.XmlGroupeCodeIdBt.UseVisualStyleBackColor = true;
             // 
             // label20
             // 
@@ -2932,28 +2393,6 @@
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Codes Observation";
-            // 
-            // XmlObsRegBt
-            // 
-            this.XmlObsRegBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlObsRegBt.ForeColor = System.Drawing.Color.Black;
-            this.XmlObsRegBt.Image = ((System.Drawing.Image)(resources.GetObject("XmlObsRegBt.Image")));
-            this.XmlObsRegBt.Location = new System.Drawing.Point(958, 82);
-            this.XmlObsRegBt.Name = "XmlObsRegBt";
-            this.XmlObsRegBt.Size = new System.Drawing.Size(30, 24);
-            this.XmlObsRegBt.TabIndex = 7;
-            this.XmlObsRegBt.UseVisualStyleBackColor = true;
-            // 
-            // XmlObsCanaBt
-            // 
-            this.XmlObsCanaBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlObsCanaBt.ForeColor = System.Drawing.Color.Black;
-            this.XmlObsCanaBt.Image = ((System.Drawing.Image)(resources.GetObject("XmlObsCanaBt.Image")));
-            this.XmlObsCanaBt.Location = new System.Drawing.Point(958, 35);
-            this.XmlObsCanaBt.Name = "XmlObsCanaBt";
-            this.XmlObsCanaBt.Size = new System.Drawing.Size(30, 24);
-            this.XmlObsCanaBt.TabIndex = 6;
-            this.XmlObsCanaBt.UseVisualStyleBackColor = true;
             // 
             // label13
             // 
@@ -3039,22 +2478,6 @@
             this.ToolStripObsCode.TabIndex = 0;
             this.ToolStripObsCode.Text = "toolStrip2";
             // 
-            // XmlObsCanaButton
-            // 
-            this.XmlObsCanaButton.Image = global::ACTIVA_Module_1.Properties.Resources.list16;
-            this.XmlObsCanaButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.XmlObsCanaButton.Name = "XmlObsCanaButton";
-            this.XmlObsCanaButton.Size = new System.Drawing.Size(195, 22);
-            this.XmlObsCanaButton.Text = "Codes Observation Canalisation";
-            // 
-            // XmlObsRegButton
-            // 
-            this.XmlObsRegButton.Image = global::ACTIVA_Module_1.Properties.Resources.list16;
-            this.XmlObsRegButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.XmlObsRegButton.Name = "XmlObsRegButton";
-            this.XmlObsRegButton.Size = new System.Drawing.Size(167, 22);
-            this.XmlObsRegButton.Text = "Codes Observation Regard";
-            // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
@@ -3127,17 +2550,6 @@
             this.label52.TabIndex = 15;
             this.label52.Text = "Supprimer une valeur :";
             // 
-            // XmlObsCodeDelValueBt
-            // 
-            this.XmlObsCodeDelValueBt.BackColor = System.Drawing.SystemColors.Control;
-            this.XmlObsCodeDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlObsCodeDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
-            this.XmlObsCodeDelValueBt.Location = new System.Drawing.Point(990, 1);
-            this.XmlObsCodeDelValueBt.Name = "XmlObsCodeDelValueBt";
-            this.XmlObsCodeDelValueBt.Size = new System.Drawing.Size(26, 22);
-            this.XmlObsCodeDelValueBt.TabIndex = 14;
-            this.XmlObsCodeDelValueBt.UseVisualStyleBackColor = false;
-            // 
             // label53
             // 
             this.label53.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -3148,18 +2560,6 @@
             this.label53.Size = new System.Drawing.Size(102, 14);
             this.label53.TabIndex = 13;
             this.label53.Text = "Ajouter une valeur :";
-            // 
-            // XmlObsCodeAddValueBt
-            // 
-            this.XmlObsCodeAddValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlObsCodeAddValueBt.BackColor = System.Drawing.SystemColors.Control;
-            this.XmlObsCodeAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlObsCodeAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.XmlObsCodeAddValueBt.Location = new System.Drawing.Point(822, -1);
-            this.XmlObsCodeAddValueBt.Name = "XmlObsCodeAddValueBt";
-            this.XmlObsCodeAddValueBt.Size = new System.Drawing.Size(26, 22);
-            this.XmlObsCodeAddValueBt.TabIndex = 12;
-            this.XmlObsCodeAddValueBt.UseVisualStyleBackColor = false;
             // 
             // XmlObsCodeAddValueTb
             // 
@@ -3290,18 +2690,6 @@
             this.label56.TabIndex = 15;
             this.label56.Text = "Supprimer une valeur :";
             // 
-            // XmlObsItemDelValueBt
-            // 
-            this.XmlObsItemDelValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlObsItemDelValueBt.BackColor = System.Drawing.SystemColors.Control;
-            this.XmlObsItemDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlObsItemDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
-            this.XmlObsItemDelValueBt.Location = new System.Drawing.Point(990, -1);
-            this.XmlObsItemDelValueBt.Name = "XmlObsItemDelValueBt";
-            this.XmlObsItemDelValueBt.Size = new System.Drawing.Size(26, 22);
-            this.XmlObsItemDelValueBt.TabIndex = 14;
-            this.XmlObsItemDelValueBt.UseVisualStyleBackColor = false;
-            // 
             // label57
             // 
             this.label57.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -3312,18 +2700,6 @@
             this.label57.Size = new System.Drawing.Size(102, 14);
             this.label57.TabIndex = 13;
             this.label57.Text = "Ajouter une valeur :";
-            // 
-            // XmlObsItemAddValueBt
-            // 
-            this.XmlObsItemAddValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlObsItemAddValueBt.BackColor = System.Drawing.SystemColors.Control;
-            this.XmlObsItemAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlObsItemAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.XmlObsItemAddValueBt.Location = new System.Drawing.Point(826, -2);
-            this.XmlObsItemAddValueBt.Name = "XmlObsItemAddValueBt";
-            this.XmlObsItemAddValueBt.Size = new System.Drawing.Size(26, 22);
-            this.XmlObsItemAddValueBt.TabIndex = 12;
-            this.XmlObsItemAddValueBt.UseVisualStyleBackColor = false;
             // 
             // XmlObsItemAddValueTb
             // 
@@ -3399,22 +2775,6 @@
             this.ToolStripIdCode.TabIndex = 0;
             this.ToolStripIdCode.Text = "toolStrip3";
             // 
-            // XmlIdCanaButton
-            // 
-            this.XmlIdCanaButton.Image = global::ACTIVA_Module_1.Properties.Resources.list16;
-            this.XmlIdCanaButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.XmlIdCanaButton.Name = "XmlIdCanaButton";
-            this.XmlIdCanaButton.Size = new System.Drawing.Size(201, 22);
-            this.XmlIdCanaButton.Text = "Codes Identification Canalisation";
-            // 
-            // XmlIdRegButton
-            // 
-            this.XmlIdRegButton.Image = global::ACTIVA_Module_1.Properties.Resources.list16;
-            this.XmlIdRegButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.XmlIdRegButton.Name = "XmlIdRegButton";
-            this.XmlIdRegButton.Size = new System.Drawing.Size(173, 22);
-            this.XmlIdRegButton.Text = "Codes Identification Regard";
-            // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
@@ -3488,18 +2848,6 @@
             this.label48.TabIndex = 15;
             this.label48.Text = "Supprimer une valeur :";
             // 
-            // XmlIdCodeDelValueBt
-            // 
-            this.XmlIdCodeDelValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlIdCodeDelValueBt.BackColor = System.Drawing.SystemColors.Control;
-            this.XmlIdCodeDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlIdCodeDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
-            this.XmlIdCodeDelValueBt.Location = new System.Drawing.Point(989, 0);
-            this.XmlIdCodeDelValueBt.Name = "XmlIdCodeDelValueBt";
-            this.XmlIdCodeDelValueBt.Size = new System.Drawing.Size(26, 22);
-            this.XmlIdCodeDelValueBt.TabIndex = 14;
-            this.XmlIdCodeDelValueBt.UseVisualStyleBackColor = false;
-            // 
             // label49
             // 
             this.label49.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -3510,18 +2858,6 @@
             this.label49.Size = new System.Drawing.Size(102, 14);
             this.label49.TabIndex = 13;
             this.label49.Text = "Ajouter une valeur :";
-            // 
-            // XmlIdCodeAddValueBt
-            // 
-            this.XmlIdCodeAddValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlIdCodeAddValueBt.BackColor = System.Drawing.SystemColors.Control;
-            this.XmlIdCodeAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlIdCodeAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.XmlIdCodeAddValueBt.Location = new System.Drawing.Point(832, -2);
-            this.XmlIdCodeAddValueBt.Name = "XmlIdCodeAddValueBt";
-            this.XmlIdCodeAddValueBt.Size = new System.Drawing.Size(26, 22);
-            this.XmlIdCodeAddValueBt.TabIndex = 12;
-            this.XmlIdCodeAddValueBt.UseVisualStyleBackColor = false;
             // 
             // XmlIdCodeAddValueTb
             // 
@@ -3591,18 +2927,6 @@
             this.label50.TabIndex = 15;
             this.label50.Text = "Supprimer une valeur :";
             // 
-            // XmlIdItemDelValueBt
-            // 
-            this.XmlIdItemDelValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlIdItemDelValueBt.BackColor = System.Drawing.SystemColors.Control;
-            this.XmlIdItemDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlIdItemDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
-            this.XmlIdItemDelValueBt.Location = new System.Drawing.Point(990, 1);
-            this.XmlIdItemDelValueBt.Name = "XmlIdItemDelValueBt";
-            this.XmlIdItemDelValueBt.Size = new System.Drawing.Size(26, 22);
-            this.XmlIdItemDelValueBt.TabIndex = 14;
-            this.XmlIdItemDelValueBt.UseVisualStyleBackColor = false;
-            // 
             // label51
             // 
             this.label51.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -3613,18 +2937,6 @@
             this.label51.Size = new System.Drawing.Size(102, 14);
             this.label51.TabIndex = 13;
             this.label51.Text = "Ajouter une valeur :";
-            // 
-            // XmlIdItemAddValueBt
-            // 
-            this.XmlIdItemAddValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlIdItemAddValueBt.BackColor = System.Drawing.SystemColors.Control;
-            this.XmlIdItemAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlIdItemAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.XmlIdItemAddValueBt.Location = new System.Drawing.Point(831, -2);
-            this.XmlIdItemAddValueBt.Name = "XmlIdItemAddValueBt";
-            this.XmlIdItemAddValueBt.Size = new System.Drawing.Size(26, 22);
-            this.XmlIdItemAddValueBt.TabIndex = 12;
-            this.XmlIdItemAddValueBt.UseVisualStyleBackColor = false;
             // 
             // XmlIdItemAddValueTb
             // 
@@ -3764,18 +3076,6 @@
             this.label44.TabIndex = 10;
             this.label44.Text = "Supprimer une valeur :";
             // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
-            this.button1.Location = new System.Drawing.Point(988, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(26, 22);
-            this.button1.TabIndex = 9;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // label45
             // 
             this.label45.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -3786,18 +3086,6 @@
             this.label45.Size = new System.Drawing.Size(102, 14);
             this.label45.TabIndex = 8;
             this.label45.Text = "Ajouter une valeur :";
-            // 
-            // XmlSectionAddBt
-            // 
-            this.XmlSectionAddBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlSectionAddBt.BackColor = System.Drawing.SystemColors.Control;
-            this.XmlSectionAddBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlSectionAddBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.XmlSectionAddBt.Location = new System.Drawing.Point(830, 2);
-            this.XmlSectionAddBt.Name = "XmlSectionAddBt";
-            this.XmlSectionAddBt.Size = new System.Drawing.Size(26, 22);
-            this.XmlSectionAddBt.TabIndex = 7;
-            this.XmlSectionAddBt.UseVisualStyleBackColor = false;
             // 
             // XmlSectionAddTb
             // 
@@ -3866,18 +3154,6 @@
             this.label46.TabIndex = 10;
             this.label46.Text = "Supprimer une valeur :";
             // 
-            // button6
-            // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.BackColor = System.Drawing.SystemColors.Control;
-            this.button6.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
-            this.button6.Location = new System.Drawing.Point(988, 5);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(26, 22);
-            this.button6.TabIndex = 9;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
             // label47
             // 
             this.label47.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -3888,18 +3164,6 @@
             this.label47.Size = new System.Drawing.Size(102, 14);
             this.label47.TabIndex = 8;
             this.label47.Text = "Ajouter une valeur :";
-            // 
-            // XmlHeureAddBt
-            // 
-            this.XmlHeureAddBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlHeureAddBt.BackColor = System.Drawing.SystemColors.Control;
-            this.XmlHeureAddBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlHeureAddBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.XmlHeureAddBt.Location = new System.Drawing.Point(830, 4);
-            this.XmlHeureAddBt.Name = "XmlHeureAddBt";
-            this.XmlHeureAddBt.Size = new System.Drawing.Size(26, 22);
-            this.XmlHeureAddBt.TabIndex = 7;
-            this.XmlHeureAddBt.UseVisualStyleBackColor = false;
             // 
             // XmlHeureAddTb
             // 
@@ -3996,22 +3260,6 @@
             this.ToolStripAutoCad.Size = new System.Drawing.Size(1018, 25);
             this.ToolStripAutoCad.TabIndex = 0;
             this.ToolStripAutoCad.Text = "ToolStripAutoCad";
-            // 
-            // XmlAutocadCanaButton
-            // 
-            this.XmlAutocadCanaButton.Image = global::ACTIVA_Module_1.Properties.Resources.list16;
-            this.XmlAutocadCanaButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.XmlAutocadCanaButton.Name = "XmlAutocadCanaButton";
-            this.XmlAutocadCanaButton.Size = new System.Drawing.Size(195, 22);
-            this.XmlAutocadCanaButton.Text = "Codes Observation Canalisation";
-            // 
-            // XmlAutocadRegButton
-            // 
-            this.XmlAutocadRegButton.Image = global::ACTIVA_Module_1.Properties.Resources.list16;
-            this.XmlAutocadRegButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.XmlAutocadRegButton.Name = "XmlAutocadRegButton";
-            this.XmlAutocadRegButton.Size = new System.Drawing.Size(167, 22);
-            this.XmlAutocadRegButton.Text = "Codes Observation Regard";
             // 
             // toolStripSeparator6
             // 
@@ -4241,18 +3489,6 @@
             this.label39.TabIndex = 5;
             this.label39.Text = "Supprimer une valeur :";
             // 
-            // XmlPonctuelDelValueBt
-            // 
-            this.XmlPonctuelDelValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlPonctuelDelValueBt.BackColor = System.Drawing.SystemColors.Control;
-            this.XmlPonctuelDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlPonctuelDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
-            this.XmlPonctuelDelValueBt.Location = new System.Drawing.Point(988, -1);
-            this.XmlPonctuelDelValueBt.Name = "XmlPonctuelDelValueBt";
-            this.XmlPonctuelDelValueBt.Size = new System.Drawing.Size(26, 22);
-            this.XmlPonctuelDelValueBt.TabIndex = 4;
-            this.XmlPonctuelDelValueBt.UseVisualStyleBackColor = false;
-            // 
             // label38
             // 
             this.label38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -4263,18 +3499,6 @@
             this.label38.Size = new System.Drawing.Size(102, 14);
             this.label38.TabIndex = 3;
             this.label38.Text = "Ajouter une valeur :";
-            // 
-            // XmlPonctuelAddValueBt
-            // 
-            this.XmlPonctuelAddValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlPonctuelAddValueBt.BackColor = System.Drawing.SystemColors.Control;
-            this.XmlPonctuelAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlPonctuelAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.XmlPonctuelAddValueBt.Location = new System.Drawing.Point(830, -2);
-            this.XmlPonctuelAddValueBt.Name = "XmlPonctuelAddValueBt";
-            this.XmlPonctuelAddValueBt.Size = new System.Drawing.Size(26, 22);
-            this.XmlPonctuelAddValueBt.TabIndex = 2;
-            this.XmlPonctuelAddValueBt.UseVisualStyleBackColor = false;
             // 
             // XmlPonctuelAddValueTb
             // 
@@ -4362,18 +3586,6 @@
             this.label40.TabIndex = 10;
             this.label40.Text = "Supprimer une valeur :";
             // 
-            // XmlLineaireDelValueBt
-            // 
-            this.XmlLineaireDelValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlLineaireDelValueBt.BackColor = System.Drawing.SystemColors.Control;
-            this.XmlLineaireDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlLineaireDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
-            this.XmlLineaireDelValueBt.Location = new System.Drawing.Point(988, -2);
-            this.XmlLineaireDelValueBt.Name = "XmlLineaireDelValueBt";
-            this.XmlLineaireDelValueBt.Size = new System.Drawing.Size(26, 22);
-            this.XmlLineaireDelValueBt.TabIndex = 9;
-            this.XmlLineaireDelValueBt.UseVisualStyleBackColor = false;
-            // 
             // label41
             // 
             this.label41.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -4384,18 +3596,6 @@
             this.label41.Size = new System.Drawing.Size(102, 14);
             this.label41.TabIndex = 8;
             this.label41.Text = "Ajouter une valeur :";
-            // 
-            // XmlLineaireAddValueBt
-            // 
-            this.XmlLineaireAddValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlLineaireAddValueBt.BackColor = System.Drawing.SystemColors.Control;
-            this.XmlLineaireAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlLineaireAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.XmlLineaireAddValueBt.Location = new System.Drawing.Point(830, -3);
-            this.XmlLineaireAddValueBt.Name = "XmlLineaireAddValueBt";
-            this.XmlLineaireAddValueBt.Size = new System.Drawing.Size(26, 22);
-            this.XmlLineaireAddValueBt.TabIndex = 7;
-            this.XmlLineaireAddValueBt.UseVisualStyleBackColor = false;
             // 
             // XmlLineaireAddValueTb
             // 
@@ -4465,18 +3665,6 @@
             this.label42.TabIndex = 10;
             this.label42.Text = "Supprimer une valeur :";
             // 
-            // XmlSurfaciqueDelValueBt
-            // 
-            this.XmlSurfaciqueDelValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlSurfaciqueDelValueBt.BackColor = System.Drawing.SystemColors.Control;
-            this.XmlSurfaciqueDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlSurfaciqueDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
-            this.XmlSurfaciqueDelValueBt.Location = new System.Drawing.Point(988, -1);
-            this.XmlSurfaciqueDelValueBt.Name = "XmlSurfaciqueDelValueBt";
-            this.XmlSurfaciqueDelValueBt.Size = new System.Drawing.Size(26, 22);
-            this.XmlSurfaciqueDelValueBt.TabIndex = 9;
-            this.XmlSurfaciqueDelValueBt.UseVisualStyleBackColor = false;
-            // 
             // label43
             // 
             this.label43.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -4487,18 +3675,6 @@
             this.label43.Size = new System.Drawing.Size(102, 14);
             this.label43.TabIndex = 8;
             this.label43.Text = "Ajouter une valeur :";
-            // 
-            // XmlSurfaciqueAddValueBt
-            // 
-            this.XmlSurfaciqueAddValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlSurfaciqueAddValueBt.BackColor = System.Drawing.SystemColors.Control;
-            this.XmlSurfaciqueAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlSurfaciqueAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.XmlSurfaciqueAddValueBt.Location = new System.Drawing.Point(830, -2);
-            this.XmlSurfaciqueAddValueBt.Name = "XmlSurfaciqueAddValueBt";
-            this.XmlSurfaciqueAddValueBt.Size = new System.Drawing.Size(26, 22);
-            this.XmlSurfaciqueAddValueBt.TabIndex = 7;
-            this.XmlSurfaciqueAddValueBt.UseVisualStyleBackColor = false;
             // 
             // XmlSurfaciqueAddValueTb
             // 
@@ -4554,15 +3730,6 @@
             this.CodeObsSplit.SplitterDistance = 25;
             this.CodeObsSplit.TabIndex = 1;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::ACTIVA_Module_1.Properties.Resources.newfolder1;
-            this.pictureBox5.Location = new System.Drawing.Point(8, 5);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -4609,6 +3776,839 @@
             this.MainSplit.Size = new System.Drawing.Size(1024, 812);
             this.MainSplit.SplitterDistance = 510;
             this.MainSplit.TabIndex = 0;
+            // 
+            // ObsCompactGridBt
+            // 
+            this.ObsCompactGridBt.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ObsCompactGridBt.Image = global::ACTIVA_Module_1.Properties.Resources.text_columns1;
+            this.ObsCompactGridBt.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ObsCompactGridBt.Name = "ObsCompactGridBt";
+            this.ObsCompactGridBt.Size = new System.Drawing.Size(69, 22);
+            this.ObsCompactGridBt.Text = "Compact";
+            this.ObsCompactGridBt.Click += new System.EventHandler(this.ObsCompactGridBt_Click);
+            // 
+            // ObsDeplieGridBt
+            // 
+            this.ObsDeplieGridBt.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ObsDeplieGridBt.Image = global::ACTIVA_Module_1.Properties.Resources.portrait2;
+            this.ObsDeplieGridBt.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ObsDeplieGridBt.Name = "ObsDeplieGridBt";
+            this.ObsDeplieGridBt.Size = new System.Drawing.Size(56, 22);
+            this.ObsDeplieGridBt.Text = "Déplié";
+            this.ObsDeplieGridBt.Click += new System.EventHandler(this.ObsDeplieGridBt_Click);
+            // 
+            // EraseAllBt
+            // 
+            this.EraseAllBt.BackColor = System.Drawing.SystemColors.Control;
+            this.EraseAllBt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EraseAllBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
+            this.EraseAllBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.EraseAllBt.Location = new System.Drawing.Point(0, 0);
+            this.EraseAllBt.Name = "EraseAllBt";
+            this.EraseAllBt.Size = new System.Drawing.Size(96, 27);
+            this.EraseAllBt.TabIndex = 2;
+            this.EraseAllBt.Text = "Tout effacer";
+            this.EraseAllBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.EraseAllBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.EraseAllBt.UseVisualStyleBackColor = true;
+            this.EraseAllBt.Click += new System.EventHandler(this.EraseAllBt_Click);
+            // 
+            // CloseInspectionBt
+            // 
+            this.CloseInspectionBt.BackColor = System.Drawing.SystemColors.Control;
+            this.CloseInspectionBt.Dock = System.Windows.Forms.DockStyle.Right;
+            this.CloseInspectionBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseInspectionBt.ForeColor = System.Drawing.Color.Black;
+            this.CloseInspectionBt.Image = global::ACTIVA_Module_1.Properties.Resources.cancel_16;
+            this.CloseInspectionBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CloseInspectionBt.Location = new System.Drawing.Point(896, 18);
+            this.CloseInspectionBt.Name = "CloseInspectionBt";
+            this.CloseInspectionBt.Size = new System.Drawing.Size(123, 30);
+            this.CloseInspectionBt.TabIndex = 0;
+            this.CloseInspectionBt.Text = "Fermer l\'inspection";
+            this.CloseInspectionBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CloseInspectionBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.CloseInspectionBt.UseVisualStyleBackColor = true;
+            this.CloseInspectionBt.Click += new System.EventHandler(this.CloseInspectionBt_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
+            this.pictureBox2.Location = new System.Drawing.Point(11, 21);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // Btn_Exporter
+            // 
+            this.Btn_Exporter.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Exporter.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Exporter.Image")));
+            this.Btn_Exporter.Location = new System.Drawing.Point(201, 56);
+            this.Btn_Exporter.Name = "Btn_Exporter";
+            this.Btn_Exporter.Size = new System.Drawing.Size(89, 25);
+            this.Btn_Exporter.TabIndex = 16;
+            this.Btn_Exporter.Text = "Exporter";
+            this.Btn_Exporter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Btn_Exporter.UseVisualStyleBackColor = true;
+            this.Btn_Exporter.Click += new System.EventHandler(this.Btn_Exporter_Click);
+            // 
+            // OpenSVFButton
+            // 
+            this.OpenSVFButton.BackColor = System.Drawing.SystemColors.Control;
+            this.OpenSVFButton.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.OpenSVFButton.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.OpenSVFButton.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
+            this.OpenSVFButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.OpenSVFButton.Location = new System.Drawing.Point(296, 56);
+            this.OpenSVFButton.Name = "OpenSVFButton";
+            this.OpenSVFButton.Size = new System.Drawing.Size(71, 25);
+            this.OpenSVFButton.TabIndex = 15;
+            this.OpenSVFButton.Text = "Ouvrir";
+            this.OpenSVFButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.OpenSVFButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.OpenSVFButton.UseVisualStyleBackColor = true;
+            this.OpenSVFButton.Click += new System.EventHandler(this.OpenSVFButton_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::ACTIVA_Module_1.Properties.Resources.open_inspection;
+            this.pictureBox8.Location = new System.Drawing.Point(17, 27);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 4;
+            this.pictureBox8.TabStop = false;
+            // 
+            // Folder_New_Inspection
+            // 
+            this.Folder_New_Inspection.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Folder_New_Inspection.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
+            this.Folder_New_Inspection.Location = new System.Drawing.Point(273, 96);
+            this.Folder_New_Inspection.Name = "Folder_New_Inspection";
+            this.Folder_New_Inspection.Size = new System.Drawing.Size(94, 25);
+            this.Folder_New_Inspection.TabIndex = 16;
+            this.Folder_New_Inspection.Text = "Parcourir";
+            this.Folder_New_Inspection.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Folder_New_Inspection.UseVisualStyleBackColor = true;
+            this.Folder_New_Inspection.Click += new System.EventHandler(this.Folder_New_Inspection_Click);
+            // 
+            // NewInspectionBt
+            // 
+            this.NewInspectionBt.BackColor = System.Drawing.SystemColors.Control;
+            this.NewInspectionBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.NewInspectionBt.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.NewInspectionBt.Image = global::ACTIVA_Module_1.Properties.Resources.add_16;
+            this.NewInspectionBt.Location = new System.Drawing.Point(180, 96);
+            this.NewInspectionBt.Name = "NewInspectionBt";
+            this.NewInspectionBt.Size = new System.Drawing.Size(87, 25);
+            this.NewInspectionBt.TabIndex = 15;
+            this.NewInspectionBt.Text = "Ajouter";
+            this.NewInspectionBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.NewInspectionBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.NewInspectionBt.UseVisualStyleBackColor = true;
+            this.NewInspectionBt.Click += new System.EventHandler(this.NewInspectionBt_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::ACTIVA_Module_1.Properties.Resources.new_inspection;
+            this.pictureBox7.Location = new System.Drawing.Point(17, 46);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 4;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::ACTIVA_Module_1.Properties.Resources.new_ouvrage;
+            this.pictureBox6.Location = new System.Drawing.Point(16, 25);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 4;
+            this.pictureBox6.TabStop = false;
+            // 
+            // NewOuvrageBt
+            // 
+            this.NewOuvrageBt.BackColor = System.Drawing.SystemColors.Control;
+            this.NewOuvrageBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.NewOuvrageBt.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.NewOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.add_16;
+            this.NewOuvrageBt.Location = new System.Drawing.Point(280, 62);
+            this.NewOuvrageBt.Name = "NewOuvrageBt";
+            this.NewOuvrageBt.Size = new System.Drawing.Size(87, 25);
+            this.NewOuvrageBt.TabIndex = 7;
+            this.NewOuvrageBt.Text = "Ajouter";
+            this.NewOuvrageBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.NewOuvrageBt.UseVisualStyleBackColor = true;
+            this.NewOuvrageBt.Click += new System.EventHandler(this.NewOuvrageBt_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::ACTIVA_Module_1.Properties.Resources.tri;
+            this.pictureBox4.Location = new System.Drawing.Point(17, 35);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 5;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::ACTIVA_Module_1.Properties.Resources.infos;
+            this.pictureBox3.Location = new System.Drawing.Point(17, 39);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
+            // 
+            // SaveReportParamBt
+            // 
+            this.SaveReportParamBt.BackColor = System.Drawing.SystemColors.Control;
+            this.SaveReportParamBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.SaveReportParamBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
+            this.SaveReportParamBt.Location = new System.Drawing.Point(281, 116);
+            this.SaveReportParamBt.Name = "SaveReportParamBt";
+            this.SaveReportParamBt.Size = new System.Drawing.Size(103, 29);
+            this.SaveReportParamBt.TabIndex = 5;
+            this.SaveReportParamBt.Text = "Enregistrer";
+            this.SaveReportParamBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.SaveReportParamBt.UseVisualStyleBackColor = true;
+            // 
+            // ReportImgPb
+            // 
+            this.ReportImgPb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ReportImgPb.Location = new System.Drawing.Point(289, 24);
+            this.ReportImgPb.Name = "ReportImgPb";
+            this.ReportImgPb.Size = new System.Drawing.Size(60, 60);
+            this.ReportImgPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ReportImgPb.TabIndex = 1;
+            this.ReportImgPb.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::ACTIVA_Module_1.Properties.Resources.rapport;
+            this.pictureBox10.Location = new System.Drawing.Point(36, 31);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 6;
+            this.pictureBox10.TabStop = false;
+            // 
+            // GenerateReportBt
+            // 
+            this.GenerateReportBt.BackColor = System.Drawing.SystemColors.Control;
+            this.GenerateReportBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GenerateReportBt.ForeColor = System.Drawing.Color.Black;
+            this.GenerateReportBt.Image = global::ACTIVA_Module_1.Properties.Resources.export16;
+            this.GenerateReportBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.GenerateReportBt.Location = new System.Drawing.Point(245, 281);
+            this.GenerateReportBt.Name = "GenerateReportBt";
+            this.GenerateReportBt.Size = new System.Drawing.Size(141, 25);
+            this.GenerateReportBt.TabIndex = 14;
+            this.GenerateReportBt.Text = "Génération de rapport";
+            this.GenerateReportBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.GenerateReportBt.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::ACTIVA_Module_1.Properties.Resources.autocad;
+            this.pictureBox9.Location = new System.Drawing.Point(26, 31);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 6;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::ACTIVA_Module_1.Properties.Resources.SR;
+            this.pictureBox11.Location = new System.Drawing.Point(14, 198);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(172, 83);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 12;
+            this.pictureBox11.TabStop = false;
+            // 
+            // SaveOuvrageOrderBt
+            // 
+            this.SaveOuvrageOrderBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.SaveOuvrageOrderBt.AutoSize = true;
+            this.SaveOuvrageOrderBt.BackColor = System.Drawing.SystemColors.Control;
+            this.SaveOuvrageOrderBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveOuvrageOrderBt.ForeColor = System.Drawing.Color.Black;
+            this.SaveOuvrageOrderBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
+            this.SaveOuvrageOrderBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SaveOuvrageOrderBt.Location = new System.Drawing.Point(65, 3);
+            this.SaveOuvrageOrderBt.Name = "SaveOuvrageOrderBt";
+            this.SaveOuvrageOrderBt.Size = new System.Drawing.Size(102, 25);
+            this.SaveOuvrageOrderBt.TabIndex = 13;
+            this.SaveOuvrageOrderBt.Text = "Sauver l\'ordre";
+            this.SaveOuvrageOrderBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.SaveOuvrageOrderBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.SaveOuvrageOrderBt.UseVisualStyleBackColor = true;
+            this.SaveOuvrageOrderBt.Click += new System.EventHandler(this.SaveOuvrageOrderBt_Click);
+            // 
+            // DeleteOuvrageBt
+            // 
+            this.DeleteOuvrageBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.DeleteOuvrageBt.AutoSize = true;
+            this.DeleteOuvrageBt.BackColor = System.Drawing.SystemColors.Control;
+            this.DeleteOuvrageBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteOuvrageBt.ForeColor = System.Drawing.Color.Black;
+            this.DeleteOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.remove_16;
+            this.DeleteOuvrageBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DeleteOuvrageBt.Location = new System.Drawing.Point(532, 3);
+            this.DeleteOuvrageBt.Name = "DeleteOuvrageBt";
+            this.DeleteOuvrageBt.Size = new System.Drawing.Size(84, 25);
+            this.DeleteOuvrageBt.TabIndex = 6;
+            this.DeleteOuvrageBt.Text = "Supprimer";
+            this.DeleteOuvrageBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.DeleteOuvrageBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.DeleteOuvrageBt.UseVisualStyleBackColor = true;
+            this.DeleteOuvrageBt.Click += new System.EventHandler(this.DeleteOuvrageBt_Click);
+            // 
+            // OuvrageMoveDownBt
+            // 
+            this.OuvrageMoveDownBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.OuvrageMoveDownBt.BackColor = System.Drawing.SystemColors.Control;
+            this.OuvrageMoveDownBt.Image = global::ACTIVA_Module_1.Properties.Resources.down_16;
+            this.OuvrageMoveDownBt.Location = new System.Drawing.Point(3, 3);
+            this.OuvrageMoveDownBt.Name = "OuvrageMoveDownBt";
+            this.OuvrageMoveDownBt.Size = new System.Drawing.Size(25, 25);
+            this.OuvrageMoveDownBt.TabIndex = 2;
+            this.OuvrageMoveDownBt.UseVisualStyleBackColor = true;
+            this.OuvrageMoveDownBt.Click += new System.EventHandler(this.OuvrageMoveDownBt_Click);
+            // 
+            // OuvrageMoveUpBt
+            // 
+            this.OuvrageMoveUpBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.OuvrageMoveUpBt.BackColor = System.Drawing.SystemColors.Control;
+            this.OuvrageMoveUpBt.Image = global::ACTIVA_Module_1.Properties.Resources.up_16;
+            this.OuvrageMoveUpBt.Location = new System.Drawing.Point(34, 3);
+            this.OuvrageMoveUpBt.Name = "OuvrageMoveUpBt";
+            this.OuvrageMoveUpBt.Size = new System.Drawing.Size(25, 25);
+            this.OuvrageMoveUpBt.TabIndex = 1;
+            this.OuvrageMoveUpBt.UseVisualStyleBackColor = true;
+            this.OuvrageMoveUpBt.Click += new System.EventHandler(this.OuvrageMoveUpBt_Click);
+            // 
+            // CloneOuvrageBt
+            // 
+            this.CloneOuvrageBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.CloneOuvrageBt.AutoSize = true;
+            this.CloneOuvrageBt.BackColor = System.Drawing.SystemColors.Control;
+            this.CloneOuvrageBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloneOuvrageBt.ForeColor = System.Drawing.Color.Black;
+            this.CloneOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.copy1_16;
+            this.CloneOuvrageBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CloneOuvrageBt.Location = new System.Drawing.Point(383, 3);
+            this.CloneOuvrageBt.Name = "CloneOuvrageBt";
+            this.CloneOuvrageBt.Size = new System.Drawing.Size(143, 25);
+            this.CloneOuvrageBt.TabIndex = 12;
+            this.CloneOuvrageBt.Text = "Dupliquer l\'inspectation";
+            this.CloneOuvrageBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CloneOuvrageBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.CloneOuvrageBt.UseVisualStyleBackColor = true;
+            this.CloneOuvrageBt.Click += new System.EventHandler(this.CloneOuvrageBt_Click);
+            // 
+            // IdentificationValidBt
+            // 
+            this.IdentificationValidBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.IdentificationValidBt.BackColor = System.Drawing.SystemColors.Control;
+            this.IdentificationValidBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IdentificationValidBt.ForeColor = System.Drawing.Color.Black;
+            this.IdentificationValidBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
+            this.IdentificationValidBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.IdentificationValidBt.Location = new System.Drawing.Point(619, 6);
+            this.IdentificationValidBt.Name = "IdentificationValidBt";
+            this.IdentificationValidBt.Size = new System.Drawing.Size(75, 23);
+            this.IdentificationValidBt.TabIndex = 39;
+            this.IdentificationValidBt.Text = "Sauver";
+            this.IdentificationValidBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.IdentificationValidBt.UseVisualStyleBackColor = false;
+            this.IdentificationValidBt.Click += new System.EventHandler(this.IdentificationValidBt_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ACTIVA_Module_1.Properties.Resources.Document;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // IdFacultatifPb
+            // 
+            this.IdFacultatifPb.BackColor = System.Drawing.Color.White;
+            this.IdFacultatifPb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.IdFacultatifPb.Location = new System.Drawing.Point(525, 4);
+            this.IdFacultatifPb.Name = "IdFacultatifPb";
+            this.IdFacultatifPb.Size = new System.Drawing.Size(56, 16);
+            this.IdFacultatifPb.TabIndex = 37;
+            this.IdFacultatifPb.TabStop = false;
+            // 
+            // IdDesactivePb
+            // 
+            this.IdDesactivePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.IdDesactivePb.Location = new System.Drawing.Point(349, 4);
+            this.IdDesactivePb.Name = "IdDesactivePb";
+            this.IdDesactivePb.Size = new System.Drawing.Size(56, 16);
+            this.IdDesactivePb.TabIndex = 35;
+            this.IdDesactivePb.TabStop = false;
+            // 
+            // IdDifferePb
+            // 
+            this.IdDifferePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.IdDifferePb.Location = new System.Drawing.Point(186, 4);
+            this.IdDifferePb.Name = "IdDifferePb";
+            this.IdDifferePb.Size = new System.Drawing.Size(56, 16);
+            this.IdDifferePb.TabIndex = 33;
+            this.IdDifferePb.TabStop = false;
+            // 
+            // IdObligatoirePb
+            // 
+            this.IdObligatoirePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.IdObligatoirePb.Location = new System.Drawing.Point(3, 4);
+            this.IdObligatoirePb.Name = "IdObligatoirePb";
+            this.IdObligatoirePb.Size = new System.Drawing.Size(56, 16);
+            this.IdObligatoirePb.TabIndex = 31;
+            this.IdObligatoirePb.TabStop = false;
+            // 
+            // FileSymboleBt
+            // 
+            this.FileSymboleBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FileSymboleBt.ForeColor = System.Drawing.Color.Black;
+            this.FileSymboleBt.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
+            this.FileSymboleBt.Location = new System.Drawing.Point(958, 118);
+            this.FileSymboleBt.Name = "FileSymboleBt";
+            this.FileSymboleBt.Size = new System.Drawing.Size(30, 24);
+            this.FileSymboleBt.TabIndex = 12;
+            this.FileSymboleBt.UseVisualStyleBackColor = true;
+            // 
+            // FileHachureBt
+            // 
+            this.FileHachureBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FileHachureBt.ForeColor = System.Drawing.Color.Black;
+            this.FileHachureBt.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
+            this.FileHachureBt.Location = new System.Drawing.Point(957, 77);
+            this.FileHachureBt.Name = "FileHachureBt";
+            this.FileHachureBt.Size = new System.Drawing.Size(30, 24);
+            this.FileHachureBt.TabIndex = 9;
+            this.FileHachureBt.UseVisualStyleBackColor = true;
+            // 
+            // FileLigneBt
+            // 
+            this.FileLigneBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FileLigneBt.ForeColor = System.Drawing.Color.Black;
+            this.FileLigneBt.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
+            this.FileLigneBt.Location = new System.Drawing.Point(958, 36);
+            this.FileLigneBt.Name = "FileLigneBt";
+            this.FileLigneBt.Size = new System.Drawing.Size(30, 24);
+            this.FileLigneBt.TabIndex = 6;
+            this.FileLigneBt.UseVisualStyleBackColor = true;
+            // 
+            // XmlMotifBt
+            // 
+            this.XmlMotifBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlMotifBt.ForeColor = System.Drawing.Color.Black;
+            this.XmlMotifBt.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
+            this.XmlMotifBt.Location = new System.Drawing.Point(958, 37);
+            this.XmlMotifBt.Name = "XmlMotifBt";
+            this.XmlMotifBt.Size = new System.Drawing.Size(30, 24);
+            this.XmlMotifBt.TabIndex = 6;
+            this.XmlMotifBt.UseVisualStyleBackColor = true;
+            // 
+            // XmlSectionImgDirBt
+            // 
+            this.XmlSectionImgDirBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlSectionImgDirBt.ForeColor = System.Drawing.Color.Black;
+            this.XmlSectionImgDirBt.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
+            this.XmlSectionImgDirBt.Location = new System.Drawing.Point(958, 80);
+            this.XmlSectionImgDirBt.Name = "XmlSectionImgDirBt";
+            this.XmlSectionImgDirBt.Size = new System.Drawing.Size(30, 24);
+            this.XmlSectionImgDirBt.TabIndex = 9;
+            this.XmlSectionImgDirBt.UseVisualStyleBackColor = true;
+            // 
+            // XmlSectionOuvrageBt
+            // 
+            this.XmlSectionOuvrageBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlSectionOuvrageBt.ForeColor = System.Drawing.Color.Black;
+            this.XmlSectionOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
+            this.XmlSectionOuvrageBt.Location = new System.Drawing.Point(957, 37);
+            this.XmlSectionOuvrageBt.Name = "XmlSectionOuvrageBt";
+            this.XmlSectionOuvrageBt.Size = new System.Drawing.Size(30, 24);
+            this.XmlSectionOuvrageBt.TabIndex = 6;
+            this.XmlSectionOuvrageBt.UseVisualStyleBackColor = true;
+            // 
+            // XmlIdRegBt
+            // 
+            this.XmlIdRegBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlIdRegBt.ForeColor = System.Drawing.Color.Black;
+            this.XmlIdRegBt.Image = ((System.Drawing.Image)(resources.GetObject("XmlIdRegBt.Image")));
+            this.XmlIdRegBt.Location = new System.Drawing.Point(958, 78);
+            this.XmlIdRegBt.Name = "XmlIdRegBt";
+            this.XmlIdRegBt.Size = new System.Drawing.Size(30, 24);
+            this.XmlIdRegBt.TabIndex = 5;
+            this.XmlIdRegBt.UseVisualStyleBackColor = true;
+            // 
+            // XmlIdCanaBt
+            // 
+            this.XmlIdCanaBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlIdCanaBt.ForeColor = System.Drawing.Color.Black;
+            this.XmlIdCanaBt.Image = ((System.Drawing.Image)(resources.GetObject("XmlIdCanaBt.Image")));
+            this.XmlIdCanaBt.Location = new System.Drawing.Point(958, 34);
+            this.XmlIdCanaBt.Name = "XmlIdCanaBt";
+            this.XmlIdCanaBt.Size = new System.Drawing.Size(30, 24);
+            this.XmlIdCanaBt.TabIndex = 4;
+            this.XmlIdCanaBt.UseVisualStyleBackColor = true;
+            // 
+            // XmlFamilleCodeIdBt
+            // 
+            this.XmlFamilleCodeIdBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlFamilleCodeIdBt.ForeColor = System.Drawing.Color.Black;
+            this.XmlFamilleCodeIdBt.Image = ((System.Drawing.Image)(resources.GetObject("XmlFamilleCodeIdBt.Image")));
+            this.XmlFamilleCodeIdBt.Location = new System.Drawing.Point(958, 84);
+            this.XmlFamilleCodeIdBt.Name = "XmlFamilleCodeIdBt";
+            this.XmlFamilleCodeIdBt.Size = new System.Drawing.Size(30, 24);
+            this.XmlFamilleCodeIdBt.TabIndex = 7;
+            this.XmlFamilleCodeIdBt.UseVisualStyleBackColor = true;
+            // 
+            // XmlGroupeCodeIdBt
+            // 
+            this.XmlGroupeCodeIdBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlGroupeCodeIdBt.ForeColor = System.Drawing.Color.Black;
+            this.XmlGroupeCodeIdBt.Image = ((System.Drawing.Image)(resources.GetObject("XmlGroupeCodeIdBt.Image")));
+            this.XmlGroupeCodeIdBt.Location = new System.Drawing.Point(957, 37);
+            this.XmlGroupeCodeIdBt.Name = "XmlGroupeCodeIdBt";
+            this.XmlGroupeCodeIdBt.Size = new System.Drawing.Size(30, 24);
+            this.XmlGroupeCodeIdBt.TabIndex = 6;
+            this.XmlGroupeCodeIdBt.UseVisualStyleBackColor = true;
+            // 
+            // XmlObsRegBt
+            // 
+            this.XmlObsRegBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsRegBt.ForeColor = System.Drawing.Color.Black;
+            this.XmlObsRegBt.Image = ((System.Drawing.Image)(resources.GetObject("XmlObsRegBt.Image")));
+            this.XmlObsRegBt.Location = new System.Drawing.Point(958, 82);
+            this.XmlObsRegBt.Name = "XmlObsRegBt";
+            this.XmlObsRegBt.Size = new System.Drawing.Size(30, 24);
+            this.XmlObsRegBt.TabIndex = 7;
+            this.XmlObsRegBt.UseVisualStyleBackColor = true;
+            // 
+            // XmlObsCanaBt
+            // 
+            this.XmlObsCanaBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsCanaBt.ForeColor = System.Drawing.Color.Black;
+            this.XmlObsCanaBt.Image = ((System.Drawing.Image)(resources.GetObject("XmlObsCanaBt.Image")));
+            this.XmlObsCanaBt.Location = new System.Drawing.Point(958, 35);
+            this.XmlObsCanaBt.Name = "XmlObsCanaBt";
+            this.XmlObsCanaBt.Size = new System.Drawing.Size(30, 24);
+            this.XmlObsCanaBt.TabIndex = 6;
+            this.XmlObsCanaBt.UseVisualStyleBackColor = true;
+            // 
+            // XmlObsCanaButton
+            // 
+            this.XmlObsCanaButton.Image = global::ACTIVA_Module_1.Properties.Resources.list16;
+            this.XmlObsCanaButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.XmlObsCanaButton.Name = "XmlObsCanaButton";
+            this.XmlObsCanaButton.Size = new System.Drawing.Size(195, 22);
+            this.XmlObsCanaButton.Text = "Codes Observation Canalisation";
+            // 
+            // XmlObsRegButton
+            // 
+            this.XmlObsRegButton.Image = global::ACTIVA_Module_1.Properties.Resources.list16;
+            this.XmlObsRegButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.XmlObsRegButton.Name = "XmlObsRegButton";
+            this.XmlObsRegButton.Size = new System.Drawing.Size(167, 22);
+            this.XmlObsRegButton.Text = "Codes Observation Regard";
+            // 
+            // XmlObsCodeDelValueBt
+            // 
+            this.XmlObsCodeDelValueBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlObsCodeDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsCodeDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
+            this.XmlObsCodeDelValueBt.Location = new System.Drawing.Point(990, 1);
+            this.XmlObsCodeDelValueBt.Name = "XmlObsCodeDelValueBt";
+            this.XmlObsCodeDelValueBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlObsCodeDelValueBt.TabIndex = 14;
+            this.XmlObsCodeDelValueBt.UseVisualStyleBackColor = false;
+            // 
+            // XmlObsCodeAddValueBt
+            // 
+            this.XmlObsCodeAddValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlObsCodeAddValueBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlObsCodeAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsCodeAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
+            this.XmlObsCodeAddValueBt.Location = new System.Drawing.Point(822, -1);
+            this.XmlObsCodeAddValueBt.Name = "XmlObsCodeAddValueBt";
+            this.XmlObsCodeAddValueBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlObsCodeAddValueBt.TabIndex = 12;
+            this.XmlObsCodeAddValueBt.UseVisualStyleBackColor = false;
+            // 
+            // XmlObsItemDelValueBt
+            // 
+            this.XmlObsItemDelValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlObsItemDelValueBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlObsItemDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsItemDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
+            this.XmlObsItemDelValueBt.Location = new System.Drawing.Point(990, -1);
+            this.XmlObsItemDelValueBt.Name = "XmlObsItemDelValueBt";
+            this.XmlObsItemDelValueBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlObsItemDelValueBt.TabIndex = 14;
+            this.XmlObsItemDelValueBt.UseVisualStyleBackColor = false;
+            // 
+            // XmlObsItemAddValueBt
+            // 
+            this.XmlObsItemAddValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlObsItemAddValueBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlObsItemAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsItemAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
+            this.XmlObsItemAddValueBt.Location = new System.Drawing.Point(826, -2);
+            this.XmlObsItemAddValueBt.Name = "XmlObsItemAddValueBt";
+            this.XmlObsItemAddValueBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlObsItemAddValueBt.TabIndex = 12;
+            this.XmlObsItemAddValueBt.UseVisualStyleBackColor = false;
+            // 
+            // XmlIdCanaButton
+            // 
+            this.XmlIdCanaButton.Image = global::ACTIVA_Module_1.Properties.Resources.list16;
+            this.XmlIdCanaButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.XmlIdCanaButton.Name = "XmlIdCanaButton";
+            this.XmlIdCanaButton.Size = new System.Drawing.Size(201, 22);
+            this.XmlIdCanaButton.Text = "Codes Identification Canalisation";
+            // 
+            // XmlIdRegButton
+            // 
+            this.XmlIdRegButton.Image = global::ACTIVA_Module_1.Properties.Resources.list16;
+            this.XmlIdRegButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.XmlIdRegButton.Name = "XmlIdRegButton";
+            this.XmlIdRegButton.Size = new System.Drawing.Size(173, 22);
+            this.XmlIdRegButton.Text = "Codes Identification Regard";
+            // 
+            // XmlIdCodeDelValueBt
+            // 
+            this.XmlIdCodeDelValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlIdCodeDelValueBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlIdCodeDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlIdCodeDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
+            this.XmlIdCodeDelValueBt.Location = new System.Drawing.Point(989, 0);
+            this.XmlIdCodeDelValueBt.Name = "XmlIdCodeDelValueBt";
+            this.XmlIdCodeDelValueBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlIdCodeDelValueBt.TabIndex = 14;
+            this.XmlIdCodeDelValueBt.UseVisualStyleBackColor = false;
+            // 
+            // XmlIdCodeAddValueBt
+            // 
+            this.XmlIdCodeAddValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlIdCodeAddValueBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlIdCodeAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlIdCodeAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
+            this.XmlIdCodeAddValueBt.Location = new System.Drawing.Point(832, -2);
+            this.XmlIdCodeAddValueBt.Name = "XmlIdCodeAddValueBt";
+            this.XmlIdCodeAddValueBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlIdCodeAddValueBt.TabIndex = 12;
+            this.XmlIdCodeAddValueBt.UseVisualStyleBackColor = false;
+            // 
+            // XmlIdItemDelValueBt
+            // 
+            this.XmlIdItemDelValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlIdItemDelValueBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlIdItemDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlIdItemDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
+            this.XmlIdItemDelValueBt.Location = new System.Drawing.Point(990, 1);
+            this.XmlIdItemDelValueBt.Name = "XmlIdItemDelValueBt";
+            this.XmlIdItemDelValueBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlIdItemDelValueBt.TabIndex = 14;
+            this.XmlIdItemDelValueBt.UseVisualStyleBackColor = false;
+            // 
+            // XmlIdItemAddValueBt
+            // 
+            this.XmlIdItemAddValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlIdItemAddValueBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlIdItemAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlIdItemAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
+            this.XmlIdItemAddValueBt.Location = new System.Drawing.Point(831, -2);
+            this.XmlIdItemAddValueBt.Name = "XmlIdItemAddValueBt";
+            this.XmlIdItemAddValueBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlIdItemAddValueBt.TabIndex = 12;
+            this.XmlIdItemAddValueBt.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
+            this.button1.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
+            this.button1.Location = new System.Drawing.Point(988, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(26, 22);
+            this.button1.TabIndex = 9;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // XmlSectionAddBt
+            // 
+            this.XmlSectionAddBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlSectionAddBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlSectionAddBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlSectionAddBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
+            this.XmlSectionAddBt.Location = new System.Drawing.Point(830, 2);
+            this.XmlSectionAddBt.Name = "XmlSectionAddBt";
+            this.XmlSectionAddBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlSectionAddBt.TabIndex = 7;
+            this.XmlSectionAddBt.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.BackColor = System.Drawing.SystemColors.Control;
+            this.button6.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
+            this.button6.Location = new System.Drawing.Point(988, 5);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(26, 22);
+            this.button6.TabIndex = 9;
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // XmlHeureAddBt
+            // 
+            this.XmlHeureAddBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlHeureAddBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlHeureAddBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlHeureAddBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
+            this.XmlHeureAddBt.Location = new System.Drawing.Point(830, 4);
+            this.XmlHeureAddBt.Name = "XmlHeureAddBt";
+            this.XmlHeureAddBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlHeureAddBt.TabIndex = 7;
+            this.XmlHeureAddBt.UseVisualStyleBackColor = false;
+            // 
+            // XmlAutocadCanaButton
+            // 
+            this.XmlAutocadCanaButton.Image = global::ACTIVA_Module_1.Properties.Resources.list16;
+            this.XmlAutocadCanaButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.XmlAutocadCanaButton.Name = "XmlAutocadCanaButton";
+            this.XmlAutocadCanaButton.Size = new System.Drawing.Size(195, 22);
+            this.XmlAutocadCanaButton.Text = "Codes Observation Canalisation";
+            // 
+            // XmlAutocadRegButton
+            // 
+            this.XmlAutocadRegButton.Image = global::ACTIVA_Module_1.Properties.Resources.list16;
+            this.XmlAutocadRegButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.XmlAutocadRegButton.Name = "XmlAutocadRegButton";
+            this.XmlAutocadRegButton.Size = new System.Drawing.Size(167, 22);
+            this.XmlAutocadRegButton.Text = "Codes Observation Regard";
+            // 
+            // XmlPonctuelDelValueBt
+            // 
+            this.XmlPonctuelDelValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlPonctuelDelValueBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlPonctuelDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlPonctuelDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
+            this.XmlPonctuelDelValueBt.Location = new System.Drawing.Point(988, -1);
+            this.XmlPonctuelDelValueBt.Name = "XmlPonctuelDelValueBt";
+            this.XmlPonctuelDelValueBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlPonctuelDelValueBt.TabIndex = 4;
+            this.XmlPonctuelDelValueBt.UseVisualStyleBackColor = false;
+            // 
+            // XmlPonctuelAddValueBt
+            // 
+            this.XmlPonctuelAddValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlPonctuelAddValueBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlPonctuelAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlPonctuelAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
+            this.XmlPonctuelAddValueBt.Location = new System.Drawing.Point(830, -2);
+            this.XmlPonctuelAddValueBt.Name = "XmlPonctuelAddValueBt";
+            this.XmlPonctuelAddValueBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlPonctuelAddValueBt.TabIndex = 2;
+            this.XmlPonctuelAddValueBt.UseVisualStyleBackColor = false;
+            // 
+            // XmlLineaireDelValueBt
+            // 
+            this.XmlLineaireDelValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlLineaireDelValueBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlLineaireDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlLineaireDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
+            this.XmlLineaireDelValueBt.Location = new System.Drawing.Point(988, -2);
+            this.XmlLineaireDelValueBt.Name = "XmlLineaireDelValueBt";
+            this.XmlLineaireDelValueBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlLineaireDelValueBt.TabIndex = 9;
+            this.XmlLineaireDelValueBt.UseVisualStyleBackColor = false;
+            // 
+            // XmlLineaireAddValueBt
+            // 
+            this.XmlLineaireAddValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlLineaireAddValueBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlLineaireAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlLineaireAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
+            this.XmlLineaireAddValueBt.Location = new System.Drawing.Point(830, -3);
+            this.XmlLineaireAddValueBt.Name = "XmlLineaireAddValueBt";
+            this.XmlLineaireAddValueBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlLineaireAddValueBt.TabIndex = 7;
+            this.XmlLineaireAddValueBt.UseVisualStyleBackColor = false;
+            // 
+            // XmlSurfaciqueDelValueBt
+            // 
+            this.XmlSurfaciqueDelValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlSurfaciqueDelValueBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlSurfaciqueDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlSurfaciqueDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
+            this.XmlSurfaciqueDelValueBt.Location = new System.Drawing.Point(988, -1);
+            this.XmlSurfaciqueDelValueBt.Name = "XmlSurfaciqueDelValueBt";
+            this.XmlSurfaciqueDelValueBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlSurfaciqueDelValueBt.TabIndex = 9;
+            this.XmlSurfaciqueDelValueBt.UseVisualStyleBackColor = false;
+            // 
+            // XmlSurfaciqueAddValueBt
+            // 
+            this.XmlSurfaciqueAddValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlSurfaciqueAddValueBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlSurfaciqueAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlSurfaciqueAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
+            this.XmlSurfaciqueAddValueBt.Location = new System.Drawing.Point(830, -2);
+            this.XmlSurfaciqueAddValueBt.Name = "XmlSurfaciqueAddValueBt";
+            this.XmlSurfaciqueAddValueBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlSurfaciqueAddValueBt.TabIndex = 7;
+            this.XmlSurfaciqueAddValueBt.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::ACTIVA_Module_1.Properties.Resources.newfolder1;
+            this.pictureBox5.Location = new System.Drawing.Point(8, 5);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
+            // 
+            // c1Command5
+            // 
+            this.c1Command5.Image = ((System.Drawing.Image)(resources.GetObject("c1Command5.Image")));
+            this.c1Command5.Name = "c1Command5";
+            this.c1Command5.Text = "&New";
+            // 
+            // c1Command6
+            // 
+            this.c1Command6.Image = ((System.Drawing.Image)(resources.GetObject("c1Command6.Image")));
+            this.c1Command6.Name = "c1Command6";
+            this.c1Command6.Text = "&Open";
+            // 
+            // c1Command7
+            // 
+            this.c1Command7.Image = ((System.Drawing.Image)(resources.GetObject("c1Command7.Image")));
+            this.c1Command7.Name = "c1Command7";
+            this.c1Command7.Text = "&Close";
+            // 
+            // c1Command8
+            // 
+            this.c1Command8.Image = ((System.Drawing.Image)(resources.GetObject("c1Command8.Image")));
+            this.c1Command8.Name = "c1Command8";
+            this.c1Command8.Text = "&Save";
+            // 
+            // c1Command9
+            // 
+            this.c1Command9.Image = ((System.Drawing.Image)(resources.GetObject("c1Command9.Image")));
+            this.c1Command9.Name = "c1Command9";
+            this.c1Command9.Text = "&Print...";
             // 
             // MainForm
             // 
@@ -4659,7 +4659,6 @@
             this.InspectionSplit.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             this.splitContainer2.ResumeLayout(false);
@@ -4668,35 +4667,26 @@
             this.chargementTab.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.AddOuvrageGp.ResumeLayout(false);
             this.AddOuvrageGp.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.InformationTab.ResumeLayout(false);
             this.TypeOuvrageGb.ResumeLayout(false);
             this.TypeOuvrageGb.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ReportTab.ResumeLayout(false);
             this.ReportTab.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ReportImgPb)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.AutocadTab.ResumeLayout(false);
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.AboutTab.ResumeLayout(false);
             this.AboutTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.splitContainer25.Panel1.ResumeLayout(false);
             this.splitContainer25.Panel2.ResumeLayout(false);
             this.splitContainer25.ResumeLayout(false);
@@ -4712,16 +4702,11 @@
             this.IdFormSplit.Panel1.PerformLayout();
             this.IdFormSplit.Panel2.ResumeLayout(false);
             this.IdFormSplit.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.splitContainer4.Panel1.ResumeLayout(false);
             this.splitContainer4.Panel1.PerformLayout();
             this.splitContainer4.Panel2.ResumeLayout(false);
             this.splitContainer4.Panel2.PerformLayout();
             this.splitContainer4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.IdFacultatifPb)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IdDesactivePb)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IdDifferePb)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IdObligatoirePb)).EndInit();
             this.ObservationTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ObservationGrid)).EndInit();
             this.RenseignementTab.ResumeLayout(false);
@@ -4865,11 +4850,26 @@
             this.CodeObsSplit.Panel1.PerformLayout();
             this.CodeObsSplit.Panel2.ResumeLayout(false);
             this.CodeObsSplit.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CodeTopicBar)).EndInit();
             this.MainSplit.Panel1.ResumeLayout(false);
             this.MainSplit.Panel2.ResumeLayout(false);
             this.MainSplit.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ReportImgPb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IdFacultatifPb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IdDesactivePb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IdDifferePb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IdObligatoirePb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
