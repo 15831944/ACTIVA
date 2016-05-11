@@ -4,14 +4,14 @@
   <description asmv2:publisher="Microsoft" asmv2:product="ACTIVA_Module_1" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" />
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="ACTIVA_Module_1.exe.manifest" size="11188">
+    <dependentAssembly dependencyType="install" codebase="ACTIVA_Module_1.exe.manifest" size="11202">
       <assemblyIdentity name="ACTIVA_Module_1.exe" version="1.0.0.7" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>fEYRVBxtY3iX4Yeb/XvnsKKGUM0=</dsig:DigestValue>
+        <dsig:DigestValue>8EFMwY6y7Ghi7fw1vXJVf1yvcqE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

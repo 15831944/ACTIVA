@@ -142,6 +142,7 @@
             this.RefPhotoTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RefPhotoTb.Location = new System.Drawing.Point(6, 102);
             this.RefPhotoTb.Name = "RefPhotoTb";
+            this.RefPhotoTb.ReadOnly = true;
             this.RefPhotoTb.Size = new System.Drawing.Size(485, 20);
             this.RefPhotoTb.TabIndex = 14;
             this.RefPhotoTb.Tag = "photo";

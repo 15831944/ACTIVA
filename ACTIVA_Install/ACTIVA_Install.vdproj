@@ -238,43 +238,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F076C77B25774EC28A8FF7B0FA7327F2"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F076C77B25774EC28A8FF7B0FA7327F2"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_CD0C17ABD837D7715A43CE9F80C6AD42"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9563A74ABCD35EF0ACF8D57F37F19CC0"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_92DF3620734777BC6B2EDCFA903EC531"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6BECA7E48264D3662DBAC69DF57BAB2B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5215DE5D80F572BBF91B3BDE69F5D54C"
+        "OwnerKey" = "8:_0373986692E99509CAB25B01E17CD96E"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -286,13 +250,31 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0373986692E99509CAB25B01E17CD96E"
+        "OwnerKey" = "8:_5215DE5D80F572BBF91B3BDE69F5D54C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F076C77B25774EC28A8FF7B0FA7327F2"
+        "OwnerKey" = "8:_6BECA7E48264D3662DBAC69DF57BAB2B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_92DF3620734777BC6B2EDCFA903EC531"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_9563A74ABCD35EF0ACF8D57F37F19CC0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_CD0C17ABD837D7715A43CE9F80C6AD42"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -392,7 +374,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:3.5.21022     "
+                "FrameworkVersion" = "8:3.5.21022      "
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=76617"
                 }
@@ -1431,6 +1413,20 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_9E01837FEFFF4998BA4FBD7B0F34D74C"
+            {
+            "Name" = "8:ACTIVA"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_F076C77B25774EC28A8FF7B0FA7327F2"
+            "Folder" = "8:_7F6C977688AA4426B5A8D616AE91EC54"
+            "WorkingFolder" = "8:_D5DA31C2943A4AA4823778DC0C8DC681"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_B2A7C3F285724165A959165E34C9B3E5"
             {
             "Name" = "8:ACTIVA"
@@ -1846,7 +1842,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_F076C77B25774EC28A8FF7B0FA7327F2"
             {
-            "SourcePath" = "8:..\\ACTIVA_Module_1\\obj\\Debug\\ACTIVA_Module_1.exe"
+            "SourcePath" = "8:"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_D5DA31C2943A4AA4823778DC0C8DC681"

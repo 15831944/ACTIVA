@@ -26,7 +26,7 @@ namespace ACTIVA_Module_1.autocad
         //-----------------------
         public string couleur;
         public string epaisseur;
-        public string legende;
+        public string legende = String.Empty;
         public string echelle;
         public string angle;
     }

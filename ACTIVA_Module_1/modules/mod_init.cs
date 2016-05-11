@@ -154,6 +154,16 @@ namespace ACTIVA_Module_1.modules
 
             mod_global.MF.OuvrageToolsPanel.Enabled = false;
             mod_global.MF.MainSplit.Panel2Collapsed = true;
+
+            mod_global.MF.SaisieTabControl.TabPages["ChoiceTab"].Enabled = false;
+            mod_global.MF.SaisieTabControl.TabPages["DateTab"].Enabled = false;
+            mod_global.MF.SaisieTabControl.TabPages["VideoTab"].Enabled = false;
+            mod_global.MF.SaisieTabControl.TabPages["DateTab"].Enabled = false;
+            mod_global.MF.SaisieTabControl.TabPages["PhotoTab"].Enabled = false;
+            mod_global.MF.SaisieTabControl.TabPages["AudioTab"].Enabled = false;
+            mod_global.MF.SaisieTabControl.TabPages["SectionTab"].Enabled = false;
+            mod_global.MF.SaisieTabControl.TabPages["KeyboardTab"].Enabled = false;
+            mod_global.MF.SaisieTabControl.TabPages["SchemaTab"].Enabled = false;
         }
     }
 }

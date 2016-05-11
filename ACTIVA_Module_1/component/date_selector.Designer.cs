@@ -33,11 +33,11 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(4, 1);
+            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(5, 1);
             this.monthCalendar1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.monthCalendar1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.monthCalendar1.Location = new System.Drawing.Point(0, 0);
-            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(12);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(16, 15, 16, 15);
             this.monthCalendar1.MaxSelectionCount = 1;
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 1;
@@ -46,11 +46,13 @@
             // 
             // date_selector
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.monthCalendar1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "date_selector";
-            this.Size = new System.Drawing.Size(1004, 205);
+            this.Size = new System.Drawing.Size(1339, 252);
+            this.Load += new System.EventHandler(this.date_selector_Load);
             this.ResumeLayout(false);
 
         }

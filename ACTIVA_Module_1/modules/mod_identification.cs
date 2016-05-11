@@ -125,18 +125,14 @@ namespace ACTIVA_Module_1.modules
 
             foreach (XPathNavigator item in nav.Select(exp))
             {
-                if (item.SelectSingleNode("id").Value != "AAI")
-                {
-                    IdItem = item.SelectSingleNode("id");
+                IdItem = item.SelectSingleNode("id");
 
-                    IntituleItem = item.SelectSingleNode("intitule");
+                IntituleItem = item.SelectSingleNode("intitule");
 
-                    C1.Win.C1Command.C1TopicLink link = new C1.Win.C1Command.C1TopicLink();
-                    link.Text = string.Concat(IntituleItem.Value, " - ", IdItem.Value);
-                    link.Tag = IdItem.Value;
-                    tpbar.FindPageByTag(item.GetAttribute("parent", "")).Links.Add(link);
-                }
-
+                C1.Win.C1Command.C1TopicLink link = new C1.Win.C1Command.C1TopicLink();
+                link.Text = string.Concat(IntituleItem.Value, " - ", IdItem.Value);
+                link.Tag = IdItem.Value;
+                tpbar.FindPageByTag(item.GetAttribute("parent", "")).Links.Add(link);
             }
             /* ANCIEN CODE DE NS (remplacé par GB le 16/12/2009)
             XmlNodeList nodeList;
@@ -232,29 +228,26 @@ namespace ACTIVA_Module_1.modules
 
             foreach (XPathNavigator item in nav.Select(exp))
             {
-                if (item.SelectSingleNode("id").Value != "AAI")
-                {
-                    IdItem = item.SelectSingleNode("id");
-                    ValItem = item.SelectSingleNode("valeur");
-                    IntituleItem = item.SelectSingleNode("intitule");
-                    RenseigneItem = item.SelectSingleNode("renseigne");
+                IdItem = item.SelectSingleNode("id");
+                ValItem = item.SelectSingleNode("valeur");
+                IntituleItem = item.SelectSingleNode("intitule");
+                RenseigneItem = item.SelectSingleNode("renseigne");
 
-                    if (item.GetAttribute("ajoute", "") != "")
-                        ajoute = bool.Parse(item.GetAttribute("ajoute", ""));
+                if (item.GetAttribute("ajoute", "") != "")
+                    ajoute = bool.Parse(item.GetAttribute("ajoute", ""));
 
-                    string nom_complet = IdItem.Value + " | " + IntituleItem.Value;
+                string nom_complet = IdItem.Value + " | " + IntituleItem.Value;
 
-                    unite = Get_Unite_For_Id_Code(IdItem.Value);
-                    if (unite != string.Empty)
-                        nom_complet += " (" + unite + ")";
+                unite = Get_Unite_For_Id_Code(IdItem.Value);
+                if (unite != string.Empty)
+                    nom_complet += " (" + unite + ")";
 
-                    string value = Get_Value_Identification(IdItem.Value);
+                string value = Get_Value_Identification(IdItem.Value);
 
-                    identification_input id_box = new identification_input(nom_complet, IdItem.Value, value, RenseigneItem.Value, ValItem.GetAttribute("type", ""), ajoute, groupe);
+                identification_input id_box = new identification_input(nom_complet, IdItem.Value, value, RenseigneItem.Value, ValItem.GetAttribute("type", ""), ajoute, groupe);
 
-                    ajoute = false;
-                    flp.Controls.Add(id_box);
-                }
+                ajoute = false;
+                flp.Controls.Add(id_box);
             }
 
             /* ANCIEN CODE DE NS (remplacé par GB le 16/12/2009)

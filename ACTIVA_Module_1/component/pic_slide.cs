@@ -41,7 +41,6 @@ namespace ACTIVA_Module_1.component
                 c1PictureBox1.ImageLocation = Photos[pic_pos + 1].ToString();
                 pic_pos += 1;
             }
-
         }
 
         private void pic_prev_button_Click(object sender, EventArgs e)
@@ -49,7 +48,7 @@ namespace ACTIVA_Module_1.component
             if (pic_pos - 1 >= 0)
             {
                 c1PictureBox1.ImageLocation = Photos[pic_pos - 1].ToString();
-                pic_pos -= 1;
+                pic_pos -= 1;                
             }
         }
     }

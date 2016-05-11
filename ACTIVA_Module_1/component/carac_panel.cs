@@ -709,6 +709,22 @@ namespace ACTIVA_Module_1.component
                 string savenum = mod_save.Save_Observation_Panel(current_code, current_num);
                 current_num = savenum;
                 CaracValidBt.Enabled = false;
+
+                DialogResult diag = MessageBox.Show("Voulez vous saisir ses codes liéés?", "Confirmation", MessageBoxButtons.YesNo);
+                if (diag == DialogResult.Yes)
+                {
+                    //Création des pages de codes liés
+                    XmlNode root;
+                    XmlNodeList CodeLieNodeList;
+
+                    root = mod_global.Get_Codes_Obs_DocElement();
+                    CodeLieNodeList = root.SelectNodes("/codes/code[id='" + current_code + "']/lien/codelie");
+
+                    foreach (XmlNode CodeLieNode in CodeLieNodeList)
+                    {
+                        mod_carac.New_Caracteristique_Form(CodeLieNode.InnerText, String.Empty, false);
+                    }
+                }
             }
             else
             {
@@ -770,7 +786,15 @@ namespace ACTIVA_Module_1.component
 
         private void CaracCancelBt_Click(object sender, EventArgs e)
         {
-
+            if (mod_global.MF.CaracDockingTab.TabPages.Count > 1)
+            {
+                mod_global.MF.CaracDockingTab.TabPages.Remove((C1.Win.C1Command.C1DockingTabPage)this.Parent);
+            }
+            else
+            {
+                mod_global.MF.CaracDockingTab.TabPages.Clear();
+                mod_global.MF.MainDockingTab.SelectedTab = mod_global.MF.ObservationTab;
+            }
         }
 
         private void CaracDelBt_Click(object sender, EventArgs e)

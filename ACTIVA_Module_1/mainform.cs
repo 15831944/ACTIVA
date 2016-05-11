@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.Collections;
 using ACTIVA_Module_1.modules;
 using ACTIVA_Module_1.component;
+using System.Reflection;
 
 
 namespace ACTIVA_Module_1
@@ -19,7 +20,7 @@ namespace ACTIVA_Module_1
         protected StatusBar mainStatusBar = new StatusBar();
         public StatusBarPanel statusPanel = new StatusBarPanel();
         protected StatusBarPanel datetimePanel = new StatusBarPanel();
-
+        private ToolTip tt;
         public MainForm()
         {
             InitializeComponent();
@@ -27,7 +28,8 @@ namespace ACTIVA_Module_1
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            this.CenterToScreen();
+            //this.CenterToScreen();
+            this.WindowState = FormWindowState.Maximized;
             this.CreateStatusBar();
             //splash sp = new splash();
             //sp.ShowDialog();
@@ -37,9 +39,10 @@ namespace ACTIVA_Module_1
             mod_init.App_Init();
 
             //on récupère la version courante de la compilation
+            var version = Assembly.GetEntryAssembly().GetName().Version;
+            labelnumcompil.Text = "N° version : " + version;
+            labeldateversion.Text = "Date de la version : " + ACTIVA_Module_1.Properties.Resources.BuildDate.ToString();
 
-            labelnumcompil.Text = "N° version : " + "1.0 beta";
-            labeldateversion.Text = "Date de la version :" + "18 décembre 2009";
         }
 
         private void CreateStatusBar()
@@ -67,10 +70,13 @@ namespace ACTIVA_Module_1
             {
                 mod_global.Disable_Obs_Tools();
                 if (MainDockingTab.SelectedTab.Name == "IdentificationTab")
+                {
                     mod_identification.Fill_Id_Menu(IdentificationTopicBar, Identification_Flp);
-                if (MainDockingTab.SelectedTab.Name == "ObservationTab")
+                    IdentificationTopicBar.Pages[0].Expand();
+                }
+                /*if (MainDockingTab.SelectedTab.Name == "ObservationTab")
                     splitContainer27.Hide();
-                else splitContainer27.Visible = true;
+                else splitContainer27.Visible = true;*/
             }
             else if (MainDockingTab.SelectedTab.Name != "ParamTab")
             {
@@ -78,6 +84,7 @@ namespace ACTIVA_Module_1
                 mod_observation.Fill_Code_Menu(CodeTopicBar);
                 MainSplit.Panel2Collapsed = false;
                 mod_global.Enable_Obs_Tools();
+                CodeTopicBar.Pages[0].Expand();
 
                 if (mod_observation.OBS_GRID_EXPANDED == true & mod_observation.Collapsed_Rows.Count == 0)
                     mod_observation.Expand_Grid(ObservationGrid);
@@ -130,7 +137,6 @@ namespace ACTIVA_Module_1
             {
                 if (i != e.Page.Index)
                     IdentificationTopicBar.Pages[i].Collapse();
-
             }
             /*
              * 
@@ -473,5 +479,18 @@ namespace ACTIVA_Module_1
             mod_new.Exporter_XML(System.IO.Path.GetFileName(SVFLabel.Text), SVFLabel.Text);
         }
 
+        private void InputPreviewTb_Enter(object sender, EventArgs e)
+        {
+            tt = new ToolTip();
+            tt.InitialDelay = 0;
+            tt.IsBalloon = true;
+            int VisibleTime = 1000;
+            tt.Show("Information", InputPreviewTb,0 , 0, VisibleTime);
+        }
+
+        private void InputPreviewTb_Leave(object sender, EventArgs e)
+        {
+            tt.Dispose();
+        }
     }
 }

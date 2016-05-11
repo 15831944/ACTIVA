@@ -216,45 +216,46 @@ namespace ACTIVA_Module_1.modules
 
             grid.Cols.Count = 8;
 
-            grid.Cols[0].Width = Convert.ToInt32(grid.Width * 0.02);
+            mod_global.MF.DataSplit.Panel2Collapsed = false;
+            grid.Cols[0].Width = Convert.ToInt32((mod_global.MF.DataSplit.Width - mod_global.MF.DataSplit.Panel2.Width) * 0.02);
             grid.Cols[0].Name = "line_state";
             grid.Cols[0].Style = grid.Styles["Fixed"];
 
             grid.Cols[1].Name = "num";
-            grid.Cols[1].Width = Convert.ToInt32(grid.Width * 0.03);
+            grid.Cols[1].Width = Convert.ToInt32((mod_global.MF.DataSplit.Width - mod_global.MF.DataSplit.Panel2.Width) * 0.03);
             grid.Cols[1].Caption = "num";
             grid.Cols[1].Visible = false;
 
             grid.Cols[2].Name = "pm1";
             grid.Cols[2].Style = grid.Styles["PmStyle1"];
-            grid.Cols[2].Width = Convert.ToInt32(grid.Width * 0.05);
+            grid.Cols[2].Width = Convert.ToInt32((mod_global.MF.DataSplit.Width - mod_global.MF.DataSplit.Panel2.Width) * 0.05);
             grid.Cols[2].Caption = "Pm1";
             grid.Cols[2].Format = "##0.## m";
             //colonne.Style.BackColor = Color.Gray;
 
             grid.Cols[3].Name = "pm2";
             grid.Cols[3].Style = grid.Styles["PmStyle2"];
-            grid.Cols[3].Width = Convert.ToInt32(grid.Width * 0.05);
+            grid.Cols[3].Width = Convert.ToInt32((mod_global.MF.DataSplit.Width - mod_global.MF.DataSplit.Panel2.Width) * 0.05);
             grid.Cols[3].Caption = "Pm2";
             grid.Cols[3].Format = "##0.## m";
 
             grid.Cols[4].Name = "code";
             grid.Cols[4].Style = grid.Styles["CodeStyle"];
-            grid.Cols[4].Width = Convert.ToInt32(grid.Width * 0.1);
+            grid.Cols[4].Width = Convert.ToInt32((mod_global.MF.DataSplit.Width - mod_global.MF.DataSplit.Panel2.Width) * 0.05);
             grid.Cols[4].Caption = "Code";
             //colonne.Style.BackColor = Color.Gray;
 
             grid.Cols[5].Name = "forme";
-            grid.Cols[5].Width = Convert.ToInt32(grid.Width * 0.1);
+            grid.Cols[5].Width = Convert.ToInt32((mod_global.MF.DataSplit.Width - mod_global.MF.DataSplit.Panel2.Width) * 0.05);
             grid.Cols[5].Caption = "Forme";
             //colonne.Style.BackColor = Color.Gray;
 
             grid.Cols[6].Name = "observation";
-            grid.Cols[6].Width = Convert.ToInt32(grid.Width * 0.4);
+            grid.Cols[6].Width = Convert.ToInt32((mod_global.MF.DataSplit.Width - mod_global.MF.DataSplit.Panel2.Width) * 0.5);
             grid.Cols[6].Caption = "Observation";
 
             grid.Cols[7].Name = "visuel";
-            grid.Cols[7].Width = Convert.ToInt32(grid.Width * 0.25);
+            grid.Cols[7].Width = Convert.ToInt32((mod_global.MF.DataSplit.Width - mod_global.MF.DataSplit.Panel2.Width) * 0.25);
             grid.Cols[7].Caption = "Référence visuelle";
             grid.Cols[7].AllowResizing = true;
             //colonne.Style.BackColor = Color.Black;
@@ -294,12 +295,14 @@ namespace ACTIVA_Module_1.modules
 
         public static void Collapse_Grid(C1FlexGrid grid)
         {
+            OBS_GRID_EXPANDED = false;
+            Fill_Observation_Grid(grid);
             //grid.Rows.DefaultSize = 24;
             foreach (Row row in grid.Rows)
             {
                 if (row.SafeIndex > 0)
                 {
-                    row.HeightDisplay = 24;
+                    row.HeightDisplay = 65;
 
                     Collapsed_Rows.Add(row["num"]);
 
@@ -309,11 +312,13 @@ namespace ACTIVA_Module_1.modules
 
             //grid.Cols["visuel"].Visible = false;
             //grid.Cols["observation"].Width = 520;
-            OBS_GRID_EXPANDED = false;
+
         }
 
         public static void Expand_Grid(C1FlexGrid grid)
         {
+            OBS_GRID_EXPANDED = true;
+            Fill_Observation_Grid(grid);
             //grid.Rows.DefaultSize = 128;
             foreach (Row row in grid.Rows)
             {
@@ -327,7 +332,7 @@ namespace ACTIVA_Module_1.modules
             //grid.Cols["visuel"].Visible = true;
             //grid.Cols["observation"].Width = 400;
             Fill_Visuel_Column(grid);
-            OBS_GRID_EXPANDED = true;
+
         }
 
         public static void Expand_Or_Collapse_Rows(C1FlexGrid grid)
@@ -394,7 +399,9 @@ namespace ACTIVA_Module_1.modules
                 ligne["forme"] = unNode.Attributes["forme"].InnerText;
                 ligne["num"] = unNode.Attributes["num"].InnerText;
                 //ligne["observation"] = unNode.ChildNodes[1].InnerText + "\n\n" + Get_Caracteristiques(unNode);
-                ligne["observation"] = Get_Caracteristiques_In_RTF_Paragraph(unNode);
+                if (OBS_GRID_EXPANDED == false)
+                    ligne["observation"] = Get_Caracteristiques_In_RTF_Paragraph_Collapse(unNode);
+                else ligne["observation"] = Get_Caracteristiques_In_RTF_Paragraph(unNode);
 
                 if (Is_Differe_Field_To_Fill(unNode) == true)
                 {
@@ -802,6 +809,56 @@ namespace ACTIVA_Module_1.modules
             rtf_code += @" \par \cf2 ";
             rtf_code += carac;
             rtf_code += @" } ";
+
+            return rtf_code;
+        }
+
+        private static string Get_Caracteristiques_In_RTF_Paragraph_Collapse(XmlNode CodeNode)
+        {
+            XmlNodeList nodeList;
+
+            nodeList = CodeNode.SelectNodes("caracteristiques/caracteristique");
+
+            string code = CodeNode.FirstChild.InnerText;
+            string caracname = String.Empty;
+
+            string intitule = CodeNode.ChildNodes[1].InnerText;
+            /*if (Get_C2(CodeNode) != String.Empty)
+                intitule = CodeNode.ChildNodes[1].InnerText + Environment.NewLine + Get_C1(CodeNode) + " " + Get_C2(CodeNode);
+            else
+                intitule = CodeNode.ChildNodes[1].InnerText + Environment.NewLine + Get_C1(CodeNode);*/
+
+            string rtf_code = string.Empty;
+            string carac = String.Empty;
+            string correspondance = String.Empty;
+
+            foreach (XmlNode unNode in nodeList)
+            {
+                caracname = unNode.Attributes["nom"].InnerText;
+
+                if (unNode.InnerText != String.Empty & caracname != "photo" & caracname != "pm1" & caracname != "pm2" & caracname != "h1" & caracname != "h2" & caracname != "q1" & caracname != "q2" & caracname != "assemblage")
+                {
+                    correspondance = String.Empty;
+                    if (unNode.Attributes.GetNamedItem("correspondance") != null)
+                        correspondance = " (" + unNode.Attributes["correspondance"].InnerText + ")";
+
+                    carac += @" - \cf2 \b0 " + unNode.InnerText + correspondance + " " + Get_Unite_For_Carac(code, caracname);
+
+                    correspondance = String.Empty;
+                }
+
+            }
+
+            rtf_code += @"{\rtf1\ansi\ \deff0 \deflang1033\deflangfe1036 ";
+            rtf_code += @"{\colortbl ";
+            rtf_code += @";\red0\green0\blue255;\red102\green102\blue102;\red0\green153\blue0; ";
+            rtf_code += @"}";
+            rtf_code += @" \par ";
+            rtf_code += @"\b \cf1\f0 ";
+            rtf_code += intitule;
+            rtf_code += @" \b0 ";
+            rtf_code += carac;
+            rtf_code += @"";
 
             return rtf_code;
         }

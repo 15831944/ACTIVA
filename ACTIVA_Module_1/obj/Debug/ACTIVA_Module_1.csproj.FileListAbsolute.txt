@@ -1,20 +1,7 @@
-C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.csprojResolveAssemblyReference.cache
-C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.csproj.ResolveComReference.cache
-C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.component.carac_panel.resources
-C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.component.date_selector.resources
-C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.component.identification_input.resources
-C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.component.kb_key.resources
-C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.component.multiple_choice_button.resources
-C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.component.photo_select.resources
-C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.component.pic_slide.resources
-C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.component.section_horaire.resources
-C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.component.virtual_kb.resources
-C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.MainForm.resources
-C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.Ouvrage_Copy_Name.resources
-C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.Properties.Resources.resources
-C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.splash.resources
-C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.csproj.GenerateResource.Cache
-C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.exe.licenses
+C:\SRDEV\Projets\ACTIVA - Backup 26-04-2016\ACTIVA_Module_1\bin\Debug\ACTIVA_Module_1.exe.config
+C:\SRDEV\Projets\ACTIVA - Backup 26-04-2016\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.csproj.ResolveComReference.cache
+C:\SRDEV\Projets\ACTIVA - Backup 26-04-2016\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.exe
+C:\SRDEV\Projets\ACTIVA - Backup 26-04-2016\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.pdb
 C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\bin\Debug\ACTIVA_Module_1.exe.config
 C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\bin\Debug\ACTIVA_Module_1.exe.manifest
 C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\bin\Debug\ACTIVA_Module_1.application
@@ -36,11 +23,24 @@ C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\bin\Debug\C1.Win.C1FlexGrid.2.xml
 C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\bin\Debug\C1.Win.C1Input.2.xml
 C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\bin\Debug\C1.Win.C1List.2.xml
 C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\bin\Debug\C1.Win.C1Schedule.2.xml
+C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.csprojResolveAssemblyReference.cache
+C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.csproj.ResolveComReference.cache
+C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.component.carac_panel.resources
+C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.component.date_selector.resources
+C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.component.identification_input.resources
+C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.component.kb_key.resources
+C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.component.multiple_choice_button.resources
+C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.component.photo_select.resources
+C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.component.pic_slide.resources
+C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.component.section_horaire.resources
+C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.component.virtual_kb.resources
+C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.MainForm.resources
+C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.Ouvrage_Copy_Name.resources
+C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.Properties.Resources.resources
+C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.splash.resources
+C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.csproj.GenerateResource.Cache
+C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.exe.licenses
 C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.exe.manifest
 C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.application
 C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.exe
 C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.pdb
-C:\SRDEV\Projets\ACTIVA - Backup 26-04-2016\ACTIVA_Module_1\bin\Debug\ACTIVA_Module_1.exe.config
-C:\SRDEV\Projets\ACTIVA - Backup 26-04-2016\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.csproj.ResolveComReference.cache
-C:\SRDEV\Projets\ACTIVA - Backup 26-04-2016\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.exe
-C:\SRDEV\Projets\ACTIVA - Backup 26-04-2016\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.pdb

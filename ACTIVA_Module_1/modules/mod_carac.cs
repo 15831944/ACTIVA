@@ -50,17 +50,7 @@ namespace ACTIVA_Module_1.modules
             //Création de la page du code principal (si num=String.Empty, la page créée est vide)
             New_Caracteristique_Form(code, String.Empty, false);
 
-            //Création des pages de codes liés
-            XmlNode root;
-            XmlNodeList CodeLieNodeList;
 
-            root = mod_global.Get_Codes_Obs_DocElement();
-            CodeLieNodeList = root.SelectNodes("/codes/code[id='" + code + "']/lien/codelie");
-
-            foreach (XmlNode CodeLieNode in CodeLieNodeList)
-             {
-               New_Caracteristique_Form(CodeLieNode.InnerText, String.Empty, false);
-             }
 
             mod_global.MF.CaracDockingTab.SelectedTab = mod_global.MF.CaracDockingTab.TabPages[0];
             mod_global.MF.MainDockingTab.SelectedTab = mod_global.MF.RenseignementTab;

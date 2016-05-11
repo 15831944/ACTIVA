@@ -131,6 +131,16 @@ namespace ACTIVA_Module_1.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à 11/05/2016 13:56:33,73 
+        ///.
+        /// </summary>
+        internal static string BuildDate {
+            get {
+                return ResourceManager.GetString("BuildDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap cancel_16 {
