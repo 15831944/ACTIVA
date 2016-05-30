@@ -12,7 +12,6 @@ namespace ACTIVA_Module_1.modules
     {
         public static void Exporter_XML(string name, string path)
         {
-            int cpt = 1;
             if (name != String.Empty & path != String.Empty)
             {
                 XmlNodeList nodelist, ouvragelist;
@@ -41,6 +40,7 @@ namespace ACTIVA_Module_1.modules
                 ouvragelist = svf.SelectNodes("/inspection/ouvrage");
                 foreach (XmlNode ouvrage in ouvragelist)
                 {
+                    int cpt = 1;
                     // Liste des ZB
                     elem = doc.CreateElement("ZB");
                     inspectionNode.AppendChild(elem);
@@ -117,7 +117,8 @@ namespace ACTIVA_Module_1.modules
                         if (svf.SelectSingleNode(str).InnerText != "")
                         {
                             code = doc.CreateElement("G");
-                            code.InnerText = svf.SelectSingleNode(str).InnerText;
+                            String[] split = svf.SelectSingleNode(str).InnerText.Split('H');
+                            code.InnerText = split[0];
                             var.AppendChild(code);
                         }
 
@@ -126,7 +127,8 @@ namespace ACTIVA_Module_1.modules
                         if (svf.SelectSingleNode(str).InnerText != "")
                         {
                             code = doc.CreateElement("H");
-                            code.InnerText = svf.SelectSingleNode(str).InnerText;
+                            String[] split = svf.SelectSingleNode(str).InnerText.Split('H');
+                            code.InnerText = split[0];
                             var.AppendChild(code);
                         }
 
@@ -147,18 +149,35 @@ namespace ACTIVA_Module_1.modules
                             if (svf.SelectSingleNode(str).InnerText != svf.SelectSingleNode(pm1).InnerText)
                             {
                                 code = doc.CreateElement("J");
-                                code.InnerText = cpt.ToString();
+                                code.InnerText = "A" + cpt.ToString();
                                 var.AppendChild(code);
                             }
                         }
 
                         //Assemblage
                         str = string.Concat("/inspection/ouvrage[@nom ='", ouvrage.Attributes["nom"].InnerText, "']/observations/code[@num = \"", obs.Attributes["num"].InnerText, "\"]", "/caracteristiques/caracteristique[@nom=\"assemblage\"]");
-                        if (svf.SelectSingleNode(str).InnerText != "")
+                        if (svf.SelectSingleNode(str).InnerText == "True")
                         {
                             code = doc.CreateElement("K");
-                            code.InnerText = svf.SelectSingleNode(str).InnerText;
+                            code.InnerText = "A";
                             var.AppendChild(code);
+                        }
+                        else if (svf.SelectSingleNode(str).InnerText == "False")
+                        {
+                            code = doc.CreateElement("K");
+                            var.AppendChild(code);
+                        }
+
+                        //Emplacement Regard
+                        str = string.Concat("/inspection/ouvrage[@nom ='", ouvrage.Attributes["nom"].InnerText, "']/observations/code[@num = \"", obs.Attributes["num"].InnerText, "\"]", "/caracteristiques/caracteristique[@nom=\"posregard\"]");
+                        if (svf.SelectSingleNode(str) != null)
+                        {
+                            if (svf.SelectSingleNode(str).Attributes["codeR"].InnerText != "")
+                            {
+                                code = doc.CreateElement("L");
+                                code.InnerText = svf.SelectSingleNode(string.Concat("/inspection/ouvrage[@nom ='", ouvrage.Attributes["nom"].InnerText, "']/observations/code[@num = \"", obs.Attributes["num"].InnerText, "\"]", "/caracteristiques/caracteristique[@nom=\"posregard\"]")).Attributes["codeR"].InnerText;
+                                var.AppendChild(code);
+                            }
                         }
 
                         //Photo
@@ -254,7 +273,8 @@ namespace ACTIVA_Module_1.modules
             if (svf.SelectSingleNode(str).InnerText != "")
             {
                 code = doc.CreateElement("G");
-                code.InnerText = svf.SelectSingleNode(str).InnerText;
+                String[] split = svf.SelectSingleNode(str).InnerText.Split('H');
+                code.InnerText = split[0];
                 var.AppendChild(code);
             }
 
@@ -263,7 +283,8 @@ namespace ACTIVA_Module_1.modules
             if (svf.SelectSingleNode(str).InnerText != "")
             {
                 code = doc.CreateElement("H");
-                code.InnerText = svf.SelectSingleNode(str).InnerText;
+                String[] split = svf.SelectSingleNode(str).InnerText.Split('H');
+                code.InnerText = split[0];
                 var.AppendChild(code);
             }
 
@@ -278,16 +299,38 @@ namespace ACTIVA_Module_1.modules
 
             //Code de défaut continu
             code = doc.CreateElement("J");
-            code.InnerText = cpt.ToString();
+            code.InnerText = "B" + cpt.ToString();
             var.AppendChild(code);
 
             //Assemblage
             str = string.Concat("/inspection/ouvrage[@nom ='", ouvrage.Attributes["nom"].InnerText, "']/observations/code[@num = \"", obs.Attributes["num"].InnerText, "\"]", "/caracteristiques/caracteristique[@nom=\"assemblage\"]");
-            if (svf.SelectSingleNode(str).InnerText != "")
+            if (svf.SelectSingleNode(str).InnerText == "True")
             {
                 code = doc.CreateElement("K");
-                code.InnerText = svf.SelectSingleNode(str).InnerText;
+                code.InnerText = "A";
                 var.AppendChild(code);
+            }
+            else if (svf.SelectSingleNode(str).InnerText == "False")
+            {
+                code = doc.CreateElement("K");
+                var.AppendChild(code);
+            }
+            else if (svf.SelectSingleNode(str).InnerText == "False")
+            {
+                code = doc.CreateElement("K");
+                var.AppendChild(code);
+            }
+
+            //Emplacement Regard
+            str = string.Concat("/inspection/ouvrage[@nom ='", ouvrage.Attributes["nom"].InnerText, "']/observations/code[@num = \"", obs.Attributes["num"].InnerText, "\"]", "/caracteristiques/caracteristique[@nom=\"posregard\"]");
+            if (svf.SelectSingleNode(str) != null)
+            {
+                if (svf.SelectSingleNode(str).Attributes["codeR"].InnerText != "")
+                {
+                    code = doc.CreateElement("L");
+                    code.InnerText = svf.SelectSingleNode(string.Concat("/inspection/ouvrage[@nom ='", ouvrage.Attributes["nom"].InnerText, "']/observations/code[@num = \"", obs.Attributes["num"].InnerText, "\"]", "/caracteristiques/caracteristique[@nom=\"posregard\"]")).Attributes["codeR"].InnerText;
+                    var.AppendChild(code);
+                }
             }
 
             //Photo

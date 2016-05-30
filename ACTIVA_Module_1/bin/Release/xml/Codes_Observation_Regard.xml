@@ -648,8 +648,8 @@
       </representations>
     </autocad>
   </code>
-  <code position="18" parent="defautStructurel">
-    <id ajoute ="true">DAX</id>
+  <code position="18" parent="defautStructurel"  ajoute ="true">
+    <id>DAX</id>
     <intitule info="Défaut des éléments de sécurité">Eléments de sécurité</intitule>
     <caracteristiques>
       <caracteristique nom="c1" type="item" ajoute ="true" intitule="Type d'élément de sécurité" renseigne="4" info="">
@@ -686,8 +686,8 @@
       </representations>
     </autocad>
   </code>
-  <code position="19" parent="defautStructurel">
-    <id ajoute ="true">DAY</id>
+  <code position="19" parent="defautStructurel"  ajoute ="true">
+    <id>DAY</id>
     <intitule info="Défaut support de fibre optique">Elément de fibre optique</intitule>
     <caracteristiques>
       <caracteristique nom="c1" type="item" ajoute ="true" intitule="Type d'élément" renseigne="4" info="">

@@ -44,7 +44,7 @@ namespace ACTIVA_Module_1.modules
             grid.Cols.DefaultSize = 100;
             grid.Rows[0].Height = 20;
 
-            grid.Cols.Count = 11;
+            grid.Cols.Count = 14;
 
             Dictionary<string, string> field_state = new Dictionary<string, string>();
             field_state.Add(string.Empty, String.Empty);
@@ -53,54 +53,88 @@ namespace ACTIVA_Module_1.modules
             field_state.Add("3", "3");
             field_state.Add("4", "4");
 
+            Dictionary<string, string> field_parent = new Dictionary<string, string>();
+            field_parent.Add("Organisme", "Organisme");
+            field_parent.Add("Lieu", "Lieu");
+            field_parent.Add("Ouvrage", "Ouvrage");
+            field_parent.Add("Support", "Support");
+            field_parent.Add("Element", "Element");
+            field_parent.Add("Condition", "Condition");
+            field_parent.Add("Observation", "Observation");
+
+            Dictionary<string, string> field_type = new Dictionary<string, string>();
+            field_type.Add("texte", "texte");
+            field_type.Add("item", "item");
+            field_type.Add("numerique", "numerique");
+            field_type.Add("date", "date");
+            field_type.Add("horaire", "horaire");
+            field_type.Add("video", "video");
+            field_type.Add("photo", "photo");
+            field_type.Add("audio", "audio");
+
             grid.Cols[0].Name = "id";
             grid.Cols[0].Style = grid.Styles["PosStyle"];
-            grid.Cols[0].Width = 60;
+            grid.Cols[0].Width = 50;
             grid.Cols[0].Caption = "Id";
 
-            grid.Cols[1].Name = "nbitem";
-            grid.Cols[1].Width = 50;
-            grid.Cols[1].Caption = "Nbre Items";
+            grid.Cols[1].Name = "inspection";
+            grid.Cols[1].Style = grid.Styles["CodeStyle"];
+            grid.Cols[1].Width = 60;
+            grid.Cols[1].DataType = typeof(bool);
+            grid.Cols[1].Caption = "Inspection";
 
-            grid.Cols[2].Name = "parent";
-            grid.Cols[2].Style = grid.Styles["CodeStyle"];
+            grid.Cols[2].Name = "corresp";
             grid.Cols[2].Width = 120;
-            grid.Cols[2].Caption = "Parent";
+            grid.Cols[2].Caption = "Code Correspondant";
 
-            grid.Cols[3].Name = "intitule";
-            grid.Cols[3].Width = 400;
-            grid.Cols[3].Caption = "Intitulé";
+            grid.Cols[3].Name = "nbitem";
+            grid.Cols[3].Width = 60;
+            grid.Cols[3].Caption = "Nbre Items";
 
-            grid.Cols[4].Name = "type";
+            grid.Cols[4].Name = "parent";
             grid.Cols[4].Width = 70;
-            grid.Cols[4].Caption = "Type";
+            grid.Cols[4].Caption = "Parent";
+            grid.Cols[4].DataMap = field_parent;
 
-            grid.Cols[5].Name = "unite";
-            grid.Cols[5].Width = 50;
-            grid.Cols[5].Caption = "Unité";
+            grid.Cols[5].Name = "intitule";
+            grid.Cols[5].Width = 200;
+            grid.Cols[5].Caption = "Intitulé";
 
-            grid.Cols[6].Name = "reporte";
-            grid.Cols[6].Width = 50;
-            grid.Cols[6].DataType = typeof(bool);
-            grid.Cols[6].Caption = "Reporté";
+            grid.Cols[6].Name = "type";
+            grid.Cols[6].Width = 70;
+            grid.Cols[6].Caption = "Type";
+            grid.Cols[6].DataMap = field_type;
 
-            grid.Cols[7].Name = "position";
-            grid.Cols[7].Width = 50;
-            grid.Cols[7].Caption = "Position";
+            grid.Cols[7].Name = "unite";
+            grid.Cols[7].Width = 40;
+            grid.Cols[7].Caption = "Unité";
 
-            grid.Cols[8].Name = "ajoute";
+            grid.Cols[8].Name = "reporte";
             grid.Cols[8].Width = 50;
             grid.Cols[8].DataType = typeof(bool);
-            grid.Cols[8].Caption = "Ajouté";
+            grid.Cols[8].Caption = "Reporté";
 
-            grid.Cols[9].Name = "saisie";
+            grid.Cols[9].Name = "position";
             grid.Cols[9].Width = 50;
-            grid.Cols[9].Caption = "Saisie";
-
-            grid.Cols[10].Name = "renseigne";
+            grid.Cols[9].Caption = "Position";
+            
+            grid.Cols[10].Name = "ajoute";
             grid.Cols[10].Width = 50;
-            grid.Cols[10].Caption = "Renseigné";
-            grid.Cols[10].DataMap = field_state;
+            grid.Cols[10].DataType = typeof(bool);
+            grid.Cols[10].Caption = "Ajouté";
+
+            grid.Cols[11].Name = "saisie";
+            grid.Cols[11].Width = 50;
+            grid.Cols[11].Caption = "Saisie";
+
+            grid.Cols[12].Name = "renseigne";
+            grid.Cols[12].Width = 65;
+            grid.Cols[12].Caption = "Renseigné";
+            grid.Cols[12].DataMap = field_state;
+
+            grid.Cols[13].Name = "info";
+            grid.Cols[13].Width = 700;
+            grid.Cols[13].Caption = "Info";
 
             grid.Cols.Frozen = 1;
             grid.ExtendLastCol = true;
@@ -144,23 +178,23 @@ namespace ACTIVA_Module_1.modules
             grid.Cols[0].Width = 60;
             grid.Cols[0].Caption = "Nom";
 
-            grid.Cols[1].Name = "valeur";
-            grid.Cols[1].Width = 620;
-            grid.Cols[1].Caption = "Valeur";
+            grid.Cols[1].Name = "position";
+            grid.Cols[1].Width = 60;
+            grid.Cols[1].Caption = "Position";
 
-            grid.Cols[2].Name = "position";
-            grid.Cols[2].Width = 60;
-            grid.Cols[2].Caption = "Position";
+            grid.Cols[2].Name = "ajoute";
+            grid.Cols[2].Width = 50;
+            grid.Cols[2].DataType = typeof(bool);
+            grid.Cols[2].Caption = "Ajouté";
 
-            grid.Cols[3].Name = "ajoute";
+            grid.Cols[3].Name = "lien";
             grid.Cols[3].Width = 50;
             grid.Cols[3].DataType = typeof(bool);
-            grid.Cols[3].Caption = "Ajouté";
+            grid.Cols[3].Caption = "Lien";
 
-            grid.Cols[4].Name = "lien";
-            grid.Cols[4].Width = 50;
-            grid.Cols[4].DataType = typeof(bool);
-            grid.Cols[4].Caption = "Lien";
+            grid.Cols[4].Name = "valeur";
+            grid.Cols[4].Width = 620;
+            grid.Cols[4].Caption = "Valeur";
 
             grid.Cols.Frozen = 1;
             grid.ExtendLastCol = true;
@@ -182,7 +216,7 @@ namespace ACTIVA_Module_1.modules
 
         public static void Code_Id_Click(object sender, EventArgs e)
         {
-            if (mod_global.MF.XmlIdCodeGrid.RowSel == 0)
+            if (mod_global.MF.XmlIdCodeGrid.RowSel < 1)
                 return;
 
             string id = mod_global.MF.XmlIdCodeGrid[mod_global.MF.XmlIdCodeGrid.RowSel, "id"].ToString();
@@ -295,12 +329,14 @@ namespace ACTIVA_Module_1.modules
                 XmlElement valeurNode = doc.CreateElement("valeur");
                 XmlElement saisieNode = doc.CreateElement("saisie");
                 XmlElement renseigneNode = doc.CreateElement("renseigne");
+                XmlElement inspectionNode = doc.CreateElement("inspection");
 
                 codeNode.AppendChild(idNode);
                 codeNode.AppendChild(intituleNode);
                 codeNode.AppendChild(valeurNode);
                 codeNode.AppendChild(saisieNode);
                 codeNode.AppendChild(renseigneNode);
+                codeNode.AppendChild(inspectionNode);
 
                 originnod.AppendChild(codeNode);
 
@@ -478,22 +514,35 @@ namespace ACTIVA_Module_1.modules
                     ligne["reporte"] = unNode.Attributes["reporte"].InnerText;
                 if (unNode.Attributes.GetNamedItem("ajoute") != null)
                     ligne["ajoute"] = unNode.Attributes["ajoute"].InnerText;
+                if (unNode.SelectSingleNode("inspection") != null)
+                    ligne["inspection"] = unNode.SelectSingleNode("inspection").InnerText;
+                if (unNode.SelectSingleNode("inspection").Attributes["corresp"] != null)
+                    ligne["corresp"] = unNode.SelectSingleNode("inspection").Attributes["corresp"].InnerText;
+                if (unNode.SelectSingleNode("intitule").Attributes["info"] != null)
+                    ligne["info"] = unNode.SelectSingleNode("intitule").Attributes["info"].InnerText;
             }
         }
 
         public static void Set_Id_Codes_Grid_Update_Fields(C1FlexGrid grid)
         {
             //On indique l'emplacement de la données par rapport au noeud en cours code
-            grid.Cols["id"].UserData = "val|id";
             grid.Cols["parent"].UserData = "att";
             grid.Cols["position"].UserData = "att";
-            grid.Cols["intitule"].UserData = "val|intitule";
-            grid.Cols["type"].UserData = "att|valeur";
-            grid.Cols["unite"].UserData = "att|valeur";
-            grid.Cols["renseigne"].UserData = "val|renseigne";
-            grid.Cols["saisie"].UserData = "val|saisie";
             grid.Cols["reporte"].UserData = "att";
             grid.Cols["ajoute"].UserData = "att";
+            grid.Cols["id"].UserData = "val|id";
+            grid.Cols["inspection"].UserData = "val|inspection";
+            grid.Cols["corresp"].UserData = "att|inspection";
+            grid.Cols["saisie"].UserData = "val|saisie";
+            grid.Cols["renseigne"].UserData = "val|renseigne";
+            grid.Cols["intitule"].UserData = "val|intitule";
+            grid.Cols["info"].UserData = "att|intitule";
+            grid.Cols["type"].UserData = "att|valeur";
+            grid.Cols["unite"].UserData = "att|valeur";
+
+
+
+
         }
 
         public static void Fill_Id_Item_Grid(C1FlexGrid grid)

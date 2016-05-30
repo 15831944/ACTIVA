@@ -14,6 +14,8 @@ namespace ACTIVA_Module_1.modules
     {
         static XmlNode Selected_Obs_Code;
         static XmlNode Selected_Obs_Carac;
+        static XmlNode Selected_Obs_Codelie;
+
         static XmlNode root;
 
         //----------------------------- Fonctions d'initialisation des tableaux -----------------------------
@@ -26,6 +28,10 @@ namespace ACTIVA_Module_1.modules
 
             cs = grid.Styles.Add("CodeStyle");
             cs.Font = new Font("Arial", 7, FontStyle.Regular);
+
+            cs = grid.Styles.Add("CodeExistStyle");
+            cs.Font = new Font("Arial", 7, FontStyle.Bold);
+            cs.BackColor = Color.Green;
 
             grid.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.Row;
             grid.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -55,36 +61,82 @@ namespace ACTIVA_Module_1.modules
             grid.Cols[1].Width = 120;
             grid.Cols[1].Caption = "Parent";
 
-            grid.Cols[2].Name = "intitule";
-            grid.Cols[2].Width = 250;
-            grid.Cols[2].Caption = "Intitulé";
+            grid.Cols[2].Name = "position";
+            grid.Cols[2].Width = 50;
+            grid.Cols[2].Caption = "Position";
 
-            grid.Cols[3].Name = "info";
-            grid.Cols[3].Width = 400;
-            grid.Cols[3].Caption = "Info";
+            grid.Cols[3].Name = "ajoute";
+            grid.Cols[3].Width = 50;
+            grid.Cols[3].DataType = typeof(bool);
+            grid.Cols[3].Caption = "Ajouté";
 
-            grid.Cols[4].Name = "position";
-            grid.Cols[4].Width = 50;
-            grid.Cols[4].Caption = "Position";
+            grid.Cols[4].Name = "intitule";
+            grid.Cols[4].Width = 250;
+            grid.Cols[4].Caption = "Intitulé";
 
-            grid.Cols[5].Name = "ajoute";
-            grid.Cols[5].Width = 50;
-            grid.Cols[5].DataType = typeof(bool);
-            grid.Cols[5].Caption = "Ajouté";
+            grid.Cols[5].Name = "codelie";
+            grid.Cols[5].Width = 100;
+            grid.Cols[5].Caption = "Nbre Codes Liés";
+            grid.Cols[5].Style = grid.Styles["CodeStyle"];
+            grid.Cols[5].AllowEditing = false;
 
-            grid.Cols[6].Name = "old_ajoute";
-            grid.Cols[6].Width = 50;
-            grid.Cols[6].DataType = typeof(bool);
-            grid.Cols[6].Caption = "Old Ajouté";
-            grid.Cols[6].AllowEditing = false;
+            grid.Cols[6].Name = "info";
+            grid.Cols[6].Width = 400;
+            grid.Cols[6].Caption = "Info";
 
             grid.Cols.Frozen = 1;
             grid.ExtendLastCol = true;
 
             grid.Click += new EventHandler(Obs_Code_Click);
+            //grid.OwnerDrawCell += new OwnerDrawCellEventHandler(Paint_Obs_Codelie_Cells);
             grid.AfterEdit += new RowColEventHandler(Obs_Code_After_Edit);
 
             Set_Obs_Codes_Grid_Update_Fields(grid);
+        }
+
+        public static void Init_Obs_Codelie_Grid(C1FlexGrid grid)
+        {
+            CellStyle cs = grid.Styles.Add("PosStyle");
+            cs.BackColor = Color.Gold;
+            cs.Font = new Font("Arial", 7, FontStyle.Regular);
+
+            cs = grid.Styles.Add("CodeStyle");
+            cs.Font = new Font("Arial", 7, FontStyle.Regular);
+
+            cs = grid.Styles.Add("ItemExistStyle");
+            cs.Font = new Font("Arial", 7, FontStyle.Bold);
+            cs.BackColor = Color.Orange;
+
+            grid.DrawMode = DrawModeEnum.OwnerDraw;
+            grid.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.Row;
+            grid.Dock = System.Windows.Forms.DockStyle.Fill;
+            grid.Cols.Count = 0;
+            grid.Rows.Count = 1;
+
+            grid.AllowAddNew = false;
+            grid.AllowDelete = false;
+            grid.AllowEditing = true;
+
+            grid.Cols.Fixed = 0;
+            grid.Rows.Fixed = 1;
+
+            grid.Cols.DefaultSize = 100;
+            grid.Rows[0].Height = 20;
+
+            grid.Cols.Count = 2;
+
+            grid.Cols[0].Name = "position";
+            grid.Cols[0].Width = 111;
+            grid.Cols[0].Caption = "Position";
+
+            grid.Cols[1].Name = "codelie";
+            grid.Cols[1].Caption = "Code Lié";
+            grid.Cols[1].Width = 1160;
+
+            grid.Click += new EventHandler(Obs_Codelie_Click);
+            grid.AfterEdit += new RowColEventHandler(Obs_Codelie_After_Edit);
+
+            Set_Obs_Codelie_Grid_Update_Fields(grid);
         }
 
         public static void Init_Obs_Carac_Grid(C1FlexGrid grid)
@@ -117,7 +169,7 @@ namespace ACTIVA_Module_1.modules
             grid.Cols.DefaultSize = 100;
             grid.Rows[0].Height = 20;
 
-            grid.Cols.Count = 7;
+            grid.Cols.Count = 8;
 
             Dictionary<string, string> field_state = new Dictionary<string, string>();
             field_state.Add(string.Empty, String.Empty);
@@ -128,29 +180,29 @@ namespace ACTIVA_Module_1.modules
 
             grid.Cols[0].Name = "nom";
             grid.Cols[0].Style = grid.Styles["PosStyle"];
-            grid.Cols[0].Width = 60;
+            grid.Cols[0].Width = 80;
             grid.Cols[0].Caption = "Nom";
 
             grid.Cols[1].Name = "nbitem";
             grid.Cols[1].Style = grid.Styles["CodeStyle"];
-            grid.Cols[1].Width = 60;
+            grid.Cols[1].Width = 65;
             grid.Cols[1].Caption = "Nbre Items";
             grid.Cols[1].AllowEditing = false;
 
-            grid.Cols[2].Name = "type";
-            grid.Cols[2].Width = 60;
-            grid.Cols[2].Caption = "Type";
+            grid.Cols[2].Name = "intitule";
+            grid.Cols[2].Width = 350;
+            grid.Cols[2].Caption = "Intitulé";
 
-            grid.Cols[3].Name = "info";
-            grid.Cols[3].Width = 650;
-            grid.Cols[3].Caption = "Info";
+            grid.Cols[3].Name = "type";
+            grid.Cols[3].Width = 60;
+            grid.Cols[3].Caption = "Type";
 
             grid.Cols[4].Name = "unite";
             grid.Cols[4].Width = 50;
             grid.Cols[4].Caption = "Unité";
 
             grid.Cols[5].Name = "renseigne";
-            grid.Cols[5].Width = 50;
+            grid.Cols[5].Width = 70;
             grid.Cols[5].Caption = "Renseigné";
             grid.Cols[5].DataMap = field_state;
 
@@ -158,6 +210,10 @@ namespace ACTIVA_Module_1.modules
             grid.Cols[6].Width = 50;
             grid.Cols[6].DataType = typeof(bool);
             grid.Cols[6].Caption = "Ajouté";
+
+            grid.Cols[7].Name = "info";
+            grid.Cols[7].Width = 350;
+            grid.Cols[7].Caption = "Info";
 
             grid.Cols.Frozen = 1;
             grid.ExtendLastCol = true;
@@ -212,54 +268,54 @@ namespace ACTIVA_Module_1.modules
             grid.Cols[0].Width = 60;
             grid.Cols[0].Caption = "Nom";
 
-            grid.Cols[1].Name = "q1";
-            grid.Cols[1].Style = grid.Styles["CodeStyle"];
+            grid.Cols[1].Name = "position";
             grid.Cols[1].Width = 60;
-            grid.Cols[1].Caption = "q1";
-            grid.Cols[1].DataMap = field_state;
+            grid.Cols[1].Caption = "Position";
 
-            grid.Cols[2].Name = "q2";
-            grid.Cols[2].Width = 60;
-            grid.Cols[2].Caption = "q2";
-            grid.Cols[2].DataMap = field_state;
+            grid.Cols[2].Name = "ajoute";
+            grid.Cols[2].Width = 50;
+            grid.Cols[2].DataType = typeof(bool);
+            grid.Cols[2].Caption = "Ajouté";
 
-            grid.Cols[3].Name = "h1";
+            grid.Cols[3].Name = "q1";
+            grid.Cols[3].Style = grid.Styles["CodeStyle"];
             grid.Cols[3].Width = 60;
-            grid.Cols[3].Caption = "h1";
+            grid.Cols[3].Caption = "q1";
             grid.Cols[3].DataMap = field_state;
 
-            grid.Cols[4].Name = "h2";
+            grid.Cols[4].Name = "q2";
             grid.Cols[4].Width = 60;
-            grid.Cols[4].Caption = "h2";
+            grid.Cols[4].Caption = "q2";
             grid.Cols[4].DataMap = field_state;
 
-            grid.Cols[5].Name = "pm1";
+            grid.Cols[5].Name = "h1";
             grid.Cols[5].Width = 60;
-            grid.Cols[5].Caption = "pm1";
+            grid.Cols[5].Caption = "h1";
             grid.Cols[5].DataMap = field_state;
 
-            grid.Cols[6].Name = "pm2";
+            grid.Cols[6].Name = "h2";
             grid.Cols[6].Width = 60;
-            grid.Cols[6].Caption = "pm2";
+            grid.Cols[6].Caption = "h2";
             grid.Cols[6].DataMap = field_state;
 
-            grid.Cols[7].Name = "position";
+            grid.Cols[7].Name = "pm1";
             grid.Cols[7].Width = 60;
-            grid.Cols[7].Caption = "Position";
+            grid.Cols[7].Caption = "pm1";
+            grid.Cols[7].DataMap = field_state;
 
-            grid.Cols[8].Name = "valeur";
-            grid.Cols[8].Width = 400;
-            grid.Cols[8].Caption = "Valeur";
+            grid.Cols[8].Name = "pm2";
+            grid.Cols[8].Width = 60;
+            grid.Cols[8].Caption = "pm2";
+            grid.Cols[8].DataMap = field_state;
 
-            grid.Cols[9].Name = "ajoute";
+            grid.Cols[9].Name = "lien";
             grid.Cols[9].Width = 50;
             grid.Cols[9].DataType = typeof(bool);
-            grid.Cols[9].Caption = "Ajouté";
+            grid.Cols[9].Caption = "Lien";
 
-            grid.Cols[10].Name = "lien";
-            grid.Cols[10].Width = 50;
-            grid.Cols[10].DataType = typeof(bool);
-            grid.Cols[10].Caption = "Lien";
+            grid.Cols[10].Name = "valeur";
+            grid.Cols[10].Width = 400;
+            grid.Cols[10].Caption = "Valeur";
 
             grid.Cols.Frozen = 1;
             grid.ExtendLastCol = true;
@@ -299,6 +355,9 @@ namespace ACTIVA_Module_1.modules
                 C1.Win.C1FlexGrid.Row ligne = grid.Rows.Add();
                 ligne["id"] = idNode.InnerText;
 
+                if (unNode.SelectSingleNode("lien") != null)
+                    ligne["codelie"] = unNode.SelectSingleNode("lien").ChildNodes.Count;
+
                 if (unNode.Attributes.GetNamedItem("parent") != null)
                     ligne["parent"] = unNode.Attributes["parent"].InnerText;
                 if (unNode.Attributes.GetNamedItem("position") != null)
@@ -310,9 +369,33 @@ namespace ACTIVA_Module_1.modules
                     ligne["ajoute"] = unNode.Attributes["ajoute"].InnerText;
                 if (intituleNode.Attributes.GetNamedItem("intitule") != null)
                     ligne["intitule"] = intituleNode.Attributes["intitule"].InnerText;
-                if (intituleNode.Attributes.GetNamedItem("ajoute") != null)
-                    ligne["old_ajoute"] = intituleNode.Attributes["ajoute"].InnerText;
+                if (intituleNode.Attributes.GetNamedItem("info") != null)
+                    ligne["info"] = intituleNode.Attributes["info"].InnerText;
             }
+        }
+
+        public static void Fill_Obs_Codelie_Grid(C1FlexGrid grid)
+        {
+            XmlNodeList nodeList;
+            XmlNode positionNode;
+
+            grid.Rows.Count = 1;
+            mod_global.MF.XmlObsCodeLieGrid.Rows.Count = 1;
+
+            nodeList = Selected_Obs_Code.SelectNodes(string.Concat("lien/codelie"));
+
+            if (nodeList != null)
+            {
+                foreach (XmlNode unNode in nodeList)
+                {
+                    positionNode = unNode.Attributes["position"];
+
+                    C1.Win.C1FlexGrid.Row ligne = grid.Rows.Add();
+                    ligne["position"] = positionNode.InnerText;
+                    ligne["codelie"] = unNode.InnerText;
+                }
+            }
+            else return;
         }
 
         public static void Fill_Obs_Carac_Grid(C1FlexGrid grid)
@@ -387,24 +470,56 @@ namespace ACTIVA_Module_1.modules
         {
             if (e.Row>0)
                 if (mod_global.MF.XmlObsCaracGrid.Cols[e.Col].Name == "nbitem")
+                {
                     if (e.Text != String.Empty)
+                    {
                         if (int.Parse(e.Text) > 0)
+                        {
                             e.Style = mod_global.MF.XmlObsCaracGrid.Styles["ItemExistStyle"];
+                        }
+                    }
+                }                    
         }
+
+        /*public static void Paint_Obs_Codelie_Cells(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+        {
+            if (e.Row > 0)
+                if (mod_global.MF.XmlObsCodesGrid.Cols[e.Col].Name == "codelie")
+                {
+                    if (e.Text != String.Empty)
+                    {
+                        if (int.Parse(e.Text) > 0)
+                        {
+                            e.Style = mod_global.MF.XmlObsCodesGrid.Styles["CodeExistStyle"];
+                        }
+                    }
+                }
+        }*/
 
         public static void Obs_Code_Click(object sender, EventArgs e)
         {
-            if (mod_global.MF.XmlObsCodesGrid.RowSel == 0)
+            if (mod_global.MF.XmlObsCodesGrid.RowSel < 1)
                 return;
 
             string id = mod_global.MF.XmlObsCodesGrid[mod_global.MF.XmlObsCodesGrid.RowSel, "id"].ToString();
             Selected_Obs_Code = root.SelectSingleNode(string.Concat("code[id='" + id + "']"));
             Fill_Obs_Carac_Grid(mod_global.MF.XmlObsCaracGrid);
+            Fill_Obs_Codelie_Grid(mod_global.MF.XmlObsCodeLieGrid);
+        }
+
+        public static void Obs_Codelie_Click(object sender, EventArgs e)
+        {
+            if (mod_global.MF.XmlObsCodeLieGrid.RowSel < 1)
+                return;
+
+            string pos = mod_global.MF.XmlObsCodeLieGrid[mod_global.MF.XmlObsCodeLieGrid.RowSel, "position"].ToString();
+            Selected_Obs_Codelie = root.SelectSingleNode(string.Concat("lien/codelie[@position='" + pos + "']"));
+            Fill_Obs_Codelie_Grid(mod_global.MF.XmlObsCodeLieGrid);
         }
 
         public static void Obs_Carac_Click(object sender, EventArgs e)
         {
-            if (mod_global.MF.XmlObsCaracGrid.RowSel == 0)
+            if (mod_global.MF.XmlObsCaracGrid.RowSel < 1)
                 return;
 
             string carac = mod_global.MF.XmlObsCaracGrid[mod_global.MF.XmlObsCaracGrid.RowSel, "nom"].ToString();
@@ -449,6 +564,28 @@ namespace ACTIVA_Module_1.modules
                     is_attribute = true;
             }
 
+            mod_save.Save_Param_Field(doc, node, newvalue, is_attribute, colname, mod_global.MF.XmlObsStripLabel.Text);
+        }
+
+        public static void Obs_Codelie_After_Edit(object sender, RowColEventArgs e)
+        {
+            XmlDocument doc = (XmlDocument)mod_global.MF.XmlObsCodesGrid.Tag;
+
+            string position = mod_global.MF.XmlObsCodeLieGrid[e.Row, "position"].ToString();
+            string colname = mod_global.MF.XmlObsCodeLieGrid.Cols[e.Col].Name;
+            string userdata = mod_global.MF.XmlObsCodeLieGrid.Cols[e.Col].UserData.ToString();
+            string newvalue = mod_global.MF.XmlObsCodeLieGrid[e.Row, e.Col].ToString();
+            bool is_attribute = false;
+
+            if (userdata == string.Empty)
+                return;
+
+            XmlNode node;
+            node = Selected_Obs_Code.SelectSingleNode(string.Concat("lien/codelie[@position='" + position + "']"));
+            if (userdata == "val")
+                is_attribute = false;
+            else if (userdata == "att")
+                is_attribute = true;
             mod_save.Save_Param_Field(doc, node, newvalue, is_attribute, colname, mod_global.MF.XmlObsStripLabel.Text);
         }
 
@@ -702,6 +839,13 @@ namespace ACTIVA_Module_1.modules
             grid.Cols["intitule"].UserData = "val|intitule";
             grid.Cols["info"].UserData = "att|intitule";
             grid.Cols["ajoute"].UserData = "att";
+            grid.Cols["codelie"].UserData = "att";
+        }
+
+        private static void Set_Obs_Codelie_Grid_Update_Fields(C1FlexGrid grid)
+        {
+            grid.Cols["position"].UserData = "att";
+            grid.Cols["codelie"].UserData = "val";
         }
 
         public static void Set_Obs_Carac_Grid_Update_Fields(C1FlexGrid grid)
@@ -764,6 +908,7 @@ namespace ACTIVA_Module_1.modules
             mod_global.MF.XmlObsStripLabel.Text = Properties.Settings.Default.CodeObsCanaPath;
             Fill_Obs_Codes_Grid(mod_global.MF.XmlObsCodesGrid, doc);
             mod_global.MF.XmlObsCaracGrid.Rows.Count = 1;
+            mod_global.MF.XmlObsCodeLieGrid.Rows.Count = 1;
             mod_global.MF.XmlObsItemGrid.Rows.Count = 1;
         }
 
@@ -774,6 +919,7 @@ namespace ACTIVA_Module_1.modules
             mod_global.MF.XmlObsStripLabel.Text = Properties.Settings.Default.CodeObsRegPath;
             Fill_Obs_Codes_Grid(mod_global.MF.XmlObsCodesGrid, doc);
             mod_global.MF.XmlObsCaracGrid.Rows.Count = 1;
+            mod_global.MF.XmlObsCodeLieGrid.Rows.Count = 1;
             mod_global.MF.XmlObsItemGrid.Rows.Count = 1;
         }
 

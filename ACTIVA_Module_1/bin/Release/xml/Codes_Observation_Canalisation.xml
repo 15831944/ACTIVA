@@ -570,8 +570,8 @@
       </representations>
     </autocad>
   </code>
-  <code position="16" parent="defautStructurel">
-    <id ajoute ="true">BAX</id>
+  <code position="16" parent="defautStructurel" ajoute ="true">
+    <id>BAX</id>
     <intitule info="Défaut des éléments de sécurité">Elément de sécurité</intitule>
     <caracteristiques>
       <caracteristique nom="c1" type="item" ajoute ="true" intitule="Type d'élément de sécurité" renseigne="4" info="">
@@ -608,8 +608,8 @@
       </representations>
     </autocad>
   </code>
-  <code position="17" parent="defautStructurel">
-    <id ajoute="true">BAY</id>
+  <code position="17" parent="defautStructurel" ajoute="true">
+    <id>BAY</id>
     <intitule >Elément de fibre optique</intitule>
     <caracteristiques>
       <caracteristique nom="c1" type="item" ajoute ="true" intitule="Type d'élément" renseigne="4" info="">
@@ -1157,7 +1157,7 @@
         <item nom="C" position="2">Panne de l'équipement</item>
         <item nom="Z" lien="true" position="3">Autre</item>
       </caracteristique>
-      <caracteristique nom="c2" type="item" intitule="D'autres caractérisations" renseigne="4" info="">
+      <caracteristique nom="c2" type="item" intitule="D'autres caractérisations" renseigne="1" info="">
 		<item nom="A" position="0">Inspection objective terminée avant d'avoir atteint le noeud d'arrivée</item>
         <item nom="B" position="1">Inspection terminée sur les instructions de l'autorité responsable</item>
         <item nom="C" position="2">Lorsque l'on considère, par une inspection partielle précédente, que l'inspection de la conduite totale est terminée</item>
@@ -1377,7 +1377,7 @@
     <id>AEC</id>
     <intitule info="Changement de section transversale">Section transversale</intitule>
     <caracteristiques>
-      <caracteristique nom="c1" type="item" intitule="Forme de la section transversale de la canalisation" renseigne="0" info="">
+      <caracteristique nom="c1" type="item" intitule="Forme de la section transversale de la canalisation" renseigne="1" info="">
         <item nom="A" position="0">Circulaire</item>
         <item nom="B" position="1">Rectangulaire</item>
         <item nom="C" position="2">Ovoïde</item>

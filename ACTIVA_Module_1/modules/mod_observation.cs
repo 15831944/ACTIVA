@@ -10,6 +10,7 @@ using C1.Win.C1FlexGrid;
 using ACTIVA_Module_1.modules;
 using ACTIVA_Module_1.component;
 using System.Globalization;
+using System.Windows.Forms;
 
 namespace ACTIVA_Module_1.modules
 {
@@ -120,12 +121,20 @@ namespace ACTIVA_Module_1.modules
 
             foreach (XPathNavigator item in nav.Select(exp))
             {
+                string ajout = String.Empty;
+                ajout = item.GetAttribute("ajoute","");
                 IdItem = item.SelectSingleNode("id");
                 IntituleItem = item.SelectSingleNode("intitule");
 
                 C1.Win.C1Command.C1TopicLink link = new C1.Win.C1Command.C1TopicLink();
+                
+                if (ajout != "true")
+                    link.Text = string.Concat(IntituleItem.Value, " - ", IdItem.Value);
+                else link.Text = string.Concat("** ",IntituleItem.Value, " - ", IdItem.Value);
+                    
                 link.Text = string.Concat(IntituleItem.Value, " - ", IdItem.Value);
                 link.Tag = IdItem.Value;
+
                 tpbar.FindPageByTag(IdItem.Value.Substring(0, 2)).Links.Add(link);
 
             }
@@ -251,7 +260,7 @@ namespace ACTIVA_Module_1.modules
             //colonne.Style.BackColor = Color.Gray;
 
             grid.Cols[6].Name = "observation";
-            grid.Cols[6].Width = Convert.ToInt32((mod_global.MF.DataSplit.Width - mod_global.MF.DataSplit.Panel2.Width) * 0.5);
+            grid.Cols[6].Width = Convert.ToInt32((mod_global.MF.DataSplit.Width - mod_global.MF.DataSplit.Panel2.Width) * 0.5) + 20;
             grid.Cols[6].Caption = "Observation";
 
             grid.Cols[7].Name = "visuel";
@@ -296,20 +305,27 @@ namespace ACTIVA_Module_1.modules
         public static void Collapse_Grid(C1FlexGrid grid)
         {
             OBS_GRID_EXPANDED = false;
-            Fill_Observation_Grid(grid);
+            /*
+             * 
+             * 
+             * Erreur*/
+            Fill_Observation_Grid(grid); 
+
             //grid.Rows.DefaultSize = 24;
             foreach (Row row in grid.Rows)
             {
                 if (row.SafeIndex > 0)
                 {
-                    row.HeightDisplay = 65;
+                    row.HeightDisplay = 50;
+                    row.HeightDisplay = 24;
 
                     Collapsed_Rows.Add(row["num"]);
 
                     //Hide_Row_Visuel(grid, row.SafeIndex);
                 }
             }
-
+            OBS_GRID_EXPANDED = false;
+            Fill_Observation_Grid(grid);
             //grid.Cols["visuel"].Visible = false;
             //grid.Cols["observation"].Width = 520;
 
@@ -319,6 +335,7 @@ namespace ACTIVA_Module_1.modules
         {
             OBS_GRID_EXPANDED = true;
             Fill_Observation_Grid(grid);
+
             //grid.Rows.DefaultSize = 128;
             foreach (Row row in grid.Rows)
             {
@@ -332,7 +349,6 @@ namespace ACTIVA_Module_1.modules
             //grid.Cols["visuel"].Visible = true;
             //grid.Cols["observation"].Width = 400;
             Fill_Visuel_Column(grid);
-
         }
 
         public static void Expand_Or_Collapse_Rows(C1FlexGrid grid)
@@ -344,7 +360,7 @@ namespace ACTIVA_Module_1.modules
                 {
                     if (Collapsed_Rows.Contains(row["num"]))
                     {
-                        row.HeightDisplay = 24;
+                        row.HeightDisplay = 50;
                         Hide_Row_Visuel(grid, row.SafeIndex);
                     }
                     else
@@ -587,11 +603,17 @@ namespace ACTIVA_Module_1.modules
             XmlNode node;
 
             node = mod_global.Get_Codes_Obs_DocElement().SelectSingleNode("code[id='" + code + "']/caracteristiques/caracteristique[@nom='" + carac + "']");
-
-            if (node.Attributes["intitule"] != null)
-                return node.Attributes["intitule"].InnerText;
-            else
-                return carac;
+            try
+            {
+                if (node.Attributes["intitule"] != null)
+                    return node.Attributes["intitule"].InnerText;
+                else
+                    return carac;
+            }
+            catch (Exception e)
+            {
+                throw new ApplicationException("Veuillez choisir la bonne version du fichier XML.", e);
+            }
         }
 
         public static string Get_Intitule_From_Code(string code)

@@ -62,10 +62,11 @@
             // 
             // c1PictureBox1
             // 
+            this.c1PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1PictureBox1.Location = new System.Drawing.Point(0, 0);
             this.c1PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.c1PictureBox1.Name = "c1PictureBox1";
-            this.c1PictureBox1.Size = new System.Drawing.Size(239, 140);
+            this.c1PictureBox1.Size = new System.Drawing.Size(233, 101);
             this.c1PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.c1PictureBox1.TabIndex = 0;
             this.c1PictureBox1.TabStop = false;
@@ -73,12 +74,13 @@
             // pic_next_button
             // 
             this.pic_next_button.BackColor = System.Drawing.Color.DarkGray;
+            this.pic_next_button.Dock = System.Windows.Forms.DockStyle.Right;
             this.pic_next_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pic_next_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pic_next_button.Location = new System.Drawing.Point(159, 1);
+            this.pic_next_button.Location = new System.Drawing.Point(184, 0);
             this.pic_next_button.Margin = new System.Windows.Forms.Padding(4);
             this.pic_next_button.Name = "pic_next_button";
-            this.pic_next_button.Size = new System.Drawing.Size(49, 25);
+            this.pic_next_button.Size = new System.Drawing.Size(49, 26);
             this.pic_next_button.TabIndex = 3;
             this.pic_next_button.Text = ">>";
             this.pic_next_button.UseVisualStyleBackColor = true;
@@ -88,7 +90,7 @@
             // 
             this.NbPhotoLabel.AutoSize = true;
             this.NbPhotoLabel.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NbPhotoLabel.Location = new System.Drawing.Point(88, 5);
+            this.NbPhotoLabel.Location = new System.Drawing.Point(84, 5);
             this.NbPhotoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NbPhotoLabel.Name = "NbPhotoLabel";
             this.NbPhotoLabel.Size = new System.Drawing.Size(63, 15);
@@ -98,12 +100,13 @@
             // pic_prev_button
             // 
             this.pic_prev_button.BackColor = System.Drawing.Color.DarkGray;
+            this.pic_prev_button.Dock = System.Windows.Forms.DockStyle.Left;
             this.pic_prev_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pic_prev_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pic_prev_button.Location = new System.Drawing.Point(31, 1);
+            this.pic_prev_button.Location = new System.Drawing.Point(0, 0);
             this.pic_prev_button.Margin = new System.Windows.Forms.Padding(4);
             this.pic_prev_button.Name = "pic_prev_button";
-            this.pic_prev_button.Size = new System.Drawing.Size(49, 25);
+            this.pic_prev_button.Size = new System.Drawing.Size(49, 26);
             this.pic_prev_button.TabIndex = 4;
             this.pic_prev_button.Text = "<<";
             this.pic_prev_button.UseVisualStyleBackColor = true;

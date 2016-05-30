@@ -49,7 +49,6 @@ namespace ACTIVA_Module_1.component
             if (mod_inspection.TYPE_OUVRAGE != "REGARD")
             {
                 PosRegCb.Visible = false;
-                PosRegLb.Visible = false;
             }
 
             //Dans le cas d'une modification de code, l'utilisateur ne peut pas modifier le pm1
@@ -362,7 +361,7 @@ namespace ACTIVA_Module_1.component
             Label CLab;
             TextBox CText;
             CheckBox CBox;
-
+            ComboBox CbBox;
             foreach (XmlNode unNode in CaracNodeList)
             {
                 if (unNode.InnerText != String.Empty)
@@ -401,13 +400,23 @@ namespace ACTIVA_Module_1.component
                         }
 
                     }
-                    else
+                    /* Modifier
+                    * 
+                    * 
+                    * 
+                    * */
+                    else if (unNode.Attributes["nom"].InnerText != "posregard")
                     {
                         CBox = (CheckBox)CaracNameToTb[unNode.Attributes["nom"].InnerText];
                         if (unNode.InnerText.ToLower() == "true")
                             CBox.Checked = true;
                         else
                             CBox.Checked = false;
+                    }
+                    else
+                    {
+                        CbBox = (ComboBox)CaracNameToTb[unNode.Attributes["nom"].InnerText];
+                        CbBox.Text = unNode.Attributes["codeR"].InnerText + " | " + unNode.InnerText;
                     }
 
                     //correspondance = String.Empty;
@@ -601,9 +610,12 @@ namespace ACTIVA_Module_1.component
         {
             XmlNode root;
             XmlNode node;
+            string valText = String.Empty;
 
             TextBox Field_Input = (TextBox)sender;
-            string valText = Field_Input.Text;
+            if (Field_Input.Text != "")
+                valText = Field_Input.Text.Substring(0, 1);
+            else valText = Field_Input.Text;
 
             if (valText == "") return;
 
@@ -616,19 +628,19 @@ namespace ACTIVA_Module_1.component
             {
                  foreach (XmlNode nod in node.ChildNodes)
                 {
-                    string val1 = nod.Attributes["nom"].InnerText + " | " + nod.InnerText;
-                    
+                    //string val1 = nod.Attributes["nom"].InnerText + " | " + nod.InnerText;
+                    string val1 = nod.Attributes["nom"].InnerText;
                     //valtext doit être egal à val1
                     if (valText == val1) 
                         return;
                 }
                 
                 //aucun item ne correspondait, on empeche la validation
-                DialogResult rep = MessageBox.Show("La valeur saisie n'est pas dans les choix multiples, elle va être effacée",
+                DialogResult rep = MessageBox.Show("La valeur saisie n'est pas dans les choix multiples, elle va être effacée. Il faut charger un autre fichier XML ou changer sa valeur.",
                                     "Saisie incorrecte",MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
-                if (rep == DialogResult.OK)
+                /*if (rep == DialogResult.OK)
                     Field_Input.Text = string.Empty;               
-                e.Cancel = true;                    
+                e.Cancel = true; */                   
             }
             else if (node.Attributes["type"].InnerText == "texte")
             {
@@ -710,19 +722,21 @@ namespace ACTIVA_Module_1.component
                 current_num = savenum;
                 CaracValidBt.Enabled = false;
 
-                DialogResult diag = MessageBox.Show("Voulez vous saisir ses codes liéés?", "Confirmation", MessageBoxButtons.YesNo);
-                if (diag == DialogResult.Yes)
+                //Création des pages de codes liés
+                XmlNode root;
+                XmlNodeList CodeLieNodeList;
+
+                root = mod_global.Get_Codes_Obs_DocElement();
+                CodeLieNodeList = root.SelectNodes("/codes/code[id='" + current_code + "']/lien/codelie");
+                if (CodeLieNodeList.Count > 0)
                 {
-                    //Création des pages de codes liés
-                    XmlNode root;
-                    XmlNodeList CodeLieNodeList;
-
-                    root = mod_global.Get_Codes_Obs_DocElement();
-                    CodeLieNodeList = root.SelectNodes("/codes/code[id='" + current_code + "']/lien/codelie");
-
-                    foreach (XmlNode CodeLieNode in CodeLieNodeList)
+                    DialogResult diag = MessageBox.Show("Voulez-vous saisir ses codes liéés?", "Confirmation", MessageBoxButtons.YesNo);
+                    if (diag == DialogResult.Yes)
                     {
-                        mod_carac.New_Caracteristique_Form(CodeLieNode.InnerText, String.Empty, false);
+                        foreach (XmlNode CodeLieNode in CodeLieNodeList)
+                        {
+                            mod_carac.New_Caracteristique_Form(CodeLieNode.InnerText, String.Empty, false);
+                        }
                     }
                 }
             }
@@ -819,6 +833,28 @@ namespace ACTIVA_Module_1.component
             {
                 return;
             }
+        }
+
+        public void SetColor(Color c)
+        {
+            Carac1Lb.ForeColor = c;
+            Carac1Tb.ForeColor = c;
+            Carac2Lb.ForeColor = c;
+            Carac2Tb.ForeColor = c;
+            label6.ForeColor = c;
+            label5.ForeColor = c;
+            label7.ForeColor = c;
+            label8.ForeColor = c;
+            label13.ForeColor = c;
+            label10.ForeColor = c;
+            label11.ForeColor = c;
+            Quant1Lb.ForeColor = c;
+            Quant1Tb.ForeColor = c;
+            Quant2Lb.ForeColor = c;
+            Quant2Tb.ForeColor = c;
+            AssemblageCb.ForeColor = c;
+            PosRegLb.ForeColor = c;
+            label9.ForeColor = c;
         }
     }
 }

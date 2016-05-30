@@ -61,10 +61,10 @@
             // 
             this.ChoosePhotoBt.BackColor = System.Drawing.SystemColors.Control;
             this.ChoosePhotoBt.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
-            this.ChoosePhotoBt.Location = new System.Drawing.Point(1064, 4);
-            this.ChoosePhotoBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChoosePhotoBt.Location = new System.Drawing.Point(1033, 4);
+            this.ChoosePhotoBt.Margin = new System.Windows.Forms.Padding(4);
             this.ChoosePhotoBt.Name = "ChoosePhotoBt";
-            this.ChoosePhotoBt.Size = new System.Drawing.Size(144, 53);
+            this.ChoosePhotoBt.Size = new System.Drawing.Size(182, 53);
             this.ChoosePhotoBt.TabIndex = 1;
             this.ChoosePhotoBt.Text = "Ajouter Images";
             this.ChoosePhotoBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -75,8 +75,8 @@
             // 
             this.DelPhotoBt.BackColor = System.Drawing.SystemColors.Control;
             this.DelPhotoBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
-            this.DelPhotoBt.Location = new System.Drawing.Point(1132, 241);
-            this.DelPhotoBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DelPhotoBt.Location = new System.Drawing.Point(1139, 242);
+            this.DelPhotoBt.Margin = new System.Windows.Forms.Padding(4);
             this.DelPhotoBt.Name = "DelPhotoBt";
             this.DelPhotoBt.Size = new System.Drawing.Size(76, 43);
             this.DelPhotoBt.TabIndex = 3;
@@ -104,7 +104,7 @@
             this.PhotoTlp.Controls.Add(this.pictureBox9, 3, 1);
             this.PhotoTlp.Controls.Add(this.pictureBox10, 4, 1);
             this.PhotoTlp.Location = new System.Drawing.Point(4, 4);
-            this.PhotoTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PhotoTlp.Margin = new System.Windows.Forms.Padding(4);
             this.PhotoTlp.Name = "PhotoTlp";
             this.PhotoTlp.RowCount = 2;
             this.PhotoTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -118,7 +118,7 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(7, 7);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(192, 128);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -130,7 +130,7 @@
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Location = new System.Drawing.Point(210, 7);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(191, 128);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -142,7 +142,7 @@
             // 
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Location = new System.Drawing.Point(412, 7);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(193, 128);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -154,7 +154,7 @@
             // 
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox4.Location = new System.Drawing.Point(616, 7);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(192, 128);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -166,7 +166,7 @@
             // 
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox5.Location = new System.Drawing.Point(819, 7);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(195, 128);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -178,7 +178,7 @@
             // 
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox6.Location = new System.Drawing.Point(7, 146);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(192, 128);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -190,7 +190,7 @@
             // 
             this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox7.Location = new System.Drawing.Point(210, 146);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(191, 128);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -202,7 +202,7 @@
             // 
             this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox8.Location = new System.Drawing.Point(412, 146);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(193, 128);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -214,7 +214,7 @@
             // 
             this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox9.Location = new System.Drawing.Point(616, 146);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(192, 128);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -226,7 +226,7 @@
             // 
             this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox10.Location = new System.Drawing.Point(819, 146);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(195, 128);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -246,7 +246,7 @@
             this.photopanel.Controls.Add(this.DelPhotoBt);
             this.photopanel.Controls.Add(this.PhotoTlp);
             this.photopanel.Location = new System.Drawing.Point(0, 0);
-            this.photopanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.photopanel.Margin = new System.Windows.Forms.Padding(4);
             this.photopanel.Name = "photopanel";
             this.photopanel.Size = new System.Drawing.Size(1252, 294);
             this.photopanel.TabIndex = 4;
@@ -257,9 +257,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.Controls.Add(this.photopanel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "photo_select";
-            this.Size = new System.Drawing.Size(1212, 298);
+            this.Size = new System.Drawing.Size(1219, 298);
             this.PhotoTlp.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

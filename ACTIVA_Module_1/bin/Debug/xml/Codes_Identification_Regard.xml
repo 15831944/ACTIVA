@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/Items_IdentificationCode.xsl"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/Liste_IdentificationCode.xsl"?>
 <?xml-stylesheet type="text/xsl" href="../xsl/formatIdentificationCode.xsl"?>
+
 <!--<?xml-stylesheet type="text/xsl" href="../xsl/Liste_IdentificationCode.xsl"?>-->
 <!-- L'id du code concatène la valeur de Modele.Initial.Code (membre statique de Inspection.Identification.Modele)-->
 <!-- La saisie correspond à l'énumération définit dans Traitement.Code.cs (détermine si la saisie du code sélectionné
@@ -11,31 +14,35 @@
 <!-- NOTA BENE : les remarques ci-dessous s'appliquent uniquement à la partie de l'identification utilisée dans le cartouche-->
 <!-- <codes> -->
 <codes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\xsd\Schema_Codes_Identification.xsd">
-  <code position="1" reporte="False" parent="Ouvrage" ajoute="False">
+  <code position="0" reporte="False" parent="Ouvrage" ajoute="False">
     <id>CAA</id>
-    <intitule>Référence du noeud</intitule>
-    <valeur type="texte" />
+    <intitule info="Référence de noeud du regard de visite ou de la chambre d’inspection telle que spécifiée par l’autorité responsable">Référence du noeud</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="texte" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code reporte="False" position="2" parent="Ouvrage">
+  <code reporte="False" position="1" parent="Ouvrage">
     <id>CAB</id>
-    <intitule>Coordonnées du noeud</intitule>
-    <valeur type="numerique" unite="m" />
+    <intitule info="Référence de grille (coordonnées) du noeud">Coordonnées du nœud</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="numerique" unite="m" />
+    <saisie>0</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code position="0" reporte="False" parent="Lieu">
+    <id>CAJ</id>
+    <intitule info="Description de l'emplacement du regard de visite ou de la chambre d’inspection">Emplacement (nom de voie)</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="texte" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
   <code position="1" reporte="False" parent="Lieu">
-    <id>CAJ</id>
-    <intitule>Emplacement</intitule>
-    <valeur type="texte" />
-    <saisie>0</saisie>
-    <renseigne>1</renseigne>
-  </code>
-  <code position="2" reporte="False" parent="Lieu">
     <id>CAL</id>
     <intitule>Type d'emplacement</intitule>
-    <valeur type="item">
+    <inspection corresp =""></inspection>
+	<valeur type="item">
 	  <item nom="A" position="0">Sous une route</item>
       <item nom="B" position="1">Sous un trottoir</item>
       <item nom="C" position="2">Sous l'accotement d'une route</item>
@@ -47,43 +54,48 @@
       <item nom="I" position="8">Sous un terrain boisé</item>
       <item nom="J" position="9">Accès difficile</item>
       <item nom="K" position="10">Sous une voie navigable</item>
-      <item nom="Z" lien="true" position="11">Autre</item>
+      <item nom="Z" lien="True" position="11">Autre</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="3" reporte="true" parent="Lieu">
+  <code position="2" reporte="True" parent="Lieu">
     <id>CAM</id>
-    <intitule>Autorité responsable</intitule>
-    <valeur type="texte" />
+    <intitule info="Nom de l'autorité responsable">Autorité responsable</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="texte" />
     <saisie>2</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="4" reporte="true" parent="Lieu">
+  <code position="3" reporte="True" parent="Lieu">
     <id>CAN</id>
-    <intitule>Ville ou village</intitule>
-    <valeur type="texte" />
+    <intitule info="Nom de la ville, du village, tel que spécifié par l'autorité responsable">Ville ou village</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="texte" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="5" reporte="true" parent="Lieu">
+  <code position="4" reporte="True" parent="Lieu">
     <id>CAO</id>
-    <intitule>Quartier</intitule>
-    <valeur type="texte" />
+    <intitule info="Nom du quartier, tel que spécifié par l'autorité responsable">Quartier</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="texte" />
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
-  <code position="6" reporte="true" parent="Lieu">
+  <code position="5" reporte="True" parent="Lieu">
     <id>CAP</id>
-    <intitule>Nom du réseau d'assainissement</intitule>
-    <valeur type="texte" />
+    <intitule info="Nom ou référence du réseau d'assainissement, tel que spécifié par l'autorité responsable">Nom du réseau d'assainissement</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="texte" />
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
-  <code position="7" reporte="true" parent="Lieu">
+  <code position="6" reporte="True" parent="Lieu">
     <id>CAQ</id>
     <intitule>Propriété foncière</intitule>
-    <valeur type="item">
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A">Bien public</item>
       <item nom="B">Bien privé</item>
       <item nom="C">Inconnue</item>
@@ -91,10 +103,11 @@
     <saisie>3</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="3" reporte="False" parent="Ouvrage">
+  <code position="2" reporte="False" parent="Ouvrage">
     <id>CAR</id>
     <intitule>Type de noeud</intitule>
-    <valeur type="item">
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A" position="0">Regard de visite</item>
       <item nom="B" position="1">Boîte d'inspection</item>
       <item nom="C" position="2">Orifice de passage de la lampe</item>
@@ -102,162 +115,179 @@
       <item nom="E" position="4">Orifice de nettoyage</item>
 	  <item nom="F" position="5">Siphon au niveau d'une boîte d'inspection</item>
       <item nom="G" position="6">Siphon au niveau d'un orifice de visite</item>
-      <item nom="H" position="7">Siphon sans accès</item>
-      <item nom="Z" lien="true" position="8">Autre ouvrage spécial</item>
+      <item nom="H" position="3">Siphon sans accès</item>
+      <item nom="Z" lien="True" position="5">Autre ouvrage spécial</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-    <code position="8" reporte="true" parent="Lieu">
+    <code position="8" reporte="True" parent="Lieu">
     <id>CAS</id>
-    <intitule>Niveau du tampon</intitule>
-    <valeur type="texte" />
+    <intitule info="Niveau supérieur du cadre du tampon (m) au-dessus de la référence nationale">Niveau du tampon</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="texte" />
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
-  <code position="1" reporte="true" parent="Support">
+  <code position="0" reporte="True" parent="Support">
     <id>CBA</id>
-    <intitule>Norme</intitule>
-    <valeur type="texte" />
+    <intitule info="Version de la norme utilisée pour enregistrer les données">Norme</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="texte" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="2" reporte="true" parent="Support">
+  <code position="1" reporte="True" parent="Support">
     <id>CBB</id>
-    <intitule>Système de codage initial</intitule>
-    <valeur type="texte" />
+    <intitule info="Nom du système initial lors de la traduction du codage">Système de codage initial</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="texte" />
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
-  <code position="3" reporte="true" parent="Support">
+  <code position="2" reporte="True" parent="Support">
     <id>CBC</id>
     <intitule>Point de référence vertical</intitule>
-    <valeur type="item">
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A" position="0">Radier de la conduite sortante la plus basse</item>
       <item nom="B" position="1">Tampon</item>
       <item nom="C" position="2">Repère national</item>
       <item nom="D" position="3">Repère local</item>
-      <item nom="Z" lien="true" position="4">Autre</item>
+      <item nom="Z" lien="True" position="4">Autre</item>
     </valeur>
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="4" reporte="true" parent="Support">
+  <code position="3" reporte="True" parent="Support">
     <id>CBD</id>
     <intitule>Point de référence circonférentiel</intitule>
-    <valeur type="item">
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A" position="0">La conduite sortante la plus basse est en position midi</item>
       <item nom="B" position="1">La conduite sortante la plus basse est en position 6 heures</item>
-      <item nom="Z" lien="true" position="2">Autre</item>
+      <item nom="Z" lien="True" position="2">Autre</item>
     </valeur>
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="1" reporte="true" parent="Organisme">
+  <code position="0" reporte="True" parent="Organisme">
     <id>CBE</id>
     <intitule>Méthode d'inspection</intitule>
-    <valeur type="item">
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A" position="0">Directe du regard de visite ou de la boîte d'inspection par un inspecteur</item>
       <item nom="B" position="1">Par une télécaméra circulant dans la canalisation</item>
       <item nom="C" position="2">A partir de la surface uniquement</item>
-      <item nom="Z" lien="true" position="3">Autre</item>
+      <item nom="Z" lien="True" position="3">Autre</item>
     </valeur>
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="9" reporte="true" parent="Lieu">
+  <code position="8" reporte="True" parent="Lieu">
     <id>CBF</id>
-    <intitule>Date d'inspection</intitule>
-    <valeur type="date" />
+    <intitule info="Date calendaire à laquelle est réalisée l'inspection (Inclu les zéros de tête)">Date de l'inspection</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="date" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="10" reporte="true" parent="Lieu">
+  <code position="9" reporte="True" parent="Lieu">
     <id>CBG</id>
-    <intitule>Heure d'inspection (hh:mm)</intitule>
-    <valeur type="texte" />
+    <intitule info="Heure locale du début de l'inspection (Inclu les zéros de tête)">Heure de l'inspection (hh:mm)</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="texte" />
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
-  <code position="2" reporte="true" parent="Organisme">
+  <code position="1" reporte="True" parent="Organisme">
     <id>CBH</id>
-    <intitule>Nom de l'inspecteur</intitule>
-    <valeur type="texte" />
+    <intitule info="Nom de l'inspecteur et nom de sa société">Nom de l'inspecteur</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="texte" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="3" reporte="true" parent="Organisme">
+  <code position="3" reporte="True" parent="Organisme">
     <id>CBI</id>
-    <intitule>Fonction de l'inspecteur</intitule>
-    <valeur type="texte" />
+    <intitule info="Code de référence de la fonction occupée par l’inspecteur">Fonction de l'inspecteur</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="texte" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="4" reporte="true" parent="Organisme">
+  <code position="4" reporte="True" parent="Organisme">
     <id>CBJ</id>
-    <intitule>Fonction de l'employeur</intitule>
-    <valeur type="texte" />
+    <intitule info="Code de référence de la fonction occupée par l’employeur">Fonction de l'employeur</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="texte" />
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
-  <code position="5" reporte="true" parent="Support">
+  <code position="4" reporte="True" parent="Support">
     <id>CBK</id>
     <intitule>Stockage des images vidéo</intitule>
-    <valeur type="item">
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A" position="0">Cassette vidéo VHS</item>
       <item nom="B" position="1">CD vidéo</item>
 	  <item nom="C" position="2">DVD vidéo</item>
       <item nom="D" position="3">CD de données</item>
 	  <item nom="E" position="4">DVD de donnés</item>
       <item nom="F" position="5">Disque dur portable</item>
-      <item nom="Z" lien="true" position="6">Autre</item>
+      <item nom="Z" lien="True" position="6">Autre</item>
     </valeur>
     <saisie>2</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="6" reporte="true" parent="Support">
+  <code position="5" reporte="True" parent="Support">
     <id>CBL</id>
     <intitule>Stockage des photographies</intitule>
-    <valeur type="item">
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A" position="0">Images fixes</item>
       <item nom="B" position="1">Hors d'usage - données existantes devant s'énoncer comme si la caractérisation était Z</item>
 	  <item nom="C" position="2">Windozs Meta File - WMF</item>
 	  <item nom="D" position="3">Graphic Image File - GIF</item>
 	  <item nom="E" position="4">JPEG</item>
-      <item nom="Z" lien="true" position="5">Autre</item>
+      <item nom="Z" lien="True" position="5">Autre</item>
     </valeur>
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
-  <code position="7" reporte="true" parent="Support">
+  <code position="6" reporte="True" parent="Support">
     <id>CBM</id>
-    <intitule>Système d'enregistrement de la position sur bande vidéo</intitule>
-    <valeur type="item">
+    <intitule>Type de position sur la bande vidéo</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A" position="0">Compteur en heures et en minutes depuis le début de la bande</item>
       <item nom="B" position="1">Compteur numérique dépendant de la machine</item>
-      <item nom="Z" lien="true" position="2">Autre</item>
+      <item nom="Z" lien="True" position="2">Autre</item>
     </valeur>
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
-  <code position="8" reporte="true" parent="Support">
+  <code position="7" reporte="True" parent="Support">
     <id>CBN</id>
-    <intitule>Référence de photographie</intitule>
-    <valeur type="texte" />
+    <intitule info="Numéro de référence du film ou du CD">Référence de photographie</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="texte" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="9" reporte="true" parent="Support">
+  <code position="8" reporte="True" parent="Support">
     <id>CBO</id>
-    <intitule>Référence de vidéo</intitule>
-    <valeur type="texte" />
+    <intitule info="Numéro de référence du support physique, utilisé pour stocker la vidéo">Référence de vidéo</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="texte" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="10" reporte="true" parent="Support">
+  <code position="9" reporte="True" parent="Support">
     <id>CBP</id>
     <intitule>Objet de l'inspection</intitule>
-    <valeur type="item">
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A" position="0">Contrôle final d'une nouvelle construction</item>
       <item nom="B" position="1">Fin de la période de garantie</item>
       <item nom="C" position="2">Inspection de routine de l'état</item>
@@ -268,76 +298,83 @@
       <item nom="H" position="7">Transfert de propriété</item>
       <item nom="I" position="8">Planification d'investissement</item>
       <item nom="J" position="9">Etude par échantillon</item>
-      <item nom="Z" lien="true" position="10">Autre</item>
+      <item nom="Z" lien="True" position="10">Autre</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-    <code position="11" reporte="true" parent="Support">
+    <code position="10" reporte="True" parent="Support">
     <id>CBR</id>
     <intitule>Format d'images vidéo</intitule>
-    <valeur type="item">
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A" position="0">Type fixe sur support</item>
       <item nom="B" position="1">MPEG1</item>
       <item nom="C" position="2">MPEG2</item>
       <item nom="D" position="3">MPEG4</item>
-      <item nom="Z" lien="true" position="10">Autre</item>
+      <item nom="Z" lien="True" position="10">Autre</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-    <code position="12" reporte="true" parent="Support">
+    <code position="11" reporte="True" parent="Support">
     <id>CBS</id>
-    <intitule>Nom de fichier d'images vidéo</intitule>
-    <valeur type="texte"/>
+    <intitule info="Le nom des images animées enregistrées sous une forme numérique échangeable">Nom de fichier d'images vidéo</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="texte"/>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-    <code position="13" reporte="true" parent="Support">
+    <code position="12" reporte="True" parent="Support">
     <id>CBT</id>
     <intitule>Etape de l'inspection</intitule>
-    <valeur type="item">
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A" position="0">De l'autorité responsable à l'inspecteur</item>
       <item nom="B" position="1">De l'inspecteur à l'autorité responsable pour étude</item>
 	  <item nom="C" position="2">Dans les mains de l'autorité responsable après étude</item>
-      <item nom="Z" lien="true" position="4">Autre</item>
+      <item nom="Z" lien="True" position="4">Autre</item>
     </valeur>
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
-  <code position="1" reporte="False" parent="Element">
+  <code position="0" reporte="False" parent="Element">
     <id>CCA</id>
     <intitule>Forme de l'accès</intitule>
-    <valeur type="item">
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A" position="0">Rectangulaire</item>
       <item nom="B" position="1">Circulaire</item>
       <item nom="C" position="2">Triangulaire</item>
       <item nom="D" position="3">Ovale</item>
       <item nom="E" position="4">Hexagonale</item>
       <item nom="F" position="5">Octogonale</item>
-      <item nom="Z" lien="true" position="6">Autre</item>
+      <item nom="Z" lien="True" position="2">Autre</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="2" reporte="False" parent="Element">
+  <code position="1" reporte="False" parent="Element">
     <id>CCB</id>
-    <intitule>Largeur de l'accès</intitule>
-    <valeur type="numerique" unite="mm" />
+    <intitule info="Largeur (ou le diamètre si elle est circulaire) de l'ouverture (mm)">Largeur de l'accès</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="numerique" unite="mm" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="3" reporte="False" parent="Element">
+  <code position="2" reporte="False" parent="Element">
     <id>CCC</id>
-    <intitule>Longueur de l'accès</intitule>
-    <valeur type="numerique" unite="mm" />
+    <intitule info="Longueur de l’ouverture (mm) non utilisée pour un accès circulaire">Longueur de l'accès</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="numerique" unite="mm" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="4" reporte="true" parent="Element">
+  <code position="3" reporte="True" parent="Element">
     <id>CCD</id>
-    <intitule>Matériau</intitule>
-    <valeur type="item">
+    <intitule info="Matériau constituant la structure du regard de visite ou de la boîte d’inspection">Matériau</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="AA" position="0">Amiante-ciment</item>
       <item nom="AB" position="1">Bitume</item>
       <item nom="AC" position="2">Fibres projetées</item>
@@ -364,76 +401,82 @@
       <item nom="AX" position="23">PVC-U</item>
       <item nom="AY" position="24">Type non identifié de plastique</item>
       <item nom="AZ" position="25">Matériau non identifié</item>
-      <item nom="Z" lien="true" position="26">Autre</item>
+      <item nom="Z" lien="True" position="26">Autre</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="5" reporte="true" parent="Element">
+  <code position="4" reporte="True" parent="Element">
     <id>CCG</id>
-    <intitule>Longueur unitaire des éléments de chambre</intitule>
-    <valeur type="numerique" unite="mm" />
+    <intitule info="Longueur (mm) des anneaux préfabriqués individuels constituant le regard de visite ou la boîte d’inspection">Longueur unitaire des éléments</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="numerique" unite="mm" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="4" reporte="true" parent="Ouvrage">
+  <code position="3" reporte="True" parent="Ouvrage">
     <id>CCK</id>
-    <intitule>Utilisation du réseau d'assainissement</intitule>
-    <valeur type="item">
+    <intitule>Utilisation du réseau</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A" position="0">Branchement ou collecteur d'eaux usées uniquement</item>
       <item nom="B" position="1">Branchement ou collecteur d'eaux de surface uniquement</item>
       <item nom="C" position="2">Branchement ou collecteur de type unitaire</item>
       <item nom="D" position="3">Système du collecteur d'eaux usées industrielles</item>
       <item nom="E" position="4">Cours d'eau avec ponceau</item>
       <item nom="F" position="5">Regard dessert deux réseaux, l'un véhiculant les eaux usées, l'autre les eaux de surface</item>
-      <item nom="Z" lien="true" position="6">Autre</item>
+      <item nom="Z" lien="True" position="6">Autre</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="5" reporte="true" parent="Ouvrage">
+  <code position="4" reporte="True" parent="Ouvrage">
     <id>CCL</id>
-    <intitule>Position stratégique</intitule>
-    <valeur type="texte" />
+    <intitule info="Code alphanumérique défini par l’autorité responsable">Position stratégique</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="texte" />
     <saisie>2</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="1" reporte="true" parent="Condition">
+  <code position="0" reporte="True" parent="Condition">
     <id>CCM</id>
     <intitule>Nettoyage</intitule>
-    <valeur type="item">
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A" position="0">Nettoyé avant l'inspection</item>
       <item nom="B" position="1">Non nettoyé avant l'inspection</item>
     </valeur>
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="6" reporte="true" parent="Ouvrage">
+  <code position="5" reporte="True" parent="Ouvrage">
     <id>CCN</id>
-    <intitule>Année de mise en service</intitule>
-    <valeur type="numerique" />
+    <intitule info="Année approximative de mise en service du branchement ou du collecteur (SSAA ou SSAA - SSAA)">Année de mise en service</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="numerique" />
     <saisie>2</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="6" reporte="true" parent="Element">
+  <code position="5" reporte="True" parent="Element">
     <id>CCO</id>
     <intitule>Forme du tampon</intitule>
-    <valeur type="item">
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A" position="0">Rectangulaire</item>
       <item nom="B" position="1">Circulaire</item>
       <item nom="C" position="2">Triangulaire</item>
-	  <item nom="D" position="3">Ovale</item>
-      <item nom="E" position="4">Hexagonale</item>
-      <item nom="F" position="5">Octogonale</item>
-      <item nom="Z" lien="true" position="6">Autre</item>
+      <item nom="D" position="3">Hexagonale</item>
+      <item nom="E" position="4">Octogonale</item>
+      <item nom="Z" lien="True" position="5">Autre</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>3</renseigne>
   </code>
-  <code position="7" reporte="true" parent="Element">
+  <code position="6" reporte="True" parent="Element">
     <id>CCP</id>
     <intitule>Matériau du tampon</intitule>
-    <valeur type="item">
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="AG" position="6">Béton</item>
       <item nom="AH" position="7">Béton armé</item>
       <item nom="AM" position="12">Fonte</item>
@@ -447,69 +490,63 @@
       <item nom="AX" position="23">PVC-U</item>
       <item nom="AY" position="24">Type non identifié de plastique</item>
       <item nom="AZ" position="25">Matériau non identifié</item>
-      <item nom="Z" lien="true" position="26">Autre</item>
+      <item nom="Z" lien="True" position="26">Autre</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>3</renseigne>
   </code>
-  <code position="8" reporte="true" parent="Element">
+  <code position="7" reporte="True" parent="Element">
     <id>CCQ</id>
-    <intitule>Largeur du tampon</intitule>
-    <valeur type="numerique" unite="mm" />
+    <intitule info="Largeur du tampon (ou diamètre s'il est circulaire) (mm)">Largeur du tampon</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="numerique" unite="mm" />
     <saisie>2</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="9" reporte="true" parent="Element">
+  <code position="8" reporte="True" parent="Element">
     <id>CCR</id>
-    <intitule>Longueur du tampon</intitule>
-    <valeur type="numerique" unite="mm" />
+    <intitule info="Longueur du tampon (mm) non utilisée pour un accès circulaire">Longueur du tampon</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="numerique" unite="mm" />
     <saisie>2</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="10" reporte="true" parent="Element">
+  <code position="9" reporte="True" parent="Element">
     <id>CCS</id>
-    <intitule>Types de système de descente</intitule>
-    <valeur type="item">
+    <intitule>Types de sytème de descente</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A" position="0">Echelons simples (peut poser 1 pied)</item>
       <item nom="B" position="1">Echelons doubles (peut poser 2 pieds)</item>
       <item nom="C" position="2">Echelle</item>
       <item nom="D" position="3">Trous dans la paroi</item>
       <item nom="E" position="4">Rien</item>
-      <item nom="Z" lien="true" position="5">Autre</item>
+      <item nom="Z" lien="True" position="5">Autre</item>
     </valeur>
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
-  <code position="11" reporte="true" parent="Element">
+  <code position="11" reporte="True" parent="Element">
     <id>CCT</id>
     <intitule>Matériau des échelons</intitule>
-    <valeur type="item">
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A" position="0">Fer</item>
       <item nom="B" position="1">Fer galvanisé</item>
       <item nom="C" position="2">Acier inoxydable</item>
       <item nom="D" position="3">Métal enrobé de plastique</item>
       <item nom="E" position="4">Plastique</item>
       <item nom="F" position="5">Aluminium</item>
-      <item nom="Z" lien="true" position="6">Autre</item>
+      <item nom="Z" lien="True" position="6">Autre</item>
     </valeur>
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
-  <code position="12" reporte="true" parent="Element">
-    <id>CCY</id>
-    <intitule ajoute ="true">Type d'avaloir</intitule>
-    <valeur type="item">
-      <item nom="A" position="0" ajoute ="true">Décantation</item>
-      <item nom="B" position="1" ajoute ="true">Sans décantation</item>
-      <item nom="Z" lien="true" position="2" ajoute ="true">Autre</item>
-    </valeur>
-    <saisie>3</saisie>
-    <renseigne>3</renseigne>
-  </code>
-  <code position="2" reporte="true" parent="Condition">
-    <id ajoute ="true">CDA</id>
+  <code position="1" reporte="True" parent="Condition">
+    <id>CDA</id>
     <intitule>Précipitations</intitule>
-    <valeur type="item">
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A" position="0">Pas de précipitation</item>
       <item nom="B" position="1">Pluie</item>
       <item nom="C" position="2">Neige fondante ou glace</item>
@@ -517,46 +554,75 @@
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="3" reporte="true" parent="Condition">
+  <code position="12" reporte="true" parent="Element">
+    <id>CCY</id>
+    <intitule ajoute ="true">Type d'avaloir</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="item">
+      <item nom="A" position="0" ajoute ="true">Décantation</item>
+      <item nom="B" position="1" ajoute ="true">Sans décantation</item>
+      <item nom="Z" lien="true" position="2" ajoute ="true">Autre</item>
+    </valeur>
+    <saisie>3</saisie>
+    <renseigne>3</renseigne>
+  </code>
+  <code position="1" reporte="true" parent="Condition">
+    <id>CDA</id>
+    <intitule>Précipitations</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="item">
+      <item nom="A" position="0">Pas de précipitation</item>
+      <item nom="B" position="1">Pluie</item>
+      <item nom="C" position="2">Neige fondante ou glace</item>
+    </valeur>
+    <saisie>1</saisie>
+    <renseigne>1</renseigne>
+  </code>
+  <code position="2" reporte="True" parent="Condition">
     <id>CDB</id>
     <intitule>Température</intitule>
-    <valeur type="item">
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A" position="0">Température au dessus de zéro</item>
       <item nom="B" position="1">Température en dessous de zéro</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="4" reporte="true" parent="Condition">
+  <code position="3" reporte="True" parent="Condition">
     <id>CDC</id>
     <intitule>Régulation du débit</intitule>
-    <valeur type="item">
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A" position="0">Aucune mesure prise</item>
-      <item nom="B" position="1">Ecoulement obturé en amont</item>
-      <item nom="C" position="2">Ecoulement partiellement obturé en amont</item>
-      <item nom="Z" lien="true" position="3">Autre</item>
-    </valeur>
+      <item nom="B" position="1">L'écoulement obturé en amont</item>
+      <item nom="C" position="2">L'écoulement partiellement obturé en amont</item>
+      <item nom="Z" lien="True" position="0">Autre</item>
+    <inspection corresp =""></inspection>
+	</valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code position="5" reporte="true" parent="Condition">
+  <code position="4" reporte="True" parent="Condition">
     <id>CDD</id>
     <intitule>Atmosphère</intitule>
-    <valeur type="item">
+    <inspection corresp =""></inspection>
+	<valeur type="item">
       <item nom="A" position="0">Manque d'oxygène</item>
       <item nom="B" position="1">H2S</item>
       <item nom="C" position="2">CH4</item>
-      <item nom="B" position="3">Autre gaz inflammable</item>
-      <item nom="B" position="4">Pas d'atmsphère dangereuse</item>
-      <item nom="Z" lien="true" position="5">Autre</item>
+      <item nom="D" position="3">Autre gaz inflammable</item>
+      <item nom="E" position="4">Pas d'atmosphère dangereuse</item>
+      <item nom="Z" lien="True" position="5">Autre</item>
     </valeur>
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
-  <code position="1" reporte="true" parent="Observation">
+  <code position="0" reporte="True" parent="Observation">
     <id>CDE</id>
-    <intitule>Remarque générale</intitule>
-    <valeur type="texte" />
+    <intitule info="Remarque ne pouvant être insérée d'une autre manière">Remarque générale</intitule>
+    <inspection corresp =""></inspection>
+	<valeur type="texte" />
     <saisie>1</saisie>
     <renseigne>3</renseigne>
   </code>

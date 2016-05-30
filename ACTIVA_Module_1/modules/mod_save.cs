@@ -165,7 +165,9 @@ namespace ACTIVA_Module_1.modules
                 //On crée les noeuds
                 XmlElement elem_code = mod_inspection.SVF.CreateElement("code");
                 XmlNode newidnode = mod_inspection.SVF.CreateNode("element", "id", "");
+                //XmlNode newinspectionnode = mod_inspection.SVF.CreateNode("element", "inspection", "");
                 XmlNode newintitulenode = mod_inspection.SVF.CreateNode("element", "intitule", "");
+
                 //On recupere les caractéristiques
                 XmlNode newcaracnode = Make_Obs_Caracteristiques();
 
@@ -340,7 +342,12 @@ namespace ACTIVA_Module_1.modules
                         XmlNode elem_carac = Create_One_Caracteristique(key.ToString(), mod_global.Get_Field_State_By_Color(CCombo.BackColor));
 
                         if (mod_global.Get_Field_State_By_Color(CCombo.BackColor) != "4")
-                            elem_carac.InnerText = CCombo.SelectedText;
+                        {
+                            XmlAttribute att_code = mod_inspection.SVF.CreateAttribute("codeR");
+                            att_code.Value = CCombo.Text.Split(char.Parse("|"))[0].Trim();
+                            elem_carac.Attributes.Append(att_code);
+                            elem_carac.InnerText = CCombo.Text.Split(char.Parse("|"))[1].Trim();
+                        }
 
                         newcaracnode.AppendChild(elem_carac);
                     }

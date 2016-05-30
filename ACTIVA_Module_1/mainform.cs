@@ -28,6 +28,7 @@ namespace ACTIVA_Module_1
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             //this.CenterToScreen();
             this.WindowState = FormWindowState.Maximized;
             this.CreateStatusBar();
@@ -177,7 +178,7 @@ namespace ACTIVA_Module_1
         {
             if (ObservationGrid.ColSel == 0)
             {
-                if (ObservationGrid.Rows[ObservationGrid.RowSel].Height == 24)
+                if (ObservationGrid.Rows[ObservationGrid.RowSel].Height == 50)
                     mod_observation.Expand_Line(ObservationGrid);
                 else
                     mod_observation.Collapse_Line(ObservationGrid);
@@ -484,13 +485,27 @@ namespace ACTIVA_Module_1
             tt = new ToolTip();
             tt.InitialDelay = 0;
             tt.IsBalloon = true;
-            int VisibleTime = 1000;
-            tt.Show("Information", InputPreviewTb,0 , 0, VisibleTime);
+            //int VisibleTime = 1000;
+            tt.Show("Valeur du champ sélectionné", InputPreviewTb, 0 , -30);
         }
 
         private void InputPreviewTb_Leave(object sender, EventArgs e)
         {
             tt.Dispose();
+        }
+
+        private void MainForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.S && e.Control)
+            {
+                mod_save.Save_Identification_Panel(Identification_Flp);
+
+                //mise a jour de la couleur du groupe courant
+                mod_identification.Check_Fields_Status(IdentificationTopicBar.FindPage(IdFormLabel.Text));
+
+                mod_identification.SaveIDFlag = false;
+                MessageBox.Show("Les modifications ont été sauvegardées.", "Succès", MessageBoxButtons.OK);
+            }
         }
     }
 }

@@ -101,6 +101,7 @@ namespace ACTIVA_Module_1.modules
             mod_param_motif.Init_Motif_Buttons_Tags_n_Events();
 
             mod_param_obs.Init_Obs_Codes_Grid(mod_global.MF.XmlObsCodesGrid);
+            mod_param_obs.Init_Obs_Codelie_Grid(mod_global.MF.XmlObsCodeLieGrid);
             mod_param_id.Init_Id_Codes_Grid(mod_global.MF.XmlIdCodeGrid);
             mod_param_section.Init_Section_Grid(mod_global.MF.XmlSectionGrid);
             mod_param_section.Fill_Section_Grid(mod_global.MF.XmlSectionGrid, mod_inspection.Section_Ouvrage_Xml);

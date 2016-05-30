@@ -97,9 +97,11 @@
             this.groupBox8.Controls.Add(this.label10);
             this.groupBox8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBox8.Location = new System.Drawing.Point(516, 195);
+            this.groupBox8.Location = new System.Drawing.Point(669, 240);
+            this.groupBox8.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(500, 128);
+            this.groupBox8.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox8.Size = new System.Drawing.Size(609, 158);
             this.groupBox8.TabIndex = 5;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Références";
@@ -108,9 +110,10 @@
             // 
             this.RefAudioTb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.RefAudioTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RefAudioTb.Location = new System.Drawing.Point(6, 29);
+            this.RefAudioTb.Location = new System.Drawing.Point(8, 36);
+            this.RefAudioTb.Margin = new System.Windows.Forms.Padding(4);
             this.RefAudioTb.Name = "RefAudioTb";
-            this.RefAudioTb.Size = new System.Drawing.Size(485, 20);
+            this.RefAudioTb.Size = new System.Drawing.Size(590, 23);
             this.RefAudioTb.TabIndex = 12;
             this.RefAudioTb.Tag = "audio";
             // 
@@ -119,9 +122,10 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(6, 15);
+            this.label13.Location = new System.Drawing.Point(8, 18);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(87, 14);
+            this.label13.Size = new System.Drawing.Size(113, 16);
             this.label13.TabIndex = 19;
             this.label13.Text = "Référence audio";
             // 
@@ -130,9 +134,10 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(6, 88);
+            this.label11.Location = new System.Drawing.Point(8, 108);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(88, 14);
+            this.label11.Size = new System.Drawing.Size(114, 16);
             this.label11.TabIndex = 14;
             this.label11.Text = "Référence photo";
             // 
@@ -140,10 +145,11 @@
             // 
             this.RefPhotoTb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.RefPhotoTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RefPhotoTb.Location = new System.Drawing.Point(6, 102);
+            this.RefPhotoTb.Location = new System.Drawing.Point(8, 126);
+            this.RefPhotoTb.Margin = new System.Windows.Forms.Padding(4);
             this.RefPhotoTb.Name = "RefPhotoTb";
             this.RefPhotoTb.ReadOnly = true;
-            this.RefPhotoTb.Size = new System.Drawing.Size(485, 20);
+            this.RefPhotoTb.Size = new System.Drawing.Size(590, 23);
             this.RefPhotoTb.TabIndex = 14;
             this.RefPhotoTb.Tag = "photo";
             // 
@@ -151,9 +157,10 @@
             // 
             this.RefVideoTb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.RefVideoTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RefVideoTb.Location = new System.Drawing.Point(6, 65);
+            this.RefVideoTb.Location = new System.Drawing.Point(8, 80);
+            this.RefVideoTb.Margin = new System.Windows.Forms.Padding(4);
             this.RefVideoTb.Name = "RefVideoTb";
-            this.RefVideoTb.Size = new System.Drawing.Size(485, 20);
+            this.RefVideoTb.Size = new System.Drawing.Size(590, 23);
             this.RefVideoTb.TabIndex = 13;
             this.RefVideoTb.Tag = "video";
             // 
@@ -162,9 +169,10 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(6, 51);
+            this.label10.Location = new System.Drawing.Point(8, 63);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(87, 14);
+            this.label10.Size = new System.Drawing.Size(112, 16);
             this.label10.TabIndex = 16;
             this.label10.Text = "Référence vidéo";
             // 
@@ -178,9 +186,11 @@
             this.groupBox4.Controls.Add(this.RemarqueTb);
             this.groupBox4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBox4.Location = new System.Drawing.Point(5, 195);
+            this.groupBox4.Location = new System.Drawing.Point(7, 240);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(500, 128);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Size = new System.Drawing.Size(654, 158);
             this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Remarques";
@@ -200,9 +210,10 @@
             "Banquette",
             "Cunette",
             "Radier"});
-            this.PosRegCb.Location = new System.Drawing.Point(242, 17);
+            this.PosRegCb.Location = new System.Drawing.Point(323, 21);
+            this.PosRegCb.Margin = new System.Windows.Forms.Padding(4);
             this.PosRegCb.Name = "PosRegCb";
-            this.PosRegCb.Size = new System.Drawing.Size(251, 24);
+            this.PosRegCb.Size = new System.Drawing.Size(323, 26);
             this.PosRegCb.TabIndex = 10;
             this.PosRegCb.Tag = "posregard";
             // 
@@ -211,9 +222,10 @@
             this.PosRegLb.AutoSize = true;
             this.PosRegLb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PosRegLb.ForeColor = System.Drawing.Color.Black;
-            this.PosRegLb.Location = new System.Drawing.Point(121, 23);
+            this.PosRegLb.Location = new System.Drawing.Point(161, 28);
+            this.PosRegLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PosRegLb.Name = "PosRegLb";
-            this.PosRegLb.Size = new System.Drawing.Size(126, 14);
+            this.PosRegLb.Size = new System.Drawing.Size(166, 16);
             this.PosRegLb.TabIndex = 19;
             this.PosRegLb.Text = "Position dans le regard : ";
             // 
@@ -222,10 +234,11 @@
             this.AssemblageCb.AutoSize = true;
             this.AssemblageCb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AssemblageCb.ForeColor = System.Drawing.Color.Black;
-            this.AssemblageCb.Location = new System.Drawing.Point(9, 19);
+            this.AssemblageCb.Location = new System.Drawing.Point(12, 23);
+            this.AssemblageCb.Margin = new System.Windows.Forms.Padding(4);
             this.AssemblageCb.Name = "AssemblageCb";
-            this.AssemblageCb.Padding = new System.Windows.Forms.Padding(2);
-            this.AssemblageCb.Size = new System.Drawing.Size(90, 22);
+            this.AssemblageCb.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AssemblageCb.Size = new System.Drawing.Size(113, 24);
             this.AssemblageCb.TabIndex = 9;
             this.AssemblageCb.Tag = "assemblage";
             this.AssemblageCb.Text = "Assemblage";
@@ -236,9 +249,10 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(6, 45);
+            this.label9.Location = new System.Drawing.Point(8, 55);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 14);
+            this.label9.Size = new System.Drawing.Size(81, 16);
             this.label9.TabIndex = 9;
             this.label9.Text = "Remarques";
             // 
@@ -246,10 +260,11 @@
             // 
             this.RemarqueTb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.RemarqueTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RemarqueTb.Location = new System.Drawing.Point(8, 62);
+            this.RemarqueTb.Location = new System.Drawing.Point(11, 76);
+            this.RemarqueTb.Margin = new System.Windows.Forms.Padding(4);
             this.RemarqueTb.Multiline = true;
             this.RemarqueTb.Name = "RemarqueTb";
-            this.RemarqueTb.Size = new System.Drawing.Size(485, 59);
+            this.RemarqueTb.Size = new System.Drawing.Size(635, 72);
             this.RemarqueTb.TabIndex = 11;
             this.RemarqueTb.Tag = "remarques";
             // 
@@ -266,9 +281,11 @@
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBox3.Location = new System.Drawing.Point(5, 95);
+            this.groupBox3.Location = new System.Drawing.Point(7, 117);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1011, 100);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(1271, 123);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Emplacements";
@@ -278,9 +295,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(514, 56);
+            this.label7.Location = new System.Drawing.Point(669, 68);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(151, 14);
+            this.label7.Size = new System.Drawing.Size(198, 16);
             this.label7.TabIndex = 15;
             this.label7.Text = "Emplacement circonférentiel 2";
             // 
@@ -288,9 +306,10 @@
             // 
             this.EmpCirc2Tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EmpCirc2Tb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmpCirc2Tb.Location = new System.Drawing.Point(517, 73);
+            this.EmpCirc2Tb.Location = new System.Drawing.Point(669, 90);
+            this.EmpCirc2Tb.Margin = new System.Windows.Forms.Padding(4);
             this.EmpCirc2Tb.Name = "EmpCirc2Tb";
-            this.EmpCirc2Tb.Size = new System.Drawing.Size(485, 20);
+            this.EmpCirc2Tb.Size = new System.Drawing.Size(591, 23);
             this.EmpCirc2Tb.TabIndex = 8;
             this.EmpCirc2Tb.Tag = "h2";
             // 
@@ -298,9 +317,10 @@
             // 
             this.EmpCirc1Tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EmpCirc1Tb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmpCirc1Tb.Location = new System.Drawing.Point(517, 33);
+            this.EmpCirc1Tb.Location = new System.Drawing.Point(669, 41);
+            this.EmpCirc1Tb.Margin = new System.Windows.Forms.Padding(4);
             this.EmpCirc1Tb.Name = "EmpCirc1Tb";
-            this.EmpCirc1Tb.Size = new System.Drawing.Size(485, 20);
+            this.EmpCirc1Tb.Size = new System.Drawing.Size(591, 23);
             this.EmpCirc1Tb.TabIndex = 6;
             this.EmpCirc1Tb.Tag = "h1";
             // 
@@ -309,9 +329,10 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(514, 16);
+            this.label8.Location = new System.Drawing.Point(669, 20);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(151, 14);
+            this.label8.Size = new System.Drawing.Size(198, 16);
             this.label8.TabIndex = 12;
             this.label8.Text = "Emplacement circonférentiel 1";
             // 
@@ -320,9 +341,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(6, 56);
+            this.label5.Location = new System.Drawing.Point(8, 69);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(135, 14);
+            this.label5.Size = new System.Drawing.Size(181, 16);
             this.label5.TabIndex = 11;
             this.label5.Text = "Emplacement longitudinal 2";
             // 
@@ -330,9 +352,10 @@
             // 
             this.EmpLong2Tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EmpLong2Tb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmpLong2Tb.Location = new System.Drawing.Point(9, 73);
+            this.EmpLong2Tb.Location = new System.Drawing.Point(12, 90);
+            this.EmpLong2Tb.Margin = new System.Windows.Forms.Padding(4);
             this.EmpLong2Tb.Name = "EmpLong2Tb";
-            this.EmpLong2Tb.Size = new System.Drawing.Size(485, 20);
+            this.EmpLong2Tb.Size = new System.Drawing.Size(634, 23);
             this.EmpLong2Tb.TabIndex = 7;
             this.EmpLong2Tb.Tag = "pm2";
             // 
@@ -340,9 +363,10 @@
             // 
             this.EmpLong1Tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EmpLong1Tb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmpLong1Tb.Location = new System.Drawing.Point(9, 33);
+            this.EmpLong1Tb.Location = new System.Drawing.Point(12, 41);
+            this.EmpLong1Tb.Margin = new System.Windows.Forms.Padding(4);
             this.EmpLong1Tb.Name = "EmpLong1Tb";
-            this.EmpLong1Tb.Size = new System.Drawing.Size(485, 20);
+            this.EmpLong1Tb.Size = new System.Drawing.Size(634, 23);
             this.EmpLong1Tb.TabIndex = 5;
             this.EmpLong1Tb.Tag = "pm1";
             // 
@@ -351,9 +375,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(6, 16);
+            this.label6.Location = new System.Drawing.Point(8, 20);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(135, 14);
+            this.label6.Size = new System.Drawing.Size(181, 16);
             this.label6.TabIndex = 8;
             this.label6.Text = "Emplacement longitudinal 1";
             // 
@@ -366,9 +391,11 @@
             this.groupBox2.Controls.Add(this.Quant1Lb);
             this.groupBox2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBox2.Location = new System.Drawing.Point(516, 0);
+            this.groupBox2.Location = new System.Drawing.Point(669, 0);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(500, 95);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(609, 117);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Quantifications";
@@ -378,19 +405,21 @@
             this.Quant2Lb.AutoSize = true;
             this.Quant2Lb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Quant2Lb.ForeColor = System.Drawing.Color.Black;
-            this.Quant2Lb.Location = new System.Drawing.Point(5, 53);
+            this.Quant2Lb.Location = new System.Drawing.Point(7, 65);
+            this.Quant2Lb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Quant2Lb.Name = "Quant2Lb";
-            this.Quant2Lb.Size = new System.Drawing.Size(116, 14);
+            this.Quant2Lb.Size = new System.Drawing.Size(136, 16);
             this.Quant2Lb.TabIndex = 7;
-            this.Quant2Lb.Text = "2. Nom quantification 2";
+            this.Quant2Lb.Text = "Nom quantification 2";
             // 
             // Quant2Tb
             // 
             this.Quant2Tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Quant2Tb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Quant2Tb.Location = new System.Drawing.Point(5, 69);
+            this.Quant2Tb.Location = new System.Drawing.Point(7, 85);
+            this.Quant2Tb.Margin = new System.Windows.Forms.Padding(4);
             this.Quant2Tb.Name = "Quant2Tb";
-            this.Quant2Tb.Size = new System.Drawing.Size(485, 20);
+            this.Quant2Tb.Size = new System.Drawing.Size(591, 23);
             this.Quant2Tb.TabIndex = 4;
             this.Quant2Tb.Tag = "q2";
             // 
@@ -398,9 +427,10 @@
             // 
             this.Quant1Tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Quant1Tb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Quant1Tb.Location = new System.Drawing.Point(5, 32);
+            this.Quant1Tb.Location = new System.Drawing.Point(7, 39);
+            this.Quant1Tb.Margin = new System.Windows.Forms.Padding(4);
             this.Quant1Tb.Name = "Quant1Tb";
-            this.Quant1Tb.Size = new System.Drawing.Size(485, 20);
+            this.Quant1Tb.Size = new System.Drawing.Size(591, 23);
             this.Quant1Tb.TabIndex = 3;
             this.Quant1Tb.Tag = "q1";
             // 
@@ -409,11 +439,12 @@
             this.Quant1Lb.AutoSize = true;
             this.Quant1Lb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Quant1Lb.ForeColor = System.Drawing.Color.Black;
-            this.Quant1Lb.Location = new System.Drawing.Point(5, 15);
+            this.Quant1Lb.Location = new System.Drawing.Point(7, 18);
+            this.Quant1Lb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Quant1Lb.Name = "Quant1Lb";
-            this.Quant1Lb.Size = new System.Drawing.Size(116, 14);
+            this.Quant1Lb.Size = new System.Drawing.Size(136, 16);
             this.Quant1Lb.TabIndex = 4;
-            this.Quant1Lb.Text = "1. Nom quantification 1";
+            this.Quant1Lb.Text = "Nom quantification 1";
             // 
             // groupBox1
             // 
@@ -424,9 +455,11 @@
             this.groupBox1.Controls.Add(this.Carac1Lb);
             this.groupBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBox1.Location = new System.Drawing.Point(5, 0);
+            this.groupBox1.Location = new System.Drawing.Point(7, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(500, 95);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(654, 117);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Caractérisations";
@@ -436,19 +469,21 @@
             this.Carac2Lb.AutoSize = true;
             this.Carac2Lb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Carac2Lb.ForeColor = System.Drawing.Color.Black;
-            this.Carac2Lb.Location = new System.Drawing.Point(6, 53);
+            this.Carac2Lb.Location = new System.Drawing.Point(8, 65);
+            this.Carac2Lb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Carac2Lb.Name = "Carac2Lb";
-            this.Carac2Lb.Size = new System.Drawing.Size(124, 14);
+            this.Carac2Lb.Size = new System.Drawing.Size(145, 16);
             this.Carac2Lb.TabIndex = 3;
-            this.Carac2Lb.Text = "2. Nom caractéristique 2";
+            this.Carac2Lb.Text = "Nom caractéristique 2";
             // 
             // Carac2Tb
             // 
             this.Carac2Tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Carac2Tb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Carac2Tb.Location = new System.Drawing.Point(9, 69);
+            this.Carac2Tb.Location = new System.Drawing.Point(12, 85);
+            this.Carac2Tb.Margin = new System.Windows.Forms.Padding(4);
             this.Carac2Tb.Name = "Carac2Tb";
-            this.Carac2Tb.Size = new System.Drawing.Size(485, 20);
+            this.Carac2Tb.Size = new System.Drawing.Size(634, 23);
             this.Carac2Tb.TabIndex = 2;
             this.Carac2Tb.Tag = "c2";
             // 
@@ -456,9 +491,10 @@
             // 
             this.Carac1Tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Carac1Tb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Carac1Tb.Location = new System.Drawing.Point(9, 30);
+            this.Carac1Tb.Location = new System.Drawing.Point(12, 37);
+            this.Carac1Tb.Margin = new System.Windows.Forms.Padding(4);
             this.Carac1Tb.Name = "Carac1Tb";
-            this.Carac1Tb.Size = new System.Drawing.Size(485, 20);
+            this.Carac1Tb.Size = new System.Drawing.Size(634, 23);
             this.Carac1Tb.TabIndex = 0;
             this.Carac1Tb.Tag = "c1";
             // 
@@ -467,45 +503,50 @@
             this.Carac1Lb.AutoSize = true;
             this.Carac1Lb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Carac1Lb.ForeColor = System.Drawing.Color.Black;
-            this.Carac1Lb.Location = new System.Drawing.Point(6, 18);
+            this.Carac1Lb.Location = new System.Drawing.Point(8, 22);
+            this.Carac1Lb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Carac1Lb.Name = "Carac1Lb";
-            this.Carac1Lb.Size = new System.Drawing.Size(124, 14);
+            this.Carac1Lb.Size = new System.Drawing.Size(145, 16);
             this.Carac1Lb.TabIndex = 0;
-            this.Carac1Lb.Text = "1. Nom caractéristique 1";
+            this.Carac1Lb.Text = "Nom caractéristique 1";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(37, 328);
+            this.label1.Location = new System.Drawing.Point(47, 411);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 13);
+            this.label1.Size = new System.Drawing.Size(129, 17);
             this.label1.TabIndex = 24;
             this.label1.Text = "Champs obligatoire";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(169, 328);
+            this.label2.Location = new System.Drawing.Point(219, 411);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 13);
+            this.label2.Size = new System.Drawing.Size(103, 17);
             this.label2.TabIndex = 26;
             this.label2.Text = "Champs différé";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(285, 328);
+            this.label3.Location = new System.Drawing.Point(372, 411);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 13);
+            this.label3.Size = new System.Drawing.Size(123, 17);
             this.label3.TabIndex = 28;
             this.label3.Text = "Champs désactivé";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(417, 328);
+            this.label4.Location = new System.Drawing.Point(537, 411);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 13);
+            this.label4.Size = new System.Drawing.Size(116, 17);
             this.label4.TabIndex = 30;
             this.label4.Text = "Champs facultatif";
             // 
@@ -519,9 +560,10 @@
             this.CaracDelBt.BackColor = System.Drawing.SystemColors.Control;
             this.CaracDelBt.ForeColor = System.Drawing.Color.Black;
             this.CaracDelBt.Image = global::ACTIVA_Module_1.Properties.Resources.remove_16;
-            this.CaracDelBt.Location = new System.Drawing.Point(654, 324);
+            this.CaracDelBt.Location = new System.Drawing.Point(784, 403);
+            this.CaracDelBt.Margin = new System.Windows.Forms.Padding(4);
             this.CaracDelBt.Name = "CaracDelBt";
-            this.CaracDelBt.Size = new System.Drawing.Size(80, 27);
+            this.CaracDelBt.Size = new System.Drawing.Size(107, 33);
             this.CaracDelBt.TabIndex = 23;
             this.CaracDelBt.Text = "Supprimer";
             this.CaracDelBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -533,9 +575,10 @@
             this.CaracCopyBt.BackColor = System.Drawing.SystemColors.Control;
             this.CaracCopyBt.ForeColor = System.Drawing.Color.Black;
             this.CaracCopyBt.Image = global::ACTIVA_Module_1.Properties.Resources.copy1_16;
-            this.CaracCopyBt.Location = new System.Drawing.Point(568, 324);
+            this.CaracCopyBt.Location = new System.Drawing.Point(669, 403);
+            this.CaracCopyBt.Margin = new System.Windows.Forms.Padding(4);
             this.CaracCopyBt.Name = "CaracCopyBt";
-            this.CaracCopyBt.Size = new System.Drawing.Size(80, 27);
+            this.CaracCopyBt.Size = new System.Drawing.Size(107, 33);
             this.CaracCopyBt.TabIndex = 22;
             this.CaracCopyBt.Text = "Dupliquer";
             this.CaracCopyBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -546,36 +589,40 @@
             // 
             this.FacultatifPb.BackColor = System.Drawing.Color.White;
             this.FacultatifPb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FacultatifPb.Location = new System.Drawing.Point(385, 328);
+            this.FacultatifPb.Location = new System.Drawing.Point(503, 409);
+            this.FacultatifPb.Margin = new System.Windows.Forms.Padding(4);
             this.FacultatifPb.Name = "FacultatifPb";
-            this.FacultatifPb.Size = new System.Drawing.Size(26, 16);
+            this.FacultatifPb.Size = new System.Drawing.Size(34, 19);
             this.FacultatifPb.TabIndex = 29;
             this.FacultatifPb.TabStop = false;
             // 
             // DesactivePb
             // 
             this.DesactivePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DesactivePb.Location = new System.Drawing.Point(252, 328);
+            this.DesactivePb.Location = new System.Drawing.Point(330, 409);
+            this.DesactivePb.Margin = new System.Windows.Forms.Padding(4);
             this.DesactivePb.Name = "DesactivePb";
-            this.DesactivePb.Size = new System.Drawing.Size(26, 16);
+            this.DesactivePb.Size = new System.Drawing.Size(34, 19);
             this.DesactivePb.TabIndex = 27;
             this.DesactivePb.TabStop = false;
             // 
             // DifferePb
             // 
             this.DifferePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DifferePb.Location = new System.Drawing.Point(139, 328);
+            this.DifferePb.Location = new System.Drawing.Point(184, 409);
+            this.DifferePb.Margin = new System.Windows.Forms.Padding(4);
             this.DifferePb.Name = "DifferePb";
-            this.DifferePb.Size = new System.Drawing.Size(26, 16);
+            this.DifferePb.Size = new System.Drawing.Size(34, 19);
             this.DifferePb.TabIndex = 25;
             this.DifferePb.TabStop = false;
             // 
             // ObligatoirePb
             // 
             this.ObligatoirePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ObligatoirePb.Location = new System.Drawing.Point(5, 328);
+            this.ObligatoirePb.Location = new System.Drawing.Point(7, 409);
+            this.ObligatoirePb.Margin = new System.Windows.Forms.Padding(4);
             this.ObligatoirePb.Name = "ObligatoirePb";
-            this.ObligatoirePb.Size = new System.Drawing.Size(26, 16);
+            this.ObligatoirePb.Size = new System.Drawing.Size(34, 19);
             this.ObligatoirePb.TabIndex = 23;
             this.ObligatoirePb.TabStop = false;
             // 
@@ -584,9 +631,10 @@
             this.CaracValidBt.BackColor = System.Drawing.SystemColors.Control;
             this.CaracValidBt.ForeColor = System.Drawing.Color.Black;
             this.CaracValidBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.CaracValidBt.Location = new System.Drawing.Point(740, 324);
+            this.CaracValidBt.Location = new System.Drawing.Point(899, 403);
+            this.CaracValidBt.Margin = new System.Windows.Forms.Padding(4);
             this.CaracValidBt.Name = "CaracValidBt";
-            this.CaracValidBt.Size = new System.Drawing.Size(71, 27);
+            this.CaracValidBt.Size = new System.Drawing.Size(95, 33);
             this.CaracValidBt.TabIndex = 21;
             this.CaracValidBt.Text = "Valider";
             this.CaracValidBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -598,9 +646,10 @@
             this.CaracValidnCloseBt.BackColor = System.Drawing.SystemColors.Control;
             this.CaracValidnCloseBt.ForeColor = System.Drawing.Color.Black;
             this.CaracValidnCloseBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.CaracValidnCloseBt.Location = new System.Drawing.Point(817, 324);
+            this.CaracValidnCloseBt.Location = new System.Drawing.Point(1002, 403);
+            this.CaracValidnCloseBt.Margin = new System.Windows.Forms.Padding(4);
             this.CaracValidnCloseBt.Name = "CaracValidnCloseBt";
-            this.CaracValidnCloseBt.Size = new System.Drawing.Size(117, 27);
+            this.CaracValidnCloseBt.Size = new System.Drawing.Size(156, 33);
             this.CaracValidnCloseBt.TabIndex = 20;
             this.CaracValidnCloseBt.Text = "Valider et Fermer";
             this.CaracValidnCloseBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -613,9 +662,10 @@
             this.CaracCancelBt.ForeColor = System.Drawing.Color.Black;
             this.CaracCancelBt.Image = global::ACTIVA_Module_1.Properties.Resources.cancel_16;
             this.CaracCancelBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CaracCancelBt.Location = new System.Drawing.Point(940, 324);
+            this.CaracCancelBt.Location = new System.Drawing.Point(1166, 403);
+            this.CaracCancelBt.Margin = new System.Windows.Forms.Padding(4);
             this.CaracCancelBt.Name = "CaracCancelBt";
-            this.CaracCancelBt.Size = new System.Drawing.Size(76, 27);
+            this.CaracCancelBt.Size = new System.Drawing.Size(101, 33);
             this.CaracCancelBt.TabIndex = 31;
             this.CaracCancelBt.Text = "Annuler";
             this.CaracCancelBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -624,7 +674,7 @@
             // 
             // carac_panel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.CaracCancelBt);
             this.Controls.Add(this.CaracValidnCloseBt);
@@ -644,8 +694,9 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "carac_panel";
-            this.Size = new System.Drawing.Size(1020, 354);
+            this.Size = new System.Drawing.Size(1280, 436);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -662,8 +713,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.ObligatoirePb)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
+
+
 
         #endregion
 

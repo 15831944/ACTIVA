@@ -131,7 +131,7 @@ namespace ACTIVA_Module_1.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à 11/05/2016 13:56:33,73 
+        ///   Recherche une chaîne localisée semblable à 12/05/2016 15:36:24,75 
         ///.
         /// </summary>
         internal static string BuildDate {

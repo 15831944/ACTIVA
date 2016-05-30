@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Xml;
+using System.Drawing;
 
 namespace ACTIVA_Module_1.modules
 {
@@ -12,17 +13,25 @@ namespace ACTIVA_Module_1.modules
         {
             XmlNode root;
             XmlNode nodeIntitule;
-
+            XmlNode nodeAjout;
             C1.Win.C1Command.C1DockingTabPage CTab = new C1.Win.C1Command.C1DockingTabPage();
             ACTIVA_Module_1.component.carac_panel Cpanel = new ACTIVA_Module_1.component.carac_panel(code, num, clone);
             Cpanel.Dock = System.Windows.Forms.DockStyle.Fill;
-
+            
             //On récupère l'intitulé du code
             root = mod_global.Get_Codes_Obs_DocElement();
             nodeIntitule = root.SelectSingleNode("/codes/code[id='" + code + "']/intitule");
-
+            nodeAjout = root.SelectSingleNode("/codes/code[id='" + code + "']");
             CTab.Text =  code + " | " + nodeIntitule.InnerText;
 
+            if (nodeAjout.Attributes["ajoute"] != null)
+                if (nodeAjout.Attributes["ajoute"].InnerText == "true")
+                {
+                    CTab.TabForeColorSelected = Color.RoyalBlue;
+                    CTab.ForeColor = Color.RoyalBlue;
+                    Cpanel.SetColor(Color.RoyalBlue);
+                }
+                else Cpanel.SetColor(Color.Black);
             CTab.Controls.Add(Cpanel);
             mod_global.MF.CaracDockingTab.TabPages.Add(CTab);
         }

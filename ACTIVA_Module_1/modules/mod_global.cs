@@ -204,7 +204,13 @@ namespace ACTIVA_Module_1.modules
             //On selectionne la section qui correspond a la forme et à la position 1
             node = root.SelectSingleNode("section[@ouvrage='" + type + "' and @forme='" + code_forme + "' and @position='1']");
 
-            return node.Attributes["intitule"].InnerText;
+            if (node == null)
+            {
+                MessageBox.Show("Cette forme n'existe pas. Veuillez choisir une autre forme à créer.", "Forme invalide", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                Application.Exit();
+                return null;
+            }
+            else return node.Attributes["intitule"].InnerText;
         }
 
         public static void center_control(Control to_center)

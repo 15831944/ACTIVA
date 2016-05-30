@@ -258,6 +258,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.XmlObsCodesGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.splitContainer6 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer9 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer28 = new System.Windows.Forms.SplitContainer();
+            this.label61 = new System.Windows.Forms.Label();
+            this.XmlObsCodeLieGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.XmlCaracSplit = new System.Windows.Forms.SplitContainer();
             this.label7 = new System.Windows.Forms.Label();
             this.XmlObsCaracGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
@@ -477,6 +481,13 @@
             this.splitContainer6.Panel1.SuspendLayout();
             this.splitContainer6.Panel2.SuspendLayout();
             this.splitContainer6.SuspendLayout();
+            this.splitContainer9.Panel1.SuspendLayout();
+            this.splitContainer9.Panel2.SuspendLayout();
+            this.splitContainer9.SuspendLayout();
+            this.splitContainer28.Panel1.SuspendLayout();
+            this.splitContainer28.Panel2.SuspendLayout();
+            this.splitContainer28.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.XmlObsCodeLieGrid)).BeginInit();
             this.XmlCaracSplit.Panel1.SuspendLayout();
             this.XmlCaracSplit.Panel2.SuspendLayout();
             this.XmlCaracSplit.SuspendLayout();
@@ -751,10 +762,11 @@
             // 
             // virtual_kb1
             // 
-            this.virtual_kb1.Location = new System.Drawing.Point(47, 6);
+            this.virtual_kb1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.virtual_kb1.Location = new System.Drawing.Point(0, 0);
             this.virtual_kb1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.virtual_kb1.Name = "virtual_kb1";
-            this.virtual_kb1.Size = new System.Drawing.Size(915, 250);
+            this.virtual_kb1.Size = new System.Drawing.Size(1091, 286);
             this.virtual_kb1.TabIndex = 0;
             // 
             // ChoiceTab
@@ -791,10 +803,11 @@
             // 
             // date_selector1
             // 
-            this.date_selector1.Location = new System.Drawing.Point(5, 33);
+            this.date_selector1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.date_selector1.Location = new System.Drawing.Point(0, 0);
             this.date_selector1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.date_selector1.Name = "date_selector1";
-            this.date_selector1.Size = new System.Drawing.Size(1004, 205);
+            this.date_selector1.Size = new System.Drawing.Size(1091, 286);
             this.date_selector1.TabIndex = 0;
             // 
             // SectionTab
@@ -1108,8 +1121,6 @@
             this.InputPreviewTb.ReadOnly = true;
             this.InputPreviewTb.Size = new System.Drawing.Size(979, 26);
             this.InputPreviewTb.TabIndex = 4;
-            this.InputPreviewTb.Enter += new System.EventHandler(this.InputPreviewTb_Enter);
-            this.InputPreviewTb.Leave += new System.EventHandler(this.InputPreviewTb_Leave);
             // 
             // MainDockingTab
             // 
@@ -1564,7 +1575,7 @@
             this.TypeOuvrageGb.ForeColor = System.Drawing.SystemColors.Highlight;
             this.TypeOuvrageGb.Location = new System.Drawing.Point(3, 1);
             this.TypeOuvrageGb.Name = "TypeOuvrageGb";
-            this.TypeOuvrageGb.Size = new System.Drawing.Size(391, 98);
+            this.TypeOuvrageGb.Size = new System.Drawing.Size(466, 98);
             this.TypeOuvrageGb.TabIndex = 3;
             this.TypeOuvrageGb.TabStop = false;
             this.TypeOuvrageGb.Text = "Type d\'ouvrages affichés";
@@ -1572,9 +1583,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::ACTIVA_Module_1.Properties.Resources.tri;
-            this.pictureBox4.Location = new System.Drawing.Point(17, 35);
+            this.pictureBox4.Location = new System.Drawing.Point(17, 31);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox4.Size = new System.Drawing.Size(51, 45);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
@@ -1586,7 +1597,7 @@
             this.cb_regard.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_regard.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_regard.ForeColor = System.Drawing.Color.DimGray;
-            this.cb_regard.Location = new System.Drawing.Point(302, 45);
+            this.cb_regard.Location = new System.Drawing.Point(365, 45);
             this.cb_regard.Name = "cb_regard";
             this.cb_regard.Size = new System.Drawing.Size(86, 21);
             this.cb_regard.TabIndex = 2;
@@ -1601,7 +1612,7 @@
             this.cb_branchement.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_branchement.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_branchement.ForeColor = System.Drawing.Color.DimGray;
-            this.cb_branchement.Location = new System.Drawing.Point(177, 45);
+            this.cb_branchement.Location = new System.Drawing.Point(215, 45);
             this.cb_branchement.Name = "cb_branchement";
             this.cb_branchement.Size = new System.Drawing.Size(126, 21);
             this.cb_branchement.TabIndex = 1;
@@ -1616,7 +1627,7 @@
             this.cb_troncon.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_troncon.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_troncon.ForeColor = System.Drawing.Color.DimGray;
-            this.cb_troncon.Location = new System.Drawing.Point(75, 45);
+            this.cb_troncon.Location = new System.Drawing.Point(87, 45);
             this.cb_troncon.Name = "cb_troncon";
             this.cb_troncon.Size = new System.Drawing.Size(91, 21);
             this.cb_troncon.TabIndex = 0;
@@ -1635,7 +1646,7 @@
             this.groupBox6.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox6.Location = new System.Drawing.Point(3, 109);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(391, 104);
+            this.groupBox6.Size = new System.Drawing.Size(466, 104);
             this.groupBox6.TabIndex = 4;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Informations de l\'ouvrage sélectionné";
@@ -1643,9 +1654,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::ACTIVA_Module_1.Properties.Resources.infos;
-            this.pictureBox3.Location = new System.Drawing.Point(17, 39);
+            this.pictureBox3.Location = new System.Drawing.Point(17, 36);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.Size = new System.Drawing.Size(51, 45);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
@@ -1675,7 +1686,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.DimGray;
-            this.label15.Location = new System.Drawing.Point(72, 68);
+            this.label15.Location = new System.Drawing.Point(84, 68);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(165, 16);
             this.label15.TabIndex = 1;
@@ -1686,7 +1697,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.DimGray;
-            this.label14.Location = new System.Drawing.Point(72, 33);
+            this.label14.Location = new System.Drawing.Point(83, 33);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(130, 16);
             this.label14.TabIndex = 0;
@@ -1717,7 +1728,7 @@
             this.groupBox10.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox10.Location = new System.Drawing.Point(2, 100);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(390, 175);
+            this.groupBox10.Size = new System.Drawing.Size(467, 175);
             this.groupBox10.TabIndex = 15;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Personalisation de l\'en-tête";
@@ -1727,13 +1738,14 @@
             this.SaveReportParamBt.BackColor = System.Drawing.SystemColors.Control;
             this.SaveReportParamBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
             this.SaveReportParamBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.SaveReportParamBt.Location = new System.Drawing.Point(276, 116);
+            this.SaveReportParamBt.Location = new System.Drawing.Point(337, 115);
             this.SaveReportParamBt.Name = "SaveReportParamBt";
-            this.SaveReportParamBt.Size = new System.Drawing.Size(108, 43);
+            this.SaveReportParamBt.Size = new System.Drawing.Size(124, 29);
             this.SaveReportParamBt.TabIndex = 5;
-            this.SaveReportParamBt.Text = "Enregistre";
+            this.SaveReportParamBt.Text = "Enregistrer";
             this.SaveReportParamBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.SaveReportParamBt.UseVisualStyleBackColor = true;
+            this.SaveReportParamBt.Click += new System.EventHandler(this.SaveReportParamBt_Click_1);
             // 
             // label29
             // 
@@ -1763,15 +1775,15 @@
             this.ReportTxtTb.Location = new System.Drawing.Point(15, 100);
             this.ReportTxtTb.Multiline = true;
             this.ReportTxtTb.Name = "ReportTxtTb";
-            this.ReportTxtTb.Size = new System.Drawing.Size(255, 59);
+            this.ReportTxtTb.Size = new System.Drawing.Size(316, 59);
             this.ReportTxtTb.TabIndex = 2;
             // 
             // ReportImgPb
             // 
             this.ReportImgPb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ReportImgPb.Location = new System.Drawing.Point(289, 24);
+            this.ReportImgPb.Location = new System.Drawing.Point(375, 34);
             this.ReportImgPb.Name = "ReportImgPb";
-            this.ReportImgPb.Size = new System.Drawing.Size(60, 60);
+            this.ReportImgPb.Size = new System.Drawing.Size(51, 45);
             this.ReportImgPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ReportImgPb.TabIndex = 1;
             this.ReportImgPb.TabStop = false;
@@ -1781,7 +1793,7 @@
             this.ReportImgTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReportImgTb.Location = new System.Drawing.Point(15, 47);
             this.ReportImgTb.Name = "ReportImgTb";
-            this.ReportImgTb.Size = new System.Drawing.Size(255, 23);
+            this.ReportImgTb.Size = new System.Drawing.Size(316, 23);
             this.ReportImgTb.TabIndex = 0;
             // 
             // groupBox5
@@ -1794,7 +1806,7 @@
             this.groupBox5.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox5.Location = new System.Drawing.Point(2, 6);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(390, 88);
+            this.groupBox5.Size = new System.Drawing.Size(467, 88);
             this.groupBox5.TabIndex = 8;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Parties du rapport à afficher";
@@ -1802,9 +1814,9 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::ACTIVA_Module_1.Properties.Resources.rapport;
-            this.pictureBox10.Location = new System.Drawing.Point(36, 31);
+            this.pictureBox10.Location = new System.Drawing.Point(15, 28);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox10.Size = new System.Drawing.Size(51, 45);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 6;
             this.pictureBox10.TabStop = false;
@@ -1815,7 +1827,7 @@
             this.SyntCb.Checked = true;
             this.SyntCb.CheckState = System.Windows.Forms.CheckState.Checked;
             this.SyntCb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SyntCb.Location = new System.Drawing.Point(401, 39);
+            this.SyntCb.Location = new System.Drawing.Point(361, 39);
             this.SyntCb.Name = "SyntCb";
             this.SyntCb.Size = new System.Drawing.Size(91, 21);
             this.SyntCb.TabIndex = 5;
@@ -1828,7 +1840,7 @@
             this.ObsCb.Checked = true;
             this.ObsCb.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ObsCb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ObsCb.Location = new System.Drawing.Point(260, 39);
+            this.ObsCb.Location = new System.Drawing.Point(214, 39);
             this.ObsCb.Name = "ObsCb";
             this.ObsCb.Size = new System.Drawing.Size(117, 21);
             this.ObsCb.TabIndex = 4;
@@ -1841,7 +1853,7 @@
             this.IdCb.Checked = true;
             this.IdCb.CheckState = System.Windows.Forms.CheckState.Checked;
             this.IdCb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IdCb.Location = new System.Drawing.Point(114, 39);
+            this.IdCb.Location = new System.Drawing.Point(77, 39);
             this.IdCb.Name = "IdCb";
             this.IdCb.Size = new System.Drawing.Size(110, 21);
             this.IdCb.TabIndex = 3;
@@ -1865,13 +1877,14 @@
             this.GenerateReportBt.ForeColor = System.Drawing.Color.Black;
             this.GenerateReportBt.Image = global::ACTIVA_Module_1.Properties.Resources.export16;
             this.GenerateReportBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GenerateReportBt.Location = new System.Drawing.Point(214, 281);
+            this.GenerateReportBt.Location = new System.Drawing.Point(291, 283);
             this.GenerateReportBt.Name = "GenerateReportBt";
             this.GenerateReportBt.Size = new System.Drawing.Size(172, 25);
             this.GenerateReportBt.TabIndex = 14;
             this.GenerateReportBt.Text = "Génération de rapport";
             this.GenerateReportBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.GenerateReportBt.UseVisualStyleBackColor = true;
+            this.GenerateReportBt.Click += new System.EventHandler(this.GenerateReportBt_Click);
             // 
             // AutocadTab
             // 
@@ -1895,7 +1908,7 @@
             this.groupBox13.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox13.Location = new System.Drawing.Point(3, 19);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(389, 87);
+            this.groupBox13.Size = new System.Drawing.Size(466, 116);
             this.groupBox13.TabIndex = 9;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Version d\'AutoCAD installée sur le poste";
@@ -1903,9 +1916,9 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::ACTIVA_Module_1.Properties.Resources.autocad;
-            this.pictureBox9.Location = new System.Drawing.Point(26, 31);
+            this.pictureBox9.Location = new System.Drawing.Point(26, 46);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox9.Size = new System.Drawing.Size(51, 45);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 6;
             this.pictureBox9.TabStop = false;
@@ -1916,7 +1929,7 @@
             this.V2008Cb.Checked = true;
             this.V2008Cb.CheckState = System.Windows.Forms.CheckState.Checked;
             this.V2008Cb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.V2008Cb.Location = new System.Drawing.Point(301, 39);
+            this.V2008Cb.Location = new System.Drawing.Point(372, 61);
             this.V2008Cb.Name = "V2008Cb";
             this.V2008Cb.Size = new System.Drawing.Size(62, 21);
             this.V2008Cb.TabIndex = 5;
@@ -1927,7 +1940,7 @@
             // 
             this.V2007Cb.AutoSize = true;
             this.V2007Cb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.V2007Cb.Location = new System.Drawing.Point(199, 39);
+            this.V2007Cb.Location = new System.Drawing.Point(240, 61);
             this.V2007Cb.Name = "V2007Cb";
             this.V2007Cb.Size = new System.Drawing.Size(62, 21);
             this.V2007Cb.TabIndex = 4;
@@ -1938,7 +1951,7 @@
             // 
             this.V2006Cb.AutoSize = true;
             this.V2006Cb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.V2006Cb.Location = new System.Drawing.Point(99, 39);
+            this.V2006Cb.Location = new System.Drawing.Point(108, 61);
             this.V2006Cb.Name = "V2006Cb";
             this.V2006Cb.Size = new System.Drawing.Size(62, 21);
             this.V2006Cb.TabIndex = 3;
@@ -1949,12 +1962,13 @@
             // 
             this.AutocadGenerateBt.BackColor = System.Drawing.SystemColors.Control;
             this.AutocadGenerateBt.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AutocadGenerateBt.Location = new System.Drawing.Point(86, 121);
+            this.AutocadGenerateBt.Location = new System.Drawing.Point(120, 141);
             this.AutocadGenerateBt.Name = "AutocadGenerateBt";
             this.AutocadGenerateBt.Size = new System.Drawing.Size(229, 29);
             this.AutocadGenerateBt.TabIndex = 6;
             this.AutocadGenerateBt.Text = "Générer le rapport AutoCAD";
             this.AutocadGenerateBt.UseVisualStyleBackColor = true;
+            this.AutocadGenerateBt.Click += new System.EventHandler(this.AutocadGenerateBt_Click);
             // 
             // AboutTab
             // 
@@ -1980,7 +1994,7 @@
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(14, 72);
+            this.textBox1.Location = new System.Drawing.Point(10, 72);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(378, 44);
@@ -1992,7 +2006,7 @@
             // 
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(148, 282);
+            this.richTextBox1.Location = new System.Drawing.Point(149, 282);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(193, 109);
             this.richTextBox1.TabIndex = 14;
@@ -2031,7 +2045,7 @@
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.Tomato;
-            this.label27.Location = new System.Drawing.Point(144, 55);
+            this.label27.Location = new System.Drawing.Point(153, 55);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(158, 16);
             this.label27.TabIndex = 8;
@@ -2042,7 +2056,7 @@
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Lucida Sans Unicode", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label55.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label55.Location = new System.Drawing.Point(140, 16);
+            this.label55.Location = new System.Drawing.Point(149, 16);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(167, 48);
             this.label55.TabIndex = 7;
@@ -2051,7 +2065,7 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::ACTIVA_Module_1.Properties.Resources.SR;
-            this.pictureBox11.Location = new System.Drawing.Point(123, 174);
+            this.pictureBox11.Location = new System.Drawing.Point(121, 174);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(241, 102);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2187,11 +2201,11 @@
             this.CloneOuvrageBt.ForeColor = System.Drawing.Color.Black;
             this.CloneOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.copy1_16;
             this.CloneOuvrageBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CloneOuvrageBt.Location = new System.Drawing.Point(337, 2);
+            this.CloneOuvrageBt.Location = new System.Drawing.Point(334, 2);
             this.CloneOuvrageBt.Name = "CloneOuvrageBt";
-            this.CloneOuvrageBt.Size = new System.Drawing.Size(181, 26);
+            this.CloneOuvrageBt.Size = new System.Drawing.Size(169, 26);
             this.CloneOuvrageBt.TabIndex = 12;
-            this.CloneOuvrageBt.Text = "Dupliquer l\'inspectation";
+            this.CloneOuvrageBt.Text = "Dupliquer l\'inspection";
             this.CloneOuvrageBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CloneOuvrageBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CloneOuvrageBt.UseVisualStyleBackColor = true;
@@ -2331,7 +2345,7 @@
             this.splitContainer4.Panel2.Controls.Add(this.IdObligatoirePb);
             this.splitContainer4.Panel2MinSize = 18;
             this.splitContainer4.Size = new System.Drawing.Size(768, 354);
-            this.splitContainer4.SplitterDistance = 334;
+            this.splitContainer4.SplitterDistance = 330;
             this.splitContainer4.SplitterWidth = 2;
             this.splitContainer4.TabIndex = 1;
             // 
@@ -2344,7 +2358,7 @@
             this.Identification_Flp.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Identification_Flp.Location = new System.Drawing.Point(0, 0);
             this.Identification_Flp.Name = "Identification_Flp";
-            this.Identification_Flp.Size = new System.Drawing.Size(768, 334);
+            this.Identification_Flp.Size = new System.Drawing.Size(768, 330);
             this.Identification_Flp.TabIndex = 0;
             // 
             // label4
@@ -3123,9 +3137,10 @@
             // 
             // label52
             // 
+            this.label52.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label52.AutoSize = true;
             this.label52.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label52.Location = new System.Drawing.Point(903, 1);
+            this.label52.Location = new System.Drawing.Point(903, 3);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(152, 16);
             this.label52.TabIndex = 15;
@@ -3133,10 +3148,11 @@
             // 
             // XmlObsCodeDelValueBt
             // 
+            this.XmlObsCodeDelValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.XmlObsCodeDelValueBt.BackColor = System.Drawing.SystemColors.Control;
             this.XmlObsCodeDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XmlObsCodeDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
-            this.XmlObsCodeDelValueBt.Location = new System.Drawing.Point(1061, -1);
+            this.XmlObsCodeDelValueBt.Location = new System.Drawing.Point(1059, 1);
             this.XmlObsCodeDelValueBt.Name = "XmlObsCodeDelValueBt";
             this.XmlObsCodeDelValueBt.Size = new System.Drawing.Size(26, 22);
             this.XmlObsCodeDelValueBt.TabIndex = 14;
@@ -3147,7 +3163,7 @@
             this.label53.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label53.AutoSize = true;
             this.label53.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label53.Location = new System.Drawing.Point(581, 3);
+            this.label53.Location = new System.Drawing.Point(581, 1);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(132, 16);
             this.label53.TabIndex = 13;
@@ -3169,7 +3185,7 @@
             // 
             this.XmlObsCodeAddValueTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.XmlObsCodeAddValueTb.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlObsCodeAddValueTb.Location = new System.Drawing.Point(719, -1);
+            this.XmlObsCodeAddValueTb.Location = new System.Drawing.Point(719, 1);
             this.XmlObsCodeAddValueTb.Name = "XmlObsCodeAddValueTb";
             this.XmlObsCodeAddValueTb.Size = new System.Drawing.Size(146, 20);
             this.XmlObsCodeAddValueTb.TabIndex = 11;
@@ -3187,7 +3203,7 @@
             // 
             // XmlObsCodesGrid
             // 
-            this.XmlObsCodesGrid.ColumnInfo = "10,1,0,0,0,75,Columns:";
+            this.XmlObsCodesGrid.ColumnInfo = resources.GetString("XmlObsCodesGrid.ColumnInfo");
             this.XmlObsCodesGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.XmlObsCodesGrid.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XmlObsCodesGrid.Location = new System.Drawing.Point(0, 0);
@@ -3206,14 +3222,75 @@
             // 
             // splitContainer6.Panel1
             // 
-            this.splitContainer6.Panel1.Controls.Add(this.XmlCaracSplit);
+            this.splitContainer6.Panel1.Controls.Add(this.splitContainer9);
             // 
             // splitContainer6.Panel2
             // 
             this.splitContainer6.Panel2.Controls.Add(this.XmlItemsSplit);
             this.splitContainer6.Size = new System.Drawing.Size(1089, 239);
-            this.splitContainer6.SplitterDistance = 102;
+            this.splitContainer6.SplitterDistance = 157;
             this.splitContainer6.TabIndex = 1;
+            // 
+            // splitContainer9
+            // 
+            this.splitContainer9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer9.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer9.Name = "splitContainer9";
+            this.splitContainer9.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer9.Panel1
+            // 
+            this.splitContainer9.Panel1.Controls.Add(this.splitContainer28);
+            // 
+            // splitContainer9.Panel2
+            // 
+            this.splitContainer9.Panel2.Controls.Add(this.XmlCaracSplit);
+            this.splitContainer9.Size = new System.Drawing.Size(1089, 157);
+            this.splitContainer9.SplitterDistance = 45;
+            this.splitContainer9.TabIndex = 0;
+            // 
+            // splitContainer28
+            // 
+            this.splitContainer28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer28.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer28.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer28.Name = "splitContainer28";
+            this.splitContainer28.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer28.Panel1
+            // 
+            this.splitContainer28.Panel1.Controls.Add(this.label61);
+            this.splitContainer28.Panel1MinSize = 20;
+            // 
+            // splitContainer28.Panel2
+            // 
+            this.splitContainer28.Panel2.Controls.Add(this.XmlObsCodeLieGrid);
+            this.splitContainer28.Size = new System.Drawing.Size(1089, 45);
+            this.splitContainer28.SplitterDistance = 20;
+            this.splitContainer28.TabIndex = 2;
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label61.Location = new System.Drawing.Point(8, 2);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(85, 16);
+            this.label61.TabIndex = 1;
+            this.label61.Text = "Codes Liés";
+            // 
+            // XmlObsCodeLieGrid
+            // 
+            this.XmlObsCodeLieGrid.ColumnInfo = "10,1,0,0,0,95,Columns:";
+            this.XmlObsCodeLieGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.XmlObsCodeLieGrid.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsCodeLieGrid.Location = new System.Drawing.Point(0, 0);
+            this.XmlObsCodeLieGrid.Name = "XmlObsCodeLieGrid";
+            this.XmlObsCodeLieGrid.Rows.DefaultSize = 15;
+            this.XmlObsCodeLieGrid.Size = new System.Drawing.Size(1089, 25);
+            this.XmlObsCodeLieGrid.StyleInfo = resources.GetString("XmlObsCodeLieGrid.StyleInfo");
+            this.XmlObsCodeLieGrid.TabIndex = 1;
             // 
             // XmlCaracSplit
             // 
@@ -3231,9 +3308,9 @@
             // XmlCaracSplit.Panel2
             // 
             this.XmlCaracSplit.Panel2.Controls.Add(this.XmlObsCaracGrid);
-            this.XmlCaracSplit.Size = new System.Drawing.Size(1089, 102);
+            this.XmlCaracSplit.Size = new System.Drawing.Size(1089, 108);
             this.XmlCaracSplit.SplitterDistance = 20;
-            this.XmlCaracSplit.TabIndex = 1;
+            this.XmlCaracSplit.TabIndex = 2;
             // 
             // label7
             // 
@@ -3248,13 +3325,13 @@
             // 
             // XmlObsCaracGrid
             // 
-            this.XmlObsCaracGrid.ColumnInfo = "10,1,0,0,0,75,Columns:";
+            this.XmlObsCaracGrid.ColumnInfo = resources.GetString("XmlObsCaracGrid.ColumnInfo");
             this.XmlObsCaracGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.XmlObsCaracGrid.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XmlObsCaracGrid.Location = new System.Drawing.Point(0, 0);
             this.XmlObsCaracGrid.Name = "XmlObsCaracGrid";
             this.XmlObsCaracGrid.Rows.DefaultSize = 15;
-            this.XmlObsCaracGrid.Size = new System.Drawing.Size(1089, 78);
+            this.XmlObsCaracGrid.Size = new System.Drawing.Size(1089, 84);
             this.XmlObsCaracGrid.StyleInfo = resources.GetString("XmlObsCaracGrid.StyleInfo");
             this.XmlObsCaracGrid.TabIndex = 1;
             // 
@@ -3279,7 +3356,7 @@
             // XmlItemsSplit.Panel2
             // 
             this.XmlItemsSplit.Panel2.Controls.Add(this.XmlObsItemGrid);
-            this.XmlItemsSplit.Size = new System.Drawing.Size(1089, 133);
+            this.XmlItemsSplit.Size = new System.Drawing.Size(1089, 78);
             this.XmlItemsSplit.SplitterDistance = 20;
             this.XmlItemsSplit.TabIndex = 1;
             // 
@@ -3351,13 +3428,13 @@
             // 
             // XmlObsItemGrid
             // 
-            this.XmlObsItemGrid.ColumnInfo = "10,1,0,0,0,75,Columns:";
+            this.XmlObsItemGrid.ColumnInfo = resources.GetString("XmlObsItemGrid.ColumnInfo");
             this.XmlObsItemGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.XmlObsItemGrid.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XmlObsItemGrid.Location = new System.Drawing.Point(0, 0);
             this.XmlObsItemGrid.Name = "XmlObsItemGrid";
             this.XmlObsItemGrid.Rows.DefaultSize = 15;
-            this.XmlObsItemGrid.Size = new System.Drawing.Size(1089, 109);
+            this.XmlObsItemGrid.Size = new System.Drawing.Size(1089, 54);
             this.XmlObsItemGrid.StyleInfo = resources.GetString("XmlObsItemGrid.StyleInfo");
             this.XmlObsItemGrid.TabIndex = 1;
             // 
@@ -3549,8 +3626,7 @@
             // 
             // XmlIdCodeGrid
             // 
-            this.XmlIdCodeGrid.ColumnInfo = "10,1,0,0,0,75,Columns:";
-            this.XmlIdCodeGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.XmlIdCodeGrid.ColumnInfo = resources.GetString("XmlIdCodeGrid.ColumnInfo");
             this.XmlIdCodeGrid.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XmlIdCodeGrid.Location = new System.Drawing.Point(0, 0);
             this.XmlIdCodeGrid.Name = "XmlIdCodeGrid";
@@ -3652,7 +3728,7 @@
             // 
             // XmlIdItemGrid
             // 
-            this.XmlIdItemGrid.ColumnInfo = "10,1,0,0,0,75,Columns:";
+            this.XmlIdItemGrid.ColumnInfo = resources.GetString("XmlIdItemGrid.ColumnInfo");
             this.XmlIdItemGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.XmlIdItemGrid.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XmlIdItemGrid.Location = new System.Drawing.Point(0, 0);
@@ -3825,7 +3901,7 @@
             // 
             // XmlSectionGrid
             // 
-            this.XmlSectionGrid.ColumnInfo = "10,1,0,0,0,75,Columns:";
+            this.XmlSectionGrid.ColumnInfo = resources.GetString("XmlSectionGrid.ColumnInfo");
             this.XmlSectionGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.XmlSectionGrid.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XmlSectionGrid.Location = new System.Drawing.Point(0, 0);
@@ -3927,7 +4003,7 @@
             // 
             // XmlHeureGrid
             // 
-            this.XmlHeureGrid.ColumnInfo = "10,1,0,0,0,75,Columns:";
+            this.XmlHeureGrid.ColumnInfo = resources.GetString("XmlHeureGrid.ColumnInfo");
             this.XmlHeureGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.XmlHeureGrid.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XmlHeureGrid.Location = new System.Drawing.Point(0, 0);
@@ -4086,7 +4162,7 @@
             // 
             // XmlAutocadGrid
             // 
-            this.XmlAutocadGrid.ColumnInfo = "10,1,0,0,0,75,Columns:";
+            this.XmlAutocadGrid.ColumnInfo = resources.GetString("XmlAutocadGrid.ColumnInfo");
             this.XmlAutocadGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.XmlAutocadGrid.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XmlAutocadGrid.Location = new System.Drawing.Point(0, 0);
@@ -4128,7 +4204,7 @@
             // 
             // XmlAutocadItemGrid
             // 
-            this.XmlAutocadItemGrid.ColumnInfo = "10,1,0,0,0,75,Columns:";
+            this.XmlAutocadItemGrid.ColumnInfo = resources.GetString("XmlAutocadItemGrid.ColumnInfo");
             this.XmlAutocadItemGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.XmlAutocadItemGrid.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XmlAutocadItemGrid.Location = new System.Drawing.Point(0, 0);
@@ -4239,7 +4315,7 @@
             this.label39.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label39.AutoSize = true;
             this.label39.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label39.Location = new System.Drawing.Point(938, 3);
+            this.label39.Location = new System.Drawing.Point(899, 1);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(152, 16);
             this.label39.TabIndex = 5;
@@ -4262,7 +4338,7 @@
             this.label38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label38.AutoSize = true;
             this.label38.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label38.Location = new System.Drawing.Point(647, 3);
+            this.label38.Location = new System.Drawing.Point(577, 1);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(132, 16);
             this.label38.TabIndex = 3;
@@ -4274,7 +4350,7 @@
             this.XmlPonctuelAddValueBt.BackColor = System.Drawing.SystemColors.Control;
             this.XmlPonctuelAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XmlPonctuelAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.XmlPonctuelAddValueBt.Location = new System.Drawing.Point(899, -2);
+            this.XmlPonctuelAddValueBt.Location = new System.Drawing.Point(867, -2);
             this.XmlPonctuelAddValueBt.Name = "XmlPonctuelAddValueBt";
             this.XmlPonctuelAddValueBt.Size = new System.Drawing.Size(26, 22);
             this.XmlPonctuelAddValueBt.TabIndex = 2;
@@ -4284,7 +4360,7 @@
             // 
             this.XmlPonctuelAddValueTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.XmlPonctuelAddValueTb.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlPonctuelAddValueTb.Location = new System.Drawing.Point(750, 0);
+            this.XmlPonctuelAddValueTb.Location = new System.Drawing.Point(715, -2);
             this.XmlPonctuelAddValueTb.Name = "XmlPonctuelAddValueTb";
             this.XmlPonctuelAddValueTb.Size = new System.Drawing.Size(146, 20);
             this.XmlPonctuelAddValueTb.TabIndex = 1;
@@ -4360,7 +4436,7 @@
             this.label40.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label40.AutoSize = true;
             this.label40.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label40.Location = new System.Drawing.Point(938, 2);
+            this.label40.Location = new System.Drawing.Point(899, 1);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(152, 16);
             this.label40.TabIndex = 10;
@@ -4383,7 +4459,7 @@
             this.label41.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label41.AutoSize = true;
             this.label41.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label41.Location = new System.Drawing.Point(647, 2);
+            this.label41.Location = new System.Drawing.Point(577, 3);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(132, 16);
             this.label41.TabIndex = 8;
@@ -4395,7 +4471,7 @@
             this.XmlLineaireAddValueBt.BackColor = System.Drawing.SystemColors.Control;
             this.XmlLineaireAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XmlLineaireAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.XmlLineaireAddValueBt.Location = new System.Drawing.Point(899, -3);
+            this.XmlLineaireAddValueBt.Location = new System.Drawing.Point(867, -1);
             this.XmlLineaireAddValueBt.Name = "XmlLineaireAddValueBt";
             this.XmlLineaireAddValueBt.Size = new System.Drawing.Size(26, 22);
             this.XmlLineaireAddValueBt.TabIndex = 7;
@@ -4405,7 +4481,7 @@
             // 
             this.XmlLineaireAddValueTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.XmlLineaireAddValueTb.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlLineaireAddValueTb.Location = new System.Drawing.Point(750, -1);
+            this.XmlLineaireAddValueTb.Location = new System.Drawing.Point(715, -1);
             this.XmlLineaireAddValueTb.Name = "XmlLineaireAddValueTb";
             this.XmlLineaireAddValueTb.Size = new System.Drawing.Size(146, 20);
             this.XmlLineaireAddValueTb.TabIndex = 6;
@@ -4463,7 +4539,7 @@
             this.label42.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label42.AutoSize = true;
             this.label42.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label42.Location = new System.Drawing.Point(938, 3);
+            this.label42.Location = new System.Drawing.Point(899, 3);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(152, 16);
             this.label42.TabIndex = 10;
@@ -4486,7 +4562,7 @@
             this.label43.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label43.AutoSize = true;
             this.label43.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label43.Location = new System.Drawing.Point(647, 3);
+            this.label43.Location = new System.Drawing.Point(577, 3);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(132, 16);
             this.label43.TabIndex = 8;
@@ -4498,7 +4574,7 @@
             this.XmlSurfaciqueAddValueBt.BackColor = System.Drawing.SystemColors.Control;
             this.XmlSurfaciqueAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XmlSurfaciqueAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.XmlSurfaciqueAddValueBt.Location = new System.Drawing.Point(899, -2);
+            this.XmlSurfaciqueAddValueBt.Location = new System.Drawing.Point(867, -1);
             this.XmlSurfaciqueAddValueBt.Name = "XmlSurfaciqueAddValueBt";
             this.XmlSurfaciqueAddValueBt.Size = new System.Drawing.Size(26, 22);
             this.XmlSurfaciqueAddValueBt.TabIndex = 7;
@@ -4508,7 +4584,7 @@
             // 
             this.XmlSurfaciqueAddValueTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.XmlSurfaciqueAddValueTb.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlSurfaciqueAddValueTb.Location = new System.Drawing.Point(750, 0);
+            this.XmlSurfaciqueAddValueTb.Location = new System.Drawing.Point(715, 0);
             this.XmlSurfaciqueAddValueTb.Name = "XmlSurfaciqueAddValueTb";
             this.XmlSurfaciqueAddValueTb.Size = new System.Drawing.Size(146, 20);
             this.XmlSurfaciqueAddValueTb.TabIndex = 6;
@@ -4627,6 +4703,7 @@
             this.Text = "ACTIVA - Module de saisie";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
             this.Resize += new System.EventHandler(this.MainForm_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).EndInit();
             this.SaisieInputSplit.Panel2.ResumeLayout(false);
@@ -4764,6 +4841,14 @@
             this.splitContainer6.Panel1.ResumeLayout(false);
             this.splitContainer6.Panel2.ResumeLayout(false);
             this.splitContainer6.ResumeLayout(false);
+            this.splitContainer9.Panel1.ResumeLayout(false);
+            this.splitContainer9.Panel2.ResumeLayout(false);
+            this.splitContainer9.ResumeLayout(false);
+            this.splitContainer28.Panel1.ResumeLayout(false);
+            this.splitContainer28.Panel1.PerformLayout();
+            this.splitContainer28.Panel2.ResumeLayout(false);
+            this.splitContainer28.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.XmlObsCodeLieGrid)).EndInit();
             this.XmlCaracSplit.Panel1.ResumeLayout(false);
             this.XmlCaracSplit.Panel1.PerformLayout();
             this.XmlCaracSplit.Panel2.ResumeLayout(false);
@@ -5079,26 +5164,7 @@
         public System.Windows.Forms.ToolStripLabel toolStripLabel2;
         public System.Windows.Forms.ToolStripLabel XmlObsStripLabel;
         public System.Windows.Forms.SplitContainer splitContainer5;
-        public System.Windows.Forms.SplitContainer XmlCodesSplit;
-        public System.Windows.Forms.Label label52;
-        public System.Windows.Forms.Button XmlObsCodeDelValueBt;
-        public System.Windows.Forms.Label label53;
-        public System.Windows.Forms.Button XmlObsCodeAddValueBt;
-        public System.Windows.Forms.TextBox XmlObsCodeAddValueTb;
-        public System.Windows.Forms.Label label6;
-        public C1.Win.C1FlexGrid.C1FlexGrid XmlObsCodesGrid;
         public System.Windows.Forms.SplitContainer splitContainer6;
-        public System.Windows.Forms.SplitContainer XmlCaracSplit;
-        public System.Windows.Forms.Label label7;
-        public C1.Win.C1FlexGrid.C1FlexGrid XmlObsCaracGrid;
-        public System.Windows.Forms.SplitContainer XmlItemsSplit;
-        public System.Windows.Forms.Label label56;
-        public System.Windows.Forms.Button XmlObsItemDelValueBt;
-        public System.Windows.Forms.Label label57;
-        public System.Windows.Forms.Button XmlObsItemAddValueBt;
-        public System.Windows.Forms.TextBox XmlObsItemAddValueTb;
-        public System.Windows.Forms.Label label8;
-        public C1.Win.C1FlexGrid.C1FlexGrid XmlObsItemGrid;
         public C1.Win.C1Command.C1DockingTabPage XmlIdTab;
         public System.Windows.Forms.SplitContainer splitContainer7;
         public System.Windows.Forms.ToolStrip ToolStripIdCode;
@@ -5220,6 +5286,29 @@
         public C1.Win.C1Command.C1DockingTabPage SchemaTab;
         public System.Windows.Forms.Button EraseAllBt;
         public System.Windows.Forms.TextBox InputPreviewTb;
+        public System.Windows.Forms.SplitContainer XmlCodesSplit;
+        public System.Windows.Forms.Label label52;
+        public System.Windows.Forms.Button XmlObsCodeDelValueBt;
+        public System.Windows.Forms.Label label53;
+        public System.Windows.Forms.Button XmlObsCodeAddValueBt;
+        public System.Windows.Forms.TextBox XmlObsCodeAddValueTb;
+        public System.Windows.Forms.Label label6;
+        public C1.Win.C1FlexGrid.C1FlexGrid XmlObsCodesGrid;
+        private System.Windows.Forms.SplitContainer splitContainer9;
+        public System.Windows.Forms.SplitContainer splitContainer28;
+        public System.Windows.Forms.Label label61;
+        public C1.Win.C1FlexGrid.C1FlexGrid XmlObsCodeLieGrid;
+        public System.Windows.Forms.SplitContainer XmlCaracSplit;
+        public System.Windows.Forms.Label label7;
+        public C1.Win.C1FlexGrid.C1FlexGrid XmlObsCaracGrid;
+        public System.Windows.Forms.SplitContainer XmlItemsSplit;
+        public System.Windows.Forms.Label label56;
+        public System.Windows.Forms.Button XmlObsItemDelValueBt;
+        public System.Windows.Forms.Label label57;
+        public System.Windows.Forms.Button XmlObsItemAddValueBt;
+        public System.Windows.Forms.TextBox XmlObsItemAddValueTb;
+        public System.Windows.Forms.Label label8;
+        public C1.Win.C1FlexGrid.C1FlexGrid XmlObsItemGrid;
     }
 }
 
