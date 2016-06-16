@@ -143,3 +143,4 @@ C:\SRDEV\Projets\ACTIVA - Backup 23-05-2016 - Copie\ACTIVA_Module_1\obj\Debug\AC
 C:\SRDEV\Projets\ACTIVA - Backup 23-05-2016 - Copie\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.exe.licenses
 C:\SRDEV\Projets\ACTIVA - Backup 23-05-2016 - Copie\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.exe.manifest
 C:\SRDEV\Projets\ACTIVA - Backup 23-05-2016 - Copie\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.application
+C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Debug\ACTIVA_Module_1.Renommer_Ouvrage.resources

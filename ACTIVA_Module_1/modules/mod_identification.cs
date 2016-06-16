@@ -81,6 +81,14 @@ namespace ACTIVA_Module_1.modules
             Clear_Identification_Tab(tpbar,flp);
             Get_Groupe_Identification(tpbar);
             Get_Code_Identification(tpbar);
+
+            // Supprimer les parents vides
+            for (int i = 0; i < tpbar.Pages.Count; i++)
+            {
+                if (tpbar.Pages[i].Links.Count == 0)
+                    tpbar.Pages.Remove(tpbar.Pages[i]);
+            }
+
             Init_Fields_Status(tpbar);
 
 
@@ -114,6 +122,7 @@ namespace ACTIVA_Module_1.modules
             XmlNode root;
             XPathNavigator IdItem;
             XPathNavigator IntituleItem;
+            XPathNavigator InspectItem;
           
             root = mod_global.Get_Codes_Id_DocElement();
   
@@ -128,11 +137,15 @@ namespace ACTIVA_Module_1.modules
                 IdItem = item.SelectSingleNode("id");
 
                 IntituleItem = item.SelectSingleNode("intitule");
+                InspectItem = item.SelectSingleNode("inspection");
 
-                C1.Win.C1Command.C1TopicLink link = new C1.Win.C1Command.C1TopicLink();
-                link.Text = string.Concat(IntituleItem.Value, " - ", IdItem.Value);
-                link.Tag = IdItem.Value;
-                tpbar.FindPageByTag(item.GetAttribute("parent", "")).Links.Add(link);
+                if (InspectItem.GetAttribute("corresp", "") == "")
+                {
+                    C1.Win.C1Command.C1TopicLink link = new C1.Win.C1Command.C1TopicLink();
+                    link.Text = string.Concat(IntituleItem.Value, " - ", IdItem.Value);
+                    link.Tag = IdItem.Value;
+                    tpbar.FindPageByTag(item.GetAttribute("parent", "")).Links.Add(link);
+                }
             }
             /* ANCIEN CODE DE NS (remplacé par GB le 16/12/2009)
             XmlNodeList nodeList;
@@ -156,12 +169,12 @@ namespace ACTIVA_Module_1.modules
         public static string Get_Value_Identification(string code_to_get)
         {
             XmlNode node;
-            XmlNode root = mod_inspection.SVF.DocumentElement;
+            XmlNode root = mod_accueil.SVF.DocumentElement;
             string value = string.Empty;
 
             try
             {
-                node = root.SelectSingleNode("/inspection/ouvrage[@nom='" + mod_inspection.OUVRAGE + "']/identifications/code[id='" + code_to_get + "']/valeur");
+                node = root.SelectSingleNode("/inspection/ouvrage[@nom='" + mod_accueil.OUVRAGE + "']/identifications/code[id='" + code_to_get + "']/valeur");
                 value = node.InnerText;
                 return value;
             }
@@ -214,7 +227,7 @@ namespace ACTIVA_Module_1.modules
             XPathNavigator ValItem;
             XPathNavigator IntituleItem;
             XPathNavigator RenseigneItem;
-          
+            XPathNavigator InspectItem;
 
             root = mod_global.Get_Codes_Id_DocElement();
 
@@ -232,22 +245,26 @@ namespace ACTIVA_Module_1.modules
                 ValItem = item.SelectSingleNode("valeur");
                 IntituleItem = item.SelectSingleNode("intitule");
                 RenseigneItem = item.SelectSingleNode("renseigne");
+                InspectItem = item.SelectSingleNode("inspection");
 
-                if (item.GetAttribute("ajoute", "") != "")
-                    ajoute = bool.Parse(item.GetAttribute("ajoute", ""));
+                if (InspectItem.GetAttribute("corresp", "") == "")
+                {
+                    if (item.GetAttribute("ajoute", "") != "")
+                        ajoute = bool.Parse(item.GetAttribute("ajoute", ""));
 
-                string nom_complet = IdItem.Value + " | " + IntituleItem.Value;
+                    string nom_complet = IdItem.Value + " | " + IntituleItem.Value;
 
-                unite = Get_Unite_For_Id_Code(IdItem.Value);
-                if (unite != string.Empty)
-                    nom_complet += " (" + unite + ")";
+                    unite = Get_Unite_For_Id_Code(IdItem.Value);
+                    if (unite != string.Empty)
+                        nom_complet += " (" + unite + ")";
 
-                string value = Get_Value_Identification(IdItem.Value);
+                    string value = Get_Value_Identification(IdItem.Value);
 
-                identification_input id_box = new identification_input(nom_complet, IdItem.Value, value, RenseigneItem.Value, ValItem.GetAttribute("type", ""), ajoute, groupe);
+                    identification_input id_box = new identification_input(nom_complet, IdItem.Value, value, RenseigneItem.Value, ValItem.GetAttribute("type", ""), ajoute, groupe);
 
-                ajoute = false;
-                flp.Controls.Add(id_box);
+                    ajoute = false;
+                    flp.Controls.Add(id_box);
+                }
             }
 
             /* ANCIEN CODE DE NS (remplacé par GB le 16/12/2009)
@@ -287,7 +304,7 @@ namespace ACTIVA_Module_1.modules
 
         public static void Check_Fields_Status(C1TopicPage Tp)
         {
-            XmlNode svfroot = mod_inspection.SVF.DocumentElement;
+            XmlNode svfroot = mod_accueil.SVF.DocumentElement;
             XmlNode idroot = mod_global.Get_Codes_Id_DocElement();
             string value = string.Empty;
             XmlNodeList svfnodelist;
@@ -302,7 +319,7 @@ namespace ACTIVA_Module_1.modules
                     if (idnode.InnerText == "1")
                     {
                         //On verifie que le champ est bien présent dans le SVF
-                        svfnodelist = svfroot.SelectNodes("/inspection/ouvrage[@nom='" + mod_inspection.OUVRAGE + "']/identifications/code[id='" + Tl.Tag.ToString() + "']/valeur");
+                        svfnodelist = svfroot.SelectNodes("/inspection/ouvrage[@nom='" + mod_accueil.OUVRAGE + "']/identifications/code[id='" + Tl.Tag.ToString() + "']/valeur");
                         if (svfnodelist.Count > 0)
                         {
                             //Et que sa valeur n'est pas nulle

@@ -57,7 +57,7 @@ namespace ACTIVA_Module_1.component
                 string delimiter = String.Empty;
                 //mod_global.Focused_Control.Text = String.Empty;
                 string savepath = String.Empty;
-                string savefolder = System.IO.Path.Combine(mod_inspection.SVF_FOLDER, "img");
+                string savefolder = System.IO.Path.Combine(mod_accueil.SVF_FOLDER, "img");
 
                 for (int i = 0; i <= 9; i++)
                 {
@@ -169,7 +169,7 @@ namespace ACTIVA_Module_1.component
                 return;
 
             string picpath = String.Empty;
-            string picfolder = System.IO.Path.Combine(mod_inspection.SVF_FOLDER, "img");
+            string picfolder = System.IO.Path.Combine(mod_accueil.SVF_FOLDER, "img");
 
             int i = 0;
             foreach (string pic in photolist.Split(Char.Parse("|")))
@@ -197,7 +197,7 @@ namespace ACTIVA_Module_1.component
                 string delimiter = String.Empty;
                 //mod_global.Focused_Control.Text = String.Empty;
                 string savepath = String.Empty;
-                string savefolder = System.IO.Path.Combine(mod_inspection.SVF_FOLDER, "img");
+                string savefolder = System.IO.Path.Combine(mod_accueil.SVF_FOLDER, "img");
 
                 PictureBox pb = (PictureBox)PhotoTlp.Controls[9];
                 if (pb.Image != null)

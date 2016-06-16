@@ -91,29 +91,30 @@
             this.EraseAllBt = new System.Windows.Forms.Button();
             this.InputPreviewTb = new System.Windows.Forms.TextBox();
             this.MainDockingTab = new C1.Win.C1Command.C1DockingTab();
-            this.InspectionTab = new C1.Win.C1Command.C1DockingTabPage();
-            this.InspectionSplit = new System.Windows.Forms.SplitContainer();
+            this.AccueilTab = new C1.Win.C1Command.C1DockingTabPage();
+            this.AccueilSplit = new System.Windows.Forms.SplitContainer();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.CloseInspectionBt = new System.Windows.Forms.Button();
+            this.CloseAccueilBt = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.SVFLabel = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.MenuDockingTab = new C1.Win.C1Command.C1DockingTab();
             this.chargementTab = new C1.Win.C1Command.C1DockingTabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.Btn_Exporter = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.OpenSVFButton = new System.Windows.Forms.Button();
             this.openSVFTb = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.Folder_New_Inspection = new System.Windows.Forms.Button();
-            this.NewInspectionBt = new System.Windows.Forms.Button();
-            this.NewInspectionPathTb = new System.Windows.Forms.TextBox();
+            this.Folder_New_Accueil = new System.Windows.Forms.Button();
+            this.NewAccueilBt = new System.Windows.Forms.Button();
+            this.NewAccueilPathTb = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.NewInspectionNameTb = new System.Windows.Forms.TextBox();
+            this.NewAccueilNameTb = new System.Windows.Forms.TextBox();
             this.AddOuvrageGp = new System.Windows.Forms.GroupBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -169,11 +170,29 @@
             this.splitContainer25 = new System.Windows.Forms.SplitContainer();
             this.OuvrageList = new C1.Win.C1List.C1List();
             this.OuvrageToolsPanel = new System.Windows.Forms.Panel();
+            this.RenommerBt = new System.Windows.Forms.Button();
             this.SaveOuvrageOrderBt = new System.Windows.Forms.Button();
             this.DeleteOuvrageBt = new System.Windows.Forms.Button();
             this.OuvrageMoveDownBt = new System.Windows.Forms.Button();
             this.OuvrageMoveUpBt = new System.Windows.Forms.Button();
             this.CloneOuvrageBt = new System.Windows.Forms.Button();
+            this.InspectionTab = new C1.Win.C1Command.C1DockingTabPage();
+            this.splitContainer29 = new System.Windows.Forms.SplitContainer();
+            this.InspectionTopicBar = new C1.Win.C1Command.C1TopicBar();
+            this.splitContainer30 = new System.Windows.Forms.SplitContainer();
+            this.InspectionValidBt = new System.Windows.Forms.Button();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.InspectFormLabel = new System.Windows.Forms.Label();
+            this.splitContainer31 = new System.Windows.Forms.SplitContainer();
+            this.Inspection_Flp = new System.Windows.Forms.FlowLayoutPanel();
+            this.InspectFacultatifTb = new System.Windows.Forms.Label();
+            this.InspectFacultatifPb = new System.Windows.Forms.PictureBox();
+            this.InspectDesactiveTb = new System.Windows.Forms.Label();
+            this.InspectDesactivePb = new System.Windows.Forms.PictureBox();
+            this.InspectDiffereTb = new System.Windows.Forms.Label();
+            this.InspectDifferePb = new System.Windows.Forms.PictureBox();
+            this.InspectObligatoireTb = new System.Windows.Forms.Label();
+            this.InspectObligatoirePb = new System.Windows.Forms.PictureBox();
             this.IdentificationTab = new C1.Win.C1Command.C1DockingTabPage();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.IdentificationTopicBar = new C1.Win.C1Command.C1TopicBar();
@@ -240,39 +259,6 @@
             this.XmlObsRegTb = new System.Windows.Forms.TextBox();
             this.XmlObsCanaTb = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.XmlObsTab = new C1.Win.C1Command.C1DockingTabPage();
-            this.XmlParamSplit = new System.Windows.Forms.SplitContainer();
-            this.ToolStripObsCode = new System.Windows.Forms.ToolStrip();
-            this.XmlObsCanaButton = new System.Windows.Forms.ToolStripButton();
-            this.XmlObsRegButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.XmlObsStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.splitContainer5 = new System.Windows.Forms.SplitContainer();
-            this.XmlCodesSplit = new System.Windows.Forms.SplitContainer();
-            this.label52 = new System.Windows.Forms.Label();
-            this.XmlObsCodeDelValueBt = new System.Windows.Forms.Button();
-            this.label53 = new System.Windows.Forms.Label();
-            this.XmlObsCodeAddValueBt = new System.Windows.Forms.Button();
-            this.XmlObsCodeAddValueTb = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.XmlObsCodesGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.splitContainer6 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer9 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer28 = new System.Windows.Forms.SplitContainer();
-            this.label61 = new System.Windows.Forms.Label();
-            this.XmlObsCodeLieGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.XmlCaracSplit = new System.Windows.Forms.SplitContainer();
-            this.label7 = new System.Windows.Forms.Label();
-            this.XmlObsCaracGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.XmlItemsSplit = new System.Windows.Forms.SplitContainer();
-            this.label56 = new System.Windows.Forms.Label();
-            this.XmlObsItemDelValueBt = new System.Windows.Forms.Button();
-            this.label57 = new System.Windows.Forms.Label();
-            this.XmlObsItemAddValueBt = new System.Windows.Forms.Button();
-            this.XmlObsItemAddValueTb = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.XmlObsItemGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.XmlIdTab = new C1.Win.C1Command.C1DockingTabPage();
             this.splitContainer7 = new System.Windows.Forms.SplitContainer();
             this.ToolStripIdCode = new System.Windows.Forms.ToolStrip();
@@ -298,6 +284,44 @@
             this.XmlIdItemAddValueTb = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.XmlIdItemGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.XmlObsTab = new C1.Win.C1Command.C1DockingTabPage();
+            this.XmlParamSplit = new System.Windows.Forms.SplitContainer();
+            this.ToolStripObsCode = new System.Windows.Forms.ToolStrip();
+            this.XmlObsCanaButton = new System.Windows.Forms.ToolStripButton();
+            this.XmlObsRegButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.XmlObsStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.splitContainer5 = new System.Windows.Forms.SplitContainer();
+            this.XmlCodesSplit = new System.Windows.Forms.SplitContainer();
+            this.label52 = new System.Windows.Forms.Label();
+            this.XmlObsCodeDelValueBt = new System.Windows.Forms.Button();
+            this.label53 = new System.Windows.Forms.Label();
+            this.XmlObsCodeAddValueBt = new System.Windows.Forms.Button();
+            this.XmlObsCodeAddValueTb = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.XmlObsCodesGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.splitContainer6 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer9 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer28 = new System.Windows.Forms.SplitContainer();
+            this.XmlObsCodeLieDelValueBt = new System.Windows.Forms.Button();
+            this.label63 = new System.Windows.Forms.Label();
+            this.XmlObsCodeLieAddValueBt = new System.Windows.Forms.Button();
+            this.label62 = new System.Windows.Forms.Label();
+            this.XmlObsCodeLieAddValueTb = new System.Windows.Forms.TextBox();
+            this.label61 = new System.Windows.Forms.Label();
+            this.XmlObsCodeLieGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.XmlCaracSplit = new System.Windows.Forms.SplitContainer();
+            this.label7 = new System.Windows.Forms.Label();
+            this.XmlObsCaracGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.XmlItemsSplit = new System.Windows.Forms.SplitContainer();
+            this.label56 = new System.Windows.Forms.Label();
+            this.XmlObsItemDelValueBt = new System.Windows.Forms.Button();
+            this.label57 = new System.Windows.Forms.Label();
+            this.XmlObsItemAddValueBt = new System.Windows.Forms.Button();
+            this.XmlObsItemAddValueTb = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.XmlObsItemGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.XmlSectionTab = new C1.Win.C1Command.C1DockingTabPage();
             this.splitContainer12 = new System.Windows.Forms.SplitContainer();
             this.ToolStripSection = new System.Windows.Forms.ToolStrip();
@@ -306,7 +330,7 @@
             this.splitContainer13 = new System.Windows.Forms.SplitContainer();
             this.splitContainer21 = new System.Windows.Forms.SplitContainer();
             this.label44 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.XmlSectionDelBt = new System.Windows.Forms.Button();
             this.label45 = new System.Windows.Forms.Label();
             this.XmlSectionAddBt = new System.Windows.Forms.Button();
             this.XmlSectionAddTb = new System.Windows.Forms.TextBox();
@@ -314,7 +338,7 @@
             this.XmlSectionGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.splitContainer22 = new System.Windows.Forms.SplitContainer();
             this.label46 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
+            this.XmlHeureDelBt = new System.Windows.Forms.Button();
             this.label47 = new System.Windows.Forms.Label();
             this.XmlHeureAddBt = new System.Windows.Forms.Button();
             this.XmlHeureAddTb = new System.Windows.Forms.TextBox();
@@ -398,10 +422,10 @@
             this.splitContainer27.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainDockingTab)).BeginInit();
             this.MainDockingTab.SuspendLayout();
-            this.InspectionTab.SuspendLayout();
-            this.InspectionSplit.Panel1.SuspendLayout();
-            this.InspectionSplit.Panel2.SuspendLayout();
-            this.InspectionSplit.SuspendLayout();
+            this.AccueilTab.SuspendLayout();
+            this.AccueilSplit.Panel1.SuspendLayout();
+            this.AccueilSplit.Panel2.SuspendLayout();
+            this.AccueilSplit.SuspendLayout();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
@@ -410,6 +434,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.MenuDockingTab)).BeginInit();
             this.MenuDockingTab.SuspendLayout();
             this.chargementTab.SuspendLayout();
+            this.groupBox14.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.groupBox9.SuspendLayout();
@@ -436,6 +461,22 @@
             this.splitContainer25.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OuvrageList)).BeginInit();
             this.OuvrageToolsPanel.SuspendLayout();
+            this.InspectionTab.SuspendLayout();
+            this.splitContainer29.Panel1.SuspendLayout();
+            this.splitContainer29.Panel2.SuspendLayout();
+            this.splitContainer29.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.InspectionTopicBar)).BeginInit();
+            this.splitContainer30.Panel1.SuspendLayout();
+            this.splitContainer30.Panel2.SuspendLayout();
+            this.splitContainer30.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            this.splitContainer31.Panel1.SuspendLayout();
+            this.splitContainer31.Panel2.SuspendLayout();
+            this.splitContainer31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.InspectFacultatifPb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InspectDesactivePb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InspectDifferePb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InspectObligatoirePb)).BeginInit();
             this.IdentificationTab.SuspendLayout();
             this.splitContainer3.Panel1.SuspendLayout();
             this.splitContainer3.Panel2.SuspendLayout();
@@ -466,6 +507,22 @@
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.XmlIdTab.SuspendLayout();
+            this.splitContainer7.Panel1.SuspendLayout();
+            this.splitContainer7.Panel2.SuspendLayout();
+            this.splitContainer7.SuspendLayout();
+            this.ToolStripIdCode.SuspendLayout();
+            this.splitContainer8.Panel1.SuspendLayout();
+            this.splitContainer8.Panel2.SuspendLayout();
+            this.splitContainer8.SuspendLayout();
+            this.splitContainer10.Panel1.SuspendLayout();
+            this.splitContainer10.Panel2.SuspendLayout();
+            this.splitContainer10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.XmlIdCodeGrid)).BeginInit();
+            this.splitContainer11.Panel1.SuspendLayout();
+            this.splitContainer11.Panel2.SuspendLayout();
+            this.splitContainer11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.XmlIdItemGrid)).BeginInit();
             this.XmlObsTab.SuspendLayout();
             this.XmlParamSplit.Panel1.SuspendLayout();
             this.XmlParamSplit.Panel2.SuspendLayout();
@@ -496,22 +553,6 @@
             this.XmlItemsSplit.Panel2.SuspendLayout();
             this.XmlItemsSplit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.XmlObsItemGrid)).BeginInit();
-            this.XmlIdTab.SuspendLayout();
-            this.splitContainer7.Panel1.SuspendLayout();
-            this.splitContainer7.Panel2.SuspendLayout();
-            this.splitContainer7.SuspendLayout();
-            this.ToolStripIdCode.SuspendLayout();
-            this.splitContainer8.Panel1.SuspendLayout();
-            this.splitContainer8.Panel2.SuspendLayout();
-            this.splitContainer8.SuspendLayout();
-            this.splitContainer10.Panel1.SuspendLayout();
-            this.splitContainer10.Panel2.SuspendLayout();
-            this.splitContainer10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.XmlIdCodeGrid)).BeginInit();
-            this.splitContainer11.Panel1.SuspendLayout();
-            this.splitContainer11.Panel2.SuspendLayout();
-            this.splitContainer11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.XmlIdItemGrid)).BeginInit();
             this.XmlSectionTab.SuspendLayout();
             this.splitContainer12.Panel1.SuspendLayout();
             this.splitContainer12.Panel2.SuspendLayout();
@@ -887,7 +928,7 @@
             // MenuSplit.Panel2
             // 
             this.MenuSplit.Panel2.Controls.Add(this.DataSplit);
-            this.MenuSplit.Size = new System.Drawing.Size(1093, 480);
+            this.MenuSplit.Size = new System.Drawing.Size(1093, 559);
             this.MenuSplit.SplitterDistance = 25;
             this.MenuSplit.SplitterWidth = 1;
             this.MenuSplit.TabIndex = 0;
@@ -1055,7 +1096,7 @@
             // 
             this.DataSplit.Panel2.Controls.Add(this.CodeObsSplit);
             this.DataSplit.Panel2Collapsed = true;
-            this.DataSplit.Size = new System.Drawing.Size(1093, 454);
+            this.DataSplit.Size = new System.Drawing.Size(1093, 533);
             this.DataSplit.SplitterDistance = 803;
             this.DataSplit.TabIndex = 0;
             // 
@@ -1074,7 +1115,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.MainDockingTab);
-            this.splitContainer1.Size = new System.Drawing.Size(1093, 454);
+            this.splitContainer1.Size = new System.Drawing.Size(1093, 533);
             this.splitContainer1.SplitterDistance = 27;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -1125,6 +1166,7 @@
             // MainDockingTab
             // 
             this.MainDockingTab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MainDockingTab.Controls.Add(this.AccueilTab);
             this.MainDockingTab.Controls.Add(this.InspectionTab);
             this.MainDockingTab.Controls.Add(this.IdentificationTab);
             this.MainDockingTab.Controls.Add(this.ObservationTab);
@@ -1134,7 +1176,7 @@
             this.MainDockingTab.HotTrack = true;
             this.MainDockingTab.Location = new System.Drawing.Point(0, 0);
             this.MainDockingTab.Name = "MainDockingTab";
-            this.MainDockingTab.Size = new System.Drawing.Size(1093, 423);
+            this.MainDockingTab.Size = new System.Drawing.Size(1093, 502);
             this.MainDockingTab.TabIndex = 2;
             this.MainDockingTab.TabsSpacing = 5;
             this.MainDockingTab.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
@@ -1143,40 +1185,40 @@
             this.MainDockingTab.SelectedIndexChanging += new C1.Win.C1Command.SelectedIndexChangingEventHandler(this.MainDockingTab_SelectedIndexChanging);
             this.MainDockingTab.SelectedIndexChanged += new System.EventHandler(this.MainDockingTab_SelectedIndexChanged);
             // 
-            // InspectionTab
+            // AccueilTab
             // 
-            this.InspectionTab.BackColor = System.Drawing.Color.DimGray;
-            this.InspectionTab.Controls.Add(this.InspectionSplit);
-            this.InspectionTab.Location = new System.Drawing.Point(1, 27);
-            this.InspectionTab.Name = "InspectionTab";
-            this.InspectionTab.Size = new System.Drawing.Size(1091, 395);
-            this.InspectionTab.TabBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(229)))), ((int)(((byte)(233)))));
-            this.InspectionTab.TabBackColorSelected = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(229)))), ((int)(((byte)(233)))));
-            this.InspectionTab.TabIndex = 5;
-            this.InspectionTab.Text = "Inspection";
+            this.AccueilTab.BackColor = System.Drawing.Color.DimGray;
+            this.AccueilTab.Controls.Add(this.AccueilSplit);
+            this.AccueilTab.Location = new System.Drawing.Point(1, 27);
+            this.AccueilTab.Name = "AccueilTab";
+            this.AccueilTab.Size = new System.Drawing.Size(1091, 474);
+            this.AccueilTab.TabBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(229)))), ((int)(((byte)(233)))));
+            this.AccueilTab.TabBackColorSelected = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(229)))), ((int)(((byte)(233)))));
+            this.AccueilTab.TabIndex = 5;
+            this.AccueilTab.Text = "Accueil";
             // 
-            // InspectionSplit
+            // AccueilSplit
             // 
-            this.InspectionSplit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.InspectionSplit.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.InspectionSplit.Location = new System.Drawing.Point(0, 0);
-            this.InspectionSplit.Name = "InspectionSplit";
-            this.InspectionSplit.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.AccueilSplit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AccueilSplit.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.AccueilSplit.Location = new System.Drawing.Point(0, 0);
+            this.AccueilSplit.Name = "AccueilSplit";
+            this.AccueilSplit.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // InspectionSplit.Panel1
+            // AccueilSplit.Panel1
             // 
-            this.InspectionSplit.Panel1.Controls.Add(this.groupBox7);
+            this.AccueilSplit.Panel1.Controls.Add(this.groupBox7);
             // 
-            // InspectionSplit.Panel2
+            // AccueilSplit.Panel2
             // 
-            this.InspectionSplit.Panel2.Controls.Add(this.splitContainer2);
-            this.InspectionSplit.Size = new System.Drawing.Size(1091, 395);
-            this.InspectionSplit.SplitterDistance = 51;
-            this.InspectionSplit.TabIndex = 9;
+            this.AccueilSplit.Panel2.Controls.Add(this.splitContainer2);
+            this.AccueilSplit.Size = new System.Drawing.Size(1091, 474);
+            this.AccueilSplit.SplitterDistance = 51;
+            this.AccueilSplit.TabIndex = 9;
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.CloseInspectionBt);
+            this.groupBox7.Controls.Add(this.CloseAccueilBt);
             this.groupBox7.Controls.Add(this.pictureBox2);
             this.groupBox7.Controls.Add(this.SVFLabel);
             this.groupBox7.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1189,23 +1231,23 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Fichier SVF sélectionné";
             // 
-            // CloseInspectionBt
+            // CloseAccueilBt
             // 
-            this.CloseInspectionBt.BackColor = System.Drawing.SystemColors.Control;
-            this.CloseInspectionBt.Dock = System.Windows.Forms.DockStyle.Right;
-            this.CloseInspectionBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CloseInspectionBt.ForeColor = System.Drawing.Color.Black;
-            this.CloseInspectionBt.Image = global::ACTIVA_Module_1.Properties.Resources.cancel_16;
-            this.CloseInspectionBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CloseInspectionBt.Location = new System.Drawing.Point(925, 22);
-            this.CloseInspectionBt.Name = "CloseInspectionBt";
-            this.CloseInspectionBt.Size = new System.Drawing.Size(163, 26);
-            this.CloseInspectionBt.TabIndex = 0;
-            this.CloseInspectionBt.Text = "Fermer l\'inspection";
-            this.CloseInspectionBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CloseInspectionBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.CloseInspectionBt.UseVisualStyleBackColor = true;
-            this.CloseInspectionBt.Click += new System.EventHandler(this.CloseInspectionBt_Click);
+            this.CloseAccueilBt.BackColor = System.Drawing.SystemColors.Control;
+            this.CloseAccueilBt.Dock = System.Windows.Forms.DockStyle.Right;
+            this.CloseAccueilBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseAccueilBt.ForeColor = System.Drawing.Color.Black;
+            this.CloseAccueilBt.Image = global::ACTIVA_Module_1.Properties.Resources.cancel_16;
+            this.CloseAccueilBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CloseAccueilBt.Location = new System.Drawing.Point(925, 22);
+            this.CloseAccueilBt.Name = "CloseAccueilBt";
+            this.CloseAccueilBt.Size = new System.Drawing.Size(163, 26);
+            this.CloseAccueilBt.TabIndex = 0;
+            this.CloseAccueilBt.Text = "Fermer l\'inspection";
+            this.CloseAccueilBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CloseAccueilBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.CloseAccueilBt.UseVisualStyleBackColor = true;
+            this.CloseAccueilBt.Click += new System.EventHandler(this.CloseAccueilBt_Click);
             // 
             // pictureBox2
             // 
@@ -1243,7 +1285,7 @@
             // 
             this.splitContainer2.Panel2.BackColor = System.Drawing.Color.DimGray;
             this.splitContainer2.Panel2.Controls.Add(this.splitContainer25);
-            this.splitContainer2.Size = new System.Drawing.Size(1091, 340);
+            this.splitContainer2.Size = new System.Drawing.Size(1091, 419);
             this.splitContainer2.SplitterDistance = 476;
             this.splitContainer2.TabIndex = 0;
             // 
@@ -1257,7 +1299,7 @@
             this.MenuDockingTab.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MenuDockingTab.Location = new System.Drawing.Point(0, 0);
             this.MenuDockingTab.Name = "MenuDockingTab";
-            this.MenuDockingTab.Size = new System.Drawing.Size(474, 338);
+            this.MenuDockingTab.Size = new System.Drawing.Size(474, 417);
             this.MenuDockingTab.TabIndex = 19;
             this.MenuDockingTab.TabsSpacing = 5;
             this.MenuDockingTab.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
@@ -1266,18 +1308,43 @@
             // chargementTab
             // 
             this.chargementTab.BackColor = System.Drawing.Color.White;
+            this.chargementTab.Controls.Add(this.groupBox14);
             this.chargementTab.Controls.Add(this.groupBox1);
             this.chargementTab.Controls.Add(this.groupBox9);
             this.chargementTab.Controls.Add(this.AddOuvrageGp);
             this.chargementTab.Location = new System.Drawing.Point(1, 27);
             this.chargementTab.Name = "chargementTab";
-            this.chargementTab.Size = new System.Drawing.Size(472, 310);
+            this.chargementTab.Size = new System.Drawing.Size(472, 389);
             this.chargementTab.TabIndex = 0;
             this.chargementTab.Text = "Chargement et création";
             // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.Btn_Exporter);
+            this.groupBox14.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox14.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox14.Location = new System.Drawing.Point(6, 327);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(463, 59);
+            this.groupBox14.TabIndex = 18;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "Exporter une inspection";
+            // 
+            // Btn_Exporter
+            // 
+            this.Btn_Exporter.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Exporter.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Exporter.Image")));
+            this.Btn_Exporter.Location = new System.Drawing.Point(353, 25);
+            this.Btn_Exporter.Name = "Btn_Exporter";
+            this.Btn_Exporter.Size = new System.Drawing.Size(104, 25);
+            this.Btn_Exporter.TabIndex = 16;
+            this.Btn_Exporter.Text = "Exporter";
+            this.Btn_Exporter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Btn_Exporter.UseVisualStyleBackColor = true;
+            this.Btn_Exporter.Click += new System.EventHandler(this.Btn_Exporter_Click);
+            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.Btn_Exporter);
             this.groupBox1.Controls.Add(this.OpenSVFButton);
             this.groupBox1.Controls.Add(this.openSVFTb);
             this.groupBox1.Controls.Add(this.label26);
@@ -1290,19 +1357,6 @@
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ouvrir une inspection";
-            // 
-            // Btn_Exporter
-            // 
-            this.Btn_Exporter.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_Exporter.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Exporter.Image")));
-            this.Btn_Exporter.Location = new System.Drawing.Point(250, 62);
-            this.Btn_Exporter.Name = "Btn_Exporter";
-            this.Btn_Exporter.Size = new System.Drawing.Size(104, 25);
-            this.Btn_Exporter.TabIndex = 16;
-            this.Btn_Exporter.Text = "Exporter";
-            this.Btn_Exporter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Btn_Exporter.UseVisualStyleBackColor = true;
-            this.Btn_Exporter.Click += new System.EventHandler(this.Btn_Exporter_Click);
             // 
             // OpenSVFButton
             // 
@@ -1323,6 +1377,7 @@
             // 
             // openSVFTb
             // 
+            this.openSVFTb.Enabled = false;
             this.openSVFTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openSVFTb.Location = new System.Drawing.Point(73, 34);
             this.openSVFTb.Name = "openSVFTb";
@@ -1352,13 +1407,13 @@
             // 
             // groupBox9
             // 
-            this.groupBox9.Controls.Add(this.Folder_New_Inspection);
-            this.groupBox9.Controls.Add(this.NewInspectionBt);
-            this.groupBox9.Controls.Add(this.NewInspectionPathTb);
+            this.groupBox9.Controls.Add(this.Folder_New_Accueil);
+            this.groupBox9.Controls.Add(this.NewAccueilBt);
+            this.groupBox9.Controls.Add(this.NewAccueilPathTb);
             this.groupBox9.Controls.Add(this.label24);
             this.groupBox9.Controls.Add(this.pictureBox7);
             this.groupBox9.Controls.Add(this.label25);
-            this.groupBox9.Controls.Add(this.NewInspectionNameTb);
+            this.groupBox9.Controls.Add(this.NewAccueilNameTb);
             this.groupBox9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox9.Location = new System.Drawing.Point(3, 100);
@@ -1368,42 +1423,42 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Créer une inspection";
             // 
-            // Folder_New_Inspection
+            // Folder_New_Accueil
             // 
-            this.Folder_New_Inspection.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.Folder_New_Inspection.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
-            this.Folder_New_Inspection.Location = new System.Drawing.Point(343, 101);
-            this.Folder_New_Inspection.Name = "Folder_New_Inspection";
-            this.Folder_New_Inspection.Size = new System.Drawing.Size(117, 25);
-            this.Folder_New_Inspection.TabIndex = 16;
-            this.Folder_New_Inspection.Text = "Parcourir";
-            this.Folder_New_Inspection.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Folder_New_Inspection.UseVisualStyleBackColor = true;
-            this.Folder_New_Inspection.Click += new System.EventHandler(this.Folder_New_Inspection_Click);
+            this.Folder_New_Accueil.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Folder_New_Accueil.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
+            this.Folder_New_Accueil.Location = new System.Drawing.Point(343, 101);
+            this.Folder_New_Accueil.Name = "Folder_New_Accueil";
+            this.Folder_New_Accueil.Size = new System.Drawing.Size(117, 25);
+            this.Folder_New_Accueil.TabIndex = 16;
+            this.Folder_New_Accueil.Text = "Parcourir";
+            this.Folder_New_Accueil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Folder_New_Accueil.UseVisualStyleBackColor = true;
+            this.Folder_New_Accueil.Click += new System.EventHandler(this.Folder_New_Accueil_Click);
             // 
-            // NewInspectionBt
+            // NewAccueilBt
             // 
-            this.NewInspectionBt.BackColor = System.Drawing.SystemColors.Control;
-            this.NewInspectionBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.NewInspectionBt.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.NewInspectionBt.Image = global::ACTIVA_Module_1.Properties.Resources.add_16;
-            this.NewInspectionBt.Location = new System.Drawing.Point(250, 101);
-            this.NewInspectionBt.Name = "NewInspectionBt";
-            this.NewInspectionBt.Size = new System.Drawing.Size(87, 25);
-            this.NewInspectionBt.TabIndex = 15;
-            this.NewInspectionBt.Text = "Ajouter";
-            this.NewInspectionBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.NewInspectionBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.NewInspectionBt.UseVisualStyleBackColor = true;
-            this.NewInspectionBt.Click += new System.EventHandler(this.NewInspectionBt_Click);
+            this.NewAccueilBt.BackColor = System.Drawing.SystemColors.Control;
+            this.NewAccueilBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.NewAccueilBt.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.NewAccueilBt.Image = global::ACTIVA_Module_1.Properties.Resources.add_16;
+            this.NewAccueilBt.Location = new System.Drawing.Point(250, 101);
+            this.NewAccueilBt.Name = "NewAccueilBt";
+            this.NewAccueilBt.Size = new System.Drawing.Size(87, 25);
+            this.NewAccueilBt.TabIndex = 15;
+            this.NewAccueilBt.Text = "Ajouter";
+            this.NewAccueilBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.NewAccueilBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.NewAccueilBt.UseVisualStyleBackColor = true;
+            this.NewAccueilBt.Click += new System.EventHandler(this.NewAccueilBt_Click);
             // 
-            // NewInspectionPathTb
+            // NewAccueilPathTb
             // 
-            this.NewInspectionPathTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewInspectionPathTb.Location = new System.Drawing.Point(75, 74);
-            this.NewInspectionPathTb.Name = "NewInspectionPathTb";
-            this.NewInspectionPathTb.Size = new System.Drawing.Size(385, 23);
-            this.NewInspectionPathTb.TabIndex = 13;
+            this.NewAccueilPathTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewAccueilPathTb.Location = new System.Drawing.Point(75, 74);
+            this.NewAccueilPathTb.Name = "NewAccueilPathTb";
+            this.NewAccueilPathTb.Size = new System.Drawing.Size(385, 23);
+            this.NewAccueilPathTb.TabIndex = 13;
             // 
             // label24
             // 
@@ -1437,13 +1492,13 @@
             this.label25.TabIndex = 11;
             this.label25.Text = "Nom (sans caractères spéciaux) :";
             // 
-            // NewInspectionNameTb
+            // NewAccueilNameTb
             // 
-            this.NewInspectionNameTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewInspectionNameTb.Location = new System.Drawing.Point(75, 35);
-            this.NewInspectionNameTb.Name = "NewInspectionNameTb";
-            this.NewInspectionNameTb.Size = new System.Drawing.Size(385, 23);
-            this.NewInspectionNameTb.TabIndex = 9;
+            this.NewAccueilNameTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewAccueilNameTb.Location = new System.Drawing.Point(75, 35);
+            this.NewAccueilNameTb.Name = "NewAccueilNameTb";
+            this.NewAccueilNameTb.Size = new System.Drawing.Size(385, 23);
+            this.NewAccueilNameTb.TabIndex = 9;
             // 
             // AddOuvrageGp
             // 
@@ -1560,7 +1615,7 @@
             this.InformationTab.Controls.Add(this.groupBox6);
             this.InformationTab.Location = new System.Drawing.Point(1, 27);
             this.InformationTab.Name = "InformationTab";
-            this.InformationTab.Size = new System.Drawing.Size(472, 310);
+            this.InformationTab.Size = new System.Drawing.Size(472, 389);
             this.InformationTab.TabIndex = 1;
             this.InformationTab.Text = "Informations";
             // 
@@ -1712,7 +1767,7 @@
             this.ReportTab.Controls.Add(this.GenerateReportBt);
             this.ReportTab.Location = new System.Drawing.Point(1, 27);
             this.ReportTab.Name = "ReportTab";
-            this.ReportTab.Size = new System.Drawing.Size(472, 310);
+            this.ReportTab.Size = new System.Drawing.Size(472, 389);
             this.ReportTab.TabIndex = 2;
             this.ReportTab.Text = "Rapport";
             // 
@@ -1893,7 +1948,7 @@
             this.AutocadTab.Controls.Add(this.AutocadGenerateBt);
             this.AutocadTab.Location = new System.Drawing.Point(1, 27);
             this.AutocadTab.Name = "AutocadTab";
-            this.AutocadTab.Size = new System.Drawing.Size(472, 310);
+            this.AutocadTab.Size = new System.Drawing.Size(472, 389);
             this.AutocadTab.TabBackColor = System.Drawing.Color.White;
             this.AutocadTab.TabIndex = 3;
             this.AutocadTab.Text = "Autocad";
@@ -1984,7 +2039,7 @@
             this.AboutTab.Controls.Add(this.pictureBox11);
             this.AboutTab.Location = new System.Drawing.Point(1, 27);
             this.AboutTab.Name = "AboutTab";
-            this.AboutTab.Size = new System.Drawing.Size(472, 310);
+            this.AboutTab.Size = new System.Drawing.Size(472, 389);
             this.AboutTab.TabBackColor = System.Drawing.Color.White;
             this.AboutTab.TabBackColorSelected = System.Drawing.Color.White;
             this.AboutTab.TabIndex = 4;
@@ -2087,8 +2142,8 @@
             // splitContainer25.Panel2
             // 
             this.splitContainer25.Panel2.Controls.Add(this.OuvrageToolsPanel);
-            this.splitContainer25.Size = new System.Drawing.Size(609, 338);
-            this.splitContainer25.SplitterDistance = 303;
+            this.splitContainer25.Size = new System.Drawing.Size(609, 417);
+            this.splitContainer25.SplitterDistance = 382;
             this.splitContainer25.TabIndex = 0;
             // 
             // OuvrageList
@@ -2111,7 +2166,7 @@
             this.OuvrageList.MatchEntryTimeout = ((long)(2000));
             this.OuvrageList.Name = "OuvrageList";
             this.OuvrageList.RowSubDividerColor = System.Drawing.Color.DarkGray;
-            this.OuvrageList.Size = new System.Drawing.Size(609, 303);
+            this.OuvrageList.Size = new System.Drawing.Size(609, 382);
             this.OuvrageList.TabIndex = 2;
             this.OuvrageList.Text = "Ouvrages";
             this.OuvrageList.Click += new System.EventHandler(this.OuvrageList_Click);
@@ -2119,6 +2174,7 @@
             // 
             // OuvrageToolsPanel
             // 
+            this.OuvrageToolsPanel.Controls.Add(this.RenommerBt);
             this.OuvrageToolsPanel.Controls.Add(this.SaveOuvrageOrderBt);
             this.OuvrageToolsPanel.Controls.Add(this.DeleteOuvrageBt);
             this.OuvrageToolsPanel.Controls.Add(this.OuvrageMoveDownBt);
@@ -2129,6 +2185,24 @@
             this.OuvrageToolsPanel.Name = "OuvrageToolsPanel";
             this.OuvrageToolsPanel.Size = new System.Drawing.Size(609, 31);
             this.OuvrageToolsPanel.TabIndex = 17;
+            // 
+            // RenommerBt
+            // 
+            this.RenommerBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.RenommerBt.AutoSize = true;
+            this.RenommerBt.BackColor = System.Drawing.SystemColors.Control;
+            this.RenommerBt.ForeColor = System.Drawing.Color.Black;
+            this.RenommerBt.Image = global::ACTIVA_Module_1.Properties.Resources.rename;
+            this.RenommerBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RenommerBt.Location = new System.Drawing.Point(405, 1);
+            this.RenommerBt.Name = "RenommerBt";
+            this.RenommerBt.Size = new System.Drawing.Size(103, 27);
+            this.RenommerBt.TabIndex = 14;
+            this.RenommerBt.Text = "Renommer";
+            this.RenommerBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RenommerBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.RenommerBt.UseVisualStyleBackColor = true;
+            this.RenommerBt.Click += new System.EventHandler(this.RenommerBt_Click);
             // 
             // SaveOuvrageOrderBt
             // 
@@ -2141,9 +2215,9 @@
             this.SaveOuvrageOrderBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.SaveOuvrageOrderBt.Location = new System.Drawing.Point(65, 2);
             this.SaveOuvrageOrderBt.Name = "SaveOuvrageOrderBt";
-            this.SaveOuvrageOrderBt.Size = new System.Drawing.Size(123, 26);
+            this.SaveOuvrageOrderBt.Size = new System.Drawing.Size(145, 26);
             this.SaveOuvrageOrderBt.TabIndex = 13;
-            this.SaveOuvrageOrderBt.Text = "Sauver l\'ordre";
+            this.SaveOuvrageOrderBt.Text = "Recalculer l\'ordre";
             this.SaveOuvrageOrderBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.SaveOuvrageOrderBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.SaveOuvrageOrderBt.UseVisualStyleBackColor = true;
@@ -2201,22 +2275,243 @@
             this.CloneOuvrageBt.ForeColor = System.Drawing.Color.Black;
             this.CloneOuvrageBt.Image = global::ACTIVA_Module_1.Properties.Resources.copy1_16;
             this.CloneOuvrageBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CloneOuvrageBt.Location = new System.Drawing.Point(334, 2);
+            this.CloneOuvrageBt.Location = new System.Drawing.Point(237, 2);
             this.CloneOuvrageBt.Name = "CloneOuvrageBt";
             this.CloneOuvrageBt.Size = new System.Drawing.Size(169, 26);
             this.CloneOuvrageBt.TabIndex = 12;
-            this.CloneOuvrageBt.Text = "Dupliquer l\'inspection";
+            this.CloneOuvrageBt.Text = "Dupliquer l\'ouvrage";
             this.CloneOuvrageBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CloneOuvrageBt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CloneOuvrageBt.UseVisualStyleBackColor = true;
             this.CloneOuvrageBt.Click += new System.EventHandler(this.CloneOuvrageBt_Click);
+            // 
+            // InspectionTab
+            // 
+            this.InspectionTab.Controls.Add(this.splitContainer29);
+            this.InspectionTab.Location = new System.Drawing.Point(1, 27);
+            this.InspectionTab.Name = "InspectionTab";
+            this.InspectionTab.Size = new System.Drawing.Size(1091, 474);
+            this.InspectionTab.TabIndex = 7;
+            this.InspectionTab.Text = "Inspection";
+            // 
+            // splitContainer29
+            // 
+            this.splitContainer29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer29.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer29.Name = "splitContainer29";
+            // 
+            // splitContainer29.Panel1
+            // 
+            this.splitContainer29.Panel1.Controls.Add(this.InspectionTopicBar);
+            // 
+            // splitContainer29.Panel2
+            // 
+            this.splitContainer29.Panel2.Controls.Add(this.splitContainer30);
+            this.splitContainer29.Size = new System.Drawing.Size(1091, 474);
+            this.splitContainer29.SplitterDistance = 320;
+            this.splitContainer29.TabIndex = 0;
+            // 
+            // InspectionTopicBar
+            // 
+            this.InspectionTopicBar.AutoScrollMinSize = new System.Drawing.Size(0, 32);
+            this.InspectionTopicBar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.InspectionTopicBar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InspectionTopicBar.ImageList = null;
+            this.InspectionTopicBar.Location = new System.Drawing.Point(0, 0);
+            this.InspectionTopicBar.Name = "InspectionTopicBar";
+            this.InspectionTopicBar.Padding = new System.Windows.Forms.Padding(15, 16, 15, 16);
+            this.InspectionTopicBar.PageOffset = 10;
+            this.InspectionTopicBar.PagePadding = new System.Windows.Forms.Padding(10);
+            this.InspectionTopicBar.Size = new System.Drawing.Size(320, 474);
+            this.InspectionTopicBar.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
+            this.InspectionTopicBar.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Black;
+            this.InspectionTopicBar.LinkClick += new C1.Win.C1Command.C1TopicBarClickEventHandler(this.InspectionTopicBar_LinkClick);
+            this.InspectionTopicBar.PageExpanded += new C1.Win.C1Command.C1TopicBarPageEventHandler(this.InspectionTopicBar_PageExpanded);
+            // 
+            // splitContainer30
+            // 
+            this.splitContainer30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.splitContainer30.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer30.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer30.IsSplitterFixed = true;
+            this.splitContainer30.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer30.Name = "splitContainer30";
+            this.splitContainer30.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer30.Panel1
+            // 
+            this.splitContainer30.Panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.splitContainer30.Panel1.Controls.Add(this.InspectionValidBt);
+            this.splitContainer30.Panel1.Controls.Add(this.pictureBox12);
+            this.splitContainer30.Panel1.Controls.Add(this.InspectFormLabel);
+            // 
+            // splitContainer30.Panel2
+            // 
+            this.splitContainer30.Panel2.Controls.Add(this.splitContainer31);
+            this.splitContainer30.Size = new System.Drawing.Size(767, 474);
+            this.splitContainer30.SplitterDistance = 37;
+            this.splitContainer30.SplitterWidth = 2;
+            this.splitContainer30.TabIndex = 2;
+            // 
+            // InspectionValidBt
+            // 
+            this.InspectionValidBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.InspectionValidBt.BackColor = System.Drawing.SystemColors.Control;
+            this.InspectionValidBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InspectionValidBt.ForeColor = System.Drawing.Color.Black;
+            this.InspectionValidBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
+            this.InspectionValidBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.InspectionValidBt.Location = new System.Drawing.Point(677, 3);
+            this.InspectionValidBt.Name = "InspectionValidBt";
+            this.InspectionValidBt.Size = new System.Drawing.Size(85, 29);
+            this.InspectionValidBt.TabIndex = 39;
+            this.InspectionValidBt.Text = "Sauver";
+            this.InspectionValidBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.InspectionValidBt.UseVisualStyleBackColor = false;
+            this.InspectionValidBt.Click += new System.EventHandler(this.InspectionValidBt_Click);
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::ACTIVA_Module_1.Properties.Resources.Document;
+            this.pictureBox12.Location = new System.Drawing.Point(2, 1);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox12.TabIndex = 1;
+            this.pictureBox12.TabStop = false;
+            // 
+            // InspectFormLabel
+            // 
+            this.InspectFormLabel.AutoSize = true;
+            this.InspectFormLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InspectFormLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.InspectFormLabel.Location = new System.Drawing.Point(40, 6);
+            this.InspectFormLabel.Name = "InspectFormLabel";
+            this.InspectFormLabel.Size = new System.Drawing.Size(81, 29);
+            this.InspectFormLabel.TabIndex = 0;
+            this.InspectFormLabel.Text = "label1";
+            this.InspectFormLabel.Visible = false;
+            // 
+            // splitContainer31
+            // 
+            this.splitContainer31.BackColor = System.Drawing.Color.DimGray;
+            this.splitContainer31.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer31.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
+            this.splitContainer31.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer31.Name = "splitContainer31";
+            this.splitContainer31.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer31.Panel1
+            // 
+            this.splitContainer31.Panel1.Controls.Add(this.Inspection_Flp);
+            // 
+            // splitContainer31.Panel2
+            // 
+            this.splitContainer31.Panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.splitContainer31.Panel2.Controls.Add(this.InspectFacultatifTb);
+            this.splitContainer31.Panel2.Controls.Add(this.InspectFacultatifPb);
+            this.splitContainer31.Panel2.Controls.Add(this.InspectDesactiveTb);
+            this.splitContainer31.Panel2.Controls.Add(this.InspectDesactivePb);
+            this.splitContainer31.Panel2.Controls.Add(this.InspectDiffereTb);
+            this.splitContainer31.Panel2.Controls.Add(this.InspectDifferePb);
+            this.splitContainer31.Panel2.Controls.Add(this.InspectObligatoireTb);
+            this.splitContainer31.Panel2.Controls.Add(this.InspectObligatoirePb);
+            this.splitContainer31.Panel2MinSize = 18;
+            this.splitContainer31.Size = new System.Drawing.Size(765, 433);
+            this.splitContainer31.SplitterDistance = 411;
+            this.splitContainer31.SplitterWidth = 2;
+            this.splitContainer31.TabIndex = 1;
+            // 
+            // Inspection_Flp
+            // 
+            this.Inspection_Flp.AutoSize = true;
+            this.Inspection_Flp.BackColor = System.Drawing.Color.White;
+            this.Inspection_Flp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Inspection_Flp.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.Inspection_Flp.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Inspection_Flp.Location = new System.Drawing.Point(0, 0);
+            this.Inspection_Flp.Name = "Inspection_Flp";
+            this.Inspection_Flp.Size = new System.Drawing.Size(765, 411);
+            this.Inspection_Flp.TabIndex = 0;
+            // 
+            // InspectFacultatifTb
+            // 
+            this.InspectFacultatifTb.AutoSize = true;
+            this.InspectFacultatifTb.Location = new System.Drawing.Point(579, 4);
+            this.InspectFacultatifTb.Name = "InspectFacultatifTb";
+            this.InspectFacultatifTb.Size = new System.Drawing.Size(117, 16);
+            this.InspectFacultatifTb.TabIndex = 38;
+            this.InspectFacultatifTb.Text = "Champs facultatif";
+            // 
+            // InspectFacultatifPb
+            // 
+            this.InspectFacultatifPb.BackColor = System.Drawing.Color.White;
+            this.InspectFacultatifPb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.InspectFacultatifPb.Location = new System.Drawing.Point(526, 4);
+            this.InspectFacultatifPb.Name = "InspectFacultatifPb";
+            this.InspectFacultatifPb.Size = new System.Drawing.Size(47, 16);
+            this.InspectFacultatifPb.TabIndex = 37;
+            this.InspectFacultatifPb.TabStop = false;
+            // 
+            // InspectDesactiveTb
+            // 
+            this.InspectDesactiveTb.AutoSize = true;
+            this.InspectDesactiveTb.Location = new System.Drawing.Point(395, 4);
+            this.InspectDesactiveTb.Name = "InspectDesactiveTb";
+            this.InspectDesactiveTb.Size = new System.Drawing.Size(124, 16);
+            this.InspectDesactiveTb.TabIndex = 36;
+            this.InspectDesactiveTb.Text = "Champs désactivé";
+            // 
+            // InspectDesactivePb
+            // 
+            this.InspectDesactivePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.InspectDesactivePb.Location = new System.Drawing.Point(345, 4);
+            this.InspectDesactivePb.Name = "InspectDesactivePb";
+            this.InspectDesactivePb.Size = new System.Drawing.Size(45, 16);
+            this.InspectDesactivePb.TabIndex = 35;
+            this.InspectDesactivePb.TabStop = false;
+            // 
+            // InspectDiffereTb
+            // 
+            this.InspectDiffereTb.AutoSize = true;
+            this.InspectDiffereTb.Location = new System.Drawing.Point(235, 4);
+            this.InspectDiffereTb.Name = "InspectDiffereTb";
+            this.InspectDiffereTb.Size = new System.Drawing.Size(104, 16);
+            this.InspectDiffereTb.TabIndex = 34;
+            this.InspectDiffereTb.Text = "Champs différé";
+            // 
+            // InspectDifferePb
+            // 
+            this.InspectDifferePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.InspectDifferePb.Location = new System.Drawing.Point(186, 4);
+            this.InspectDifferePb.Name = "InspectDifferePb";
+            this.InspectDifferePb.Size = new System.Drawing.Size(47, 16);
+            this.InspectDifferePb.TabIndex = 33;
+            this.InspectDifferePb.TabStop = false;
+            // 
+            // InspectObligatoireTb
+            // 
+            this.InspectObligatoireTb.AutoSize = true;
+            this.InspectObligatoireTb.Location = new System.Drawing.Point(54, 4);
+            this.InspectObligatoireTb.Name = "InspectObligatoireTb";
+            this.InspectObligatoireTb.Size = new System.Drawing.Size(130, 16);
+            this.InspectObligatoireTb.TabIndex = 32;
+            this.InspectObligatoireTb.Text = "Champs obligatoire";
+            // 
+            // InspectObligatoirePb
+            // 
+            this.InspectObligatoirePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.InspectObligatoirePb.Location = new System.Drawing.Point(3, 4);
+            this.InspectObligatoirePb.Name = "InspectObligatoirePb";
+            this.InspectObligatoirePb.Size = new System.Drawing.Size(47, 16);
+            this.InspectObligatoirePb.TabIndex = 31;
+            this.InspectObligatoirePb.TabStop = false;
             // 
             // IdentificationTab
             // 
             this.IdentificationTab.Controls.Add(this.splitContainer3);
             this.IdentificationTab.Location = new System.Drawing.Point(1, 27);
             this.IdentificationTab.Name = "IdentificationTab";
-            this.IdentificationTab.Size = new System.Drawing.Size(1091, 395);
+            this.IdentificationTab.Size = new System.Drawing.Size(1091, 474);
             this.IdentificationTab.TabIndex = 0;
             this.IdentificationTab.Text = "Identification";
             // 
@@ -2235,7 +2530,7 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.IdFormSplit);
-            this.splitContainer3.Size = new System.Drawing.Size(1091, 395);
+            this.splitContainer3.Size = new System.Drawing.Size(1091, 474);
             this.splitContainer3.SplitterDistance = 317;
             this.splitContainer3.TabIndex = 0;
             // 
@@ -2250,7 +2545,7 @@
             this.IdentificationTopicBar.Padding = new System.Windows.Forms.Padding(15, 16, 15, 16);
             this.IdentificationTopicBar.PageOffset = 10;
             this.IdentificationTopicBar.PagePadding = new System.Windows.Forms.Padding(10);
-            this.IdentificationTopicBar.Size = new System.Drawing.Size(315, 393);
+            this.IdentificationTopicBar.Size = new System.Drawing.Size(315, 472);
             this.IdentificationTopicBar.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
             this.IdentificationTopicBar.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Black;
             this.IdentificationTopicBar.LinkClick += new C1.Win.C1Command.C1TopicBarClickEventHandler(this.IdentificationTopicBar_LinkClick);
@@ -2276,7 +2571,7 @@
             // IdFormSplit.Panel2
             // 
             this.IdFormSplit.Panel2.Controls.Add(this.splitContainer4);
-            this.IdFormSplit.Size = new System.Drawing.Size(770, 395);
+            this.IdFormSplit.Size = new System.Drawing.Size(770, 474);
             this.IdFormSplit.SplitterDistance = 37;
             this.IdFormSplit.SplitterWidth = 2;
             this.IdFormSplit.TabIndex = 1;
@@ -2344,8 +2639,8 @@
             this.splitContainer4.Panel2.Controls.Add(this.label1);
             this.splitContainer4.Panel2.Controls.Add(this.IdObligatoirePb);
             this.splitContainer4.Panel2MinSize = 18;
-            this.splitContainer4.Size = new System.Drawing.Size(768, 354);
-            this.splitContainer4.SplitterDistance = 330;
+            this.splitContainer4.Size = new System.Drawing.Size(768, 433);
+            this.splitContainer4.SplitterDistance = 413;
             this.splitContainer4.SplitterWidth = 2;
             this.splitContainer4.TabIndex = 1;
             // 
@@ -2358,7 +2653,7 @@
             this.Identification_Flp.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Identification_Flp.Location = new System.Drawing.Point(0, 0);
             this.Identification_Flp.Name = "Identification_Flp";
-            this.Identification_Flp.Size = new System.Drawing.Size(768, 330);
+            this.Identification_Flp.Size = new System.Drawing.Size(768, 413);
             this.Identification_Flp.TabIndex = 0;
             // 
             // label4
@@ -2439,7 +2734,7 @@
             this.ObservationTab.Controls.Add(this.ObservationGrid);
             this.ObservationTab.Location = new System.Drawing.Point(1, 27);
             this.ObservationTab.Name = "ObservationTab";
-            this.ObservationTab.Size = new System.Drawing.Size(1091, 395);
+            this.ObservationTab.Size = new System.Drawing.Size(1091, 474);
             this.ObservationTab.TabIndex = 1;
             this.ObservationTab.Text = "Observations";
             // 
@@ -2451,7 +2746,7 @@
             this.ObservationGrid.Location = new System.Drawing.Point(0, 0);
             this.ObservationGrid.Name = "ObservationGrid";
             this.ObservationGrid.Rows.DefaultSize = 22;
-            this.ObservationGrid.Size = new System.Drawing.Size(1091, 395);
+            this.ObservationGrid.Size = new System.Drawing.Size(1091, 474);
             this.ObservationGrid.StyleInfo = resources.GetString("ObservationGrid.StyleInfo");
             this.ObservationGrid.TabIndex = 0;
             this.ObservationGrid.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Silver;
@@ -2466,7 +2761,7 @@
             this.RenseignementTab.ForeColor = System.Drawing.SystemColors.ControlText;
             this.RenseignementTab.Location = new System.Drawing.Point(1, 27);
             this.RenseignementTab.Name = "RenseignementTab";
-            this.RenseignementTab.Size = new System.Drawing.Size(1091, 395);
+            this.RenseignementTab.Size = new System.Drawing.Size(1091, 474);
             this.RenseignementTab.TabBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.RenseignementTab.TabIndex = 4;
             this.RenseignementTab.Text = "Saisie";
@@ -2477,7 +2772,7 @@
             this.CaracDockingTab.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CaracDockingTab.Location = new System.Drawing.Point(0, 0);
             this.CaracDockingTab.Name = "CaracDockingTab";
-            this.CaracDockingTab.Size = new System.Drawing.Size(1091, 395);
+            this.CaracDockingTab.Size = new System.Drawing.Size(1091, 474);
             this.CaracDockingTab.TabIndex = 0;
             this.CaracDockingTab.TabsSpacing = 5;
             this.CaracDockingTab.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
@@ -2488,21 +2783,21 @@
             this.ParamTab.Controls.Add(this.ParamDockingTab);
             this.ParamTab.Location = new System.Drawing.Point(1, 27);
             this.ParamTab.Name = "ParamTab";
-            this.ParamTab.Size = new System.Drawing.Size(1091, 395);
+            this.ParamTab.Size = new System.Drawing.Size(1091, 474);
             this.ParamTab.TabIndex = 6;
             this.ParamTab.Text = "Paramètres";
             // 
             // ParamDockingTab
             // 
             this.ParamDockingTab.Controls.Add(this.XmlPathTab);
-            this.ParamDockingTab.Controls.Add(this.XmlObsTab);
             this.ParamDockingTab.Controls.Add(this.XmlIdTab);
+            this.ParamDockingTab.Controls.Add(this.XmlObsTab);
             this.ParamDockingTab.Controls.Add(this.XmlSectionTab);
             this.ParamDockingTab.Controls.Add(this.XmlAutocadTab);
             this.ParamDockingTab.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ParamDockingTab.Location = new System.Drawing.Point(0, 0);
             this.ParamDockingTab.Name = "ParamDockingTab";
-            this.ParamDockingTab.Size = new System.Drawing.Size(1091, 395);
+            this.ParamDockingTab.Size = new System.Drawing.Size(1091, 474);
             this.ParamDockingTab.TabIndex = 0;
             this.ParamDockingTab.TabsSpacing = 5;
             this.ParamDockingTab.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
@@ -2519,7 +2814,7 @@
             this.XmlPathTab.Controls.Add(this.groupBox2);
             this.XmlPathTab.Location = new System.Drawing.Point(1, 27);
             this.XmlPathTab.Name = "XmlPathTab";
-            this.XmlPathTab.Size = new System.Drawing.Size(1089, 367);
+            this.XmlPathTab.Size = new System.Drawing.Size(1089, 446);
             this.XmlPathTab.TabIndex = 2;
             this.XmlPathTab.Text = "Emplacements des fichiers Xml";
             // 
@@ -3015,435 +3310,12 @@
             this.label19.TabIndex = 2;
             this.label19.Text = "Codes observation regard";
             // 
-            // XmlObsTab
-            // 
-            this.XmlObsTab.Controls.Add(this.XmlParamSplit);
-            this.XmlObsTab.Location = new System.Drawing.Point(1, 27);
-            this.XmlObsTab.Name = "XmlObsTab";
-            this.XmlObsTab.Size = new System.Drawing.Size(1089, 367);
-            this.XmlObsTab.TabIndex = 0;
-            this.XmlObsTab.Text = "Codes Observation";
-            // 
-            // XmlParamSplit
-            // 
-            this.XmlParamSplit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.XmlParamSplit.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.XmlParamSplit.Location = new System.Drawing.Point(0, 0);
-            this.XmlParamSplit.Name = "XmlParamSplit";
-            this.XmlParamSplit.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // XmlParamSplit.Panel1
-            // 
-            this.XmlParamSplit.Panel1.Controls.Add(this.ToolStripObsCode);
-            // 
-            // XmlParamSplit.Panel2
-            // 
-            this.XmlParamSplit.Panel2.Controls.Add(this.splitContainer5);
-            this.XmlParamSplit.Size = new System.Drawing.Size(1089, 367);
-            this.XmlParamSplit.SplitterDistance = 25;
-            this.XmlParamSplit.TabIndex = 0;
-            // 
-            // ToolStripObsCode
-            // 
-            this.ToolStripObsCode.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.XmlObsCanaButton,
-            this.XmlObsRegButton,
-            this.toolStripSeparator3,
-            this.toolStripLabel2,
-            this.XmlObsStripLabel});
-            this.ToolStripObsCode.Location = new System.Drawing.Point(0, 0);
-            this.ToolStripObsCode.Name = "ToolStripObsCode";
-            this.ToolStripObsCode.Size = new System.Drawing.Size(1089, 27);
-            this.ToolStripObsCode.TabIndex = 0;
-            this.ToolStripObsCode.Text = "toolStrip2";
-            // 
-            // XmlObsCanaButton
-            // 
-            this.XmlObsCanaButton.Image = global::ACTIVA_Module_1.Properties.Resources.list16;
-            this.XmlObsCanaButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.XmlObsCanaButton.Name = "XmlObsCanaButton";
-            this.XmlObsCanaButton.Size = new System.Drawing.Size(239, 24);
-            this.XmlObsCanaButton.Text = "Codes Observation Canalisation";
-            // 
-            // XmlObsRegButton
-            // 
-            this.XmlObsRegButton.Image = global::ACTIVA_Module_1.Properties.Resources.list16;
-            this.XmlObsRegButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.XmlObsRegButton.Name = "XmlObsRegButton";
-            this.XmlObsRegButton.Size = new System.Drawing.Size(206, 24);
-            this.XmlObsRegButton.Text = "Codes Observation Regard";
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
-            // 
-            // toolStripLabel2
-            // 
-            this.toolStripLabel2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripLabel2.ForeColor = System.Drawing.Color.ForestGreen;
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(131, 24);
-            this.toolStripLabel2.Text = "Fichier en cours :";
-            // 
-            // XmlObsStripLabel
-            // 
-            this.XmlObsStripLabel.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlObsStripLabel.Name = "XmlObsStripLabel";
-            this.XmlObsStripLabel.Size = new System.Drawing.Size(0, 24);
-            // 
-            // splitContainer5
-            // 
-            this.splitContainer5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer5.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer5.Name = "splitContainer5";
-            this.splitContainer5.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer5.Panel1
-            // 
-            this.splitContainer5.Panel1.Controls.Add(this.XmlCodesSplit);
-            // 
-            // splitContainer5.Panel2
-            // 
-            this.splitContainer5.Panel2.Controls.Add(this.splitContainer6);
-            this.splitContainer5.Size = new System.Drawing.Size(1089, 338);
-            this.splitContainer5.SplitterDistance = 95;
-            this.splitContainer5.TabIndex = 0;
-            // 
-            // XmlCodesSplit
-            // 
-            this.XmlCodesSplit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.XmlCodesSplit.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.XmlCodesSplit.Location = new System.Drawing.Point(0, 0);
-            this.XmlCodesSplit.Name = "XmlCodesSplit";
-            this.XmlCodesSplit.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // XmlCodesSplit.Panel1
-            // 
-            this.XmlCodesSplit.Panel1.Controls.Add(this.label52);
-            this.XmlCodesSplit.Panel1.Controls.Add(this.XmlObsCodeDelValueBt);
-            this.XmlCodesSplit.Panel1.Controls.Add(this.label53);
-            this.XmlCodesSplit.Panel1.Controls.Add(this.XmlObsCodeAddValueBt);
-            this.XmlCodesSplit.Panel1.Controls.Add(this.XmlObsCodeAddValueTb);
-            this.XmlCodesSplit.Panel1.Controls.Add(this.label6);
-            this.XmlCodesSplit.Panel1MinSize = 20;
-            // 
-            // XmlCodesSplit.Panel2
-            // 
-            this.XmlCodesSplit.Panel2.Controls.Add(this.XmlObsCodesGrid);
-            this.XmlCodesSplit.Size = new System.Drawing.Size(1089, 95);
-            this.XmlCodesSplit.SplitterDistance = 20;
-            this.XmlCodesSplit.TabIndex = 0;
-            // 
-            // label52
-            // 
-            this.label52.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label52.AutoSize = true;
-            this.label52.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label52.Location = new System.Drawing.Point(903, 3);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(152, 16);
-            this.label52.TabIndex = 15;
-            this.label52.Text = "Supprimer une valeur :";
-            // 
-            // XmlObsCodeDelValueBt
-            // 
-            this.XmlObsCodeDelValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlObsCodeDelValueBt.BackColor = System.Drawing.SystemColors.Control;
-            this.XmlObsCodeDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlObsCodeDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
-            this.XmlObsCodeDelValueBt.Location = new System.Drawing.Point(1059, 1);
-            this.XmlObsCodeDelValueBt.Name = "XmlObsCodeDelValueBt";
-            this.XmlObsCodeDelValueBt.Size = new System.Drawing.Size(26, 22);
-            this.XmlObsCodeDelValueBt.TabIndex = 14;
-            this.XmlObsCodeDelValueBt.UseVisualStyleBackColor = false;
-            // 
-            // label53
-            // 
-            this.label53.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label53.AutoSize = true;
-            this.label53.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label53.Location = new System.Drawing.Point(581, 1);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(132, 16);
-            this.label53.TabIndex = 13;
-            this.label53.Text = "Ajouter une valeur :";
-            // 
-            // XmlObsCodeAddValueBt
-            // 
-            this.XmlObsCodeAddValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlObsCodeAddValueBt.BackColor = System.Drawing.SystemColors.Control;
-            this.XmlObsCodeAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlObsCodeAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.XmlObsCodeAddValueBt.Location = new System.Drawing.Point(871, -1);
-            this.XmlObsCodeAddValueBt.Name = "XmlObsCodeAddValueBt";
-            this.XmlObsCodeAddValueBt.Size = new System.Drawing.Size(26, 22);
-            this.XmlObsCodeAddValueBt.TabIndex = 12;
-            this.XmlObsCodeAddValueBt.UseVisualStyleBackColor = false;
-            // 
-            // XmlObsCodeAddValueTb
-            // 
-            this.XmlObsCodeAddValueTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlObsCodeAddValueTb.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlObsCodeAddValueTb.Location = new System.Drawing.Point(719, 1);
-            this.XmlObsCodeAddValueTb.Name = "XmlObsCodeAddValueTb";
-            this.XmlObsCodeAddValueTb.Size = new System.Drawing.Size(146, 20);
-            this.XmlObsCodeAddValueTb.TabIndex = 11;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Location = new System.Drawing.Point(9, 3);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 16);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Codes";
-            // 
-            // XmlObsCodesGrid
-            // 
-            this.XmlObsCodesGrid.ColumnInfo = resources.GetString("XmlObsCodesGrid.ColumnInfo");
-            this.XmlObsCodesGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.XmlObsCodesGrid.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlObsCodesGrid.Location = new System.Drawing.Point(0, 0);
-            this.XmlObsCodesGrid.Name = "XmlObsCodesGrid";
-            this.XmlObsCodesGrid.Rows.DefaultSize = 15;
-            this.XmlObsCodesGrid.Size = new System.Drawing.Size(1089, 71);
-            this.XmlObsCodesGrid.StyleInfo = resources.GetString("XmlObsCodesGrid.StyleInfo");
-            this.XmlObsCodesGrid.TabIndex = 0;
-            // 
-            // splitContainer6
-            // 
-            this.splitContainer6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer6.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer6.Name = "splitContainer6";
-            this.splitContainer6.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer6.Panel1
-            // 
-            this.splitContainer6.Panel1.Controls.Add(this.splitContainer9);
-            // 
-            // splitContainer6.Panel2
-            // 
-            this.splitContainer6.Panel2.Controls.Add(this.XmlItemsSplit);
-            this.splitContainer6.Size = new System.Drawing.Size(1089, 239);
-            this.splitContainer6.SplitterDistance = 157;
-            this.splitContainer6.TabIndex = 1;
-            // 
-            // splitContainer9
-            // 
-            this.splitContainer9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer9.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer9.Name = "splitContainer9";
-            this.splitContainer9.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer9.Panel1
-            // 
-            this.splitContainer9.Panel1.Controls.Add(this.splitContainer28);
-            // 
-            // splitContainer9.Panel2
-            // 
-            this.splitContainer9.Panel2.Controls.Add(this.XmlCaracSplit);
-            this.splitContainer9.Size = new System.Drawing.Size(1089, 157);
-            this.splitContainer9.SplitterDistance = 45;
-            this.splitContainer9.TabIndex = 0;
-            // 
-            // splitContainer28
-            // 
-            this.splitContainer28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer28.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer28.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer28.Name = "splitContainer28";
-            this.splitContainer28.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer28.Panel1
-            // 
-            this.splitContainer28.Panel1.Controls.Add(this.label61);
-            this.splitContainer28.Panel1MinSize = 20;
-            // 
-            // splitContainer28.Panel2
-            // 
-            this.splitContainer28.Panel2.Controls.Add(this.XmlObsCodeLieGrid);
-            this.splitContainer28.Size = new System.Drawing.Size(1089, 45);
-            this.splitContainer28.SplitterDistance = 20;
-            this.splitContainer28.TabIndex = 2;
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label61.Location = new System.Drawing.Point(8, 2);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(85, 16);
-            this.label61.TabIndex = 1;
-            this.label61.Text = "Codes Liés";
-            // 
-            // XmlObsCodeLieGrid
-            // 
-            this.XmlObsCodeLieGrid.ColumnInfo = "10,1,0,0,0,95,Columns:";
-            this.XmlObsCodeLieGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.XmlObsCodeLieGrid.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlObsCodeLieGrid.Location = new System.Drawing.Point(0, 0);
-            this.XmlObsCodeLieGrid.Name = "XmlObsCodeLieGrid";
-            this.XmlObsCodeLieGrid.Rows.DefaultSize = 15;
-            this.XmlObsCodeLieGrid.Size = new System.Drawing.Size(1089, 25);
-            this.XmlObsCodeLieGrid.StyleInfo = resources.GetString("XmlObsCodeLieGrid.StyleInfo");
-            this.XmlObsCodeLieGrid.TabIndex = 1;
-            // 
-            // XmlCaracSplit
-            // 
-            this.XmlCaracSplit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.XmlCaracSplit.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.XmlCaracSplit.Location = new System.Drawing.Point(0, 0);
-            this.XmlCaracSplit.Name = "XmlCaracSplit";
-            this.XmlCaracSplit.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // XmlCaracSplit.Panel1
-            // 
-            this.XmlCaracSplit.Panel1.Controls.Add(this.label7);
-            this.XmlCaracSplit.Panel1MinSize = 20;
-            // 
-            // XmlCaracSplit.Panel2
-            // 
-            this.XmlCaracSplit.Panel2.Controls.Add(this.XmlObsCaracGrid);
-            this.XmlCaracSplit.Size = new System.Drawing.Size(1089, 108);
-            this.XmlCaracSplit.SplitterDistance = 20;
-            this.XmlCaracSplit.TabIndex = 2;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label7.Location = new System.Drawing.Point(8, 2);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(123, 16);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Caractéristiques";
-            // 
-            // XmlObsCaracGrid
-            // 
-            this.XmlObsCaracGrid.ColumnInfo = resources.GetString("XmlObsCaracGrid.ColumnInfo");
-            this.XmlObsCaracGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.XmlObsCaracGrid.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlObsCaracGrid.Location = new System.Drawing.Point(0, 0);
-            this.XmlObsCaracGrid.Name = "XmlObsCaracGrid";
-            this.XmlObsCaracGrid.Rows.DefaultSize = 15;
-            this.XmlObsCaracGrid.Size = new System.Drawing.Size(1089, 84);
-            this.XmlObsCaracGrid.StyleInfo = resources.GetString("XmlObsCaracGrid.StyleInfo");
-            this.XmlObsCaracGrid.TabIndex = 1;
-            // 
-            // XmlItemsSplit
-            // 
-            this.XmlItemsSplit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.XmlItemsSplit.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.XmlItemsSplit.Location = new System.Drawing.Point(0, 0);
-            this.XmlItemsSplit.Name = "XmlItemsSplit";
-            this.XmlItemsSplit.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // XmlItemsSplit.Panel1
-            // 
-            this.XmlItemsSplit.Panel1.Controls.Add(this.label56);
-            this.XmlItemsSplit.Panel1.Controls.Add(this.XmlObsItemDelValueBt);
-            this.XmlItemsSplit.Panel1.Controls.Add(this.label57);
-            this.XmlItemsSplit.Panel1.Controls.Add(this.XmlObsItemAddValueBt);
-            this.XmlItemsSplit.Panel1.Controls.Add(this.XmlObsItemAddValueTb);
-            this.XmlItemsSplit.Panel1.Controls.Add(this.label8);
-            this.XmlItemsSplit.Panel1MinSize = 20;
-            // 
-            // XmlItemsSplit.Panel2
-            // 
-            this.XmlItemsSplit.Panel2.Controls.Add(this.XmlObsItemGrid);
-            this.XmlItemsSplit.Size = new System.Drawing.Size(1089, 78);
-            this.XmlItemsSplit.SplitterDistance = 20;
-            this.XmlItemsSplit.TabIndex = 1;
-            // 
-            // label56
-            // 
-            this.label56.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label56.AutoSize = true;
-            this.label56.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label56.Location = new System.Drawing.Point(903, 3);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(152, 16);
-            this.label56.TabIndex = 15;
-            this.label56.Text = "Supprimer une valeur :";
-            // 
-            // XmlObsItemDelValueBt
-            // 
-            this.XmlObsItemDelValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlObsItemDelValueBt.BackColor = System.Drawing.SystemColors.Control;
-            this.XmlObsItemDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlObsItemDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
-            this.XmlObsItemDelValueBt.Location = new System.Drawing.Point(1059, -1);
-            this.XmlObsItemDelValueBt.Name = "XmlObsItemDelValueBt";
-            this.XmlObsItemDelValueBt.Size = new System.Drawing.Size(26, 22);
-            this.XmlObsItemDelValueBt.TabIndex = 14;
-            this.XmlObsItemDelValueBt.UseVisualStyleBackColor = false;
-            // 
-            // label57
-            // 
-            this.label57.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label57.AutoSize = true;
-            this.label57.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label57.Location = new System.Drawing.Point(581, 3);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(132, 16);
-            this.label57.TabIndex = 13;
-            this.label57.Text = "Ajouter une valeur :";
-            // 
-            // XmlObsItemAddValueBt
-            // 
-            this.XmlObsItemAddValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlObsItemAddValueBt.BackColor = System.Drawing.SystemColors.Control;
-            this.XmlObsItemAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlObsItemAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
-            this.XmlObsItemAddValueBt.Location = new System.Drawing.Point(871, 0);
-            this.XmlObsItemAddValueBt.Name = "XmlObsItemAddValueBt";
-            this.XmlObsItemAddValueBt.Size = new System.Drawing.Size(26, 22);
-            this.XmlObsItemAddValueBt.TabIndex = 12;
-            this.XmlObsItemAddValueBt.UseVisualStyleBackColor = false;
-            // 
-            // XmlObsItemAddValueTb
-            // 
-            this.XmlObsItemAddValueTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XmlObsItemAddValueTb.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlObsItemAddValueTb.Location = new System.Drawing.Point(719, 0);
-            this.XmlObsItemAddValueTb.Name = "XmlObsItemAddValueTb";
-            this.XmlObsItemAddValueTb.Size = new System.Drawing.Size(146, 20);
-            this.XmlObsItemAddValueTb.TabIndex = 11;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label8.Location = new System.Drawing.Point(8, 3);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 16);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Items";
-            // 
-            // XmlObsItemGrid
-            // 
-            this.XmlObsItemGrid.ColumnInfo = resources.GetString("XmlObsItemGrid.ColumnInfo");
-            this.XmlObsItemGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.XmlObsItemGrid.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XmlObsItemGrid.Location = new System.Drawing.Point(0, 0);
-            this.XmlObsItemGrid.Name = "XmlObsItemGrid";
-            this.XmlObsItemGrid.Rows.DefaultSize = 15;
-            this.XmlObsItemGrid.Size = new System.Drawing.Size(1089, 54);
-            this.XmlObsItemGrid.StyleInfo = resources.GetString("XmlObsItemGrid.StyleInfo");
-            this.XmlObsItemGrid.TabIndex = 1;
-            // 
             // XmlIdTab
             // 
             this.XmlIdTab.Controls.Add(this.splitContainer7);
             this.XmlIdTab.Location = new System.Drawing.Point(1, 27);
             this.XmlIdTab.Name = "XmlIdTab";
-            this.XmlIdTab.Size = new System.Drawing.Size(1089, 367);
+            this.XmlIdTab.Size = new System.Drawing.Size(1089, 446);
             this.XmlIdTab.TabIndex = 1;
             this.XmlIdTab.Text = "Codes Identification";
             // 
@@ -3462,7 +3334,7 @@
             // splitContainer7.Panel2
             // 
             this.splitContainer7.Panel2.Controls.Add(this.splitContainer8);
-            this.splitContainer7.Size = new System.Drawing.Size(1089, 367);
+            this.splitContainer7.Size = new System.Drawing.Size(1089, 446);
             this.splitContainer7.SplitterDistance = 25;
             this.splitContainer7.TabIndex = 1;
             // 
@@ -3529,8 +3401,8 @@
             // splitContainer8.Panel2
             // 
             this.splitContainer8.Panel2.Controls.Add(this.splitContainer11);
-            this.splitContainer8.Size = new System.Drawing.Size(1089, 338);
-            this.splitContainer8.SplitterDistance = 135;
+            this.splitContainer8.Size = new System.Drawing.Size(1089, 417);
+            this.splitContainer8.SplitterDistance = 166;
             this.splitContainer8.TabIndex = 0;
             // 
             // splitContainer10
@@ -3554,7 +3426,7 @@
             // splitContainer10.Panel2
             // 
             this.splitContainer10.Panel2.Controls.Add(this.XmlIdCodeGrid);
-            this.splitContainer10.Size = new System.Drawing.Size(1089, 135);
+            this.splitContainer10.Size = new System.Drawing.Size(1089, 166);
             this.splitContainer10.SplitterDistance = 20;
             this.splitContainer10.TabIndex = 0;
             // 
@@ -3656,7 +3528,7 @@
             // splitContainer11.Panel2
             // 
             this.splitContainer11.Panel2.Controls.Add(this.XmlIdItemGrid);
-            this.splitContainer11.Size = new System.Drawing.Size(1089, 199);
+            this.splitContainer11.Size = new System.Drawing.Size(1089, 247);
             this.splitContainer11.SplitterDistance = 20;
             this.splitContainer11.TabIndex = 2;
             // 
@@ -3734,16 +3606,499 @@
             this.XmlIdItemGrid.Location = new System.Drawing.Point(0, 0);
             this.XmlIdItemGrid.Name = "XmlIdItemGrid";
             this.XmlIdItemGrid.Rows.DefaultSize = 15;
-            this.XmlIdItemGrid.Size = new System.Drawing.Size(1089, 175);
+            this.XmlIdItemGrid.Size = new System.Drawing.Size(1089, 223);
             this.XmlIdItemGrid.StyleInfo = resources.GetString("XmlIdItemGrid.StyleInfo");
             this.XmlIdItemGrid.TabIndex = 1;
+            // 
+            // XmlObsTab
+            // 
+            this.XmlObsTab.Controls.Add(this.XmlParamSplit);
+            this.XmlObsTab.Location = new System.Drawing.Point(1, 27);
+            this.XmlObsTab.Name = "XmlObsTab";
+            this.XmlObsTab.Size = new System.Drawing.Size(1089, 446);
+            this.XmlObsTab.TabIndex = 0;
+            this.XmlObsTab.Text = "Codes Observation";
+            // 
+            // XmlParamSplit
+            // 
+            this.XmlParamSplit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.XmlParamSplit.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.XmlParamSplit.Location = new System.Drawing.Point(0, 0);
+            this.XmlParamSplit.Name = "XmlParamSplit";
+            this.XmlParamSplit.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // XmlParamSplit.Panel1
+            // 
+            this.XmlParamSplit.Panel1.Controls.Add(this.ToolStripObsCode);
+            // 
+            // XmlParamSplit.Panel2
+            // 
+            this.XmlParamSplit.Panel2.Controls.Add(this.splitContainer5);
+            this.XmlParamSplit.Size = new System.Drawing.Size(1089, 446);
+            this.XmlParamSplit.SplitterDistance = 25;
+            this.XmlParamSplit.TabIndex = 0;
+            // 
+            // ToolStripObsCode
+            // 
+            this.ToolStripObsCode.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.XmlObsCanaButton,
+            this.XmlObsRegButton,
+            this.toolStripSeparator3,
+            this.toolStripLabel2,
+            this.XmlObsStripLabel});
+            this.ToolStripObsCode.Location = new System.Drawing.Point(0, 0);
+            this.ToolStripObsCode.Name = "ToolStripObsCode";
+            this.ToolStripObsCode.Size = new System.Drawing.Size(1089, 27);
+            this.ToolStripObsCode.TabIndex = 0;
+            this.ToolStripObsCode.Text = "toolStrip2";
+            // 
+            // XmlObsCanaButton
+            // 
+            this.XmlObsCanaButton.Image = global::ACTIVA_Module_1.Properties.Resources.list16;
+            this.XmlObsCanaButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.XmlObsCanaButton.Name = "XmlObsCanaButton";
+            this.XmlObsCanaButton.Size = new System.Drawing.Size(239, 24);
+            this.XmlObsCanaButton.Text = "Codes Observation Canalisation";
+            // 
+            // XmlObsRegButton
+            // 
+            this.XmlObsRegButton.Image = global::ACTIVA_Module_1.Properties.Resources.list16;
+            this.XmlObsRegButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.XmlObsRegButton.Name = "XmlObsRegButton";
+            this.XmlObsRegButton.Size = new System.Drawing.Size(206, 24);
+            this.XmlObsRegButton.Text = "Codes Observation Regard";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
+            // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripLabel2.ForeColor = System.Drawing.Color.ForestGreen;
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(131, 24);
+            this.toolStripLabel2.Text = "Fichier en cours :";
+            // 
+            // XmlObsStripLabel
+            // 
+            this.XmlObsStripLabel.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsStripLabel.Name = "XmlObsStripLabel";
+            this.XmlObsStripLabel.Size = new System.Drawing.Size(0, 24);
+            // 
+            // splitContainer5
+            // 
+            this.splitContainer5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer5.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer5.Name = "splitContainer5";
+            this.splitContainer5.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer5.Panel1
+            // 
+            this.splitContainer5.Panel1.Controls.Add(this.XmlCodesSplit);
+            // 
+            // splitContainer5.Panel2
+            // 
+            this.splitContainer5.Panel2.Controls.Add(this.splitContainer6);
+            this.splitContainer5.Size = new System.Drawing.Size(1089, 417);
+            this.splitContainer5.SplitterDistance = 117;
+            this.splitContainer5.TabIndex = 0;
+            // 
+            // XmlCodesSplit
+            // 
+            this.XmlCodesSplit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.XmlCodesSplit.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.XmlCodesSplit.Location = new System.Drawing.Point(0, 0);
+            this.XmlCodesSplit.Name = "XmlCodesSplit";
+            this.XmlCodesSplit.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // XmlCodesSplit.Panel1
+            // 
+            this.XmlCodesSplit.Panel1.Controls.Add(this.label52);
+            this.XmlCodesSplit.Panel1.Controls.Add(this.XmlObsCodeDelValueBt);
+            this.XmlCodesSplit.Panel1.Controls.Add(this.label53);
+            this.XmlCodesSplit.Panel1.Controls.Add(this.XmlObsCodeAddValueBt);
+            this.XmlCodesSplit.Panel1.Controls.Add(this.XmlObsCodeAddValueTb);
+            this.XmlCodesSplit.Panel1.Controls.Add(this.label6);
+            this.XmlCodesSplit.Panel1MinSize = 20;
+            // 
+            // XmlCodesSplit.Panel2
+            // 
+            this.XmlCodesSplit.Panel2.Controls.Add(this.XmlObsCodesGrid);
+            this.XmlCodesSplit.Size = new System.Drawing.Size(1089, 117);
+            this.XmlCodesSplit.SplitterDistance = 20;
+            this.XmlCodesSplit.TabIndex = 0;
+            // 
+            // label52
+            // 
+            this.label52.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label52.AutoSize = true;
+            this.label52.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label52.Location = new System.Drawing.Point(903, 3);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(152, 16);
+            this.label52.TabIndex = 15;
+            this.label52.Text = "Supprimer une valeur :";
+            // 
+            // XmlObsCodeDelValueBt
+            // 
+            this.XmlObsCodeDelValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlObsCodeDelValueBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlObsCodeDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsCodeDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
+            this.XmlObsCodeDelValueBt.Location = new System.Drawing.Point(1059, 1);
+            this.XmlObsCodeDelValueBt.Name = "XmlObsCodeDelValueBt";
+            this.XmlObsCodeDelValueBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlObsCodeDelValueBt.TabIndex = 14;
+            this.XmlObsCodeDelValueBt.UseVisualStyleBackColor = false;
+            // 
+            // label53
+            // 
+            this.label53.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label53.AutoSize = true;
+            this.label53.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label53.Location = new System.Drawing.Point(581, 1);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(132, 16);
+            this.label53.TabIndex = 13;
+            this.label53.Text = "Ajouter une valeur :";
+            // 
+            // XmlObsCodeAddValueBt
+            // 
+            this.XmlObsCodeAddValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlObsCodeAddValueBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlObsCodeAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsCodeAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
+            this.XmlObsCodeAddValueBt.Location = new System.Drawing.Point(871, -1);
+            this.XmlObsCodeAddValueBt.Name = "XmlObsCodeAddValueBt";
+            this.XmlObsCodeAddValueBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlObsCodeAddValueBt.TabIndex = 12;
+            this.XmlObsCodeAddValueBt.UseVisualStyleBackColor = false;
+            // 
+            // XmlObsCodeAddValueTb
+            // 
+            this.XmlObsCodeAddValueTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlObsCodeAddValueTb.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsCodeAddValueTb.Location = new System.Drawing.Point(719, 0);
+            this.XmlObsCodeAddValueTb.Name = "XmlObsCodeAddValueTb";
+            this.XmlObsCodeAddValueTb.Size = new System.Drawing.Size(146, 20);
+            this.XmlObsCodeAddValueTb.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label6.Location = new System.Drawing.Point(9, 3);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 16);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Codes";
+            // 
+            // XmlObsCodesGrid
+            // 
+            this.XmlObsCodesGrid.ColumnInfo = resources.GetString("XmlObsCodesGrid.ColumnInfo");
+            this.XmlObsCodesGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.XmlObsCodesGrid.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsCodesGrid.Location = new System.Drawing.Point(0, 0);
+            this.XmlObsCodesGrid.Name = "XmlObsCodesGrid";
+            this.XmlObsCodesGrid.Rows.DefaultSize = 15;
+            this.XmlObsCodesGrid.Size = new System.Drawing.Size(1089, 93);
+            this.XmlObsCodesGrid.StyleInfo = resources.GetString("XmlObsCodesGrid.StyleInfo");
+            this.XmlObsCodesGrid.TabIndex = 0;
+            // 
+            // splitContainer6
+            // 
+            this.splitContainer6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer6.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer6.Name = "splitContainer6";
+            this.splitContainer6.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer6.Panel1
+            // 
+            this.splitContainer6.Panel1.Controls.Add(this.splitContainer9);
+            // 
+            // splitContainer6.Panel2
+            // 
+            this.splitContainer6.Panel2.Controls.Add(this.XmlItemsSplit);
+            this.splitContainer6.Size = new System.Drawing.Size(1089, 296);
+            this.splitContainer6.SplitterDistance = 194;
+            this.splitContainer6.TabIndex = 1;
+            // 
+            // splitContainer9
+            // 
+            this.splitContainer9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer9.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer9.Name = "splitContainer9";
+            this.splitContainer9.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer9.Panel1
+            // 
+            this.splitContainer9.Panel1.Controls.Add(this.splitContainer28);
+            // 
+            // splitContainer9.Panel2
+            // 
+            this.splitContainer9.Panel2.Controls.Add(this.XmlCaracSplit);
+            this.splitContainer9.Size = new System.Drawing.Size(1089, 194);
+            this.splitContainer9.SplitterDistance = 55;
+            this.splitContainer9.TabIndex = 0;
+            // 
+            // splitContainer28
+            // 
+            this.splitContainer28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer28.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer28.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer28.Name = "splitContainer28";
+            this.splitContainer28.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer28.Panel1
+            // 
+            this.splitContainer28.Panel1.Controls.Add(this.XmlObsCodeLieDelValueBt);
+            this.splitContainer28.Panel1.Controls.Add(this.label63);
+            this.splitContainer28.Panel1.Controls.Add(this.XmlObsCodeLieAddValueBt);
+            this.splitContainer28.Panel1.Controls.Add(this.label62);
+            this.splitContainer28.Panel1.Controls.Add(this.XmlObsCodeLieAddValueTb);
+            this.splitContainer28.Panel1.Controls.Add(this.label61);
+            this.splitContainer28.Panel1MinSize = 20;
+            // 
+            // splitContainer28.Panel2
+            // 
+            this.splitContainer28.Panel2.Controls.Add(this.XmlObsCodeLieGrid);
+            this.splitContainer28.Size = new System.Drawing.Size(1089, 55);
+            this.splitContainer28.SplitterDistance = 20;
+            this.splitContainer28.TabIndex = 2;
+            // 
+            // XmlObsCodeLieDelValueBt
+            // 
+            this.XmlObsCodeLieDelValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlObsCodeLieDelValueBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlObsCodeLieDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsCodeLieDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
+            this.XmlObsCodeLieDelValueBt.Location = new System.Drawing.Point(1060, 0);
+            this.XmlObsCodeLieDelValueBt.Name = "XmlObsCodeLieDelValueBt";
+            this.XmlObsCodeLieDelValueBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlObsCodeLieDelValueBt.TabIndex = 17;
+            this.XmlObsCodeLieDelValueBt.UseVisualStyleBackColor = false;
+            // 
+            // label63
+            // 
+            this.label63.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label63.AutoSize = true;
+            this.label63.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label63.Location = new System.Drawing.Point(903, 2);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(152, 16);
+            this.label63.TabIndex = 16;
+            this.label63.Text = "Supprimer une valeur :";
+            // 
+            // XmlObsCodeLieAddValueBt
+            // 
+            this.XmlObsCodeLieAddValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlObsCodeLieAddValueBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlObsCodeLieAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsCodeLieAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
+            this.XmlObsCodeLieAddValueBt.Location = new System.Drawing.Point(871, -1);
+            this.XmlObsCodeLieAddValueBt.Name = "XmlObsCodeLieAddValueBt";
+            this.XmlObsCodeLieAddValueBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlObsCodeLieAddValueBt.TabIndex = 15;
+            this.XmlObsCodeLieAddValueBt.UseVisualStyleBackColor = false;
+            // 
+            // label62
+            // 
+            this.label62.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label62.AutoSize = true;
+            this.label62.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label62.Location = new System.Drawing.Point(581, 2);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(132, 16);
+            this.label62.TabIndex = 14;
+            this.label62.Text = "Ajouter une valeur :";
+            // 
+            // XmlObsCodeLieAddValueTb
+            // 
+            this.XmlObsCodeLieAddValueTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlObsCodeLieAddValueTb.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsCodeLieAddValueTb.Location = new System.Drawing.Point(719, -1);
+            this.XmlObsCodeLieAddValueTb.Name = "XmlObsCodeLieAddValueTb";
+            this.XmlObsCodeLieAddValueTb.Size = new System.Drawing.Size(146, 20);
+            this.XmlObsCodeLieAddValueTb.TabIndex = 12;
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label61.Location = new System.Drawing.Point(8, 2);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(85, 16);
+            this.label61.TabIndex = 1;
+            this.label61.Text = "Codes Liés";
+            // 
+            // XmlObsCodeLieGrid
+            // 
+            this.XmlObsCodeLieGrid.ColumnInfo = resources.GetString("XmlObsCodeLieGrid.ColumnInfo");
+            this.XmlObsCodeLieGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.XmlObsCodeLieGrid.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsCodeLieGrid.Location = new System.Drawing.Point(0, 0);
+            this.XmlObsCodeLieGrid.Name = "XmlObsCodeLieGrid";
+            this.XmlObsCodeLieGrid.Rows.DefaultSize = 15;
+            this.XmlObsCodeLieGrid.Size = new System.Drawing.Size(1089, 31);
+            this.XmlObsCodeLieGrid.StyleInfo = resources.GetString("XmlObsCodeLieGrid.StyleInfo");
+            this.XmlObsCodeLieGrid.TabIndex = 1;
+            // 
+            // XmlCaracSplit
+            // 
+            this.XmlCaracSplit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.XmlCaracSplit.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.XmlCaracSplit.Location = new System.Drawing.Point(0, 0);
+            this.XmlCaracSplit.Name = "XmlCaracSplit";
+            this.XmlCaracSplit.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // XmlCaracSplit.Panel1
+            // 
+            this.XmlCaracSplit.Panel1.Controls.Add(this.label7);
+            this.XmlCaracSplit.Panel1MinSize = 20;
+            // 
+            // XmlCaracSplit.Panel2
+            // 
+            this.XmlCaracSplit.Panel2.Controls.Add(this.XmlObsCaracGrid);
+            this.XmlCaracSplit.Size = new System.Drawing.Size(1089, 135);
+            this.XmlCaracSplit.SplitterDistance = 20;
+            this.XmlCaracSplit.TabIndex = 2;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label7.Location = new System.Drawing.Point(8, 2);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(123, 16);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Caractéristiques";
+            // 
+            // XmlObsCaracGrid
+            // 
+            this.XmlObsCaracGrid.ColumnInfo = resources.GetString("XmlObsCaracGrid.ColumnInfo");
+            this.XmlObsCaracGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.XmlObsCaracGrid.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsCaracGrid.Location = new System.Drawing.Point(0, 0);
+            this.XmlObsCaracGrid.Name = "XmlObsCaracGrid";
+            this.XmlObsCaracGrid.Rows.DefaultSize = 15;
+            this.XmlObsCaracGrid.Size = new System.Drawing.Size(1089, 111);
+            this.XmlObsCaracGrid.StyleInfo = resources.GetString("XmlObsCaracGrid.StyleInfo");
+            this.XmlObsCaracGrid.TabIndex = 1;
+            // 
+            // XmlItemsSplit
+            // 
+            this.XmlItemsSplit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.XmlItemsSplit.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.XmlItemsSplit.Location = new System.Drawing.Point(0, 0);
+            this.XmlItemsSplit.Name = "XmlItemsSplit";
+            this.XmlItemsSplit.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // XmlItemsSplit.Panel1
+            // 
+            this.XmlItemsSplit.Panel1.Controls.Add(this.label56);
+            this.XmlItemsSplit.Panel1.Controls.Add(this.XmlObsItemDelValueBt);
+            this.XmlItemsSplit.Panel1.Controls.Add(this.label57);
+            this.XmlItemsSplit.Panel1.Controls.Add(this.XmlObsItemAddValueBt);
+            this.XmlItemsSplit.Panel1.Controls.Add(this.XmlObsItemAddValueTb);
+            this.XmlItemsSplit.Panel1.Controls.Add(this.label8);
+            this.XmlItemsSplit.Panel1MinSize = 20;
+            // 
+            // XmlItemsSplit.Panel2
+            // 
+            this.XmlItemsSplit.Panel2.Controls.Add(this.XmlObsItemGrid);
+            this.XmlItemsSplit.Size = new System.Drawing.Size(1089, 98);
+            this.XmlItemsSplit.SplitterDistance = 20;
+            this.XmlItemsSplit.TabIndex = 1;
+            // 
+            // label56
+            // 
+            this.label56.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label56.AutoSize = true;
+            this.label56.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label56.Location = new System.Drawing.Point(903, 3);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(152, 16);
+            this.label56.TabIndex = 15;
+            this.label56.Text = "Supprimer une valeur :";
+            // 
+            // XmlObsItemDelValueBt
+            // 
+            this.XmlObsItemDelValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlObsItemDelValueBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlObsItemDelValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsItemDelValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
+            this.XmlObsItemDelValueBt.Location = new System.Drawing.Point(1059, -1);
+            this.XmlObsItemDelValueBt.Name = "XmlObsItemDelValueBt";
+            this.XmlObsItemDelValueBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlObsItemDelValueBt.TabIndex = 14;
+            this.XmlObsItemDelValueBt.UseVisualStyleBackColor = false;
+            // 
+            // label57
+            // 
+            this.label57.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label57.AutoSize = true;
+            this.label57.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label57.Location = new System.Drawing.Point(581, 3);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(132, 16);
+            this.label57.TabIndex = 13;
+            this.label57.Text = "Ajouter une valeur :";
+            // 
+            // XmlObsItemAddValueBt
+            // 
+            this.XmlObsItemAddValueBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlObsItemAddValueBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlObsItemAddValueBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsItemAddValueBt.Image = global::ACTIVA_Module_1.Properties.Resources.accept1;
+            this.XmlObsItemAddValueBt.Location = new System.Drawing.Point(871, 0);
+            this.XmlObsItemAddValueBt.Name = "XmlObsItemAddValueBt";
+            this.XmlObsItemAddValueBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlObsItemAddValueBt.TabIndex = 12;
+            this.XmlObsItemAddValueBt.UseVisualStyleBackColor = false;
+            // 
+            // XmlObsItemAddValueTb
+            // 
+            this.XmlObsItemAddValueTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlObsItemAddValueTb.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsItemAddValueTb.Location = new System.Drawing.Point(719, 0);
+            this.XmlObsItemAddValueTb.Name = "XmlObsItemAddValueTb";
+            this.XmlObsItemAddValueTb.Size = new System.Drawing.Size(146, 20);
+            this.XmlObsItemAddValueTb.TabIndex = 11;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label8.Location = new System.Drawing.Point(8, 3);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(46, 16);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Items";
+            // 
+            // XmlObsItemGrid
+            // 
+            this.XmlObsItemGrid.ColumnInfo = resources.GetString("XmlObsItemGrid.ColumnInfo");
+            this.XmlObsItemGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.XmlObsItemGrid.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlObsItemGrid.Location = new System.Drawing.Point(0, 0);
+            this.XmlObsItemGrid.Name = "XmlObsItemGrid";
+            this.XmlObsItemGrid.Rows.DefaultSize = 15;
+            this.XmlObsItemGrid.Size = new System.Drawing.Size(1089, 74);
+            this.XmlObsItemGrid.StyleInfo = resources.GetString("XmlObsItemGrid.StyleInfo");
+            this.XmlObsItemGrid.TabIndex = 1;
             // 
             // XmlSectionTab
             // 
             this.XmlSectionTab.Controls.Add(this.splitContainer12);
             this.XmlSectionTab.Location = new System.Drawing.Point(1, 27);
             this.XmlSectionTab.Name = "XmlSectionTab";
-            this.XmlSectionTab.Size = new System.Drawing.Size(1089, 367);
+            this.XmlSectionTab.Size = new System.Drawing.Size(1089, 446);
             this.XmlSectionTab.TabIndex = 3;
             this.XmlSectionTab.Text = "Sections";
             // 
@@ -3762,7 +4117,7 @@
             // splitContainer12.Panel2
             // 
             this.splitContainer12.Panel2.Controls.Add(this.splitContainer13);
-            this.splitContainer12.Size = new System.Drawing.Size(1089, 367);
+            this.splitContainer12.Size = new System.Drawing.Size(1089, 446);
             this.splitContainer12.SplitterDistance = 25;
             this.splitContainer12.TabIndex = 2;
             // 
@@ -3805,8 +4160,8 @@
             // splitContainer13.Panel2
             // 
             this.splitContainer13.Panel2.Controls.Add(this.splitContainer22);
-            this.splitContainer13.Size = new System.Drawing.Size(1089, 338);
-            this.splitContainer13.SplitterDistance = 146;
+            this.splitContainer13.Size = new System.Drawing.Size(1089, 417);
+            this.splitContainer13.SplitterDistance = 179;
             this.splitContainer13.TabIndex = 2;
             // 
             // splitContainer21
@@ -3820,7 +4175,7 @@
             // splitContainer21.Panel1
             // 
             this.splitContainer21.Panel1.Controls.Add(this.label44);
-            this.splitContainer21.Panel1.Controls.Add(this.button1);
+            this.splitContainer21.Panel1.Controls.Add(this.XmlSectionDelBt);
             this.splitContainer21.Panel1.Controls.Add(this.label45);
             this.splitContainer21.Panel1.Controls.Add(this.XmlSectionAddBt);
             this.splitContainer21.Panel1.Controls.Add(this.XmlSectionAddTb);
@@ -3829,7 +4184,7 @@
             // splitContainer21.Panel2
             // 
             this.splitContainer21.Panel2.Controls.Add(this.XmlSectionGrid);
-            this.splitContainer21.Size = new System.Drawing.Size(1089, 146);
+            this.splitContainer21.Size = new System.Drawing.Size(1089, 179);
             this.splitContainer21.SplitterDistance = 25;
             this.splitContainer21.TabIndex = 2;
             // 
@@ -3844,17 +4199,17 @@
             this.label44.TabIndex = 10;
             this.label44.Text = "Supprimer une valeur :";
             // 
-            // button1
+            // XmlSectionDelBt
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
-            this.button1.Location = new System.Drawing.Point(1061, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(26, 22);
-            this.button1.TabIndex = 9;
-            this.button1.UseVisualStyleBackColor = false;
+            this.XmlSectionDelBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlSectionDelBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlSectionDelBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlSectionDelBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
+            this.XmlSectionDelBt.Location = new System.Drawing.Point(1061, 2);
+            this.XmlSectionDelBt.Name = "XmlSectionDelBt";
+            this.XmlSectionDelBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlSectionDelBt.TabIndex = 9;
+            this.XmlSectionDelBt.UseVisualStyleBackColor = false;
             // 
             // label45
             // 
@@ -3907,7 +4262,7 @@
             this.XmlSectionGrid.Location = new System.Drawing.Point(0, 0);
             this.XmlSectionGrid.Name = "XmlSectionGrid";
             this.XmlSectionGrid.Rows.DefaultSize = 15;
-            this.XmlSectionGrid.Size = new System.Drawing.Size(1089, 117);
+            this.XmlSectionGrid.Size = new System.Drawing.Size(1089, 150);
             this.XmlSectionGrid.StyleInfo = resources.GetString("XmlSectionGrid.StyleInfo");
             this.XmlSectionGrid.TabIndex = 1;
             // 
@@ -3922,7 +4277,7 @@
             // splitContainer22.Panel1
             // 
             this.splitContainer22.Panel1.Controls.Add(this.label46);
-            this.splitContainer22.Panel1.Controls.Add(this.button6);
+            this.splitContainer22.Panel1.Controls.Add(this.XmlHeureDelBt);
             this.splitContainer22.Panel1.Controls.Add(this.label47);
             this.splitContainer22.Panel1.Controls.Add(this.XmlHeureAddBt);
             this.splitContainer22.Panel1.Controls.Add(this.XmlHeureAddTb);
@@ -3931,7 +4286,7 @@
             // splitContainer22.Panel2
             // 
             this.splitContainer22.Panel2.Controls.Add(this.XmlHeureGrid);
-            this.splitContainer22.Size = new System.Drawing.Size(1089, 188);
+            this.splitContainer22.Size = new System.Drawing.Size(1089, 234);
             this.splitContainer22.SplitterDistance = 27;
             this.splitContainer22.TabIndex = 3;
             // 
@@ -3946,17 +4301,17 @@
             this.label46.TabIndex = 10;
             this.label46.Text = "Supprimer une valeur :";
             // 
-            // button6
+            // XmlHeureDelBt
             // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.BackColor = System.Drawing.SystemColors.Control;
-            this.button6.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
-            this.button6.Location = new System.Drawing.Point(1061, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(26, 22);
-            this.button6.TabIndex = 9;
-            this.button6.UseVisualStyleBackColor = false;
+            this.XmlHeureDelBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.XmlHeureDelBt.BackColor = System.Drawing.SystemColors.Control;
+            this.XmlHeureDelBt.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XmlHeureDelBt.Image = global::ACTIVA_Module_1.Properties.Resources.delete_16;
+            this.XmlHeureDelBt.Location = new System.Drawing.Point(1061, 3);
+            this.XmlHeureDelBt.Name = "XmlHeureDelBt";
+            this.XmlHeureDelBt.Size = new System.Drawing.Size(26, 22);
+            this.XmlHeureDelBt.TabIndex = 9;
+            this.XmlHeureDelBt.UseVisualStyleBackColor = false;
             // 
             // label47
             // 
@@ -4009,7 +4364,7 @@
             this.XmlHeureGrid.Location = new System.Drawing.Point(0, 0);
             this.XmlHeureGrid.Name = "XmlHeureGrid";
             this.XmlHeureGrid.Rows.DefaultSize = 15;
-            this.XmlHeureGrid.Size = new System.Drawing.Size(1089, 157);
+            this.XmlHeureGrid.Size = new System.Drawing.Size(1089, 203);
             this.XmlHeureGrid.StyleInfo = resources.GetString("XmlHeureGrid.StyleInfo");
             this.XmlHeureGrid.TabIndex = 2;
             // 
@@ -4018,7 +4373,7 @@
             this.XmlAutocadTab.Controls.Add(this.c1DockingTab2);
             this.XmlAutocadTab.Location = new System.Drawing.Point(1, 27);
             this.XmlAutocadTab.Name = "XmlAutocadTab";
-            this.XmlAutocadTab.Size = new System.Drawing.Size(1089, 367);
+            this.XmlAutocadTab.Size = new System.Drawing.Size(1089, 446);
             this.XmlAutocadTab.TabIndex = 4;
             this.XmlAutocadTab.Text = "Représentations AutoCAD";
             // 
@@ -4029,7 +4384,7 @@
             this.c1DockingTab2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1DockingTab2.Location = new System.Drawing.Point(0, 0);
             this.c1DockingTab2.Name = "c1DockingTab2";
-            this.c1DockingTab2.Size = new System.Drawing.Size(1089, 367);
+            this.c1DockingTab2.Size = new System.Drawing.Size(1089, 446);
             this.c1DockingTab2.TabIndex = 0;
             this.c1DockingTab2.TabsSpacing = 5;
             this.c1DockingTab2.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
@@ -4040,7 +4395,7 @@
             this.c1DockingTabPage3.Controls.Add(this.splitContainer14);
             this.c1DockingTabPage3.Location = new System.Drawing.Point(1, 27);
             this.c1DockingTabPage3.Name = "c1DockingTabPage3";
-            this.c1DockingTabPage3.Size = new System.Drawing.Size(1087, 339);
+            this.c1DockingTabPage3.Size = new System.Drawing.Size(1087, 418);
             this.c1DockingTabPage3.TabIndex = 0;
             this.c1DockingTabPage3.Text = "Codes";
             // 
@@ -4059,7 +4414,7 @@
             // splitContainer14.Panel2
             // 
             this.splitContainer14.Panel2.Controls.Add(this.splitContainer15);
-            this.splitContainer14.Size = new System.Drawing.Size(1087, 339);
+            this.splitContainer14.Size = new System.Drawing.Size(1087, 418);
             this.splitContainer14.SplitterDistance = 25;
             this.splitContainer14.TabIndex = 2;
             // 
@@ -4126,8 +4481,8 @@
             // splitContainer15.Panel2
             // 
             this.splitContainer15.Panel2.Controls.Add(this.splitContainer24);
-            this.splitContainer15.Size = new System.Drawing.Size(1087, 310);
-            this.splitContainer15.SplitterDistance = 134;
+            this.splitContainer15.Size = new System.Drawing.Size(1087, 389);
+            this.splitContainer15.SplitterDistance = 167;
             this.splitContainer15.TabIndex = 3;
             // 
             // splitContainer23
@@ -4145,7 +4500,7 @@
             // splitContainer23.Panel2
             // 
             this.splitContainer23.Panel2.Controls.Add(this.XmlAutocadGrid);
-            this.splitContainer23.Size = new System.Drawing.Size(1087, 134);
+            this.splitContainer23.Size = new System.Drawing.Size(1087, 167);
             this.splitContainer23.SplitterDistance = 25;
             this.splitContainer23.TabIndex = 2;
             // 
@@ -4168,7 +4523,7 @@
             this.XmlAutocadGrid.Location = new System.Drawing.Point(0, 0);
             this.XmlAutocadGrid.Name = "XmlAutocadGrid";
             this.XmlAutocadGrid.Rows.DefaultSize = 15;
-            this.XmlAutocadGrid.Size = new System.Drawing.Size(1087, 105);
+            this.XmlAutocadGrid.Size = new System.Drawing.Size(1087, 138);
             this.XmlAutocadGrid.StyleInfo = resources.GetString("XmlAutocadGrid.StyleInfo");
             this.XmlAutocadGrid.TabIndex = 1;
             // 
@@ -4187,7 +4542,7 @@
             // splitContainer24.Panel2
             // 
             this.splitContainer24.Panel2.Controls.Add(this.XmlAutocadItemGrid);
-            this.splitContainer24.Size = new System.Drawing.Size(1087, 172);
+            this.splitContainer24.Size = new System.Drawing.Size(1087, 218);
             this.splitContainer24.SplitterDistance = 25;
             this.splitContainer24.TabIndex = 3;
             // 
@@ -4210,7 +4565,7 @@
             this.XmlAutocadItemGrid.Location = new System.Drawing.Point(0, 0);
             this.XmlAutocadItemGrid.Name = "XmlAutocadItemGrid";
             this.XmlAutocadItemGrid.Rows.DefaultSize = 15;
-            this.XmlAutocadItemGrid.Size = new System.Drawing.Size(1087, 143);
+            this.XmlAutocadItemGrid.Size = new System.Drawing.Size(1087, 189);
             this.XmlAutocadItemGrid.StyleInfo = resources.GetString("XmlAutocadItemGrid.StyleInfo");
             this.XmlAutocadItemGrid.TabIndex = 2;
             // 
@@ -4219,7 +4574,7 @@
             this.c1DockingTabPage4.Controls.Add(this.splitContainer16);
             this.c1DockingTabPage4.Location = new System.Drawing.Point(1, 27);
             this.c1DockingTabPage4.Name = "c1DockingTabPage4";
-            this.c1DockingTabPage4.Size = new System.Drawing.Size(1087, 339);
+            this.c1DockingTabPage4.Size = new System.Drawing.Size(1087, 418);
             this.c1DockingTabPage4.TabIndex = 1;
             this.c1DockingTabPage4.Text = "Motifs";
             // 
@@ -4238,7 +4593,7 @@
             // splitContainer16.Panel2
             // 
             this.splitContainer16.Panel2.Controls.Add(this.splitContainer17);
-            this.splitContainer16.Size = new System.Drawing.Size(1087, 339);
+            this.splitContainer16.Size = new System.Drawing.Size(1087, 418);
             this.splitContainer16.SplitterDistance = 25;
             this.splitContainer16.TabIndex = 1;
             // 
@@ -4281,8 +4636,8 @@
             // splitContainer17.Panel2
             // 
             this.splitContainer17.Panel2.Controls.Add(this.splitContainer19);
-            this.splitContainer17.Size = new System.Drawing.Size(1087, 310);
-            this.splitContainer17.SplitterDistance = 85;
+            this.splitContainer17.Size = new System.Drawing.Size(1087, 389);
+            this.splitContainer17.SplitterDistance = 106;
             this.splitContainer17.TabIndex = 0;
             // 
             // splitContainer18
@@ -4306,7 +4661,7 @@
             // splitContainer18.Panel2
             // 
             this.splitContainer18.Panel2.Controls.Add(this.MotifPonctuelGrid);
-            this.splitContainer18.Size = new System.Drawing.Size(1087, 85);
+            this.splitContainer18.Size = new System.Drawing.Size(1087, 106);
             this.splitContainer18.SplitterDistance = 20;
             this.splitContainer18.TabIndex = 0;
             // 
@@ -4384,7 +4739,7 @@
             this.MotifPonctuelGrid.Location = new System.Drawing.Point(0, 0);
             this.MotifPonctuelGrid.Name = "MotifPonctuelGrid";
             this.MotifPonctuelGrid.Rows.DefaultSize = 15;
-            this.MotifPonctuelGrid.Size = new System.Drawing.Size(1087, 61);
+            this.MotifPonctuelGrid.Size = new System.Drawing.Size(1087, 82);
             this.MotifPonctuelGrid.StyleInfo = resources.GetString("MotifPonctuelGrid.StyleInfo");
             this.MotifPonctuelGrid.TabIndex = 0;
             // 
@@ -4402,8 +4757,8 @@
             // splitContainer19.Panel2
             // 
             this.splitContainer19.Panel2.Controls.Add(this.splitContainer26);
-            this.splitContainer19.Size = new System.Drawing.Size(1087, 221);
-            this.splitContainer19.SplitterDistance = 94;
+            this.splitContainer19.Size = new System.Drawing.Size(1087, 279);
+            this.splitContainer19.SplitterDistance = 118;
             this.splitContainer19.TabIndex = 1;
             // 
             // splitContainer20
@@ -4427,7 +4782,7 @@
             // splitContainer20.Panel2
             // 
             this.splitContainer20.Panel2.Controls.Add(this.MotifLineaireGrid);
-            this.splitContainer20.Size = new System.Drawing.Size(1087, 94);
+            this.splitContainer20.Size = new System.Drawing.Size(1087, 118);
             this.splitContainer20.SplitterDistance = 20;
             this.splitContainer20.TabIndex = 1;
             // 
@@ -4505,7 +4860,7 @@
             this.MotifLineaireGrid.Location = new System.Drawing.Point(0, 0);
             this.MotifLineaireGrid.Name = "MotifLineaireGrid";
             this.MotifLineaireGrid.Rows.DefaultSize = 15;
-            this.MotifLineaireGrid.Size = new System.Drawing.Size(1087, 70);
+            this.MotifLineaireGrid.Size = new System.Drawing.Size(1087, 94);
             this.MotifLineaireGrid.StyleInfo = resources.GetString("MotifLineaireGrid.StyleInfo");
             this.MotifLineaireGrid.TabIndex = 1;
             // 
@@ -4530,7 +4885,7 @@
             // splitContainer26.Panel2
             // 
             this.splitContainer26.Panel2.Controls.Add(this.MotifSurfaciqueGrid);
-            this.splitContainer26.Size = new System.Drawing.Size(1087, 123);
+            this.splitContainer26.Size = new System.Drawing.Size(1087, 157);
             this.splitContainer26.SplitterDistance = 20;
             this.splitContainer26.TabIndex = 1;
             // 
@@ -4608,7 +4963,7 @@
             this.MotifSurfaciqueGrid.Location = new System.Drawing.Point(0, 0);
             this.MotifSurfaciqueGrid.Name = "MotifSurfaciqueGrid";
             this.MotifSurfaciqueGrid.Rows.DefaultSize = 15;
-            this.MotifSurfaciqueGrid.Size = new System.Drawing.Size(1087, 99);
+            this.MotifSurfaciqueGrid.Size = new System.Drawing.Size(1087, 133);
             this.MotifSurfaciqueGrid.StyleInfo = resources.GetString("MotifSurfaciqueGrid.StyleInfo");
             this.MotifSurfaciqueGrid.TabIndex = 1;
             // 
@@ -4686,8 +5041,8 @@
             // MainSplit.Panel2
             // 
             this.MainSplit.Panel2.Controls.Add(this.SaisieInputSplit);
-            this.MainSplit.Size = new System.Drawing.Size(1093, 812);
-            this.MainSplit.SplitterDistance = 480;
+            this.MainSplit.Size = new System.Drawing.Size(1093, 891);
+            this.MainSplit.SplitterDistance = 559;
             this.MainSplit.TabIndex = 0;
             // 
             // MainForm
@@ -4695,7 +5050,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(1093, 812);
+            this.ClientSize = new System.Drawing.Size(1093, 891);
             this.Controls.Add(this.MainSplit);
             this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "MainForm";
@@ -4734,10 +5089,10 @@
             this.splitContainer27.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MainDockingTab)).EndInit();
             this.MainDockingTab.ResumeLayout(false);
-            this.InspectionTab.ResumeLayout(false);
-            this.InspectionSplit.Panel1.ResumeLayout(false);
-            this.InspectionSplit.Panel2.ResumeLayout(false);
-            this.InspectionSplit.ResumeLayout(false);
+            this.AccueilTab.ResumeLayout(false);
+            this.AccueilSplit.Panel1.ResumeLayout(false);
+            this.AccueilSplit.Panel2.ResumeLayout(false);
+            this.AccueilSplit.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -4747,6 +5102,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.MenuDockingTab)).EndInit();
             this.MenuDockingTab.ResumeLayout(false);
             this.chargementTab.ResumeLayout(false);
+            this.groupBox14.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -4784,6 +5140,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.OuvrageList)).EndInit();
             this.OuvrageToolsPanel.ResumeLayout(false);
             this.OuvrageToolsPanel.PerformLayout();
+            this.InspectionTab.ResumeLayout(false);
+            this.splitContainer29.Panel1.ResumeLayout(false);
+            this.splitContainer29.Panel2.ResumeLayout(false);
+            this.splitContainer29.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.InspectionTopicBar)).EndInit();
+            this.splitContainer30.Panel1.ResumeLayout(false);
+            this.splitContainer30.Panel1.PerformLayout();
+            this.splitContainer30.Panel2.ResumeLayout(false);
+            this.splitContainer30.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            this.splitContainer31.Panel1.ResumeLayout(false);
+            this.splitContainer31.Panel1.PerformLayout();
+            this.splitContainer31.Panel2.ResumeLayout(false);
+            this.splitContainer31.Panel2.PerformLayout();
+            this.splitContainer31.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.InspectFacultatifPb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InspectDesactivePb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InspectDifferePb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InspectObligatoirePb)).EndInit();
             this.IdentificationTab.ResumeLayout(false);
             this.splitContainer3.Panel1.ResumeLayout(false);
             this.splitContainer3.Panel2.ResumeLayout(false);
@@ -4823,6 +5198,26 @@
             this.groupBox4.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.XmlIdTab.ResumeLayout(false);
+            this.splitContainer7.Panel1.ResumeLayout(false);
+            this.splitContainer7.Panel1.PerformLayout();
+            this.splitContainer7.Panel2.ResumeLayout(false);
+            this.splitContainer7.ResumeLayout(false);
+            this.ToolStripIdCode.ResumeLayout(false);
+            this.ToolStripIdCode.PerformLayout();
+            this.splitContainer8.Panel1.ResumeLayout(false);
+            this.splitContainer8.Panel2.ResumeLayout(false);
+            this.splitContainer8.ResumeLayout(false);
+            this.splitContainer10.Panel1.ResumeLayout(false);
+            this.splitContainer10.Panel1.PerformLayout();
+            this.splitContainer10.Panel2.ResumeLayout(false);
+            this.splitContainer10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.XmlIdCodeGrid)).EndInit();
+            this.splitContainer11.Panel1.ResumeLayout(false);
+            this.splitContainer11.Panel1.PerformLayout();
+            this.splitContainer11.Panel2.ResumeLayout(false);
+            this.splitContainer11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.XmlIdItemGrid)).EndInit();
             this.XmlObsTab.ResumeLayout(false);
             this.XmlParamSplit.Panel1.ResumeLayout(false);
             this.XmlParamSplit.Panel1.PerformLayout();
@@ -4859,26 +5254,6 @@
             this.XmlItemsSplit.Panel2.ResumeLayout(false);
             this.XmlItemsSplit.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.XmlObsItemGrid)).EndInit();
-            this.XmlIdTab.ResumeLayout(false);
-            this.splitContainer7.Panel1.ResumeLayout(false);
-            this.splitContainer7.Panel1.PerformLayout();
-            this.splitContainer7.Panel2.ResumeLayout(false);
-            this.splitContainer7.ResumeLayout(false);
-            this.ToolStripIdCode.ResumeLayout(false);
-            this.ToolStripIdCode.PerformLayout();
-            this.splitContainer8.Panel1.ResumeLayout(false);
-            this.splitContainer8.Panel2.ResumeLayout(false);
-            this.splitContainer8.ResumeLayout(false);
-            this.splitContainer10.Panel1.ResumeLayout(false);
-            this.splitContainer10.Panel1.PerformLayout();
-            this.splitContainer10.Panel2.ResumeLayout(false);
-            this.splitContainer10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.XmlIdCodeGrid)).EndInit();
-            this.splitContainer11.Panel1.ResumeLayout(false);
-            this.splitContainer11.Panel1.PerformLayout();
-            this.splitContainer11.Panel2.ResumeLayout(false);
-            this.splitContainer11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.XmlIdItemGrid)).EndInit();
             this.XmlSectionTab.ResumeLayout(false);
             this.splitContainer12.Panel1.ResumeLayout(false);
             this.splitContainer12.Panel1.PerformLayout();
@@ -5010,8 +5385,8 @@
         public System.Windows.Forms.SplitContainer splitContainer1;
         public System.Windows.Forms.SplitContainer splitContainer27;
         public C1.Win.C1Command.C1DockingTab MainDockingTab;
-        public C1.Win.C1Command.C1DockingTabPage InspectionTab;
-        public System.Windows.Forms.SplitContainer InspectionSplit;
+        public C1.Win.C1Command.C1DockingTabPage AccueilTab;
+        public System.Windows.Forms.SplitContainer AccueilSplit;
         public System.Windows.Forms.SplitContainer splitContainer2;
         public C1.Win.C1Command.C1DockingTab MenuDockingTab;
         public C1.Win.C1Command.C1DockingTabPage chargementTab;
@@ -5022,13 +5397,13 @@
         public System.Windows.Forms.Label label26;
         public System.Windows.Forms.PictureBox pictureBox8;
         public System.Windows.Forms.GroupBox groupBox9;
-        public System.Windows.Forms.Button Folder_New_Inspection;
-        public System.Windows.Forms.Button NewInspectionBt;
-        public System.Windows.Forms.TextBox NewInspectionPathTb;
+        public System.Windows.Forms.Button Folder_New_Accueil;
+        public System.Windows.Forms.Button NewAccueilBt;
+        public System.Windows.Forms.TextBox NewAccueilPathTb;
         public System.Windows.Forms.Label label24;
         public System.Windows.Forms.PictureBox pictureBox7;
         public System.Windows.Forms.Label label25;
-        public System.Windows.Forms.TextBox NewInspectionNameTb;
+        public System.Windows.Forms.TextBox NewAccueilNameTb;
         public System.Windows.Forms.GroupBox AddOuvrageGp;
         public System.Windows.Forms.PictureBox pictureBox6;
         public System.Windows.Forms.Label label5;
@@ -5092,20 +5467,6 @@
         public C1.Win.C1Command.C1DockingTabPage IdentificationTab;
         public System.Windows.Forms.SplitContainer splitContainer3;
         public C1.Win.C1Command.C1TopicBar IdentificationTopicBar;
-        public System.Windows.Forms.SplitContainer IdFormSplit;
-        public System.Windows.Forms.Button IdentificationValidBt;
-        public System.Windows.Forms.PictureBox pictureBox1;
-        public System.Windows.Forms.Label IdFormLabel;
-        public System.Windows.Forms.SplitContainer splitContainer4;
-        public System.Windows.Forms.FlowLayoutPanel Identification_Flp;
-        public System.Windows.Forms.Label label4;
-        public System.Windows.Forms.PictureBox IdFacultatifPb;
-        public System.Windows.Forms.Label label3;
-        public System.Windows.Forms.PictureBox IdDesactivePb;
-        public System.Windows.Forms.Label label2;
-        public System.Windows.Forms.PictureBox IdDifferePb;
-        public System.Windows.Forms.Label label1;
-        public System.Windows.Forms.PictureBox IdObligatoirePb;
         public C1.Win.C1Command.C1DockingTabPage ObservationTab;
         public C1.Win.C1FlexGrid.C1FlexGrid ObservationGrid;
         public C1.Win.C1Command.C1DockingTabPage RenseignementTab;
@@ -5198,7 +5559,7 @@
         public System.Windows.Forms.SplitContainer splitContainer13;
         public System.Windows.Forms.SplitContainer splitContainer21;
         public System.Windows.Forms.Label label44;
-        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button XmlSectionDelBt;
         public System.Windows.Forms.Label label45;
         public System.Windows.Forms.Button XmlSectionAddBt;
         public System.Windows.Forms.TextBox XmlSectionAddTb;
@@ -5206,7 +5567,7 @@
         public C1.Win.C1FlexGrid.C1FlexGrid XmlSectionGrid;
         public System.Windows.Forms.SplitContainer splitContainer22;
         public System.Windows.Forms.Label label46;
-        public System.Windows.Forms.Button button6;
+        public System.Windows.Forms.Button XmlHeureDelBt;
         public System.Windows.Forms.Label label47;
         public System.Windows.Forms.Button XmlHeureAddBt;
         public System.Windows.Forms.TextBox XmlHeureAddTb;
@@ -5267,7 +5628,7 @@
         public System.Windows.Forms.SplitContainer SaisieInputSplit;
         public System.Windows.Forms.ToolStrip miniToolStrip;
         public System.Windows.Forms.GroupBox groupBox7;
-        public System.Windows.Forms.Button CloseInspectionBt;
+        public System.Windows.Forms.Button CloseAccueilBt;
         public System.Windows.Forms.PictureBox pictureBox2;
         public System.Windows.Forms.Label SVFLabel;
         public C1.Win.C1Command.C1DockingTab SaisieTabControl;
@@ -5309,6 +5670,44 @@
         public System.Windows.Forms.TextBox XmlObsItemAddValueTb;
         public System.Windows.Forms.Label label8;
         public C1.Win.C1FlexGrid.C1FlexGrid XmlObsItemGrid;
+        public C1.Win.C1Command.C1DockingTabPage InspectionTab;
+        public System.Windows.Forms.Label label62;
+        public System.Windows.Forms.TextBox XmlObsCodeLieAddValueTb;
+        public System.Windows.Forms.Button XmlObsCodeLieDelValueBt;
+        public System.Windows.Forms.Label label63;
+        public System.Windows.Forms.Button XmlObsCodeLieAddValueBt;
+        private System.Windows.Forms.SplitContainer splitContainer29;
+        public C1.Win.C1Command.C1TopicBar InspectionTopicBar;
+        public System.Windows.Forms.SplitContainer splitContainer30;
+        public System.Windows.Forms.Button InspectionValidBt;
+        public System.Windows.Forms.PictureBox pictureBox12;
+        public System.Windows.Forms.Label InspectFormLabel;
+        public System.Windows.Forms.SplitContainer splitContainer31;
+        public System.Windows.Forms.FlowLayoutPanel Inspection_Flp;
+        public System.Windows.Forms.Label InspectFacultatifTb;
+        public System.Windows.Forms.PictureBox InspectFacultatifPb;
+        public System.Windows.Forms.Label InspectDesactiveTb;
+        public System.Windows.Forms.PictureBox InspectDesactivePb;
+        public System.Windows.Forms.Label InspectDiffereTb;
+        public System.Windows.Forms.PictureBox InspectDifferePb;
+        public System.Windows.Forms.Label InspectObligatoireTb;
+        public System.Windows.Forms.PictureBox InspectObligatoirePb;
+        public System.Windows.Forms.SplitContainer IdFormSplit;
+        public System.Windows.Forms.Button IdentificationValidBt;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Label IdFormLabel;
+        public System.Windows.Forms.SplitContainer splitContainer4;
+        public System.Windows.Forms.FlowLayoutPanel Identification_Flp;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.PictureBox IdFacultatifPb;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.PictureBox IdDesactivePb;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.PictureBox IdDifferePb;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.PictureBox IdObligatoirePb;
+        private System.Windows.Forms.Button RenommerBt;
+        public System.Windows.Forms.GroupBox groupBox14;
     }
 }
 

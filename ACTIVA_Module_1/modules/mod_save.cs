@@ -11,9 +11,29 @@ namespace ACTIVA_Module_1.modules
 {
     public class mod_save
     {
-        //Sauvegarde de l'onglet IDENTIFICATION
 
+        //Sauvegarde de l'onglet IDENTIFICATION
         public static void Save_Identification_Panel(FlowLayoutPanel flp)
+        {
+            identification_input idinput;
+
+            //On vérifie que le FlowLayoutPanel contient au moins un champs à mettre à jour
+            if (flp.Controls.Count > 0)
+            {
+                foreach (Control ct in flp.Controls)
+                {
+                    if (ct is identification_input)
+                    {
+                        idinput = (identification_input)ct;
+                        Save_Identification_Field(idinput);
+                        mod_global.MF.statusPanel.Text = "Sauvegardé: " + System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                    }
+                }
+            }
+        }
+
+        //Sauvegarde de l'onglet Inspection
+        public static void Save_Inspection_Panel(FlowLayoutPanel flp)
         {
             identification_input idinput;
 
@@ -27,7 +47,8 @@ namespace ACTIVA_Module_1.modules
                         idinput = (identification_input)ct;
                         //Si la valeur du champs n'est pas vide on le met à jour
                         //if (idinput.Field_Input.Text.Trim() != String.Empty)
-                        Save_Identification_Field(idinput);
+                        Save_Inspection_Field(idinput);
+                        mod_global.MF.statusPanel.Text = "Sauvegardé: " + System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                     }
                 }
             }
@@ -36,12 +57,12 @@ namespace ACTIVA_Module_1.modules
         private static void Save_Identification_Field(identification_input idinput)
         {
             XmlNodeList svfnodelist;
-            XmlNode svfroot = mod_inspection.SVF.DocumentElement;
+            XmlNode svfroot = mod_accueil.SVF.DocumentElement;
             XmlNode idroot;
             XmlElement valeur;
 
             //On verifie que le champ est bien présent dans le SVF on met à jour sa valeur
-            svfnodelist = svfroot.SelectNodes("/inspection/ouvrage[@nom='" + mod_inspection.OUVRAGE + "']/identifications/code[id='" + idinput.field_label.Name + "']");
+            svfnodelist = svfroot.SelectNodes("/inspection/ouvrage[@nom='" + mod_accueil.OUVRAGE + "']/identifications/code[id='" + idinput.field_label.Name + "']");
             if (svfnodelist.Count > 0)
             {
                 valeur = (XmlElement)svfnodelist[0].SelectSingleNode("valeur");
@@ -71,10 +92,10 @@ namespace ACTIVA_Module_1.modules
                 //Si le code n'existe pas dans le SVF on le crée ainsi que ses sous noeuds
                 
                 //On crée les noeuds
-                XmlElement elem_code = mod_inspection.SVF.CreateElement("code");
-                XmlElement newidnode = mod_inspection.SVF.CreateElement("id");
-                XmlElement newintitulenode = mod_inspection.SVF.CreateElement("intitule");
-                XmlElement newvaleurnode = mod_inspection.SVF.CreateElement("valeur");
+                XmlElement elem_code = mod_accueil.SVF.CreateElement("code");
+                XmlElement newidnode = mod_accueil.SVF.CreateElement("id");
+                XmlElement newintitulenode = mod_accueil.SVF.CreateElement("intitule");
+                XmlElement newvaleurnode = mod_accueil.SVF.CreateElement("valeur");
 
                 //On remplie la valeur de chaque noeud
                 newidnode.InnerText = idinput.field_label.Name;
@@ -120,12 +141,92 @@ namespace ACTIVA_Module_1.modules
                 elem_code.AppendChild(newvaleurnode);
 
                 //On ajoute le noeud code au noeud identifications du SVF
-                idroot = svfroot.SelectSingleNode("/inspection/ouvrage[@nom='" + mod_inspection.OUVRAGE + "']/identifications");
+                idroot = svfroot.SelectSingleNode("/inspection/ouvrage[@nom='" + mod_accueil.OUVRAGE + "']/identifications");
                 idroot.AppendChild(elem_code);
             }
-            mod_inspection.SVF.Save(System.IO.Path.Combine(mod_inspection.SVF_FOLDER, mod_inspection.SVF_FILENAME));
+            mod_accueil.SVF.Save(System.IO.Path.Combine(mod_accueil.SVF_FOLDER, mod_accueil.SVF_FILENAME));
         }
 
+        private static void Save_Inspection_Field(identification_input idinput)
+        {
+            XmlNodeList svfnodelist;
+            XmlNode svfroot = mod_accueil.SVF.DocumentElement;
+            XmlNode idroot;
+            XmlElement valeur;
+
+            //On verifie que le champ est bien présent dans le SVF on met à jour sa valeur
+            svfnodelist = svfroot.SelectNodes("/inspection/identifications/code[id='" + idinput.field_label.Name + "']");
+            if (svfnodelist.Count > 0)
+            {
+                valeur = (XmlElement)svfnodelist[0].SelectSingleNode("valeur");
+
+                if (idinput.Field_Input.Tag.ToString() == "item")
+                {
+                    if (idinput.Field_Input.Text != String.Empty)
+                    {
+                        if (idinput.Field_Input.Text.Contains("|"))
+                        {
+                            valeur.InnerText = idinput.Field_Input.Text.Split(char.Parse("|"))[1].Trim();
+                            valeur.SetAttribute("code", idinput.Field_Input.Text.Split(char.Parse("|"))[0].Trim());
+                        }
+                    }
+                    else
+                    {
+                        valeur.InnerText = String.Empty;
+                    }
+                }
+                else
+                {
+                    valeur.InnerText = idinput.Field_Input.Text;
+                }
+            }
+            else
+            {
+                //Si le code n'existe pas dans le SVF on le crée ainsi que ses sous noeuds
+
+                //On crée les noeuds
+                XmlElement elem_code = mod_accueil.SVF.CreateElement("code");
+                XmlElement newidnode = mod_accueil.SVF.CreateElement("id");
+                XmlElement newintitulenode = mod_accueil.SVF.CreateElement("intitule");
+                XmlElement newvaleurnode = mod_accueil.SVF.CreateElement("valeur");
+                
+                //On remplie la valeur de chaque noeud
+                newidnode.InnerText = idinput.field_label.Name;
+                newintitulenode.InnerText = idinput.field_label.Text.Split(char.Parse("|"))[1].Trim();
+
+
+                //On ajoute les attributs aux noeuds
+                elem_code.SetAttribute("parent", idinput.field_label.Tag.ToString());
+                elem_code.SetAttribute("corresp", mod_global.Get_Codes_Insp_DocElement().SelectSingleNode("code[id='" + idinput.field_label.Name + "']/inspection").Attributes["corresp"].InnerText);
+
+                if (idinput.Field_Input.Tag.ToString() == "item")
+                {
+                    if (idinput.Field_Input.Text != String.Empty)
+                    {
+                        newvaleurnode.InnerText = idinput.Field_Input.Text.Split(char.Parse("|"))[1].Trim();
+                    }
+                    else
+                    {
+                        newvaleurnode.InnerText = String.Empty;
+                    }
+                }
+                else
+                {
+                    newvaleurnode.InnerText = idinput.Field_Input.Text;
+                    newvaleurnode.SetAttribute("ajoute", "true");
+                }
+
+                //On ajoute les sous-noeuds au noeud code
+                elem_code.AppendChild(newidnode);
+                elem_code.AppendChild(newintitulenode);
+                elem_code.AppendChild(newvaleurnode);
+
+                //On ajoute le noeud code au noeud identifications du SVF
+                idroot = svfroot.SelectSingleNode("/inspection/identifications");
+                idroot.AppendChild(elem_code);
+            }
+            mod_accueil.SVF.Save(System.IO.Path.Combine(mod_accueil.SVF_FOLDER, mod_accueil.SVF_FILENAME));
+        }
         /// <summary>
         /// Fonction de sauvegarde des champs de l'onglet saisie d'observation
         /// </summary>
@@ -136,14 +237,14 @@ namespace ACTIVA_Module_1.modules
         public static string Save_Observation_Panel(string code, string num)
         {
 
-            XmlNode svfroot = mod_inspection.SVF.DocumentElement;
+            XmlNode svfroot = mod_accueil.SVF.DocumentElement;
             XmlNode idroot;
             string savenum = string.Empty;
 
             //Si le num envoyé n'est pas vide, c'est que nous sommes sur une observation a modifier
             if (num != String.Empty)
             {
-                XmlNode codenode = svfroot.SelectSingleNode("/inspection/ouvrage[@nom='" + mod_inspection.OUVRAGE + "']/observations/code[@num='" + num + "']");
+                XmlNode codenode = svfroot.SelectSingleNode("/inspection/ouvrage[@nom='" + mod_accueil.OUVRAGE + "']/observations/code[@num='" + num + "']");
                 XmlNode caracnode = codenode.SelectSingleNode("caracteristiques");
                 XmlNode newcaracnode = Make_Obs_Caracteristiques();
 
@@ -163,16 +264,16 @@ namespace ACTIVA_Module_1.modules
             {
                 //Sinon on ajoute le code et ses caractéristiques
                 //On crée les noeuds
-                XmlElement elem_code = mod_inspection.SVF.CreateElement("code");
-                XmlNode newidnode = mod_inspection.SVF.CreateNode("element", "id", "");
+                XmlElement elem_code = mod_accueil.SVF.CreateElement("code");
+                XmlNode newidnode = mod_accueil.SVF.CreateNode("element", "id", "");
                 //XmlNode newinspectionnode = mod_inspection.SVF.CreateNode("element", "inspection", "");
-                XmlNode newintitulenode = mod_inspection.SVF.CreateNode("element", "intitule", "");
+                XmlNode newintitulenode = mod_accueil.SVF.CreateNode("element", "intitule", "");
 
                 //On recupere les caractéristiques
                 XmlNode newcaracnode = Make_Obs_Caracteristiques();
 
                 //On crée un nouveau numéro d'observation
-                savenum = mod_inspection.Get_New_Obs_Num();
+                savenum = mod_accueil.Get_New_Obs_Num();
 
                 //On récupère l'intitulé du code à ajouter
                 XmlNode codeintitulenode = mod_global.Get_Codes_Obs_DocElement().SelectSingleNode("/codes/code[id='"+code+"']/intitule");
@@ -181,7 +282,7 @@ namespace ACTIVA_Module_1.modules
                 newidnode.InnerText = code;
                 newintitulenode.InnerText = codeintitulenode.InnerText;
 
-                XmlAttribute att_forme = mod_inspection.SVF.CreateAttribute("forme");
+                XmlAttribute att_forme = mod_accueil.SVF.CreateAttribute("forme");
 
                 //Si le code sauvé est un changement de forme on met à jour l'attribut forme de son noeud, sinon on prend la forme en cours
                 if (code == "AEC" | code == "CEC")
@@ -190,16 +291,16 @@ namespace ACTIVA_Module_1.modules
                     if (c1node.Attributes.GetNamedItem("code") != null)
                         att_forme.Value = c1node.Attributes["code"].InnerText;
                     else
-                        att_forme.Value = mod_inspection.Get_Current_Ouvrage_Forme();
+                        att_forme.Value = mod_accueil.Get_Current_Ouvrage_Forme();
                 }
                 else
                 {
-                    att_forme.Value = mod_inspection.Get_Current_Ouvrage_Forme();
+                    att_forme.Value = mod_accueil.Get_Current_Ouvrage_Forme();
                 }
 
                 elem_code.Attributes.Append(att_forme);
 
-                XmlAttribute att_num = mod_inspection.SVF.CreateAttribute("num");
+                XmlAttribute att_num = mod_accueil.SVF.CreateAttribute("num");
                 att_num.Value = savenum;
                 elem_code.Attributes.Append(att_num);
 
@@ -209,13 +310,13 @@ namespace ACTIVA_Module_1.modules
                 elem_code.AppendChild(newcaracnode);
 
                 //On ajoute le noeud code au noeud identifications du SVF
-                idroot = svfroot.SelectSingleNode("/inspection/ouvrage[@nom='" + mod_inspection.OUVRAGE + "']/observations");
+                idroot = svfroot.SelectSingleNode("/inspection/ouvrage[@nom='" + mod_accueil.OUVRAGE + "']/observations");
                 idroot.AppendChild(elem_code);
             }
 
-            mod_inspection.SVF.Save(System.IO.Path.Combine(mod_inspection.SVF_FOLDER, mod_inspection.SVF_FILENAME));
+            mod_accueil.SVF.Save(System.IO.Path.Combine(mod_accueil.SVF_FOLDER, mod_accueil.SVF_FILENAME));
 
-            mod_global.MF.LineaireStripLabel.Text = mod_inspection.Get_Max_Pm_In_SVF() + " m";
+            mod_global.MF.LineaireStripLabel.Text = mod_accueil.Get_Max_Pm_In_SVF() + " m";
 
             return savenum;
         }
@@ -236,7 +337,7 @@ namespace ACTIVA_Module_1.modules
             if (double.TryParse(CText.Text,out result) == false)
                 return false;
 
-            if (double.Parse(CText.Text) < mod_inspection.LAST_PM)
+            if (double.Parse(CText.Text) < mod_accueil.LAST_PM)
                 return false;
 
             return true;
@@ -258,7 +359,7 @@ namespace ACTIVA_Module_1.modules
             if (double.TryParse(CText.Text, out result) == false)
                 return false;
 
-            if (double.Parse(CText.Text) < mod_inspection.LAST_AEC_CEC_PM)
+            if (double.Parse(CText.Text) < mod_accueil.LAST_AEC_CEC_PM)
                 return false;
 
             return true;
@@ -316,7 +417,7 @@ namespace ACTIVA_Module_1.modules
             CheckBox CCheck;
             ComboBox CCombo;
 
-            XmlNode newcaracnode = mod_inspection.SVF.CreateNode("element", "caracteristiques", "");
+            XmlNode newcaracnode = mod_accueil.SVF.CreateNode("element", "caracteristiques", "");
 
             //On parcourt tous les input du formulaire d'observation
             foreach (object key in mod_global.Focused_Carac_Panel.CaracNameToTb.Keys)
@@ -335,7 +436,7 @@ namespace ACTIVA_Module_1.modules
                 }
                 else if (key.ToString() == "posregard")
                 {
-                    if (mod_inspection.TYPE_OUVRAGE == "REGARD")
+                    if (mod_accueil.TYPE_OUVRAGE == "REGARD")
                     {
                         CCombo = (ComboBox)mod_global.Focused_Carac_Panel.CaracNameToTb[key.ToString()];
 
@@ -343,7 +444,7 @@ namespace ACTIVA_Module_1.modules
 
                         if (mod_global.Get_Field_State_By_Color(CCombo.BackColor) != "4")
                         {
-                            XmlAttribute att_code = mod_inspection.SVF.CreateAttribute("codeR");
+                            XmlAttribute att_code = mod_accueil.SVF.CreateAttribute("codeR");
                             att_code.Value = CCombo.Text.Split(char.Parse("|"))[0].Trim();
                             elem_carac.Attributes.Append(att_code);
                             elem_carac.InnerText = CCombo.Text.Split(char.Parse("|"))[1].Trim();
@@ -368,7 +469,7 @@ namespace ACTIVA_Module_1.modules
                             {
                                 if (CText.Text.Contains("|"))
                                 {
-                                    XmlAttribute att_code = mod_inspection.SVF.CreateAttribute("code");
+                                    XmlAttribute att_code = mod_accueil.SVF.CreateAttribute("code");
                                     att_code.Value = CText.Text.Split(char.Parse("|"))[0].Trim();
                                     elem_carac.Attributes.Append(att_code);
                                     elem_carac.InnerText = CText.Text.Split(char.Parse("|"))[1].Trim();
@@ -383,7 +484,7 @@ namespace ACTIVA_Module_1.modules
                             {
                                 if (CText.Text.Contains("|"))
                                 {
-                                    XmlAttribute att_corres = mod_inspection.SVF.CreateAttribute("correspondance");
+                                    XmlAttribute att_corres = mod_accueil.SVF.CreateAttribute("correspondance");
                                     att_corres.Value = CText.Text.Split(char.Parse("|"))[0].Trim();
                                     elem_carac.Attributes.Append(att_corres);
                                     elem_carac.InnerText = CText.Text.Split(char.Parse("|"))[1].Trim();
@@ -410,9 +511,9 @@ namespace ACTIVA_Module_1.modules
 
         private static XmlElement Create_One_Caracteristique(string nomval,string renseigneval)
         {
-            XmlElement elem_carac = mod_inspection.SVF.CreateElement("caracteristique");
-            XmlAttribute att_nom = mod_inspection.SVF.CreateAttribute("nom");
-            XmlAttribute att_renseigne = mod_inspection.SVF.CreateAttribute("renseigne");
+            XmlElement elem_carac = mod_accueil.SVF.CreateElement("caracteristique");
+            XmlAttribute att_nom = mod_accueil.SVF.CreateAttribute("nom");
+            XmlAttribute att_renseigne = mod_accueil.SVF.CreateAttribute("renseigne");
             att_nom.Value = nomval;
             att_renseigne.Value = renseigneval;
             elem_carac.Attributes.Append(att_nom);
@@ -426,16 +527,16 @@ namespace ACTIVA_Module_1.modules
             //Si le num envoyé n'est pas vide, c'est que nous sommes sur une observation a modifier
             if (num != String.Empty)
             {
-                XmlNode svfroot = mod_inspection.SVF.DocumentElement;
-                XmlNode observationnode = svfroot.SelectSingleNode("/inspection/ouvrage[@nom='" + mod_inspection.OUVRAGE + "']/observations");
+                XmlNode svfroot = mod_accueil.SVF.DocumentElement;
+                XmlNode observationnode = svfroot.SelectSingleNode("/inspection/ouvrage[@nom='" + mod_accueil.OUVRAGE + "']/observations");
                 XmlNode codenode = observationnode.SelectSingleNode("code[@num='" + num + "']");
 
                 //On met à jour les caractéristiques
                 observationnode.RemoveChild(codenode);
 
-                mod_inspection.SVF.Save(System.IO.Path.Combine(mod_inspection.SVF_FOLDER, mod_inspection.SVF_FILENAME));
+                mod_accueil.SVF.Save(System.IO.Path.Combine(mod_accueil.SVF_FOLDER, mod_accueil.SVF_FILENAME));
 
-                mod_global.MF.LineaireStripLabel.Text = mod_inspection.Get_Max_Pm_In_SVF() + " m";
+                mod_global.MF.LineaireStripLabel.Text = mod_accueil.Get_Max_Pm_In_SVF() + " m";
             }
         }
 

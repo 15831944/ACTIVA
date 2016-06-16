@@ -132,11 +132,9 @@ namespace ACTIVA_Module_1.modules
                     link.Text = string.Concat(IntituleItem.Value, " - ", IdItem.Value);
                 else link.Text = string.Concat("** ",IntituleItem.Value, " - ", IdItem.Value);
                     
-                link.Text = string.Concat(IntituleItem.Value, " - ", IdItem.Value);
                 link.Tag = IdItem.Value;
 
                 tpbar.FindPageByTag(IdItem.Value.Substring(0, 2)).Links.Add(link);
-
             }
             /*
             XmlNodeList myChildNode;
@@ -317,18 +315,17 @@ namespace ACTIVA_Module_1.modules
                 if (row.SafeIndex > 0)
                 {
                     row.HeightDisplay = 50;
-                    row.HeightDisplay = 24;
 
                     Collapsed_Rows.Add(row["num"]);
 
                     //Hide_Row_Visuel(grid, row.SafeIndex);
                 }
             }
-            OBS_GRID_EXPANDED = false;
-            Fill_Observation_Grid(grid);
+            //OBS_GRID_EXPANDED = false;
+            //Fill_Observation_Grid(grid);
             //grid.Cols["visuel"].Visible = false;
             //grid.Cols["observation"].Width = 520;
-
+            Fill_Visuel_Column(grid);
         }
 
         public static void Expand_Grid(C1FlexGrid grid)
@@ -373,7 +370,7 @@ namespace ACTIVA_Module_1.modules
 
         public static void Collapse_Line(C1FlexGrid grid)
         {
-            grid.Rows[grid.RowSel].HeightDisplay = 24;
+            grid.Rows[grid.RowSel].HeightDisplay = 50;
             Collapsed_Rows.Add(grid[grid.RowSel,"num"]);
             Hide_Row_Visuel(grid, grid.RowSel);
             //Console.WriteLine(grid.GetData(grid.RowSel, 6).ToString());
@@ -401,9 +398,9 @@ namespace ACTIVA_Module_1.modules
             //grid.Clear(ClearFlags.UserData);
             grid.Rows.Count = 1;
 
-            root = mod_inspection.SVF.DocumentElement;
+            root = mod_accueil.SVF.DocumentElement;
 
-            nodeList = root.SelectNodes(string.Concat("/inspection/ouvrage[@nom='", mod_inspection.OUVRAGE, "']/observations/code"));
+            nodeList = root.SelectNodes(string.Concat("/inspection/ouvrage[@nom='", mod_accueil.OUVRAGE, "']/observations/code"));
 
             foreach (XmlNode unNode in nodeList)
             {
@@ -462,10 +459,10 @@ namespace ACTIVA_Module_1.modules
 
             grid.Controls.Clear();
 
-            root = mod_inspection.SVF.DocumentElement;
+            root = mod_accueil.SVF.DocumentElement;
 
             XmlNodeList caracnodeList;
-            nodeList = root.SelectNodes(string.Concat("/inspection/ouvrage[@nom='", mod_inspection.OUVRAGE, "']/observations/code"));
+            nodeList = root.SelectNodes(string.Concat("/inspection/ouvrage[@nom='", mod_accueil.OUVRAGE, "']/observations/code"));
 
             foreach (XmlNode CodeNode in nodeList)
             {
@@ -479,7 +476,7 @@ namespace ACTIVA_Module_1.modules
                     {
                         photos = new ArrayList();
                         foreach (string pic in unNode.InnerText.Split(Char.Parse("|")))
-                            photos.Add(System.IO.Path.Combine(mod_inspection.SVF_FOLDER, "img\\" + pic));
+                            photos.Add(System.IO.Path.Combine(mod_accueil.SVF_FOLDER, "img\\" + pic));
 
                         if (photos.Count > 0)
                             grid[row, "visuel"] = photos.Count + " Photo(s)";

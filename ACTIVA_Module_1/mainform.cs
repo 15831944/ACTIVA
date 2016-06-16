@@ -65,9 +65,10 @@ namespace ACTIVA_Module_1
             this.Controls.Add(mainStatusBar);
 
         }
+
         private void MainDockingTab_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (MainDockingTab.SelectedTab.Name == "InspectionTab" || MainDockingTab.SelectedTab.Name == "IdentificationTab" || MainDockingTab.SelectedTab.Name == "RenseignementTab")
+            if (MainDockingTab.SelectedTab.Name == "AccueilTab" || MainDockingTab.SelectedTab.Name == "IdentificationTab" || MainDockingTab.SelectedTab.Name == "RenseignementTab" || MainDockingTab.SelectedTab.Name == "InspectionTab" )
             {
                 mod_global.Disable_Obs_Tools();
                 if (MainDockingTab.SelectedTab.Name == "IdentificationTab")
@@ -75,9 +76,11 @@ namespace ACTIVA_Module_1
                     mod_identification.Fill_Id_Menu(IdentificationTopicBar, Identification_Flp);
                     IdentificationTopicBar.Pages[0].Expand();
                 }
-                /*if (MainDockingTab.SelectedTab.Name == "ObservationTab")
-                    splitContainer27.Hide();
-                else splitContainer27.Visible = true;*/
+                if (MainDockingTab.SelectedTab.Name == "InspectionTab")
+                {
+                    mod_inspection.Fill_Insp_Menu(InspectionTopicBar, Inspection_Flp);
+                    InspectionTopicBar.Pages[0].Expand();
+                }
             }
             else if (MainDockingTab.SelectedTab.Name != "ParamTab")
             {
@@ -100,7 +103,7 @@ namespace ACTIVA_Module_1
             //SaisieTabControl.SelectedTab = SaisieTabControl.TabPages["KeyboardTab"];
             virtual_kb1.Set_Alpha_Numeric();
 
-            if (MainDockingTab.SelectedTab.Name == "InspectionTab" || MainDockingTab.SelectedTab.Name == "ObservationTab" || MainDockingTab.SelectedTab.Name == "ParamTab")
+            if (MainDockingTab.SelectedTab.Name == "AccueilTab" || MainDockingTab.SelectedTab.Name == "ObservationTab" || MainDockingTab.SelectedTab.Name == "ParamTab")
             {
                 mod_global.MF.MainSplit.Panel2Collapsed = true;
             }
@@ -151,10 +154,45 @@ namespace ACTIVA_Module_1
             mod_identification.SaveIDFlag = false;
         }
 
+        private void InspectionTopicBar_PageExpanded(object sender, C1.Win.C1Command.C1TopicBarPageEventArgs e)
+        {
+            //on vérifie avant si le flag de sauvegarde est mis et si la sauvegarde doit être proposé
+            if (mod_inspection.SaveIDFlag)
+            {
+                DialogResult rep = MessageBox.Show("Des champs de la fenêtre courante ont été modifiés, voulez vous enregistrer ?", "Enregistrement des modifications", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (rep == DialogResult.Yes)
+                {
+                    mod_save.Save_Inspection_Panel(Inspection_Flp);
+                    //mise a jour de la couleur du groupe courant
+                    mod_inspection.Check_Fields_Status(InspectionTopicBar.FindPage(InspectFormLabel.Text));
+                }
+            }
+
+
+            //on referme toutes les autres pages
+            int nbpage = InspectionTopicBar.Pages.Count;
+            for (int i = 0; i < nbpage; i++)
+            {
+                if (i != e.Page.Index)
+                    InspectionTopicBar.Pages[i].Collapse();
+            }
+            /*
+             * 
+             * */
+            InspectFormLabel.Visible = true;
+            InspectFormLabel.Text = e.Page.Text;
+            InputPreviewTb.Text = String.Empty;
+            mod_inspection.Fill_Inspection_Form(e.Page.Tag.ToString(), Inspection_Flp);
+
+            SaisieTabControl.SelectedTab = SaisieTabControl.TabPages["KeyboardTab"];
+            mod_identification.SaveIDFlag = false;
+        }
+
         private void Type_Checkbox_CheckedChanged(object sender, EventArgs e)
         {
-            mod_inspection.Check_Type_Ouvrage(cb_troncon, cb_branchement, cb_regard);
-            mod_inspection.Fill_Ouvrage_List(OuvrageList);
+            mod_accueil.Check_Type_Ouvrage(cb_troncon, cb_branchement, cb_regard);
+            mod_accueil.Fill_Ouvrage_List(OuvrageList);
         }
 
         private void InputPreviewTb_TextChanged(object sender, EventArgs e)
@@ -222,13 +260,23 @@ namespace ACTIVA_Module_1
             mod_identification.SaveIDFlag = false;
         }
 
-        private void NewInspectionPathTb_Click(object sender, EventArgs e)
+        private void InspectionValidBt_Click(object sender, EventArgs e)
+        {
+            mod_save.Save_Inspection_Panel(Inspection_Flp);
+
+            //mise a jour de la couleur du groupe courant
+            mod_inspection.Check_Fields_Status(InspectionTopicBar.FindPage(InspectFormLabel.Text));
+
+            mod_inspection.SaveIDFlag = false;
+        }
+
+        private void NewAccueilPathTb_Click(object sender, EventArgs e)
         {
             DialogResult test = FolderDialog.ShowDialog();
 
             if (test == DialogResult.OK)
             {
-                NewInspectionPathTb.Text = FolderDialog.SelectedPath;
+                NewAccueilPathTb.Text = FolderDialog.SelectedPath;
             }
         }
 
@@ -255,12 +303,12 @@ namespace ACTIVA_Module_1
             this.Close();
         }
 
-        private void CloseInspectionBt_Click(object sender, EventArgs e)
+        private void CloseAccueilBt_Click(object sender, EventArgs e)
         {
-            mod_inspection.Reset_Inspection_Tab();
+            mod_accueil.Reset_Accueil_Tab();
         }
 
-        private void NewInspectionNameTb_Click(object sender, EventArgs e)
+        private void NewAccueilNameTb_Click(object sender, EventArgs e)
         {
             mod_global.Focused_Control = (TextBox)sender;
         }
@@ -280,9 +328,9 @@ namespace ACTIVA_Module_1
                 OuvrageList.SelectionMode = C1.Win.C1List.SelectionModeEnum.CheckBox;
                 mod_global.Disable_Main_Tabs();
                 OuvrageList.ClearSelected();
-                mod_inspection.FORME_OUVRAGE = String.Empty;
-                mod_inspection.OUVRAGE = String.Empty;
-                mod_inspection.TYPE_OUVRAGE = String.Empty;
+                mod_accueil.FORME_OUVRAGE = String.Empty;
+                mod_accueil.OUVRAGE = String.Empty;
+                mod_accueil.TYPE_OUVRAGE = String.Empty;
             }
 
             if (oldtab == "ReportTab")
@@ -290,9 +338,9 @@ namespace ACTIVA_Module_1
                 OuvrageList.SelectionMode = C1.Win.C1List.SelectionModeEnum.One;
                 mod_global.Disable_Main_Tabs();
                 OuvrageList.ClearSelected();
-                mod_inspection.FORME_OUVRAGE = String.Empty;
-                mod_inspection.OUVRAGE = String.Empty;
-                mod_inspection.TYPE_OUVRAGE = String.Empty;
+                mod_accueil.FORME_OUVRAGE = String.Empty;
+                mod_accueil.OUVRAGE = String.Empty;
+                mod_accueil.TYPE_OUVRAGE = String.Empty;
             }
 
         }
@@ -303,7 +351,7 @@ namespace ACTIVA_Module_1
             mod_observation.last_sort_column = e.Col;
         }
 
-        //click sur un lien d'une topicpage   
+        //click sur un lien d'une topicpage de l'onglet Identification   
         private void IdentificationTopicBar_LinkClick(object sender, C1.Win.C1Command.C1TopicBarClickEventArgs e)
         {
             //on récupère le code dans le tag et on applique le focus sur composant
@@ -311,6 +359,13 @@ namespace ACTIVA_Module_1
 
         }
 
+        //click sur un lien d'une topicpage de l'onglet Inspection   
+        private void InspectionTopicBar_LinkClick(object sender, C1.Win.C1Command.C1TopicBarClickEventArgs e)
+        {
+            //on récupère le code dans le tag et on applique le focus sur composant
+            mod_identification.FocusInputBoxParID(Inspection_Flp, e.Link.Tag.ToString());
+
+        }
 
 
         private void MainDockingTab_SelectedIndexChanging(object sender, C1.Win.C1Command.SelectedIndexChangingEventArgs e)
@@ -333,6 +388,22 @@ namespace ACTIVA_Module_1
                     }
                 }
             }
+            else if (MainDockingTab.SelectedTab.Name == "InspectionTab")
+            {
+
+                //on vérifie avant si le flag de sauvegarde est mis et si la sauvegarde doit être proposée
+                if (mod_inspection.SaveIDFlag)
+                {
+                    DialogResult rep = MessageBox.Show("Des champs de la fenêtre courante ont été modifiés, voulez vous enregistrer ?", "Enregistrement des modifications", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if (rep == DialogResult.Yes)
+                    {
+                        mod_save.Save_Inspection_Panel(Inspection_Flp);
+                        //mise a jour de la couleur du groupe courant
+                        mod_inspection.Check_Fields_Status(InspectionTopicBar.FindPage(InspectFormLabel.Text));
+                    }
+                }
+            }
         }
 
         private void OpenSVFButton_Click(object sender, EventArgs e)
@@ -340,19 +411,30 @@ namespace ACTIVA_Module_1
             if (openSVFDialog.ShowDialog() == DialogResult.OK)
             {
                 openSVFTb.Text = openSVFDialog.FileName;
-                mod_inspection.Load_SVF(openSVFDialog.FileName);
-                mod_inspection.Check_Type_Ouvrage(cb_troncon, cb_branchement, cb_regard);
-                mod_inspection.Fill_Ouvrage_List(OuvrageList);
+                mod_accueil.Load_SVF(openSVFDialog.FileName);
+                mod_accueil.Check_Type_Ouvrage(cb_troncon, cb_branchement, cb_regard);
+                mod_accueil.Fill_Ouvrage_List(OuvrageList);
 
-                NewInspectionNameTb.Text = String.Empty;
-                NewInspectionPathTb.Text = String.Empty;
+                NewAccueilNameTb.Text = String.Empty;
+                NewAccueilPathTb.Text = String.Empty;
                 OuvrageNomTb.Text = String.Empty;
             }
         }
 
-        private void NewInspectionBt_Click(object sender, EventArgs e)
+        private void NewAccueilBt_Click(object sender, EventArgs e)
         {
-            mod_new.Create_New_Inspection(NewInspectionNameTb.Text, NewInspectionPathTb.Text);
+            if (NewAccueilNameTb.Text == String.Empty)
+            {
+                MessageBox.Show("Veuillez saisir le nom de l'inspection", "Champ manquant", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (NewAccueilPathTb.Text == String.Empty){
+                MessageBox.Show("Veuillez saisir l'emplacement de l'inspection", "Champ manquant", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            } 
+
+            mod_new.Create_New_Accueil(NewAccueilNameTb.Text, NewAccueilPathTb.Text);
         }
 
         private void NewOuvrageBt_Click(object sender, EventArgs e)
@@ -368,8 +450,7 @@ namespace ACTIVA_Module_1
             }
             else
             {
-                mod_inspection.Move_Ouvrage_Down(OuvrageList);
-                this.SaveOuvrageOrderBt.Enabled = true;
+                mod_accueil.Move_Ouvrage_Down(OuvrageList);
             }
         }
 
@@ -381,14 +462,13 @@ namespace ACTIVA_Module_1
             }
             else
             {
-                mod_inspection.Move_Ouvrage_Up(OuvrageList);
-                this.SaveOuvrageOrderBt.Enabled = true;
+                mod_accueil.Move_Ouvrage_Up(OuvrageList);
             }
         }
 
         private void CloneOuvrageBt_Click(object sender, EventArgs e)
         {
-            if (OuvrageList.SelectedText != String.Empty & mod_inspection.OUVRAGE != String.Empty)
+            if (OuvrageList.SelectedText != String.Empty & mod_accueil.OUVRAGE != String.Empty)
             {
                 Ouvrage_Copy_Name frm = new Ouvrage_Copy_Name();
                 frm.ShowDialog();
@@ -397,7 +477,7 @@ namespace ACTIVA_Module_1
 
         private void DeleteOuvrageBt_Click(object sender, EventArgs e)
         {
-            if (OuvrageList.SelectedText != String.Empty & mod_inspection.OUVRAGE != String.Empty)
+            if (OuvrageList.SelectedText != String.Empty & mod_accueil.OUVRAGE != String.Empty)
             {
                 if (MessageBox.Show("Confirmez vous la supression de l'ouvrage ?") == DialogResult.OK)
                     mod_new.Delete_Selected_Ouvrage();
@@ -439,13 +519,13 @@ namespace ACTIVA_Module_1
         {
             if (OuvrageList.VisibleRows > 0 & OuvrageList.SelectedIndices.Count == 1)
             {
-                mod_inspection.Get_Selected_Ouvrage_Info(OuvrageList.SelectedText, OuvrageList.Columns["Type"].CellText(OuvrageList.SelectedIndex), OuvrageList.Columns["Code forme"].CellText(OuvrageList.SelectedIndex), obs_name_label, obs_nb_label);
+                mod_accueil.Get_Selected_Ouvrage_Info(OuvrageList.SelectedText, OuvrageList.Columns["Type"].CellText(OuvrageList.SelectedIndex), OuvrageList.Columns["Code forme"].CellText(OuvrageList.SelectedIndex), obs_name_label, obs_nb_label);
                 mod_global.MF.OuvrageToolsPanel.Enabled = true;
-                mod_global.MF.SaveOuvrageOrderBt.Enabled = false;
                 mod_global.MF.OuvrageMoveDownBt.Enabled = true;
                 mod_global.MF.OuvrageMoveUpBt.Enabled = true;
                 mod_global.MF.CloneOuvrageBt.Enabled = true;
                 mod_global.MF.DeleteOuvrageBt.Enabled = true;
+                mod_global.MF.RenommerBt.Enabled = true;
             }
         }
 
@@ -456,8 +536,7 @@ namespace ACTIVA_Module_1
 
         private void SaveOuvrageOrderBt_Click(object sender, EventArgs e)
         {
-            mod_inspection.Save_Ouvrage_Order(OuvrageList);
-            this.SaveOuvrageOrderBt.Enabled = false;
+            mod_accueil.Save_Ouvrage_Order(OuvrageList);
         }
 
         private void EraseAllBt_Click(object sender, EventArgs e)
@@ -466,12 +545,12 @@ namespace ACTIVA_Module_1
                 mod_global.Focused_Control.Text = string.Empty;
         }
 
-        private void Folder_New_Inspection_Click(object sender, EventArgs e)
+        private void Folder_New_Accueil_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog fbd = new FolderBrowserDialog();
             if (fbd.ShowDialog() == DialogResult.OK)
             {
-                NewInspectionPathTb.Text = fbd.SelectedPath;
+                NewAccueilPathTb.Text = fbd.SelectedPath;
             }
         }
 
@@ -499,12 +578,21 @@ namespace ACTIVA_Module_1
             if (e.KeyCode == Keys.S && e.Control)
             {
                 mod_save.Save_Identification_Panel(Identification_Flp);
+                mod_save.Save_Inspection_Panel(Inspection_Flp);
 
                 //mise a jour de la couleur du groupe courant
                 mod_identification.Check_Fields_Status(IdentificationTopicBar.FindPage(IdFormLabel.Text));
 
-                mod_identification.SaveIDFlag = false;
-                MessageBox.Show("Les modifications ont été sauvegardées.", "Succès", MessageBoxButtons.OK);
+                mod_identification.SaveIDFlag = false;                
+            }
+        }
+
+        private void RenommerBt_Click(object sender, EventArgs e)
+        {
+            if (OuvrageList.SelectedText != String.Empty & mod_accueil.OUVRAGE != String.Empty)
+            {
+                Renommer_Ouvrage frm = new Renommer_Ouvrage();
+                frm.ShowDialog();
             }
         }
     }

@@ -30,6 +30,7 @@ namespace ACTIVA_Module_1.modules
                 XmlElement var = doc.CreateElement("A2");
                 var.InnerText = "fr";
                 elem.AppendChild(var);             
+                
                 //A6
                 var = doc.CreateElement("A6");
                 var.InnerText = "2010";
@@ -45,7 +46,7 @@ namespace ACTIVA_Module_1.modules
                     elem = doc.CreateElement("ZB");
                     inspectionNode.AppendChild(elem);
                     nodelist = svf.SelectNodes(string.Concat("/inspection/ouvrage[@nom ='", ouvrage.Attributes["nom"].InnerText, "']/identifications/code"));
-                    SortedList sortednodelist = mod_inspection.SortNodeList_By_Alphabet(nodelist);
+                    SortedList sortednodelist = mod_accueil.SortNodeList_By_Alphabet(nodelist);
                     foreach (object obj in sortednodelist.Values)
                     {
                         if (((XmlNode)obj)["valeur"].InnerText != "")
@@ -178,7 +179,7 @@ namespace ACTIVA_Module_1.modules
                                 code.InnerText = svf.SelectSingleNode(string.Concat("/inspection/ouvrage[@nom ='", ouvrage.Attributes["nom"].InnerText, "']/observations/code[@num = \"", obs.Attributes["num"].InnerText, "\"]", "/caracteristiques/caracteristique[@nom=\"posregard\"]")).Attributes["codeR"].InnerText;
                                 var.AppendChild(code);
                             }
-                        }
+                        }   
 
                         //Photo
                         str = string.Concat("/inspection/ouvrage[@nom ='", ouvrage.Attributes["nom"].InnerText, "']/observations/code[@num = \"", obs.Attributes["num"].InnerText, "\"]", "/caracteristiques/caracteristique[@nom=\"photo\"]");
@@ -343,7 +344,7 @@ namespace ACTIVA_Module_1.modules
             }
         }
 
-        public static void Create_New_Inspection(string name, string path)
+        public static void Create_New_Accueil(string name, string path)
         {
             if (name != String.Empty & path != String.Empty)
             {
@@ -354,6 +355,12 @@ namespace ACTIVA_Module_1.modules
                 XmlElement inspectionNode = doc.CreateElement("inspection");
                 doc.AppendChild(inspectionNode);
 
+                /*
+                 * Nouveaux codes ajoutés
+                 */ 
+                XmlElement identificationsNode = doc.CreateElement("identifications");
+                inspectionNode.AppendChild(identificationsNode);
+
                 string new_svf_folder = System.IO.Path.Combine(path, name);
                 string new_img_folder = System.IO.Path.Combine(new_svf_folder, "img");
                 string new_svf = System.IO.Path.Combine(new_svf_folder, name + ".svf");
@@ -363,14 +370,14 @@ namespace ACTIVA_Module_1.modules
 
                 doc.Save(new_svf);
 
-                String s = "Le dossier SVF a été créer dans " + path;
+                String s = "Le dossier SVF a été créé dans " + path;
                 MessageBox.Show(s, "Création réussie", MessageBoxButtons.OK);
-                mod_inspection.Load_SVF(new_svf);
-                mod_inspection.Check_Type_Ouvrage(mod_global.MF.cb_troncon, mod_global.MF.cb_branchement, mod_global.MF.cb_regard);
-                mod_inspection.Fill_Ouvrage_List(mod_global.MF.OuvrageList);
+                mod_accueil.Load_SVF(new_svf);
+                mod_accueil.Check_Type_Ouvrage(mod_global.MF.cb_troncon, mod_global.MF.cb_branchement, mod_global.MF.cb_regard);
+                mod_accueil.Fill_Ouvrage_List(mod_global.MF.OuvrageList);
 
-                mod_global.MF.NewInspectionNameTb.Text = String.Empty;
-                mod_global.MF.NewInspectionPathTb.Text = String.Empty;
+                mod_global.MF.NewAccueilNameTb.Text = String.Empty;
+                mod_global.MF.NewAccueilPathTb.Text = String.Empty;
                 mod_global.MF.openSVFTb.Text = String.Empty;
 
                 mod_global.Enable_Ouvrage_Controls();
@@ -378,7 +385,7 @@ namespace ACTIVA_Module_1.modules
             else
             {
                 //System.Windows.Forms.MessageBox
-            }
+            }          
         }
 
         public static void Fill_New_Ouvrage_Type_Combo(ComboBox ouvragetypecb)
@@ -446,10 +453,10 @@ namespace ACTIVA_Module_1.modules
             string intituleforme = node.SelectSingleNode("valeur/item[@nom='" + codeforme + "']").InnerText;
 
              //On crée les noeuds
-             XmlElement elem_code = mod_inspection.SVF.CreateElement("code");
-             XmlElement newidnode = mod_inspection.SVF.CreateElement("id");
-             XmlElement newintitulenode = mod_inspection.SVF.CreateElement("intitule");
-             XmlElement newvaleurnode = mod_inspection.SVF.CreateElement("valeur");
+             XmlElement elem_code = mod_accueil.SVF.CreateElement("code");
+             XmlElement newidnode = mod_accueil.SVF.CreateElement("id");
+             XmlElement newintitulenode = mod_accueil.SVF.CreateElement("intitule");
+             XmlElement newvaleurnode = mod_accueil.SVF.CreateElement("valeur");
 
              //On remplie la valeur de chaque noeud
              newidnode.InnerText = code;
@@ -484,26 +491,26 @@ namespace ACTIVA_Module_1.modules
 
                 AddValue atype = (AddValue)type;
 
-                XmlElement ouvrageNode = mod_inspection.SVF.CreateElement("ouvrage");
+                XmlElement ouvrageNode = mod_accueil.SVF.CreateElement("ouvrage");
                 ouvrageNode.SetAttribute("nom", nom);
                 ouvrageNode.SetAttribute("type", atype.Display);
                 ouvrageNode.SetAttribute("forme", forme);
-                ouvrageNode.SetAttribute("position", mod_inspection.Get_New_Ouvrage_Position());
+                ouvrageNode.SetAttribute("position", mod_accueil.Get_New_Ouvrage_Position());
 
-                XmlElement IdentificationNode = mod_inspection.SVF.CreateElement("identifications");
-                XmlElement ObservationNode = mod_inspection.SVF.CreateElement("observations");
+                XmlElement IdentificationNode = mod_accueil.SVF.CreateElement("identifications");
+                XmlElement ObservationNode = mod_accueil.SVF.CreateElement("observations");
 
                 IdentificationNode = PreFill_Forme_Id_Code(atype.Display, forme, IdentificationNode);
 
                 ouvrageNode.AppendChild(IdentificationNode);
                 ouvrageNode.AppendChild(ObservationNode);
 
-                mod_inspection.SVF.DocumentElement.AppendChild(ouvrageNode);
+                mod_accueil.SVF.DocumentElement.AppendChild(ouvrageNode);
 
-                mod_inspection.SVF.Save(System.IO.Path.Combine(mod_inspection.SVF_FOLDER, mod_inspection.SVF_FILENAME));
+                mod_accueil.SVF.Save(System.IO.Path.Combine(mod_accueil.SVF_FOLDER, mod_accueil.SVF_FILENAME));
 
-                mod_inspection.Check_Type_Ouvrage(mod_global.MF.cb_troncon, mod_global.MF.cb_branchement, mod_global.MF.cb_regard);
-                mod_inspection.Fill_Ouvrage_List(mod_global.MF.OuvrageList);
+                mod_accueil.Check_Type_Ouvrage(mod_global.MF.cb_troncon, mod_global.MF.cb_branchement, mod_global.MF.cb_regard);
+                mod_accueil.Fill_Ouvrage_List(mod_global.MF.OuvrageList);
 
                 mod_global.MF.OuvrageNomTb.Text = String.Empty;
             }
@@ -511,33 +518,57 @@ namespace ACTIVA_Module_1.modules
 
         public static void Clone_Selected_Ouvrage(string ouvragename)
         {
-            XmlNode current_ouvrage_node = mod_inspection.SVF.DocumentElement.SelectSingleNode(string.Concat("//ouvrage[@nom='", mod_inspection.OUVRAGE, "']"));
+            XmlNode current_ouvrage_node = mod_accueil.SVF.DocumentElement.SelectSingleNode(string.Concat("//ouvrage[@nom='", mod_accueil.OUVRAGE, "']"));
 
             XmlNode new_ouvrage_node = current_ouvrage_node.CloneNode(false);
             new_ouvrage_node.Attributes["nom"].InnerText = ouvragename;
-            new_ouvrage_node.Attributes["position"].InnerText = mod_inspection.Get_New_Ouvrage_Position();
+            new_ouvrage_node.Attributes["position"].InnerText = mod_accueil.Get_New_Ouvrage_Position();
 
-            XmlElement IdentificationNode = mod_inspection.SVF.CreateElement("identifications");
-            XmlElement ObservationNode = mod_inspection.SVF.CreateElement("observations");
+            XmlElement IdentificationNode = mod_accueil.SVF.CreateElement("identifications");
+            
+
+            XmlNodeList nodelist = mod_accueil.SVF.DocumentElement.SelectNodes(string.Concat("//ouvrage[@nom='", mod_accueil.OUVRAGE, "']/identifications/code"));
+            foreach (XmlNode node in nodelist) 
+            {
+                String id = node.SelectSingleNode("id").InnerText;
+                XmlNode root;
+                // Vérifier si c'est le type Regard ou Canalisation
+                if (current_ouvrage_node.Attributes["type"].InnerText == "REGARD")
+                    root = mod_identification.Codes_Id_Regard_Xml.DocumentElement.SelectSingleNode("code[id='" + id + "']");
+                else
+                    root = mod_identification.Codes_Id_Cana_Xml.DocumentElement.SelectSingleNode("code[id='" + id + "']");
+                
+                // Vérifier si c'est un champs reporté et pas un inspection
+                if (root.Attributes["reporte"].InnerText == "True" && root.SelectSingleNode("inspection").InnerText != "")
+                {
+                    XmlNode clone_node = node.CloneNode(true);
+                    IdentificationNode.AppendChild(clone_node); 
+                }
+            }
 
             new_ouvrage_node.AppendChild(IdentificationNode);
-            new_ouvrage_node.AppendChild(ObservationNode);
+            /*XmlElement IdentificationNode = mod_accueil.SVF.CreateElement("identifications");
+            XmlElement ObservationNode = mod_accueil.SVF.CreateElement("observations");
 
-            mod_inspection.SVF.DocumentElement.AppendChild(new_ouvrage_node);
-            mod_inspection.SVF.Save(System.IO.Path.Combine(mod_inspection.SVF_FOLDER, mod_inspection.SVF_FILENAME));
+            new_ouvrage_node.AppendChild(IdentificationNode);
+            new_ouvrage_node.AppendChild(ObservationNode);*/
 
-            mod_inspection.Check_Type_Ouvrage(mod_global.MF.cb_troncon, mod_global.MF.cb_branchement, mod_global.MF.cb_regard);
-            mod_inspection.Fill_Ouvrage_List(mod_global.MF.OuvrageList);
+            mod_accueil.SVF.DocumentElement.AppendChild(new_ouvrage_node);
+            mod_accueil.SVF.Save(System.IO.Path.Combine(mod_accueil.SVF_FOLDER, mod_accueil.SVF_FILENAME));
+
+            mod_accueil.Check_Type_Ouvrage(mod_global.MF.cb_troncon, mod_global.MF.cb_branchement, mod_global.MF.cb_regard);
+            mod_accueil.Fill_Ouvrage_List(mod_global.MF.OuvrageList);
+
         }
 
         public static void Delete_Selected_Ouvrage()
         {
-            XmlNode current_ouvrage_node = mod_inspection.SVF.DocumentElement.SelectSingleNode(string.Concat("//ouvrage[@nom='", mod_inspection.OUVRAGE, "']"));
-            mod_inspection.SVF.DocumentElement.RemoveChild(current_ouvrage_node);
-            mod_inspection.SVF.Save(System.IO.Path.Combine(mod_inspection.SVF_FOLDER, mod_inspection.SVF_FILENAME));
+            XmlNode current_ouvrage_node = mod_accueil.SVF.DocumentElement.SelectSingleNode(string.Concat("//ouvrage[@nom='", mod_accueil.OUVRAGE, "']"));
+            mod_accueil.SVF.DocumentElement.RemoveChild(current_ouvrage_node);
+            mod_accueil.SVF.Save(System.IO.Path.Combine(mod_accueil.SVF_FOLDER, mod_accueil.SVF_FILENAME));
 
-            mod_inspection.Check_Type_Ouvrage(mod_global.MF.cb_troncon, mod_global.MF.cb_branchement, mod_global.MF.cb_regard);
-            mod_inspection.Fill_Ouvrage_List(mod_global.MF.OuvrageList);
+            mod_accueil.Check_Type_Ouvrage(mod_global.MF.cb_troncon, mod_global.MF.cb_branchement, mod_global.MF.cb_regard);
+            mod_accueil.Fill_Ouvrage_List(mod_global.MF.OuvrageList);
         }
     }
 

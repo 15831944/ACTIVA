@@ -36,7 +36,7 @@ namespace ACTIVA_Module_1.modules
             Rectangle rc = flex.GetCellRect(r, c, false);
 
             // hide control if out of range
-            if (rc.Width <= 0 || rc.Height <= 0 || !rc.IntersectsWith(flex.ClientRectangle) || flex.Rows[r].HeightDisplay == 24)
+            if (rc.Width <= 0 || rc.Height <= 0 || !rc.IntersectsWith(flex.ClientRectangle) || flex.Rows[r].HeightDisplay == 50)
             {
                 hosted.Visible = false;
                 return true;

@@ -63,7 +63,7 @@ namespace ACTIVA_Module_1.modules
             bool ouvrage_exist = false;
             XmlNodeList nodelist;
 
-            nodelist = mod_inspection.SVF.SelectNodes("/inspection/ouvrage[@nom='"+ouvragename+"']");
+            nodelist = mod_accueil.SVF.SelectNodes("/inspection/ouvrage[@nom='"+ouvragename+"']");
 
             if (nodelist.Count > 0)
                 ouvrage_exist = true;
@@ -76,7 +76,7 @@ namespace ACTIVA_Module_1.modules
             bool motif_exist = false;
             XmlNodeList nodelist;
 
-            nodelist = mod_inspection.Motif_Xml.SelectNodes("//motif[@nom='" + motifname + "']");
+            nodelist = mod_accueil.Motif_Xml.SelectNodes("//motif[@nom='" + motifname + "']");
 
             if (nodelist.Count > 0)
                 motif_exist = true;
@@ -111,7 +111,23 @@ namespace ACTIVA_Module_1.modules
             return id_exist;
         }
 
+        public static bool Check_If_Observation_Code_Lie_Exist(string codename, XmlDocument doc)
+        {
+            XmlNodeList nodelist;
 
+            nodelist = doc.SelectNodes("lien");
+
+            if (nodelist.Count > 0)
+            {
+                foreach (XmlNode unNode in nodelist)
+                {
+                    if (unNode.InnerText == codename)
+                        return true;
+
+                }
+            }
+            return false;
+        }
         public static bool Check_If_Observation_Item_Name_Exist(string itemname, XmlNode originnod)
         {
             bool item_exist = false;
@@ -138,6 +154,32 @@ namespace ACTIVA_Module_1.modules
             return item_exist;
         }
 
+        public static bool Check_If_Section_Type_Exist(string id, XmlNode originnod)
+        {
+            bool type_exist = false;
+            XmlNodeList nodelist;
+
+            nodelist = originnod.SelectNodes("section[@id='" + id + "']");
+
+            if (nodelist.Count > 0)
+                type_exist = true;
+
+            return type_exist;
+        }
+
+        public static bool Check_If_Section_Horaire_Exist(string id, XmlNode originnod)
+        {
+            bool horaire_exist = false;
+            XmlNodeList nodelist;
+
+            nodelist = originnod.SelectNodes("section//heure[@id='" + id + "']");
+
+            if (nodelist.Count > 0)
+                horaire_exist = true;
+
+            return horaire_exist;
+        }
+
         public static bool Check_If_Motif_Is_Still_Used(string motifname)
         {
             bool motif_used = false;
@@ -161,19 +203,31 @@ namespace ACTIVA_Module_1.modules
             XmlNode node;
             XmlNode root;
 
-            root = mod_inspection.Section_Ouvrage_Xml.DocumentElement;
+            root = mod_accueil.Section_Ouvrage_Xml.DocumentElement;
 
-            string type = mod_inspection.TYPE_OUVRAGE;
+            string type = mod_accueil.TYPE_OUVRAGE;
 
             if (type == "BRANCHEMENT" | type == "TRONCON")
                 type = "CANALISATION";
 
-            node = root.SelectSingleNode("section[@ouvrage='" + type + "' and @forme='" + forme + "' and @position='" + mod_inspection.POSITION_SECTION + "']/heure[@id='" + horaire + "']");
+            node = root.SelectSingleNode("section[@ouvrage='" + type + "' and @forme='" + forme + "' and @position='" + mod_accueil.POSITION_SECTION + "']/heure[@id='" + horaire + "']");
 
             return node.InnerText;
         }
 
         public static string Get_Id_Parent_Equivalence(string code_parent)
+        {
+            XmlNode node;
+            XmlNode root;
+
+            root = mod_identification.Groupe_Codes_Id_Xml.DocumentElement;
+
+            node = root.SelectSingleNode("identification/titre[@id='" + code_parent + "']");
+
+            return node.InnerText;
+        }
+
+        public static string Get_Insp_Parent_Equivalence(string code_parent)
         {
             XmlNode node;
             XmlNode root;
@@ -191,10 +245,10 @@ namespace ACTIVA_Module_1.modules
             XmlNode root;
             string type;
 
-            root = mod_inspection.Section_Ouvrage_Xml.DocumentElement;
+            root = mod_accueil.Section_Ouvrage_Xml.DocumentElement;
 
             if (type_ouvrage == String.Empty)
-                type = mod_inspection.TYPE_OUVRAGE;
+                type = mod_accueil.TYPE_OUVRAGE;
             else
                 type = type_ouvrage;
 
@@ -223,7 +277,7 @@ namespace ACTIVA_Module_1.modules
         {
             XmlNode root;
 
-            if (mod_inspection.TYPE_OUVRAGE == "REGARD")
+            if (mod_accueil.TYPE_OUVRAGE == "REGARD")
                 root = mod_observation.Codes_Obs_Regard_Xml.DocumentElement;
             else
                 root = mod_observation.Codes_Obs_Cana_Xml.DocumentElement;
@@ -235,7 +289,7 @@ namespace ACTIVA_Module_1.modules
         {
             XmlNode root;
 
-            if (mod_inspection.TYPE_OUVRAGE == "REGARD")
+            if (mod_accueil.TYPE_OUVRAGE == "REGARD")
                 root = mod_identification.Codes_Id_Regard_Xml.DocumentElement;
             else
                 root = mod_identification.Codes_Id_Cana_Xml.DocumentElement;
@@ -243,6 +297,17 @@ namespace ACTIVA_Module_1.modules
             return root;
         }
 
+        public static XmlNode Get_Codes_Insp_DocElement()
+        {
+            XmlNode root;
+
+            if (mod_accueil.TYPE_OUVRAGE == "REGARD")
+                root = mod_identification.Codes_Id_Regard_Xml.DocumentElement;
+            else
+                root = mod_identification.Codes_Id_Cana_Xml.DocumentElement;
+
+            return root;
+        }
 
         public static void Enable_Ouvrage_Controls()
         {
@@ -268,6 +333,7 @@ namespace ACTIVA_Module_1.modules
             MF.IdentificationTab.TabVisible = false;
             MF.ObservationTab.TabVisible = false;
             MF.RenseignementTab.TabVisible = false;
+            MF.InspectionTab.TabVisible = false;
         }
 
         public static void Enable_Main_Tabs()
@@ -275,6 +341,7 @@ namespace ACTIVA_Module_1.modules
             MF.IdentificationTab.TabVisible = true;
             MF.ObservationTab.TabVisible = true;
             MF.RenseignementTab.TabVisible = true;
+            MF.InspectionTab.TabVisible = true;
         }
 
 

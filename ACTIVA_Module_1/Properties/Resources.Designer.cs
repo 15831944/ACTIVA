@@ -131,7 +131,7 @@ namespace ACTIVA_Module_1.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à 12/05/2016 15:36:24,75 
+        ///   Recherche une chaîne localisée semblable à 09/06/2016 17:14:38,91 
         ///.
         /// </summary>
         internal static string BuildDate {
@@ -486,6 +486,16 @@ namespace ACTIVA_Module_1.Properties {
         internal static System.Drawing.Bitmap remove_16 {
             get {
                 object obj = ResourceManager.GetObject("remove_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rename {
+            get {
+                object obj = ResourceManager.GetObject("rename", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

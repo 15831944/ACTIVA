@@ -31,7 +31,7 @@ namespace ACTIVA_Module_1.modules
             RectangleF rcPage = GetPageRect();
             RectangleF rc = rcPage;
 
-            XmlNode root = ACTIVA_Module_1.modules.mod_inspection.SVF.DocumentElement;
+            XmlNode root = ACTIVA_Module_1.modules.mod_accueil.SVF.DocumentElement;
 
             SELECTED_OUVRAGE = string.Empty;
             LIST_OUVRAGES = string.Empty;
@@ -46,8 +46,8 @@ namespace ACTIVA_Module_1.modules
                 SELECTED_TYPE_OUVRAGE = mod_global.MF.OuvrageList.GetItemText(row, "Type");
                 LIST_OUVRAGES += "@nom='" + mod_global.MF.OuvrageList.GetItemText(row, "Nom") + "' or ";
 
-                mod_inspection.OUVRAGE = SELECTED_OUVRAGE;
-                mod_inspection.TYPE_OUVRAGE = SELECTED_TYPE_OUVRAGE;
+                mod_accueil.OUVRAGE = SELECTED_OUVRAGE;
+                mod_accueil.TYPE_OUVRAGE = SELECTED_TYPE_OUVRAGE;
 
                 if (ouvragecount > 0)
                 {
@@ -174,7 +174,7 @@ namespace ACTIVA_Module_1.modules
             string intituletext = string.Empty;
             string text = String.Empty;
             string idtext = string.Empty;
-            root = ACTIVA_Module_1.modules.mod_inspection.SVF.DocumentElement;
+            root = ACTIVA_Module_1.modules.mod_accueil.SVF.DocumentElement;
             
             ArrayList parents = Get_Identification_Parent_List();
 
@@ -226,7 +226,7 @@ namespace ACTIVA_Module_1.modules
             XmlNode root;
             XmlNode unNode;
 
-            root = ACTIVA_Module_1.modules.mod_inspection.SVF.DocumentElement;
+            root = ACTIVA_Module_1.modules.mod_accueil.SVF.DocumentElement;
             //nodeList = root.SelectNodes(string.Concat("/inspection/ouvrage[@nom='", SELECTED_OUVRAGE, "']/observations/code"));
 
             XPathNavigator nav = root.CreateNavigator();
@@ -813,7 +813,7 @@ namespace ACTIVA_Module_1.modules
                 rcHeader.Offset(adress_width+70, 0);
                 rcHeader.Width = 480 - (adress_width + 5 + 60);
                 thepdf.DrawRectangle(pen, rcHeader);
-                thepdf.DrawString("Inspection\n des réseaux\n d'assainissement", titlefont, Brushes.Black, rcHeader, sfCenter);
+                thepdf.DrawString("Accueil\n des réseaux\n d'assainissement", titlefont, Brushes.Black, rcHeader, sfCenter);
             }
         }
 
@@ -969,13 +969,13 @@ namespace ACTIVA_Module_1.modules
             XmlNode PhotoNode;
             string[] picpath = new string[4];
 
-            root = mod_inspection.SVF.DocumentElement;
+            root = mod_accueil.SVF.DocumentElement;
 
-            PhotoNode = root.SelectSingleNode("/inspection/ouvrage[@nom='" + mod_inspection.OUVRAGE + "']/observations/code[@num='" + num + "']/caracteristiques/caracteristique[@nom='photo']");
+            PhotoNode = root.SelectSingleNode("/inspection/ouvrage[@nom='" + mod_accueil.OUVRAGE + "']/observations/code[@num='" + num + "']/caracteristiques/caracteristique[@nom='photo']");
 
             if (PhotoNode.InnerText != String.Empty)
             {
-                string picfolder = System.IO.Path.Combine(mod_inspection.SVF_FOLDER, "img");;
+                string picfolder = System.IO.Path.Combine(mod_accueil.SVF_FOLDER, "img");;
                 string pic;
 
                 for (int i = 0; i < picpath.GetLength(0) & i < PhotoNode.InnerText.Split(Char.Parse("|")).GetLength(0); i++)
@@ -994,7 +994,7 @@ namespace ACTIVA_Module_1.modules
             XmlNode root;
             ArrayList parent_list = new ArrayList();
 
-            root = ACTIVA_Module_1.modules.mod_inspection.SVF.DocumentElement;
+            root = ACTIVA_Module_1.modules.mod_accueil.SVF.DocumentElement;
             nodeList = root.SelectNodes(string.Concat("/inspection/ouvrage[@nom='", SELECTED_OUVRAGE, "']/identifications/code"));
 
             string last_parent = String.Empty;

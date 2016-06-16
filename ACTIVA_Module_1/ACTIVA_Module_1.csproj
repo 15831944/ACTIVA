@@ -150,6 +150,12 @@
     <Compile Include="component\virtual_kb.Designer.cs">
       <DependentUpon>virtual_kb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Renommer_Ouvrage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Renommer_Ouvrage.Designer.cs">
+      <DependentUpon>Renommer_Ouvrage.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,7 @@
     <Compile Include="modules\mod_identification.cs" />
     <Compile Include="modules\mod_hosted_control.cs" />
     <Compile Include="modules\mod_init.cs" />
+    <Compile Include="modules\mod_accueil.cs" />
     <Compile Include="modules\mod_inspection.cs" />
     <Compile Include="modules\mod_new.cs">
       <SubType>Code</SubType>
@@ -223,6 +230,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="component\virtual_kb.resx">
       <DependentUpon>virtual_kb.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Renommer_Ouvrage.resx">
+      <DependentUpon>Renommer_Ouvrage.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="mainform.resx">
@@ -487,6 +498,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rename.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -37,7 +37,7 @@ namespace ACTIVA_Module_1.component
             PictureBox pb = (PictureBox)sender;
             pb.BorderStyle = BorderStyle.FixedSingle;
 
-            mod_inspection.POSITION_SECTION = (string)pb.Tag;
+            mod_accueil.POSITION_SECTION = (string)pb.Tag;
             SectionPb.ImageLocation = pb.ImageLocation;
 
             foreach (Control ct in AutresSectionsTlp.Controls)
@@ -159,22 +159,22 @@ namespace ACTIVA_Module_1.component
             XmlNodeList nodelist;
             XmlNode root;
 
-            root = mod_inspection.Section_Ouvrage_Xml.DocumentElement;
+            root = mod_accueil.Section_Ouvrage_Xml.DocumentElement;
 
-            string type = mod_inspection.TYPE_OUVRAGE;
+            string type = mod_accueil.TYPE_OUVRAGE;
 
             if (type == "BRANCHEMENT" | type == "TRONCON")
                 type = "CANALISATION";
 
             //On verifie qu'il existe bien un noeud avec cette forme et cette position
-            nodelist = root.SelectNodes("section[@ouvrage='" + type + "' and @forme='" + forme + "' and @position='" + mod_inspection.POSITION_SECTION + "']");
+            nodelist = root.SelectNodes("section[@ouvrage='" + type + "' and @forme='" + forme + "' and @position='" + mod_accueil.POSITION_SECTION + "']");
 
             //S'il n'existe pas de noeud on reinitialise la position à 1
             if (nodelist.Count == 0)
-                mod_inspection.POSITION_SECTION = "1";
+                mod_accueil.POSITION_SECTION = "1";
 
             //On selectionne l'image qui correspond a la forme en cours et à la position stockee
-            node = root.SelectSingleNode("section[@ouvrage='" + type + "' and @forme='" + forme + "' and @position='" + mod_inspection.POSITION_SECTION + "']");
+            node = root.SelectSingleNode("section[@ouvrage='" + type + "' and @forme='" + forme + "' and @position='" + mod_accueil.POSITION_SECTION + "']");
 
             return node.Attributes["image"].InnerText;
         }
@@ -185,7 +185,7 @@ namespace ACTIVA_Module_1.component
             XmlNode root;
             string[] imagelist;
 
-            root = mod_inspection.Section_Ouvrage_Xml.DocumentElement;
+            root = mod_accueil.Section_Ouvrage_Xml.DocumentElement;
 
             //On selectionne les images de la même forme
             nodelist = root.SelectNodes("section[@forme='" + forme + "']");
@@ -199,7 +199,7 @@ namespace ACTIVA_Module_1.component
                 int i = 0;
                 foreach (XmlNode nod in nodelist)
                 {
-                    if (nod.Attributes["position"].InnerText != mod_inspection.POSITION_SECTION)
+                    if (nod.Attributes["position"].InnerText != mod_accueil.POSITION_SECTION)
                     {
                         imagelist[i] = nod.Attributes["image"].InnerText + "|" + nod.Attributes["position"].InnerText;
                         i += 1;

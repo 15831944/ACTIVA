@@ -733,12 +733,12 @@
         private System.Windows.Forms.TextBox RemarqueTb;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox EmpCirc2Tb;
-        private System.Windows.Forms.TextBox EmpCirc1Tb;
+        public System.Windows.Forms.TextBox EmpCirc2Tb;
+        public System.Windows.Forms.TextBox EmpCirc1Tb;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox EmpLong2Tb;
-        private System.Windows.Forms.TextBox EmpLong1Tb;
+        public System.Windows.Forms.TextBox EmpLong2Tb;
+        public System.Windows.Forms.TextBox EmpLong1Tb;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label Quant2Lb;

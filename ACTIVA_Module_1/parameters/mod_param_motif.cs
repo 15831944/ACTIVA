@@ -298,7 +298,7 @@ namespace ACTIVA_Module_1.modules
             else if (userdata == "att")
                 is_attribute = true;
 
-            mod_save.Save_Param_Field(mod_inspection.Motif_Xml, node, newvalue, is_attribute, colname, mod_global.MF.XmlMotifStripLabel.Text);
+            mod_save.Save_Param_Field(mod_accueil.Motif_Xml, node, newvalue, is_attribute, colname, mod_global.MF.XmlMotifStripLabel.Text);
         }
 
 
@@ -343,11 +343,11 @@ namespace ACTIVA_Module_1.modules
                 C1.Win.C1FlexGrid.Row ligne = grid.Rows.Add();
                 ligne["nom"] = tb.Text;
 
-                XmlElement motifNode = mod_inspection.Motif_Xml.CreateElement("motif");
+                XmlElement motifNode = mod_accueil.Motif_Xml.CreateElement("motif");
                 motifNode.SetAttribute("nom", tb.Text);
 
                 originnod.AppendChild(motifNode);
-                mod_inspection.Motif_Xml.Save(mod_global.MF.XmlMotifStripLabel.Text);
+                mod_accueil.Motif_Xml.Save(mod_global.MF.XmlMotifStripLabel.Text);
 
                 tb.Text = String.Empty;
             }
@@ -375,7 +375,7 @@ namespace ACTIVA_Module_1.modules
                 originnod.RemoveChild(nodtoremove);
 
                 grid.Rows.Remove(grid.RowSel);
-                mod_inspection.Motif_Xml.Save(mod_global.MF.XmlMotifStripLabel.Text);
+                mod_accueil.Motif_Xml.Save(mod_global.MF.XmlMotifStripLabel.Text);
             }
             else
             {

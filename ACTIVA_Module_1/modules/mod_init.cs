@@ -48,7 +48,6 @@ namespace ACTIVA_Module_1.modules
         public static void Data_Loading()
         {
             Set_Xml_Path();
-
             mod_identification.Load_Groupe_Codes_Id(Properties.Settings.Default.GroupCodeIdPath);
             Thread.Sleep(500);
             Application.DoEvents();
@@ -66,9 +65,9 @@ namespace ACTIVA_Module_1.modules
             Application.DoEvents();
             mod_observation.Load_Codes_Obs_Regard(Properties.Settings.Default.CodeObsRegPath);
             Application.DoEvents();
-            mod_inspection.Load_Section_Ouvrage(Properties.Settings.Default.SectionOuvragePath);
+            mod_accueil.Load_Section_Ouvrage(Properties.Settings.Default.SectionOuvragePath);
             Application.DoEvents();
-            mod_inspection.Load_Motif(Properties.Settings.Default.MotifPath);
+            mod_accueil.Load_Motif(Properties.Settings.Default.MotifPath);
             Application.DoEvents();
 
 
@@ -84,6 +83,7 @@ namespace ACTIVA_Module_1.modules
 
             mod_param_obs.Init_Obs_Button_Tag_n_Event();
             mod_param_id.Init_Id_Button_Tag_n_Event();
+            mod_param_section.Init_Section_Button_Tag_n_Event();
 
             //Initialisation des parametres
             mod_param_autocad.Init_Autocad_Grid(mod_global.MF.XmlAutocadGrid);
@@ -94,9 +94,9 @@ namespace ACTIVA_Module_1.modules
             mod_param_motif.Init_Motif_Lineaire_Grid(mod_global.MF.MotifLineaireGrid);
             mod_param_motif.Init_Motif_Surfacique_Grid(mod_global.MF.MotifSurfaciqueGrid);
 
-            mod_param_motif.Fill_Motif_Ponctuel_Grid(mod_global.MF.MotifPonctuelGrid, mod_inspection.Motif_Xml);
-            mod_param_motif.Fill_Motif_Lineaire_Grid(mod_global.MF.MotifLineaireGrid, mod_inspection.Motif_Xml);
-            mod_param_motif.Fill_Motif_Surfacique_Grid(mod_global.MF.MotifSurfaciqueGrid, mod_inspection.Motif_Xml);
+            mod_param_motif.Fill_Motif_Ponctuel_Grid(mod_global.MF.MotifPonctuelGrid, mod_accueil.Motif_Xml);
+            mod_param_motif.Fill_Motif_Lineaire_Grid(mod_global.MF.MotifLineaireGrid, mod_accueil.Motif_Xml);
+            mod_param_motif.Fill_Motif_Surfacique_Grid(mod_global.MF.MotifSurfaciqueGrid, mod_accueil.Motif_Xml);
 
             mod_param_motif.Init_Motif_Buttons_Tags_n_Events();
 
@@ -104,7 +104,7 @@ namespace ACTIVA_Module_1.modules
             mod_param_obs.Init_Obs_Codelie_Grid(mod_global.MF.XmlObsCodeLieGrid);
             mod_param_id.Init_Id_Codes_Grid(mod_global.MF.XmlIdCodeGrid);
             mod_param_section.Init_Section_Grid(mod_global.MF.XmlSectionGrid);
-            mod_param_section.Fill_Section_Grid(mod_global.MF.XmlSectionGrid, mod_inspection.Section_Ouvrage_Xml);
+            mod_param_section.Fill_Section_Grid(mod_global.MF.XmlSectionGrid, mod_accueil.Section_Ouvrage_Xml);
             mod_param_section.Init_Heure_Grid(mod_global.MF.XmlHeureGrid);
             mod_param_path.Init_Path_Button_Tag_n_Event();
 
@@ -119,6 +119,11 @@ namespace ACTIVA_Module_1.modules
             mod_global.MF.IdDesactivePb.BackColor = mod_global.Desactive_Color;
             mod_global.MF.IdFacultatifPb.BackColor = mod_global.Facultatif_Color;
 
+            mod_global.MF.InspectObligatoirePb.BackColor = mod_global.Obligatoire_Color;
+            mod_global.MF.InspectDifferePb.BackColor = mod_global.Differe_Color;
+            mod_global.MF.InspectDesactivePb.BackColor = mod_global.Desactive_Color;
+            mod_global.MF.InspectFacultatifPb.BackColor = mod_global.Facultatif_Color;
+                        
             mod_global.Disable_Obs_Tools();
             mod_global.Disable_Main_Tabs();
             mod_global.Disable_Ouvrage_Controls();

@@ -5,6 +5,7 @@ using System.Xml;
 using System.Drawing;
 using System.Text;
 using C1.Win.C1FlexGrid;
+using System.Windows.Forms;
 
 namespace ACTIVA_Module_1.modules
 {
@@ -45,6 +46,11 @@ namespace ACTIVA_Module_1.modules
 
             grid.Cols.Count = 6;
 
+            Dictionary<string, string> field_ouvrage = new Dictionary<string, string>();
+            field_ouvrage.Add("Canalisation", "CANALISATION");
+            field_ouvrage.Add("Regard", "REGARD");
+
+
             grid.Cols[0].Name = "id";
             grid.Cols[0].Style = grid.Styles["PosStyle"];
             grid.Cols[0].Width = 130;
@@ -53,6 +59,7 @@ namespace ACTIVA_Module_1.modules
             grid.Cols[1].Name = "ouvrage";
             grid.Cols[1].Width = 100;
             grid.Cols[1].Caption = "Ouvrage";
+            grid.Cols[1].DataMap = field_ouvrage;
 
             grid.Cols[2].Name = "forme";
             grid.Cols[2].Style = grid.Styles["CodeStyle"];
@@ -143,7 +150,7 @@ namespace ACTIVA_Module_1.modules
 
         public static void Section_Click(object sender, EventArgs e)
         {
-            if (mod_global.MF.XmlSectionGrid.RowSel == 0)
+            if (mod_global.MF.XmlSectionGrid.RowSel < 1)
                 return;
 
             string id = mod_global.MF.XmlSectionGrid[mod_global.MF.XmlSectionGrid.RowSel, "id"].ToString();
@@ -170,7 +177,7 @@ namespace ACTIVA_Module_1.modules
             {
                 //Si le userdata de la colonne contient un |, c'est que la valeur ou l'attribut à changer se situe sur un noeud
                 //On récupère le sous noeud à l'aide du second argument après le |
-                node = root.SelectSingleNode("/sections/section[id='" + id + "']/");
+                node = root.SelectSingleNode("section[@id='" + id + "']");
                 //On regarde ensuite si la valeur à changer est une valeur ou un attribut
                 if (userdata.Split(Char.Parse("|"))[0] == "val")
                     is_attribute = false;
@@ -179,7 +186,7 @@ namespace ACTIVA_Module_1.modules
             }
             else
             {
-                node = root.SelectSingleNode("/sections/section[id='" + id + "']");
+                node = root.SelectSingleNode("section[@id='" + id + "']");
                 if (userdata == "val")
                     is_attribute = false;
                 else if (userdata == "att")
@@ -236,6 +243,19 @@ namespace ACTIVA_Module_1.modules
 
             //mod_global.MF.XmlIdCanaButton.Click += new EventHandler(XmlIdCanaButton_Click);
             //mod_global.MF.XmlIdRegButton.Click += new EventHandler(XmlIdRegButton_Click);
+            mod_global.MF.XmlSectionAddTb.Tag = mod_global.MF.XmlSectionGrid;
+            mod_global.MF.XmlSectionAddBt.Tag = mod_global.MF.XmlSectionAddTb;
+            mod_global.MF.XmlSectionDelBt.Tag = mod_global.MF.XmlSectionGrid;
+
+            mod_global.MF.XmlHeureAddTb.Tag = mod_global.MF.XmlHeureGrid;
+            mod_global.MF.XmlHeureAddBt.Tag = mod_global.MF.XmlHeureAddTb;
+            mod_global.MF.XmlHeureDelBt.Tag = mod_global.MF.XmlHeureGrid;
+
+            mod_global.MF.XmlSectionAddBt.Click += new EventHandler(Add_Section_Type);
+            mod_global.MF.XmlSectionDelBt.Click += new EventHandler(Del_Section_Type);
+
+            mod_global.MF.XmlHeureAddBt.Click += new EventHandler(Add_Section_Horaire);
+            mod_global.MF.XmlHeureDelBt.Click += new EventHandler(Del_Section_Horaire);
         }
 
         public static void Fill_Section_Grid(C1FlexGrid grid, XmlDocument Doc)
@@ -279,16 +299,19 @@ namespace ACTIVA_Module_1.modules
 
             grid.Rows.Count = 1;
 
-            nodeList = Selected_Section.SelectNodes("heure");
+            nodeList = Selected_Section.SelectNodes(string.Concat("heure"));
+
 
             if (nodeList.Count > 0)
             {
                 foreach (XmlNode unNode in nodeList)
                 {
                     C1.Win.C1FlexGrid.Row ligne = grid.Rows.Add();
-                    ligne["id"] = unNode.Attributes["id"].InnerText;
-                    ligne["correspondance"] = unNode.InnerText;
 
+                    if (unNode.Attributes.GetNamedItem("id") != null)
+                        ligne["id"] = unNode.Attributes["id"].InnerText;
+                    if (unNode.InnerText != null)
+                        ligne["correspondance"] = unNode.InnerText;
                     if (unNode.Attributes.GetNamedItem("type") != null)
                         ligne["type"] = unNode.Attributes["type"].InnerText;
                 }
@@ -302,6 +325,199 @@ namespace ACTIVA_Module_1.modules
             grid.Cols["id"].UserData = "att";
             grid.Cols["type"].UserData = "att";
             grid.Cols["correspondance"].UserData = "val";
+        }
+
+        //--------------------------- Fonctions d'ajout et de suppression ---------------------------------
+
+        /*
+        * 
+        * Ajouter un type de section dans le fichier XML */
+        public static void Add_Section_Type(object sender, EventArgs e)
+        {
+            Button bt = (Button)sender;
+            TextBox tb = (TextBox)bt.Tag;
+            C1FlexGrid grid = (C1FlexGrid)tb.Tag;
+            XmlDocument doc = (XmlDocument)mod_global.MF.XmlSectionGrid.Tag;
+            XmlNode originnod = doc.DocumentElement;
+
+            if (tb.Text != String.Empty)
+            {
+                if (mod_global.Check_If_Section_Type_Exist(tb.Text.ToUpper(), doc) == true)
+                {
+                    System.Windows.Forms.MessageBox.Show("Ce type de section existe déjà.");
+                    return;
+                }
+
+                C1.Win.C1FlexGrid.Row ligne = grid.Rows.Add();
+                ligne["id"] = tb.Text;
+
+                //ici
+                XmlElement sectionNode = doc.CreateElement("section");
+                sectionNode.SetAttribute("id", tb.Text);
+                sectionNode.SetAttribute("ouvrage", "");
+                sectionNode.SetAttribute("forme", "");
+                sectionNode.SetAttribute("intitule", "");
+                sectionNode.SetAttribute("position", "");
+                sectionNode.SetAttribute("image", "");
+                XmlElement horaire = Create_One_Horaire("12H", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("12H30", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("1H", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("1H30", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("2H", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("2H30", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("3H", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("3H30", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("4H", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("4H30", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("5H", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("5H30", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("6H", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("6H30", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("7H", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("7H30", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("8H", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("8H30", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("9H00", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("9H30", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("10H", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("10H30", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("11H", doc);
+                sectionNode.AppendChild(horaire);
+                horaire = Create_One_Horaire("11H30", doc);
+                sectionNode.AppendChild(horaire);
+
+                originnod.AppendChild(sectionNode);
+
+                doc.Save(mod_global.MF.XmlSectionStripLabel.Text);
+
+                tb.Text = String.Empty;
+            }
+            else
+            {
+                MessageBox.Show("Veuillez saisir un type de section à ajouter", "Erreur", MessageBoxButtons.OK);
+            }
+        }
+
+        /*
+        * 
+        * Supprimer un type de section dans le fichier XML */
+        public static void Del_Section_Type(object sender, EventArgs e)
+        {
+            Button bt = (Button)sender;
+            C1FlexGrid grid = (C1FlexGrid)bt.Tag;
+
+            XmlDocument doc = (XmlDocument)mod_global.MF.XmlSectionGrid.Tag;
+            XmlNode originnod = doc.DocumentElement;
+
+            if (grid.RowSel > 0)
+            {
+                XmlNode nodtoremove = originnod.SelectSingleNode("section[@id='" + grid[grid.RowSel, "id"].ToString() + "']");
+                originnod.RemoveChild(nodtoremove);
+
+                grid.Rows.Remove(grid.RowSel);
+                doc.Save(mod_global.MF.XmlSectionStripLabel.Text);
+            }
+            else
+            {
+                MessageBox.Show("Veuillez sélectionner un type de section à supprimer", "Erreur", MessageBoxButtons.OK);
+            }
+        }
+
+        /*
+        * 
+        * Ajouter un emplacement horaire dans le fichier XML */
+        public static void Add_Section_Horaire(object sender, EventArgs e)
+        {
+            Button bt = (Button)sender;
+            TextBox tb = (TextBox)bt.Tag;
+            C1FlexGrid grid = (C1FlexGrid)tb.Tag;
+            XmlNode originnod = Selected_Section;
+
+            XmlDocument doc = (XmlDocument)mod_global.MF.XmlSectionGrid.Tag;
+
+            if (tb.Text != String.Empty)
+            {
+                if (mod_global.Check_If_Section_Horaire_Exist(tb.Text, originnod) == true)
+                {
+                    System.Windows.Forms.MessageBox.Show("Cet horaire existe déjà.");
+                    return;
+                }
+
+                C1.Win.C1FlexGrid.Row ligne = grid.Rows.Add();
+                ligne["id"] = tb.Text;
+
+                XmlElement heureNode = doc.CreateElement("heure");
+                heureNode.SetAttribute("id", tb.Text);
+
+                originnod.AppendChild(heureNode);
+                doc.Save(mod_global.MF.XmlSectionStripLabel.Text);
+
+                tb.Text = String.Empty;
+            }
+            else
+            {
+                MessageBox.Show("Veuillez saisir un emplacement horaire à ajouter", "Erreur", MessageBoxButtons.OK);
+            }
+        }
+
+        /*
+        * 
+        * Supprimer un emplacement horaire dans le fichier XML */
+        public static void Del_Section_Horaire(object sender, EventArgs e)
+        {
+            Button bt = (Button)sender;
+            C1FlexGrid grid = (C1FlexGrid)bt.Tag;
+            XmlNode originnod = Selected_Section;
+
+            XmlDocument doc = (XmlDocument)mod_global.MF.XmlSectionGrid.Tag;
+
+            if (grid.RowSel > 0)
+            {
+                XmlNode nodtoremove = originnod.SelectSingleNode("heure[@id='" + grid[grid.RowSel, "id"].ToString() + "']");
+                originnod.RemoveChild(nodtoremove);
+
+                grid.Rows.Remove(grid.RowSel);
+                doc.Save(mod_global.MF.XmlSectionStripLabel.Text);
+            }
+            else
+            {
+                MessageBox.Show("Veuillez sélectionner un emplacement horaire à supprimer", "Erreur", MessageBoxButtons.OK);
+            }
+        }
+
+        /*
+        * 
+        * Ajouter un horaire dans le fichier XML */
+        private static XmlElement Create_One_Horaire(string id, XmlDocument doc)
+        {
+            XmlElement elem_horaire = doc.CreateElement("heure");
+            XmlAttribute att_id = doc.CreateAttribute("id");
+            att_id.Value = id;
+            elem_horaire.Attributes.Append(att_id);
+
+            return elem_horaire;
         }
     }
 }

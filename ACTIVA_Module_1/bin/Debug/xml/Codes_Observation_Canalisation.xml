@@ -1459,7 +1459,7 @@
       </representations>
     </autocad>
   </code>
-  <code position="49" parent="modficationIntitule">
+  <code position="9" parent="modficationIntitule">
     <id>AEE</id>
     <intitule info="Changement du type de revêtement">Type de revêtement</intitule>
     <caracteristiques>

@@ -46,7 +46,7 @@ namespace ACTIVA_Module_1.component
 
 
             //Si le type de l'ouvrage n'est pas un REGARD on masque le champ posregard
-            if (mod_inspection.TYPE_OUVRAGE != "REGARD")
+            if (mod_accueil.TYPE_OUVRAGE != "REGARD")
             {
                 PosRegCb.Visible = false;
             }
@@ -61,12 +61,12 @@ namespace ACTIVA_Module_1.component
             if (num != String.Empty)
             {
                 Retreive_Carac(num);
-                XmlNode codenod = mod_inspection.SVF.DocumentElement.SelectSingleNode("/inspection/ouvrage[@nom='" + mod_inspection.OUVRAGE + "']/observations/code[@num='" + num + "']");
+                XmlNode codenod = mod_accueil.SVF.DocumentElement.SelectSingleNode("/inspection/ouvrage[@nom='" + mod_accueil.OUVRAGE + "']/observations/code[@num='" + num + "']");
                 current_forme = codenod.Attributes["forme"].InnerText;
             }
             else
             {
-                current_forme = mod_inspection.FORME_OUVRAGE;
+                current_forme = mod_accueil.FORME_OUVRAGE;
             }
 
         }
@@ -232,8 +232,8 @@ namespace ACTIVA_Module_1.component
             XmlNode root;
             XmlNodeList CaracNodeList;
 
-            root = mod_inspection.SVF.DocumentElement;
-            CaracNodeList = root.SelectNodes("/inspection/ouvrage[@nom='" + mod_inspection.OUVRAGE + "']/observations/code[@num='" + num + "']/caracteristiques/caracteristique");
+            root = mod_accueil.SVF.DocumentElement;
+            CaracNodeList = root.SelectNodes("/inspection/ouvrage[@nom='" + mod_accueil.OUVRAGE + "']/observations/code[@num='" + num + "']/caracteristiques/caracteristique");
 
             //On remplace les label de caracterisation et de quantification par la valeur de l'attribut info s'il est mentionné dans le XML
             TextBox CText;
@@ -348,11 +348,11 @@ namespace ACTIVA_Module_1.component
             //XmlNode CodeNode;
             XmlNodeList CaracNodeList;
 
-            root = mod_inspection.SVF.DocumentElement;
+            root = mod_accueil.SVF.DocumentElement;
 
             //CodeNode = root.SelectSingleNode("/inspection/ouvrage[@nom='" + mod_inspection.OUVRAGE + "']/observations/code[@num='" + num + "']");
 
-            CaracNodeList = root.SelectNodes("/inspection/ouvrage[@nom='" + mod_inspection.OUVRAGE + "']/observations/code[@num='" + num + "']/caracteristiques/caracteristique");
+            CaracNodeList = root.SelectNodes("/inspection/ouvrage[@nom='" + mod_accueil.OUVRAGE + "']/observations/code[@num='" + num + "']/caracteristiques/caracteristique");
 
             string carac = String.Empty;
             string correspondance = String.Empty;
@@ -719,6 +719,7 @@ namespace ACTIVA_Module_1.component
             if (Validation_Check() == true)
             {
                 string savenum = mod_save.Save_Observation_Panel(current_code, current_num);
+                string checknum = current_num;
                 current_num = savenum;
                 CaracValidBt.Enabled = false;
 
@@ -730,13 +731,20 @@ namespace ACTIVA_Module_1.component
                 CodeLieNodeList = root.SelectNodes("/codes/code[id='" + current_code + "']/lien/codelie");
                 if (CodeLieNodeList.Count > 0)
                 {
-                    DialogResult diag = MessageBox.Show("Voulez-vous saisir ses codes liéés?", "Confirmation", MessageBoxButtons.YesNo);
-                    if (diag == DialogResult.Yes)
+                    if ((checknum == String.Empty) && (mod_carac.cree == true))
                     {
-                        foreach (XmlNode CodeLieNode in CodeLieNodeList)
+                        DialogResult diag = MessageBox.Show("Voulez-vous saisir ses codes liéés?", "Confirmation", MessageBoxButtons.YesNo);
+                        if (diag == DialogResult.Yes)
                         {
-                            mod_carac.New_Caracteristique_Form(CodeLieNode.InnerText, String.Empty, false);
+                            foreach (XmlNode CodeLieNode in CodeLieNodeList)
+                            {
+                                //mod_global.MF.CaracDockingTab.TabPages.Contains
+                                mod_carac.New_Caracteristique_Form(CodeLieNode.InnerText, String.Empty, false, current_code);
+                            }
                         }
+
+                        //Remettre le boolean false car c'est le cas code lié
+                        mod_carac.cree = false;
                     }
                 }
             }

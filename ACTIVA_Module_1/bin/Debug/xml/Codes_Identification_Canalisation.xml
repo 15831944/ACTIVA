@@ -15,88 +15,98 @@
   <code reporte="False" position="0" parent="Ouvrage">
     <id>AAA</id>
     <intitule info="Référence de tronçon telle que spécifiée par l'autorité responsable">Référence de tronçon</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="">
+    </inspection>
+    <valeur type="texte" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
   <code reporte="False" position="1" parent="Ouvrage">
     <id>AAB</id>
     <intitule info="Référence du noeud de départ telle que spécifiée par l’autorité responsable">Référence du noeud de départ</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="">
+    </inspection>
+    <valeur type="texte" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
   <code reporte="False" position="2" parent="Ouvrage">
     <id>AAC</id>
     <intitule info="Référence de grille (coordonnées) du noeud de départ">Coordonnées noeud départ</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="numerique" unite="m" />
+    <inspection corresp="">
+    </inspection>
+    <valeur type="numerique" unite="m" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
   <code reporte="False" position="3" parent="Ouvrage">
     <id>AAD</id>
     <intitule info="Référence du premier noeud telle que spécifiée par l’autorité responsable">Référence du noeud 1</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="">
+    </inspection>
+    <valeur type="texte" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
   <code reporte="False" position="4" parent="Ouvrage">
     <id>AAE</id>
     <intitule info="Référence de grille (coordonnées) du premier noeud">Coordonnées du noeud 1</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="numerique" unite="m" />
+    <inspection corresp="">
+    </inspection>
+    <valeur type="numerique" unite="m" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
   <code reporte="False" position="5" parent="Ouvrage">
     <id>AAF</id>
     <intitule info="Référence du second noeud telle que spécifiée par l’autorité responsable">Référence du noeud 2</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="">
+    </inspection>
+    <valeur type="texte" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
   <code reporte="False" position="6" parent="Ouvrage">
     <id>AAG</id>
     <intitule info="Référence de grille (coordonnées) du second noeud">Coordonnées du noeud 2</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="numerique" unite="m" />
+    <inspection corresp="">
+    </inspection>
+    <valeur type="numerique" unite="m" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
   <code reporte="False" position="7" parent="Ouvrage">
     <id>AAH</id>
     <intitule info="Lors d'une inspection d'une canalisation latérale, emplacement longitudinale de son point de départ dans la canalisation principale">Posistion longitudinale du branchement</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="numerique" unite="m" />
+    <inspection corresp="">
+    </inspection>
+    <valeur type="numerique" unite="m" />
     <saisie>0</saisie>
     <renseigne>3</renseigne>
   </code>
   <code reporte="False" position="8" parent="Ouvrage">
     <id>AAI</id>
-    <intitule info ="Lors d'une inspection d'une canalisation latérale, emplacement circonférentiel de son point de départ dans la canalisation principale" >Posistion horaire du branchement</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="horaire" />
+    <intitule info="Lors d'une inspection d'une canalisation latérale, emplacement circonférentiel de son point de départ dans la canalisation principale">Posistion horaire du branchement</intitule>
+    <inspection corresp="">
+    </inspection>
+    <valeur type="horaire" />
     <saisie>0</saisie>
     <renseigne>3</renseigne>
   </code>
-  <code reporte="True" position="0" parent="Lieu">
+  <code reporte="False" position="0" parent="Lieu">
     <id>AAJ</id>
     <intitule info="Description de l'emplacement du collecteur">Emplacement (nom de voie)</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="">False</inspection>
+    <valeur type="texte" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code reporte="True" position="9" parent="Ouvrage">
+  <code reporte="True" position="9" parent="Condition">
     <id>AAK</id>
     <intitule>Sens de visite</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <inspection corresp="">
+    </inspection>
+    <valeur type="item">
       <item nom="A" position="0">Aval - Dans le sens de l'écoulement</item>
       <item nom="B" position="1">Amont - Dans le sens opposée à l'écoulement</item>
       <item nom="C" position="2">Inconnu - Le sens de l'écoulement est inconnu</item>
@@ -107,8 +117,9 @@
   <code reporte="False" position="1" parent="Lieu">
     <id>AAL</id>
     <intitule>Type d'emplacement</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <inspection corresp="">
+    </inspection>
+    <valeur type="item">
       <item nom="A" position="0">Sous une route</item>
       <item nom="B" position="1">Sous un trottoir</item>
       <item nom="C" position="2">Sous l'accotement d'une route</item>
@@ -128,40 +139,40 @@
   <code reporte="True" position="2" parent="Lieu">
     <id>AAM</id>
     <intitule info="Nom de l'autorité responsable">Autorité responsable</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="CAM">True</inspection>
+    <valeur type="texte" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
   <code reporte="True" position="3" parent="Lieu">
     <id>AAN</id>
     <intitule info="Nom de la ville, du village, tel que spécifié par l'autorité responsable">Ville ou village</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="CAN">True</inspection>
+    <valeur type="texte" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
   <code reporte="True" position="4" parent="Lieu">
     <id>AAO</id>
     <intitule info="Nom du quartier, tel que spécifié par l'autorité responsable">Quartier</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="CAO">True</inspection>
+    <valeur type="texte" />
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
   <code reporte="True" position="5" parent="Lieu">
     <id>AAP</id>
     <intitule info="Nom ou référence du réseau d'assainissement, tel que spécifié par l'autorité responsable">Nom du réseau d'assainissement</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="CAP">True</inspection>
+    <valeur type="texte" />
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
   <code reporte="True" position="6" parent="Lieu">
     <id>AAQ</id>
     <intitule>Propriété foncière</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <inspection corresp="CAQ">True</inspection>
+    <valeur type="item">
       <item nom="A" position="0">Bien public</item>
       <item nom="B" position="1">Bien privé</item>
       <item nom="C" position="2">Inconnue</item>
@@ -169,54 +180,57 @@
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
-    <code reporte="True" position="8" parent="Lieu">
+  <code reporte="False" position="9" parent="Ouvrage">
     <id>AAT</id>
     <intitule info="Lors d'une inspection latérale, référence du 3e noeud définie par autorité responsable ou adresse de propriété privée">Référence du noeud 3</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="">
+    </inspection>
+    <valeur type="texte" />
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
-    <code reporte="True" position="9" parent="Lieu">
+  <code reporte="False" position="10" parent="Ouvrage">
     <id>AAU</id>
     <intitule info="Lors d'une inspection latérale, référence de grille (coordonnées) du 3e noeud">Coordonnées du noeud 3</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="">
+    </inspection>
+    <valeur type="texte" />
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
-    <code reporte="True" position="11" parent="Lieu">
+  <code reporte="False" position="11" parent="Condition">
     <id>AAV</id>
     <intitule info="Lors d'une inspection latérale, point de départ de celle-ci dans la canalisation principale">Départ de l'inspection latérale</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
-	 <item nom="A" position="0">le raccordement au collecteur principal</item>
-     <item nom="B" position="1">le troisième noeud</item>
-	</valeur>
+    <inspection corresp="">
+    </inspection>
+    <valeur type="item">
+      <item nom="A" position="0">le raccordement au collecteur principal</item>
+      <item nom="B" position="1">le troisième noeud</item>
+    </valeur>
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
   <code reporte="True" position="0" parent="Support">
     <id>ABA</id>
     <intitule info="Version de la norme utilisée pour enregistrer les données">Référence norme de codage</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="CBA">True</inspection>
+    <valeur type="texte" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
   <code reporte="True" position="1" parent="Support">
     <id>ABB</id>
     <intitule info="Nom du système initial lors de la traduction du codage">Système de codage initial</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="CBB">True</inspection>
+    <valeur type="texte" />
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
-  <code reporte="True" position="2" parent="Support">
+  <code reporte="True" position="1" parent="Condition">
     <id>ABC</id>
     <intitule>Point de référence longitudinal</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <inspection corresp="">False</inspection>
+    <valeur type="item">
       <item nom="A" position="0">Face intérieure de la paroi du noeud de départ où la canalisation se raccorde</item>
       <item nom="B" position="1">Intrados du tronçon à l'intérieur du noeud de départ</item>
       <item nom="C" position="2">Centre du regard de visite ou de la boîte d'inspection de départ</item>
@@ -226,11 +240,12 @@
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code reporte="True" position="0" parent="Organisme">
+  <code reporte="True" position="0" parent="Condition">
     <id>ABE</id>
     <intitule>Méthode d'inspection</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <inspection corresp="">
+    </inspection>
+    <valeur type="item">
       <item nom="A" position="0">Par un inspecteur se déplaçant dans la canalisation</item>
       <item nom="B" position="1">Par une télécaméra circulant dans la canalisation</item>
       <item nom="C" position="2">A partir du regard de visite ou de la boîte d'inspection uniquement</item>
@@ -238,56 +253,56 @@
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code reporte="True" position="8" parent="Lieu">
+  <code reporte="True" position="1" parent="Condition">
     <id>ABF</id>
     <intitule info="Date calendaire à laquelle est réalisée l'inspection (Inclu les zéros de tête)">Date de l'inspection</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="date" />
+    <inspection corresp="CBF">True</inspection>
+    <valeur type="date" />
     <saisie>0</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code reporte="True" position="10" parent="Lieu">
+  <code reporte="True" position="10" parent="Condition">
     <id>ABG</id>
     <intitule info="Heure locale du début de l'inspection (Inclu les zéros de tête)">Heure d'inspection (hh:mm)</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="">False</inspection>
+    <valeur type="texte" />
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
-  <code reporte="True" position="2" parent="Organisme">
+  <code reporte="True" position="2" parent="Condition">
     <id>ABH</id>
     <intitule info="Nom de l'inspecteur et nom de sa société">Nom de l'inspecteur</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="CBH">True</inspection>
+    <valeur type="texte" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code reporte="True" position="4" parent="Organisme">
+  <code reporte="True" position="3" parent="Condition">
     <id>ABI</id>
     <intitule info="Code de référence de la fonction occupée par l’inspecteur">Fonction de l'inspecteur</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="CBI">True</inspection>
+    <valeur type="texte" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code reporte="True" position="5" parent="Organisme">
+  <code reporte="True" position="4" parent="Condition">
     <id>ABJ</id>
     <intitule info="Code de référence de la fonction occupée par l’employeur">Fonction de l'employeur</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="CBJ">True</inspection>
+    <valeur type="texte" />
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
   <code reporte="True" position="3" parent="Support" ajoute="False">
     <id>ABK</id>
     <intitule>Stockage des images vidéo</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <inspection corresp="CBK">True</inspection>
+    <valeur type="item">
       <item nom="A" position="0">Cassette vidéo VHS</item>
       <item nom="B" position="1">CD vidéo</item>
-	  <item nom="C" position="2">DVD vidéo </item>
+      <item nom="C" position="2">DVD vidéo </item>
       <item nom="D" position="3">CD de données</item>
-	  <item nom="E" position="4">DVD de données</item>
+      <item nom="E" position="4">DVD de données</item>
       <item nom="F" position="5">Disque dur portable</item>
       <item nom="Z" lien="True" position="6">Autre</item>
     </valeur>
@@ -297,13 +312,13 @@
   <code reporte="True" position="4" parent="Support">
     <id>ABL</id>
     <intitule>Stockage des photographies</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <inspection corresp="CBL">True</inspection>
+    <valeur type="item">
       <item nom="A" position="0">Photographie papier</item>
       <item nom="B" position="1" info="Hors d'usage - données existantes devant s'énoncer comme si la caractérisation était Z">Hors d'usage</item>
-	  <item nom="C" position="2">Windows Meta File - WMF</item>
-	  <item nom="D" position="3">Graphic Image File - GIF</item>
-	  <item nom="E" position="4">JPEG</item>
+      <item nom="C" position="2">Windows Meta File - WMF</item>
+      <item nom="D" position="3">Graphic Image File - GIF</item>
+      <item nom="E" position="4">JPEG</item>
       <item nom="Z" lien="True" position="5">Autre</item>
     </valeur>
     <saisie>3</saisie>
@@ -312,8 +327,8 @@
   <code reporte="True" position="5" parent="Support">
     <id>ABM</id>
     <intitule>Système de position sur la bande vidéo</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <inspection corresp="CBM">True</inspection>
+    <valeur type="item">
       <item nom="A" position="0">Compteur en heures et en minutes depuis le début de la bande</item>
       <item nom="B" position="1">Compteur numérique dépendant de la machine</item>
       <item nom="Z" lien="True" position="2">Autre</item>
@@ -324,24 +339,24 @@
   <code reporte="True" position="6" parent="Support">
     <id>ABN</id>
     <intitule info="Numéro de référence du film ou du CD">Référence de photographie</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="CBN">True</inspection>
+    <valeur type="texte" />
     <saisie>1</saisie>
     <renseigne>3</renseigne>
   </code>
   <code reporte="True" position="7" parent="Support">
     <id>ABO</id>
     <intitule info="Numéro de référence du support physique, utilisé pour stocker la vidéo">Référence de vidéo</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="CBO">True</inspection>
+    <valeur type="texte" />
     <saisie>1</saisie>
     <renseigne>3</renseigne>
   </code>
-  <code reporte="True" position="12" parent="Lieu">
+  <code reporte="True" position="5" parent="Condition">
     <id>ABP</id>
     <intitule>Objet de l'inspection</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <inspection corresp="CBP">True</inspection>
+    <valeur type="item">
       <item nom="A" position="0">Contrôle final d'une nouvelle construction</item>
       <item nom="B" position="1">Fin de la période de garantie</item>
       <item nom="C" position="2">Inspection de routine de l'état</item>
@@ -357,19 +372,20 @@
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code reporte="True" position="12" parent="Ouvrage">
+  <code reporte="False" position="12" parent="Ouvrage">
     <id>ABQ</id>
     <intitule info="longueur prévue pour la comparer à la longueur effective dans le cas d'abandon de l'inspection">Longueur d'inspection prévue (m)</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="numerique" />
+    <inspection corresp="">
+    </inspection>
+    <valeur type="numerique" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code reporte="True" position="15" parent="Ouvrage">
+  <code reporte="True" position="15" parent="Support">
     <id>ABR</id>
     <intitule>Format des vidéos</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <inspection corresp="CBR">True</inspection>
+    <valeur type="item">
       <item nom="A" position="0">Type fixe sur support</item>
       <item nom="B" position="1">MPEG1</item>
       <item nom="C" position="2">MPEG2</item>
@@ -379,19 +395,19 @@
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-    <code reporte="True" position="16" parent="Ouvrage">
+  <code reporte="True" position="16" parent="Support">
     <id>ABS</id>
     <intitule info="Le nom des images animées enregistrées sous une forme numérique échangeable">Nom de fichier d'images vidéo</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="CBS">True</inspection>
+    <valeur type="texte" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-    <code reporte="True" position="17" parent="Ouvrage">
+  <code reporte="True" position="6" parent="Condition">
     <id>ABT</id>
-    <intitule>Etape de l'inspection</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <intitule info="Avancement de l'inspection. Les informations sont en cours de transfert ...">Etape de l'inspection</intitule>
+    <inspection corresp="CBT">True</inspection>
+    <valeur type="item">
       <item nom="A" position="0">De l'autorité responsable à l'inspecteur</item>
       <item nom="B" position="1">De l'inspecteur à l'autorité responsable pour étude</item>
       <item nom="C" position="2">Dans les mains de l'autorité responsable après étude</item>
@@ -403,8 +419,9 @@
   <code reporte="True" position="0" parent="Element">
     <id>ACA</id>
     <intitule>Forme de la section</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <inspection corresp="">
+    </inspection>
+    <valeur type="item">
       <item nom="A" position="0">Circulaire</item>
       <item nom="B" position="1">Rectangulaire</item>
       <item nom="C" position="2">Ovoïde</item>
@@ -419,24 +436,27 @@
   <code reporte="True" position="1" parent="Element">
     <id>ACB</id>
     <intitule info="Hauteur de la section (mm)">Hauteur de la section</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="numerique" unite="mm" />
+    <inspection corresp="">
+    </inspection>
+    <valeur type="numerique" unite="mm" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
   <code reporte="True" position="2" parent="Element">
     <id>ACC</id>
     <intitule info="Largeur de la section (mm)">Largueur de la section</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="numerique" unite="mm" />
+    <inspection corresp="">
+    </inspection>
+    <valeur type="numerique" unite="mm" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
   <code reporte="True" position="12" parent="Element" ajoute="False">
     <id>ACD</id>
     <intitule info="Matériau constituant la structure du collecteur">Matériau (constitutif)</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <inspection corresp="">
+    </inspection>
+    <valeur type="item">
       <item nom="AA" position="0">Amiante-ciment</item>
       <item nom="AB" position="1">Bitume</item>
       <item nom="AC" position="2">Fibres projetées</item>
@@ -471,8 +491,9 @@
   <code reporte="True" position="13" parent="Element">
     <id>ACE</id>
     <intitule>Type de revêtement</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <inspection corresp="">
+    </inspection>
+    <valeur type="item">
       <item nom="A" position="0">Revêtement intégré lors de la fabrication</item>
       <item nom="B" position="1">Revêtement projeté</item>
       <item nom="C" position="2">Revêtement polymérisé sur place</item>
@@ -489,8 +510,9 @@
   <code reporte="True" position="14" parent="Element">
     <id>ACF</id>
     <intitule>Matériau de revêtement</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <inspection corresp="">
+    </inspection>
+    <valeur type="item">
       <item nom="AA" position="0">Amiante-ciment</item>
       <item nom="AB" position="1">Bitume</item>
       <item nom="AC" position="2">Fibres projetées</item>
@@ -525,68 +547,75 @@
   <code reporte="True" position="15" parent="Element">
     <id>ACG</id>
     <intitule info="Longueur (mm) des tuyaux individuels qui constituent la canalisation">Longueur unitaire de conduite</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="numerique" unite="mm" />
+    <inspection corresp="">
+    </inspection>
+    <valeur type="numerique" unite="mm" />
     <saisie>1</saisie>
     <renseigne>3</renseigne>
   </code>
   <code reporte="False" position="13" parent="Ouvrage">
     <id>ACH</id>
     <intitule info="Profondeur du radier de la canalisation au-dessous du niveau du tampon au noeud de départ (m)">Profondeur au noeud de départ</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="numerique" unite="mm" />
+    <inspection corresp="">
+    </inspection>
+    <valeur type="numerique" unite="mm" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
   <code reporte="False" position="14" parent="Ouvrage">
     <id>ACI</id>
     <intitule info="Profondeur du radier de la canalisation au-dessous du niveau du tampon au noeud d’arrivée (m)">Profondeur au noeud d'arrivée</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="numerique" unite="mm" />
+    <inspection corresp="">
+    </inspection>
+    <valeur type="numerique" unite="mm" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code reporte="True" position="17" parent="Ouvrage">
+  <code reporte="True" position="15" parent="Ouvrage">
     <id>ACJ</id>
     <intitule>Type de canalisation</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <inspection corresp="">
+    </inspection>
+    <valeur type="item">
       <item nom="A" position="0">Branchement ou collecteur gravitaire</item>
       <item nom="B" position="1">Conduite de relèvement</item>
-	  <item nom="C" position="2">Tuyau d'aspiration</item>
+      <item nom="C" position="2">Tuyau d'aspiration</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code reporte="True" position="18" parent="Ouvrage">
+  <code reporte="True" position="16" parent="Ouvrage">
     <id>ACK</id>
     <intitule>Utilisation de la canalisation</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <inspection corresp="">
+    </inspection>
+    <valeur type="item">
       <item nom="A" position="0">Eaux usées uniquement</item>
       <item nom="B" position="1">Eaux de surface uniquement</item>
       <item nom="C" position="2">Unitaire</item>
       <item nom="D" position="3">Eaux usées industrielles</item>
       <item nom="E" position="4">Cours d'eau en caniveau</item>
-	  <item nom="F" position="5">Drainage souterrain ou agricole</item>
+      <item nom="F" position="5">Drainage souterrain ou agricole</item>
       <item nom="Z" lien="True" position="6">Autre</item>
     </valeur>
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
-  <code reporte="True" position="19" parent="Ouvrage">
+  <code reporte="True" position="17" parent="Ouvrage">
     <id>ACL</id>
     <intitule info="Code alphanumérique défini par l’autorité responsable">Position stratégique (de l'ouvrage)</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte"/>
+    <inspection corresp="">
+    </inspection>
+    <valeur type="texte" />
     <saisie>1</saisie>
     <renseigne>1</renseigne>
   </code>
   <code reporte="True" position="0" parent="Condition">
     <id>ACM</id>
     <intitule>Nettoyage (préalable)</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <inspection corresp="">
+    </inspection>
+    <valeur type="item">
       <item nom="A" position="0">Nettoyé avant l'inspection</item>
       <item nom="B" position="1">Non nettoyé avant l'inspection</item>
     </valeur>
@@ -596,18 +625,20 @@
   <code reporte="True" position="14" parent="Element">
     <id>ACN</id>
     <intitule info="Année approximative de mise en service du branchement ou du collecteur (SSAA ou SSAA - SSAA)">Année de mise en service</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="numerique" />
+    <inspection corresp="">
+    </inspection>
+    <valeur type="numerique" />
     <saisie>3</saisie>
     <renseigne>3</renseigne>
   </code>
-  <code reporte="true" position="2" parent="Condition" ajoute ="true">
-    <id ajoute ="true">ACY</id>
-    <intitule ajoute ="true">Type de galerie</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
-      <item nom="A" position="0" ajoute ="true">Galerie d'accès</item>
-      <item nom="B" position="1" ajoute ="true">Galerie de liaison</item>
+  <code reporte="true" position="18" parent="Ouvrage" ajoute="true">
+    <id ajoute="true">ACY</id>
+    <intitule ajoute="true">Type de galerie</intitule>
+    <inspection corresp="">
+    </inspection>
+    <valeur type="item">
+      <item nom="A" position="0" ajoute="true">Galerie d'accès</item>
+      <item nom="B" position="1" ajoute="true">Galerie de liaison</item>
     </valeur>
     <saisie>0</saisie>
     <renseigne>1</renseigne>
@@ -615,8 +646,9 @@
   <code reporte="True" position="1" parent="Condition">
     <id>ADA</id>
     <intitule>Précipitations</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <inspection corresp="">
+    </inspection>
+    <valeur type="item">
       <item nom="A" position="0">Pas de précipitations</item>
       <item nom="B" position="1">Pluie</item>
       <item nom="C" position="2">Neige fondante ou glace</item>
@@ -627,8 +659,9 @@
   <code reporte="True" position="2" parent="Condition">
     <id>ADB</id>
     <intitule>Température</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <inspection corresp="">
+    </inspection>
+    <valeur type="item">
       <item nom="A" position="0">Température au-dessus de zéro</item>
       <item nom="B" position="1">Température au-dessous de zéro</item>
     </valeur>
@@ -638,8 +671,9 @@
   <code reporte="True" position="3" parent="Condition">
     <id>ADC</id>
     <intitule>Régulation du débit</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="item">
+    <inspection corresp="">
+    </inspection>
+    <valeur type="item">
       <item nom="A" position="0">Aucune mesure prise</item>
       <item nom="B" position="1">L'écoulement a été obturé en amont</item>
       <item nom="C" position="2">L'écoulement a été partiellement obturé en amont</item>
@@ -651,8 +685,9 @@
   <code reporte="False" position="0" parent="Observation">
     <id>ADE</id>
     <intitule info="Remarque ne pouvant être insérée d'une autre manière">Remarque générale</intitule>
-    <inspection corresp =""></inspection>
-	<valeur type="texte" />
+    <inspection corresp="">
+    </inspection>
+    <valeur type="texte" />
     <saisie>1</saisie>
     <renseigne>3</renseigne>
   </code>

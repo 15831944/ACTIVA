@@ -27,7 +27,7 @@ namespace ACTIVA_Module_1.modules
         public static void Fill_Motif_List(string type)
         {
             MotifList.Clear();
-            XmlNodeList nodeList = mod_inspection.Motif_Xml.DocumentElement.SelectNodes(type + "/motif");
+            XmlNodeList nodeList = mod_accueil.Motif_Xml.DocumentElement.SelectNodes(type + "/motif");
 
             foreach (XmlNode unNode in nodeList)
                 {

@@ -39,14 +39,14 @@ namespace ACTIVA_Module_1.autocad
             String id;
             String code;
 
-            root = mod_inspection.SVF.DocumentElement;
+            root = mod_accueil.SVF.DocumentElement;
 
-            nodeList = root.SelectNodes(string.Concat("/inspection/ouvrage[@nom='", mod_inspection.OUVRAGE, "']/observations/code"));
+            nodeList = root.SelectNodes(string.Concat("/inspection/ouvrage[@nom='", mod_accueil.OUVRAGE, "']/observations/code"));
 
             destab = new dessin[nodeList.Count];
 
             int i = 0;
-            string forme = mod_inspection.FORME_OUVRAGE;
+            string forme = mod_accueil.FORME_OUVRAGE;
 
             foreach (XmlNode unNode in nodeList)
             {
@@ -127,7 +127,7 @@ namespace ACTIVA_Module_1.autocad
             if (motifname == string.Empty)
                 return;
 
-            XmlNode motifNode = mod_inspection.Motif_Xml.SelectSingleNode("/motifs/*/motif[@nom='" + motifname + "']");
+            XmlNode motifNode = mod_accueil.Motif_Xml.SelectSingleNode("/motifs/*/motif[@nom='" + motifname + "']");
 
             if (motifNode.Attributes.GetNamedItem("symbole") != null)
                 des.symbole = motifNode.Attributes["symbole"].InnerText;
@@ -274,14 +274,14 @@ namespace ACTIVA_Module_1.autocad
             //section sect;
             //section first_sect = new section();
             
-            root = mod_inspection.Section_Ouvrage_Xml.DocumentElement;
+            root = mod_accueil.Section_Ouvrage_Xml.DocumentElement;
 
-            string type = mod_inspection.TYPE_OUVRAGE;
+            string type = mod_accueil.TYPE_OUVRAGE;
 
             if (type == "BRANCHEMENT" | type == "TRONCON")
                 type = "CANALISATION";
 
-            nodeList = root.SelectNodes("section[@ouvrage='" + type + "' and @forme='" + mod_inspection.FORME_OUVRAGE + "' and @position='" + mod_inspection.POSITION_SECTION + "']/heure");
+            nodeList = root.SelectNodes("section[@ouvrage='" + type + "' and @forme='" + mod_accueil.FORME_OUVRAGE + "' and @position='" + mod_accueil.POSITION_SECTION + "']/heure");
 
             Section_Infos = new Hashtable();
 

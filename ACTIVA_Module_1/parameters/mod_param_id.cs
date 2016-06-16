@@ -54,13 +54,12 @@ namespace ACTIVA_Module_1.modules
             field_state.Add("4", "4");
 
             Dictionary<string, string> field_parent = new Dictionary<string, string>();
-            field_parent.Add("Organisme", "Organisme");
-            field_parent.Add("Lieu", "Lieu");
-            field_parent.Add("Ouvrage", "Ouvrage");
-            field_parent.Add("Support", "Support");
-            field_parent.Add("Element", "Element");
-            field_parent.Add("Condition", "Condition");
-            field_parent.Add("Observation", "Observation");
+            XmlDocument docxml = new XmlDocument();
+            docxml.Load(Properties.Settings.Default.GroupCodeIdPath);
+            XmlNodeList nodelist = docxml.SelectNodes("identifications/identification/titre");
+            foreach (XmlNode unNode in nodelist) {
+                field_parent.Add(unNode.Attributes["id"].InnerText, unNode.Attributes["id"].InnerText);
+            }
 
             Dictionary<string, string> field_type = new Dictionary<string, string>();
             field_type.Add("texte", "texte");
@@ -171,7 +170,7 @@ namespace ACTIVA_Module_1.modules
             grid.Cols.DefaultSize = 100;
             grid.Rows[0].Height = 20;
 
-            grid.Cols.Count = 5;
+            grid.Cols.Count = 6;
 
             grid.Cols[0].Name = "nom";
             grid.Cols[0].Style = grid.Styles["PosStyle"];
@@ -193,8 +192,12 @@ namespace ACTIVA_Module_1.modules
             grid.Cols[3].Caption = "Lien";
 
             grid.Cols[4].Name = "valeur";
-            grid.Cols[4].Width = 620;
+            grid.Cols[4].Width = 300;
             grid.Cols[4].Caption = "Valeur";
+
+            grid.Cols[5].Name = "info";
+            grid.Cols[5].Width = 320;
+            grid.Cols[5].Caption = "Info";
 
             grid.Cols.Frozen = 1;
             grid.ExtendLastCol = true;
@@ -360,7 +363,7 @@ namespace ACTIVA_Module_1.modules
 
             if (grid.RowSel > 0)
             {
-                XmlNode nodtoremove = originnod.SelectSingleNode("code[id='" + grid[grid.RowSel, "id"].ToString() + "']");
+                XmlNode nodtoremove = originnod.SelectSingleNode("code[@id='" + grid[grid.RowSel, "id"].ToString() + "']");
                 originnod.RemoveChild(nodtoremove);
 
                 grid.Rows.Remove(grid.RowSel);
@@ -441,6 +444,10 @@ namespace ACTIVA_Module_1.modules
             mod_global.MF.XmlIdCodeAddValueTb.Tag = mod_global.MF.XmlIdCodeGrid;
             mod_global.MF.XmlIdCodeAddValueBt.Tag = mod_global.MF.XmlIdCodeAddValueTb;
             mod_global.MF.XmlIdCodeDelValueBt.Tag = mod_global.MF.XmlIdCodeGrid;
+
+            mod_global.MF.XmlObsCodeLieAddValueTb.Tag = mod_global.MF.XmlObsCodeLieGrid;
+            mod_global.MF.XmlObsCodeLieAddValueBt.Tag = mod_global.MF.XmlObsCodeLieAddValueTb;
+            mod_global.MF.XmlObsCodeLieDelValueBt.Tag = mod_global.MF.XmlObsCodeLieGrid;
 
             mod_global.MF.XmlIdItemAddValueTb.Tag = mod_global.MF.XmlIdItemGrid;
             mod_global.MF.XmlIdItemAddValueBt.Tag = mod_global.MF.XmlIdItemAddValueTb;
@@ -563,8 +570,8 @@ namespace ACTIVA_Module_1.modules
 
                     if (unNode.Attributes.GetNamedItem("position") != null)
                         ligne["position"] = unNode.Attributes["position"].InnerText;
-                    //if (unNode.Attributes.GetNamedItem("type") != null)
-                        //ligne["type"] = unNode.Attributes["type"].InnerText;
+                    if (unNode.Attributes.GetNamedItem("info") != null)
+                        ligne["info"] = unNode.Attributes["info"].InnerText;
                     if (unNode.Attributes.GetNamedItem("lien") != null)
                         ligne["lien"] = unNode.Attributes["lien"].InnerText;
                     if (unNode.Attributes.GetNamedItem("ajoute") != null)
@@ -580,7 +587,7 @@ namespace ACTIVA_Module_1.modules
             grid.Cols["nom"].UserData = "att";
             grid.Cols["position"].UserData = "att";
             grid.Cols["valeur"].UserData = "val";
-            //grid.Cols["type"].UserData = "att";
+            grid.Cols["info"].UserData = "att";
             grid.Cols["lien"].UserData = "att";
             grid.Cols["ajoute"].UserData = "att";
         }

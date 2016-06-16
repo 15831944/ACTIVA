@@ -20,6 +20,9 @@ namespace ACTIVA_Module_1.modules
 
         //----------------------------- Fonctions d'initialisation des tableaux -----------------------------
 
+        /*
+         * 
+         * Initialisation du grid Codes */
         public static void Init_Obs_Codes_Grid(C1FlexGrid grid)
         {
             CellStyle cs = grid.Styles.Add("PosStyle");
@@ -31,8 +34,9 @@ namespace ACTIVA_Module_1.modules
 
             cs = grid.Styles.Add("CodeExistStyle");
             cs.Font = new Font("Arial", 7, FontStyle.Bold);
-            cs.BackColor = Color.Green;
+            cs.BackColor = Color.Aquamarine;
 
+            grid.DrawMode = DrawModeEnum.OwnerDraw;
             grid.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.Row;
             grid.Dock = System.Windows.Forms.DockStyle.Fill;
             grid.Cols.Count = 0;
@@ -88,12 +92,15 @@ namespace ACTIVA_Module_1.modules
             grid.ExtendLastCol = true;
 
             grid.Click += new EventHandler(Obs_Code_Click);
-            //grid.OwnerDrawCell += new OwnerDrawCellEventHandler(Paint_Obs_Codelie_Cells);
+            grid.OwnerDrawCell += new OwnerDrawCellEventHandler(Paint_Obs_Codelie_Cells);
             grid.AfterEdit += new RowColEventHandler(Obs_Code_After_Edit);
 
             Set_Obs_Codes_Grid_Update_Fields(grid);
         }
 
+        /*
+         * 
+         * Initialisation du grid Code lié */
         public static void Init_Obs_Codelie_Grid(C1FlexGrid grid)
         {
             CellStyle cs = grid.Styles.Add("PosStyle");
@@ -139,6 +146,9 @@ namespace ACTIVA_Module_1.modules
             Set_Obs_Codelie_Grid_Update_Fields(grid);
         }
 
+        /*
+         * 
+         * Initialisation du grid Caractéristiques */
         public static void Init_Obs_Carac_Grid(C1FlexGrid grid)
         {
             CellStyle cs = grid.Styles.Add("PosStyle");
@@ -169,7 +179,7 @@ namespace ACTIVA_Module_1.modules
             grid.Cols.DefaultSize = 100;
             grid.Rows[0].Height = 20;
 
-            grid.Cols.Count = 8;
+            grid.Cols.Count = 9;
 
             Dictionary<string, string> field_state = new Dictionary<string, string>();
             field_state.Add(string.Empty, String.Empty);
@@ -211,9 +221,13 @@ namespace ACTIVA_Module_1.modules
             grid.Cols[6].DataType = typeof(bool);
             grid.Cols[6].Caption = "Ajouté";
 
-            grid.Cols[7].Name = "info";
-            grid.Cols[7].Width = 350;
-            grid.Cols[7].Caption = "Info";
+            grid.Cols[7].Name = "abreviation";
+            grid.Cols[7].Width = 70;
+            grid.Cols[7].Caption = "Abréviation";
+
+            grid.Cols[8].Name = "info";
+            grid.Cols[8].Width = 350;
+            grid.Cols[8].Caption = "Info";
 
             grid.Cols.Frozen = 1;
             grid.ExtendLastCol = true;
@@ -225,6 +239,9 @@ namespace ACTIVA_Module_1.modules
             Set_Obs_Carac_Grid_Update_Fields(grid);
         }
 
+        /*
+         * 
+         * Initialisation du grid Items */
         public static void Init_Obs_Items_Grid(C1FlexGrid grid)
         {
             CellStyle cs = grid.Styles.Add("PosStyle");
@@ -313,9 +330,9 @@ namespace ACTIVA_Module_1.modules
             grid.Cols[9].DataType = typeof(bool);
             grid.Cols[9].Caption = "Lien";
 
-            grid.Cols[10].Name = "valeur";
+            grid.Cols[10].Name = "info";
             grid.Cols[10].Width = 400;
-            grid.Cols[10].Caption = "Valeur";
+            grid.Cols[10].Caption = "Info";
 
             grid.Cols.Frozen = 1;
             grid.ExtendLastCol = true;
@@ -327,6 +344,9 @@ namespace ACTIVA_Module_1.modules
 
         //----------------------------- Fonctions de remplissage des tableaux -------------------------------
 
+        /*
+         * 
+         * Remplir le grid Codes */
         public static void Fill_Obs_Codes_Grid(C1FlexGrid grid, XmlDocument Doc)
         {
             XmlNodeList nodeList;
@@ -373,18 +393,20 @@ namespace ACTIVA_Module_1.modules
                     ligne["info"] = intituleNode.Attributes["info"].InnerText;
             }
         }
-
+        
+        /*
+         * 
+         * Remplir le grid Code lié */
         public static void Fill_Obs_Codelie_Grid(C1FlexGrid grid)
         {
             XmlNodeList nodeList;
             XmlNode positionNode;
 
             grid.Rows.Count = 1;
-            mod_global.MF.XmlObsCodeLieGrid.Rows.Count = 1;
 
             nodeList = Selected_Obs_Code.SelectNodes(string.Concat("lien/codelie"));
 
-            if (nodeList != null)
+            if (nodeList.Count > 0)
             {
                 foreach (XmlNode unNode in nodeList)
                 {
@@ -398,6 +420,9 @@ namespace ACTIVA_Module_1.modules
             else return;
         }
 
+        /*
+         * 
+         * Remplir le grid Caractéristiques */
         public static void Fill_Obs_Carac_Grid(C1FlexGrid grid)
         {
             XmlNodeList nodeList;
@@ -424,9 +449,14 @@ namespace ACTIVA_Module_1.modules
                     ligne["renseigne"] = unNode.Attributes["renseigne"].InnerText;
                 if (unNode.Attributes.GetNamedItem("ajoute") != null)
                     ligne["ajoute"] = unNode.Attributes["ajoute"].InnerText;
+                if (unNode.Attributes.GetNamedItem("abreviation") != null)
+                    ligne["abreviation"] = unNode.Attributes["abreviation"].InnerText;
             }
         }
 
+        /*
+         * 
+         * Remplir le grid Items */
         public static void Fill_Obs_Item_Grid(C1FlexGrid grid)
         {
             XmlNodeList nodeList;
@@ -440,9 +470,12 @@ namespace ACTIVA_Module_1.modules
                 foreach (XmlNode unNode in nodeList)
                 {
                     C1.Win.C1FlexGrid.Row ligne = grid.Rows.Add();
-                    ligne["nom"] = unNode.Attributes["nom"].InnerText;
-                    ligne["position"] = unNode.Attributes["position"].InnerText;
-                    ligne["valeur"] = unNode.InnerText;
+                    if (unNode.Attributes.GetNamedItem("nom") != null)
+                        ligne["nom"] = unNode.Attributes["nom"].InnerText;
+                    if (unNode.Attributes.GetNamedItem("position") != null)
+                        ligne["position"] = unNode.Attributes["position"].InnerText;
+                    if (unNode.InnerText != null)
+                        ligne["info"] = unNode.InnerText;
                     if (unNode.Attributes.GetNamedItem("q1") != null)
                         ligne["q1"] = unNode.Attributes["q1"].InnerText;
                     if (unNode.Attributes.GetNamedItem("q2") != null)
@@ -461,11 +494,12 @@ namespace ACTIVA_Module_1.modules
                         ligne["lien"] = unNode.Attributes["lien"].InnerText;
                 }
             }
-
         }
 
         //-------------------------------------------------------------------------------------------------
-
+        /*
+         * 
+         * Colorer la colonne Nb Items si > 0 */
         public static void Paint_Obs_Carac_Cells(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
         {
             if (e.Row>0)
@@ -481,7 +515,10 @@ namespace ACTIVA_Module_1.modules
                 }                    
         }
 
-        /*public static void Paint_Obs_Codelie_Cells(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+        /*
+         * 
+         * Colorer la colonne Nb Codes Liés si > 0 */
+        public static void Paint_Obs_Codelie_Cells(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
         {
             if (e.Row > 0)
                 if (mod_global.MF.XmlObsCodesGrid.Cols[e.Col].Name == "codelie")
@@ -494,8 +531,11 @@ namespace ACTIVA_Module_1.modules
                         }
                     }
                 }
-        }*/
+        }
 
+        /*
+         * 
+         * Event quand on clique sur le grid Code*/
         public static void Obs_Code_Click(object sender, EventArgs e)
         {
             if (mod_global.MF.XmlObsCodesGrid.RowSel < 1)
@@ -507,16 +547,21 @@ namespace ACTIVA_Module_1.modules
             Fill_Obs_Codelie_Grid(mod_global.MF.XmlObsCodeLieGrid);
         }
 
+        /*
+         * 
+         * Event quand on clique sur le grid Codelie */
         public static void Obs_Codelie_Click(object sender, EventArgs e)
         {
             if (mod_global.MF.XmlObsCodeLieGrid.RowSel < 1)
                 return;
 
             string pos = mod_global.MF.XmlObsCodeLieGrid[mod_global.MF.XmlObsCodeLieGrid.RowSel, "position"].ToString();
-            Selected_Obs_Codelie = root.SelectSingleNode(string.Concat("lien/codelie[@position='" + pos + "']"));
-            Fill_Obs_Codelie_Grid(mod_global.MF.XmlObsCodeLieGrid);
+            Selected_Obs_Codelie = Selected_Obs_Code.SelectSingleNode(string.Concat("lien/codelie[@position='" + pos + "']"));
         }
 
+        /*
+         * 
+         * Event quand on clique sur le grid Caractéristiques */
         public static void Obs_Carac_Click(object sender, EventArgs e)
         {
             if (mod_global.MF.XmlObsCaracGrid.RowSel < 1)
@@ -529,6 +574,9 @@ namespace ACTIVA_Module_1.modules
 
         //---------------------------- Fonctions d'edition des tableaux -----------------------------------
 
+        /*
+         * 
+         * Editer le fichier XML apres avoir changer la valeur du grid Code */
         public static void Obs_Code_After_Edit(object sender, RowColEventArgs e)
         {
             XmlDocument doc = (XmlDocument)mod_global.MF.XmlObsCodesGrid.Tag;
@@ -567,6 +615,9 @@ namespace ACTIVA_Module_1.modules
             mod_save.Save_Param_Field(doc, node, newvalue, is_attribute, colname, mod_global.MF.XmlObsStripLabel.Text);
         }
 
+        /*
+        * 
+        * Editer le fichier XML apres avoir changer la valeur du grid Code Lié */
         public static void Obs_Codelie_After_Edit(object sender, RowColEventArgs e)
         {
             XmlDocument doc = (XmlDocument)mod_global.MF.XmlObsCodesGrid.Tag;
@@ -589,6 +640,9 @@ namespace ACTIVA_Module_1.modules
             mod_save.Save_Param_Field(doc, node, newvalue, is_attribute, colname, mod_global.MF.XmlObsStripLabel.Text);
         }
 
+        /*
+        * 
+        * Editer le fichier XML apres avoir changer la valeur du grid Caractéristiques */
         public static void Obs_Carac_After_Edit(object sender, RowColEventArgs e)
         {
             XmlDocument doc = (XmlDocument)mod_global.MF.XmlObsCodesGrid.Tag;
@@ -627,6 +681,9 @@ namespace ACTIVA_Module_1.modules
             mod_save.Save_Param_Field(doc, node, newvalue, is_attribute, colname, mod_global.MF.XmlObsStripLabel.Text);
         }
 
+        /*
+        * 
+        * Editer le fichier XML apres avoir changer la valeur du grid Item */
         public static void Obs_Item_After_Edit(object sender, RowColEventArgs e)
         {
             XmlDocument doc = (XmlDocument)mod_global.MF.XmlObsCodesGrid.Tag;
@@ -667,6 +724,9 @@ namespace ACTIVA_Module_1.modules
 
         //--------------------------- Fonctions d'ajout et de suppression ---------------------------------
 
+        /*
+        * 
+        * Ajouter un Code dans le fichier XML */
         public static void Add_Obs_Code(object sender, EventArgs e)
         {
             Button bt = (Button)sender;
@@ -736,6 +796,9 @@ namespace ACTIVA_Module_1.modules
             }
         }
 
+        /*
+        * 
+        * Supprimer un Code dans le fichier XML */
         public static void Del_Obs_Code(object sender, EventArgs e)
         {
             Button bt = (Button)sender;
@@ -750,6 +813,7 @@ namespace ACTIVA_Module_1.modules
                 originnod.RemoveChild(nodtoremove);
 
                 grid.Rows.Remove(grid.RowSel);
+
                 doc.Save(mod_global.MF.XmlObsStripLabel.Text);
             }
             else
@@ -758,7 +822,90 @@ namespace ACTIVA_Module_1.modules
             }
         }
 
+        /*
+         * 
+         * Ajouter un Code Lié dans le fichier XML */
 
+        public static void Add_Obs_Code_Lie(object sender, EventArgs e)
+        {
+            Button bt = (Button)sender;
+            TextBox tb = (TextBox)bt.Tag;
+            C1FlexGrid grid = (C1FlexGrid)tb.Tag;
+          
+            XmlDocument doc = (XmlDocument)mod_global.MF.XmlObsCodesGrid.Tag;
+            XmlNode originnod = Selected_Obs_Code; 
+
+            if(tb.Text != String.Empty)
+            {
+                if (mod_global.Check_If_Observation_Code_Lie_Exist(tb.Text, doc))
+                {
+                    System.Windows.Forms.MessageBox.Show("Ce code lié existe déjà.");
+                    return;
+                }
+
+                XmlNodeList nodelist = Selected_Obs_Code.SelectNodes("lien/codelie");
+                C1.Win.C1FlexGrid.Row ligne = grid.Rows.Add();
+                ligne["codelie"] = tb.Text;
+                ligne["position"] = nodelist.Count;
+
+
+                XmlElement itemNode = doc.CreateElement("codelie");
+                itemNode.InnerText = tb.Text;
+                itemNode.SetAttribute("position", nodelist.Count.ToString());
+
+                originnod = originnod.SelectSingleNode("lien");
+                originnod.AppendChild(itemNode);
+                
+                // Recharger les tableaux
+                Fill_Obs_Codes_Grid(mod_global.MF.XmlObsCodesGrid, doc);
+                Fill_Obs_Codelie_Grid(mod_global.MF.XmlObsCodeLieGrid);
+                Fill_Obs_Carac_Grid(mod_global.MF.XmlObsCaracGrid);
+
+                doc.Save(mod_global.MF.XmlObsStripLabel.Text);
+
+                tb.Text = String.Empty;
+            }
+            else
+            {
+                MessageBox.Show("Veuillez saisir un nom d'item à ajouter", "Erreur", MessageBoxButtons.OK);
+            }
+        }
+
+        /*
+         * 
+         * Supprimer un Code Lié dans le fichier XML */
+        public static void Del_Obs_Code_Lie(object sender, EventArgs e)
+        {
+            Button bt = (Button)sender;
+            C1FlexGrid grid = (C1FlexGrid)bt.Tag;
+
+            XmlDocument doc = (XmlDocument)mod_global.MF.XmlObsCodesGrid.Tag;
+            XmlNode originnod = Selected_Obs_Code.SelectSingleNode("lien"); 
+
+            if (grid.RowSel > 0)
+            {
+                XmlNode nodtoremove = originnod.SelectSingleNode("codelie[@position='" + grid[grid.RowSel, "position"].ToString() + "']");
+                originnod.RemoveChild(nodtoremove);
+
+                grid.Rows.Remove(grid.RowSel);
+
+                // Recharger les tableaux
+                Fill_Obs_Codes_Grid(mod_global.MF.XmlObsCodesGrid, doc);
+                Fill_Obs_Codelie_Grid(mod_global.MF.XmlObsCodeLieGrid);
+                Fill_Obs_Carac_Grid(mod_global.MF.XmlObsCaracGrid);
+
+                doc.Save(mod_global.MF.XmlObsStripLabel.Text);
+
+            }
+            else
+            {
+                MessageBox.Show("Veuillez sélectionner un item à supprimer", "Erreur", MessageBoxButtons.OK);
+            }
+        }
+
+        /*
+        * 
+        * Ajouter un Item dans le fichier XML */
         public static void Add_Obs_Item(object sender, EventArgs e)
         {
             Button bt = (Button)sender;
@@ -783,6 +930,11 @@ namespace ACTIVA_Module_1.modules
                 itemNode.SetAttribute("nom", tb.Text);
 
                 originnod.AppendChild(itemNode);
+
+                // Recharger les tableaux
+                Fill_Obs_Carac_Grid(mod_global.MF.XmlObsCaracGrid);
+                Fill_Obs_Item_Grid(mod_global.MF.XmlObsItemGrid);
+
                 doc.Save(mod_global.MF.XmlObsStripLabel.Text);
 
                 tb.Text = String.Empty;
@@ -793,6 +945,9 @@ namespace ACTIVA_Module_1.modules
             }
         }
 
+        /*
+        * 
+        * Supprimer un Item dans le fichier XML */
         public static void Del_Obs_Item(object sender, EventArgs e)
         {
             Button bt = (Button)sender;
@@ -807,7 +962,13 @@ namespace ACTIVA_Module_1.modules
                 originnod.RemoveChild(nodtoremove);
 
                 grid.Rows.Remove(grid.RowSel);
+
+                // Recharger les tableaux
+                Fill_Obs_Carac_Grid(mod_global.MF.XmlObsCaracGrid);
+                Fill_Obs_Item_Grid(mod_global.MF.XmlObsItemGrid);
+
                 doc.Save(mod_global.MF.XmlObsStripLabel.Text);
+
             }
             else
             {
@@ -815,7 +976,9 @@ namespace ACTIVA_Module_1.modules
             }
         }
 
-
+        /*
+        * 
+        * Ajouter un Caracteristique dans le fichier XML */
         private static XmlElement Create_One_Caracteristique(string nomval, XmlDocument doc)
         {
             XmlElement elem_carac = doc.CreateElement("caracteristique");
@@ -858,6 +1021,7 @@ namespace ACTIVA_Module_1.modules
             grid.Cols["unite"].UserData = "att";
             grid.Cols["renseigne"].UserData = "att";
             grid.Cols["ajoute"].UserData = "att";
+            grid.Cols["abreviation"].UserData = "att";
         }
 
         public static void Set_Obs_Item_Grid_Update_Fields(C1FlexGrid grid)
@@ -865,7 +1029,7 @@ namespace ACTIVA_Module_1.modules
             //On indique l'emplacement de la données par rapport au noeud en cours code
             grid.Cols["nom"].UserData = "att";
             grid.Cols["position"].UserData = "att";
-            grid.Cols["valeur"].UserData = "val";
+            grid.Cols["info"].UserData = "val";
             grid.Cols["q1"].UserData = "att";
             grid.Cols["q2"].UserData = "att";
             grid.Cols["h1"].UserData = "att";
@@ -890,6 +1054,9 @@ namespace ACTIVA_Module_1.modules
 
             mod_global.MF.XmlObsCodeAddValueBt.Click += new EventHandler(Add_Obs_Code);
             mod_global.MF.XmlObsCodeDelValueBt.Click += new EventHandler(Del_Obs_Code);
+
+            mod_global.MF.XmlObsCodeLieAddValueBt.Click += new EventHandler(Add_Obs_Code_Lie);
+            mod_global.MF.XmlObsCodeLieDelValueBt.Click += new EventHandler(Del_Obs_Code_Lie);
 
             mod_global.MF.XmlObsItemAddValueBt.Click += new EventHandler(Add_Obs_Item);
             mod_global.MF.XmlObsItemDelValueBt.Click += new EventHandler(Del_Obs_Item);

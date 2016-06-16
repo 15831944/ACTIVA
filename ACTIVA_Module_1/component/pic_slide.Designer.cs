@@ -119,7 +119,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "pic_slide";
-            this.Size = new System.Drawing.Size(236, 138);
+            this.Size = new System.Drawing.Size(235, 135);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.Panel2.PerformLayout();
