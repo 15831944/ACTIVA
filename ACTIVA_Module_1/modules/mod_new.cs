@@ -14,7 +14,7 @@ namespace ACTIVA_Module_1.modules
         {
             if (name != String.Empty & path != String.Empty)
             {
-                XmlNodeList nodelist, ouvragelist;
+                XmlNodeList nodelist, ouvragelist, inspectlist;
                 XmlDocument doc = new XmlDocument();
                 XmlDocument svf = new XmlDocument();
                 XmlNode docNode = doc.CreateXmlDeclaration("1.0", "ISO-8859-1", "yes");
@@ -39,12 +39,23 @@ namespace ACTIVA_Module_1.modules
                 //Ouvrir le fichier SVF et ranger les infos dans XML
                 svf.Load(path);
                 ouvragelist = svf.SelectNodes("/inspection/ouvrage");
+
                 foreach (XmlNode ouvrage in ouvragelist)
                 {
                     int cpt = 1;
                     // Liste des ZB
                     elem = doc.CreateElement("ZB");
                     inspectionNode.AppendChild(elem);
+                    
+                    //Ajouter les codes Inspections
+                    inspectlist = svf.SelectNodes("/inspection/identifications/code");
+                    foreach (XmlNode inspnode in inspectlist)
+                    {
+                        XmlElement inspElem = doc.CreateElement(inspnode.SelectSingleNode("id").InnerText);
+                        inspElem.InnerText = inspnode.SelectSingleNode("valeur").InnerText;
+                        elem.AppendChild(inspElem);
+                    }
+
                     nodelist = svf.SelectNodes(string.Concat("/inspection/ouvrage[@nom ='", ouvrage.Attributes["nom"].InnerText, "']/identifications/code"));
                     SortedList sortednodelist = mod_accueil.SortNodeList_By_Alphabet(nodelist);
                     foreach (object obj in sortednodelist.Values)

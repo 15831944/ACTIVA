@@ -45,3 +45,4 @@ C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\bin\Release\office.dll
 C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\bin\Release\Microsoft.Vbe.Interop.dll
 C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\bin\Release\Microsoft.Office.Interop.Word.xml
 C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\bin\Release\office.xml
+C:\SRDEV\Projets\ACTIVA\ACTIVA_Module_1\obj\Release\ACTIVA_Module_1.Renommer_Ouvrage.resources

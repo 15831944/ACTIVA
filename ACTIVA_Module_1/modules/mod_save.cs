@@ -85,6 +85,7 @@ namespace ACTIVA_Module_1.modules
                 else
                 {
                     valeur.InnerText = idinput.Field_Input.Text;
+                    valeur.SetAttribute("ajoute", "true");
                 }
             }
             else
@@ -120,6 +121,7 @@ namespace ACTIVA_Module_1.modules
                 else
                 {
                     newvaleurnode.InnerText = idinput.Field_Input.Text;
+                    newvaleurnode.SetAttribute("ajoute", "true");
                 }
 
                 //------------------------------ Partie désactivée -----------------------------
@@ -168,6 +170,7 @@ namespace ACTIVA_Module_1.modules
                         {
                             valeur.InnerText = idinput.Field_Input.Text.Split(char.Parse("|"))[1].Trim();
                             valeur.SetAttribute("code", idinput.Field_Input.Text.Split(char.Parse("|"))[0].Trim());
+                            valeur.SetAttribute("ajoute", "true");
                         }
                     }
                     else
@@ -178,6 +181,7 @@ namespace ACTIVA_Module_1.modules
                 else
                 {
                     valeur.InnerText = idinput.Field_Input.Text;
+                    valeur.SetAttribute("ajoute", "true");
                 }
             }
             else
@@ -204,6 +208,7 @@ namespace ACTIVA_Module_1.modules
                     if (idinput.Field_Input.Text != String.Empty)
                     {
                         newvaleurnode.InnerText = idinput.Field_Input.Text.Split(char.Parse("|"))[1].Trim();
+                        newvaleurnode.SetAttribute("ajoute", "true");
                     }
                     else
                     {
@@ -266,7 +271,6 @@ namespace ACTIVA_Module_1.modules
                 //On crée les noeuds
                 XmlElement elem_code = mod_accueil.SVF.CreateElement("code");
                 XmlNode newidnode = mod_accueil.SVF.CreateNode("element", "id", "");
-                //XmlNode newinspectionnode = mod_inspection.SVF.CreateNode("element", "inspection", "");
                 XmlNode newintitulenode = mod_accueil.SVF.CreateNode("element", "intitule", "");
 
                 //On recupere les caractéristiques
