@@ -146,6 +146,12 @@ namespace ACTIVA_Module_1.modules
                 idroot = svfroot.SelectSingleNode("/inspection/ouvrage[@nom='" + mod_accueil.OUVRAGE + "']/identifications");
                 idroot.AppendChild(elem_code);
             }
+            XmlNodeList nodelist = svfroot.SelectNodes("/inspection/ouvrage[@nom='" + mod_accueil.OUVRAGE + "']/identifications/code");
+            foreach (XmlNode node in nodelist)
+            {
+                if (node.SelectSingleNode("valeur").InnerText == "")
+                    svfroot.SelectSingleNode("/inspection/ouvrage[@nom='" + mod_accueil.OUVRAGE + "']/identifications").RemoveChild(node);
+            }
             mod_accueil.SVF.Save(System.IO.Path.Combine(mod_accueil.SVF_FOLDER, mod_accueil.SVF_FILENAME));
         }
 
