@@ -230,6 +230,16 @@ namespace ACTIVA_Module_1.modules
                 idroot = svfroot.SelectSingleNode("/inspection/identifications");
                 idroot.AppendChild(elem_code);
             }
+
+            /* 
+             * Supprimer tous les noeuds sans valeur
+             */
+
+            XmlNodeList nodelist = svfroot.SelectNodes("/inspection/identifications/code");
+            foreach (XmlNode node in nodelist) {
+                if (node.SelectSingleNode("valeur").InnerText == "")
+                    svfroot.SelectSingleNode("identifications").RemoveChild(node);
+            }
             mod_accueil.SVF.Save(System.IO.Path.Combine(mod_accueil.SVF_FOLDER, mod_accueil.SVF_FILENAME));
         }
         /// <summary>
