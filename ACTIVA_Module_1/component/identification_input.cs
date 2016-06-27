@@ -161,6 +161,19 @@ namespace ACTIVA_Module_1.component
                 mod_global.MF.SaisieTabControl.TabPages["ChoiceTab"].Enabled = false;
                 mod_global.MF.SaisieTabControl.TabPages["SchemaTab"].Enabled = false;
             }
+            else if (tinput.Tag.ToString() == "horaire")
+            {
+                mod_global.MF.SaisieTabControl.TabPages["SectionTab"].Enabled = true;
+                mod_global.MF.section_horaire1.Init_Section_Img(mod_accueil.FORME_OUVRAGE);
+                mod_global.MF.SaisieTabControl.SelectedTab = mod_global.MF.SaisieTabControl.TabPages["SectionTab"];
+                mod_global.MF.SaisieTabControl.TabPages["DateTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["KeyboardTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["VideoTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["PhotoTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["AudioTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["ChoiceTab"].Enabled = false;
+                mod_global.MF.SaisieTabControl.TabPages["SchemaTab"].Enabled = false;
+            }
         }
         // a validation du composant
         private void Field_Input_Validating(object sender, CancelEventArgs e)

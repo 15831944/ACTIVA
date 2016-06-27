@@ -713,6 +713,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ObligatoirePb)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
 
@@ -763,7 +764,7 @@
         private System.Windows.Forms.Button CaracDelBt;
         private System.Windows.Forms.Label PosRegLb;
         private System.Windows.Forms.ComboBox PosRegCb;
-        private System.Windows.Forms.Button CaracValidnCloseBt;
+        public System.Windows.Forms.Button CaracValidnCloseBt;
         private System.Windows.Forms.Button CaracCancelBt;
     }
 }

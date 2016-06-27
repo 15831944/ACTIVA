@@ -58,6 +58,19 @@ namespace ACTIVA_Module_1.component
             //    pm1.Enabled = false;
             //}
 
+
+
+
+
+            /*
+             *             XmlNodeList CodeLieNodeList;
+
+            XmlNode root = mod_global.Get_Codes_Obs_DocElement();
+            CodeLieNodeList = root.SelectNodes("/codes/code[id='" + code + "']/lien/codelie");
+            if (CodeLieNodeList.Count > 0)
+                component.carac_panel.CaracValidnCloseBt.Enabled = false;
+            else component.carac_panel.CaracValidnCloseBt.Enabled = true;
+             */
             if (num != String.Empty)
             {
                 Retreive_Carac(num);
@@ -753,8 +766,28 @@ namespace ACTIVA_Module_1.component
                 return;
             }
 
-            //timer1.Start();
-            //LastColoredTb = Carac1Tb;
+            // Mise à jour le nombre d'observation
+            XmlNodeList nodeList = mod_accueil.SVF.DocumentElement.SelectNodes(string.Concat("//ouvrage[@nom='", mod_global.MF.OuvrageList.SelectedText, "']/observations/*"));
+            mod_global.MF.obs_nb_label.Text = nodeList.Count.ToString();
+        }
+
+        private void CaracValidnCloseBt_Click(object sender, EventArgs e)
+        {
+            mod_global.Focused_Carac_Panel = this;
+
+            if (Validation_Check() == true)
+            {
+                string savenum = mod_save.Save_Observation_Panel(current_code, current_num);
+                mod_global.MF.CaracDockingTab.TabPages.Remove((C1.Win.C1Command.C1DockingTabPage)this.Parent);
+                mod_global.MF.MainDockingTab.SelectedTab = mod_global.MF.ObservationTab;
+            }
+            else
+            {
+                return;
+            }
+            // Mise à jour le nombre d'observation
+            XmlNodeList nodeList = mod_accueil.SVF.DocumentElement.SelectNodes(string.Concat("//ouvrage[@nom='", mod_global.MF.OuvrageList.SelectedText, "']/observations/*"));
+            mod_global.MF.obs_nb_label.Text = nodeList.Count.ToString();
         }
 
         private void Gray_TextBox()
@@ -824,23 +857,10 @@ namespace ACTIVA_Module_1.component
             mod_save.Delete_Observation(current_num);
             mod_global.MF.CaracDockingTab.TabPages.Remove((C1.Win.C1Command.C1DockingTabPage)this.Parent);
             mod_global.MF.MainDockingTab.SelectedTab = mod_global.MF.ObservationTab;
-        }
 
-        private void CaracValidnCloseBt_Click(object sender, EventArgs e)
-        {
-            mod_global.Focused_Carac_Panel = this;
-
-            if (Validation_Check() == true)
-            {
-                string savenum = mod_save.Save_Observation_Panel(current_code, current_num);
-                //mod_global.MF.CaracDockingTab.TabPages.Remove((C1.Win.C1Command.C1DockingTabPage)this.Parent);
-                mod_global.MF.CaracDockingTab.TabPages.Clear();
-                mod_global.MF.MainDockingTab.SelectedTab = mod_global.MF.ObservationTab;
-            }
-            else
-            {
-                return;
-            }
+            // Mise à jour le nombre d'observation
+            XmlNodeList nodeList = mod_accueil.SVF.DocumentElement.SelectNodes(string.Concat("//ouvrage[@nom='", mod_global.MF.OuvrageList.SelectedText, "']/observations/*"));
+            mod_global.MF.obs_nb_label.Text = nodeList.Count.ToString();
         }
 
         public void SetColor(Color c)

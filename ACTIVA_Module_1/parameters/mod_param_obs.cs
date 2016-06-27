@@ -748,6 +748,7 @@ namespace ACTIVA_Module_1.modules
 
                 //ici
                 XmlElement codeNode = doc.CreateElement("code");
+                codeNode.SetAttribute("ajoute", "true");
                 XmlElement idNode = doc.CreateElement("id");
                 idNode.InnerText = tb.Text.ToUpper();
                 XmlElement intituleNode = doc.CreateElement("intitule");
@@ -787,6 +788,9 @@ namespace ACTIVA_Module_1.modules
                 originnod.AppendChild(codeNode);
 
                 doc.Save(mod_global.MF.XmlObsStripLabel.Text);
+
+                // Recharger les tableaux
+                Fill_Obs_Codes_Grid(mod_global.MF.XmlObsCodesGrid, doc);
 
                 tb.Text = String.Empty;
             }
@@ -928,7 +932,7 @@ namespace ACTIVA_Module_1.modules
 
                 XmlElement itemNode = doc.CreateElement("item");
                 itemNode.SetAttribute("nom", tb.Text);
-
+                itemNode.SetAttribute("ajoute", "true");
                 originnod.AppendChild(itemNode);
 
                 // Recharger les tableaux
@@ -984,10 +988,13 @@ namespace ACTIVA_Module_1.modules
             XmlElement elem_carac = doc.CreateElement("caracteristique");
             XmlAttribute att_nom = doc.CreateAttribute("nom");
             XmlAttribute att_renseigne = doc.CreateAttribute("renseigne");
+            att_renseigne.InnerText = "3";
+            XmlAttribute att_ajout = doc.CreateAttribute("ajoute");
+            att_ajout.InnerText = "true";
             att_nom.Value = nomval;
             elem_carac.Attributes.Append(att_nom);
             elem_carac.Attributes.Append(att_renseigne);
-
+            elem_carac.Attributes.Append(att_ajout);
             return elem_carac;
         }
 
@@ -1018,6 +1025,7 @@ namespace ACTIVA_Module_1.modules
             grid.Cols["nbitem"].UserData = "att";
             grid.Cols["type"].UserData = "att";
             grid.Cols["info"].UserData = "att";
+            grid.Cols["intitule"].UserData = "att";
             grid.Cols["unite"].UserData = "att";
             grid.Cols["renseigne"].UserData = "att";
             grid.Cols["ajoute"].UserData = "att";

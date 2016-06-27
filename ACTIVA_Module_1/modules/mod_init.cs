@@ -119,6 +119,7 @@ namespace ACTIVA_Module_1.modules
             mod_global.MF.IdDesactivePb.BackColor = mod_global.Desactive_Color;
             mod_global.MF.IdFacultatifPb.BackColor = mod_global.Facultatif_Color;
 
+            //On colorie la légende de l'onglet inspection
             mod_global.MF.InspectObligatoirePb.BackColor = mod_global.Obligatoire_Color;
             mod_global.MF.InspectDifferePb.BackColor = mod_global.Differe_Color;
             mod_global.MF.InspectDesactivePb.BackColor = mod_global.Desactive_Color;

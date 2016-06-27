@@ -27,11 +27,19 @@ namespace ACTIVA_Module_1.modules
             nodeAjout = root.SelectSingleNode("/codes/code[id='" + code + "']");
             CTab.Text =  code + " | " + nodeIntitule.InnerText;
 
+
             // Hériter les caractéristiques des codes liéés
             if (parent != null)
             {
+                // Si c'est un code lié, activé le bouton
+                //Cpanel.CaracValidnCloseBt.Enabled = true;
+
                 XmlNode SVF = modules.mod_accueil.SVF.DocumentElement;
-                XmlNode codenode = SVF.SelectSingleNode("ouvrage[@nom='" + mod_accueil.OUVRAGE + "']/observations/code[id='" + parent + "']");
+                
+                //Récupérer la valeur du dernier noeud
+                XmlNodeList list = SVF.SelectNodes("ouvrage[@nom='" + mod_accueil.OUVRAGE + "']/observations/code[id='" + parent + "']");
+                XmlNode codenode = list.Item(list.Count - 1);
+
                 // h1
                 if (codenode.SelectSingleNode("caracteristiques/caracteristique[@nom='" + "h1" + "']").InnerText != "")
                 Cpanel.EmpCirc1Tb.Text = codenode.SelectSingleNode("caracteristiques/caracteristique[@nom='" + "h1" + "']").Attributes["correspondance"].InnerText + " | " +
@@ -79,7 +87,6 @@ namespace ACTIVA_Module_1.modules
             mod_global.MF.CaracDockingTab.SelectedTab = mod_global.MF.CaracDockingTab.TabPages[0];
             mod_global.MF.MainDockingTab.SelectedTab = mod_global.MF.RenseignementTab;
         }
-
 
         public static void Add_New_Code_Tabs(string code)
         {

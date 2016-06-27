@@ -214,6 +214,7 @@ namespace ACTIVA_Module_1.modules
                     if (idinput.Field_Input.Text != String.Empty)
                     {
                         newvaleurnode.InnerText = idinput.Field_Input.Text.Split(char.Parse("|"))[1].Trim();
+                        newvaleurnode.SetAttribute("code", idinput.Field_Input.Text.Split(char.Parse("|"))[0].Trim());
                         newvaleurnode.SetAttribute("ajoute", "true");
                     }
                     else
@@ -438,7 +439,9 @@ namespace ACTIVA_Module_1.modules
             ComboBox CCombo;
 
             XmlNode newcaracnode = mod_accueil.SVF.CreateNode("element", "caracteristiques", "");
-
+            XmlAttribute att_ajoute = mod_accueil.SVF.CreateAttribute("ajoute");
+            att_ajoute.Value = "true";
+            newcaracnode.Attributes.Append(att_ajoute);
             //On parcourt tous les input du formulaire d'observation
             foreach (object key in mod_global.Focused_Carac_Panel.CaracNameToTb.Keys)
             {
@@ -534,10 +537,13 @@ namespace ACTIVA_Module_1.modules
             XmlElement elem_carac = mod_accueil.SVF.CreateElement("caracteristique");
             XmlAttribute att_nom = mod_accueil.SVF.CreateAttribute("nom");
             XmlAttribute att_renseigne = mod_accueil.SVF.CreateAttribute("renseigne");
+            XmlAttribute att_ajoute = mod_accueil.SVF.CreateAttribute("ajoute");
+            att_ajoute.Value = "true";
             att_nom.Value = nomval;
             att_renseigne.Value = renseigneval;
             elem_carac.Attributes.Append(att_nom);
             elem_carac.Attributes.Append(att_renseigne);
+            elem_carac.Attributes.Append(att_ajoute);
 
             return elem_carac;
         }
@@ -576,6 +582,8 @@ namespace ACTIVA_Module_1.modules
                 {
                     node.Attributes.GetNamedItem(attname).InnerText = newvalue;
                 }
+
+                
             }
             else
             {

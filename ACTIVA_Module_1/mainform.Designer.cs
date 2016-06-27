@@ -805,7 +805,7 @@
             // 
             this.virtual_kb1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.virtual_kb1.Location = new System.Drawing.Point(0, 0);
-            this.virtual_kb1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.virtual_kb1.Margin = new System.Windows.Forms.Padding(4);
             this.virtual_kb1.Name = "virtual_kb1";
             this.virtual_kb1.Size = new System.Drawing.Size(1091, 286);
             this.virtual_kb1.TabIndex = 0;
@@ -1659,6 +1659,7 @@
             this.cb_regard.Tag = "REGARD";
             this.cb_regard.Text = "Regards";
             this.cb_regard.UseVisualStyleBackColor = true;
+            this.cb_regard.Click += new System.EventHandler(this.Type_Checkbox_CheckedChanged);
             // 
             // cb_branchement
             // 
@@ -1674,6 +1675,7 @@
             this.cb_branchement.Tag = "BRANCHEMENT";
             this.cb_branchement.Text = "Branchements";
             this.cb_branchement.UseVisualStyleBackColor = true;
+            this.cb_branchement.Click += new System.EventHandler(this.Type_Checkbox_CheckedChanged);
             // 
             // cb_troncon
             // 
@@ -1689,6 +1691,7 @@
             this.cb_troncon.Tag = "TRONCON";
             this.cb_troncon.Text = "Tronçons";
             this.cb_troncon.UseVisualStyleBackColor = true;
+            this.cb_troncon.Click += new System.EventHandler(this.Type_Checkbox_CheckedChanged);
             // 
             // groupBox6
             // 
@@ -1721,7 +1724,7 @@
             this.obs_nb_label.AutoSize = true;
             this.obs_nb_label.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.obs_nb_label.ForeColor = System.Drawing.Color.Tomato;
-            this.obs_nb_label.Location = new System.Drawing.Point(223, 67);
+            this.obs_nb_label.Location = new System.Drawing.Point(255, 68);
             this.obs_nb_label.Name = "obs_nb_label";
             this.obs_nb_label.Size = new System.Drawing.Size(0, 17);
             this.obs_nb_label.TabIndex = 3;
@@ -1731,7 +1734,7 @@
             this.obs_name_label.AutoSize = true;
             this.obs_name_label.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.obs_name_label.ForeColor = System.Drawing.Color.Tomato;
-            this.obs_name_label.Location = new System.Drawing.Point(199, 32);
+            this.obs_name_label.Location = new System.Drawing.Point(213, 32);
             this.obs_name_label.Name = "obs_name_label";
             this.obs_name_label.Size = new System.Drawing.Size(0, 17);
             this.obs_name_label.TabIndex = 2;
@@ -2060,10 +2063,10 @@
             // richTextBox1
             // 
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(149, 282);
+            this.richTextBox1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(111, 295);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(193, 109);
+            this.richTextBox1.Size = new System.Drawing.Size(251, 109);
             this.richTextBox1.TabIndex = 14;
             this.richTextBox1.Text = "Structure & Réhabilitation\n36, avenue du Général de Gaulle\n93170 Bagnolet\ntél : 0" +
                 "1 49 72 73 92\nwww.structure-rehabilitation.fr";
@@ -2120,9 +2123,9 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::ACTIVA_Module_1.Properties.Resources.SR;
-            this.pictureBox11.Location = new System.Drawing.Point(121, 174);
+            this.pictureBox11.Location = new System.Drawing.Point(111, 174);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(241, 102);
+            this.pictureBox11.Size = new System.Drawing.Size(251, 115);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 12;
             this.pictureBox11.TabStop = false;
@@ -2415,9 +2418,8 @@
             this.splitContainer31.Panel2.Controls.Add(this.InspectDifferePb);
             this.splitContainer31.Panel2.Controls.Add(this.InspectObligatoireTb);
             this.splitContainer31.Panel2.Controls.Add(this.InspectObligatoirePb);
-            this.splitContainer31.Panel2MinSize = 18;
             this.splitContainer31.Size = new System.Drawing.Size(765, 433);
-            this.splitContainer31.SplitterDistance = 411;
+            this.splitContainer31.SplitterDistance = 405;
             this.splitContainer31.SplitterWidth = 2;
             this.splitContainer31.TabIndex = 1;
             // 
@@ -2430,7 +2432,7 @@
             this.Inspection_Flp.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Inspection_Flp.Location = new System.Drawing.Point(0, 0);
             this.Inspection_Flp.Name = "Inspection_Flp";
-            this.Inspection_Flp.Size = new System.Drawing.Size(765, 411);
+            this.Inspection_Flp.Size = new System.Drawing.Size(765, 405);
             this.Inspection_Flp.TabIndex = 0;
             // 
             // InspectFacultatifTb
@@ -2638,9 +2640,8 @@
             this.splitContainer4.Panel2.Controls.Add(this.IdDifferePb);
             this.splitContainer4.Panel2.Controls.Add(this.label1);
             this.splitContainer4.Panel2.Controls.Add(this.IdObligatoirePb);
-            this.splitContainer4.Panel2MinSize = 18;
             this.splitContainer4.Size = new System.Drawing.Size(768, 433);
-            this.splitContainer4.SplitterDistance = 413;
+            this.splitContainer4.SplitterDistance = 406;
             this.splitContainer4.SplitterWidth = 2;
             this.splitContainer4.TabIndex = 1;
             // 
@@ -2653,7 +2654,7 @@
             this.Identification_Flp.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Identification_Flp.Location = new System.Drawing.Point(0, 0);
             this.Identification_Flp.Name = "Identification_Flp";
-            this.Identification_Flp.Size = new System.Drawing.Size(768, 413);
+            this.Identification_Flp.Size = new System.Drawing.Size(768, 406);
             this.Identification_Flp.TabIndex = 0;
             // 
             // label4

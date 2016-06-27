@@ -30,6 +30,7 @@ namespace ACTIVA_Module_1
                     //modules.mod_global.MF.OuvrageList.SelectedText;
                     modules.mod_accueil.SVF.Save(System.IO.Path.Combine(modules.mod_accueil.SVF_FOLDER, modules.mod_accueil.SVF_FILENAME));
                     modules.mod_accueil.Fill_Ouvrage_List(modules.mod_global.MF.OuvrageList);
+                    modules.mod_global.MF.CurrentOuvrageNameLb.Text = RenameTb.Text;
                     this.Close();
                 }
             }

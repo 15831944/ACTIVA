@@ -127,9 +127,15 @@ namespace ACTIVA_Module_1.modules
             grid.Cols[0].Width = 60;
             grid.Cols[0].Caption = "Id";
 
+            Dictionary<string, string> field_type = new Dictionary<string, string>();
+            field_type.Add(string.Empty, String.Empty);
+            field_type.Add("generatrice_primaire", "Génératrice primaire");
+            field_type.Add("generatrice_secondaire", "Génératrice secondaire");
+            field_type.Add("ligne_milieu", "Ligne milieu");
             grid.Cols[1].Name = "type";
             grid.Cols[1].Width = 130;
             grid.Cols[1].Caption = "Type";
+            grid.Cols[1].DataMap = field_type;
 
             grid.Cols[2].Name = "correspondance";
             grid.Cols[2].Style = grid.Styles["CodeStyle"];

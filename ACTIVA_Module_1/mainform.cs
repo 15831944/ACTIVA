@@ -43,7 +43,7 @@ namespace ACTIVA_Module_1
             var version = Assembly.GetEntryAssembly().GetName().Version;
             labelnumcompil.Text = "N° version : " + version;
             labeldateversion.Text = "Date de la version : " + ACTIVA_Module_1.Properties.Resources.BuildDate.ToString();
-
+            mod_global.MF.AutocadTab.TabVisible = false;
         }
 
         private void CreateStatusBar()
@@ -418,6 +418,8 @@ namespace ACTIVA_Module_1
                 NewAccueilNameTb.Text = String.Empty;
                 NewAccueilPathTb.Text = String.Empty;
                 OuvrageNomTb.Text = String.Empty;
+
+                mod_global.MF.InspectionTab.TabVisible = true;
             }
         }
 
@@ -435,6 +437,18 @@ namespace ACTIVA_Module_1
             } 
 
             mod_new.Create_New_Accueil(NewAccueilNameTb.Text, NewAccueilPathTb.Text);
+            
+            
+            // Réinitialiser
+            obs_name_label.Text = "";
+            obs_nb_label.Text = "";
+            LineaireStripLabel.Text = "";
+            CurrentOuvrageFormeLb.Text = "";
+            CurrentOuvrageNameLb.Text = "";
+            CurrentOuvrageTypeLb.Text = "";
+            InspectionTab.TabVisible = false;
+            IdentificationTab.TabVisible = false;
+            ObservationTab.TabVisible = false;
         }
 
         private void NewOuvrageBt_Click(object sender, EventArgs e)
@@ -479,7 +493,7 @@ namespace ACTIVA_Module_1
         {
             if (OuvrageList.SelectedText != String.Empty & mod_accueil.OUVRAGE != String.Empty)
             {
-                if (MessageBox.Show("Confirmez vous la supression de l'ouvrage ?") == DialogResult.OK)
+                if (MessageBox.Show("Confirmez-vous la suppression de l'ouvrage ?") == DialogResult.OK)
                     mod_new.Delete_Selected_Ouvrage();
             }
         }

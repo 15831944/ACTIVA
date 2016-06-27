@@ -119,7 +119,9 @@ namespace ACTIVA_Module_1.modules
             try
             {
                 node = root.SelectSingleNode("/inspection/identifications/code[id='" + code_to_get + "']/valeur");
-                value = node.InnerText;
+                if (node.Attributes["code"] == null)
+                    value = node.InnerText;
+                else value = node.Attributes["code"].InnerText + " | " + node.InnerText; 
                 return value;
             }
             catch (Exception ex)

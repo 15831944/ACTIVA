@@ -341,9 +341,7 @@ namespace ACTIVA_Module_1.modules
             MF.IdentificationTab.TabVisible = true;
             MF.ObservationTab.TabVisible = true;
             MF.RenseignementTab.TabVisible = true;
-            MF.InspectionTab.TabVisible = true;
         }
-
 
         public static void Disable_Obs_Tools()
         {

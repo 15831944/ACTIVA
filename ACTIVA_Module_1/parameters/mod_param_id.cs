@@ -89,6 +89,7 @@ namespace ACTIVA_Module_1.modules
             grid.Cols[3].Name = "nbitem";
             grid.Cols[3].Width = 60;
             grid.Cols[3].Caption = "Nbre Items";
+            grid.Cols[3].AllowEditing = false;
 
             grid.Cols[4].Name = "parent";
             grid.Cols[4].Width = 70;
@@ -122,9 +123,16 @@ namespace ACTIVA_Module_1.modules
             grid.Cols[10].DataType = typeof(bool);
             grid.Cols[10].Caption = "Ajouté";
 
+            Dictionary<string, string> field_saisie = new Dictionary<string, string>();
+            field_saisie.Add(string.Empty, String.Empty);
+            field_saisie.Add("0", "0");
+            field_saisie.Add("1", "1");
+            field_saisie.Add("2", "2");
+            field_saisie.Add("3", "3");
             grid.Cols[11].Name = "saisie";
             grid.Cols[11].Width = 50;
             grid.Cols[11].Caption = "Saisie";
+            grid.Cols[11].DataMap = field_saisie;
 
             grid.Cols[12].Name = "renseigne";
             grid.Cols[12].Width = 65;
