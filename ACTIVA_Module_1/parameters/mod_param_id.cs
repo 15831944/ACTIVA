@@ -407,6 +407,11 @@ namespace ACTIVA_Module_1.modules
                 itemNode.SetAttribute("nom", tb.Text);
 
                 originnod.AppendChild(itemNode);
+                
+                //Reload tableau
+                Fill_Id_Codes_Grid(mod_global.MF.XmlIdCodeGrid, doc);
+                Fill_Id_Item_Grid(mod_global.MF.XmlIdItemGrid);
+
                 doc.Save(mod_global.MF.XmlIdStripLabel.Text);
 
                 tb.Text = String.Empty;
@@ -431,6 +436,11 @@ namespace ACTIVA_Module_1.modules
                 originnod.RemoveChild(nodtoremove);
 
                 grid.Rows.Remove(grid.RowSel);
+
+                //Reload tableau
+                Fill_Id_Codes_Grid(mod_global.MF.XmlIdCodeGrid, doc);
+                Fill_Id_Item_Grid(mod_global.MF.XmlIdItemGrid);
+
                 doc.Save(mod_global.MF.XmlIdStripLabel.Text);
             }
             else

@@ -85,7 +85,7 @@ namespace ACTIVA_Module_1.modules
                 else
                 {
                     valeur.InnerText = idinput.Field_Input.Text;
-                    valeur.SetAttribute("ajoute", "true");
+                    //valeur.SetAttribute("ajoute", "true");
                 }
             }
             else
@@ -112,6 +112,9 @@ namespace ACTIVA_Module_1.modules
                     {
                         newvaleurnode.InnerText = idinput.Field_Input.Text.Split(char.Parse("|"))[1].Trim();
                         newvaleurnode.SetAttribute("code", idinput.Field_Input.Text.Split(char.Parse("|"))[0].Trim());
+                        if (mod_global.Get_Codes_Id_DocElement().SelectSingleNode("code[id='" + idinput.field_label.Name + "']").Attributes["ajoute"] != null)
+                            if (mod_global.Get_Codes_Id_DocElement().SelectSingleNode("code[id='" + idinput.field_label.Name + "']").Attributes["ajoute"].InnerText == "true")
+                                newvaleurnode.SetAttribute("ajoute", "true");
                     }
                     else
                     {
@@ -121,7 +124,9 @@ namespace ACTIVA_Module_1.modules
                 else
                 {
                     newvaleurnode.InnerText = idinput.Field_Input.Text;
-                    newvaleurnode.SetAttribute("ajoute", "true");
+                    if (mod_global.Get_Codes_Id_DocElement().SelectSingleNode("code[id='" + idinput.field_label.Name + "']").Attributes["ajoute"] != null)
+                        if (mod_global.Get_Codes_Id_DocElement().SelectSingleNode("code[id='" + idinput.field_label.Name + "']").Attributes["ajoute"].InnerText == "true")
+                            newvaleurnode.SetAttribute("ajoute", "true");
                 }
 
                 //------------------------------ Partie désactivée -----------------------------
@@ -176,7 +181,7 @@ namespace ACTIVA_Module_1.modules
                         {
                             valeur.InnerText = idinput.Field_Input.Text.Split(char.Parse("|"))[1].Trim();
                             valeur.SetAttribute("code", idinput.Field_Input.Text.Split(char.Parse("|"))[0].Trim());
-                            valeur.SetAttribute("ajoute", "true");
+                            //valeur.SetAttribute("ajoute", "true");
                         }
                     }
                     else
@@ -187,7 +192,7 @@ namespace ACTIVA_Module_1.modules
                 else
                 {
                     valeur.InnerText = idinput.Field_Input.Text;
-                    valeur.SetAttribute("ajoute", "true");
+                    //valeur.SetAttribute("ajoute", "true");
                 }
             }
             else
@@ -215,7 +220,8 @@ namespace ACTIVA_Module_1.modules
                     {
                         newvaleurnode.InnerText = idinput.Field_Input.Text.Split(char.Parse("|"))[1].Trim();
                         newvaleurnode.SetAttribute("code", idinput.Field_Input.Text.Split(char.Parse("|"))[0].Trim());
-                        newvaleurnode.SetAttribute("ajoute", "true");
+                        if (mod_global.Get_Codes_Insp_DocElement().SelectSingleNode("code[id='" + idinput.field_label.Name + "']").Attributes["ajoute"].InnerText == "true")
+                            newvaleurnode.SetAttribute("ajoute", "true");
                     }
                     else
                     {
@@ -225,7 +231,8 @@ namespace ACTIVA_Module_1.modules
                 else
                 {
                     newvaleurnode.InnerText = idinput.Field_Input.Text;
-                    newvaleurnode.SetAttribute("ajoute", "true");
+                    if (mod_global.Get_Codes_Insp_DocElement().SelectSingleNode("code[id='" + idinput.field_label.Name + "']").Attributes["ajoute"].InnerText == "true")
+                        newvaleurnode.SetAttribute("ajoute", "true");
                 }
 
                 //On ajoute les sous-noeuds au noeud code

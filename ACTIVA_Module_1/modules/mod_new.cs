@@ -580,6 +580,13 @@ namespace ACTIVA_Module_1.modules
 
             mod_accueil.Check_Type_Ouvrage(mod_global.MF.cb_troncon, mod_global.MF.cb_branchement, mod_global.MF.cb_regard);
             mod_accueil.Fill_Ouvrage_List(mod_global.MF.OuvrageList);
+            // Réinitialiser
+            mod_global.MF.obs_name_label.Text = "";
+            mod_global.MF.obs_nb_label.Text = "";
+            mod_global.MF.LineaireStripLabel.Text = "";
+            mod_global.MF.CurrentOuvrageFormeLb.Text = "";
+            mod_global.MF.CurrentOuvrageNameLb.Text = "";
+            mod_global.MF.CurrentOuvrageTypeLb.Text = "";
         }
     }
 

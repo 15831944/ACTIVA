@@ -33,6 +33,8 @@
             // 
             // button1
             // 
+            this.button1.AutoSize = true;
+            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
@@ -51,6 +53,7 @@
             this.Name = "multiple_choice_button";
             this.Size = new System.Drawing.Size(163, 82);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

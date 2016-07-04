@@ -21,6 +21,7 @@ namespace ACTIVA_Module_1.modules
             ACTIVA_Module_1.component.carac_panel Cpanel = new ACTIVA_Module_1.component.carac_panel(code, num, clone);
             Cpanel.Dock = System.Windows.Forms.DockStyle.Fill;
             
+
             //On récupère l'intitulé du code
             root = mod_global.Get_Codes_Obs_DocElement();
             nodeIntitule = root.SelectSingleNode("/codes/code[id='" + code + "']/intitule");
@@ -31,8 +32,8 @@ namespace ACTIVA_Module_1.modules
             // Hériter les caractéristiques des codes liéés
             if (parent != null)
             {
-                // Si c'est un code lié, activé le bouton
-                //Cpanel.CaracValidnCloseBt.Enabled = true;
+                //Si c'est un code lié, activé le bouton
+                Cpanel.CaracValidnCloseBt.Enabled = true;
 
                 XmlNode SVF = modules.mod_accueil.SVF.DocumentElement;
                 
@@ -64,6 +65,34 @@ namespace ACTIVA_Module_1.modules
                     Cpanel.SetColor(Color.RoyalBlue);
                 }
                 else Cpanel.SetColor(Color.Black);
+            else
+                // Changer la couleur des caractéristiques ajoutés dans le cas le code n'est pas code ajouté
+                if (root.SelectSingleNode("/codes/code[id='" + code + "']/caracteristiques/caracteristique[@nom='" + "c1" + "']").Attributes["ajoute"] != null)
+                    if (root.SelectSingleNode("/codes/code[id='" + code + "']/caracteristiques/caracteristique[@nom='" + "c1" + "']").Attributes["ajoute"].InnerText == "True")
+                        Cpanel.Carac1Lb.ForeColor = Color.RoyalBlue;
+                if (root.SelectSingleNode("/codes/code[id='" + code + "']/caracteristiques/caracteristique[@nom='" + "c2" + "']").Attributes["ajoute"] != null)
+                    if (root.SelectSingleNode("/codes/code[id='" + code + "']/caracteristiques/caracteristique[@nom='" + "c2" + "']").Attributes["ajoute"].InnerText == "True")
+                        Cpanel.Carac2Lb.ForeColor = Color.RoyalBlue;
+                if (root.SelectSingleNode("/codes/code[id='" + code + "']/caracteristiques/caracteristique[@nom='" + "q1" + "']").Attributes["ajoute"] != null)
+                    if (root.SelectSingleNode("/codes/code[id='" + code + "']/caracteristiques/caracteristique[@nom='" + "q1" + "']").Attributes["ajoute"].InnerText == "True")
+                        Cpanel.Quant1Lb.ForeColor = Color.RoyalBlue;
+                if (root.SelectSingleNode("/codes/code[id='" + code + "']/caracteristiques/caracteristique[@nom='" + "q2" + "']").Attributes["ajoute"] != null)
+                    if (root.SelectSingleNode("/codes/code[id='" + code + "']/caracteristiques/caracteristique[@nom='" + "q2" + "']").Attributes["ajoute"].InnerText == "True")
+                        Cpanel.Quant2Lb.ForeColor = Color.RoyalBlue;
+                if (root.SelectSingleNode("/codes/code[id='" + code + "']/caracteristiques/caracteristique[@nom='" + "h1" + "']").Attributes["ajoute"] != null)
+                    if (root.SelectSingleNode("/codes/code[id='" + code + "']/caracteristiques/caracteristique[@nom='" + "h1" + "']").Attributes["ajoute"].InnerText == "True")
+                        Cpanel.label6.ForeColor = Color.RoyalBlue;
+                if (root.SelectSingleNode("/codes/code[id='" + code + "']/caracteristiques/caracteristique[@nom='" + "h2" + "']").Attributes["ajoute"] != null)
+                    if (root.SelectSingleNode("/codes/code[id='" + code + "']/caracteristiques/caracteristique[@nom='" + "h2" + "']").Attributes["ajoute"].InnerText == "True")
+                        Cpanel.label5.ForeColor = Color.RoyalBlue;
+                if (root.SelectSingleNode("/codes/code[id='" + code + "']/caracteristiques/caracteristique[@nom='" + "pm1" + "']").Attributes["ajoute"] != null)
+                    if (root.SelectSingleNode("/codes/code[id='" + code + "']/caracteristiques/caracteristique[@nom='" + "pm1" + "']").Attributes["ajoute"].InnerText == "True")
+                        Cpanel.label8.ForeColor = Color.RoyalBlue;
+                if (root.SelectSingleNode("/codes/code[id='" + code + "']/caracteristiques/caracteristique[@nom='" + "pm2" + "']").Attributes["ajoute"] != null)
+                    if (root.SelectSingleNode("/codes/code[id='" + code + "']/caracteristiques/caracteristique[@nom='" + "pm2" + "']").Attributes["ajoute"].InnerText == "True")
+                        Cpanel.label7.ForeColor = Color.RoyalBlue;
+
+            //Ajouter le Panel
             CTab.Controls.Add(Cpanel);
 
             /*for (int i = 0; i < mod_global.MF.CaracDockingTab.TabPages.Count; i++){

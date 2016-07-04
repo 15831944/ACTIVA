@@ -47,7 +47,10 @@ namespace ACTIVA_Module_1.component
                 mod_global.MF.InputPreviewTb.Text = Field_Input.Text;
            
             //on marque que l'enregistrement doit être proposé
-            mod_identification.SaveIDFlag = true;
+            if (mod_global.MF.MainDockingTab.SelectedTab.Name == "IdentificationTab")
+                mod_identification.SaveIDFlag = true;
+            else if (mod_global.MF.MainDockingTab.SelectedTab.Name == "InspectionTab")
+                mod_inspection.SaveIDFlag = true;
         }
 
         // a activation du composant (par click souris ou tabulation clavier)

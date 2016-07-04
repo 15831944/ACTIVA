@@ -1323,7 +1323,7 @@
             this.groupBox14.Controls.Add(this.Btn_Exporter);
             this.groupBox14.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox14.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox14.Location = new System.Drawing.Point(6, 327);
+            this.groupBox14.Location = new System.Drawing.Point(6, 336);
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.Size = new System.Drawing.Size(463, 59);
             this.groupBox14.TabIndex = 18;
@@ -1418,7 +1418,7 @@
             this.groupBox9.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox9.Location = new System.Drawing.Point(3, 100);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(466, 132);
+            this.groupBox9.Size = new System.Drawing.Size(466, 141);
             this.groupBox9.TabIndex = 16;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Créer une inspection";
@@ -1427,7 +1427,7 @@
             // 
             this.Folder_New_Accueil.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
             this.Folder_New_Accueil.Image = global::ACTIVA_Module_1.Properties.Resources.folderopen1;
-            this.Folder_New_Accueil.Location = new System.Drawing.Point(343, 101);
+            this.Folder_New_Accueil.Location = new System.Drawing.Point(343, 109);
             this.Folder_New_Accueil.Name = "Folder_New_Accueil";
             this.Folder_New_Accueil.Size = new System.Drawing.Size(117, 25);
             this.Folder_New_Accueil.TabIndex = 16;
@@ -1442,7 +1442,7 @@
             this.NewAccueilBt.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
             this.NewAccueilBt.ForeColor = System.Drawing.SystemColors.Highlight;
             this.NewAccueilBt.Image = global::ACTIVA_Module_1.Properties.Resources.add_16;
-            this.NewAccueilBt.Location = new System.Drawing.Point(250, 101);
+            this.NewAccueilBt.Location = new System.Drawing.Point(250, 109);
             this.NewAccueilBt.Name = "NewAccueilBt";
             this.NewAccueilBt.Size = new System.Drawing.Size(87, 25);
             this.NewAccueilBt.TabIndex = 15;
@@ -1455,7 +1455,7 @@
             // NewAccueilPathTb
             // 
             this.NewAccueilPathTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewAccueilPathTb.Location = new System.Drawing.Point(75, 74);
+            this.NewAccueilPathTb.Location = new System.Drawing.Point(74, 36);
             this.NewAccueilPathTb.Name = "NewAccueilPathTb";
             this.NewAccueilPathTb.Size = new System.Drawing.Size(385, 23);
             this.NewAccueilPathTb.TabIndex = 13;
@@ -1465,7 +1465,7 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.DimGray;
-            this.label24.Location = new System.Drawing.Point(72, 57);
+            this.label24.Location = new System.Drawing.Point(72, 17);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(101, 16);
             this.label24.TabIndex = 12;
@@ -1486,7 +1486,7 @@
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.DimGray;
-            this.label25.Location = new System.Drawing.Point(71, 17);
+            this.label25.Location = new System.Drawing.Point(72, 62);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(218, 16);
             this.label25.TabIndex = 11;
@@ -1495,7 +1495,7 @@
             // NewAccueilNameTb
             // 
             this.NewAccueilNameTb.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewAccueilNameTb.Location = new System.Drawing.Point(75, 35);
+            this.NewAccueilNameTb.Location = new System.Drawing.Point(75, 81);
             this.NewAccueilNameTb.Name = "NewAccueilNameTb";
             this.NewAccueilNameTb.Size = new System.Drawing.Size(385, 23);
             this.NewAccueilNameTb.TabIndex = 9;
@@ -1513,7 +1513,7 @@
             this.AddOuvrageGp.Enabled = false;
             this.AddOuvrageGp.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddOuvrageGp.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.AddOuvrageGp.Location = new System.Drawing.Point(3, 231);
+            this.AddOuvrageGp.Location = new System.Drawing.Point(3, 241);
             this.AddOuvrageGp.Name = "AddOuvrageGp";
             this.AddOuvrageGp.Size = new System.Drawing.Size(466, 93);
             this.AddOuvrageGp.TabIndex = 15;
@@ -2419,7 +2419,7 @@
             this.splitContainer31.Panel2.Controls.Add(this.InspectObligatoireTb);
             this.splitContainer31.Panel2.Controls.Add(this.InspectObligatoirePb);
             this.splitContainer31.Size = new System.Drawing.Size(765, 433);
-            this.splitContainer31.SplitterDistance = 405;
+            this.splitContainer31.SplitterDistance = 406;
             this.splitContainer31.SplitterWidth = 2;
             this.splitContainer31.TabIndex = 1;
             // 
@@ -2432,7 +2432,7 @@
             this.Inspection_Flp.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Inspection_Flp.Location = new System.Drawing.Point(0, 0);
             this.Inspection_Flp.Name = "Inspection_Flp";
-            this.Inspection_Flp.Size = new System.Drawing.Size(765, 405);
+            this.Inspection_Flp.Size = new System.Drawing.Size(765, 406);
             this.Inspection_Flp.TabIndex = 0;
             // 
             // InspectFacultatifTb

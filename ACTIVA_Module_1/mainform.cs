@@ -152,6 +152,7 @@ namespace ACTIVA_Module_1
 
             SaisieTabControl.SelectedTab = SaisieTabControl.TabPages["KeyboardTab"];
             mod_identification.SaveIDFlag = false;
+            mod_inspection.SaveIDFlag = false;
         }
 
         private void InspectionTopicBar_PageExpanded(object sender, C1.Win.C1Command.C1TopicBarPageEventArgs e)
@@ -187,6 +188,7 @@ namespace ACTIVA_Module_1
 
             SaisieTabControl.SelectedTab = SaisieTabControl.TabPages["KeyboardTab"];
             mod_identification.SaveIDFlag = false;
+            mod_inspection.SaveIDFlag = false;
         }
 
         private void Type_Checkbox_CheckedChanged(object sender, EventArgs e)
@@ -306,6 +308,18 @@ namespace ACTIVA_Module_1
         private void CloseAccueilBt_Click(object sender, EventArgs e)
         {
             mod_accueil.Reset_Accueil_Tab();
+
+            //Activer les 2 boutons
+            NewAccueilBt.Enabled = true;
+            OpenSVFButton.Enabled = true;
+
+            //Réinitialiser
+            obs_name_label.Text = "";
+            obs_nb_label.Text = "";
+            LineaireStripLabel.Text = "";
+            CurrentOuvrageFormeLb.Text = "";
+            CurrentOuvrageNameLb.Text = "";
+            CurrentOuvrageTypeLb.Text = "";
         }
 
         private void NewAccueilNameTb_Click(object sender, EventArgs e)
@@ -386,6 +400,7 @@ namespace ACTIVA_Module_1
                         //mise a jour de la couleur du groupe courant
                         mod_identification.Check_Fields_Status(IdentificationTopicBar.FindPage(IdFormLabel.Text));
                     }
+                    else mod_identification.SaveIDFlag = false;
                 }
             }
             else if (MainDockingTab.SelectedTab.Name == "InspectionTab")
@@ -402,6 +417,7 @@ namespace ACTIVA_Module_1
                         //mise a jour de la couleur du groupe courant
                         mod_inspection.Check_Fields_Status(InspectionTopicBar.FindPage(InspectFormLabel.Text));
                     }
+                    else mod_inspection.SaveIDFlag = false;
                 }
             }
         }
@@ -420,7 +436,9 @@ namespace ACTIVA_Module_1
                 OuvrageNomTb.Text = String.Empty;
 
                 mod_global.MF.InspectionTab.TabVisible = true;
-            }
+                NewAccueilBt.Enabled = false;
+                OpenSVFButton.Enabled = false;
+            }   
         }
 
         private void NewAccueilBt_Click(object sender, EventArgs e)
@@ -437,7 +455,8 @@ namespace ACTIVA_Module_1
             } 
 
             mod_new.Create_New_Accueil(NewAccueilNameTb.Text, NewAccueilPathTb.Text);
-            
+            NewAccueilBt.Enabled = false;
+            OpenSVFButton.Enabled = false;
             
             // Réinitialiser
             obs_name_label.Text = "";
@@ -446,7 +465,7 @@ namespace ACTIVA_Module_1
             CurrentOuvrageFormeLb.Text = "";
             CurrentOuvrageNameLb.Text = "";
             CurrentOuvrageTypeLb.Text = "";
-            InspectionTab.TabVisible = false;
+            InspectionTab.TabVisible = true;
             IdentificationTab.TabVisible = false;
             ObservationTab.TabVisible = false;
         }
@@ -493,8 +512,8 @@ namespace ACTIVA_Module_1
         {
             if (OuvrageList.SelectedText != String.Empty & mod_accueil.OUVRAGE != String.Empty)
             {
-                if (MessageBox.Show("Confirmez-vous la suppression de l'ouvrage ?") == DialogResult.OK)
-                    mod_new.Delete_Selected_Ouvrage();
+                if (MessageBox.Show("Confirmez-vous la suppression de l'ouvrage ?") == DialogResult.OK){
+                    mod_new.Delete_Selected_Ouvrage();}
             }
         }
 
@@ -591,13 +610,18 @@ namespace ACTIVA_Module_1
         {
             if (e.KeyCode == Keys.S && e.Control)
             {
-                mod_save.Save_Identification_Panel(Identification_Flp);
-                mod_save.Save_Inspection_Panel(Inspection_Flp);
-
-                //mise a jour de la couleur du groupe courant
-                mod_identification.Check_Fields_Status(IdentificationTopicBar.FindPage(IdFormLabel.Text));
-
-                mod_identification.SaveIDFlag = false;                
+                if (MainDockingTab.SelectedTab.Name == "InspectionTab")
+                {                   
+                    mod_save.Save_Inspection_Panel(Inspection_Flp);
+                    mod_inspection.Check_Fields_Status(InspectionTopicBar.FindPage(InspectFormLabel.Text));
+                    mod_inspection.SaveIDFlag = false;
+                }
+                else if (MainDockingTab.SelectedTab.Name == "IdentificationTab")
+                {
+                    mod_save.Save_Identification_Panel(Identification_Flp);
+                    mod_identification.Check_Fields_Status(IdentificationTopicBar.FindPage(IdFormLabel.Text));
+                    mod_identification.SaveIDFlag = false;
+                }                                
             }
         }
 

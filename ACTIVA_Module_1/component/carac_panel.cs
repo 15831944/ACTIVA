@@ -62,15 +62,14 @@ namespace ACTIVA_Module_1.component
 
 
 
-            /*
-             *             XmlNodeList CodeLieNodeList;
+            XmlNodeList CodeLieNodeList;
 
             XmlNode root = mod_global.Get_Codes_Obs_DocElement();
             CodeLieNodeList = root.SelectNodes("/codes/code[id='" + code + "']/lien/codelie");
             if (CodeLieNodeList.Count > 0)
-                component.carac_panel.CaracValidnCloseBt.Enabled = false;
-            else component.carac_panel.CaracValidnCloseBt.Enabled = true;
-             */
+                CaracValidnCloseBt.Enabled = false;
+            else CaracValidnCloseBt.Enabled = true;
+
             if (num != String.Empty)
             {
                 Retreive_Carac(num);
@@ -446,7 +445,7 @@ namespace ACTIVA_Module_1.component
 
             root = mod_global.Get_Codes_Obs_DocElement();
             node = root.SelectSingleNode("/codes/code[id='" + current_code + "']/caracteristiques/caracteristique[@nom='" + Field_Input.Tag + "']");
-
+            
             mod_global.Focused_Control = Field_Input;
             mod_global.Focused_Carac_Panel = this;
             mod_global.MF.InputPreviewTb.Text = Field_Input.Text;
@@ -736,6 +735,9 @@ namespace ACTIVA_Module_1.component
                 current_num = savenum;
                 CaracValidBt.Enabled = false;
 
+                // Activer le bouton Valider/Fermer si il est inactive
+                CaracValidnCloseBt.Enabled = true;
+
                 //Création des pages de codes liés
                 XmlNode root;
                 XmlNodeList CodeLieNodeList;
@@ -779,7 +781,8 @@ namespace ACTIVA_Module_1.component
             {
                 string savenum = mod_save.Save_Observation_Panel(current_code, current_num);
                 mod_global.MF.CaracDockingTab.TabPages.Remove((C1.Win.C1Command.C1DockingTabPage)this.Parent);
-                mod_global.MF.MainDockingTab.SelectedTab = mod_global.MF.ObservationTab;
+                if (mod_global.MF.CaracDockingTab.TabPages.Count == 0)
+                    mod_global.MF.MainDockingTab.SelectedTab = mod_global.MF.ObservationTab;
             }
             else
             {
@@ -854,13 +857,17 @@ namespace ACTIVA_Module_1.component
 
         private void CaracDelBt_Click(object sender, EventArgs e)
         {
-            mod_save.Delete_Observation(current_num);
-            mod_global.MF.CaracDockingTab.TabPages.Remove((C1.Win.C1Command.C1DockingTabPage)this.Parent);
-            mod_global.MF.MainDockingTab.SelectedTab = mod_global.MF.ObservationTab;
+            DialogResult diag = MessageBox.Show("Voulez-vous vraiment supprimer cette observation?", "Confirmation", MessageBoxButtons.YesNo);
+            if (diag == DialogResult.Yes)
+            {
+                mod_save.Delete_Observation(current_num);
+                mod_global.MF.CaracDockingTab.TabPages.Remove((C1.Win.C1Command.C1DockingTabPage)this.Parent);
+                mod_global.MF.MainDockingTab.SelectedTab = mod_global.MF.ObservationTab;
 
-            // Mise à jour le nombre d'observation
-            XmlNodeList nodeList = mod_accueil.SVF.DocumentElement.SelectNodes(string.Concat("//ouvrage[@nom='", mod_global.MF.OuvrageList.SelectedText, "']/observations/*"));
-            mod_global.MF.obs_nb_label.Text = nodeList.Count.ToString();
+                // Mise à jour le nombre d'observation
+                XmlNodeList nodeList = mod_accueil.SVF.DocumentElement.SelectNodes(string.Concat("//ouvrage[@nom='", mod_global.MF.OuvrageList.SelectedText, "']/observations/*"));
+                mod_global.MF.obs_nb_label.Text = nodeList.Count.ToString();
+            }
         }
 
         public void SetColor(Color c)

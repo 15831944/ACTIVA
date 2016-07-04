@@ -871,7 +871,7 @@ namespace ACTIVA_Module_1.modules
             }
             else
             {
-                MessageBox.Show("Veuillez saisir un nom d'item à ajouter", "Erreur", MessageBoxButtons.OK);
+                MessageBox.Show("Veuillez saisir une code à ajouter", "Erreur", MessageBoxButtons.OK);
             }
         }
 
@@ -903,7 +903,7 @@ namespace ACTIVA_Module_1.modules
             }
             else
             {
-                MessageBox.Show("Veuillez sélectionner un item à supprimer", "Erreur", MessageBoxButtons.OK);
+                MessageBox.Show("Veuillez sélectionner une code à supprimer", "Erreur", MessageBoxButtons.OK);
             }
         }
 

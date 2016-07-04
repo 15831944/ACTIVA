@@ -142,7 +142,10 @@ namespace ACTIVA_Module_1.modules
                 if (InspectItem.GetAttribute("corresp", "") == "")
                 {
                     C1.Win.C1Command.C1TopicLink link = new C1.Win.C1Command.C1TopicLink();
-                    link.Text = string.Concat(IntituleItem.Value, " - ", IdItem.Value);
+                    if (item.GetAttribute("ajoute", "") == "true")
+                        link.Text = string.Concat("** " + IntituleItem.Value, " - ", IdItem.Value);
+                    else
+                        link.Text = string.Concat(IntituleItem.Value, " - ", IdItem.Value);
                     link.Tag = IdItem.Value;
                     tpbar.FindPageByTag(item.GetAttribute("parent", "")).Links.Add(link);
                 }
@@ -175,7 +178,7 @@ namespace ACTIVA_Module_1.modules
             try
             {
                 node = root.SelectSingleNode("/inspection/ouvrage[@nom='" + mod_accueil.OUVRAGE + "']/identifications/code[id='" + code_to_get + "']/valeur");
-                if (node.Attributes["code"].InnerText == "")
+                if (node.Attributes["code"] == null)
                     value = node.InnerText;
                 else value = node.Attributes["code"].InnerText + " | " + node.InnerText; 
                 return value;

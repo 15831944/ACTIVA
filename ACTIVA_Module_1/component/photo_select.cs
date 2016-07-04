@@ -24,13 +24,6 @@ namespace ACTIVA_Module_1.component
             pictureBox2.AllowDrop = true;
             pictureBox3.AllowDrop = true;
             pictureBox4.AllowDrop = true;
-            pictureBox5.AllowDrop = true;
-            pictureBox6.AllowDrop = true;
-            pictureBox7.AllowDrop = true;
-            pictureBox8.AllowDrop = true;
-            pictureBox9.AllowDrop = true;
-            pictureBox10.AllowDrop = true;
-
         }
 
         private class WhatToPaint
@@ -59,7 +52,7 @@ namespace ACTIVA_Module_1.component
                 string savepath = String.Empty;
                 string savefolder = System.IO.Path.Combine(mod_accueil.SVF_FOLDER, "img");
 
-                for (int i = 0; i <= 9; i++)
+                for (int i = 0; i <= 3; i++)
                 {
                     PictureBox pb = (PictureBox)PhotoTlp.Controls[i];
                     if (pb == null || pb.Image == null)
@@ -70,7 +63,7 @@ namespace ACTIVA_Module_1.component
                 }
                 foreach (string photopath in openJPGDialog.FileNames)
                 {
-                    if (deb < 10)
+                    if (deb < 4)
                     {
                         PictureBox pb = (PictureBox)PhotoTlp.Controls[deb];
                         if (mod_global.Focused_Control.Text == String.Empty)
@@ -102,12 +95,6 @@ namespace ACTIVA_Module_1.component
             pictureBox2.Click += new EventHandler(Photo_Click);
             pictureBox3.Click += new EventHandler(Photo_Click);
             pictureBox4.Click += new EventHandler(Photo_Click);
-            pictureBox7.Click += new EventHandler(Photo_Click);
-            pictureBox8.Click += new EventHandler(Photo_Click);
-            pictureBox9.Click += new EventHandler(Photo_Click);
-            pictureBox10.Click += new EventHandler(Photo_Click);
-            pictureBox6.Click += new EventHandler(Photo_Click);
-            pictureBox5.Click += new EventHandler(Photo_Click);
         }
 
         public void Photo_Click(object sender, EventArgs e)
@@ -174,7 +161,7 @@ namespace ACTIVA_Module_1.component
             int i = 0;
             foreach (string pic in photolist.Split(Char.Parse("|")))
             {
-                if (i < 10)
+                if (i < 4)
                 {
                     PictureBox pb = (PictureBox)PhotoTlp.Controls[i];
                     picpath = System.IO.Path.Combine(picfolder, pic);
@@ -199,12 +186,12 @@ namespace ACTIVA_Module_1.component
                 string savepath = String.Empty;
                 string savefolder = System.IO.Path.Combine(mod_accueil.SVF_FOLDER, "img");
 
-                PictureBox pb = (PictureBox)PhotoTlp.Controls[9];
+                PictureBox pb = (PictureBox)PhotoTlp.Controls[3];
                 if (pb.Image != null)
                 {
                     MessageBox.Show("Il faut supprimer au moins une image avant d'ajouter une autre.", "Erreur d'ajout", MessageBoxButtons.OKCancel);
                 }
-                for (int i = 0; i <= 9; i++)
+                for (int i = 0; i <= 3; i++)
                 {
                     pb = (PictureBox)PhotoTlp.Controls[i];
                     if (pb == null || pb.Image == null)
@@ -230,9 +217,10 @@ namespace ACTIVA_Module_1.component
         private void pictureBox_Paint(object sender, PaintEventArgs e)
         {
             PictureBox pb = (PictureBox)sender;
-            using (Font myFont = new Font("Arial", 8))
+            int index = PhotoTlp.Controls.GetChildIndex(pb);
+            using (Font myFont = new Font("Arial", 8, FontStyle.Bold))
             {
-                e.Graphics.DrawString(System.IO.Path.GetFileName(pb.ImageLocation), myFont, Brushes.Blue, new Point(0, 101));
+                e.Graphics.DrawString(System.IO.Path.GetFileName(((PictureBox)PhotoTlp.Controls[index - 4]).ImageLocation), myFont, Brushes.Black, new Point(0, 0));
             }
         }
 

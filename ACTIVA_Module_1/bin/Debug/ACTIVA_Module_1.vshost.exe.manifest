@@ -3,7 +3,7 @@
   <asmv1:assemblyIdentity name="ACTIVA_Module_1.exe" version="1.0.0.7" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="ACTIVA_Module_1" version="2.0.6022.28533" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="ACTIVA_Module_1" version="2.0.6026.29619" language="neutral" processorArchitecture="x86" />
     <commandLine file="ACTIVA_Module_1.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -106,14 +106,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ACTIVA_Module_1.exe" size="550912">
-      <assemblyIdentity name="ACTIVA_Module_1" version="2.0.6022.28533" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ACTIVA_Module_1.exe" size="553472">
+      <assemblyIdentity name="ACTIVA_Module_1" version="2.0.6026.29619" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>3Gd9Jv78zxlNMiznkRAYFCpXUoA=</dsig:DigestValue>
+        <dsig:DigestValue>r6cbqK0znkdUtbxqqhM+G/wtO9c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
